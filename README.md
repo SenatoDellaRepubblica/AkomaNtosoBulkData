@@ -12,7 +12,7 @@ Nella seguente sezione vi è uno schema dettagliato della struttura appena descr
 
 ### Struttura delle cartelle e dei file ###
 
-* **README.MD
+* **README.MD**
 * **Leg #NUM_LEG**
     * **Atto ORDINALE#NUM_ATTO**
         * README.MD    
