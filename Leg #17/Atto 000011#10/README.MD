@@ -6,7 +6,8 @@
 * Riferimenti al sito OpenData del Senato http://dati.senato.it/:
 	* Link OpenData: http://dati.senato.it/ddl/39308
 	* Query SPARQL per i documenti relativi all'Atto Senato:
-
+	
+	```
         PREFIX osr: <http://dati.senato.it/osr/>  
 		SELECT DISTINCT ?testoPresentato ?testoApprovato  
 		WHERE  
@@ -16,4 +17,4 @@
 		    OPTIONAL { ?ddl osr:testoPresentato ?testoPresentato }  
 		    OPTIONAL { ?ddl osr:testoApprovato ?testoApprovato }  
 		}
-		
+	```	
