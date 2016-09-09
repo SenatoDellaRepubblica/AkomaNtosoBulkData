@@ -1,6 +1,6 @@
-## Akoma Ntoso - Bulk Data - 16a legislatura - Atto Senato n.  ##
+## 16a legislatura - Atto Senato n. 3658 ##
 
-* Scheda del Disegno di Legge - Atto Senato n. :
+* Scheda del Disegno di Legge sul sito del Senato:
 	* Url: http://www.senato.it/leg/16/BGT/Schede/Ddliter/39295.htm
 
 * Riferimenti al sito OpenData del Senato http://dati.senato.it/:
@@ -18,5 +18,5 @@
 		    OPTIONAL { ?ddl osr:testoApprovato ?testoApprovato }  
 		}
 		```
-* Riferimenti al sito GitHub del Senato:
+* Contenuto dell'Atto nei Bulk Data su GitHub:
     * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/tree/master/Leg16/Atto00039295		

@@ -1,6 +1,6 @@
-## Akoma Ntoso - Bulk Data - 17a legislatura - Atto Senato n.  ##
+## 17a legislatura - Atto Senato n. 859-1357-1378-1484-1553-D ##
 
-* Scheda del Disegno di Legge - Atto Senato n. :
+* Scheda del Disegno di Legge sul sito del Senato:
 	* Url: http://www.senato.it/leg/17/BGT/Schede/Ddliter/46412.htm
 
 * Riferimenti al sito OpenData del Senato http://dati.senato.it/:
@@ -18,5 +18,5 @@
 		    OPTIONAL { ?ddl osr:testoApprovato ?testoApprovato }  
 		}
 		```
-* Riferimenti al sito GitHub del Senato:
+* Contenuto dell'Atto nei Bulk Data su GitHub:
     * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/tree/master/Leg17/Atto00046412		

@@ -1,6 +1,6 @@
-## Akoma Ntoso - Bulk Data - 13a legislatura - Atto Senato n.  ##
+## 13a legislatura - Atto Senato n. 4792 ##
 
-* Scheda del Disegno di Legge - Atto Senato n. :
+* Scheda del Disegno di Legge sul sito del Senato:
 	* Url: http://www.senato.it/leg/13/BGT/Schede/Ddliter/12537.htm
 
 * Riferimenti al sito OpenData del Senato http://dati.senato.it/:
@@ -18,5 +18,5 @@
 		    OPTIONAL { ?ddl osr:testoApprovato ?testoApprovato }  
 		}
 		```
-* Riferimenti al sito GitHub del Senato:
+* Contenuto dell'Atto nei Bulk Data su GitHub:
     * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/tree/master/Leg13/Atto00012537		
