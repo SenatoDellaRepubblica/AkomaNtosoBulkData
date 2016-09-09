@@ -19,4 +19,4 @@
 		}
 		```
 * Riferimenti al sito GitHub del Senato:
-    * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/Leg15/Atto00025792		
+    * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/tree/master/Leg15/Atto00025792		

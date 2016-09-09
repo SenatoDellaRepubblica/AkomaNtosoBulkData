@@ -19,4 +19,4 @@
 		}
 		```
 * Riferimenti al sito GitHub del Senato:
-    * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/Leg16/Atto00031914		
+    * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/tree/master/Leg16/Atto00031914		

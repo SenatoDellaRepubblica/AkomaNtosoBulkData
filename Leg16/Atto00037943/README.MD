@@ -19,4 +19,4 @@
 		}
 		```
 * Riferimenti al sito GitHub del Senato:
-    * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/Leg16/Atto00037943		
+    * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/tree/master/Leg16/Atto00037943		

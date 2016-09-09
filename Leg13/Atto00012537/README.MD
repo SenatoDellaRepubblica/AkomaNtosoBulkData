@@ -19,4 +19,4 @@
 		}
 		```
 * Riferimenti al sito GitHub del Senato:
-    * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/Leg13/Atto00012537		
+    * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/tree/master/Leg13/Atto00012537		

@@ -19,4 +19,4 @@
 		}
 		```
 * Riferimenti al sito GitHub del Senato:
-    * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/Leg17/Atto00041521		
+    * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/tree/master/Leg17/Atto00041521		
