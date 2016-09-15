@@ -1,4 +1,4 @@
-## 16a legislatura - Atto Senato n. 1119 ##
+## 16a Legislatura - Atto Senato n. 1119 ##
 
 * Scheda del Disegno di Legge sul sito del Senato:
 	* Url: http://www.senato.it/leg/16/BGT/Schede/Ddliter/32543.htm
@@ -17,6 +17,16 @@
 		    OPTIONAL { ?ddl osr:testoPresentato ?testoPresentato }  
 		    OPTIONAL { ?ddl osr:testoApprovato ?testoApprovato }  
 		}
+		
+        PREFIX osr: <http://dati.senato.it/osr/>  
+		SELECT DISTINCT ?testoPresentato ?testoApprovato  
+		WHERE  
+		{  
+		    ?ddl a osr:Ddl.  
+		    ?ddl osr:numFase 1119 .  
+		    OPTIONAL { ?ddl osr:testoPresentato ?testoPresentato }  
+		    OPTIONAL { ?ddl osr:testoApprovato ?testoApprovato }  
+		}		
 		```
 * Contenuto dell'Atto nei Bulk Data su GitHub:
     * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/tree/master/Leg16/Atto00032543		

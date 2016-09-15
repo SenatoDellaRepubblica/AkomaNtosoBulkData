@@ -1,4 +1,4 @@
-## 15a legislatura - Atto Senato n. 1270 ##
+## 15a Legislatura - Atto Senato n. 1270 ##
 
 * Scheda del Disegno di Legge sul sito del Senato:
 	* Url: http://www.senato.it/leg/15/BGT/Schede/Ddliter/27520.htm
@@ -17,6 +17,16 @@
 		    OPTIONAL { ?ddl osr:testoPresentato ?testoPresentato }  
 		    OPTIONAL { ?ddl osr:testoApprovato ?testoApprovato }  
 		}
+		
+        PREFIX osr: <http://dati.senato.it/osr/>  
+		SELECT DISTINCT ?testoPresentato ?testoApprovato  
+		WHERE  
+		{  
+		    ?ddl a osr:Ddl.  
+		    ?ddl osr:numFase 1270 .  
+		    OPTIONAL { ?ddl osr:testoPresentato ?testoPresentato }  
+		    OPTIONAL { ?ddl osr:testoApprovato ?testoApprovato }  
+		}		
 		```
 * Contenuto dell'Atto nei Bulk Data su GitHub:
     * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/tree/master/Leg15/Atto00027520		
