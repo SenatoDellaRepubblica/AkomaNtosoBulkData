@@ -7,6 +7,8 @@
 	* Link OpenData: http://dati.senato.it/ddl/40452
 	* Query SPARQL per i documenti relativi all'Atto Senato:
 
+        Query per ID della Fase:
+        
         ```
         PREFIX osr: <http://dati.senato.it/osr/>  
 		SELECT DISTINCT ?testoPresentato ?testoApprovato  
@@ -17,7 +19,11 @@
 		    OPTIONAL { ?ddl osr:testoPresentato ?testoPresentato }  
 		    OPTIONAL { ?ddl osr:testoApprovato ?testoApprovato }  
 		}
+		```
+				
+		Query per numero della Fase:
 		
+		```
         PREFIX osr: <http://dati.senato.it/osr/>  
 		SELECT DISTINCT ?testoPresentato ?testoApprovato  
 		WHERE  
