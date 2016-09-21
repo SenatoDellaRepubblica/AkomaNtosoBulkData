@@ -3,7 +3,7 @@
 * Scheda del Disegno di Legge sul sito del Senato:
 	* Url: http://www.senato.it/leg/15/BGT/Schede/Ddliter/26856.htm
 
-* Riferimenti al sito OpenData del Senato http://dati.senato.it/:
+* Riferimenti al sito OpenData Senato http://dati.senato.it/:
 	* Link OpenData: http://dati.senato.it/ddl/26856
 	* Query SPARQL per i documenti relativi all'Atto Senato:
 
