@@ -47,3 +47,7 @@ Senato della Repubblica - Servizio dell'Informatica
 ## Licenza ##
 
 CC BY NC ND
+
+## Aggiornamento ##
+
+Ultimo aggiornamento: 12:12:19 28/09/2016
