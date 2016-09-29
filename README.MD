@@ -4,11 +4,11 @@ Il progetto contiene tutti i documenti legislativi del Senato della Repubblica i
 
 ## Descrizione dei dati ##
 
-I dati sono strutturati seguendo la medesima organizzazione logica nel sito web del Senato (http://www.senato.it/). In ogni legislatura, ogni Atto Senato ha una propria pagina di navigazione chiamata "Scheda DdL"", da dove è possibile visualizzare le letture parlamentari ed i testi disponibili (presentato, relazioni, messaggio, emendamenti, etc. ). 
+I dati sono strutturati seguendo la medesima organizzazione logica nel sito web del Senato (http://www.senato.it/). In ogni legislatura, ogni Atto Senato ha una propria pagina di navigazione chiamata "Scheda DdL"", da dove Ã¨ possibile visualizzare le letture parlamentari ed i testi disponibili (presentato, relazioni, messaggio, emendamenti, etc. ). 
 
-Nei "bulk data" il primo livello è costituito dalle legislature; ognuna di esse contiene poi le cartelle relative agli Atti Senato con i relativi testi organizzati per tipologia.
+Nei "bulk data" il primo livello Ã¨ costituito dalle legislature; ognuna di esse contiene poi le cartelle relative agli Atti Senato con i relativi testi organizzati per tipologia.
 
-Nella seguente sezione vi è uno schema dettagliato della struttura appena descritta.
+Nella seguente sezione vi Ã¨ uno schema dettagliato della struttura appena descritta.
 
 ### Struttura delle cartelle e dei file ###
 
@@ -30,7 +30,7 @@ Nella seguente sezione vi è uno schema dettagliato della struttura appena descri
 
 ### Legenda ###
 
-* **ddlpres**:    cartella che contiene il testo dell'atto così come presentato dal proponente  
+* **ddlpres**:    cartella che contiene il testo dell'atto cosÃ¬ come presentato dal proponente  
 * **ddlcomm**:    cartella che contiene il testo della relazione della Commissione relativa all'atto Senato  
 * **ddlmess**:    cartella che contiene il testo del messaggio trasmesso alla successiva istituzione coinvolta nell'iter  
 * **emend**:      cartella che contiene gli emendamenti in Assemblea  
@@ -50,4 +50,4 @@ CC BY NC ND
 
 ## Aggiornamento ##
 
-Ultimo aggiornamento: 17:10:52 28/09/2016
+Ultimo aggiornamento: 15:44:04 29/09/2016
