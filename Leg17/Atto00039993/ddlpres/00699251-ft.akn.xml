@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-26/311"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-26/311/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-26/311"/>
 					<an:FRBRdate date="2013-03-26" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-26/311/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-26/311/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="311"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-26/311/ita@2013-03-26/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-26/311/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-26/311/ita@"/>
 					<an:FRBRdate date="2013-03-26" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-26/311/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-26/311/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-26/311/ita@2013-03-26/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-26/311/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-26/311/ita@.akn"/>
 					<an:FRBRdate date="2013-03-26" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-26/311/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-26/311/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-26" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-26" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-26/311/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-26/311/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22814" id="w1ab1ab1b2aaab1b1" showAs="DE POLI"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d122e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/22814" id="d122e16" showAs="DE POLI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -54,107 +72,107 @@
 			</an:p>
 			<an:p>
 				d'iniziativa del senatore 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">DE POLI</an:docProponent>
+				<an:docProponent as="#d122e16a1327" refersTo="#d122e16">DE POLI</an:docProponent>
 			</an:p>
 			<an:p>COMUNICATO ALLA PRESIDENZA IL 26 MARZO 2013</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d122e185">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d122e188">
 					<an:i>(Princìpi generali)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d122e191">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d122e194">
 						<an:p>La persona ha diritto al rispetto della dignità umana, all'autonomia e all'integrazione familiare e sociale a ogni età.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b3">
+				<an:paragraph id="d122e197">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b1b3b1">
+					<an:content id="d122e200">
 						<an:p>Le condizioni di indigenza non possono essere di ostacolo all'esercizio del diritto alla piena integrazione familiare e sociale da parte dell'adulto che per età o per condizioni psico-fisiche menomate non gode di piena autonomia nella gestione della vita quotidiana.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b4">
+				<an:paragraph id="d122e203">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b1b4b1">
+					<an:content id="d122e206">
 						<an:p>Le regioni e gli enti locali, nell'ambito delle proprie competenze, sostengono i nuclei familiari o parafamiliari in cui sono inserite persone in difficoltà al fine di consentire la permanenza all'interno delle loro famiglie o di vivere nel modo più autonomo possibile mantenendo la propria vita di relazione.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b5">
+				<an:paragraph id="d122e209">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b1b5b1">
+					<an:content id="d122e212">
 						<an:p>Le regioni e gli enti locali promuovono, anche attraverso l'ausilio di enti e di associazioni, iniziative permanenti di formazione dell'opinione pubblica sul diritto dell'anziano di mantenere il proprio ambiente familiare e sociale o di essere inserito in un altro ambiente analogo anche attraverso l'affidamento a nuclei familiari o parafamiliari o a persone diverse dai propri familiari; organizzano corsi di formazione e di preparazione per i soggetti affidatari; stipulano convenzioni con enti e associazioni senza fini di lucro che operano nel campo della tutela della persona e dell'anziano per la realizzazione delle finalità della presente legge.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b6">
+				<an:paragraph id="d122e215">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b1b6b1">
+					<an:content id="d122e218">
 						<an:p>Quando la famiglia non è in grado di provvedere alla cura dell'anziano si applicano gli istituti previsti dalla presente legge.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d122e221">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d122e224">
 					<an:i>
 						(Affido dell'anziano e della persona
 						<an:eol/>
 						in difficoltà)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d122e229">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b2b1">
+					<an:content id="d122e232">
 						<an:p>La persona adulta in difficoltà, temporaneamente o permanentemente priva di un ambiente familiare idoneo nonostante gli aiuti di tipo domiciliare, può essere affidata a una famiglia, a un gruppo parafamiliare o a una persona in grado di aiutarla a vivere nel modo più autonomo e integrato possibile.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b3">
+				<an:paragraph id="d122e235">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b2b3b1">
+					<an:content id="d122e238">
 						<an:p>L'affido si basa sull'autodeterminazione dell'anziano e sulla reciproca fiducia con l'affidatario; persegue lo scopo di evitare il ricovero dell'anziano in strutture residenziali e di rimuovere le cause che possono determinare l'isolamento sociale.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b4">
+				<an:paragraph id="d122e241">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b2b4b1">
+					<an:content id="d122e244">
 						<an:p>L'affido può essere utilizzato anche da parte del tutore e dell'amministratore di sostegno in accordo, per quanto possibile, con l'affidato e sentita la famiglia.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d122e247">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d122e250">
 					<an:i>(Definizioni)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d122e253">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b3b2b1">
+					<an:content id="d122e256">
 						<an:p>Per «piccolo affido» si intende la prestazione di aiuto a persone anziane o in difficoltà, capaci di autogestirsi per le attività della vita quotidiana.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b3">
+				<an:paragraph id="d122e259">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b3b3b1">
+					<an:content id="d122e262">
 						<an:p>Per «affido di supporto» si intende il prendersi cura della persona che, pur essendo in grado di vivere da sola nella propria casa, ha difficoltà a gestirsi. Tale modalità di affido comporta l'assistenza, diretta o per mezzo dei servizi domiciliari pubblici o privati in tutti gli atti della vita quotidiana per i quali vi è necessità di aiuto.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b4">
+				<an:paragraph id="d122e265">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b3b4b1">
+					<an:content id="d122e268">
 						<an:p>Per «affido in convivenza» si intende la prestazione di cure e di assistenza da parte di una famiglia, di un gruppo parafamiliare o di una persona nei confronti dell'anziano attraverso l'accoglienza dell'affidato in casa dell'affidatario o di quest'ultimo in casa dell'affidato.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d122e271">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab3b4b1">
+				<an:heading id="d122e274">
 					<an:i>(Perfezionamento dell'affido)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b4b2">
+				<an:paragraph id="d122e277">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b4b2b1">
+					<an:content id="d122e280">
 						<an:p>
 							L'affido di supporto e l'affido in convivenza si perfezionano con la sottoscrizione di un impegno contrattuale tra affidato e affidatario e l'accettazione da parte di entrambi del piano di intervento personalizzato concordato tra l'anziano e l'
 							<an:i>equipe</an:i>
@@ -162,84 +180,84 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b3">
+				<an:paragraph id="d122e286">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b4b3b1">
+					<an:content id="d122e289">
 						<an:p>I diritti e gli obblighi degli affidati e degli affidatari sono quelli derivanti dagli accordi sottoscritti dalle parti. In ogni caso entrambi devono accettare di rapportarsi con l'ente di garanzia.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d122e292">
 				<an:num>Art. 5.</an:num>
-				<an:heading id="w1ab1ab3b5b1">
+				<an:heading id="d122e295">
 					<an:i>(Affidatario)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b5b2">
+				<an:paragraph id="d122e298">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b5b2b1">
+					<an:content id="d122e301">
 						<an:p>Può svolgere compiti di affidatario la persona maggiore d’età in grado di comprendere e di accettare i bisogni della persona anziana e il suo modello di vita.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b3">
+				<an:paragraph id="d122e304">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b5b3b1">
+					<an:content id="d122e307">
 						<an:p>L'affidatario deve godere di un buono stato di salute; essere esente da precedenti o pendenze penali per reati dolosi; avere una regolare situazione abitativa nel caso di affidamento in convivenza presso di sé; deve avere, preferibilmente, maturato esperienza nel settore dell'assistenza o avere seguito un corso di informazione e di formazione svolto da un ente pubblico o privato accreditato.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b6">
+			<an:article id="d122e310">
 				<an:num>Art. 6.</an:num>
-				<an:heading id="w1ab1ab3b6b1">
+				<an:heading id="d122e313">
 					<an:i>(Obblighi dell'affidatario)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b6b2">
+				<an:paragraph id="d122e316">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b6b2a">
-						<an:intro id="w1ab1ab3b6b2b1">
+					<an:list id="d122e317">
+						<an:intro id="d122e319">
 							<an:p>Oltre a prendersi cura dell'affidato secondo gli accordi sottoscritti, l'affidatario deve:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b6b2b2">
+						<an:point id="d122e321">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b6b2b2b1">
+							<an:content id="d122e326">
 								<an:p>prendere i necessari provvedimenti d'urgenza nel caso di pericolo di vita dell'affidato, dandone immediata comunicazione agli operatori di riferimento, ai familiari, al tutore, all'amministratore di sostegno, ove esistente, e all'ente di garanzia;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b6b2b3">
+						<an:point id="d122e329">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b6b2b3b1">
+							<an:content id="d122e334">
 								<an:p>curare e mantenere i rapporti con eventuali familiari dell'affidato, il tutore o l'amministratore di sostegno;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b6b2b4">
+						<an:point id="d122e337">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b6b2b4b1">
+							<an:content id="d122e342">
 								<an:p>mantenere i rapporti con la figura professionale preposta alla gestione dell'affido;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b6b2b5">
+						<an:point id="d122e345">
 							<an:num>
 								<an:i>d)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b6b2b5b1">
+							<an:content id="d122e350">
 								<an:p>predisporre eventuali sostituzioni in caso di sua assenza o impossibilità temporanea;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b6b2b6">
+						<an:point id="d122e353">
 							<an:num>
 								<an:i>e)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b6b2b6b1">
+							<an:content id="d122e358">
 								<an:p>
 									consentire le verifiche previste da parte dell'
 									<an:i>equipe</an:i>
@@ -250,14 +268,14 @@
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b7">
+			<an:article id="d122e364">
 				<an:num>Art. 7.</an:num>
-				<an:heading id="w1ab1ab3b7b1">
+				<an:heading id="d122e367">
 					<an:i>(Periodo di prova e facoltà di recesso)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b7b2">
+				<an:paragraph id="d122e370">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b7b2b1">
+					<an:content id="d122e373">
 						<an:p>
 							Per l'affidatario e per l'affidato è previsto un periodo di prova che può durare da uno a tre mesi, a seconda delle esigenze delle parti e della qualità delle prestazioni stabilite; l'esito positivo della prova è valutato dall'
 							<an:i>equipe</an:i>
@@ -265,51 +283,51 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b3">
+				<an:paragraph id="d122e379">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b7b3b1">
+					<an:content id="d122e382">
 						<an:p>L'affidato e l'affidatario possono recedere dall'affido in qualsiasi momento previa comunicazione all'ente di garanzia, ai familiari, al tutore e all'amministratore di sostegno, ove esistente. Il recesso diventa esecutivo dopo trenta giorni dalla sua comunicazione.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b8">
+			<an:article id="d122e385">
 				<an:num>Art. 8.</an:num>
-				<an:heading id="w1ab1ab3b8b1">
+				<an:heading id="d122e388">
 					<an:i>(Decadenza e revoca dell'affido)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b8b2">
+				<an:paragraph id="d122e391">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b8b2b1">
+					<an:content id="d122e394">
 						<an:p>La violazione degli obblighi derivanti dalla legge e dagli accordi sottoscritti comporta, in caso di particolare gravità, la decadenza dall'incarico di affidatario.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b8b3">
+				<an:paragraph id="d122e397">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b8b3b1">
+					<an:content id="d122e400">
 						<an:p>La revoca dell'affido è disposta dall'ente di garanzia, previa audizione delle parti e consultazione con il servizio sociale territoriale, se coinvolto.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b8b4">
+				<an:paragraph id="d122e403">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b8b4b1">
+					<an:content id="d122e406">
 						<an:p>La decadenza dell'incarico e la revoca dell'affido decorrono dalla loro comunicazione all'interessato.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b9">
+			<an:article id="d122e409">
 				<an:num>Art. 9.</an:num>
-				<an:heading id="w1ab1ab3b9b1">
+				<an:heading id="d122e412">
 					<an:i>(Gestione e verifica dell'ente di garanzia)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b9b2">
+				<an:paragraph id="d122e415">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b9b2b1">
+					<an:content id="d122e418">
 						<an:p>La gestione e la verifica dell'affido sono di competenza dell'ente di garanzia che ha promosso l'affido con la collaborazione, se possibile, del servizio sociale territoriale.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b9b3">
+				<an:paragraph id="d122e421">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b9b3b1">
+					<an:content id="d122e424">
 						<an:p>
 							Per effettuare le funzioni di propria competenza l’ente di garanzia deve disporre di un'
 							<an:i>equipe</an:i>
@@ -318,38 +336,38 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c10">
+			<an:article id="d122e430">
 				<an:num>Art. 10.</an:num>
-				<an:heading id="w1ab1ab3c10b1">
+				<an:heading id="d122e433">
 					<an:i>(Oneri economici)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c10b2">
+				<an:paragraph id="d122e436">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c10b2b1">
+					<an:content id="d122e439">
 						<an:p>Il piccolo affido è una prestazione gratuita, basata su sentimenti di solidarietà; in favore dell'affidatario è previsto solo un rimborso spese liquidabile dall'ente di garanzia o dagli enti locali.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c10b3">
+				<an:paragraph id="d122e442">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3c10b3b1">
+					<an:content id="d122e445">
 						<an:p>Per i tipi di affido di cui all’articolo 3, commi 1 e 2, è stabilito un onere economico a carico dell'affidato, se questi dispone di propri redditi, o dell’ente di garanzia.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c10b4">
+				<an:paragraph id="d122e448">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3c10b4b1">
+					<an:content id="d122e451">
 						<an:p>L'onere economico di cui al comma 2 è concordato tra le parti, con l'approvazione dell'ente di garanzia, ed è suscettibile di revisione a causa di mutamento delle condizioni originarie. L'onere è inoltre adeguato alle condizioni e alle necessità dell'affidato, al tipo di convivenza eventualmente prevista e alle spese necessarie per la cura e per l'assistenza che non sono già a carico del servizio pubblico.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c10b5">
+				<an:paragraph id="d122e454">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3c10b5b1">
+					<an:content id="d122e457">
 						<an:p>L'ente di garanzia provvede a stipulare un'assicurazione che solleva l'affidatario dalla responsabilità civile nei confronti dei terzi per fatti commessi dall'affidato durante i periodi in cui ne ha la cura e che prevede il risarcimento dell'affidato stesso o dei suoi aventi causa per danni causati da negligenze dell'affidatario.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c10b6">
+				<an:paragraph id="d122e460">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3c10b6b1">
+					<an:content id="d122e463">
 						<an:p>
 							Al termine dell'affido intervenuto per qualsiasi causa nulla è dovuto all'affidatario, salvo il rimborso commisurato all'effettivo svolgimento dell'affido secondo i criteri stabiliti nel progetto personalizzato, tenuto conto di eventuali spese sostenute per l'affidato autorizzate dall'ente di garanzia o dalla sua 
 							<an:i>equipe.</an:i>
@@ -361,30 +379,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-26/311"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-26/311/main/relazione"/>
 							<an:FRBRdate date="2013-03-26" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="311"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-26/311/ita@2013-03-26/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-26/311/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-26" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-26/311/ita@2013-03-26/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-26/311/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-26" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-26/311/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-26/311/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

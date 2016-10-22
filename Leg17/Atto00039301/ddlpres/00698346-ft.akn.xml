@@ -1,35 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2008-06-03/1"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2008-06-03/1/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2008-06-03/1"/>
 					<an:FRBRdate date="2008-06-03" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2008-06-03/1/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2008-06-03/1/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2008-06-03/1/main/allegato" id="wcomp3" name="Allegato" showAs="Allegato"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="1"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2008-06-03/1/ita@2008-06-03/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@"/>
 					<an:FRBRdate date="2008-06-03" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main/allegato" id="ecomp3" name="Allegato" showAs="Allegato"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2008-06-03/1/ita@2008-06-03/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@.akn"/>
 					<an:FRBRdate date="2008-06-03" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main/allegato.xml" id="mcomp3" name="Allegato" showAs="Allegato"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2008-06-03" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2008-06-03" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main/relazione" id="annex2" showAs="Relazione"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main/allegato" id="annex3" showAs="Allegato"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
@@ -56,106 +78,106 @@
 			<an:p>COMUNICATO ALLA PRESIDENZA IL 3 GIUGNO 2008</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab4b1">
+			<an:article id="d2e175">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab4b1b1">
+				<an:heading id="d2e178">
 					<an:i>(Rilevazione dell'indice annuo dei prezzi al consumo per la perequazione automatica delle pensioni)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab4b1b2">
+				<an:paragraph id="d2e181">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab4b1b2b1">
+					<an:content id="d2e184">
 						<an:p>Per assicurare il mantenimento nel tempo del potere di acquisto di qualsiasi trattamento pensionistico, è istituito un «paniere» di indici di prezzi al consumo dedicato esclusivamente ai calcoli per la perequazione automatica delle pensioni su base annua, da rilevare e aggiornare a cura dell'Istituto nazionale di statistica.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab4b1b3">
+				<an:paragraph id="d2e187">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab4b1b3b1">
+					<an:content id="d2e190">
 						<an:p>Con regolamento interministeriale, da emanare entro sei mesi dalla data di entrata in vigore della presente legge, sono stabiliti i criteri di acquisizione degli indici al paniere di cui al comma 1 e i procedimenti per la metodologia di raccolta dei relativi dati.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab4b2">
+			<an:article id="d2e193">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab4b2b1">
+				<an:heading id="d2e196">
 					<an:i>(Disposizioni in materia di perequazione automatica)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab4b2b2">
+				<an:paragraph id="d2e199">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab4b2b2a">
-						<an:intro id="w1ab1ab4b2b2b1">
+					<an:list id="d2e200">
+						<an:intro id="d2e202">
 							<an:p>A decorrere dal 1º gennaio 2009, l'indice di rivalutazione automatica, determinato nei termini dell'articolo 1, è applicato secondo il meccanismo stabilito dall'articolo 34, comma 1, della legge 23 dicembre 1998, n. 448, come di seguito modificato per le pensioni di anzianità e di vecchiaia dei settori privato e pubblico:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab4b2b2b2">
+						<an:point id="d2e204">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab4b2b2b2b1">
+							<an:content id="d2e209">
 								<an:p>nella misura del 100 per cento per le fasce di importo dei trattamenti pensionistici fino a sette volte il trattamento minimo INPS, pari alla prima fascia di retribuzione pensionabile, determinata ai fini dell'applicazione dell'articolo 21, comma 6, della legge 11 marzo 1988, n. 67;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab4b2b2b3">
+						<an:point id="d2e212">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab4b2b2b3b1">
+							<an:content id="d2e217">
 								<an:p>nella misura del 70 per cento per gli importi dei trattamenti pensionistici superiori a sette volte il minimo INPS.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab4b2b3">
+				<an:paragraph id="d2e220">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab4b2b3b1">
+					<an:content id="d2e223">
 						<an:p>Il meccanismo di perequazione, come definito al comma 1, segue nel tempo l'indicizzazione annuale in modo automatico.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab4b3">
+			<an:article id="d2e226">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab4b3b1">
+				<an:heading id="d2e229">
 					<an:i>(Disposizioni in materia di trattamento ai superstiti)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab4b3b2">
+				<an:paragraph id="d2e232">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab4b3b2b1">
+					<an:content id="d2e235">
 						<an:p>A decorrere dal 1º gennaio 2009, gli importi dei trattamenti pensionistici ai superstiti non sono cumulabili con i redditi da lavoro del beneficiario nell'importo stabilito dall'articolo 72, comma 2, della legge 23 dicembre 2000, n. 388.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab4b3b3">
+				<an:paragraph id="d2e238">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab4b3b3b1">
+					<an:content id="d2e241">
 						<an:p>Resta in vigore, se più favorevole, la tabella F, prevista dall'articolo 1, comma 41, della legge 8 agosto 1995, n. 335.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab4b4">
+			<an:article id="d2e244">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab4b4b1">
+				<an:heading id="d2e247">
 					<an:i>(Delega per la rivalutazione delle pensioni d'annata)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab4b4b2">
+				<an:paragraph id="d2e250">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab4b4b2b1">
+					<an:content id="d2e253">
 						<an:p>Con effetto dal 1º gennaio 2008, gli importi di tutti i trattamenti pensionistici, liquidati anteriormente alla data di entrata in vigore della legge 8 agosto 1995, n. 335, sono rivalutati in relazione all'anno di decorrenza, sulla base di coefficienti che tengano conto dell'andamento del costo della vita e della dinamica salariale.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab4b4b3">
+				<an:paragraph id="d2e256">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab4b4b3b1">
+					<an:content id="d2e259">
 						<an:p>Il Governo è delegato ad adottare, entro sei mesi dalla data di entrata in vigore della presente legge, uno o più decreti legislativi per stabilire le modalità, i criteri e il finanziamento delle rivalutazioni di cui al comma 1.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab4b5">
+			<an:article id="d2e262">
 				<an:num>Art. 5.</an:num>
-				<an:heading id="w1ab1ab4b5b1">
+				<an:heading id="d2e265">
 					<an:i>(Copertura finanziaria)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab4b5b2">
+				<an:paragraph id="d2e268">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab4b5b2b1">
+					<an:content id="d2e271">
 						<an:p>Per il finanziamento degli oneri derivanti dall'applicazione degli articoli 2 e 3, si provvede:</an:p>
 						<an:p>
 							<an:i>a) </an:i>
@@ -167,21 +189,21 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab4b5b3">
+				<an:paragraph id="d2e282">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab4b5b3b1">
+					<an:content id="d2e285">
 						<an:p>Con regolamento interministeriale, da adottare entro sei mesi dalla data di entrata in vigore della presente legge, è istituito il «Fondo di solidarietà per le pensioni d'annata», gestito dall'INPS per l'introito dei proventi di cui al comma 1 e il pagamento degli aumenti previsti agli articoli 2 e 3.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab4b6">
+			<an:article id="d2e288">
 				<an:num>Art. 6.</an:num>
-				<an:heading id="w1ab1ab4b6b1">
+				<an:heading id="d2e291">
 					<an:i>(Entrata in vigore)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab4b6b2">
+				<an:paragraph id="d2e294">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab4b6b2b1">
+					<an:content id="d2e297">
 						<an:p>
 							La presente legge entra in vigore il primo giorno successivo a quello della sua pubblicazione nella 
 							<an:i>Gazzetta Ufficiale.</an:i>
@@ -193,30 +215,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2008-06-03/1"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2008-06-03/1/main/relazione"/>
 							<an:FRBRdate date="2008-06-03" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="1"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2008-06-03/1/ita@2008-06-03/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main/relazione"/>
 							<an:FRBRdate date="2008-06-03" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2008-06-03/1/ita@2008-06-03/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2008-06-03" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>
@@ -309,43 +336,60 @@
 			</an:doc>
 			<an:doc name="Altro">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2008-06-03/1"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2008-06-03/1/main/allegato"/>
 							<an:FRBRdate date="2008-06-03" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
+							<an:componentInfo>
+								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00698346/DDL1-0001.png" id="wimg1DDL1-0001.png" name="" showAs="DDL1-0001.png"/>
+								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00698346/DDL1-0002.png" id="wimg2DDL1-0002.png" name="" showAs="DDL1-0002.png"/>
+							</an:componentInfo>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/Altro"/>
 							<an:FRBRnumber value="1"/>
+							<an:FRBRname value="allegato"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2008-06-03/1/ita@2008-06-03/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main/allegato"/>
 							<an:FRBRdate date="2008-06-03" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
+							<an:componentInfo>
+								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00698346/DDL1-0001.png" id="eimg1DDL1-0001.png" name="" showAs="DDL1-0001.png"/>
+								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00698346/DDL1-0002.png" id="eimg2DDL1-0002.png" name="" showAs="DDL1-0002.png"/>
+							</an:componentInfo>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2008-06-03/1/ita@2008-06-03/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main/allegato.xml"/>
 							<an:FRBRdate date="2008-06-03" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
+							<an:componentInfo>
+								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00698346/DDL1-0001.png" id="mimg1DDL1-0001.png" name="" showAs="DDL1-0001.png"/>
+								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00698346/DDL1-0002.png" id="mimg2DDL1-0002.png" name="" showAs="DDL1-0002.png"/>
+							</an:componentInfo>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main/allegato" id="ro3" showAs="Allegato"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2008-06-03/1/ita@/main" id="mainAnx3" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p style="text-align:right;">
 						<an:span style="font-variant:small-caps;">Tabella A</an:span>
 					</an:p>
 					<an:p>
-						<an:img alt="DDL1-0001.png" src="DDL1-0001.png"/>
+						<an:img alt="DDL1-0001.png" src="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00698346/DDL1-0001.png"/>
 					</an:p>
 					<an:p style="text-align:right;">
 						<an:span style="font-variant:small-caps;">Tabella B</an:span>
 					</an:p>
 					<an:p>
-						<an:img alt="DDL1-0002.png" src="DDL1-0002.png"/>
+						<an:img alt="DDL1-0002.png" src="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00698346/DDL1-0002.png"/>
 					</an:p>
 				</an:mainBody>
 			</an:doc>

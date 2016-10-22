@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-29/345"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-29/345/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/345"/>
 					<an:FRBRdate date="2013-03-29" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/345/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/345/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="345"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-29/345/ita@2013-03-29/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-29/345/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/345/ita@"/>
 					<an:FRBRdate date="2013-03-29" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/345/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/345/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-29/345/ita@2013-03-29/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-29/345/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/345/ita@.akn"/>
 					<an:FRBRdate date="2013-03-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/345/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/345/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-29" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-29" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-29/345/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-29/345/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22814" id="w1ab1ab1b2aaab1b1" showAs="DE POLI"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d146e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/22814" id="d146e16" showAs="DE POLI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -50,7 +68,7 @@
 			</an:p>
 			<an:p>
 				d’iniziativa del senatore 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">DE POLI</an:docProponent>
+				<an:docProponent as="#d146e16a1327" refersTo="#d146e16">DE POLI</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -58,256 +76,256 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d146e115">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d146e118">
 					<an:i>
 						(Istituzione dell'Autorità garante
 						<an:eol/>
 						dei diritti della famiglia)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d146e123">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d146e126">
 						<an:p>È istituita l'Autorità garante dei diritti della famiglia, di seguito denominata «Autorità garante», la quale opera in piena autonomia e con indipendenza di giudizio e di valutazione.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b3">
+				<an:paragraph id="d146e129">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b1b3b1">
+					<an:content id="d146e132">
 						<an:p>L'Autorità garante è organo collegiale costituito da cinque componenti eletti dal Parlamento, tra persone di elevate doti morali e professionali, con specifica esperienza in ordine ai profili giuridici, economici e sociali concernenti la famiglia. L'Autorità garante sceglie il presidente tra i propri componenti.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b4">
+				<an:paragraph id="d146e135">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b1b4b1">
+					<an:content id="d146e138">
 						<an:p>Sono organi dell'Autorità garante il Comitato tecnico-scientifico e la Consulta nazionale delle associazioni familiari. Il Comitato tecnico-scientifico è composto da undici membri, nominati dall'Autorità stessa, scelti tra quelli indicati dal Presidente del Consiglio dei ministri, d'intesa con il Ministro del lavoro e delle politiche sociali, in numero di due per ciascuna delle seguenti categorie: magistrati e avvocati dello Stato, professori ordinari delle università, dirigenti delle pubbliche amministrazioni e consiglieri parlamentari. Del Comitato fanno altresì parte tre dirigenti di associazioni iscritte all'albo tenuto dalla Consulta nazionale delle associazioni familiari, designati dalla Consulta stessa.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b5">
+				<an:paragraph id="d146e141">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b1b5b1">
+					<an:content id="d146e144">
 						<an:p>Se dipendenti pubblici i componenti dell'Autorità garante sono collocati fuori ruolo per l’intera durata del mandato.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b6">
+				<an:paragraph id="d146e147">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b1b6b1">
+					<an:content id="d146e150">
 						<an:p>Entro tre mesi dalla costituzione, l'Autorità garante adotta le norme concernenti l'organizzazione e il funzionamento, il trattamento giuridico ed economico del personale e la gestione delle spese nel rispetto dei princìpi generali della contabilità generale dello Stato.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b7">
+				<an:paragraph id="d146e153">
 					<an:num>6. </an:num>
-					<an:content id="w1ab1ab3b1b7b1">
+					<an:content id="d146e156">
 						<an:p>I componenti dell'Autorità garante durano in carica cinque anni e possono essere confermati una sola volta.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b8">
+				<an:paragraph id="d146e159">
 					<an:num>7. </an:num>
-					<an:content id="w1ab1ab3b1b8b1">
+					<an:content id="d146e162">
 						<an:p>Ogni anno l'Autorità garante rende il conto della propria gestione alla Corte dei conti.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d146e165">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d146e168">
 					<an:i>(Competenze dell'Autorità garante)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d146e171">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b2b1">
+					<an:content id="d146e174">
 						<an:p>L'Autorità garante ha funzioni di studio e ricerca, nonché di impulso e consulenza nei confronti delle amministrazioni statali con le quali collabora e alle quali segnala le misure idonee ad assicurare il perseguimento delle finalità concernenti lo sviluppo e la tutela della famiglia.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b3">
+				<an:paragraph id="d146e177">
 					<an:num>2. </an:num>
-					<an:list id="w1ab1ab3b2b3a">
-						<an:intro id="w1ab1ab3b2b3b1">
+					<an:list id="d146e178">
+						<an:intro id="d146e180">
 							<an:p>L'Autorità garante, altresì:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b2b3b2">
+						<an:point id="d146e182">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b2b1">
+							<an:content id="d146e187">
 								<an:p>svolge funzioni di natura conoscitiva per accertare le modalità con le quali le amministrazioni statali hanno dato applicazione alle disposizioni di legge e regolamentari concernenti la condizione economica e sociale delle famiglie;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b3">
+						<an:point id="d146e190">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b3b1">
+							<an:content id="d146e195">
 								<an:p>elabora analisi e studi, anche in collaborazione con enti e con istituzioni culturali e di ricerca, effettuando una valutazione delle esperienze maturate all'estero, e specificamente nell'ambito dei Paesi membri dell'Unione europea, sull'adeguatezza e sulla congruità della legislazione vigente in materia di famiglia, nonché delle misure attuate per fronteggiare situazioni di emergenza legate al disagio familiare;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b4">
+						<an:point id="d146e198">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b4b1">
+							<an:content id="d146e203">
 								<an:p>attua il monitoraggio delle attività connesse al rispetto delle disposizioni vigenti aventi riflessi sul benessere delle famiglie, nonché della presente legge;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b5">
+						<an:point id="d146e206">
 							<an:num>
 								<an:i>d)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b5b1">
+							<an:content id="d146e211">
 								<an:p>collabora con i Ministri della giustizia e dell'istruzione, dell'università e della ricerca e con il Dipartimento nazionale per le politiche antidroga della Presidenza del Consiglio dei ministri per l'elaborazione di strategie di contrasto del disagio giovanile nella scuola e nella società, nonché di misure per la tutela dei minori;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b6">
+						<an:point id="d146e214">
 							<an:num>
 								<an:i>e)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b6b1">
+							<an:content id="d146e219">
 								<an:p>promuove intese, accordi e convenzioni con soggetti pubblici e privati diretti ad assicurare lo sviluppo delle politiche familiari;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b7">
+						<an:point id="d146e222">
 							<an:num>
 								<an:i>f)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b7b1">
+							<an:content id="d146e227">
 								<an:p>propone alle amministrazioni dello Stato e agli altri enti pubblici competenti l'adozione delle iniziative, di carattere normativo o amministrativo, che ritiene necessarie per la concreta realizzazione dei diritti della famiglia e del benessere familiare;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b8">
+						<an:point id="d146e230">
 							<an:num>
 								<an:i>g)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b8b1">
+							<an:content id="d146e235">
 								<an:p>sollecita le amministrazioni statali ad attuare le misure previste dalle leggi o dai regolamenti vigenti nelle materie di interesse per le famiglie;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b9">
+						<an:point id="d146e238">
 							<an:num>
 								<an:i>h)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b9b1">
+							<an:content id="d146e243">
 								<an:p>promuove intese con le regioni e con le associazioni del privato sociale dirette a garantire ai pazienti ricoverati presso presìdi ospedalieri pubblici e privati il benessere psico-affettivo e la continuità del rapporto con i propri familiari;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c10">
+						<an:point id="d146e246">
 							<an:num>
 								<an:i>i)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c10b1">
+							<an:content id="d146e251">
 								<an:p>promuove intese con le regioni, con gli enti locali, con le istituzioni scolastiche e con le associazioni del privato sociale dirette ad assicurare forme di sostegno alle famiglie nelle quali sono presenti disabili, finalizzate ad agevolare la loro permanenza nell'ambito familiare e il miglioramento della qualità della vita;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c11">
+						<an:point id="d146e255">
 							<an:num>
 								<an:i>l)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c11b1">
+							<an:content id="d146e260">
 								<an:p>promuove intese con le regioni, gli enti locali e le associazioni del privato sociale dirette ad assicurare forme di sostegno alle famiglie nelle quali sono presenti anziani, finalizzate ad agevolare la loro permanenza nell'ambito familiare e l'impiego in iniziative di carattere sociale per il miglioramento della qualità della vita;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c12">
+						<an:point id="d146e263">
 							<an:num>
 								<an:i>m)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c12b1">
+							<an:content id="d146e268">
 								<an:p>esprime pareri al Ministro della salute in sede di definizione e di aggiornamento dei livelli essenziali di assistenza e delle prestazioni in essi contenute, relativamente alle attività dei consultori familiari di cui alla legge 29 luglio 1975, n. 405;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c13">
+						<an:point id="d146e271">
 							<an:num>
 								<an:i>n)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c13b1">
+							<an:content id="d146e276">
 								<an:p>esprime pareri al Ministro del lavoro e delle politiche sociali in sede di definizione e di aggiornamento dei livelli essenziali delle prestazioni sociali, di cui all'articolo 22 della legge 8 novembre 2000, n. 328;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c14">
+						<an:point id="d146e279">
 							<an:num>
 								<an:i>o)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c14b1">
+							<an:content id="d146e284">
 								<an:p>esprime pareri al Ministro delle infrastrutture e dei trasporti in sede di definizione delle convenzioni nazionali previste dall'articolo 4, comma 1, della legge 9 dicembre 1998, n. 431, e successive modificazioni;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c15">
+						<an:point id="d146e287">
 							<an:num>
 								<an:i>p)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c15b1">
+							<an:content id="d146e292">
 								<an:p>esprime pareri in sede di definizione dei parametri per la determinazione delle tariffe per l'energia elettrica e per il gas da parte della competente l'Autorità.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b4">
+				<an:paragraph id="d146e295">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b2b4b1">
+					<an:content id="d146e298">
 						<an:p>L'Autorità garante riferisce annualmente alle Camere sull'attività svolta, indicando le misure, anche legislative, opportune per l'incremento del benessere della famiglia, per la valorizzazione del ruolo e dei compiti delle associazioni familiari e per l'ulteriore attuazione della sussidiarietà orizzontale.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b5">
+				<an:paragraph id="d146e301">
 					<an:num>4. </an:num>
-					<an:list id="w1ab1ab3b2b5a">
-						<an:intro id="w1ab1ab3b2b5b1">
+					<an:list id="d146e302">
+						<an:intro id="d146e304">
 							<an:p>Per l'esercizio delle sue funzioni l'Autorità garante accede:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b2b5b2">
+						<an:point id="d146e306">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b5b2b1">
+							<an:content id="d146e311">
 								<an:p>ai documenti delle amministrazioni dello Stato;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b5b3">
+						<an:point id="d146e314">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b5b3b1">
+							<an:content id="d146e319">
 								<an:p>alle banche di dati delle amministrazioni dello Stato, anche concordando con queste idonee forme di collegamento telematico.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d146e322">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d146e325">
 					<an:i>(Ufficio dell'Autorità garante)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d146e328">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b3b2b1">
+					<an:content id="d146e331">
 						<an:p>Alle dipendenze dell'Autorità garante è posto un ufficio composto da dipendenti dello Stato e di altre amministrazioni pubbliche, collocati fuori ruolo nelle forme previste dai rispettivi ordinamenti, il cui servizio presso il medesimo ufficio è equiparato ad ogni effetto di legge a quello prestato nelle rispettive amministrazioni di provenienza. Il relativo contingente è determinato, in misura non superiore a quarantacinque unità, su proposta dell'Autorità garante, con decreto del Presidente del Consiglio dei ministri, di concerto con i Ministri dell'economia e delle finanze e per la pubblica amministrazione e l'innovazione, entro novanta giorni dalla data di elezione dei componenti dell'Autorità garante.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d146e334">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab3b4b1">
+				<an:heading id="d146e337">
 					<an:i>(Copertura finanziaria)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b4b2">
+				<an:paragraph id="d146e340">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b4b2b1">
+					<an:content id="d146e343">
 						<an:p>All'onere derivante dall'attuazione della presente legge, nel limite massimo di 500.000 euro annui a decorrere dall’anno 2013, si provvede mediante corrispondente riduzione lineare degli stanziamenti di parte corrente relativi alle autorizzazioni di spesa determinate dalla tabella C allegata alla legge 24 dicembre 2012, n. 238.</an:p>
 					</an:content>
 				</an:paragraph>
@@ -316,30 +334,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-29/345"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/345/main/relazione"/>
 							<an:FRBRdate date="2013-03-29" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="345"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-29/345/ita@2013-03-29/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/345/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-29" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-29/345/ita@2013-03-29/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/345/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-29" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-29/345/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-29/345/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

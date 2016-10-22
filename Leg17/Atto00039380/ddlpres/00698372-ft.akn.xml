@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/81"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/81/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/81"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/81/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/81/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="81"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/81/ita@2013-03-15/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/81/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/81/ita@"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/81/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/81/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/81/ita@2013-03-15/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/81/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/81/ita@.akn"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/81/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/81/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-15" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-15" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/81/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-15/81/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="w1ab1ab1b2aaab1a" showAs="Senatrice"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17750" id="w1ab1ab1b2aaab1b1" showAs="PINOTTI"/>
+				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d4e16a1327" showAs="Senatrice"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/17750" id="d4e16" showAs="PINOTTI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -50,7 +68,7 @@
 			</an:p>
 			<an:p>
 				d'iniziativa della senatrice 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">senatrice (PINOTTI)</an:docProponent>
+				<an:docProponent as="#d4e16a1327" refersTo="#d4e16">senatrice (PINOTTI)</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -58,23 +76,23 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d4e128">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d4e131">
 					<an:i>(Finalità)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d4e134">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b1b2a">
-						<an:intro id="w1ab1ab3b1b2b1">
+					<an:list id="d4e135">
+						<an:intro id="d4e137">
 							<an:p>La Repubblica, al fine di favorire la promozione e la tutela dei diritti umani, economici, sociali e sindacali delle lavoratrici e dei lavoratori e il principio dell'integrità ambientale, come enunciati nelle convenzioni internazionali sottoscritte dall'Italia e nei relativi strumenti di attuazione, anche attraverso l'adozione di specifiche iniziative di crescita della responsabilità sociale ed economica dei produttori e dei consumatori:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b1b2b2">
+						<an:point id="d4e139">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b1b2b2b1">
+							<an:content id="d4e144">
 								<an:p>
 									riconosce le attività del 
 									<an:i>Council on economic priorities accreditation Agency</an:i>
@@ -82,12 +100,12 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b2b3">
+						<an:point id="d4e150">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b1b2b3b1">
+							<an:content id="d4e155">
 								<an:p>
 									incentiva l'applicazione della certificazione 
 									<an:i>Social Accountability 8000 </an:i>
@@ -99,145 +117,145 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b2b4">
+						<an:point id="d4e167">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b1b2b4b1">
+							<an:content id="d4e172">
 								<an:p>promuove e svolge, anche d'intesa con le regioni e con le province autonome di Trento e di Bolzano, le azioni indicate dalla presente legge.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d4e175">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d4e178">
 					<an:i>(Marchio etico)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d4e181">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b2b1">
+					<an:content id="d4e184">
 						<an:p>È istituito il marchio etico, inteso come elemento distintivo delle aziende italiane socialmente responsabili.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b3">
+				<an:paragraph id="d4e187">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b2b3b1">
+					<an:content id="d4e190">
 						<an:p>Il marchio etico è approvato dall'Osservatorio di cui all'articolo 3 ed è attribuito alle aziende, in possesso della certificazione SA 8000, che ne fanno richiesta.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b4">
+				<an:paragraph id="d4e193">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b2b4b1">
+					<an:content id="d4e196">
 						<an:p>L'utilizzo del marchio etico da parte delle aziende è subordinato al mantenimento dei requisiti previsti dalla certificazione SA 8000, e dagli eventuali aggiornamenti della relativa normativa.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b5">
+				<an:paragraph id="d4e199">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b2b5b1">
+					<an:content id="d4e202">
 						<an:p>L'azienda titolare del marchio etico può utilizzarlo per tutte le forme di valorizzazione dei beni e dei servizi prodotti nonché della propria attività in generale e nelle attività di comunicazione verso l'esterno.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d4e205">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d4e208">
 					<an:i>(Osservatorio nazionale sulla responsabilità sociale delle aziende)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d4e211">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b3b2b1">
+					<an:content id="d4e214">
 						<an:p>È istituito, presso la Presidenza del Consiglio dei ministri, l'Osservatorio nazionale sulla responsabilità sociale delle aziende, di seguito denominato «Osservatorio», costituito da un ufficio di presidenza e da un comitato consultivo.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b3">
+				<an:paragraph id="d4e217">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b3b3b1">
+					<an:content id="d4e220">
 						<an:p>L'ufficio di presidenza è composto dal presidente e da due membri, scelti tra persone di comprovata indipendenza, competenza ed esperienza nelle materie giuridiche, economiche e sociali.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b4">
+				<an:paragraph id="d4e223">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b3b4b1">
+					<an:content id="d4e226">
 						<an:p>I componenti dell'ufficio di presidenza sono nominati per tre anni, possono essere confermati una sola volta e non possono esercitare, a pena di decadenza, alcuna attività professionale o di consulenza nel campo della certificazione SA 8000.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b5">
+				<an:paragraph id="d4e229">
 					<an:num>4. </an:num>
-					<an:list id="w1ab1ab3b3b5a">
-						<an:intro id="w1ab1ab3b3b5b1">
+					<an:list id="d4e230">
+						<an:intro id="d4e232">
 							<an:p>Il comitato consultivo è nominato per tre anni ed è composto:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b3b5b2">
+						<an:point id="d4e234">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b5b2b1">
+							<an:content id="d4e239">
 								<an:p>dai componenti l'ufficio di presidenza;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b3b5b3">
+						<an:point id="d4e242">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b5b3b1">
+							<an:content id="d4e247">
 								<an:p>da quattro rappresentanti delle associazioni imprenditoriali;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b3b5b4">
+						<an:point id="d4e250">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b5b4b1">
+							<an:content id="d4e255">
 								<an:p>da quattro rappresentanti delle organizzazioni sindacali maggiormente rappresentative a livello nazionale;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b3b5b5">
+						<an:point id="d4e258">
 							<an:num>
 								<an:i>d)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b5b5b1">
+							<an:content id="d4e263">
 								<an:p>da due membri in rappresentanza, rispettivamente, delle associazioni dei consumatori e degli utenti di cui all'articolo 137 del codice del consumo, di cui al decreto legislativo 6 settembre 2005, n. 206;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b3b5b6">
+						<an:point id="d4e266">
 							<an:num>
 								<an:i>e)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b5b6b1">
+							<an:content id="d4e271">
 								<an:p>da tre membri in rappresentanza, rispettivamente, degli organismi operanti negli ambiti della cooperazione internazionale, della difesa dei diritti umani e della difesa dei diritti dell'infanzia;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b3b5b7">
+						<an:point id="d4e274">
 							<an:num>
 								<an:i>f)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b5b7b1">
+							<an:content id="d4e279">
 								<an:p>da un rappresentante per ciascuno dei Ministeri dello sviluppo economico, degli affari esteri e del lavoro e delle politiche sociali;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b3b5b8">
+						<an:point id="d4e282">
 							<an:num>
 								<an:i>g)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b5b8b1">
+							<an:content id="d4e287">
 								<an:p>da tre rappresentanti delle regioni.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b6">
+				<an:paragraph id="d4e290">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b3b6b1">
+					<an:content id="d4e293">
 						<an:p>
 							I rappresentanti di cui alle lettere
 							<an:i> b), c) </an:i>
@@ -253,101 +271,101 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b7">
+				<an:paragraph id="d4e311">
 					<an:num>6. </an:num>
-					<an:content id="w1ab1ab3b3b7b1">
+					<an:content id="d4e314">
 						<an:p>L'ufficio di presidenza e il comitato consultivo sono nominati, entro sei mesi dalla data di entrata in vigore della presente legge, con decreto del Presidente del Consiglio dei ministri.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b8">
+				<an:paragraph id="d4e317">
 					<an:num>7. </an:num>
-					<an:content id="w1ab1ab3b3b8b1">
+					<an:content id="d4e320">
 						<an:p>Con decreto del Presidente del Consiglio dei ministri, da emanare entro due mesi dalla data di entrata in vigore della presente legge, sono adottate le disposizioni concernenti l'organizzazione e il funzionamento dell'Osservatorio e dei suoi organismi, il trattamento giuridico ed economico del personale ad esso assegnato, nonché le disposizioni dirette a disciplinare la gestione delle spese.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b9">
+				<an:paragraph id="d4e323">
 					<an:num>8. </an:num>
-					<an:content id="w1ab1ab3b3b9b1">
+					<an:content id="d4e326">
 						<an:p>Per le spese di funzionamento dell'Osservatorio e dei suoi organismi è istituito un apposito fondo nello stato di previsione del Ministero dell'economia e delle finanze.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d4e329">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab3b4b1">
+				<an:heading id="d4e332">
 					<an:i>(Attività dell'Osservatorio)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b4b2">
+				<an:paragraph id="d4e335">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b4b2a">
-						<an:intro id="w1ab1ab3b4b2b1">
+					<an:list id="d4e336">
+						<an:intro id="d4e338">
 							<an:p>L'Osservatorio promuove e svolge le iniziative volte ad accrescere il principio della responsabilità sociale delle aziende italiane. In particolare, sono assegnati all'Osservatorio i seguenti compiti:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b4b2b2">
+						<an:point id="d4e340">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b4b2b2b1">
+							<an:content id="d4e345">
 								<an:p>approvare il marchio etico e provvedere all'attribuzione, alla sospensione e alla revoca dello stesso alle aziende a seguito delle procedure di accertamento e di deliberazione assunte in collaborazione con il CEPAA;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b4b2b3">
+						<an:point id="d4e348">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b4b2b3b1">
+							<an:content id="d4e353">
 								<an:p>eseguire ricerche per fornire le più ampie informazioni sul contesto economico, sociale e ambientale in cui è avvenuta ogni fase produttiva e commerciale dei beni e dei servizi collocati sul mercato;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b4b2b4">
+						<an:point id="d4e356">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b4b2b4b1">
+							<an:content id="d4e361">
 								<an:p>diffondere i risultati relativi alle proprie attività, utilizzando tutti i mezzi di comunicazione, compresi quelli di natura istituzionale;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b4b2b5">
+						<an:point id="d4e364">
 							<an:num>
 								<an:i>d)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b4b2b5b1">
+							<an:content id="d4e369">
 								<an:p>promuovere e realizzare campagne di pubblicizzazione del marchio etico e di sensibilizzazione dei cittadini e delle aziende sul tema della responsabilità sociale;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b4b2b6">
+						<an:point id="d4e372">
 							<an:num>
 								<an:i>e)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b4b2b6b1">
+							<an:content id="d4e377">
 								<an:p>curare la tenuta dell'albo delle aziende italiane in possesso del marchio etico;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b4b2b7">
+						<an:point id="d4e380">
 							<an:num>
 								<an:i>f)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b4b2b7b1">
+							<an:content id="d4e385">
 								<an:p>intrattenere i rapporti con il CEPAA, con l'ILO e con altri organismi nazionali e internazionali, al fine di favorire l'ulteriore diffusione del principio della responsabilità sociale.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b3">
+				<an:paragraph id="d4e388">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b4b3b1">
+					<an:content id="d4e391">
 						<an:p>L'uso improprio del marchio etico è sanzionato con le modalità stabilite dall'Osservatorio.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b4">
+				<an:paragraph id="d4e394">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b4b4b1">
+					<an:content id="d4e397">
 						<an:p>
 							Qualsiasi cittadino, ente od organismo può ricorrere all'Osservatorio per segnalare violazioni alla certificazione SA 8000 da parte di un'azienda e richiedere la sospensione o la revoca dell'utilizzo del marchio etico secondo le modalità di cui al comma 1, lettera 
 							<an:i>a)</an:i>
@@ -355,37 +373,37 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b5">
+				<an:paragraph id="d4e403">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b4b5b1">
+					<an:content id="d4e406">
 						<an:p>Entro il 30 aprile di ogni anno, l'Osservatorio trasmette al Parlamento una relazione sull'attività svolta nell'anno precedente.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d4e409">
 				<an:num>Art. 5.</an:num>
-				<an:heading id="w1ab1ab3b5b1">
+				<an:heading id="d4e412">
 					<an:i>
 						(Modifica della disciplina sul sostegno
 						<an:eol/>
 						all'esportazione)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b5b2">
+				<an:paragraph id="d4e417">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b5b2b1">
+					<an:content id="d4e420">
 						<an:p>All'articolo 7, comma 1, della legge 26 febbraio 1987, n. 49, è aggiunto, in fine, il seguente periodo: «L'accesso ai crediti agevolati è rivolto in via prioritaria ai soggetti titolari del marchio etico rilasciato dall'Osservatorio nazionale sulla responsabilità sociale delle aziende».</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b3">
+				<an:paragraph id="d4e423">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b5b3b1">
+					<an:content id="d4e426">
 						<an:p>All'articolo 4, comma 1, della legge 24 aprile 1990, n. 100, e successive modificazioni, è aggiunto, in fine, il seguente periodo: «Il medesimo soggetto gestore concede in via prioritaria crediti agevolati ai soggetti titolari del marchio etico rilasciato dall'Osservatorio nazionale sulla responsabilità sociale delle aziende».</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b4">
+				<an:paragraph id="d4e429">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b5b4b1">
+					<an:content id="d4e432">
 						<an:p>All'articolo 2 del decreto legislativo 31 marzo 1998, n. 143, è aggiunto, in fine, il seguente comma:</an:p>
 						<an:p>
 							«
@@ -394,56 +412,56 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b5">
+				<an:paragraph id="d4e440">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b5b5b1">
+					<an:content id="d4e443">
 						<an:p>All'articolo 2 del decreto-legge 28 maggio 1981, n. 251, convertito, con modificazioni, dalla legge 29 luglio 1981, n. 394, e successive modificazioni, è aggiunto, in fine, il seguente comma:</an:p>
 						<an:p>«L'accesso ai finanziamenti del fondo di cui al primo comma è riservato in via prioritaria ai soggetti titolari del marchio etico rilasciato dall'Osservatorio nazionale sulla responsabilità sociale delle aziende».</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b6">
+			<an:article id="d4e448">
 				<an:num>Art. 6.</an:num>
-				<an:heading id="w1ab1ab3b6b1">
+				<an:heading id="d4e451">
 					<an:i>
 						(Misure in favore delle piccole
 						<an:eol/>
 						e medie imprese)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b6b2">
+				<an:paragraph id="d4e456">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b6b2b1">
+					<an:content id="d4e459">
 						<an:p>Alle piccole e medie imprese, come definite ai sensi della vigente disciplina dell'Unione europea e fatte salve le limitazioni settoriali stabilite dalla Commissione europea, che ottengono l'attribuzione del marchio etico è concesso un credito di imposta.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b3">
+				<an:paragraph id="d4e462">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b6b3b1">
+					<an:content id="d4e465">
 						<an:p>Sono esclusi dal beneficio del credito di imposta di cui al comma 1 del presente articolo i soggetti previsti dall'articolo 74 del testo unico delle imposte sui redditi, di cui al decreto del Presidente della Repubblica 22 dicembre 1986, n. 917, e successive modificazioni.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b4">
+				<an:paragraph id="d4e468">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b6b4b1">
+					<an:content id="d4e471">
 						<an:p>Il credito di imposta è riconosciuto alle imprese di cui al comma 1 nella misura pari alla spesa sostenuta per le procedure utilizzate per l'ottenimento della certificazione SA 8000 e del marchio etico ed è utilizzabile, a decorrere dal 1º gennaio dell'anno successivo all'attribuzione del marchio, in compensazione, ai sensi del decreto legislativo 9 luglio 1997, n. 241.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b5">
+				<an:paragraph id="d4e474">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b6b5b1">
+					<an:content id="d4e477">
 						<an:p>Il credito di imposta di cui al comma 1 non concorre alla formazione del reddito e del valore della produzione rilevante ai fini dell'imposta regionale sulle attività produttive e ai fini del rapporto stabilito dall'articolo 96 del testo unico delle imposte sui redditi, di cui al decreto del Presidente della Repubblica 22 dicembre 1986, n. 917, e successive modificazioni.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b6">
+				<an:paragraph id="d4e480">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b6b6b1">
+					<an:content id="d4e483">
 						<an:p>Il credito di imposta di cui al comma 1 spetta a condizione che le spese sostenute per ottenere la certificazione SA 8000 e il marchio etico siano documentate ai sensi della vigente normativa fiscale.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b7">
+				<an:paragraph id="d4e486">
 					<an:num>6. </an:num>
-					<an:content id="w1ab1ab3b6b7b1">
+					<an:content id="d4e489">
 						<an:p>
 							Al credito di imposta di cui al presente articolo si applica la disciplina relativa agli aiuti d'importanza minore («
 							<an:i>de minimis</an:i>
@@ -452,20 +470,20 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b7">
+			<an:article id="d4e495">
 				<an:num>Art. 7.</an:num>
-				<an:heading id="w1ab1ab3b7b1">
+				<an:heading id="d4e498">
 					<an:i>(Copertura finanziaria)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b7b2">
+				<an:paragraph id="d4e501">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b7b2b1">
+					<an:content id="d4e504">
 						<an:p>Agli oneri derivanti dall'attuazione della presente legge, determinati nel limite massimo di 2 milioni di euro per gli anni 2013, 2014 e 2015, si provvede mediante corrispondente riduzione dell'autorizzazione di spesa relativa al Fondo per interventi strutturali di politica economica, di cui all'articolo 10, comma 5, del decreto-legge 29 novembre 2004, n. 282, convertito, con modificazioni, dalla legge 27 dicembre 2004, n. 307.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b3">
+				<an:paragraph id="d4e507">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b7b3b1">
+					<an:content id="d4e510">
 						<an:p>Il Ministro dell'economia e delle finanze è autorizzato ad apportare, con propri decreti, le occorrenti variazioni di bilancio.</an:p>
 					</an:content>
 				</an:paragraph>
@@ -474,30 +492,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/81"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/81/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="81"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/81/ita@2013-03-15/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/81/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/81/ita@2013-03-15/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/81/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/81/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-15/81/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

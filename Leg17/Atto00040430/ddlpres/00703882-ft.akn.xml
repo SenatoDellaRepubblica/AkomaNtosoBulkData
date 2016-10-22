@@ -4,37 +4,55 @@
 		<an:meta>
 			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-04-10/445"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-04-10/445/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-10/445"/>
 					<an:FRBRdate date="2013-04-10" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/445/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/445/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="445"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-04-10/445/ita@2013-04-10/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-04-10/445/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-10/445/ita@"/>
 					<an:FRBRdate date="2013-04-10" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/445/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/445/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-04-10/445/ita@2013-04-10/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-04-10/445/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-10/445/ita@.akn"/>
 					<an:FRBRdate date="2013-04-10" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/445/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/445/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-04-10" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-04-10" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-04-10/445/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-04-10/445/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="w1ab1ab1b2aaab1a" showAs="Senatrice"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25198" id="w1ab1ab1b2aaab1b1" showAs="RIZZOTTI"/>
+				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d465e16a1327" showAs="Senatrice"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/25198" id="d465e16" showAs="RIZZOTTI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -50,7 +68,7 @@
 			</an:p>
 			<an:p>
 				d’iniziativa della senatrice 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">senatrice (RIZZOTTI)</an:docProponent>
+				<an:docProponent as="#d465e16a1327" refersTo="#d465e16">senatrice (RIZZOTTI)</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -58,46 +76,46 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d465e83">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d465e86">
 					<an:i>(Finalità)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d465e89">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d465e92">
 						<an:p>La presente legge ha lo scopo di tutelare le persone affette da obesità grave assicurando loro ed alle loro famiglie il sostegno e l'assistenza necessari per favorirne i processi educativi, l'integrazione e la partecipazione alla vita sociale, ed ottenere così la piena fruizione dei diritti.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d465e95">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d465e98">
 					<an:i>(Definizione dell'obesità grave)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d465e101">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b2b1">
+					<an:content id="d465e104">
 						<an:p>È considerato obeso grave il soggetto il cui indice di massa corporea (BMI) supera il valore di 40 ovvero il cui indice di massa corporea superi di oltre il 60 per cento il cinquantesimo centile per età e sesso, nel caso di soggetti di età inferiore ai diciotto anni.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b3">
+				<an:paragraph id="d465e107">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b2b3b1">
+					<an:content id="d465e110">
 						<an:p>La diagnosi di obesità grave deve essere effettuata da una struttura pubblica rivolta alla diagnosi e cura dell'obesità dell'adulto e dell'età pediatrica, o da analoga struttura privata, purché convenzionata con il Servizio sanitario nazionale e da questa riconosciuta.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d465e113">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d465e116">
 					<an:i>(Riconoscimento dell'obesità come</an:i>
 					 handicap
 					<an:i>)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d465e122">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b3b2b1">
+					<an:content id="d465e125">
 						<an:p>
 							L'obesità grave è considerata condizione oggettiva di 
 							<an:i>handicap</an:i>
@@ -107,27 +125,27 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b3">
+				<an:paragraph id="d465e134">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b3b3b1">
+					<an:content id="d465e137">
 						<an:p>Ai fini della concessione delle provvidenze e dei benefìci previsti dalla legge 30 marzo 1971, n. 118, il parametro relativo all'indice di massa corporea (BMI) è 40.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d465e140">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab3b4b1">
+				<an:heading id="d465e143">
 					<an:i>(Diritto alla mobilità)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b4b2">
+				<an:paragraph id="d465e146">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b4b2b1">
+					<an:content id="d465e149">
 						<an:p>Al fine di favorire l'integrazione sociale, lavorativa e nelle attività ludico-sportive sono intraprese apposite iniziative a vantaggio dei soggetti obesi. In particolare, sono previste specifiche misure di sostegno socio-assistenziale alle famiglie nelle quali sono presenti soggetti affetti da obesità grave ed agevolazioni fiscali per le iniziative volte alla prevenzione e cura dell'infermità.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b3">
+				<an:paragraph id="d465e152">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b4b3b1">
+					<an:content id="d465e155">
 						<an:p>
 							Ai fini di garantire il diritto alla mobilità dei soggetti obesi è prevista la realizzazione di interventi finalizzati alla eliminazione delle barriere architettoniche, in conformità alla legislazione vigente in materia e, in particolare, alla modifica degli 
 							<an:i>standard</an:i>
@@ -135,75 +153,75 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b4">
+				<an:paragraph id="d465e161">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b4b4b1">
+					<an:content id="d465e164">
 						<an:p>Gli ospedali pubblici e le cliniche private provvedono, entro sei mesi dalla data di entrata in vigore della presente legge, a dotare i reparti ospedalieri, ivi inclusi i reparti di pediatria, di arredi e di strumenti diagnostico-terapeutici adeguati all'uso e all'accesso da parte dei soggetti obesi, con particolare riferimento al trattamento in urgenza di questa categoria.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b5">
+				<an:paragraph id="d465e167">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b4b5b1">
+					<an:content id="d465e170">
 						<an:p>I medicinali per la terapia dell'obesità e delle sue complicanze prescritti agli obesi gravi sono considerati tutti di fascia A. Il Ministero della salute provvede a definire una «lista di prodotti dietetici o integratori alimentari finalizzati all'uso nei soggetti obesi» a carico del Servizio sanitario nazionale. I controlli laboratoristici e diagnostici prescritti in relazione alla malattia sono erogati a titolo gratuito.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d465e173">
 				<an:num>Art. 5.</an:num>
-				<an:heading id="w1ab1ab3b5b1">
+				<an:heading id="d465e176">
 					<an:i>(Diritto all'assicurazione)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b5b2">
+				<an:paragraph id="d465e179">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b5b2b1">
+					<an:content id="d465e182">
 						<an:p>Alle compagnie assicurative è fatto obbligo di provvedere a stipulare contratti, a richiesta, alle condizioni meno onerose, privilegiando polizze stipulate con le associazioni di categoria.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b3">
+				<an:paragraph id="d465e185">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b5b3b1">
+					<an:content id="d465e188">
 						<an:p>In nessun caso la presenza o l'insorgenza di obesità grave potrà essere considerata motivo di legittima decadenza di validità della polizza assicurativa stipulata, né motivo di esclusione dalla stipula della polizza assicurativa o sanitaria stessa.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b6">
+			<an:article id="d465e191">
 				<an:num>Art. 6.</an:num>
-				<an:heading id="w1ab1ab3b6b1">
+				<an:heading id="d465e194">
 					<an:i>(Programmi di ricerca e informazione)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b6b2">
+				<an:paragraph id="d465e197">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b6b2b1">
+					<an:content id="d465e200">
 						<an:p>Il Ministero della salute provvede, di concerto con il Ministero dell’istruzione, dell'università e della ricerca e il Ministero dello sviluppo economico, alla realizzazione di una campagna di informazione permanente per una corretta alimentazione tramite le strutture competenti.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b3">
+				<an:paragraph id="d465e203">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b6b3b1">
+					<an:content id="d465e206">
 						<an:p>Il Ministero della salute promuove, altresì, specifici programmi di ricerca idonei a migliorare le conoscenze cliniche di base sull'obesità ai fini dell'aggiornamento delle misure e delle strategie di prevenzione, di diagnosi precoce, di terapia e di riabilitazione delle patologie abitualmente associate, avvalendosi della collaborazione delle associazioni qualificate già operanti nel settore.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b4">
+				<an:paragraph id="d465e209">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b6b4b1">
+					<an:content id="d465e212">
 						<an:p>Nell'ambito dei programmi di cui al comma 2 sono previsti specifici rilevamenti dei soggetti affetti da obesità, avvalendosi dei dati forniti dalle strutture specialistiche del Servizio sanitario nazionale e dalle strutture della medicina scolastica</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b5">
+				<an:paragraph id="d465e215">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b6b5b1">
+					<an:content id="d465e218">
 						<an:p>Nei casi di obesità grave è prevista l'erogazione di prestazioni idonee ad agevolare l'assistenza medica e farmaceutica. In particolare, è prevista l'istituzione di appositi centri multidisciplinari specializzati nella ricerca, nella prevenzione e nella cura e riabilitazione dei soggetti obesi, ovvero il supporto informativo, di ricerca e finanziario alle attività di tali centri, qualora già istituiti o da istituire nell'ambito delle competenze delle singole regioni.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b6">
+				<an:paragraph id="d465e221">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b6b6b1">
+					<an:content id="d465e224">
 						<an:p>Il Ministero dell’istruzione, dell'università e della ricerca prevede nei piani di studio della scuola dell'obbligo e della facoltà di medicina l'insegnamento delle principali norme di igiene dietetica, e, quando si evidenzino situazioni di rischio legate ad eccesso ponderale, provvede, mediante le strutture della medicina scolastica e dei competenti organi istituzionali, alla tutela dei soggetti interessati.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b7">
+				<an:paragraph id="d465e227">
 					<an:num>6. </an:num>
-					<an:content id="w1ab1ab3b6b7b1">
+					<an:content id="d465e230">
 						<an:p>È istituito, presso il Ministero della salute, un Osservatorio nazionale sull'obesità in cui confluiscono i dati epidemiologici e diagnostico-terapeutici sull'argomento in collaborazione con le società scientifiche già operanti nel settore.</an:p>
 					</an:content>
 				</an:paragraph>
@@ -215,27 +233,32 @@
 					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-04-10/445"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-10/445/main/relazione"/>
 							<an:FRBRdate date="2013-04-10" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="445"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-04-10/445/ita@2013-04-10/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-10/445/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-04-10" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-04-10/445/ita@2013-04-10/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-10/445/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-04-10" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-04-10/445/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-04-10/445/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

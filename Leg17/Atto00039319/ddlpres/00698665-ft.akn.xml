@@ -1,41 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/21"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/21/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/21"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/21/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/21/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="21"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/21/ita@2013-03-15/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/21/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/21/ita@"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/21/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/21/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/21/ita@2013-03-15/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/21/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/21/ita@.akn"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/21/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/21/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-15" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-15" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/21/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-15/21/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1aaab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/656" id="w1aaab1b2aaab1b1" showAs="COMPAGNA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/1426" id="w1aaab1b2aaab3b1" showAs="MANCONI"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d26e15a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/656" id="d26e15" showAs="COMPAGNA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/1426" id="d26e17" showAs="MANCONI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -51,158 +69,158 @@
 			</an:p>
 			<an:p>
 				d’iniziativa dei senatori 
-				<an:docProponent as="#w1aaab1b2aaab1a" refersTo="#w1aaab1b2aaab1b1">COMPAGNA</an:docProponent>
+				<an:docProponent as="#d26e15a1327" refersTo="#d26e15">COMPAGNA</an:docProponent>
 				 e 
-				<an:docProponent as="#w1aaab1b2aaab1a" refersTo="#w1aaab1b2aaab3b1">MANCONI</an:docProponent>
+				<an:docProponent as="#d26e15a1327" refersTo="#d26e17">MANCONI</an:docProponent>
 			</an:p>
 			<an:p>COMUNICATO ALLA PRESIDENZA IL 15 MARZO 2013</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:chapter id="w1aaab3b1">
+			<an:chapter id="d26e75">
 				<an:num>Capo I</an:num>
-				<an:heading id="w1aaab3b1b1">AMNISTIA</an:heading>
-				<an:article id="w1aaab3b1b2">
+				<an:heading id="d26e78">AMNISTIA</an:heading>
+				<an:article id="d26e80">
 					<an:num>Art. 1.</an:num>
-					<an:heading id="w1aaab3b1b2b1">
+					<an:heading id="d26e83">
 						<an:i>(Amnistia)</an:i>
 					</an:heading>
-					<an:paragraph id="w1aaab3b1b2b2">
+					<an:paragraph id="d26e86">
 						<an:num>1. </an:num>
-						<an:list id="w1aaab3b1b2b2a">
-							<an:intro id="w1aaab3b1b2b2b1">
+						<an:list id="d26e87">
+							<an:intro id="d26e89">
 								<an:p>È concessa amnistia:</an:p>
 							</an:intro>
-							<an:point id="w1aaab3b1b2b2b2">
+							<an:point id="d26e91">
 								<an:num>
 									<an:i>a)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b2b2b2b1">
+								<an:content id="d26e96">
 									<an:p>per ogni reato per il quale è stabilita una pena detentiva non superiore nel massimo a quattro anni, ovvero una pena pecuniaria, sola o congiunta alla suddetta pena detentiva;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b2b2b3">
+							<an:point id="d26e99">
 								<an:num>
 									<an:i>b)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b2b2b3b1">
+								<an:content id="d26e104">
 									<an:p>per i reati previsti dall'articolo 57 del codice penale commessi dal direttore o dal vicedirettore responsabile, quando è noto l'autore della pubblicazione;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b2b2b4">
+							<an:point id="d26e107">
 								<an:num>
 									<an:i>c)</an:i>
 									 
 								</an:num>
-								<an:list id="w1aaab3b1b2b2b4a">
-									<an:intro id="w1aaab3b1b2b2b4b1">
+								<an:list id="d26e108">
+									<an:intro id="d26e112">
 										<an:p>per i delitti previsti dai seguenti articoli del codice penale:</an:p>
 									</an:intro>
-									<an:point id="w1aaab3b1b2b2b4b2">
+									<an:point id="d26e114">
 										<an:num>1)</an:num>
-										<an:content id="w1aaab3b1b2b2b4b2b1">
+										<an:content id="d26e117">
 											<an:p> 336, primo comma (violenza o minaccia a un pubblico ufficiale), e 337 (resistenza a un pubblico ufficiale), sempre che non ricorra taluna delle ipotesi previste dall'articolo 339 del codice penale o il fatto non abbia cagionato lesioni personali gravi o gravissime ovvero la morte;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b2b2b4b3">
+									<an:point id="d26e120">
 										<an:num>2)</an:num>
-										<an:content id="w1aaab3b1b2b2b4b3b1">
+										<an:content id="d26e123">
 											<an:p> 372 (falsa testimonianza), quando la testimonianza verte su un reato per il quale è concessa amnistia;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b2b2b4b4">
+									<an:point id="d26e126">
 										<an:num>3)</an:num>
-										<an:content id="w1aaab3b1b2b2b4b4b1">
+										<an:content id="d26e129">
 											<an:p> 588, secondo comma (rissa), sempre che dal fatto non siano derivate lesioni personali gravi o gravissime ovvero la morte;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b2b2b4b5">
+									<an:point id="d26e132">
 										<an:num>4)</an:num>
-										<an:content id="w1aaab3b1b2b2b4b5b1">
+										<an:content id="d26e135">
 											<an:p> 614, quarto comma (violazione di domicilio), limitatamente all'ipotesi in cui il fatto è stato commesso con violenza sulle cose;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b2b2b4b6">
+									<an:point id="d26e138">
 										<an:num>5)</an:num>
-										<an:content id="w1aaab3b1b2b2b4b6b1">
+										<an:content id="d26e141">
 											<an:p> 624 (furto), aggravato dalle circostanze di cui all'articolo 625, qualora ricorra una delle circostanze attenuanti previste dall'articolo 62, numeri 4) e 6), del codice penale;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b2b2b4b7">
+									<an:point id="d26e144">
 										<an:num>6)</an:num>
-										<an:content id="w1aaab3b1b2b2b4b7b1">
+										<an:content id="d26e147">
 											<an:p> 640, secondo comma (truffa), sempre che non ricorra la circostanza aggravante prevista dall'articolo 61, numero 7), del codice penale;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b2b2b4b8">
+									<an:point id="d26e150">
 										<an:num>7)</an:num>
-										<an:content id="w1aaab3b1b2b2b4b8b1">
+										<an:content id="d26e153">
 											<an:p> 648 (ricettazione), limitatamente alle ipotesi di cui al secondo comma;</an:p>
 										</an:content>
 									</an:point>
 								</an:list>
 							</an:point>
-							<an:point id="w1aaab3b1b2b2b5">
+							<an:point id="d26e156">
 								<an:num>
 									<an:i>d)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b2b2b5b1">
+								<an:content id="d26e161">
 									<an:p>per il delitto di truffa militare aggravata, previsto dall'articolo 234, secondo comma, del codice penale militare di pace, sempre che non ricorra la circostanza aggravante prevista dall'articolo 61, numero 7), del codice penale;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b2b2b6">
+							<an:point id="d26e164">
 								<an:num>
 									<an:i>e)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b2b2b6b1">
+								<an:content id="d26e169">
 									<an:p>per i reati di cui agli articoli 1, 2 e 4 della legge 2 ottobre 1967, n. 895, (disposizioni per il controllo delle armi), quando ricorrano in concomitanza le attenuanti di cui agli articoli 5 e 7 della stessa legge n. 895 del 1967;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b2b2b7">
+							<an:point id="d26e172">
 								<an:num>
 									<an:i>f)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b2b2b7b1">
+								<an:content id="d26e177">
 									<an:p>per il reato di detenzione di armi o canne clandestine di cui al terzo comma dell'articolo 23 della legge 18 aprile 1975, n. 110, (norme integrative della disciplina vigente per il controllo delle armi, delle munizioni e degli esplosivi), e successive modificazioni, quando concerne armi la cui detenzione l'imputato o il condannato aveva denunciato all'autorità di pubblica sicurezza;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b2b2b8">
+							<an:point id="d26e180">
 								<an:num>
 									<an:i>g)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b2b2b8b1">
+								<an:content id="d26e185">
 									<an:p>per il reato di deposizione o abbandono di oggetti in una strada ferrata, al fine di impedire od ostacolare la libera circolazione, previsto dall'articolo 1 del decreto legislativo 22 gennaio 1948, n. 66, e successive modificazioni, commesso a causa o in occasione di manifestazioni sindacali o in conseguenza di situazioni di gravi disagi dovuti a disfunzioni di pubblici servizi o problemi abitativi, anche se il suddetto reato è aggravato dal numero o dalla riunione delle persone e dalle circostanze di cui all'articolo 61 del codice penale, fatta esclusione per quella prevista dal numero 1) del predetto articolo, nonché da quelle di cui all'articolo 112, numero 2), del codice penale, sempre che non ricorrano altre aggravanti e il fatto non abbia cagionato ad altri lesioni personali o la morte;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b2b2b9">
+							<an:point id="d26e188">
 								<an:num>
 									<an:i>h)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b2b2b9b1">
+								<an:content id="d26e193">
 									<an:p>per ogni reato commesso da minore di anni diciotto, quando il giudice ritiene che possa essere concesso il perdono giudiziale ai sensi dell'articolo 19 del regio decreto-legge 20 luglio 1934, n. 1404, convertito, con modificazioni, dalla legge 27 maggio 1935, n. 835, e successive modificazioni, ma non si applicano le disposizioni del terzo e quarto comma dell'articolo 169 del codice penale;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b2b2c10">
+							<an:point id="d26e196">
 								<an:num>
 									<an:i>i)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b2b2c10b1">
+								<an:content id="d26e201">
 									<an:p>per i reati relativi a violazioni delle norme concernenti il monopolio dei tabacchi, limitatamente alla vendita al pubblico e all'acquisto e alla detenzione di quantitativi di detti prodotti destinati alla vendita al pubblico direttamente da parte dell'agente;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b2b2c11">
+							<an:point id="d26e205">
 								<an:num>
 									<an:i>l)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b2b2c11b1">
+								<an:content id="d26e210">
 									<an:p>
 										per i reati di cui all'articolo 5 del decreto legislativo 10 marzo 2000, n. 74, concernente la omessa dichiarazione annuale relativa alle imposte sui redditi o all'imposta sul valore aggiunto, commessi in relazione ad attività commerciali svolte da enti pubblici e privati diversi dalle società che non hanno per oggetto esclusivo o principale l'esercizio di attività commerciali, di cui all'articolo 87, comma 1, lettere 
 										<an:i>c) </an:i>
@@ -212,169 +230,169 @@
 									</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b2b2c12">
+							<an:point id="d26e219">
 								<an:num>
 									<an:i>m)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b2b2c12b1">
+								<an:content id="d26e224">
 									<an:p>per i reati previsti dall'articolo 73, commi 4 e 5, del testo unico delle leggi in materia di disciplina degli stupefacenti e sostanze psicotrope, prevenzione, cura e riabilitazione dei relativi stati di tossicodipendenza, di cui al decreto del Presidente della Repubblica 9 ottobre 1990, n. 309, sempre che non ricorra taluna delle circostanze aggravanti di cui all'articolo 80 dello stesso testo unico;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b2b2c13">
+							<an:point id="d26e227">
 								<an:num>
 									<an:i>n)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b2b2c13b1">
+								<an:content id="d26e232">
 									<an:p>per i reati di cui al capo I del titolo XI del libro quinto del codice civile.</an:p>
 								</an:content>
 							</an:point>
 						</an:list>
 					</an:paragraph>
-					<an:paragraph id="w1aaab3b1b2b3">
+					<an:paragraph id="d26e235">
 						<an:num>2. </an:num>
-						<an:content id="w1aaab3b1b2b3b1">
+						<an:content id="d26e238">
 							<an:p>Non si applica il quinto comma dell'articolo 151 del codice penale.</an:p>
 						</an:content>
 					</an:paragraph>
 				</an:article>
-				<an:article id="w1aaab3b1b3">
+				<an:article id="d26e241">
 					<an:num>Art. 2.</an:num>
-					<an:heading id="w1aaab3b1b3b1">
+					<an:heading id="d26e244">
 						<an:i>(Esclusioni oggettive dall'amnistia)</an:i>
 					</an:heading>
-					<an:paragraph id="w1aaab3b1b3b2">
+					<an:paragraph id="d26e247">
 						<an:num>1. </an:num>
-						<an:list id="w1aaab3b1b3b2a">
-							<an:intro id="w1aaab3b1b3b2b1">
+						<an:list id="d26e248">
+							<an:intro id="d26e250">
 								<an:p>L'amnistia non si applica:</an:p>
 							</an:intro>
-							<an:point id="w1aaab3b1b3b2b2">
+							<an:point id="d26e252">
 								<an:num>
 									<an:i>a)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b3b2b2b1">
+								<an:content id="d26e257">
 									<an:p>ai reati commessi in occasione di calamità naturali approfittando delle condizioni determinate da tali eventi, ovvero in danno di persone danneggiate, ovvero al fine di approfittare illecitamente di provvedimenti adottati dallo Stato o da altro ente pubblico per far fronte alla calamità, risarcirne i danni e portare sollievo alla popolazione e all'economia dei luoghi colpiti dagli eventi;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b3b2b3">
+							<an:point id="d26e260">
 								<an:num>
 									<an:i>b)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b3b2b3b1">
+								<an:content id="d26e265">
 									<an:p>ai reati commessi dai pubblici ufficiali contro la pubblica amministrazione, previsti dal capo I del titolo II del libro secondo del codice penale, ed ai reati di falsità in atti previsti dal capo III del titolo VII del libro secondo del codice penale, quando siano compiuti in relazione ad eventi di calamità naturali ovvero ai conseguenti interventi di ricostruzione e sviluppo dei territori colpiti;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b3b2b4">
+							<an:point id="d26e268">
 								<an:num>
 									<an:i>c) </an:i>
 								</an:num>
-								<an:list id="w1aaab3b1b3b2b4a">
-									<an:intro id="w1aaab3b1b3b2b4b1">
+								<an:list id="d26e269">
+									<an:intro id="d26e272">
 										<an:p>ai reati previsti dai seguenti articoli del codice penale:</an:p>
 									</an:intro>
-									<an:point id="w1aaab3b1b3b2b4b2">
+									<an:point id="d26e274">
 										<an:num>1)</an:num>
-										<an:content id="w1aaab3b1b3b2b4b2b1">
+										<an:content id="d26e277">
 											<an:p> 316 (peculato mediante profitto dell'errore altrui);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4b3">
+									<an:point id="d26e280">
 										<an:num>2)</an:num>
-										<an:content id="w1aaab3b1b3b2b4b3b1">
+										<an:content id="d26e283">
 											<an:p> 354 (turbata libertà degli incanti e astensione dagli incanti), quando siano compiuti in relazione ad eventi di calamità naturali ovvero ai conseguenti interventi di ricostruzione e sviluppo dei territori colpiti;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4b4">
+									<an:point id="d26e286">
 										<an:num>3)</an:num>
-										<an:content id="w1aaab3b1b3b2b4b4b1">
+										<an:content id="d26e289">
 											<an:p> 355 (inadempimento di contratti di pubbliche forniture), salvo che si tratti di fatto commesso per colpa;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4b5">
+									<an:point id="d26e292">
 										<an:num>4)</an:num>
-										<an:content id="w1aaab3b1b3b2b4b5b1">
+										<an:content id="d26e295">
 											<an:p> 371 (falso giuramento della parte);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4b6">
+									<an:point id="d26e298">
 										<an:num>5)</an:num>
-										<an:content id="w1aaab3b1b3b2b4b6b1">
+										<an:content id="d26e301">
 											<an:p> 372 (falsa testimonianza), quando la deposizione verte su fatti relativi all'esercizio di pubbliche funzioni espletate dal testimone;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4b7">
+									<an:point id="d26e304">
 										<an:num>6)</an:num>
-										<an:content id="w1aaab3b1b3b2b4b7b1">
+										<an:content id="d26e307">
 											<an:p> 378 (favoreggiamento personale), fuori delle ipotesi previste dal terzo comma, salvo che si tratti di fatto commesso in relazione a reati per i quali è concessa amnistia;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4b8">
+									<an:point id="d26e310">
 										<an:num>7)</an:num>
-										<an:content id="w1aaab3b1b3b2b4b8b1">
+										<an:content id="d26e313">
 											<an:p> 385 (evasione), limitatamente alle ipotesi previste dal secondo comma;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4b9">
+									<an:point id="d26e316">
 										<an:num>8)</an:num>
-										<an:content id="w1aaab3b1b3b2b4b9b1">
+										<an:content id="d26e319">
 											<an:p> 391 (procurata inosservanza di misure di sicurezza detentive), limitatamente alle ipotesi previste dal primo comma. Tale esclusione non si applica ai minori di anni diciotto;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c10">
+									<an:point id="d26e322">
 										<an:num>9)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c10b1">
+										<an:content id="d26e325">
 											<an:p> 420 (attentato a impianti di pubblica utilità);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c11">
+									<an:point id="d26e329">
 										<an:num>10)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c11b1">
+										<an:content id="d26e332">
 											<an:p> 443 (commercio o somministrazione di medicinali guasti);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c12">
+									<an:point id="d26e335">
 										<an:num>11)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c12b1">
+										<an:content id="d26e338">
 											<an:p> 444 (commercio di sostanze alimentari nocive);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c13">
+									<an:point id="d26e341">
 										<an:num>12)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c13b1">
+										<an:content id="d26e344">
 											<an:p> 445 (somministrazione di medicinali in modo pericoloso per la salute pubblica);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c14">
+									<an:point id="d26e347">
 										<an:num>13)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c14b1">
+										<an:content id="d26e350">
 											<an:p> 452 (delitti colposi contro la salute pubblica), primo comma, numero 3), e secondo comma;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c15">
+									<an:point id="d26e353">
 										<an:num>14)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c15b1">
+										<an:content id="d26e356">
 											<an:p> 471 (uso abusivo di sigilli e strumenti veri), quando sia compiuto in relazione ad eventi di calamità naturali ovvero ai conseguenti interventi di ricostruzione e sviluppo dei territori colpiti;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c16">
+									<an:point id="d26e359">
 										<an:num>15)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c16b1">
+										<an:content id="d26e362">
 											<an:p> 478 (falsità materiale commessa dal pubblico ufficiale in copie autentiche di atti pubblici o privati e in attestati del contenuto di atti);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c17">
+									<an:point id="d26e365">
 										<an:num>16)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c17b1">
+										<an:content id="d26e368">
 											<an:p> 501 (rialzo e ribasso fraudolento di prezzi sul pubblico mercato o nelle borse di commercio);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c18">
+									<an:point id="d26e371">
 										<an:num>17)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c18b1">
+										<an:content id="d26e374">
 											<an:p>
 												 501-
 												<an:i>bis</an:i>
@@ -382,33 +400,33 @@
 											</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c19">
+									<an:point id="d26e380">
 										<an:num>18)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c19b1">
+										<an:content id="d26e383">
 											<an:p> 590, secondo e terzo comma (lesioni personali colpose), limitatamente ai fatti commessi con violazione delle norme per la prevenzione degli infortuni sul lavoro o relative all'igiene del lavoro, che abbiano determinato le conseguenze previste dal primo comma, numero 2), o dal secondo comma dell'articolo 583 del codice penale;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c20">
+									<an:point id="d26e386">
 										<an:num>19)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c20b1">
+										<an:content id="d26e389">
 											<an:p> 595, terzo comma (diffamazione), quando l'offesa consiste nell'attribuzione di un fatto determinato ed è commessa con mezzi di diffusione radiofonica o televisiva;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c21">
+									<an:point id="d26e392">
 										<an:num>20)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c21b1">
+										<an:content id="d26e395">
 											<an:p> 610 (violenza privata), nelle ipotesi di cui al secondo comma;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c22">
+									<an:point id="d26e399">
 										<an:num>21)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c22b1">
+										<an:content id="d26e402">
 											<an:p> 733 (danneggiamento al patrimonio archeologico, storico o artistico nazionale);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c23">
+									<an:point id="d26e405">
 										<an:num>22)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c23b1">
+										<an:content id="d26e408">
 											<an:p>
 												 733–
 												<an:i>bis</an:i>
@@ -418,41 +436,41 @@
 											</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b4c24">
+									<an:point id="d26e417">
 										<an:num>23)</an:num>
-										<an:content id="w1aaab3b1b3b2b4c24b1">
+										<an:content id="d26e420">
 											<an:p> 734 (distruzione o deturpamento di bellezze naturali);</an:p>
 										</an:content>
 									</an:point>
 								</an:list>
 							</an:point>
-							<an:point id="w1aaab3b1b3b2b5">
+							<an:point id="d26e423">
 								<an:num>
 									<an:i>d)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b3b2b5b1">
+								<an:content id="d26e428">
 									<an:p>al delitto previsto dall'articolo 218 del codice penale militare di pace (peculato militare mediante profitto dell'errore altrui);</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b3b2b6">
+							<an:point id="d26e431">
 								<an:num>
 									<an:i>e)</an:i>
 									 
 								</an:num>
-								<an:list id="w1aaab3b1b3b2b6a">
-									<an:intro id="w1aaab3b1b3b2b6b1">
+								<an:list id="d26e432">
+									<an:intro id="d26e436">
 										<an:p>ai reati previsti:</an:p>
 									</an:intro>
-									<an:point id="w1aaab3b1b3b2b6b2">
+									<an:point id="d26e438">
 										<an:num>1)</an:num>
-										<an:content id="w1aaab3b1b3b2b6b2b1">
+										<an:content id="d26e441">
 											<an:p> dagli articoli 5 e 6 della legge 30 aprile 1962, n. 283, e successive modificazioni, in materia di disciplina igienica delle sostanze alimentari e delle bevande;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b6b3">
+									<an:point id="d26e444">
 										<an:num>2)</an:num>
-										<an:content id="w1aaab3b1b3b2b6b3b1">
+										<an:content id="d26e447">
 											<an:p>
 												 dall'articolo 44, comma 1, lettere 
 												<an:i>b)</an:i>
@@ -462,74 +480,74 @@
 											</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b6b4">
+									<an:point id="d26e456">
 										<an:num>3)</an:num>
-										<an:content id="w1aaab3b1b3b2b6b4b1">
+										<an:content id="d26e459">
 											<an:p> dall'articolo 137 del decreto legislativo 3 aprile 2006, n. 152, (norme in materia ambientale);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b6b5">
+									<an:point id="d26e462">
 										<an:num>4)</an:num>
-										<an:content id="w1aaab3b1b3b2b6b5b1">
+										<an:content id="d26e465">
 											<an:p> dall'articolo 9, sesto e settimo comma, della legge 16 aprile 1973, n. 171, (interventi per la salvaguardia di Venezia) e successive modificazioni;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b6b6">
+									<an:point id="d26e468">
 										<an:num>5)</an:num>
-										<an:content id="w1aaab3b1b3b2b6b6b1">
+										<an:content id="d26e471">
 											<an:p> dal capo I del titolo VI della parte quarta del decreto legislativo 30 aprile 2006, n. 152, in materia di rifiuti pericolosi;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b6b7">
+									<an:point id="d26e474">
 										<an:num>6)</an:num>
-										<an:content id="w1aaab3b1b3b2b6b7b1">
+										<an:content id="d26e477">
 											<an:p> dall'articolo 2 della legge 26 aprile 1983, n. 136, (biodegradabilità dei detersivi sintetici);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b6b8">
+									<an:point id="d26e480">
 										<an:num>7)</an:num>
-										<an:content id="w1aaab3b1b3b2b6b8b1">
+										<an:content id="d26e483">
 											<an:p> dagli articoli 17 e 20 della legge 31 dicembre 1982, n. 979, (disposizioni per la difesa del mare);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b6b9">
+									<an:point id="d26e486">
 										<an:num>8)</an:num>
-										<an:content id="w1aaab3b1b3b2b6b9b1">
+										<an:content id="d26e489">
 											<an:p> dall'articolo 27 del decreto legislativo 17 agosto 1999, n. 334, in materia di controllo dei pericoli di incidenti rilevanti connessi con determinate sostanze pericolose;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b6c10">
+									<an:point id="d26e492">
 										<an:num>9)</an:num>
-										<an:content id="w1aaab3b1b3b2b6c10b1">
+										<an:content id="d26e495">
 											<an:p> dagli articoli 3 e 10, sesto, ottavo, nono e decimo comma, della legge 18 aprile 1975, n. 110, (norme integrative della disciplina vigente per il controllo delle armi, delle munizioni e degli esplosivi), salvo che il fatto, limitatamente alle ipotesi previste dal sesto e dall'ottavo comma dello stesso articolo 10, debba ritenersi di lieve entità per la qualità e il numero limitato delle armi;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b6c11">
+									<an:point id="d26e499">
 										<an:num>10)</an:num>
-										<an:content id="w1aaab3b1b3b2b6c11b1">
+										<an:content id="d26e502">
 											<an:p> dall’articolo 74, commi da 1 a 3, del codice delle leggi antimafia e delle misure di prevenzione, nonché nuove disposizioni in materia di documentazione antimafia, di cui al decreto legislativo 6 settembre 2011, n. 159;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b6c12">
+									<an:point id="d26e505">
 										<an:num>11)</an:num>
-										<an:content id="w1aaab3b1b3b2b6c12b1">
+										<an:content id="d26e508">
 											<an:p> dall'articolo 12 del testo unico delle disposizioni concernenti la disciplina dell'immigrazione e norme sulla condizione dello straniero, di cui al decreto legislativo 25 luglio 1998, n. 286, e successive modificazioni;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b1b3b2b6c13">
+									<an:point id="d26e511">
 										<an:num>12)</an:num>
-										<an:content id="w1aaab3b1b3b2b6c13b1">
+										<an:content id="d26e514">
 											<an:p> dall'articolo 178 del codice dei beni culturali e del paesaggio, di cui al decreto legislativo 22 gennaio 2004, n. 42, (contraffazione di opere d'arte);</an:p>
 										</an:content>
 									</an:point>
 								</an:list>
 							</an:point>
-							<an:point id="w1aaab3b1b3b2b7">
+							<an:point id="d26e517">
 								<an:num>
 									<an:i>f)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b3b2b7b1">
+								<an:content id="d26e522">
 									<an:p>
 										ai reati per cui sono in corso i procedimenti ai quali si applica l'esclusione di cui al comma 3 dell'articolo 13-
 										<an:i>bis</an:i>
@@ -539,147 +557,147 @@
 							</an:point>
 						</an:list>
 					</an:paragraph>
-					<an:paragraph id="w1aaab3b1b3b3">
+					<an:paragraph id="d26e528">
 						<an:num>2. </an:num>
-						<an:content id="w1aaab3b1b3b3b1">
+						<an:content id="d26e531">
 							<an:p>Quando vi è stata condanna ai sensi dell'articolo 81 del codice penale, ove necessario, il giudice dell'esecuzione applica l'amnistia secondo le disposizioni della presente legge, determinando le pene corrispondenti ai reati estinti.</an:p>
 						</an:content>
 					</an:paragraph>
 				</an:article>
-				<an:article id="w1aaab3b1b4">
+				<an:article id="d26e534">
 					<an:num>Art. 3.</an:num>
-					<an:heading id="w1aaab3b1b4b1">
+					<an:heading id="d26e537">
 						<an:i>(Computo della pena per l'applicazione dell'amnistia)</an:i>
 					</an:heading>
-					<an:paragraph id="w1aaab3b1b4b2">
+					<an:paragraph id="d26e540">
 						<an:num>1. </an:num>
-						<an:list id="w1aaab3b1b4b2a">
-							<an:intro id="w1aaab3b1b4b2b1">
+						<an:list id="d26e541">
+							<an:intro id="d26e543">
 								<an:p>Ai fini del computo della pena per l'applicazione dell'amnistia:</an:p>
 							</an:intro>
-							<an:point id="w1aaab3b1b4b2b2">
+							<an:point id="d26e545">
 								<an:num>
 									<an:i>a)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b4b2b2b1">
+								<an:content id="d26e550">
 									<an:p>si ha riguardo alla pena stabilita per ciascun reato consumato o tentato;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b4b2b3">
+							<an:point id="d26e553">
 								<an:num>
 									<an:i>b)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b4b2b3b1">
+								<an:content id="d26e558">
 									<an:p>non si tiene conto dell'aumento di pena derivante dalla continuazione e dalla recidiva, anche se per quest'ultima la legge stabilisce una pena di specie diversa;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b4b2b4">
+							<an:point id="d26e561">
 								<an:num>
 									<an:i>c)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b4b2b4b1">
+								<an:content id="d26e566">
 									<an:p>si tiene conto dell'aumento di pena derivante dalle circostanze aggravanti per le quali la legge stabilisce una pena di specie diversa o dalle circostanze ad effetto speciale. Si tiene conto della circostanza aggravante prevista dall'articolo 61, numero 7), del codice penale. Non si tiene conto delle altre circostanze aggravanti;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b4b2b5">
+							<an:point id="d26e569">
 								<an:num>
 									<an:i>d)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b4b2b5b1">
+								<an:content id="d26e574">
 									<an:p>si tiene conto della circostanza attenuante di cui all'articolo 98 del codice penale nonché, nei reati contro il patrimonio, delle circostanze attenuanti di cui all'articolo 62, numeri 4) e 6), del codice penale. Quando le predette circostanze attenuanti concorrono con circostanze aggravanti di qualsiasi specie, si tiene conto soltanto delle prime. Ai fini dell'applicazione dell'amnistia la sussistenza delle predette circostanze è accertata, dopo l'esercizio dell'azione penale, anche dal giudice per le indagini preliminari, nonché dal giudice in camera di consiglio nella fase degli atti preliminari al dibattimento ai sensi dell'articolo 469 del codice di procedura penale;</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b1b4b2b6">
+							<an:point id="d26e577">
 								<an:num>
 									<an:i>e)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b1b4b2b6b1">
+								<an:content id="d26e582">
 									<an:p>si tiene conto delle circostanze attenuanti previste dall'articolo 48 del codice penale militare di pace quando siano prevalenti o equivalenti, ai sensi dell'articolo 69 del codice penale, rispetto ad ogni tipo di circostanza aggravante.</an:p>
 								</an:content>
 							</an:point>
 						</an:list>
 					</an:paragraph>
 				</an:article>
-				<an:article id="w1aaab3b1b5">
+				<an:article id="d26e585">
 					<an:num>Art. 4.</an:num>
-					<an:heading id="w1aaab3b1b5b1">
+					<an:heading id="d26e588">
 						<an:i>(Declaratoria dell'amnistia. Rinunciabilità)</an:i>
 					</an:heading>
-					<an:paragraph id="w1aaab3b1b5b2">
+					<an:paragraph id="d26e591">
 						<an:num>1. </an:num>
-						<an:content id="w1aaab3b1b5b2b1">
+						<an:content id="d26e594">
 							<an:p>Alla declaratoria dell'amnistia di cui al presente capo si procede ai sensi dell'articolo 129 del codice di procedura penale.</an:p>
 						</an:content>
 					</an:paragraph>
-					<an:paragraph id="w1aaab3b1b5b3">
+					<an:paragraph id="d26e597">
 						<an:num>2. </an:num>
-						<an:content id="w1aaab3b1b5b3b1">
+						<an:content id="d26e600">
 							<an:p>Prima dell'esercizio dell'azione penale, il pubblico ministero può richiedere al giudice per le indagini preliminari di provvedere all'applicazione dell'amnistia nelle forme previste dall'articolo 409 del codice di procedura penale.</an:p>
 						</an:content>
 					</an:paragraph>
-					<an:paragraph id="w1aaab3b1b5b4">
+					<an:paragraph id="d26e603">
 						<an:num>3. </an:num>
-						<an:content id="w1aaab3b1b5b4b1">
+						<an:content id="d26e606">
 							<an:p>La richiesta del pubblico ministero, di cui al comma 2, è notificata alla persona sottoposta alle indagini, con l'avviso che entro trenta giorni dalla notificazione può prendere visione degli atti e chiedere di essere sentita dal giudice per le indagini preliminari, anche al fine di dichiarare che non intende fruire dell'amnistia.</an:p>
 						</an:content>
 					</an:paragraph>
-					<an:paragraph id="w1aaab3b1b5b5">
+					<an:paragraph id="d26e609">
 						<an:num>4. </an:num>
-						<an:content id="w1aaab3b1b5b5b1">
+						<an:content id="d26e612">
 							<an:p>L'amnistia non si applica qualora l'imputato, prima che sia pronunciata sentenza di non luogo a procedere o di non doversi procedere per estinzione del reato per amnistia, faccia espressa dichiarazione di non volerne usufruire.</an:p>
 						</an:content>
 					</an:paragraph>
-					<an:paragraph id="w1aaab3b1b5b6">
+					<an:paragraph id="d26e615">
 						<an:num>5. </an:num>
-						<an:content id="w1aaab3b1b5b6b1">
+						<an:content id="d26e618">
 							<an:p>Nei confronti dello straniero che si trovi in taluna delle situazioni indicate nell'articolo 13, comma 2, del testo unico delle disposizioni concernenti la disciplina dell'immigrazione e norme sulla condizione dello straniero, di cui al decreto legislativo 25 luglio 1998, n. 286, e successive modificazioni, la declaratoria dell'amnistia è adottata dal giudice congiuntamente alla misura dell'espulsione per un periodo non inferiore a cinque anni, con ordine di accompagnamento alla frontiera da parte della forza pubblica. Il beneficio dell'amnistia è revocato di diritto laddove, entro dieci anni dall'esecuzione dell'espulsione ai sensi del presente comma, lo straniero sia rientrato illegittimamente nel territorio dello Stato.</an:p>
 						</an:content>
 					</an:paragraph>
 				</an:article>
-				<an:article id="w1aaab3b1b6">
+				<an:article id="d26e621">
 					<an:num>Art. 5.</an:num>
-					<an:heading id="w1aaab3b1b6b1">
+					<an:heading id="d26e624">
 						<an:i>(Termine d'efficacia dell'amnistia)</an:i>
 					</an:heading>
-					<an:paragraph id="w1aaab3b1b6b2">
+					<an:paragraph id="d26e627">
 						<an:num>1. </an:num>
-						<an:content id="w1aaab3b1b6b2b1">
+						<an:content id="d26e630">
 							<an:p>L'amnistia di cui al presente capo ha efficacia per i reati commessi fino a tutto il giorno 14 marzo 2013.</an:p>
 						</an:content>
 					</an:paragraph>
 				</an:article>
 			</an:chapter>
-			<an:chapter id="w1aaab3b2">
+			<an:chapter id="d26e633">
 				<an:num>Capo II</an:num>
-				<an:heading id="w1aaab3b2b1">INDULTO</an:heading>
-				<an:article id="w1aaab3b2b2">
+				<an:heading id="d26e636">INDULTO</an:heading>
+				<an:article id="d26e638">
 					<an:num>Art. 6.</an:num>
-					<an:heading id="w1aaab3b2b2b1">
+					<an:heading id="d26e641">
 						<an:i>(Indulto)</an:i>
 					</an:heading>
-					<an:paragraph id="w1aaab3b2b2b2">
+					<an:paragraph id="d26e644">
 						<an:num>1. </an:num>
-						<an:content id="w1aaab3b2b2b2b1">
+						<an:content id="d26e647">
 							<an:p>È concesso indulto nella misura non superiore a quattro anni per le pene detentive e non superiore ad euro 10.329,13 per le pene pecuniarie, sole o congiunte alle pene detentive.</an:p>
 						</an:content>
 					</an:paragraph>
-					<an:paragraph id="w1aaab3b2b2b3">
+					<an:paragraph id="d26e650">
 						<an:num>2. </an:num>
-						<an:list id="w1aaab3b2b2b3a">
-							<an:intro id="w1aaab3b2b2b3b1">
+						<an:list id="d26e651">
+							<an:intro id="d26e653">
 								<an:p>È altresì concesso indulto nella misura non superiore a cinque anni:</an:p>
 							</an:intro>
-							<an:point id="w1aaab3b2b2b3b2">
+							<an:point id="d26e655">
 								<an:num>
 									<an:i>a)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b2b2b3b2b1">
+								<an:content id="d26e660">
 									<an:p>
 										a coloro che risultino affetti dalla patologia derivante da HIV, diagnosticata, su base chimico-ematologica, da apposite Commissioni mediche istituite nell'ambito di ciascun istituto di pena, al secondo stadio dello 
 										<an:i>standard </an:i>
@@ -687,12 +705,12 @@
 									</an:p>
 								</an:content>
 							</an:point>
-							<an:point id="w1aaab3b2b2b3b3">
+							<an:point id="d26e666">
 								<an:num>
 									<an:i>b)</an:i>
 									 
 								</an:num>
-								<an:content id="w1aaab3b2b2b3b3b1">
+								<an:content id="d26e671">
 									<an:p>
 										a coloro che risultino affetti da gravi forme di epatite, di patologie oncologiche o da altre gravi malattie, diagnosticate dalle Commissioni mediche di cui alla lettera 
 										<an:i>a)</an:i>
@@ -702,66 +720,66 @@
 							</an:point>
 						</an:list>
 					</an:paragraph>
-					<an:paragraph id="w1aaab3b2b2b4">
+					<an:paragraph id="d26e677">
 						<an:num>3. </an:num>
-						<an:content id="w1aaab3b2b2b4b1">
+						<an:content id="d26e680">
 							<an:p>Per la concessione dell'indulto di cui al comma 2, il Governo adotta i provvedimenti necessari affinché il Servizio sanitario nazionale garantisca che i soggetti di cui al medesimo comma 2 possano essere sottoposti alle cure richieste per la specificità della loro condizione.</an:p>
 						</an:content>
 					</an:paragraph>
 				</an:article>
-				<an:article id="w1aaab3b2b3">
+				<an:article id="d26e683">
 					<an:num>Art. 7.</an:num>
-					<an:heading id="w1aaab3b2b3b1">
+					<an:heading id="d26e686">
 						<an:i>(Indulto per le pene accessorie e misura dell'espulsione dello straniero)</an:i>
 					</an:heading>
-					<an:paragraph id="w1aaab3b2b3b2">
+					<an:paragraph id="d26e689">
 						<an:num>1. </an:num>
-						<an:content id="w1aaab3b2b3b2b1">
+						<an:content id="d26e692">
 							<an:p>È concesso indulto, per intero, per le pene accessorie temporanee, conseguenti a condanne per le quali è applicato, anche solo in parte, l'indulto.</an:p>
 						</an:content>
 					</an:paragraph>
-					<an:paragraph id="w1aaab3b2b3b3">
+					<an:paragraph id="d26e695">
 						<an:num>2. </an:num>
-						<an:content id="w1aaab3b2b3b3b1">
+						<an:content id="d26e698">
 							<an:p>All'indulto di cui al presente capo non si applicano le esclusioni di cui al quinto comma dell'articolo 151 del codice penale.</an:p>
 						</an:content>
 					</an:paragraph>
-					<an:paragraph id="w1aaab3b2b3b4">
+					<an:paragraph id="d26e701">
 						<an:num>3. </an:num>
-						<an:content id="w1aaab3b2b3b4b1">
+						<an:content id="d26e704">
 							<an:p>Nei confronti dello straniero, identificato e detenuto, che si trova in taluna delle situazioni indicate nell'articolo 13, comma 2, del testo unico delle disposizioni concernenti la disciplina dell'immigrazione e norme sulla condizione dello straniero di cui al decreto legislativo 25 luglio 1998, n. 286, e successive modificazioni, il magistrato di sorveglianza dispone con decreto motivato la misura dell'espulsione per un periodo non inferiore a cinque anni, con ordine di accompagnamento alla frontiera da parte della forza pubblica, al termine del periodo di detenzione nell'ambito del quale sia stato applicato, anche solo in parte, l'indulto. Il magistrato di sorveglianza decide senza formalità, acquisite le informazioni degli organi di polizia sull'identità e sulla nazionalità dello straniero. Il decreto di espulsione è comunicato allo straniero che, entro il termine di dieci giorni, può proporre opposizione dinanzi al tribunale di sorveglianza. Il tribunale decide nel termine di venti giorni.</an:p>
 						</an:content>
 					</an:paragraph>
 				</an:article>
-				<an:article id="w1aaab3b2b4">
+				<an:article id="d26e707">
 					<an:num>Art. 8.</an:num>
-					<an:heading id="w1aaab3b2b4b1">
+					<an:heading id="d26e710">
 						<an:i>(Esclusioni dall'indulto)</an:i>
 					</an:heading>
-					<an:paragraph id="w1aaab3b2b4b2">
+					<an:paragraph id="d26e713">
 						<an:num>1. </an:num>
-						<an:list id="w1aaab3b2b4b2a">
-							<an:intro id="w1aaab3b2b4b2b1">
+						<an:list id="d26e714">
+							<an:intro id="d26e716">
 								<an:p>L'indulto non si applica alle pene:</an:p>
 							</an:intro>
-							<an:point id="w1aaab3b2b4b2b2">
+							<an:point id="d26e718">
 								<an:num>
 									<an:i>a)</an:i>
 									 
 								</an:num>
-								<an:list id="w1aaab3b2b4b2b2a">
-									<an:intro id="w1aaab3b2b4b2b2b1">
+								<an:list id="d26e719">
+									<an:intro id="d26e723">
 										<an:p>per i delitti previsti dai seguenti articoli del codice penale:</an:p>
 									</an:intro>
-									<an:point id="w1aaab3b2b4b2b2b2">
+									<an:point id="d26e725">
 										<an:num>1)</an:num>
-										<an:content id="w1aaab3b2b4b2b2b2b1">
+										<an:content id="d26e728">
 											<an:p> 285 (devastazione, saccheggio e strage);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b2b4b2b2b3">
+									<an:point id="d26e731">
 										<an:num>2)</an:num>
-										<an:content id="w1aaab3b2b4b2b2b3b1">
+										<an:content id="d26e734">
 											<an:p>
 												 416-
 												<an:i>bis </an:i>
@@ -769,27 +787,27 @@
 											</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b2b4b2b2b4">
+									<an:point id="d26e740">
 										<an:num>3)</an:num>
-										<an:content id="w1aaab3b2b4b2b2b4b1">
+										<an:content id="d26e743">
 											<an:p> 422 (strage);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b2b4b2b2b5">
+									<an:point id="d26e746">
 										<an:num>4)</an:num>
-										<an:content id="w1aaab3b2b4b2b2b5b1">
+										<an:content id="d26e749">
 											<an:p> 630, primo, secondo e terzo comma (sequestro di persona a scopo di estorsione);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b2b4b2b2b6">
+									<an:point id="d26e752">
 										<an:num>5)</an:num>
-										<an:content id="w1aaab3b2b4b2b2b6b1">
+										<an:content id="d26e755">
 											<an:p> 644 (usura);</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b2b4b2b2b7">
+									<an:point id="d26e758">
 										<an:num>6)</an:num>
-										<an:content id="w1aaab3b2b4b2b2b7b1">
+										<an:content id="d26e761">
 											<an:p>
 												 648-
 												<an:i>bis</an:i>
@@ -799,24 +817,24 @@
 									</an:point>
 								</an:list>
 							</an:point>
-							<an:point id="w1aaab3b2b4b2b3">
+							<an:point id="d26e767">
 								<an:num>
 									<an:i>b)</an:i>
 									 
 								</an:num>
-								<an:list id="w1aaab3b2b4b2b3a">
-									<an:intro id="w1aaab3b2b4b2b3b1">
+								<an:list id="d26e768">
+									<an:intro id="d26e772">
 										<an:p>per i delitti previsti dai seguenti articoli del testo unico delle leggi in materia di disciplina degli stupefacenti e sostanze psicotrope, prevenzione, cura e riabilitazione dei relativi stati di tossicodipendenza, di cui al decreto del Presidente della Repubblica 9 ottobre 1990, n. 309:</an:p>
 									</an:intro>
-									<an:point id="w1aaab3b2b4b2b3b2">
+									<an:point id="d26e774">
 										<an:num>1)</an:num>
-										<an:content id="w1aaab3b2b4b2b3b2b1">
+										<an:content id="d26e777">
 											<an:p> 73 (produzione, traffico e detenzione illeciti di sostanze stupefacenti o psicotrope), ove applicate le circostanze aggravanti specifiche di cui all'articolo 80;</an:p>
 										</an:content>
 									</an:point>
-									<an:point id="w1aaab3b2b4b2b3b3">
+									<an:point id="d26e780">
 										<an:num>2)</an:num>
-										<an:content id="w1aaab3b2b4b2b3b3b1">
+										<an:content id="d26e783">
 											<an:p> 74 (associazione finalizzata al traffico illecito di sostanze stupefacenti o psicotrope).</an:p>
 										</an:content>
 									</an:point>
@@ -825,48 +843,48 @@
 						</an:list>
 					</an:paragraph>
 				</an:article>
-				<an:article id="w1aaab3b2b5">
+				<an:article id="d26e786">
 					<an:num>Art. 9.</an:num>
-					<an:heading id="w1aaab3b2b5b1">
+					<an:heading id="d26e789">
 						<an:i>(Revoca dell'indulto)</an:i>
 					</an:heading>
-					<an:paragraph id="w1aaab3b2b5b2">
+					<an:paragraph id="d26e792">
 						<an:num>1. </an:num>
-						<an:content id="w1aaab3b2b5b2b1">
+						<an:content id="d26e795">
 							<an:p>Il beneficio dell'indulto è revocato di diritto se chi ne ha usufruito commette, entro cinque anni dalla data di entrata in vigore della presente legge, un delitto non colposo per il quale riporti condanna a pena detentiva non inferiore a due anni.</an:p>
 						</an:content>
 					</an:paragraph>
-					<an:paragraph id="w1aaab3b2b5b3">
+					<an:paragraph id="d26e798">
 						<an:num>2. </an:num>
-						<an:content id="w1aaab3b2b5b3b1">
+						<an:content id="d26e801">
 							<an:p>Il beneficio dell'indulto è altresì revocato di diritto laddove, entro dieci anni dall'esecuzione dell'espulsione ai sensi dell'articolo 7, comma 3, lo straniero sia rientrato illegittimamente nel territorio dello Stato. In tale caso, lo stato di detenzione è ripristinato e riprende l'esecuzione della pena.</an:p>
 						</an:content>
 					</an:paragraph>
 				</an:article>
-				<an:article id="w1aaab3b2b6">
+				<an:article id="d26e804">
 					<an:num>Art. 10.</an:num>
-					<an:heading id="w1aaab3b2b6b1">
+					<an:heading id="d26e807">
 						<an:i>(Efficacia dell'indulto)</an:i>
 					</an:heading>
-					<an:paragraph id="w1aaab3b2b6b2">
+					<an:paragraph id="d26e810">
 						<an:num>1. </an:num>
-						<an:content id="w1aaab3b2b6b2b1">
+						<an:content id="d26e813">
 							<an:p>L'indulto di cui al presente capo ha efficacia per i reati commessi fino a tutto il giorno 14 marzo 2013.</an:p>
 						</an:content>
 					</an:paragraph>
 				</an:article>
 			</an:chapter>
-			<an:chapter id="w1aaab3b3">
+			<an:chapter id="d26e816">
 				<an:num>Capo III</an:num>
-				<an:heading id="w1aaab3b3b1">ENTRATA IN VIGORE</an:heading>
-				<an:article id="w1aaab3b3b2">
+				<an:heading id="d26e819">ENTRATA IN VIGORE</an:heading>
+				<an:article id="d26e821">
 					<an:num>Art. 11.</an:num>
-					<an:heading id="w1aaab3b3b2b1">
+					<an:heading id="d26e824">
 						<an:i>(Entrata in vigore)</an:i>
 					</an:heading>
-					<an:paragraph id="w1aaab3b3b2b2">
+					<an:paragraph id="d26e827">
 						<an:num>1. </an:num>
-						<an:content id="w1aaab3b3b2b2b1">
+						<an:content id="d26e830">
 							<an:p>
 								La presente legge entra in vigore il giorno stesso della sua pubblicazione nella 
 								<an:i>Gazzetta Ufficiale.</an:i>
@@ -879,30 +897,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/21"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/21/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="21"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/21/ita@2013-03-15/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/21/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/21/ita@2013-03-15/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/21/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/21/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-15/21/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

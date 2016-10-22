@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-20/240"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-20/240/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-20/240"/>
 					<an:FRBRdate date="2013-03-20" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-20/240/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-20/240/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="240"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-20/240/ita@2013-03-20/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-20/240/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-20/240/ita@"/>
 					<an:FRBRdate date="2013-03-20" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-20/240/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-20/240/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-20/240/ita@2013-03-20/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-20/240/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-20/240/ita@.akn"/>
 					<an:FRBRdate date="2013-03-20" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-20/240/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-20/240/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-20" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-20" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-20/240/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-20/240/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17750" id="w1ab1ab1b2aaab1b1" showAs="PINOTTI"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d125e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/17750" id="d125e16" showAs="PINOTTI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -50,26 +68,26 @@
 			</an:p>
 			<an:p>
 				d’iniziativa della senatrice 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">PINOTTI</an:docProponent>
+				<an:docProponent as="#d125e16a1327" refersTo="#d125e16">PINOTTI</an:docProponent>
 				 
 			</an:p>
 			<an:p>COMUNICATO ALLA PRESIDENZA IL 20 MARZO 2013</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d125e257">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d125e260">
 					<an:i>(Delega al Governo)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d125e263">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d125e266">
 						<an:p>Il Governo è delegato ad adottare, entro dodici mesi dalla data di entrata in vigore della presente legge, su proposta del Ministro della difesa, di concerto con il Ministro della giustizia, previo parere delle competenti Commissioni parlamentari permanenti del Senato della Repubblica e della Camera dei deputati da esprimere entro sessanta giorni dalla data di assegnazione, un decreto legislativo recante il nuovo codice penale militare di pace, comprensivo delle disposizioni penali intese ad assicurare il pieno rispetto dei diritti umani e del diritto internazionale umanitario nel corso delle missioni militari armate all'estero autorizzate dal Parlamento.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b3">
+				<an:paragraph id="d125e269">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b1b3b1">
+					<an:content id="d125e272">
 						<an:p>
 							Il codice penale militare di pace di cui al comma 1 entra in vigore decorsi sei mesi dalla data di pubblicazione nella 
 							<an:i>Gazzetta Ufficiale</an:i>
@@ -77,181 +95,181 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b4">
+				<an:paragraph id="d125e278">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b1b4b1">
+					<an:content id="d125e281">
 						<an:p>Entro due anni dalla data di entrata in vigore del codice penale militare di pace di cui ai commi 1 e 2, il Governo può adottare uno o più decreti legislativi recanti disposizioni integrative e correttive, nel rispetto dei princìpi e criteri direttivi indicati all'articolo 2 e secondo le modalità previste dal comma 1 del presente articolo.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d125e284">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d125e287">
 					<an:i>(Princìpi e criteri direttivi)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d125e290">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b2b2a">
-						<an:intro id="w1ab1ab3b2b2b1">
+					<an:list id="d125e291">
+						<an:intro id="d125e293">
 							<an:p>Nell'esercizio della delega di cui all'articolo 1, il Governo si attiene, in conformità ai princìpi della Costituzione e del diritto internazionale con particolare riguardo alle convenzioni internazionali ratificate dall'Italia, ai seguenti princìpi e criteri direttivi:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b2b2b2">
+						<an:point id="d125e295">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:list id="w1ab1ab3b2b2b2a">
-								<an:intro id="w1ab1ab3b2b2b2b1">
+							<an:list id="d125e296">
+								<an:intro id="d125e300">
 									<an:p>conformare le disposizioni penali secondo i princìpi e criteri direttivi generali di seguito indicati:</an:p>
 								</an:intro>
-								<an:point id="w1ab1ab3b2b2b2b2">
+								<an:point id="d125e302">
 									<an:num>1)</an:num>
-									<an:content id="w1ab1ab3b2b2b2b2b1">
+									<an:content id="d125e305">
 										<an:p> dare attuazione ai princìpi di personalità, offensività, sufficiente determinatezza e colpevolezza;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b2b3">
+								<an:point id="d125e308">
 									<an:num>2)</an:num>
-									<an:content id="w1ab1ab3b2b2b2b3b1">
+									<an:content id="d125e311">
 										<an:p> adeguare la misura delle sanzioni stabilite per i singoli reati, tenuto conto della rilevanza dei beni giuridici offesi, delle modalità di aggressione, nonché del rapporto sistematico con analoghe fatti specie previste dalla legge penale comune;</an:p>
 									</an:content>
 								</an:point>
 							</an:list>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b3">
+						<an:point id="d125e314">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:list id="w1ab1ab3b2b2b3a">
-								<an:intro id="w1ab1ab3b2b2b3b1">
+							<an:list id="d125e315">
+								<an:intro id="d125e319">
 									<an:p>conformare le disposizioni penali secondo i princìpi e criteri direttivi specifici di seguito indicati:</an:p>
 								</an:intro>
-								<an:point id="w1ab1ab3b2b2b3b2">
+								<an:point id="d125e321">
 									<an:num>1)</an:num>
-									<an:content id="w1ab1ab3b2b2b3b2b1">
+									<an:content id="d125e324">
 										<an:p> prevedere che la legge penale militare si applica ai militari in servizio e a quelli considerati tali e che la legge determina i casi nei quali la legge penale militare si applica ai militari in congedo, ai soggetti assimilati ai militari e alle persone estranee alle Forze armate dello Stato;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3b3">
+								<an:point id="d125e327">
 									<an:num>2)</an:num>
-									<an:content id="w1ab1ab3b2b2b3b3b1">
+									<an:content id="d125e330">
 										<an:p> prevedere che rientrano tra i militari gli appartenenti all'Esercito, alla Marina militare, all'Aeronautica militare, all'Arma dei carabinieri e al Corpo della guardia di finanza e le persone che a norma di legge acquistano tale qualità, e che sotto la denominazione di Forze annate agli effetti del codice penale militare di pace sono intese le forze militari indicate dal presente numero;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3b4">
+								<an:point id="d125e333">
 									<an:num>3)</an:num>
-									<an:content id="w1ab1ab3b2b2b3b4b1">
+									<an:content id="d125e336">
 										<an:p> prevedere che il servizio inizia per il militare dal momento stabilito per la presentazione, se questa è obbligatoria, o dal momento dell'effettiva presentazione negli altri casi, e termina con il collocamento in congedo;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3b5">
+								<an:point id="d125e339">
 									<an:num>4)</an:num>
-									<an:content id="w1ab1ab3b2b2b3b5b1">
+									<an:content id="d125e342">
 										<an:p> prevedere che agli effetti della legge penale militare sono considerati in servizio i militari in stato di assenza arbitraria, quelli collocati in aspettativa, sospesi dal servizio o dall'impiego, nonché quelli in congedo illimitato durante l'espiazione della reclusione militare o comunque in stato di custodia cautelare in carcere militare per reato soggetto alla giurisdizione militare. La legge determina gli altri casi nei quali i militari sono considerati in servizio;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3b6">
+								<an:point id="d125e345">
 									<an:num>5)</an:num>
-									<an:content id="w1ab1ab3b2b2b3b6b1">
+									<an:content id="d125e348">
 										<an:p> prevedere che la legge penale militare si applica in ogni caso ai militari in congedo illimitato quando commettono alcuno dei reati previsti dai numeri 27), 28), 34), 35), 36), 37), 38) e 40), nonché quello di cui al numero 46), con riferimento alle fattispecie indicate nei numeri 34), 35), 36), 37), 38) e 40), che in tali circostanze si applicano altresì le disposizioni di cui ai numeri 48) e 49) e che la legge penale militare si applica altresì ai militari in congedo illimitato che commettono il reato di cui al numero 73);</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3b7">
+								<an:point id="d125e351">
 									<an:num>6)</an:num>
-									<an:content id="w1ab1ab3b2b2b3b7b1">
+									<an:content id="d125e354">
 										<an:p> prevedere che la legge penale militare si applica ai piloti e ai comandanti di navi mercantili o di aeromobili civili nelle particolari condizioni di cui ai numeri da 116) a 121) per i reati ivi descritti e che agli effetti della legge penale militare sono navi e aeromobili militari le navi e gli aeromobili da guerra, le navi e gli aeromobili trasformati in navi e in aeromobili da guerra e ogni altra nave e aeromobile adibiti al servizio delle Forze armate dello Stato alle dipendenze di un comandante militare;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3b8">
+								<an:point id="d125e357">
 									<an:num>7)</an:num>
-									<an:content id="w1ab1ab3b2b2b3b8b1">
+									<an:content id="d125e360">
 										<an:p> prevedere:</an:p>
 										<an:p>7.1) che, al di fuori dei casi previsti dai numeri 4) e 5), i militari in congedo sono considerati, agli effetti della legge penale militare, come persone estranee alle Forze armate dello Stato;</an:p>
 										<an:p>7.2) che, oltre i casi espressamente previsti dalla legge, le persone estranee alle Forze armate dello Stato che concorrono a commettere un reato militare sono soggette alla legge penale militare e che alle persone estranee alle Forze armate dello Stato che commettono i fatti di cui ai numeri 67), 68) e 69) si applicano le pene stabilite per i militari; in tale ultimo caso il giudice può diminuire la pena;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3b9">
+								<an:point id="d125e367">
 									<an:num>8)</an:num>
-									<an:content id="w1ab1ab3b2b2b3b9b1">
+									<an:content id="d125e370">
 										<an:p> prevedere che la legge penale militare si applica per i reati militari commessi durante il servizio, anche se scoperti o giudicati quando il colpevole si trova in congedo o ha cessato di appartenere alle Forze armate dello Stato;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c10">
+								<an:point id="d125e373">
 									<an:num>9)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c10b1">
+									<an:content id="d125e376">
 										<an:p> prevedere che la legge penale militare si applica alle persone appartenenti alle Forze armate dello Stato, anche se posteriormente alla commissione del reato è stata dichiarata la nullità dell'arruolamento o l'incapacità di appartenere alle Forze stesse, e, in generale, a chiunque presta di fatto servizio alle armi;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c11">
+								<an:point id="d125e380">
 									<an:num>10)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c11b1">
+									<an:content id="d125e383">
 										<an:p> prevedere che è punito secondo la legge italiana, nell'osservanza delle convenzioni internazionali ratificate dall'Italia, il militare che commette un reato militare all'estero in territorio ove hanno luogo le operazioni militari armate o nei territori di soggiorno o di transito delle Forze armate dello Stato o se comunque ivi si trovi per ragioni di servizio. Nei rimanenti casi si applicano le disposizioni del codice penale in materia di reati commessi all'estero e la competenza per la richiesta di procedimento è attribuita al Ministro individuato ai sensi del numero 53);</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c12">
+								<an:point id="d125e386">
 									<an:num>11)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c12b1">
+									<an:content id="d125e389">
 										<an:p> prevedere che le disposizioni del codice penale militare di pace si applicano anche alle materie regolate dalla legge penale militare di guerra in quanto non sia stabilito diversamente;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c13">
+								<an:point id="d125e392">
 									<an:num>12)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c13b1">
+									<an:content id="d125e395">
 										<an:p> prevedere che i reati militari sono puniti con la pena dell'ergastolo, della reclusione e della multa, secondo le disposizioni del codice penale, e che nel caso di condanna per reati militari, da pronunciare o pronunciata nei confronti di militare, ancorché non più in servizio attivo, salvo che alla condanna consegua l'interdizione perpetua dai pubblici uffici o che il condannato abbia in altro modo cessato di appartenere alle Forze armate dello Stato, la pena della reclusione viene convertita in reclusione militare per uguale durata, da scontare negli stabilimenti militari di pena, con l'applicazione delle disposizioni comuni in materia di pene accessorie e di altri effetti penali della condanna. Fermo restando quanto indicato nel primo periodo del presente numero, la previsione della pena della reclusione militare come sanzione inflitta da altre leggi si intende riferita alla reclusione;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c14">
+								<an:point id="d125e398">
 									<an:num>13)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c14b1">
+									<an:content id="d125e401">
 										<an:p> prevedere che la reclusione militare è scontata in uno degli stabilimenti a ciò destinati, con l'obbligo del lavoro secondo quanto stabilito dalla legge e dai regolamenti vigenti in materia e che, per quanto non specificamente previsto, si applicano le norme vigenti in materia di reclusione;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c15">
+								<an:point id="d125e404">
 									<an:num>14)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c15b1">
+									<an:content id="d125e407">
 										<an:p> prevedere che l'interdizione perpetua dai pubblici uffici, fermo restando quanto previsto dall'articolo 28 del codice penale, priva il militare condannato della qualità di militare e della capacità di prestare qualunque servizio, incarico od opera per le Forze armate dello Stato;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c16">
+								<an:point id="d125e410">
 									<an:num>15)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c16b1">
+									<an:content id="d125e413">
 										<an:p> prevedere che costituisce reato militare qualunque violazione del codice penale militare di pace o di altre leggi penali militari ovvero qualunque reato qualificato come tale dalla legge;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c17">
+								<an:point id="d125e416">
 									<an:num>16)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c17b1">
+									<an:content id="d125e419">
 										<an:p> prevedere che non è punibile il militare che, al fine di adempiere un suo dovere di servizio, fa uso ovvero ordina di far uso delle armi o di altro mezzo di coazione fisica, quando vi è costretto dalla necessità di respingere una violenza o di vincere una resistenza, e che la legge determina gli altri casi nei quali il militare è autorizzato ad usare le armi o altro mezzo di coazione fisica;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c18">
+								<an:point id="d125e422">
 									<an:num>17)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c18b1">
+									<an:content id="d125e425">
 										<an:p> prevedere che agli effetti della legge penale militare, sotto la denominazione di violenza sono compresi l'omicidio, ancorché tentato o preterintenzionale, le lesioni personali, le percosse, i maltrattamenti e qualsiasi tentativo di offendere con armi;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c19">
+								<an:point id="d125e428">
 									<an:num>18)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c19b1">
+									<an:content id="d125e431">
 										<an:p> prevedere che non è punibile il militare che ha commesso il fatto costituente reato perché costretto dalla necessità di impedire i reati di cui ai numeri 81) e 82) ovvero il saccheggio, la devastazione o comunque fatti tali da compromettere la sicurezza del posto, della nave o dell'aeromobile;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c20">
+								<an:point id="d125e434">
 									<an:num>19)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c20b1">
+									<an:content id="d125e437">
 										<an:p> prevedere l'applicabilità delle disposizioni del codice penale in materia di eccesso colposo anche alle fattispecie di cui ai numeri 16) e 18);</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c21">
+								<an:point id="d125e440">
 									<an:num>20)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c21b1">
+									<an:content id="d125e443">
 										<an:p> prevedere che, se un fatto costituente reato è commesso in esecuzione di un ordine, ne risponde anche il militare che lo ha eseguito, quando l'ordine sia manifestamente rivolto contro le istituzioni dello Stato o la sua esecuzione costituisca comunque manifestamente reato;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c22">
+								<an:point id="d125e447">
 									<an:num>21)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c22b1">
+									<an:content id="d125e450">
 										<an:p> prevedere che oltre alle circostanze previste dal codice penale:</an:p>
 										<an:p>21.1) aggravano il reato militare, quando non ne sono elementi costitutivi o circostanze aggravanti speciali:</an:p>
 										<an:p>21.1.1) l'aver agito per timore di un pericolo al quale il colpevole aveva un particolare dovere giuridico di esporsi;</an:p>
@@ -262,44 +280,44 @@
 										<an:p>21.2) attenua il reato militare l'aver agito per eccesso di zelo nell'adempimento dei doveri militari;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c23">
+								<an:point id="d125e467">
 									<an:num>22)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c23b1">
+									<an:content id="d125e470">
 										<an:p> prevedere che in caso di concorso di persone nel reato militare, oltre che nelle ipotesi;</an:p>
 										<an:p>previste dal codice penale, la pena è aumentata per il superiore che è concorso con un inferiore;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c24">
+								<an:point id="d125e475">
 									<an:num>23)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c24b1">
+									<an:content id="d125e478">
 										<an:p> confermare l'applicabilità delle sanzioni sostitutive delle pene detentive brevi irrogate per reati militari, definendone il contenuto e i limiti di applicazione in modo conforme a quanto previsto dalla legge penale comune, ferma restando l'esigenza di garantirne la compatibilità con lo svolgimento delle prestazioni di servizio del militare condannato;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c25">
+								<an:point id="d125e481">
 									<an:num>24)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c25b1">
+									<an:content id="d125e484">
 										<an:p> confermare l'applicabilità al condannato durante l'espiazione della reclusione militare, per quanto non previsto dalla legge 29 aprile 1983, n. 167, e successive modificazioni, della disciplina di cui alla legge 26 luglio 1975, n. 354, e successive modificazioni, ferma restando l'esigenza di garantirne la compatibilità con lo svolgimento delle prestazioni di servizio del militare condannato:</an:p>
 										<an:p>24.1) prevedendo che all'affidamento in prova del condannato militare, di cui alla legge 29 aprile 1983, n. 167, e successive modificazioni, si applicano le limitazioni previste dagli articoli 4bis e 58-ter della legge 26 luglio 1975, n. 354, e successive modificazioni;</an:p>
 										<an:p>24.2) coordinando le fatti specie alle quali è fatto riferimento nell'articolo l, secondo comma, della legge 29 aprile 1983, n. 167, con le corrispondenti fattispecie di reato militare introdotte nell'esercizio della delega di cui all'articolo l della presente legge;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c26">
+								<an:point id="d125e491">
 									<an:num>25)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c26b1">
+									<an:content id="d125e494">
 										<an:p> prevedere che:</an:p>
 										<an:p>25.1) la pena della reclusione inflitta per reati comuni al militare in servizio permanente che non ha riportato l'interdizione perpetua dai pubblici uffici è sostituita con la reclusione militare di pari durata;</an:p>
 										<an:p>25.2) nei casi di concorso di reato militare e di reato comune, ascritto a militare in servizio temporaneo, è esclusa la conversione della pena anche per il reato militare, e al di fuori di tali casi la pena detentiva irrogata al militare in servizio temporaneo per il reato militare, convertita in reclusione militare, è espiata prima della pena detentiva irrogata per il reato comune;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c27">
+								<an:point id="d125e501">
 									<an:num>26)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c27b1">
+									<an:content id="d125e504">
 										<an:p> prevedere che nei confronti del condannato che ha cessato di appartenere alle Forze armate dello Stato o il cui arruolamento è stato dichiarato nullo non si provvede alla conversione della reclusione in reclusione militare e la conversione eventualmente disposta è revocata;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c28">
+								<an:point id="d125e507">
 									<an:num>27)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c28b1">
+									<an:content id="d125e510">
 										<an:p>
 											 prevedere che il militare, che commette alcuno dei delitti contro la personalità dello Stato preveduti dagli articoli 241, 242, 276, 277, 283, 285, 288, 289 e 289-
 											<an:i>bis</an:i>
@@ -307,337 +325,337 @@
 										</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c29">
+								<an:point id="d125e516">
 									<an:num>28)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c29b1">
+									<an:content id="d125e519">
 										<an:p> prevedere che è punito a norma delle corrispondenti disposizioni del codice penale, aumentata la pena della reclusione da un terzo alla metà, il militare:</an:p>
 										<an:p>28.1) che commette istigazione o cospirazione dirette al compimento dei reati di cui al numero 27);</an:p>
 										<an:p>28.2) che promuove, costituisce od organizza una banda armata diretta a commettere i reati di cui al numero 27);</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c30">
+								<an:point id="d125e526">
 									<an:num>29)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c30b1">
+									<an:content id="d125e529">
 										<an:p> prevedere che il militare che offende l'onore e il prestigio del Presidente della Repubblica o di chi ne fa le veci è punito con la reclusione da uno a sei anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c31">
+								<an:point id="d125e532">
 									<an:num>30)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c31b1">
+									<an:content id="d125e535">
 										<an:p> confermare, per i reati militari di cui ai numeri 27), in relazione ai soli articoli 277 e 288 del codice penale, e 29), la condizione di procedibilità dell'autorizzazione del Ministro della giustizia, di cui all'articolo 3 del regio decreto-legge 9 dicembre 1941, n. 1386, convertito dalla legge 7 maggio 1942, n. 560, prevedendo che venga sentito il Ministro da cui il militare dipende;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c32">
+								<an:point id="d125e538">
 									<an:num>31)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c32b1">
+									<an:content id="d125e541">
 										<an:p> prevedere che il militare che pubblicamente vilipende la Repubblica, le Assemblee legislative o una di esse, ovvero il Governo o la Corte costituzionale o l'Ordine giudiziario o le Forze armate dello Stato o parte di esse è punito con la reclusione da sei mesi a tre anni, previa autorizzazione a procedere dell'Assemblea legislativa o della Corte costituzionale contro cui il vilipendio è diretto e, negli altri casi, del Ministro della giustizia, sentito il Ministro da cui il militare dipende;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c33">
+								<an:point id="d125e545">
 									<an:num>32)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c33b1">
+									<an:content id="d125e548">
 										<an:p> prevedere che il militare che pubblicamente vilipende la nazione italiana è punito con la reclusione fino a due anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c34">
+								<an:point id="d125e551">
 									<an:num>33)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c34b1">
+									<an:content id="d125e554">
 										<an:p> prevedere che il militare che pubblicamente distrugge, disperde, deteriora, rende inservibile o imbratta la bandiera nazionale o altro emblema dello Stato è punito con la reclusione da uno a quattro anni e che il militare che pubblicamente vilipende la bandiera nazionale o altro emblema dello Stato è punito con la reclusione da uno a tre anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c35">
+								<an:point id="d125e557">
 									<an:num>34)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c35b1">
+									<an:content id="d125e560">
 										<an:p> prevedere che il militare che tiene intelligenze con lo straniero dirette a favorire per il caso di guerra con lo Stato italiano le operazioni militari di uno Stato estero è punito con la reclusione non inferiore a quindici anni e, ove le offerte di servizi non siano ancora accettate, con la reclusione non inferiore a dieci anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c36">
+								<an:point id="d125e563">
 									<an:num>35)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c36b1">
+									<an:content id="d125e566">
 										<an:p> prevedere che il militare che in tutto o in parte sopprime, distrugge, falsifica, sottrae o distrae, anche temporaneamente, ovvero si appropria di atti, documenti o altre cose concernenti la forza, la preparazione o la difesa militare dello Stato e che devono rimanere segreti, è punito con la reclusione non inferiore a dieci anni e, se il fatto ha compromesso la preparazione o la difesa militare dello Stato, con l'ergastolo;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c37">
+								<an:point id="d125e569">
 									<an:num>36)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c37b1">
+									<an:content id="d125e572">
 										<an:p> prevedere che il militare che rivela nell'interesse di uno Stato estero notizie concernenti la forza, la preparazione e la difesa militare dello Stato e che devono rimanere segrete è punito con l'ergastolo;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c38">
+								<an:point id="d125e575">
 									<an:num>37)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c38b1">
+									<an:content id="d125e578">
 										<an:p> prevedere che l'accordo tra due o più militari per commettere il reato di cui al numero 36) è punito, se il reato non è commesso, con la reclusione da quattro a dieci anni e con la reclusione non inferiore a otto anni per i promotori e gli organizzatori;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c39">
+								<an:point id="d125e581">
 									<an:num>38)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c39b1">
+									<an:content id="d125e584">
 										<an:p> prevedere che il militare che, allo scopo di darne comunicazione a uno Stato estero, si procura le notizie concernenti la forza, la preparazione e la difesa militare dello Stato e che devono rimanere segrete è punito con la reclusione non inferiore a venti anni. Se il fatto ha compromesso la preparazione o la difesa militare dello Stato si applica la pena dell'ergastolo;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c40">
+								<an:point id="d125e587">
 									<an:num>39)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c40b1">
+									<an:content id="d125e590">
 										<an:p> prevedere che il militare che, per scopi diversi dallo spionaggio, si procura illecitamente le notizie concernenti la forza, la preparazione e la difesa militare dello Stato e che devono rimanere segrete è punito con la reclusione da tre a dieci anni. Se il fatto ha compromesso la preparazione o la difesa militare dello Stato si applica la reclusione non inferiore a dieci anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c41">
+								<an:point id="d125e593">
 									<an:num>40)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c41b1">
+									<an:content id="d125e596">
 										<an:p> prevedere che è punito con la reclusione fino a cinque anni il militare che:</an:p>
 										<an:p>40.1) esegue senza la necessaria autorizzazione disegni, modelli, schizzi o fotografie di cose concernenti la forza, la preparazione o la difesa militare dello Stato ovvero fa ricognizione sulle cose medesime;</an:p>
 										<an:p>40.2) si intrattiene in luoghi o in zone nei quali è vietato l'accesso nell'interesse militare dello Stato o in prossimità di essi, essendo in possesso ingiustificatamente di mezzi idonei a commettere alcuno dei fatti indicati al numero 40.1);</an:p>
 										<an:p>40.3) detiene ingiustificatamente carte, scritti, disegni, modelli, schizzi, fotografie o qualsiasi altra cosa atta a fornire notizie concernenti la forza, la preparazione o la difesa militare dello Stato;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c42">
+								<an:point id="d125e605">
 									<an:num>41)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c42b1">
+									<an:content id="d125e608">
 										<an:p> prevedere che è punito con la reclusione fino a cinque anni il militare che si introduce clandestinamente o con inganno nei luoghi o nelle zone nei quali è vietato l'accesso nell'interesse militare dello Stato;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c43">
+								<an:point id="d125e611">
 									<an:num>42)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c43b1">
+									<an:content id="d125e614">
 										<an:p> prevedere che è punito con la reclusione fino ad un anno il militare che si introduce senza autorizzazione nei luoghi o nelle zone nei quali è vietato l'accesso nell'interesse militare dello Stato;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c44">
+								<an:point id="d125e618">
 									<an:num>43)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c44b1">
+									<an:content id="d125e621">
 										<an:p> prevedere che il militare che, fuori dei casi di cui al numero 36), rivela notizie concernenti la forza, la preparazione e la difesa militare dello Stato e che devono rimanere segrete è punito con la pena non inferiore a cinque anni. Se il fatto ha compromesso la preparazione o la difesa militare dello Stato prevedere la reclusione non inferiore a dodici anni. Se il fatto è commesso per colpa, nell'ipotesi di cui al primo periodo prevedere la reclusione da sei mesi a due anni e nell'ipotesi di cui al secondo periodo del presente numero, prevedere la reclusione da tre a quindici anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c45">
+								<an:point id="d125e624">
 									<an:num>44)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c45b1">
+									<an:content id="d125e627">
 										<an:p> prevedere che per il militare che commette i fatti di cui ai numeri 36), 37), 38), 39) e 43), quando le notizie non sono tra quelle che devono rimanere segrete, ma hanno carattere riservato per esserne stata vietata la divulgazione dall'autorità competente, all'ergastolo è sostituita la reclusione non inferiore a quindici anni e le altre pene sono diminuite da un terzo alla metà;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c46">
+								<an:point id="d125e630">
 									<an:num>45)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c46b1">
+									<an:content id="d125e633">
 										<an:p> prevedere che, quando l'esecuzione dei fatti di cui ai numeri 35), 36), 38), 39),43), con esclusione dei fatti colposi, e 44), con esclusione dei fatti di cui al numero 37) e di quelli colposi di cui al numero 43), è resa possibile o agevolata per colpa del militare che, per ragioni di ufficio o di servizio, ha la custodia o il possesso della cosa, è a conoscenza della notizia ovvero esercita la vigilanza sui luoghi di interesse militare, questo è punito con la reclusione fino a cinque anni e, se il fatto ha compromesso la preparazione e la difesa militare dello Stato, con la reclusione da tre a quindici anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c47">
+								<an:point id="d125e636">
 									<an:num>46)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c47b1">
+									<an:content id="d125e639">
 										<an:p> prevedere che il militare che istiga altri a commettere alcuno dei reati di cui ai numeri da 34) a 43) è punito, se l'istigazione non è accolta, ovvero se l'istigazione è accolta ma il reato non è commesso:</an:p>
 										<an:p>46.1) con la reclusione da tre a dieci anni se la pena stabilita per il reato è l'ergastolo;</an:p>
 										<an:p>46.2) negli altri casi con la pena stabilita per il reato diminuita dalla metà a due terzi;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c48">
+								<an:point id="d125e646">
 									<an:num>47)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c48b1">
+									<an:content id="d125e649">
 										<an:p> prevedere che il militare che, avendo notizia dei reati di cui ai numeri da 27) a 46), puniti con la pena dell'ergastolo o la reclusione non inferiore nel massimo a cinque anni, non informa immediatamente i superiori è punito con la reclusione da tre mesi a due anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c49">
+								<an:point id="d125e652">
 									<an:num>48)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c49b1">
+									<an:content id="d125e655">
 										<an:p> prevedere l'applicazione delle pene stabilite ai numeri da 34) a 47) anche quando il reato è commesso a danno di uno Stato alleato o associato con lo Stato italiano, nell'ambito di un conflitto armato o di una operazione militare armata all'estero;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c50">
+								<an:point id="d125e658">
 									<an:num>49)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c50b1">
+									<an:content id="d125e661">
 										<an:p> prevedere che le pene stabilite per i reati di cui ai numeri da 27) a 48) sono diminuite quando, per la natura, la specie, i mezzi, le modalità o le circostanze dell'azione, ovvero per la particolare tenuità del danno o del pericolo, il fatto risulta di lieve entità;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c51">
+								<an:point id="d125e664">
 									<an:num>50)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c51b1">
+									<an:content id="d125e667">
 										<an:p> prevedere che il comandante che, senza autorizzazione, compie contro uno Stato estero atti ostili tali da esporre lo Stato italiano al pericolo di un conflitto armato è punito con la reclusione da sei a diciotto anni e, se il conflitto armato avviene ovvero se dagli atti ostili è derivato incendio o devastazione o la morte di una o più persone, con l'ergastolo;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c52">
+								<an:point id="d125e670">
 									<an:num>51)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c52b1">
+									<an:content id="d125e673">
 										<an:p> prevedere che, se gli atti ostili di cui al numero 50) sono tali da turbare le relazioni con un Governo estero ovvero da esporre lo Stato italiano o i suoi cittadini al pericolo di rappresaglie o di ritorsioni, la pena è della reclusione da tre a dodici anni e, se segue la rottura delle relazioni diplomatiche o se avvengono rappresaglie o ritorsioni, la pena è della reclusione da cinque a quindici anni; se atti ostili non sono tali da provocare conseguenze nei rapporti internazionali, la pena è della reclusione fino a tre anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c53">
+								<an:point id="d125e676">
 									<an:num>52)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c53b1">
+									<an:content id="d125e679">
 										<an:p> prevedere che nei casi colposi di cui ai numeri 50) e 51) la pena dell'ergastolo è sostituita con la reclusione non inferiore a cinque anni e le altre pene sono diminuite da un terzo a due terzi;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c54">
+								<an:point id="d125e682">
 									<an:num>53)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c54b1">
+									<an:content id="d125e685">
 										<an:p> prevedere che i reati di cui ai numeri 50), 51) e 52) sono puniti a richiesta del Ministro da cui il militare dipende e, in caso di concorso nel reato di militari dipendenti da Ministeri diversi, a richiesta del Ministro da cui dipende il militare più elevato in grado o a parità di grado, il più anziano;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c55">
+								<an:point id="d125e689">
 									<an:num>54)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c55b1">
+									<an:content id="d125e692">
 										<an:p> prevedere che il comandante di una forza navale o aeronautica che cagiona la perdita o la cattura di una o più navi o aeromobili dipendenti dal suo comando è punito con la reclusione non inferiore a quindici anni e che la stessa pena si applica al comandante di una nave o di un aeromobile o ad altro militare che vi è imbarcato che ne cagiona la perdita o la cattura. Se il fatto ha compromesso la preparazione e l'efficienza delle Forze armate dello Stato, ovvero le operazioni militari, si applica l'ergastolo;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c56">
+								<an:point id="d125e695">
 									<an:num>55)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c56b1">
+									<an:content id="d125e698">
 										<an:p> prevedere che quando i fatti di cui al numero 54) sono commessi per colpa, si applica la reclusione fino a dieci anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c57">
+								<an:point id="d125e701">
 									<an:num>56)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c57b1">
+									<an:content id="d125e704">
 										<an:p> prevedere che quando l'esecuzione dei fatti di cui al numero 54) è stata resa possibile o agevolata per colpa del militare che aveva la custodia o la vigilanza delle cose ivi indicate, questo è punito con la reclusione da uno a cinque anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c58">
+								<an:point id="d125e707">
 									<an:num>57)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c58b1">
+									<an:content id="d125e710">
 										<an:p> prevedere che il comandante che durante le operazioni militari, senza giustificato motivo, abbandona il comando è punito con la reclusione da due a cinque anni e, se il fatto è commesso in circostanze di grave pericolo o determina pregiudizio per l'esito dell'operazione, con la reclusione da quattro a otto anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c59">
+								<an:point id="d125e713">
 									<an:num>58)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c59b1">
+									<an:content id="d125e716">
 										<an:p> prevedere che il comandante che in caso di pericolo non è l'ultimo ad abbandonare la nave o l'aeromobile è punito con la reclusione fino a cinque anni; se dal fatto deriva l'impossibilità di salvare la nave o l'aeromobile, la pena è da cinque a dodici anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c60">
+								<an:point id="d125e719">
 									<an:num>59)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c60b1">
+									<an:content id="d125e722">
 										<an:p> prevedere che il comandante di una forza militare o di una o più navi militari o di uno o più aeromobili militari che, senza giustificato motivo, omette di soccorrere altra forza militare o altra nave o aeromobile che necessita di assistenza in caso di pericolo è punito con la reclusione fino a tre anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c61">
+								<an:point id="d125e725">
 									<an:num>60)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c61b1">
+									<an:content id="d125e728">
 										<an:p> prevedere che il militare che, in violazione di norme di legge o di regolamento ovvero di ordini ricevuti, assume o ritiene un comando è punito con la reclusione da due a quindici anni e che se il fatto ha compromesso l'esito di un'operazione militare la pena è aumentata;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c62">
+								<an:point id="d125e731">
 									<an:num>61)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c62b1">
+									<an:content id="d125e734">
 										<an:p> prevedere che il comandante che senza essere stato incaricato o autorizzato, ovvero senza necessità, ordina un movimento di forze militari è punito con la reclusione da uno a sette anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c63">
+								<an:point id="d125e737">
 									<an:num>62)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c63b1">
+									<an:content id="d125e740">
 										<an:p> prevedere che il comandante di una unità militare che, senza giustificato motivo, non esegue l'incarico affidatogli o non osserva le istruzioni ricevute per lo svolgimento di un'operazione militare o non adotta le modalità di organizzazione del servizio stabilite dall'autorità superiore, oralmente o per iscritto, è punito con la reclusione fino a tre anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c64">
+								<an:point id="d125e743">
 									<an:num>63)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c64b1">
+									<an:content id="d125e746">
 										<an:p> prevedere che:</an:p>
 										<an:p>63.1) il militare che, senza giustificato motivo, interrompe il servizio di sentinella al quale è stato comandato ovvero viola la consegna che regola quest'ultimo è punito con la reclusione fino a tre anni e, nel caso di fatto commesso nel corso di operazioni militari armate all'estero o in circostanze di pubblica calamità, con la reclusione da uno a cinque anni;</an:p>
 										<an:p>63.2) fuori dai casi di cui al numero 63.1), al militare che, senza giustificato motivo, interrompe il servizio regolato da consegne al quale è stato comandato ovvero viola le consegne medesime si applica la reclusione fino a un anno e che la pena è aumentata nel caso di servizio armato;</an:p>
 										<an:p>63.3) se nei casi di cui ai numeri 63.1) e 63.2) deriva un danno grave per l'amministrazione militare o un grave pericolo per l'incolumità delle persone, la pena è aumentata;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c65">
+								<an:point id="d125e755">
 									<an:num>64)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c65b1">
+									<an:content id="d125e758">
 										<an:p> prevedere che il militare che, senza giustificato motivo, omette di intraprendere un servizio armato regolato da consegne al quale è stato comandato, ovvero un servizio armato disposto nel corso di un'operazione militare armata all'estero, se dal fatto deriva l'interruzione della continuità del servizio medesimo o pericolo per l'incolumità di una o più persone o per la sicurezza di un'infrastruttura, è punito con la reclusione fino a sei mesi;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c66">
+								<an:point id="d125e762">
 									<an:num>65)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c66b1">
+									<an:content id="d125e765">
 										<an:p> prevedere che, salvo che il fatto costituisca più grave reato, il militare che rivela notizie concernenti il servizio o la disciplina militare, da lui conosciute per ragione o in occasione del suo ufficio o servizio, e che devono rimanere segrete, è punito con la reclusione da sei mesi a tre anni. Se le notizie non sono segrete, ma hanno carattere riservato per esserne stata vietata la divulgazione dall'autorità competente, si applica la reclusione fino a due anni. Se il fatto avviene per colpa la pena è della reclusione fino ad un anno;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c67">
+								<an:point id="d125e768">
 									<an:num>66)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c67b1">
+									<an:content id="d125e771">
 										<an:p> prevedere che il militare che, durante lo svolgimento di un servizio ovvero dopo essere stato comandato per il medesimo, è colto in stato di ubriachezza o di intossicazione acuta da sostanze stupefacenti o psicotrope, volontaria o colposa, tale da escludere o da menomare la sua capacità di prestarlo, è punito con la reclusione fino a sei mesi;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c68">
+								<an:point id="d125e774">
 									<an:num>67)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c68b1">
+									<an:content id="d125e777">
 										<an:p> prevedere che il militare che in qualsiasi modo forza una consegna è punito con la reclusione da sei mesi a due anni. Se il fatto è commesso a bordo di una nave o di un'aeromobile o nel corso di operazioni militari armate all'estero o in circostanze di pubblica calamità la reclusione è da uno a cinque anni. Se il fatto è commesso con armi o da tre o più persone la pena è aumentata;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c69">
+								<an:point id="d125e780">
 									<an:num>68)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c69b1">
+									<an:content id="d125e783">
 										<an:p> prevedere che il militare che non ottempera all'ingiunzione fatta da una sentinella nell'esecuzione di una consegna ricevuta è punito con la reclusione fino ad un anno e che il militare che minaccia o ingiuria una sentinella è punito con la reclusione da uno a tre anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c70">
+								<an:point id="d125e786">
 									<an:num>69)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c70b1">
+									<an:content id="d125e789">
 										<an:p> prevedere che il militare che usa violenza contro una sentinella è punito con la reclusione da uno a cinque anni e che la pena è aumentata se la violenza è commessa da più persone riunite o con armi. Se la violenza consiste nell'omicidio volontario, ancorché tentato o preterintenzionale, ovvero in una lesione personale grave o gravissima, si applicano le corrispondenti pene stabilite dal codice penale e la pena detentiva temporanea è aumentata;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c71">
+								<an:point id="d125e792">
 									<an:num>70)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c71b1">
+									<an:content id="d125e795">
 										<an:p> prevedere che il militare che interrompe la prestazione del servizio alle armi, allontanandosi arbitrariamente od omettendo di ripresentarsi senza giustificato motivo, e rimane assente per oltre cinque giorni è punito con la reclusione da sei mesi a due anni e che la pena è aumentata se l'assenza arbitraria supera i sei mesi ed è diminuita se non supera i trenta giorni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c72">
+								<an:point id="d125e798">
 									<an:num>71)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c72b1">
+									<an:content id="d125e801">
 										<an:p> prevedere che le pene di cui al numero 70) si applicano al militare che senza autorizzazione si trova assente al momento della partenza di un corpo di spedizione;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c73">
+								<an:point id="d125e804">
 									<an:num>72)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c73b1">
+									<an:content id="d125e807">
 										<an:p> prevedere che il militare che, avendo l'obbligo di assumere il servizio alle armi, non vi adempie, senza giusto motivo, entro dieci giorni da quello previsto è punito con la reclusione da sei mesi a due anni. Le stesse pene si applicano al chiamato di leva e al militare in congedo richiamato per qualsiasi motivo. Se la chiamata alle armi è fatta allo scopo di istruzione, il militare che non si presenta, senza giustificato motivo, nei venti giorni successivi a quello previsto, è punito con la reclusione fino a sei mesi. Nelle ipotesi previste dal primo e dal secondo periodo del presente numero, la pena è aumentata se l'assenza arbitraria supera i sei mesi ed è diminuita se non supera i trenta giorni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c74">
+								<an:point id="d125e810">
 									<an:num>73)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c74b1">
+									<an:content id="d125e813">
 										<an:p> prevedere che il militare che, al fine di sottrarsi permanentemente o temporaneamente all'obbligo del servizio militare, anche se volontariamente assunto, si procura o simula un'infermità è punito con la reclusione fino a tre anni. La stessa pena si applica anche per i fatti commessi dagli iscritti di leva e dai militari in congedo illimitato, durante lo stato di congedo, se richiamati;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c75">
+								<an:point id="d125e816">
 									<an:num>74)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c75b1">
+									<an:content id="d125e819">
 										<an:p> prevedere che il militare che distrugge, disperde, deteriora o rende, in tutto o in parte, inservibili armi, munizioni, esplosivi o altro materiale di armamento di proprietà dell'amministrazione militare è punito con la reclusione da sei mesi a quattro anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c76">
+								<an:point id="d125e822">
 									<an:num>75)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c76b1">
+									<an:content id="d125e825">
 										<an:p> prevedere che, fuori dai casi previsti dai numeri 54) e 55), il militare che distrugge o rende inservibili, in tutto o in parte, navi o aeromobili, convogli, strade, stabilimenti, depositi o altre opere militari o adibite al servizio delle Forze armate dello Stato è punito con la reclusione non inferiore a otto anni. Se il fatto ha compromesso la preparazione e l'efficienza delle Forze armate dello Stato, ovvero le operazioni militari, si applica l'ergastolo. Se il fatto è commesso per colpa, si applica la reclusione fino a tre anni nell'ipotesi di cui al primo periodo del presente numero, ovvero la reclusione fino a cinque anni nell'ipotesi di cui al secondo periodo;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c77">
+								<an:point id="d125e829">
 									<an:num>76)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c77b1">
+									<an:content id="d125e832">
 										<an:p> prevedere che, fuori dei casi previsti dai primi due periodi del numero 75), il militare che danneggia immobili militari è punito con la reclusione da sei mesi a quattro anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c78">
+								<an:point id="d125e835">
 									<an:num>77)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c78b1">
+									<an:content id="d125e838">
 										<an:p> prevedere che, fuori dei casi previsti dal numero 74), il militare che distrugge, disperde, deteriora o rende, in tutto o in parte, inservibili cose mobili appartenenti all'amministrazione militare è punito con la reclusione da sei mesi a tre anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c79">
+								<an:point id="d125e841">
 									<an:num>78)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c79b1">
+									<an:content id="d125e844">
 										<an:p> prevedere che il militare che, in armerie, depositi o altri locali militari adibiti alla custodia di armi, si impossessa di armi, munizioni, esplosivi o altro materiale di armamento, al fine di trame profitto per sé o per altri, sottraendoli all'amministrazione militare che li detiene è punito con la reclusione da tre a dieci anni. Se concorre taluna delle circostanze previste dall'articolo 61 o dall'articolo 625, primo comma, numeri 2), 3), 4) e 5), del codice penale, si applica la pena della reclusione da cinque a dodici anni e della multa da euro 1.032 a euro 3.098;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c80">
+								<an:point id="d125e847">
 									<an:num>79)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c80b1">
+									<an:content id="d125e850">
 										<an:p> prevedere che il militare che, per procurare a sé o ad altri un ingiusto profitto, si appropria di armi, munizioni, esplosivi o materiali di armamento appartenenti all'amministrazione militare di cui abbia a qualsiasi titolo il possesso, è punito con la reclusione da uno a quattro anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c81">
+								<an:point id="d125e853">
 									<an:num>80)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c81b1">
+									<an:content id="d125e856">
 										<an:p> prevedere che il militare che rifiuta, omette o ritarda di obbedire a un ordine attinente al servizio o alla disciplina impartitogli da un superiore è punito con la reclusione fino a un anno. Se il fatto è commesso in occasione di operazioni militari armate all'estero o di interventi in circostanze di pubblica calamità si applica la reclusione da uno a cinque anni. Non è punibile il militare che dichiara di non voler eseguire l'ordine quando, dopo che l'ordine è stato confermato dal superiore, lo esegue;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c82">
+								<an:point id="d125e859">
 									<an:num>81)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c82b1">
+									<an:content id="d125e862">
 										<an:p> prevedere che:</an:p>
 										<an:p>81.1) sono puniti con la pena della reclusione da tre a quindici anni i militari che, in numero di quattro o superiore:</an:p>
 										<an:p>81.1.1) mentre sono in servizio armato, rifiutano, omettono o ritardano di obbedire a un ordine di un loro superiore;</an:p>
@@ -646,93 +664,93 @@
 										<an:p>81.2) per chi ha promosso, organizzato o diretto il fatto di cui ai numeri 81.1.1) e 81.1.2) o 81.1.3) si applica la reclusione non inferiore a otto anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c83">
+								<an:point id="d125e875">
 									<an:num>82)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c83b1">
+									<an:content id="d125e878">
 										<an:p> prevedere che, fuori dai casi di cui al numero 81), sono puniti con la reclusione da sei mesi a tre anni i militari che, riuniti in numero di almeno quattro, omettono o ritardano di obbedire a un ordine di un loro superiore. Per chi ha promosso, organizzato o diretto il fatto si applica la pena della reclusione da uno a cinque anni. La pena è aumentata dalla metà a due terzi se il fatto è commesso durante operazioni militari armate all'estero o interventi in circostanze di pubblica calamità. Non è punibile il militare che desiste immediatamente dall'azione dopo che l'ordine è stato reiterato dal superiore;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c84">
+								<an:point id="d125e881">
 									<an:num>83)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c84b1">
+									<an:content id="d125e884">
 										<an:p> prevedere che se alcuno dei reati di cui ai numeri 81) e 82) è commesso nello stato di ira determinato dal fatto ingiusto del superiore, consistente in una violenza o altra grave offesa verso l'inferiore, e subito dopo di essa, le pene ivi stabilite sono diminuite da un terzo alla metà;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c85">
+								<an:point id="d125e887">
 									<an:num>84)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c85b1">
+									<an:content id="d125e890">
 										<an:p> prevedere che il militare che, avendo notizia dei fatti di cui ai numeri 81) e 82), omette di informarne tempestivamente i superiori, è punito con la reclusione fino ad un anno;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c86">
+								<an:point id="d125e893">
 									<an:num>85)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c86b1">
+									<an:content id="d125e896">
 										<an:p> prevedere che quando quattro o più militari si accordano al fine di commettere alcuno dei reati di cui ai numeri 81) e 82), coloro che partecipano all'accordo sono puniti, se il reato non viene commesso, con la pena stabilita per il reato stesso, diminuita da un terzo alla metà;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c87">
+								<an:point id="d125e899">
 									<an:num>86)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c87b1">
+									<an:content id="d125e902">
 										<an:p> prevedere che quando più militari si accordano per commettere un reato al fine di compromettere la sicurezza della nave, dell'aeromobile o del posto, ovvero impedire l'esercizio dei poteri del comandante, si applica la pena stabilita per il reato stesso, diminuita da un terzo alla metà;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c88">
+								<an:point id="d125e906">
 									<an:num>87)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c88b1">
+									<an:content id="d125e909">
 										<an:p> prevedere che nei casi previsti dai numeri 85) e 86) non sono punibili coloro che recedono dall'accordo prima che questo sia stato scoperto e che il reato per cui l'accordo è intervenuto venga commesso;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c89">
+								<an:point id="d125e912">
 									<an:num>88)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c89b1">
+									<an:content id="d125e915">
 										<an:p> prevedere che il militare che pubblicamente compie manifestazioni sediziose è punito, se il fatto non costituisce più grave reato, con la reclusione fino ad un anno;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c90">
+								<an:point id="d125e918">
 									<an:num>89)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c90b1">
+									<an:content id="d125e921">
 										<an:p> prevedere che il militare che, trovandosi in servizio ovvero per cause attinenti al servizio o alla disciplina militare, usa violenza contro un superiore o un inferiore è punito con la reclusione da uno a tre anni. Se la violenza consiste nell'omicidio volontario, consumato o tentato, nell'omicidio preterintenzionale ovvero in una lesione personale grave o gravissima, si applicano le corrispondenti pene stabilite dal codice penale e la pena detentiva temporanea è aumentata;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c91">
+								<an:point id="d125e924">
 									<an:num>90)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c91b1">
+									<an:content id="d125e927">
 										<an:p> prevedere che il militare che, trovandosi in servizio ovvero per cause attinenti al servizio o alla disciplina militare, minaccia un ingiusto danno a un superiore o a un inferiore, alla loro presenza, è punito con la reclusione da sei mesi a tre anni. Se il fatto è commesso per costringere l'altro militare a compiere un atto contrario ai propri doveri ovvero ad omettere un atto del proprio ufficio o servizio ovvero durante un'operazione militare armata all'estero la pena è della reclusione da uno a cinque anni. Le stesse pene si applicano al militare che commette i fatti indicati nel presente numero mediante qualunque forma di comunicazione, scritti o disegni, diretti al superiore o all'inferiore;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c92">
+								<an:point id="d125e930">
 									<an:num>91)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c92b1">
+									<an:content id="d125e933">
 										<an:p> prevedere che le pene per i fatti di cui al numero 90) sono aumentate se ricorrono le circostanze di cui all'articolo 339, primo comma, del codice penale. Se ricorrono le circostanze di cui al secondo comma del citato articolo 339 del codice penale, la pena è della reclusione da due a otto anni, nelle ipotesi semplici, e della reclusione da tre a quindici anni se il fatto è commesso per costringere l'altro militare a compiere un atto contrario ai propri doveri ovvero a omettere un atto del proprio ufficio o servizio;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c93">
+								<an:point id="d125e936">
 									<an:num>92)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c93b1">
+									<an:content id="d125e939">
 										<an:p> prevedere che il militare che pubblicamente istiga uno o più militari a commettere un reato militare è punito con la reclusione fino a tre anni se l'istigazione non è accolta ovvero se il reato non è commesso. La pena è sempre applicata in misura inferiore alla metà della pena stabilita per il reato al quale l'istigazione si riferisce;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c94">
+								<an:point id="d125e942">
 									<an:num>93)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c94b1">
+									<an:content id="d125e945">
 										<an:p> prevedere che il militare che commette alcuno dei fatti d'istigazione o di apologia indicati dall'articolo 266 del codice penale verso militari in servizio alle armi soggiace alle pene ivi stabilite, aumentate da un sesto ad un terzo. La pena è sempre applicata in misura inferiore alla metà di quella stabilita per il reato al quale l'istigazione si riferisce;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c95">
+								<an:point id="d125e948">
 									<an:num>94)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c95b1">
+									<an:content id="d125e951">
 										<an:p> prevedere che il militare incaricato di funzioni amministrative o di comando che, avendo per ragioni del suo ufficio o servizio il possesso o comunque la disponibilità di denaro o di altra cosa mobile appartenente all'amministrazione militare o ad altro militare, se ne appropria è punito con la reclusione da tre a dieci anni e che quando il colpevole ha agito al solo scopo di fare uso momentaneo della cosa, e questa, dopo l'uso momentaneo, è stata immediatamente restituita, si applica la pena della reclusione da sei mesi a tre anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c96">
+								<an:point id="d125e954">
 									<an:num>95)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c96b1">
+									<an:content id="d125e957">
 										<an:p> prevedere che il militare incaricato di funzioni amministrative o di comando che, nell'esercizio di esse, giovandosi dell'errore altrui, riceve o ritiene indebitamente, per sé o per altri, denaro o altra cosa mobile appartenente ad altro militare o all'amministrazione militare è punito con la reclusione da due mesi a tre anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c97">
+								<an:point id="d125e960">
 									<an:num>96)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c97b1">
+									<an:content id="d125e963">
 										<an:p>
 											 prevedere che ai reati di cui ai numeri 94) e 95), ricorrendone i presupposti, si applicano la confisca di cui all'articolo 322-
 											<an:i>ter</an:i>
@@ -740,21 +758,21 @@
 										</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c98">
+								<an:point id="d125e969">
 									<an:num>97)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c98b1">
+									<an:content id="d125e972">
 										<an:p> prevedere che il militare che forma, in tutto o in parte, un falso foglio di licenza o un permesso o un'autorizzazione di libera uscita o d'ingresso o di libera circolazione in uno stabilimento militare, o un documento di entrata in un luogo di cura militare o di uscita da questo, ovvero altera alcuno di detti fogli, autorizzazioni o documenti veri, è punito con la reclusione fino ad un anno, e che la stessa pena si applica al militare che fa uso di detti fogli, autorizzazioni o documenti, da altri falsificati o alterati, ovvero regolarmente rilasciati ad altro militare e non alterati;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3c99">
+								<an:point id="d125e976">
 									<an:num>98)</an:num>
-									<an:content id="w1ab1ab3b2b2b3c99b1">
+									<an:content id="d125e979">
 										<an:p> prevedere che il militare che trovandosi in servizio o per cause attinenti al servizio o alla disciplina militare o in presenza di militari riuniti per servizio o in luogo militare, percuote altro militare è punito, a querela della persona offesa, con la reclusione fino a sei mesi e che tale disposizione non si applica quando la legge considera la violenza come elemento costitutivo o come circostanza aggravante di un altro reato;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b3d100">
+								<an:point id="d125e982">
 									<an:num>99)</an:num>
-									<an:content id="w1ab1ab3b2b2b3d100b1">
+									<an:content id="d125e985">
 										<an:p> prevedere che il militare che, trovandosi in servizio o per cause attinenti al servizio o alla disciplina militare o in presenza di militari riuniti per servizio o in luogo militare, cagiona ad altro militare una lesione personale dalla quale deriva una malattia del corpo o della mente è punito con la reclusione da tre mesi a tre anni. Se la malattia ha una durata non superiore a venti giorni e non concorre alcuna delle circostanze aggravanti previste dagli articoli 583 e 585 del codice penale il fatto è punibile a querela della persona offesa. Se la lesione personale è grave o gravissima si applicano rispettivamente la reclusione da tre a sette anni e da sei a dodici anni;</an:p>
 										<an:p>100) prevedere che nei casi di cui al numero 99) la pena è aumentata da un terzo alla metà, se ricorre alcuna delle circostanze aggravanti previste dall'articolo 576 del codice penale, e fino ad un terzo se ricorre alcuna delle circostanze aggravanti previste dall'articolo 577 del medesimo codice penale ovvero se il fatto è commesso con armi o con sostanze corrosive;</an:p>
 										<an:p>101) prevedere che al militare che, trovandosi in servizio o per cause attinenti al servizio o alla disciplina militare o in presenza di militari riuniti per servizio o in luogo militare, cagiona la morte di un altro militare si applicano le corrispondenti pene e le circostanze previste dal codice penale;</an:p>
@@ -832,50 +850,50 @@
 								</an:point>
 							</an:list>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b4">
+						<an:point id="d125e1133">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:list id="w1ab1ab3b2b2b4a">
-								<an:intro id="w1ab1ab3b2b2b4b1">
+							<an:list id="d125e1134">
+								<an:intro id="d125e1138">
 									<an:p>disciplinare in apposito titolo le disposizioni penali per le missioni militari armate all'estero autorizzate dal Parlamento, secondo i princìpi e criteri direttivi di seguito indicati:</an:p>
 								</an:intro>
-								<an:point id="w1ab1ab3b2b2b4b2">
+								<an:point id="d125e1140">
 									<an:num>1)</an:num>
-									<an:content id="w1ab1ab3b2b2b4b2b1">
+									<an:content id="d125e1143">
 										<an:p> prevedere che il comandante che, senza autorizzazione o fuori dai casi di necessità o comunque in violazione delle convenzioni internazionali, delle disposizioni che regolano la missione o degli ordini ricevuti, ordina di compiere atti ostili contro uno Stato è punito con la reclusione non inferiore a cinque anni. Se l'atto è commesso per colpa, si applica la reclusione da uno a cinque anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4b3">
+								<an:point id="d125e1146">
 									<an:num>2)</an:num>
-									<an:content id="w1ab1ab3b2b2b4b3b1">
+									<an:content id="d125e1149">
 										<an:p> prevedere che il comandante di una forza militare che ordina o autorizza l'uso di alcuno dei mezzi o dei modi di combattimento vietati dalle convenzioni internazionali o dalla legge o comunque contrari all'onore militare è punito, se il fatto non costituisce più grave reato, con la reclusione non inferiore a cinque anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4b4">
+								<an:point id="d125e1152">
 									<an:num>3)</an:num>
-									<an:content id="w1ab1ab3b2b2b4b4b1">
+									<an:content id="d125e1155">
 										<an:p> prevedere che le pene stabilite dal numero 2) si applicano anche a chiunque adopera mezzi o usa modi di combattimento vietati dalle convenzioni internazionali, dalla legge o comunque contrari all'onore militare. In tale caso le pene possono essere diminuite;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4b5">
+								<an:point id="d125e1158">
 									<an:num>4)</an:num>
-									<an:content id="w1ab1ab3b2b2b4b5b1">
+									<an:content id="d125e1161">
 										<an:p> prevedere che il comandante che, in violazione delle convenzioni internazionali, ordina di eseguire atti di ostilità a titolo di rappresaglia, è punito con la reclusione da tre a dieci anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4b6">
+								<an:point id="d125e1164">
 									<an:num>5)</an:num>
-									<an:content id="w1ab1ab3b2b2b4b6b1">
+									<an:content id="d125e1167">
 										<an:p> prevedere che:</an:p>
 										<an:p>5.1) è punito con la reclusione fino a tre anni il comandante che omette di adottare i provvedimenti previsti dalle convenzioni internazionali o dalla legge per assicurare il rispetto degli ospedali o di ogni altro edificio o luogo di ricovero o cura di infermi o feriti, di formazioni sanitarie mobili o di stabilimenti fissi per il servizio sanitario, di navi-ospedale, di aeromobili sanitari addetti al servizio militare, di beni culturali o edifici destinati all'esercizio di un culto, quando essi non siano allo stesso tempo utilizzati a fini militari e siano designati mediante i segni distintivi previsti dalle convenzioni internazionali o, comunque, preventivamente resi noti, e facilmente visibili anche a grande distanza e a quota elevata;</an:p>
 										<an:p>5.2) la pena prevista dal numero 5.1) si applica anche a chiunque, avendone la responsabilità, omette di designare gli ospedali, i luoghi, i monumenti e gli edifici indicati dal medesimo numero 5.1) mediante segni visibili, ovvero di darne adeguata comunicazione ai responsabili delle operazioni militari;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4b7">
+								<an:point id="d125e1174">
 									<an:num>6)</an:num>
-									<an:content id="w1ab1ab3b2b2b4b7b1">
+									<an:content id="d125e1177">
 										<an:p> prevedere che:</an:p>
 										<an:p>6.1) è punito con la reclusione fino a sette anni chiunque usa indebitamente, a fini di aggressione o per commettere atti ostili:</an:p>
 										<an:p>6.1.1) i segni distintivi legalmente adottati per assicurare il rispetto e la protezione degli ospedali, dei luoghi, delle formazioni, degli stabilimenti, dei beni e degli edifici indicati dal numero 5);</an:p>
@@ -885,81 +903,81 @@
 										<an:p>6.2) la pena di cui al numero 6.1) si applica anche a chiunque usa indebitamente bandiere, insegne o uniformi militari diverse da quelle nazionali;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4b8">
+								<an:point id="d125e1192">
 									<an:num>7)</an:num>
-									<an:content id="w1ab1ab3b2b2b4b8b1">
+									<an:content id="d125e1195">
 										<an:p> prevedere che chiunque vilipende i distintivi internazionali di protezione è punito con la reclusione fino a tre anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4b9">
+								<an:point id="d125e1198">
 									<an:num>8)</an:num>
-									<an:content id="w1ab1ab3b2b2b4b9b1">
+									<an:content id="d125e1201">
 										<an:p> prevedere che il militare il quale costringe il cittadino straniero a partecipare ad azioni ostili contro il proprio Paese ovvero a favorirne in qualsiasi modo l'esecuzione è punito con la reclusione da uno a cinque anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c10">
+								<an:point id="d125e1204">
 									<an:num>9)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c10b1">
+									<an:content id="d125e1207">
 										<an:p> prevedere che il militare che viola i divieti della cattura di ostaggi previsti dalle convenzioni internazionali è punito con la reclusione da due a dieci anni. La stessa pena si applica al militare che minaccia di ferire o di uccidere una persona non in armi o non in atteggiamento ostile, catturata o fermata per cause non estranee alle finalità dell'operazione militare armata, al fine di costringere alla consegna di persona o di cose. Se la violenza è attuata si applica anche la disposizione di cui al numero 10);</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c11">
+								<an:point id="d125e1211">
 									<an:num>10)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c11b1">
+									<an:content id="d125e1214">
 										<an:p> prevedere che il militare che, senza necessità o, comunque, senza giustificato motivo, per cause non estranee alla missione militare armata, usa violenza contro civili, che non prendono parte alle operazioni militari, è punito con la reclusione da due a cinque anni. Se la violenza consiste nell'omicidio, ancorché tentato o preterintenzionale, o in una lesione personale gravissima o grave, si applicano le pene stabilite dal codice penale e la pena detentiva temporanea è aumentata. Le stesse pene si applicano a chiunque nel territorio ove operano le Forze armate dello Stato usa violenza contro alcuna delle persone a esse appartenenti;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c12">
+								<an:point id="d125e1217">
 									<an:num>11)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c12b1">
+									<an:content id="d125e1220">
 										<an:p> prevedere che agli effetti della legge penale militare, il prigioniero, l'ostaggio e qualunque altra persona trattenuta, a qualsiasi titolo, dalle Forze armate dello Stato nel corso di un'operazione militare armata all'estero sono equiparati ai prigionieri di guerra;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c13">
+								<an:point id="d125e1223">
 									<an:num>12)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c13b1">
+									<an:content id="d125e1226">
 										<an:p> prevedere che, salvo che il fatto non costituisca più grave reato, il militare il quale, per cause non estranee alle finalità della missione militare armata, compie atti di tortura o altri trattamenti inumani, trasferimenti illegali ovvero altre condotte vietategli dalle convenzioni internazionali, inclusi gli esperimenti biologici o i trattamenti medici non giustificati dallo stato di salute, in danno di prigionieri o di civili o di altre persone protette dalle convenzioni internazionali medesime è punito con la reclusione da tre a sette anni; .</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c14">
+								<an:point id="d125e1229">
 									<an:num>13)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c14b1">
+									<an:content id="d125e1232">
 										<an:p> prevedere che chiunque commette un fatto diretto a portare il saccheggio nel territorio ove operano le Forze armate dello Stato è punito con la reclusione da otto a quindici anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c15">
+								<an:point id="d125e1235">
 									<an:num>14)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c15b1">
+									<an:content id="d125e1238">
 										<an:p> prevedere che chiunque, nel territorio ove operano le Forze armate dello Stato, senza essere costretto dalla necessità delle operazioni militari, appicca il fuoco ad una casa o ad un edificio, o con qualsiasi altro mezzo li distrugge, è punito con la reclusione da quattro a dodici anni. Se dal fatto è derivata la morte di una o più persone, si applica l'ergastolo. Le stesse disposizioni si applicano nel caso d'incendio o distruzione o grave danneggiamento di beni culturali o di beni destinati al culto o all'istruzione;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c16">
+								<an:point id="d125e1241">
 									<an:num>15)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c16b1">
+									<an:content id="d125e1244">
 										<an:p> prevedere che il militare che, nel territorio ove operano le Forze armate dello Stato, si impossessa, senza necessità o autorizzazione, di viveri, oggetti di vestiario o equipaggiamento, ovvero se li fa consegnare, è punito con la reclusione fino a cinque anni. Se il fatto è commesso da due o più persone riunite, la pena è aumentata da un terzo alla metà. Se si è usata violenza si applica la reclusione da uno a otto anni. Se la violenza consiste nell'omicidio, ancorché tentato o preterintenzionale, o in una lesione personale gravissima o grave, si applicano le pene stabilite dal codice penale e la pena detentiva temporanea è aumentata. Il militare che, avendo notizia dei fatti, omette d'informarne tempestivamente i superiori è punito con la reclusione fino ad un anno;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c17">
+								<an:point id="d125e1247">
 									<an:num>16)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c17b1">
+									<an:content id="d125e1250">
 										<an:p> prevedere che il militare addetto al servizio sanitario il quale, in occasione di un'operazione armata, omette di prestare la sua assistenza ai militari o ad altre persone coinvolte nella medesima, che siano infermi, feriti o naufraghi, è punito con la reclusione da uno a dieci anni. Se alcuno dei fatti indicati dal presente numero è commesso per colpa, la pena è della reclusione fino a cinque anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c18">
+								<an:point id="d125e1253">
 									<an:num>17)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c18b1">
+									<an:content id="d125e1256">
 										<an:p> prevedere che chiunque fa uso delle armi contro ambulanze, ospedali, formazioni mobili sanitarie, stabilimenti fissi per il servizio sanitario, navi-ospedale, aeromobili sanitari addetti al servizio militare, quando a norma della legge o delle convenzioni internazionali devono considerarsi rispettati e protetti, è punito con la pena della reclusione non inferiore a sei anni. Se dal fatto è derivata la morte di una o più persone, si applica l'ergastolo;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c19">
+								<an:point id="d125e1259">
 									<an:num>18)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c19b1">
+									<an:content id="d125e1262">
 										<an:p> prevedere che chiunque compie maltrattamenti contro feriti o naufraghi, ancorché abbiano posto in essere atti ostili, è punito con la reclusione non inferiore a cinque anni. Se i maltrattamenti sono gravi, o si tratta di sevizie, ovvero se il fatto è commesso da un incaricato del trasporto o dell'assistenza dell'infermo, del ferito o del naufrago, si applica la reclusione non inferiore a dieci anni. Si applica l'ergastolo se dal fatto è derivata la morte dell'infermo, del ferito o del naufrago;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c20">
+								<an:point id="d125e1265">
 									<an:num>19)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c20b1">
+									<an:content id="d125e1268">
 										<an:p> prevedere che:</an:p>
 										<an:p>19.1) chiunque spoglia infermi, feriti o naufraghi, ancorché abbiano posto in essere atti ostili, ovvero sottrae ad essi denaro o altri oggetti, è punito con la reclusione da cinque a dieci anni; se il fatto è commesso con violenza contro la persona, si applica la reclusione non inferiore a dieci anni, se il colpevole è un incaricato del trasporto o dell'assistenza dell'infermo, ferito o naufrago, si applicano le seguenti pene:</an:p>
 										<an:p>19.1.1) reclusione non inferiore a dieci anni, nel caso previsto dal numero 19.1), prima parte;</an:p>
@@ -967,101 +985,101 @@
 										<an:p>19.2) si applica l'ergastolo se dal fatto è derivata la morte dell'infermo, del ferito o del naufrago;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c21">
+								<an:point id="d125e1279">
 									<an:num>20)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c21b1">
+									<an:content id="d125e1282">
 										<an:p> prevedere che, fuori del caso previsto dal numero 17), chiunque usa violenza contro alcuna delle persone addette al servizio sanitario, quando a norma della legge o delle convenzioni internazionali devono essere considerate rispettate o protette, o nei confronti di ministri di culto addetti alle Forze armate dello Stato, è punito con la reclusione da cinque a quindici anni. Se la violenza consiste nell'omicidio, ancorché tentato o preterintenzionale, o in una lesione personale gravissima si applicano le corrispondenti pene stabilite dal codice penale e la pena detentiva temporanea è aumentata;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c22">
+								<an:point id="d125e1286">
 									<an:num>21)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c22b1">
+									<an:content id="d125e1289">
 										<an:p> prevedere che chiunque, violando la legge o le convenzioni internazionali, non consegna o non rilascia o comunque trattiene alcuna delle persone indicate al numero 20), quando hanno cessato di esercitare le loro funzioni negli ospedali, nelle ambulanze o in altri luoghi dove prestavano servizio, è punito con la reclusione da uno a cinque anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c23">
+								<an:point id="d125e1292">
 									<an:num>22)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c23b1">
+									<an:content id="d125e1295">
 										<an:p> prevedere che chiunque sottrae, mutila o deturpa il cadavere di un caduto in operazioni militari, o commette su di esso atti di vilipendio, di brutalità o di oscenità, è punito con la reclusione non inferiore a sei anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c24">
+								<an:point id="d125e1298">
 									<an:num>23)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c24b1">
+									<an:content id="d125e1301">
 										<an:p> prevedere che chiunque, al fine di trame profitto, spoglia il cadavere di un caduto in operazioni militari, o sottrae al cadavere denaro od oggetti preziosi, è punito con la reclusione da cinque a dieci anni. Se il fatto è commesso da più persone riunite, la pena è aumentata da un terzo alla metà;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c25">
+								<an:point id="d125e1304">
 									<an:num>24)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c25b1">
+									<an:content id="d125e1307">
 										<an:p> prevedere che il comandante che, non usando verso prigionieri, ovvero verso persone inferme, ferite o naufraghe, il trattamento preveduto dalla legge o dalle convenzioni internazionali, cagiona grave danno alle medesime persone è punito, se il fatto non costituisce più grave reato, con la reclusione non inferiore a tre anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c26">
+								<an:point id="d125e1310">
 									<an:num>25)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c26b1">
+									<an:content id="d125e1313">
 										<an:p> prevedere che il militare incaricato della scorta, vigilanza o custodia di prigionieri che, abusando di questa sua qualità, commette, per qualsiasi motivo, sevizie o maltrattamenti verso un prigioniero è punito, se il fatto non costituisce più grave reato, con la reclusione da due a dieci anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c27">
+								<an:point id="d125e1316">
 									<an:num>26)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c27b1">
+									<an:content id="d125e1319">
 										<an:p> prevedere che il militare che vilipende un prigioniero, in sua presenza e per questa sua qualità, è punito con la reclusione fino a tre anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c28">
+								<an:point id="d125e1322">
 									<an:num>27)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c28b1">
+									<an:content id="d125e1325">
 										<an:p> prevedere che, fuori dei casi previsti dai numeri 25) e 26):</an:p>
 										<an:p>27.1) il militare che usa violenza contro un prigioniero è punito con la reclusione da uno a cinque anni e che la pena è aumentata se la violenza è commessa da più persone riunite o con armi. Se la violenza consiste nell'omicidio volontario, ancorché tentato o preterintenzionale, ovvero in una lesione personale grave o gravissima, si applicano le corrispondenti pene stabilite dal codice penale e la pena detentiva temporanea è aumentata;</an:p>
 										<an:p>27.2) il militare che commette minaccia o ingiuria contro un prigioniero è punito rispettivamente con la pena della reclusione da sei mesi a tre anni e fino a due anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c29">
+								<an:point id="d125e1332">
 									<an:num>28)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c29b1">
+									<an:content id="d125e1335">
 										<an:p> prevedere che è punito con la reclusione da due a sette anni chiunque usa violenza o minaccia verso uno o più prigionieri per costringerli a dare informazioni o per costringerli a lavori che abbiano diretto rapporto con le operazioni militari in atto o che, comunque, siano specificamente vietati dalla legge o dalle convenzioni internazionali. Se la violenza consiste nell'omicidio, ancorché tentato o preterintenzionale, o in una lesione gravissima o grave, si applicano le corrispondenti pene del codice penale e la pena detentiva temporanea è aumentata;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c30">
+								<an:point id="d125e1338">
 									<an:num>29)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c30b1">
+									<an:content id="d125e1341">
 										<an:p> prevedere che, ferma restando l'applicazione delle disposizioni impartite dall'autorità militare, chiunque arbitrariamente impedisce o turba o comunque limita la libertà di religione o di culto dei prigionieri è punito con la reclusione fino ad un anno. La stessa pena si applica a chiunque offende la religione professata da un prigioniero, mediante vilipendio di questa, in sua presenza;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c31">
+								<an:point id="d125e1344">
 									<an:num>30)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c31b1">
+									<an:content id="d125e1347">
 										<an:p> prevedere che il militare che, al fine di trame profitto per sé o per altri, sottrae denaro o altri oggetti a un prigioniero è punito con la reclusione fino a cinque anni; se il militare è incaricato di scortare, sorvegliare o custodire il prigioniero, la pena è della reclusione da tre a sette anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c32">
+								<an:point id="d125e1350">
 									<an:num>31)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c32b1">
+									<an:content id="d125e1353">
 										<an:p> prevedere che il militare che, avendo notizia dei reati di cui ai numeri 13), 14), 18) e 19), non informa tempestivamente i superiori è punito con la reclusione da due a cinque anni;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c33">
+								<an:point id="d125e1357">
 									<an:num>32)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c33b1">
+									<an:content id="d125e1360">
 										<an:p> prevedere che il militare che per cause non estranee all'operazione militare armata, in violazione di convenzioni internazionali o della legge o delle disposizioni che regolano l'operazione stessa ovvero degli ordini ricevuti, al di fuori dei casi di cui ai numeri 9), 10), 15),27) e 28), usa violenza contro una persona estranea alle Forze armate dello Stato è punito con la reclusione fino a tre anni. Se la violenza consiste nell'omicidio, ancorché tentato o preterintenzionale, o in una lesione personale gravissima o grave, si applicano le pene stabilite dal codice penale e la pena detentiva temporanea è aumentata;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c34">
+								<an:point id="d125e1363">
 									<an:num>33)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c34b1">
+									<an:content id="d125e1366">
 										<an:p> prevedere la competenza territoriale del tribunale militare di Roma per i reati militari commessi nel corso di operazioni militari armate all'estero che rientrano nella giurisdizione dell'autorità giudiziaria militare;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c35">
+								<an:point id="d125e1369">
 									<an:num>34)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c35b1">
+									<an:content id="d125e1372">
 										<an:p> prevedere che i reati commessi dallo straniero nei territori esteri in cui si svolgono le operazioni militari armate di cui alla presente legge, a danno dello Stato o di cittadini italiani che partecipano alle operazioni suddette o ad interventi di cooperazione allo sviluppo o umanitari, sono puniti sempre a richiesta del Ministro della giustizia, sentito il Ministro della difesa per i reati commessi a danno di appartenenti alle Forze armate dello Stato;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b2b2b4c36">
+								<an:point id="d125e1375">
 									<an:num>35)</an:num>
-									<an:content id="w1ab1ab3b2b2b4c36b1">
+									<an:content id="d125e1378">
 										<an:p> prevedere che, per i reati di cui al numero 34) e per i reati attribuiti alla giurisdizione dell'autorità giudiziaria ordinaria commessi, nel territorio e per il periodo in cui si svolgono le operazioni militari armate e gli interventi di cui al medesimo numero 34), dal cittadino che partecipa alle stesse attività la competenza è attribuita al tribunale di Roma.</an:p>
 									</an:content>
 								</an:point>
@@ -1074,30 +1092,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-20/240"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-20/240/main/relazione"/>
 							<an:FRBRdate date="2013-03-20" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="240"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-20/240/ita@2013-03-20/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-20/240/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-20" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-20/240/ita@2013-03-20/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-20/240/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-20" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-20/240/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-20/240/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

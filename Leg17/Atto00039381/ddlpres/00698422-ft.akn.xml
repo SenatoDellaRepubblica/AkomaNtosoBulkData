@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/82"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/82/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/82"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/82/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/82/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="82"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/82/ita@2013-03-15/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/82/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/82/ita@"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/82/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/82/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/82/ita@2013-03-15/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/82/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/82/ita@.akn"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/82/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/82/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-15" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-15" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/82/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-15/82/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="w1ab1ab1b2aaab1a" showAs="Senatrice"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17750" id="w1ab1ab1b2aaab1b1" showAs="PINOTTI"/>
+				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d6e16a1327" showAs="Senatrice"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/17750" id="d6e16" showAs="PINOTTI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -50,7 +68,7 @@
 			</an:p>
 			<an:p>
 				d'iniziativa della senatrice 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">senatrice (PINOTTI)</an:docProponent>
+				<an:docProponent as="#d6e16a1327" refersTo="#d6e16">senatrice (PINOTTI)</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -58,11 +76,11 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d6e41">
 				<an:num>Art. 1.</an:num>
-				<an:paragraph id="w1ab1ab3b1b1">
+				<an:paragraph id="d6e44">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b1b1">
+					<an:content id="d6e47">
 						<an:p>
 							All'articolo 3, comma 1, numero 2), lettera 
 							<an:i>b)</an:i>
@@ -71,11 +89,11 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d6e53">
 				<an:num>Art. 2.</an:num>
-				<an:paragraph id="w1ab1ab3b2b1">
+				<an:paragraph id="d6e56">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b1b1">
+					<an:content id="d6e59">
 						<an:p>All'articolo 191 del codice civile, è aggiunto, in fine, il seguente comma:</an:p>
 						<an:p>«Nel caso di separazione personale, la comunione dei coniugi si scioglie nel momento in cui, in sede di udienza presidenziale, il presidente autorizza i coniugi a vivere separati».</an:p>
 					</an:content>
@@ -85,30 +103,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/82"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/82/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="82"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/82/ita@2013-03-15/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/82/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/82/ita@2013-03-15/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/82/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/82/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-15/82/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

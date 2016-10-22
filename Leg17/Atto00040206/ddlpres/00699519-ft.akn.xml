@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-29/346"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-29/346/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/346"/>
 					<an:FRBRdate date="2013-03-29" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/346/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/346/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="346"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-29/346/ita@2013-03-29/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-29/346/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/346/ita@"/>
 					<an:FRBRdate date="2013-03-29" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/346/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/346/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-29/346/ita@2013-03-29/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-29/346/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/346/ita@.akn"/>
 					<an:FRBRdate date="2013-03-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/346/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/346/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-29" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-29" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-29/346/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-29/346/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22814" id="w1ab1ab1b2aaab1b1" showAs="DE POLI"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d182e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/22814" id="d182e16" showAs="DE POLI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -54,7 +72,7 @@
 			</an:p>
 			<an:p>
 				d’iniziativa del senatore 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">DE POLI</an:docProponent>
+				<an:docProponent as="#d182e16a1327" refersTo="#d182e16">DE POLI</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -62,256 +80,256 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d182e82">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d182e85">
 					<an:i>(Princìpi generali)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d182e88">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d182e91">
 						<an:p>Lo Stato, in attuazione dei princìpi stabiliti dagli articoli 2 e 31 della Costituzione, riconosce e protegge la maternità come valore di primaria rilevanza personale e sociale e tutela e sostiene la vita umana fin dal suo concepimento.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b3">
+				<an:paragraph id="d182e94">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b1b3b1">
+					<an:content id="d182e97">
 						<an:p>Lo Stato, le regioni e gli enti locali, ciascuno nell'ambito delle proprie funzioni e competenze, attuano tutte le iniziative e gli interventi necessari per assistere la gestante, al fine di rimuovere le difficoltà, anche di ordine economico, che possono interferire nel decorso della gravidanza.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b4">
+				<an:paragraph id="d182e100">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b1b4b1">
+					<an:content id="d182e103">
 						<an:p>Lo Stato, le regioni e gli enti locali, ciascuno nell'ambito delle proprie funzioni e competenze, garantiscono alla donna dopo il parto e al neonato gli aiuti che si rendono necessari per superare le difficoltà, anche di ordine economico, in qualunque modo dipendenti dalla nascita del bambino.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d182e106">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d182e109">
 					<an:i>(Finalità)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d182e112">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b2b2a">
-						<an:intro id="w1ab1ab3b2b2b1">
+					<an:list id="d182e113">
+						<an:intro id="d182e115">
 							<an:p>La presente legge persegue le seguenti finalità:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b2b2b2">
+						<an:point id="d182e117">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b2b1">
+							<an:content id="d182e122">
 								<an:p>sostenere le strutture ospedaliere pubbliche e quelle accreditate che promuovono il parto fisiologico al fine di demedicalizzare l'evento della nascita, tutelando i diritti e la libera scelta della gestante, il benessere del nascituro e quello delle famiglie nell'esperienza della genitorialità;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b3">
+						<an:point id="d182e125">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b3b1">
+							<an:content id="d182e130">
 								<an:p>assicurare adeguati livelli di assistenza in tutte le situazioni di gravidanza e di parto a rischio dal punto di vista medico, psicologico e sociale;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b4">
+						<an:point id="d182e133">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b4b1">
+							<an:content id="d182e138">
 								<an:p>promuovere una più puntuale conoscenza delle modalità di assistenza e delle pratiche socio-sanitarie raccomandate, con particolare riferimento agli incontri di accompagnamento alla nascita, anche al fine dell'apprendimento delle pratiche farmacologiche e non farmacologiche, per il controllo del dolore durante il travaglio e il parto, ivi comprese le tecniche che prevedono il ricorso ad anestesie locali e di tipo epidurale;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b5">
+						<an:point id="d182e141">
 							<an:num>
 								<an:i>d)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b5b1">
+							<an:content id="d182e146">
 								<an:p>rafforzare gli strumenti per la salvaguardia della salute del neonato, individuando i livelli dell'assistenza ospedaliera che devono essere garantiti;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b6">
+						<an:point id="d182e149">
 							<an:num>
 								<an:i>e)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b6b1">
+							<an:content id="d182e154">
 								<an:p>favorire il parto fisiologico e promuovere le modalità più appropriate per gli interventi al fine di ridurre in modo consistente il ricorso al parto cesareo e incentivare l'allattamento al seno, secondo le raccomandazioni dell'Organizzazione mondiale della sanità (OMS) e del Fondo delle Nazioni Unite per l'infanzia (UNICEF);</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b7">
+						<an:point id="d182e157">
 							<an:num>
 								<an:i>f)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b7b1">
+							<an:content id="d182e162">
 								<an:p>promuovere la continuità assistenziale per tutta la durata della gravidanza, nel periodo della nascita e dopo la nascita, garantendo l'integrazione tra territorio e strutture ospedaliere.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d182e165">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d182e168">
 					<an:i>
 						(Interventi straordinari a carattere sanitario
 						<an:eol/>
 						e socio-assistenziale)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d182e173">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b3b2b1">
+					<an:content id="d182e176">
 						<an:p>La gestante che durante la gravidanza è afflitta da gravi difficoltà di carattere medico, economico, sociale o familiare ovvero nutre timori per le condizioni del nascituro o per il proprio avvenire, ove tali difficoltà non possano essere superate mediante le prestazioni sociali, assistenziali e sanitarie offerte dalle strutture pubbliche presenti nel territorio, ha diritto a fruire di interventi sanitari e socio-assistenziali straordinari.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d182e179">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab3b4b1">
+				<an:heading id="d182e182">
 					<an:i>(Assistenza alla maternità e alla nascita)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b4b2">
+				<an:paragraph id="d182e185">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b4b2b1">
+					<an:content id="d182e188">
 						<an:p>Il neonato è tutelato attraverso la notifica del ricovero presso i presìdi ospedalieri, pubblici e privati, e la compilazione della cartella clinica nonché attraverso le modalità che le singole regioni e le province autonome di Trento e di Bolzano adottano nell'ambito di programmi di attivazione e di attuazione del parto a domicilio.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b3">
+				<an:paragraph id="d182e191">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b4b3b1">
+					<an:content id="d182e194">
 						<an:p>Le aziende ospedaliere e le aziende sanitarie locali (ASL) coordinano appositi incontri di accompagnamento alla maternità e alla nascita, nel corso dei quali sono fornite informazioni sul percorso della nascita, sui luoghi presso i quali partorire, sulle metodiche di assistenza al travaglio e al parto, comprese le tecniche per la gestione del dolore, e sull'allattamento al seno.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b4">
+				<an:paragraph id="d182e197">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b4b4b1">
+					<an:content id="d182e200">
 						<an:p>Le ASL provvedono a garantire, anche nell'ambito delle prestazioni dei servizi consultoriali e ambulatoriali e con la dotazione del personale necessario, il potenziamento degli interventi per l'assistenza alla donna durante tutto il periodo della gravidanza.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b5">
+				<an:paragraph id="d182e203">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b4b5b1">
+					<an:content id="d182e206">
 						<an:p>A ogni nato, nell'ambito della struttura ospedaliera, deve essere assicurata l'assistenza da parte di personale con competenze specifiche mediche e infermieristiche nonché la conformità ai requisiti organizzativi, strutturali e tecnologici stabiliti dai progetti obiettivo in materia materno-infantile individuati dal Piano sanitario nazionale ai sensi dell'articolo 1, comma 11, del decreto legislativo 30 dicembre 1992, n. 502, e successive modificazioni, e nel rispetto delle disposizioni della presente legge.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b6">
+				<an:paragraph id="d182e209">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b4b6b1">
+					<an:content id="d182e212">
 						<an:p>Tutti gli ospedali pubblici e privati accreditati dotati di un punto nascita, anche se privi di unità operative autonome di neonatologia e di terapia intensiva neonatale, devono disporre di posti letto per cure minime e intermedie nell'ambito delle unità operative di pediatria o di neonatologia. Di norma le unità operative di ostetricia e le unità operative di neonatologia e patologia neonatale e di pediatria con assistenza neonatale devono operare a livello corrispondente e un livello superiore deve erogare, oltre alle prestazioni che lo caratterizzano, anche quelle di livello inferiore.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d182e215">
 				<an:num>Art. 5.</an:num>
-				<an:heading id="w1ab1ab3b5b1">
+				<an:heading id="d182e218">
 					<an:i>(Parto fisiologico)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b5b2">
+				<an:paragraph id="d182e221">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b5b2b1">
+					<an:content id="d182e224">
 						<an:p>Al fine di rendere non traumatici il travaglio e il parto e per favorire la partecipazione attiva della donna al parto, nei reparti ospedalieri, compatibilmente con le indicazioni mediche, deve essere evitata l'imposizione di procedure e di tecniche non rispondenti alla volontà della partoriente.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b3">
+				<an:paragraph id="d182e227">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b5b3b1">
+					<an:content id="d182e230">
 						<an:p>La donna deve essere messa in condizione di scegliere le posizioni da assumere durante il travaglio e il parto.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b4">
+				<an:paragraph id="d182e233">
 					<an:num>3. </an:num>
-					<an:list id="w1ab1ab3b5b4a">
-						<an:intro id="w1ab1ab3b5b4b1">
+					<an:list id="d182e234">
+						<an:intro id="d182e236">
 							<an:p>In base alle indicazioni dell'OMS, le modalità assistenziali garantiscono:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b5b4b2">
+						<an:point id="d182e238">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b5b4b2b1">
+							<an:content id="d182e243">
 								<an:p>il pieno rispetto delle esigenze biologiche e fisiologiche della donna e del nascituro;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b5b4b3">
+						<an:point id="d182e246">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b5b4b3b1">
+							<an:content id="d182e251">
 								<an:p>l'assecondamento dei ritmi fisiologici del travaglio e l'eliminazione di ogni pratica routinaria non supportata da precise indicazioni cliniche, per ognuna delle quali deve essere fornita una corretta informazione al fine di favorire decisioni consapevoli da parte della partoriente;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b5b4b4">
+						<an:point id="d182e254">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b5b4b4b1">
+							<an:content id="d182e259">
 								<an:p>la promozione e la diffusione di diversi metodi e tecniche naturali e farmacologiche per la gestione del dolore durante il travaglio, il parto e dopo il parto. L'uso di farmaci analgesici deve essere limitato e garantito in forma gratuita alle donne che lo scelgono come metodo di gestione del dolore essendo state informate delle possibili conseguenze;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b5b4b5">
+						<an:point id="d182e262">
 							<an:num>
 								<an:i>d)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b5b4b5b1">
+							<an:content id="d182e267">
 								<an:p>la modalità di assistenza che assicuri un ambiente confortevole e rispettoso dell'intimità;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b5b4b6">
+						<an:point id="d182e270">
 							<an:num>
 								<an:i>e) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b5b4b6b1">
+							<an:content id="d182e274">
 								<an:p>la possibilità di avere accanto il sanitario di fiducia, nel rispetto della continuità dell'assistenza e per il potenziamento dell'integrazione assistenziale.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b6">
+			<an:article id="d182e277">
 				<an:num>Art. 6.</an:num>
-				<an:heading id="w1ab1ab3b6b1">
+				<an:heading id="d182e280">
 					<an:i>
 						(Gestione e riduzione delle strutture
 						<an:eol/>
 						ospedaliere per il parto fisiologico)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b6b2">
+				<an:paragraph id="d182e285">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b6b2b1">
+					<an:content id="d182e288">
 						<an:p>Entro sei mesi dalla data di entrata in vigore della presente legge è disposta la progressiva chiusura dei punti nascita con un numero di parti inferiore a mille l'anno.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b3">
+				<an:paragraph id="d182e291">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b6b3b1">
+					<an:content id="d182e294">
 						<an:p>Nelle strutture ospedaliere sono previsti posti letto di terapia intensiva neonatale per l'assistenza dei neonati con elevati fattori di rischio.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b7">
+			<an:article id="d182e297">
 				<an:num>Art. 7.</an:num>
-				<an:heading id="w1ab1ab3b7b1">
+				<an:heading id="d182e300">
 					<an:i>(Formazione e aumento dei parti fisiologici)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b7b2">
+				<an:paragraph id="d182e303">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b7b2b1">
+					<an:content id="d182e306">
 						<an:p>Nei corsi di formazione degli specializzandi in ostetricia e ginecologia, nella laurea magistrale del corso per ostetricia e ginecologia e nella laurea magistrale del corso per ostetricia è previsto l'aumento delle ore di insegnamento relativo all'assistenza al parto.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b3">
+				<an:paragraph id="d182e309">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b7b3b1">
+					<an:content id="d182e312">
 						<an:p>Nei reparti di ostetrica e ginecologia è incentivato il ricorso al parto fisiologico, compatibilmente con le indicazioni mediche.</an:p>
 					</an:content>
 				</an:paragraph>
@@ -320,30 +338,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-29/346"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/346/main/relazione"/>
 							<an:FRBRdate date="2013-03-29" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="346"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-29/346/ita@2013-03-29/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/346/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-29" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-29/346/ita@2013-03-29/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/346/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-29" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-29/346/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-29/346/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/121"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/121/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/121"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/121/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/121/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="121"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/121/ita@2013-03-15/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/121/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/121/ita@"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/121/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/121/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/121/ita@2013-03-15/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/121/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/121/ita@.akn"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/121/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/121/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-15" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-15" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/121/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-15/121/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="w1ab1ab1b2aaab1b1" showAs="D'ALÌ"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d42e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d42e16" showAs="D'ALÌ"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -54,53 +72,53 @@
 			</an:p>
 			<an:p>
 				d'iniziativa del senatore 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">D'ALÌ</an:docProponent>
+				<an:docProponent as="#d42e16a1327" refersTo="#d42e16">D'ALÌ</an:docProponent>
 				 
 			</an:p>
 			<an:p>COMUNICATO ALLA PRESIDENZA IL 15 MARZO 2013</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d42e103">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d42e106">
 					<an:i>(Modifica all'articolo 124 del decreto legislativo 3 aprile 2006, n. 152, in materia di scarichi idrici)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d42e109">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d42e112">
 						<an:p>All'articolo 124, comma 8, del decreto legislativo 3 aprile 2006, n. 152, il primo periodo è sostituito dal seguente: «Con esclusione degli scarichi contenenti sostanze pericolose, l'autorizzazione è valida per sei anni dal momento del rilascio».</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d42e115">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d42e118">
 					<an:i>(Modifica all'articolo 179 del decreto legislativo 3 aprile 2006, n. 152, in materia di criteri di priorità nel trattamento dei rifiuti)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d42e121">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b2b1">
+					<an:content id="d42e124">
 						<an:p>All'articolo 179, comma 6, del decreto legislativo 3 aprile 2006, n. 152, sono aggiunti, in fine, i seguenti periodi: «A tal fine i soggetti detentori che conferiscono rifiuti per il trattamento sono tenuti a intervenire per assicurare, nel caso in cui la dinamica dei prezzi di mercato produca esiti diversi, che il prezzo riconosciuto per il conferimento al riciclo sia, per la medesima tipologia di rifiuti, superiore a quello riconosciuto per il conferimento al recupero energetico. La violazione di tale obbligo è punita con la sanzione pecuniaria di 200 euro per ogni tonnellata di rifiuti».</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d42e127">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d42e130">
 					<an:i>(Modifiche al decreto legislativo 3 aprile 2006, n. 152, in materia di gestione dei rifiuti)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d42e133">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b3b2a">
-						<an:intro id="w1ab1ab3b3b2b1">
+					<an:list id="d42e134">
+						<an:intro id="d42e136">
 							<an:p>Al decreto legislativo 3 aprile 2006, n. 152, sono apportate le seguenti modificazioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b3b2b2">
+						<an:point id="d42e138">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b2b2b1">
+							<an:content id="d42e143">
 								<an:p>
 									all'articolo 182-
 									<an:i>ter</an:i>
@@ -110,18 +128,18 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b3b2b3">
+						<an:point id="d42e152">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:list id="w1ab1ab3b3b2b3a">
-								<an:intro id="w1ab1ab3b3b2b3b1">
+							<an:list id="d42e153">
+								<an:intro id="d42e157">
 									<an:p>all'articolo 183, comma 1:</an:p>
 								</an:intro>
-								<an:point id="w1ab1ab3b3b2b3b2">
+								<an:point id="d42e159">
 									<an:num>1)</an:num>
-									<an:content id="w1ab1ab3b3b2b3b2b1">
+									<an:content id="d42e162">
 										<an:p>
 											 alla lettera 
 											<an:i>d)</an:i>
@@ -129,9 +147,9 @@
 										</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b3b2b3b3">
+								<an:point id="d42e168">
 									<an:num>2)</an:num>
-									<an:content id="w1ab1ab3b3b2b3b3b1">
+									<an:content id="d42e171">
 										<an:p>
 											 alla lettera 
 											<an:i>e)</an:i>
@@ -139,9 +157,9 @@
 										</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b3b2b3b4">
+								<an:point id="d42e177">
 									<an:num>3)</an:num>
-									<an:content id="w1ab1ab3b3b2b3b4b1">
+									<an:content id="d42e180">
 										<an:p>
 											 alla lettera 
 											<an:i>ee)</an:i>
@@ -149,9 +167,9 @@
 										</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b3b2b3b5">
+								<an:point id="d42e186">
 									<an:num>4)</an:num>
-									<an:content id="w1ab1ab3b3b2b3b5b1">
+									<an:content id="d42e189">
 										<an:p>
 											 dopo la lettera 
 											<an:i>ff)</an:i>
@@ -165,18 +183,18 @@
 								</an:point>
 							</an:list>
 						</an:point>
-						<an:point id="w1ab1ab3b3b2b4">
+						<an:point id="d42e201">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:list id="w1ab1ab3b3b2b4a">
-								<an:intro id="w1ab1ab3b3b2b4b1">
+							<an:list id="d42e202">
+								<an:intro id="d42e206">
 									<an:p>all'articolo 185, comma 2:</an:p>
 								</an:intro>
-								<an:point id="w1ab1ab3b3b2b4b2">
+								<an:point id="d42e208">
 									<an:num>1)</an:num>
-									<an:content id="w1ab1ab3b3b2b4b2b1">
+									<an:content id="d42e211">
 										<an:p>
 											 alla lettera 
 											<an:i>b)</an:i>
@@ -188,9 +206,9 @@
 										</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b3b2b4b3">
+								<an:point id="d42e223">
 									<an:num>2)</an:num>
-									<an:content id="w1ab1ab3b3b2b4b3b1">
+									<an:content id="d42e226">
 										<an:p>
 											 alla lettera 
 											<an:i>c)</an:i>
@@ -200,18 +218,18 @@
 								</an:point>
 							</an:list>
 						</an:point>
-						<an:point id="w1ab1ab3b3b2b5">
+						<an:point id="d42e232">
 							<an:num>
 								<an:i>d)</an:i>
 								 
 							</an:num>
-							<an:list id="w1ab1ab3b3b2b5a">
-								<an:intro id="w1ab1ab3b3b2b5b1">
+							<an:list id="d42e233">
+								<an:intro id="d42e237">
 									<an:p>all’articolo 195:</an:p>
 								</an:intro>
-								<an:point id="w1ab1ab3b3b2b5b2">
+								<an:point id="d42e239">
 									<an:num>1)</an:num>
-									<an:content id="w1ab1ab3b3b2b5b2b1">
+									<an:content id="d42e242">
 										<an:p>
 											 al comma 1, dopo la lettera 
 											<an:i>s)</an:i>
@@ -228,9 +246,9 @@
 										</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b3b2b5b3">
+								<an:point id="d42e259">
 									<an:num>2)</an:num>
-									<an:content id="w1ab1ab3b3b2b5b3b1">
+									<an:content id="d42e262">
 										<an:p> dopo il comma 4 è inserito il seguente:</an:p>
 										<an:p>
 											«
@@ -243,18 +261,18 @@
 								</an:point>
 							</an:list>
 						</an:point>
-						<an:point id="w1ab1ab3b3b2b6">
+						<an:point id="d42e273">
 							<an:num>
 								<an:i>e)</an:i>
 								 
 							</an:num>
-							<an:list id="w1ab1ab3b3b2b6a">
-								<an:intro id="w1ab1ab3b3b2b6b1">
+							<an:list id="d42e274">
+								<an:intro id="d42e278">
 									<an:p>all'articolo 206, comma 1:</an:p>
 								</an:intro>
-								<an:point id="w1ab1ab3b3b2b6b2">
+								<an:point id="d42e280">
 									<an:num>1)</an:num>
-									<an:content id="w1ab1ab3b3b2b6b2b1">
+									<an:content id="d42e283">
 										<an:p>
 											 alla lettera 
 											<an:i>i)</an:i>
@@ -262,9 +280,9 @@
 										</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b3b2b6b3">
+								<an:point id="d42e289">
 									<an:num>2)</an:num>
-									<an:content id="w1ab1ab3b3b2b6b3b1">
+									<an:content id="d42e292">
 										<an:p>
 											 dopo la lettera 
 											<an:i>i)</an:i>
@@ -285,12 +303,12 @@
 								</an:point>
 							</an:list>
 						</an:point>
-						<an:point id="w1ab1ab3b3b2b7">
+						<an:point id="d42e312">
 							<an:num>
 								<an:i>f)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b2b7b1">
+							<an:content id="d42e317">
 								<an:p>
 									all'articolo 208, comma 11, lettera 
 									<an:i>g)</an:i>
@@ -300,9 +318,9 @@
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b3">
+				<an:paragraph id="d42e323">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b3b3b1">
+					<an:content id="d42e326">
 						<an:p>
 							Le riduzioni di cui all'articolo 194, comma 4, lettera 
 							<an:i>a)</an:i>
@@ -311,14 +329,14 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d42e332">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab3b4b1">
+				<an:heading id="d42e335">
 					<an:i>(Modifica all'articolo 185 del decreto legislativo 3 aprile 2006, n. 152, in materia di sfalci e potature)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b4b2">
+				<an:paragraph id="d42e338">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b4b2b1">
+					<an:content id="d42e341">
 						<an:p>
 							All'articolo 185, comma 1, del decreto legislativo 3 aprile 2006, n. 152, la lettera 
 							<an:i>f)</an:i>
@@ -336,14 +354,14 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d42e358">
 				<an:num>Art. 5.</an:num>
-				<an:heading id="w1ab1ab3b5b1">
+				<an:heading id="d42e361">
 					<an:i>(Modifiche al decreto legislativo 3 aprile 2006, n. 152, in materia di miscelazione di rifiuti speciali e di oli usati)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b5b2">
+				<an:paragraph id="d42e364">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b5b2b1">
+					<an:content id="d42e367">
 						<an:p>Dopo il comma 2 dell'articolo 187 del decreto legislativo 3 aprile 2006, n. 152, e successive modificazioni, è inserito il seguente:</an:p>
 						<an:p>
 							«
@@ -352,9 +370,9 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b3">
+				<an:paragraph id="d42e375">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b5b3b1">
+					<an:content id="d42e378">
 						<an:p>
 							Il comma 2 dell'articolo 216-
 							<an:i>bis</an:i>
@@ -374,14 +392,14 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b6">
+			<an:article id="d42e398">
 				<an:num>Art. 6.</an:num>
-				<an:heading id="w1ab1ab3b6b1">
+				<an:heading id="d42e401">
 					<an:i>(Modifica all'articolo 200 del decreto legislativo 3 aprile 2006, n. 152, in materia di organizzazione territoriale del ciclo di gestione dei rifiuti)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b6b2">
+				<an:paragraph id="d42e404">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b6b2b1">
+					<an:content id="d42e407">
 						<an:p>Al comma 1 dell'articolo 200 del decreto legislativo 3 aprile 2006, n. 152, è aggiunta, in fine, la seguente lettera:</an:p>
 						<an:p>
 							«
@@ -393,23 +411,23 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b7">
+			<an:article id="d42e418">
 				<an:num>Art. 7.</an:num>
-				<an:heading id="w1ab1ab3b7b1">
+				<an:heading id="d42e421">
 					<an:i>(Modifiche all'articolo 202 del decreto legislativo 3 aprile 2006, n. 152, in materia di affidamento del servizio di gestione integrata dei rifiuti)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b7b2">
+				<an:paragraph id="d42e424">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b7b2a">
-						<an:intro id="w1ab1ab3b7b2b1">
+					<an:list id="d42e425">
+						<an:intro id="d42e427">
 							<an:p>All'articolo 202 del decreto legislativo 3 aprile 2006, n. 152, sono apportate le seguenti modificazioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b7b2b2">
+						<an:point id="d42e429">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b7b2b2b1">
+							<an:content id="d42e434">
 								<an:p>
 									al comma 2 sono aggiunte, in fine, le seguenti parole: «con particolare riferimento ai seguenti: 
 									<an:i>a)</an:i>
@@ -425,21 +443,21 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b7b2b3">
+						<an:point id="d42e452">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b7b2b3b1">
+							<an:content id="d42e457">
 								<an:p>al comma 3 è aggiunto, in fine, il seguente periodo: «Al fine di perseguire in via prioritaria la riduzione della produzione dei rifiuti, nelle valutazioni si tiene conto delle capacità e competenze tecniche in materia di prevenzione della produzione di rifiuti e riduzione della quantità e della pericolosità dei rifiuti»;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b7b2b4">
+						<an:point id="d42e460">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b7b2b4b1">
+							<an:content id="d42e465">
 								<an:p>il comma 4 è sostituito dal seguente:</an:p>
 								<an:p>
 									«
@@ -451,14 +469,14 @@
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b8">
+			<an:article id="d42e473">
 				<an:num>Art. 8.</an:num>
-				<an:heading id="w1ab1ab3b8b1">
+				<an:heading id="d42e476">
 					<an:i>(Modifica all'articolo 205 del decreto legislativo 3 aprile 2006, n. 152, in materia di misure per incrementare la raccolta differenziata)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b8b2">
+				<an:paragraph id="d42e479">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b8b2b1">
+					<an:content id="d42e482">
 						<an:p>All'articolo 205 del decreto legislativo 3 aprile 2006, n. 152, dopo il comma 3 è inserito il seguente:</an:p>
 						<an:p>
 							«
@@ -468,17 +486,17 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b9">
+			<an:article id="d42e490">
 				<an:num>Art. 9.</an:num>
-				<an:heading id="w1ab1ab3b9b1">
+				<an:heading id="d42e493">
 					<an:i>(Introduzione dell'articolo 213-</an:i>
 					bis 
 					<an:i>nel decreto legislativo 3 aprile 2006, n. 152</an:i>
 					)
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b9b2">
+				<an:paragraph id="d42e500">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b9b2b1">
+					<an:content id="d42e503">
 						<an:p>Nel capo IV del titolo I della parte quarta del decreto legislativo 3 aprile 2006, n. 152, dopo l'articolo 213 è aggiunto il seguente:</an:p>
 						<an:p>
 							«Art. 213-
@@ -508,44 +526,44 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c10">
+			<an:article id="d42e531">
 				<an:num>Art. 10.</an:num>
-				<an:heading id="w1ab1ab3c10b1">
+				<an:heading id="d42e534">
 					<an:i>(Modifica all'articolo 228 del decreto legislativo 3 aprile 2006, n. 152, in materia di contributo per la gestione di pneumatici fuori uso)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c10b2">
+				<an:paragraph id="d42e537">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c10b2b1">
+					<an:content id="d42e540">
 						<an:p>All'articolo 228, comma 2, del decreto legislativo 3 aprile 2006, n. 152, è aggiunto, in fine, il seguente periodo: «Detto contributo è parte integrante del corrispettivo di vendita, è assoggettato ad IVA ed è riportato in modo chiaro e distinto in ciascuna fattura nell'importo vigente alla data della rispettiva cessione».</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c11">
+			<an:article id="d42e544">
 				<an:num>Art. 11.</an:num>
-				<an:heading id="w1ab1ab3c11b1">
+				<an:heading id="d42e547">
 					<an:i>(Modifiche all'articolo 242 del decreto legislativo 3 aprile 2006, n. 152, in materia di manutenzione e interventi di adeguamento)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c11b2">
+				<an:paragraph id="d42e550">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3c11b2a">
-						<an:intro id="w1ab1ab3c11b2b1">
+					<an:list id="d42e551">
+						<an:intro id="d42e553">
 							<an:p>All'articolo 242, comma 9, del decreto legislativo 3 aprile 2006, n. 152, sono apportate le seguenti modifiche:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3c11b2b2">
+						<an:point id="d42e555">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c11b2b2b1">
+							<an:content id="d42e560">
 								<an:p>all'ultimo periodo, le parole: «di messa in sicurezza degli impianti e delle reti tecnologiche» sono sostituite dalle seguenti: «di messa in sicurezza degli impianti, delle reti tecnologiche e delle strutture interrate»;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3c11b2b3">
+						<an:point id="d42e563">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c11b2b3b1">
+							<an:content id="d42e568">
 								<an:p>
 									è aggiunto, in fine, il seguente periodo: «Alle medesime condizioni sono altresì consentiti, anche laddove ricadano in aree da bonificare, gli interventi di adeguamento degli impianti alla normativa vigente e quelli autorizzati o prescritti nell'ambito dei procedimenti di cui agli articoli 29-
 									<an:i>bis</an:i>
@@ -556,9 +574,9 @@
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c12">
+			<an:article id="d42e574">
 				<an:num>Art. 12.</an:num>
-				<an:heading id="w1ab1ab3c12b1">
+				<an:heading id="d42e577">
 					<an:i>
 						(Modifiche al decreto legislativo
 						<an:eol/>
@@ -567,18 +585,18 @@
 						in materia di essiccatoi agricoli)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c12b2">
+				<an:paragraph id="d42e584">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3c12b2a">
-						<an:intro id="w1ab1ab3c12b2b1">
+					<an:list id="d42e585">
+						<an:intro id="d42e587">
 							<an:p>All'allegato IV alla parte quinta del decreto legislativo 3 aprile 2006, n. 152, sono apportate le seguenti modificazioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3c12b2b2">
+						<an:point id="d42e589">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c12b2b2b1">
+							<an:content id="d42e594">
 								<an:p>alla parte I, punto 1, dopo la lettera v) è inserita la seguente:</an:p>
 								<an:p>
 									«
@@ -587,12 +605,12 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3c12b2b3">
+						<an:point id="d42e602">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c12b2b3b1">
+							<an:content id="d42e607">
 								<an:p>alla parte II, punto 1, dopo la lettera v) è inserita la seguente:</an:p>
 								<an:p>
 									«
@@ -604,14 +622,14 @@
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c13">
+			<an:article id="d42e615">
 				<an:num>Art. 13.</an:num>
-				<an:heading id="w1ab1ab3c13b1">
+				<an:heading id="d42e618">
 					<an:i>(Utilizzo di terre e rocce da scavo)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c13b2">
+				<an:paragraph id="d42e621">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c13b2b1">
+					<an:content id="d42e624">
 						<an:p>
 							Fermo restando quanto previsto dall'articolo 49 del decreto-legge 24 gennaio 2012, n. 1, convertito, con modificazioni, dalla legge 24 marzo 2012, n. 27, i materiali di scavo provenienti dalle miniere dismesse, o comunque esaurite, collocate all'interno dei siti di interesse nazionale, possono essere utilizzati nell'ambito delle medesime aree minerarie per la realizzazione di reinterri, riempimenti, rimodellazioni, rilevati, miglioramenti fondiari o viari oppure altre forme di ripristini e miglioramenti ambientali, a condizione che la caratterizzazione di tali materiali, tenuto conto del valore di fondo naturale, abbia accertato concentrazioni degli inquinanti che si collocano al di sotto dei valori di cui all'allegato 5 alla parte quarta del decreto legislativo 3 aprile 2006, n. 152, in funzione della destinazione d'uso e qualora risultino conformi al
 							<an:i> test</an:i>
@@ -621,52 +639,52 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c13b3">
+				<an:paragraph id="d42e633">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3c13b3b1">
+					<an:content id="d42e636">
 						<an:p>Le aree sulle quali insistono i materiali di cui al comma 1, ricorrendo le medesime condizioni ivi previste per i suoli e per le acque sotterranee, sono restituite agli usi legittimi. Ai fini di tale restituzione, il soggetto interessato comunica al Ministero dell'ambiente e della tutela del territorio e del mare i risultati della caratterizzazione, validati dall'Agenzia regionale per la protezione dell'ambiente (ARPA) competente per territorio, che si avvale anche delle banche dati di enti o istituti pubblici.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c14">
+			<an:article id="d42e639">
 				<an:num>Art. 14.</an:num>
-				<an:heading id="w1ab1ab3c14b1">
+				<an:heading id="d42e642">
 					<an:i>(Residui di coltivazione e di lavorazione della pietra e del marmo)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c14b2">
+				<an:paragraph id="d42e645">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c14b2b1">
+					<an:content id="d42e648">
 						<an:p>I residui di estrazione e di lavorazione di marmi e di lapidei, a condizione che la loro caratterizzazione, tenuto conto del valore di fondo naturale e della forma chimico-fisica delle sostanze, abbia accertato concentrazioni degli inquinanti che si collocano al di sotto dei valori di cui all'allegato 5 alla parte quarta del decreto legislativo 3 aprile 2006, n. 152, in funzione delle destinazioni d'uso, possono essere utilizzati, nell'ambito delle aree di estrazione e delle relative aree di lavorazione, in sostituzione dei materiali di cava per reinterri, riempimenti, rimodellazioni, rilevati e per interventi di recupero ambientale.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c14b3">
+				<an:paragraph id="d42e651">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3c14b3b1">
+					<an:content id="d42e654">
 						<an:p>Ai fini di cui al comma 1 possono essere utilizzati, nell'ambito delle medesime aree di cui al predetto comma, anche i fanghi di lavorazione di marmi e lapidei purché, a seguito di analisi effettuata dall'ARPA competente, sia accertato che i valori risultanti rientrano nei limiti di cui alla colonna B della tabella 1 dell'allegato 5 alla parte quarta del decreto legislativo 3 aprile 2006, n. 152.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c15">
+			<an:article id="d42e657">
 				<an:num>Art. 15.</an:num>
-				<an:heading id="w1ab1ab3c15b1">
+				<an:heading id="d42e660">
 					<an:i>
 						(Modifiche al decreto legislativo
 						<an:eol/>
 						23 febbraio 2010, n. 49)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c15b2">
+				<an:paragraph id="d42e665">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3c15b2a">
-						<an:intro id="w1ab1ab3c15b2b1">
+					<an:list id="d42e666">
+						<an:intro id="d42e668">
 							<an:p>Al decreto legislativo 23 febbraio 2010, n. 49, sono apportate le seguenti modificazioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3c15b2b2">
+						<an:point id="d42e670">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c15b2b2b1">
+							<an:content id="d42e675">
 								<an:p>
 									all'articolo 2, comma 1, lettera 
 									<an:i>a)</an:i>
@@ -674,38 +692,38 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3c15b2b3">
+						<an:point id="d42e681">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c15b2b3b1">
+							<an:content id="d42e686">
 								<an:p>all'allegato I, parte B, numero 1, le parole: «articolo 13» sono sostituite dalle seguenti: «articolo 12».</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c16">
+			<an:article id="d42e689">
 				<an:num>Art. 16.</an:num>
-				<an:heading id="w1ab1ab3c16b1">
+				<an:heading id="d42e692">
 					<an:i>(Ulteriori disposizioni in materia di rifiuti)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c16b2">
+				<an:paragraph id="d42e695">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c16b2b1">
+					<an:content id="d42e698">
 						<an:p>Al comma 29 dell'articolo 14 del decreto-legge 6 dicembre 2011, n. 201, convertito, con modificazioni, dalla legge 22 dicembre 2011, n. 214, dopo le parole: «servizio pubblico» sono inserite le seguenti: «o che hanno realizzato sistemi di gestione caratterizzati dall'utilizzo di correttivi ai criteri di ripartizione del costo del servizio finalizzati ad attuare un effettivo modello di tariffa commisurata al servizio reso».</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c16b3">
+				<an:paragraph id="d42e701">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3c16b3b1">
+					<an:content id="d42e704">
 						<an:p>All'articolo 3, comma 29, della legge 28 dicembre 1995, n. 549, le parole: «e non superiore ad euro 0,01» e le parole: «e non superiore ad euro 0,02582» sono soppresse.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c16b4">
+				<an:paragraph id="d42e707">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3c16b4b1">
+					<an:content id="d42e710">
 						<an:p>
 							All'articolo 9-
 							<an:i>bis</an:i>
@@ -726,27 +744,27 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c16b5">
+				<an:paragraph id="d42e733">
 					<an:num>4. </an:num>
-					<an:list id="w1ab1ab3c16b5a">
-						<an:intro id="w1ab1ab3c16b5b1">
+					<an:list id="d42e734">
+						<an:intro id="d42e736">
 							<an:p>All'articolo 39 del decreto legislativo 3 dicembre 2010, n. 205, sono apportate le seguenti modificazioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3c16b5b2">
+						<an:point id="d42e738">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c16b5b2b1">
+							<an:content id="d42e743">
 								<an:p>al comma 9, alinea, le parole: «Fino al 2 luglio 2012» sono soppresse;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3c16b5b3">
+						<an:point id="d42e746">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c16b5b3b1">
+							<an:content id="d42e751">
 								<an:p>
 									al comma 9, lettera 
 									<an:i>a)</an:i>
@@ -754,12 +772,12 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3c16b5b4">
+						<an:point id="d42e757">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c16b5b4b1">
+							<an:content id="d42e762">
 								<an:p>
 									al comma 9, lettera 
 									<an:i>b)</an:i>
@@ -767,12 +785,12 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3c16b5b5">
+						<an:point id="d42e768">
 							<an:num>
 								<an:i>d)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c16b5b5b1">
+							<an:content id="d42e773">
 								<an:p>dopo il comma 9 è inserito il seguente:</an:p>
 								<an:p>
 									«
@@ -783,15 +801,15 @@
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c16b6">
+				<an:paragraph id="d42e781">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3c16b6b1">
+					<an:content id="d42e784">
 						<an:p>Nelle isole con popolazione residente inferiore a 15.000 abitanti, paglia, sfalci e potature, nonché altro materiale agricolo o forestale naturale non pericoloso possono, nei limiti delle loro proprietà fertilizzanti scientificamente riconosciute, essere utilizzati presso il luogo di produzione o in altro luogo idoneo limitrofo, sempre che diversi dalle aree in cui risultino superate le soglie di valutazione superiori di cui all'articolo 4, comma 1, del decreto legislativo 13 agosto 2010, n. 155, mediante processi o metodi, ivi inclusa la combustione, che in ogni caso non danneggino l'ambiente né mettano in pericolo la salute umana.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c16b7">
+				<an:paragraph id="d42e787">
 					<an:num>6. </an:num>
-					<an:content id="w1ab1ab3c16b7b1">
+					<an:content id="d42e790">
 						<an:p>
 							Le biomasse vegetali di origine marina e lacustre spiaggiate lungo i litorali, con la prevista autorizzazione regionale e senza la necessità di espletare ulteriori valutazioni di incidenza ambientale, possono essere rimosse, purché ricorrano i requisiti di cui all'articolo 184-
 							<an:i>bis</an:i>
@@ -802,40 +820,40 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c17">
+			<an:article id="d42e799">
 				<an:num>Art. 17.</an:num>
-				<an:heading id="w1ab1ab3c17b1">
+				<an:heading id="d42e802">
 					<an:i>
 						(Disposizioni in materia di rifiuti di
 						<an:eol/>
 						apparecchiature elettriche ed elettroniche)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c17b2">
+				<an:paragraph id="d42e807">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3c17b2a">
-						<an:intro id="w1ab1ab3c17b2b1">
+					<an:list id="d42e808">
+						<an:intro id="d42e810">
 							<an:p>
 								Rientra nella fase della raccolta, come definita dall'articolo 183, comma 1, lettera 
 								<an:i>o)</an:i>
 								, del decreto legislativo 3 aprile 2006, n. 152, il raggruppamento dei rifiuti di apparecchiature elettriche ed elettroniche (RAEE) finalizzato al loro trasporto presso i centri di raccolta di cui all'articolo 6, comma 1, del decreto legislativo 25 luglio 2005, n. 151, effettuato dai distributori presso i locali del proprio punto vendita o presso altro luogo risultante dalla comunicazione di cui all'articolo 3 del regolamento di cui al decreto del Ministro dell'ambiente e della tutela del territorio e del mare 8 marzo 2010, n. 65, nel rispetto delle seguenti condizioni:
 							</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3c17b2b2">
+						<an:point id="d42e815">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c17b2b2b1">
+							<an:content id="d42e820">
 								<an:p>il raggruppamento riguarda esclusivamente i RAEE disciplinati dal decreto legislativo n. 151 del 2005 provenienti dai nuclei domestici;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3c17b2b3">
+						<an:point id="d42e823">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c17b2b3b1">
+							<an:content id="d42e828">
 								<an:p>
 									i RAEE di cui alla lettera 
 									<an:i>a)</an:i>
@@ -843,20 +861,20 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3c17b2b4">
+						<an:point id="d42e834">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c17b2b4b1">
+							<an:content id="d42e839">
 								<an:p>il raggruppamento dei RAEE è effettuato presso il punto di vendita del distributore o presso altro luogo risultante dalla comunicazione di cui all'articolo 3 del regolamento di cui al decreto del Ministro dell'ambiente e della tutela del territorio e del mare 8 marzo 2010, n. 65, in luogo idoneo, non accessibile a terzi e pavimentato. I RAEE sono protetti dalle acque meteoriche e dall'azione del vento a mezzo di appositi sistemi di copertura anche mobili, e raggruppati avendo cura di tenere separati i rifiuti pericolosi, nel rispetto della disposizione di cui all'articolo 187, comma 1, del decreto legislativo 3 aprile 2006, n. 152. È necessario garantire l'integrità delle apparecchiature, adottando tutte le precauzioni atte ad evitare il deterioramento delle stesse e la fuoriuscita di sostanze pericolose.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c17b3">
+				<an:paragraph id="d42e842">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3c17b3b1">
+					<an:content id="d42e845">
 						<an:p>
 							All'articolo 2, comma 1, lettera 
 							<an:i>d)</an:i>
@@ -864,9 +882,9 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c17b4">
+				<an:paragraph id="d42e851">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3c17b4b1">
+					<an:content id="d42e854">
 						<an:p>
 							La realizzazione e la gestione di centri di raccolta di cui all'articolo 6, comma 1, lettere 
 							<an:i>a)</an:i>
@@ -878,47 +896,47 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c17b5">
+				<an:paragraph id="d42e866">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3c17b5b1">
+					<an:content id="d42e869">
 						<an:p>Sono abrogati il comma 2 dell'articolo 1 e l'articolo 8 del regolamento di cui al decreto del Ministro dell'ambiente e della tutela del territorio e del mare 8 marzo 2010, n. 65.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c17b6">
+				<an:paragraph id="d42e872">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3c17b6b1">
+					<an:content id="d42e875">
 						<an:p>All'articolo 10, comma 2, primo periodo, del decreto legislativo 25 luglio 2005, n. 151, le parole: «Fino al 13 febbraio 2011 e, per le apparecchiature rientranti nella categoria 1 dell'allegato 1A, fino al 13 febbraio 2013» sono soppresse.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c18">
+			<an:article id="d42e878">
 				<an:num>Art. 18.</an:num>
-				<an:heading id="w1ab1ab3c18b1">
+				<an:heading id="d42e881">
 					<an:i>
 						(Disposizioni in materia
 						<an:eol/>
 						di misure di compensazione)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c18b2">
+				<an:paragraph id="d42e886">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c18b2b1">
+					<an:content id="d42e889">
 						<an:p>In tutti i casi in cui possono essere imposte, dalle autorità competenti e nei modi consentiti dalla normativa vigente, misure di compensazione e riequilibrio ambientale e territoriale in relazione alla realizzazione di attività, opere, impianti o interventi, tali misure non possono comunque avere carattere meramente monetario. In caso di inosservanza delle suddette misure, oltre agli oneri necessari alla realizzazione delle misure di compensazione e riequilibrio ambientale e territoriale, il soggetto inadempiente è tenuto a versare una somma di importo equivalente che affluisce ad apposito capitolo dell'entrata del bilancio dello Stato, per essere riassegnata per le esigenze del Ministero dell'ambiente e della tutela del territorio e del mare.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c19">
+			<an:article id="d42e892">
 				<an:num>Art. 19.</an:num>
-				<an:heading id="w1ab1ab3c19b1">
+				<an:heading id="d42e895">
 					<an:i>
 						(Quantificazione di flussi riguardanti
 						<an:eol/>
 						contributi su politiche ambientali)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c19b2">
+				<an:paragraph id="d42e900">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c19b2b1">
+					<an:content id="d42e903">
 						<an:p>
 							Nei casi in cui sia prevista dalla normativa vigente la riassegnazione di fondi a capitoli dello stato di previsione del Ministero dell'ambiente e della tutela del territorio e del mare o a fondi istituiti dalla legge comunque funzionali all'attuazione, da parte del medesimo Ministero, di politiche ambientali, sul sito 
 							<an:i>web</an:i>
@@ -927,14 +945,14 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c20">
+			<an:article id="d42e909">
 				<an:num>Art. 20.</an:num>
-				<an:heading id="w1ab1ab3c20b1">
+				<an:heading id="d42e912">
 					<an:i>(Misure in tema di determinazione delle tariffe dei servizi idrici e di recupero dei costi ambientali)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c20b2">
+				<an:paragraph id="d42e915">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c20b2b1">
+					<an:content id="d42e918">
 						<an:p>
 							Ai fini dell'esercizio delle funzioni attinenti alla regolazione e al controllo dei servizi idrici di cui all'articolo 21, comma 19, del decreto-legge 6 dicembre 2011, n. 201, convertito, con modificazioni, dalla legge 22 dicembre 2011, n. 214, l'articolo 2, comma 12, lettera 
 							<an:i>e)</an:i>
@@ -943,69 +961,69 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c21">
+			<an:article id="d42e924">
 				<an:num>Art. 21.</an:num>
-				<an:heading id="w1ab1ab3c21b1">
+				<an:heading id="d42e927">
 					<an:i>(Misure per il potenziamento dell'azione amministrativa in materia di difesa del suolo)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c21b2">
+				<an:paragraph id="d42e930">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c21b2b1">
+					<an:content id="d42e933">
 						<an:p>Allo scopo di massimizzare l'efficacia e l'efficienza delle azioni di prevenzione e di mitigazione del rischio idrogeologico, all'Ispettorato generale di cui all'articolo 17, comma 2, del decreto-legge 30 dicembre 2009, n. 195, convertito, con modificazioni, dalla legge 26 febbraio 2010, n. 26, sono attribuite le funzioni in materia di difesa del suolo di competenza del Ministero dell'ambiente e della tutela del territorio e del mare. Fino all'emanazione del provvedimento di riordino degli assetti organizzativi del Ministero dell'ambiente e della tutela del territorio e del mare, ai sensi dell'articolo 1, comma 3, del decreto-legge 13 agosto 2011, n. 138, convertito, con modificazioni, dalla legge 14 settembre 2011, n. 148, l'Ispettorato generale si avvale, senza nuovi o maggiori oneri a carico della finanza pubblica e nell'ambito delle dotazioni organiche di fatto, degli esistenti uffici dirigenziali di livello non generale, con competenze in materia di difesa del suolo, della Direzione generale per la tutela del territorio e delle risorse idriche, individuati con decreto del Ministro dell'ambiente e della tutela del territorio e del mare entro trenta giorni dalla data di entrata in vigore della presente legge.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c21b3">
+				<an:paragraph id="d42e936">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3c21b3b1">
+					<an:content id="d42e939">
 						<an:p>All'articolo 37, comma 1, del decreto legislativo 30 luglio 1999, n. 300, il secondo e il terzo periodo sono sostituiti dai seguenti: «Con la medesima procedura di cui al precedente periodo si provvede altresì all'organizzazione dell'Ispettorato generale di cui all'articolo 17, comma 2, del decreto-legge 30 dicembre 2009, n. 195, convertito, con modificazioni, dalla legge 26 febbraio 2010, n. 26. Le direzioni e l'Ispettorato sono coordinate da un Segretario generale».</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c22">
+			<an:article id="d42e943">
 				<an:num>Art. 22.</an:num>
-				<an:heading id="w1ab1ab3c22b1">
+				<an:heading id="d42e946">
 					<an:i>
 						(Recupero e riciclaggio
 						<an:eol/>
 						dei materassi dismessi)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c22b2">
+				<an:paragraph id="d42e951">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c22b2b1">
+					<an:content id="d42e954">
 						<an:p>Al fine di promuovere il recupero e il riciclaggio dei materassi dismessi, il Ministero dell'ambiente e della tutela del territorio e del mare, entro novanta giorni dalla data di entrata in vigore della presente legge, emana un decreto per la gestione dei materassi dismessi, specificando le modalità di recupero, prevedendo l'introduzione di meccanismi che in osservanza delle normative nazionale e dell'Unione europea favoriscano il recupero e l'avvio al riciclaggio dei materiali impiegati.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c23">
+			<an:article id="d42e957">
 				<an:num>Art. 23.</an:num>
-				<an:heading id="w1ab1ab3c23b1">
+				<an:heading id="d42e960">
 					<an:i>(Integrazione della disposizione recante delega al Governo per l'utilizzo di pesticidi)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c23b2">
+				<an:paragraph id="d42e963">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c23b2b1">
+					<an:content id="d42e966">
 						<an:p>All'articolo 20, comma 1, della legge 15 dicembre 2011, n. 217, dopo le parole: «Ministro per le politiche europee» sono inserite le seguenti: «, del Ministro delle politiche agricole alimentari e forestali».</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c24">
+			<an:article id="d42e969">
 				<an:num>Art. 24.</an:num>
-				<an:heading id="w1ab1ab3c24b1">
+				<an:heading id="d42e972">
 					<an:i>(Modifiche agli articoli 14 e 23 del decreto-legge n. 5 del 2012, convertito, con modificazioni, dalla legge n. 35 del 2012)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c24b2">
+				<an:paragraph id="d42e975">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3c24b2a">
-						<an:intro id="w1ab1ab3c24b2b1">
+					<an:list id="d42e976">
+						<an:intro id="d42e978">
 							<an:p>Al decreto-legge 9 febbraio 2012, n. 5, convertito, con modificazioni, dalla legge 4 aprile 2012, n. 35, sono apportate le seguenti modifiche:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3c24b2b2">
+						<an:point id="d42e980">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c24b2b2b1">
+							<an:content id="d42e985">
 								<an:p>
 									all'articolo 14, comma 4, la lettera 
 									<an:i>f)</an:i>
@@ -1018,39 +1036,39 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3c24b2b3">
+						<an:point id="d42e996">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c24b2b3b1">
+							<an:content id="d42e1001">
 								<an:p>all'articolo 14, comma 6, dopo le parole: «in materia fiscale, finanziaria e di salute e sicurezza sui luoghi di lavoro» sono inserite le seguenti: «nonché in materia di tutela del paesaggio e del patrimonio artistico e culturale,»;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3c24b2b4">
+						<an:point id="d42e1004">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c24b2b4b1">
+							<an:content id="d42e1009">
 								<an:p>all'articolo 23, comma 1, primo periodo, dopo le parole: «Ferme restando le disposizioni in materia» sono inserite le seguenti: «di valutazione di impatto ambientale di cui alla parte seconda del decreto legislativo 3 aprile 2006, n. 152, nonché».</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c25">
+			<an:article id="d42e1012">
 				<an:num>Art. 25.</an:num>
-				<an:heading id="w1ab1ab3c25b1">
+				<an:heading id="d42e1015">
 					<an:i>
 						(Modifiche all'articolo 93 del decreto
 						<an:eol/>
 						legislativo 1° agosto 2003, n. 259)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c25b2">
+				<an:paragraph id="d42e1020">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c25b2b1">
+					<an:content id="d42e1023">
 						<an:p>All'articolo 93 del codice di cui al decreto legislativo 1° agosto 2003, n. 259, dopo il comma 1 è inserito il seguente:</an:p>
 						<an:p>
 							«
@@ -1060,32 +1078,32 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c26">
+			<an:article id="d42e1031">
 				<an:num>Art. 26.</an:num>
-				<an:heading id="w1ab1ab3c26b1">
+				<an:heading id="d42e1034">
 					<an:i>(Modifiche all'articolo 3 del decreto-legge n. 2 del 2012, convertito, con modificazioni, dalla legge n. 28 del 2012)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c26b2">
+				<an:paragraph id="d42e1037">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3c26b2a">
-						<an:intro id="w1ab1ab3c26b2b1">
+					<an:list id="d42e1038">
+						<an:intro id="d42e1040">
 							<an:p>All'articolo 3 del decreto-legge 25 gennaio 2012, n. 2, convertito, con modificazioni, dalla legge 24 marzo 2012, n. 28, sono apportate le seguenti modifiche:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3c26b2b2">
+						<an:point id="d42e1042">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c26b2b2b1">
+							<an:content id="d42e1047">
 								<an:p>al comma 2, le parole: «, come disciplinati dal decreto di cui all'articolo 49 del decreto-legge 24 gennaio 2012, n. 1,» sono soppresse e dopo le parole: «possono trovarsi materiali estranei» sono aggiunte le seguenti: «quali residui di lavorazioni industriali e residui in generale, come, a mero titolo esemplificativo, materiali di demolizione»;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3c26b2b3">
+						<an:point id="d42e1050">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3c26b2b3b1">
+							<an:content id="d42e1055">
 								<an:p>
 									al comma 3, le parole: «Fino alla data di entrata in vigore del decreto di cui al comma 2 del presente articolo» sono sostituite dalle seguenti: «Fino alla data di entrata in vigore del decreto di cui all'articolo 49 del decreto-legge 24 gennaio 2012, n. 1, convertito, con modificazioni, dalla legge 24 marzo 2012, n. 27» e le parole: «all'articolo 185, commi 1, lettere 
 									<an:i>b)</an:i>
@@ -1102,30 +1120,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/121"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/121/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="121"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/121/ita@2013-03-15/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/121/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/121/ita@2013-03-15/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/121/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/121/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-15/121/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

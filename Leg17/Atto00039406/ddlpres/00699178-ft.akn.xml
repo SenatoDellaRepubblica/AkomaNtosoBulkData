@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/106"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/106/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/106"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/106/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/106/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="106"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/106/ita@2013-03-15/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/106/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/106/ita@"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/106/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/106/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/106/ita@2013-03-15/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/106/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/106/ita@.akn"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/106/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/106/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-15" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-15" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/106/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-15/106/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22740" id="w1ab1ab1b2aaab1b1" showAs="FILIPPI"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d110e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/22740" id="d110e16" showAs="FILIPPI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -54,158 +72,158 @@
 			</an:p>
 			<an:p>
 				d'iniziativa del senatore 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">FILIPPI</an:docProponent>
+				<an:docProponent as="#d110e16a1327" refersTo="#d110e16">FILIPPI</an:docProponent>
 				 
 			</an:p>
 			<an:p> COMUNICATO ALLA PRESIDENZA IL 15 MARZO 2013 </an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d110e97">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d110e100">
 					<an:i>
 						(Istituzione dell'Autorità per il controllo
 						<an:eol/>
 						e la vigilanza del settore autostradale)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d110e105">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d110e108">
 						<an:p>È istituita, con sede nella città di Roma, l'Autorità indipendente per il controllo e la vigilanza del settore autostradale, di seguito denominata «Autorità». Essa opera in piena indipendenza di giudizio, con completa autonomia organizzativa e finanziaria, anche in deroga alle norme di contabilità pubblica, allo scopo di tutelare e garantire l'iniziativa economica, le regole di concorrenza, il buon andamento delle attività di sviluppo, manutenzione e gestione della rete autostradale nazionale e il rispetto dei princìpi, criteri e norme dell'Unione europea in materia di disciplina della concorrenza, di aiuti di Stato e di appalti pubblici per lavori, forniture e servizi.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b3">
+				<an:paragraph id="d110e111">
 					<an:num>2. </an:num>
-					<an:list id="w1ab1ab3b1b3a">
-						<an:intro id="w1ab1ab3b1b3b1">
+					<an:list id="d110e112">
+						<an:intro id="d110e114">
 							<an:p>In conformità alla disciplina dell’Unione europea, l'Autorità svolge le funzioni assegnate ai sensi della presente legge, nel rispetto del principio di sussidiarietà e delle competenze delle regioni e degli enti locali di cui al titolo V della parte seconda della Costituzione. A tal fine, tenuto conto degli indirizzi generali di politica economica, ambientale e sociale, l'Autorità promuove e garantisce:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b1b3b2">
+						<an:point id="d110e116">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b1b3b2b1">
+							<an:content id="d110e121">
 								<an:p>adeguati livelli di efficienza e di qualità dei servizi sulla rete autostradale nazionale;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b3b3">
+						<an:point id="d110e124">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b1b3b3b1">
+							<an:content id="d110e129">
 								<an:p>la realizzazione degli investimenti infrastrutturali e strutturali previsti nei contratti di concessione per l'adeguamento, la manutenzione e lo sviluppo della rete autostradale nazionale a carico dei soggetti vigilati;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b3b4">
+						<an:point id="d110e132">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b1b3b4b1">
+							<an:content id="d110e137">
 								<an:p>livelli tariffari equi e trasparenti, diretti ad armonizzare gli interessi economico-finanziari dei concessionari, tramite il riconoscimento di un'equa remunerazione del capitale investito, con gli obiettivi generali di politica economica, ambientale e sociale.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b4">
+				<an:paragraph id="d110e140">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b1b4b1">
+					<an:content id="d110e143">
 						<an:p>Entro tre mesi dalla data di entrata in vigore della presente legge, le funzioni attualmente esercitate dal Ministero delle infrastrutture e dei trasporti, dall'ANAS Spa e da altri enti strumentali riferibili ai compiti di regolazione e vigilanza del settore autostradale sono trasferite all'Autorità.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d110e146">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d110e149">
 					<an:i>(Funzioni e poteri dell'Autorità)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d110e152">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b2b2a">
-						<an:intro id="w1ab1ab3b2b2b1">
+					<an:list id="d110e153">
+						<an:intro id="d110e155">
 							<an:p>Nel perseguire le finalità di cui all'articolo 1, fatte le salve le competenze dell'Autorità garante della concorrenza e del mercato, l'Autorità svolge le seguenti funzioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b2b2b2">
+						<an:point id="d110e157">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b2b1">
+							<an:content id="d110e162">
 								<an:p>adotta atti di regolazione nel settore delle concessioni autostradali;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b3">
+						<an:point id="d110e165">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b3b1">
+							<an:content id="d110e170">
 								<an:p>esprime pareri sul rilascio delle concessioni al privati, a soggetti a capitale misto pubblico-privato o a enti pubblici, previa valutazione dei rispettivi piani economico-finanziari;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b4">
+						<an:point id="d110e173">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b4b1">
+							<an:content id="d110e178">
 								<an:p>vigila sull'operato dei soggetti concessionari in relazione al pieno rispetto di tutti gli obblighi previsti nel contratto di concessione;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b5">
+						<an:point id="d110e181">
 							<an:num>
 								<an:i>d)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b5b1">
+							<an:content id="d110e186">
 								<an:p>vigila sull'attuazione degli investimenti nei tempi previsti dal contratto di concessione per l'adeguamento, lo sviluppo e la manutenzione della rete autostradale e in caso di inadempienze commina sanzioni;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b6">
+						<an:point id="d110e189">
 							<an:num>
 								<an:i>e)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b6b1">
+							<an:content id="d110e194">
 								<an:p>assicura che tariffe, canoni, pedaggi e diritti siano equi, trasparenti, non discriminatori, orientati ai costi, secondo criteri che incentivino l'efficienza, la qualità dei servizi, un adeguato sviluppo degli investimenti e l'equilibrio economico-finanziario delle imprese vigilate;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b7">
+						<an:point id="d110e197">
 							<an:num>
 								<an:i>f)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b7b1">
+							<an:content id="d110e202">
 								<an:p>promuove la diffusione di informazioni su tariffe, canoni, pedaggi e diritti, comunque denominati, e sulle altre condizioni di offerta delle infrastrutture e dei servizi regolati, al fine di stimolare la qualità delle offerte e di ampliare le scelte a disposizione degli utenti e dei consumatori;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b8">
+						<an:point id="d110e205">
 							<an:num>
 								<an:i>g)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b8b1">
+							<an:content id="d110e210">
 								<an:p>esprime pareri sulle autorizzazioni all'acquisizione di partecipazioni finanziarie previa verifica della capacità finanziaria della concessionaria di far fronte agli investimenti assentiti in concessione;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b9">
+						<an:point id="d110e213">
 							<an:num>
 								<an:i>h)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b9b1">
+							<an:content id="d110e218">
 								<an:p>disciplina i requisiti di onorabilità professionale e di indipendenza che le concessionarie devono rispettare in occasione del rinnovo delle cariche sociali e della nomina del management aziendale, al fine di evitare situazioni di conflitto di interessi;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2c10">
+						<an:point id="d110e221">
 							<an:num>
 								<an:i>i)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2c10b1">
+							<an:content id="d110e226">
 								<an:p>
 									fissa il livello massimo delle retribuzioni da riconoscere al componenti degli organi societari ed al 
 									<an:i>management</an:i>
@@ -215,153 +233,153 @@
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b3">
+				<an:paragraph id="d110e232">
 					<an:num>2. </an:num>
-					<an:list id="w1ab1ab3b2b3a">
-						<an:intro id="w1ab1ab3b2b3b1">
+					<an:list id="d110e233">
+						<an:intro id="d110e235">
 							<an:p>Nello svolgimento delle funzioni di cui al comma 1, l'Autorità esercita i seguenti poteri:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b2b3b2">
+						<an:point id="d110e237">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b2b1">
+							<an:content id="d110e242">
 								<an:p>stabilisce i livelli qualitativi minimi che i soggetti sottoposti alla sua competenza sono tenuti a garantire e vigila sul loro rispetto;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b3">
+						<an:point id="d110e245">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b3b1">
+							<an:content id="d110e250">
 								<an:p>determina, qualora ricorrano le condizioni, la sospensione, la decadenza o la revoca degli atti di concessione;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b4">
+						<an:point id="d110e253">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b4b1">
+							<an:content id="d110e258">
 								<an:p>determina i criteri per la formazione e l'aggiornamento di tariffe, canoni, pedaggi, diritti e prezzi sottoposti a controllo amministrativo, comunque denominati;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b5">
+						<an:point id="d110e261">
 							<an:num>
 								<an:i>d)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b5b1">
+							<an:content id="d110e266">
 								<an:p>controlla che le condizioni di prestazione dei servizi e di realizzazione degli investimenti siano conformi alla legge, ai regolamenti, agli atti di regolazione e ai contenuti del contratto di concessione;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b6">
+						<an:point id="d110e269">
 							<an:num>
 								<an:i>e)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b6b1">
+							<an:content id="d110e274">
 								<an:p>indica le informazioni che i soggetti regolati devono rendere pubbliche in merito al livello qualitativo e alle altre condizioni di messa a disposizione delle infrastrutture e di fornitura dei servizi;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b7">
+						<an:point id="d110e277">
 							<an:num>
 								<an:i>f)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b7b1">
+							<an:content id="d110e282">
 								<an:p>richiede ai soggetti regolati la pubblicazione di impegni sui livelli qualitativi da raggiungere in periodi pluriennali e determina, ove opportuno e non già altrimenti previsto, gli indennizzi automatici in favore degli utenti e dei consumatori in caso di inadempimento;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b8">
+						<an:point id="d110e285">
 							<an:num>
 								<an:i>g)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b8b1">
+							<an:content id="d110e290">
 								<an:p>promuove la redazione di codici deontologici e di norme di autoregolamentazione;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b9">
+						<an:point id="d110e293">
 							<an:num>
 								<an:i>h)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b9b1">
+							<an:content id="d110e298">
 								<an:p>determina i criteri per la redazione della contabilità dei costi e, ove ricorra l'opportunità, per la separazione contabile, nonché per la classificazione e l'imputazione del costi e dei ricavi pertinenti ad obblighi e oneri di servizio pubblico e vigila sul loro rispetto; ove opportuno, nel rispetto del principio di proporzionalità e delle norme dell’Unione europea, dispone obblighi e modalità di separazione contabile e gestionale delle imprese verticalmente integrate sottoposte alla sua competenza;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c10">
+						<an:point id="d110e301">
 							<an:num>
 								<an:i>i)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c10b1">
+							<an:content id="d110e306">
 								<an:p>richiede al soggetti vigilati le informazioni e l'esibizione del documenti necessari per l'esercizio delle sue funzioni;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c11">
+						<an:point id="d110e310">
 							<an:num>
 								<an:i>l)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c11b1">
+							<an:content id="d110e315">
 								<an:p>qualora sussistano elementi che indicano possibili violazioni della regolazione negli ambiti di propria competenza, svolge ispezioni presso i soggetti vigilati; durante l'ispezione, anche avvalendosi della collaborazione di altri organi dello Stato, può controllare i libri contabili e qualsiasi altro documento aziendale, ottenerne copia, chiedere chiarimenti e altre informazioni, apporre sigilli; delle operazioni ispettive e delle dichiarazioni rese deve essere redatto apposito verbale;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c12">
+						<an:point id="d110e318">
 							<an:num>
 								<an:i>m)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c12b1">
+							<an:content id="d110e323">
 								<an:p>svolge indagini conoscitive di natura generale, se opportuno in collaborazione con l'Autorità garante della concorrenza e del mercato e con altre amministrazioni o autorità di regolazione;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c13">
+						<an:point id="d110e326">
 							<an:num>
 								<an:i>n)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c13b1">
+							<an:content id="d110e331">
 								<an:p>ordina la cessazione delle condotte in contrasto con gli atti di regolazione e con gli impegni assunti dai concessionari, disponendo le misure opportune di ripristino; nei casi in cui intenda adottare una decisione volta a fare cessare un'infrazione e i concessionari propongano impegni idonei a rimuovere le contestazioni da essa avanzate, può rendere obbligatori tali impegni per le stesse e chiudere il procedimento senza accertare l'infrazione, può riaprire il procedimento se mutano le circostanze di fatto su cui sono stati assunti gli impegni o se le informazioni trasmesse dalle parti si rivelano incomplete, inesatte o fuorvianti; in circostanze straordinarie, ove ritenga che sussistano motivi di necessità e di urgenza, al fine di tutelare gli interessi degli utenti, può adottare provvedimenti temporanei di natura cautelare;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c14">
+						<an:point id="d110e334">
 							<an:num>
 								<an:i>o)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c14b1">
+							<an:content id="d110e339">
 								<an:p>valuta i reclami, le istanze e le segnalazioni presentati dagli utenti e dai consumatori, singoli o associati, ai fini dell'esercizio delle proprie competenze;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c15">
+						<an:point id="d110e342">
 							<an:num>
 								<an:i>p)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c15b1">
+							<an:content id="d110e347">
 								<an:p>favorisce l'istituzione di procedure semplici e poco onerose per la conciliazione e la risoluzione delle controversie tra soggetti vigilati e utenti;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c16">
+						<an:point id="d110e350">
 							<an:num>
 								<an:i>q)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c16b1">
+							<an:content id="d110e355">
 								<an:p>ferme restando le sanzioni previste dalla legge, da atti amministrativi e da clausole convenzionali, irroga una sanzione amministrativa pecuniaria sino al 10 per cento del fatturato del soggetto vigilato nei casi di inosservanza degli atti di regolazione e degli impegni assunti nel contratto di concessione dai soggetti regolati o delle condizioni imposte dalla stessa Autorità nonché di inottemperanza agli ordini e alle misure disposti;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c17">
+						<an:point id="d110e358">
 							<an:num>
 								<an:i>r)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c17b1">
+							<an:content id="d110e363">
 								<an:p>
 									irroga una sanzione amministrativa pecuniaria sino al 5 per cento del fatturato dell'impresa interessata in caso di violazione dei provvedimenti della stessa Autorità diversi da quelli di cui alle lettere 
 									<an:i>q)</an:i>
@@ -371,21 +389,21 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c18">
+						<an:point id="d110e372">
 							<an:num>
 								<an:i>s)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c18b1">
+							<an:content id="d110e377">
 								<an:p>applica una sanzione amministrativa pecuniaria sino all'1 per cento del fatturato dell'impresa interessata qualora, nell'interesse o a vantaggio della medesima: i destinatari di una richiesta della stessa Autorità forniscano informazioni inesatte, fuorvianti o incomplete, ovvero non forniscano le informazioni nel termine stabilito; i destinatari di un'ispezione rifiutino di fornire ovvero presentino in modo incompleto i documenti aziendali, nonché rifiutino di fornire o forniscano in modo inesatto, fuorviante o incompleto i chiarimenti richiesti;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3c19">
+						<an:point id="d110e380">
 							<an:num>
 								<an:i>t)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b3c19b1">
+							<an:content id="d110e385">
 								<an:p>
 									applica la sanzione di cui alla lettera 
 									<an:i>q)</an:i>
@@ -397,37 +415,37 @@
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b4">
+				<an:paragraph id="d110e394">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b2b4b1">
+					<an:content id="d110e397">
 						<an:p>Le sanzioni di cui al presente articolo sono determinate in considerazione della gravità e della durata dell'infrazione. Gli introiti delle sanzioni di cui al presente articolo sono destinati a un fondo istituito presso il Ministero delle infrastrutture e dei trasporti finalizzato all'adozione di iniziative destinate al miglioramento della qualità e della sicurezza dei servizi di trasporto pubblico.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d110e400">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d110e403">
 					<an:i>
 						(Disposizioni in materia di composizione
 						<an:eol/>
 						del collegio dell'Autorità)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d110e408">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b3b2b1">
+					<an:content id="d110e411">
 						<an:p>L'Autorità è organo collegiale composto dal presidente e da quattro membri.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b3">
+				<an:paragraph id="d110e414">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b3b3b1">
+					<an:content id="d110e417">
 						<an:p>Il presidente e i membri sono nominati con decreto del Presidente della Repubblica, previa deliberazione del Consiglio dei ministri, su proposta del Presidente del Consiglio dei ministri, al termine della procedura di cui al comma 3.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b4">
+				<an:paragraph id="d110e420">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b3b4b1">
+					<an:content id="d110e423">
 						<an:p>
 							Possono essere designati con deliberazione del Consiglio dei ministri, su proposta del Ministro delle infrastrutture e dei trasporti, nel rispetto dell'equilibrio di genere, soltanto soggetti che hanno presentato la loro candidatura nell'ambito di un'apposita procedura di sollecitazione pubblica avviata con la pubblicazione nella 
 							<an:i>Gazzetta Ufficiale</an:i>
@@ -437,63 +455,63 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b5">
+				<an:paragraph id="d110e432">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b3b5b1">
+					<an:content id="d110e435">
 						<an:p>I componenti dell'Autorità sono scelti tra persone di indiscussa moralità e indipendenza e di comprovata professionalità e competenza nel settori in cui opera l'Autorità. Non possono essere nominati componenti coloro che nei cinque anni precedenti alla nomina abbiano ricoperto incarichi elettivi politici o che, in relazione alle cariche assunte nei tre anni precedenti alla nomina nelle imprese regolate o vigilate, permangano portatori di interessi in conflitto con l'esercizio della funzione di regolazione o dì vigilanza, nonché coloro che siano stati componenti del collegio di un'altra autorità indipendente. Restano ferme altresì le incompatibilità per i titolari di cariche di Governo previste dalla normativa vigente. I componenti dell'Autorità sono nominati per un periodo di sette anni e non possono essere confermati nella carica. In caso di dimissioni o di impedimento del presidente o di un membro dell'Autorità, si procede alla sostituzione secondo le regole ordinarie previste per la nomina dei componenti della stessa Autorità, per la loro durata in carica e per la non rinnovabilità del mandato.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b6">
+				<an:paragraph id="d110e438">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b3b6b1">
+					<an:content id="d110e441">
 						<an:p>In caso di gravi e persistenti violazioni della presente legge, di impossibilità di funzionamento o di prolungata inattività, il Consiglio del ministri, su proposta del Presidente del Consiglio dei ministri, può deliberare, previo parere favorevole espresso a maggioranza dei due terzi dei componenti dalle competenti Commissioni parlamentari, la revoca motivata del collegio, che è disposta con decreto del Presidente della Repubblica.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b7">
+				<an:paragraph id="d110e444">
 					<an:num>6. </an:num>
-					<an:content id="w1ab1ab3b3b7b1">
+					<an:content id="d110e447">
 						<an:p>Per l'intera durata dell'incarico i componenti dell'Autorità non possono esercitare, a pena di decadenza, alcuna attività professionale o di consulenza, essere amministratori o dipendenti di soggetti pubblici o privati, né ricoprire altri uffici pubblici di qualsiasi natura, compresi gli incarichi elettivi o di rappresentanza nei partiti politici, né avere interessi nelle imprese operanti nei settori di competenza dell'Autorità. All'atto di accettazione della nomina, i componenti dell'Autorità sono collocati fuori ruolo o in posizioni analoghe, se dipendenti di pubbliche amministrazioni. Nei tre anni successivi alla cessazione dall'incarico, i componenti dell'Autorità non possono intrattenere, direttamente o indirettamente, rapporti di collaborazione, di consulenza o di impiego con imprese nei cui confronti sono state adottate misure regolatorie specifiche o aperte istruttorie di vigilanza da parte dell'Autorità, né esercitarvi funzioni societarie. La violazione di tale divieto è punita, ferma restando la responsabilità penale ove il fatto costituisca reato, con una sanzione amministrativa pecuniaria pari nel minimo a 25.000 euro e nel massimo alla maggiore somma tra 250.000 euro e l'importo del corrispettivo percepito. Ferme restando le altre disposizioni previste dagli ordinamenti di settore, all'imprenditore che ha violato tale divieto si applicano le sanzioni previste dall'articolo 2, comma 9, della legge 14 novembre 1995, n. 481. I valori delle predette sanzioni sono rivalutati ogni due anni in base alla variazione dell'indice del prezzi al consumo per le famiglie di operai e impiegati calcolato dall'Istituto nazionale di statistica (ISTAT).</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b8">
+				<an:paragraph id="d110e450">
 					<an:num>7. </an:num>
-					<an:content id="w1ab1ab3b3b8b1">
+					<an:content id="d110e453">
 						<an:p>I componenti e i funzionari dell'Autorità, nell'esercizio delle proprie funzioni, sono pubblici ufficiali e sono tenuti al segreto d'ufficio. Con apposito regolamento, l'Autorità adotta il proprio codice deontologico, che stabilisce le regole di condotta dei componenti, dei dirigenti e del personale, anche con previsioni relative al biennio successivo alla cessazione del mandato o del rapporto di impiego.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d110e456">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab3b4b1">
+				<an:heading id="d110e459">
 					<an:i>(Disposizioni in materia di organizzazione dell'Autorità)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b4b2">
+				<an:paragraph id="d110e462">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b4b2b1">
+					<an:content id="d110e465">
 						<an:p>L'Autorità ha autonomia organizzativa, contabile e amministrativa.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b3">
+				<an:paragraph id="d110e468">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b4b3b1">
+					<an:content id="d110e471">
 						<an:p>Nelle materie inerenti l'organizzazione interna dell'Autorità, il collegio di cui al comma 1 dell'articolo 3 svolge le funzioni di indirizzo, programmazione e controllo. Le funzioni di gestione, ai sensi del decreto legislativo 30 marzo 2001, n. 165, sono attribuite ai servizi e agli uffici. Il collegio può attribuire al presidente o a singoli componenti la delega a svolgere attività specifiche o ad assumere determinazioni in ambiti di competenza specificamente individuati.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b4">
+				<an:paragraph id="d110e474">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b4b4b1">
+					<an:content id="d110e477">
 						<an:p>All'amministrazione, al funzionamento dei servizi e degli uffici e all'organizzazione interna dell'Autorità è preposto un segretario generale. Il segretario generale è nominato dal collegio, su proposta del presidente dell'Autorità, tra i dirigenti della stessa Autorità in servizio e per un periodo non inferiore a quattro anni e non superiore a sette, salva la revoca per giusta causa. Ai rapporti del collegio con i servizi e con gli uffici può sovraintendere un capo di gabinetto, che svolge anche le funzioni di segretario del collegio. Il capo di gabinetto è nominato dal collegio, su proposta del presidente dell'Autorità.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b5">
+				<an:paragraph id="d110e480">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b4b5b1">
+					<an:content id="d110e483">
 						<an:p>Per l'esercizio delle funzioni di controllo a carattere contenzioso e sanzionatorio, l'organizzazione interna dell'Autorità assicura la separazione tra funzioni istruttorie degli uffici e funzioni decisorie del collegio. Ferme restando le garanzie funzionali e procedurali previste dalla legge e dai rispettivi ordinamenti, l'Autorità, con appositi regolamenti, può individuare i casi in cui avvalersi, per lo svolgimento di attività preparatorie e strumentali, di altri soggetti pubblici secondo modalità definite in appositi accordi e convenzioni.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b6">
+				<an:paragraph id="d110e486">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b4b6b1">
+					<an:content id="d110e489">
 						<an:p>
 							L'Autorità provvede all'autonoma gestione delle spese per il proprio funzionamento nei limiti delle risorse finanziarie individuate ai sensi dell'articolo 6. Le modalità di attuazione delle disposizioni per il finanziamento a carico degli operatori e del mercato, compresi i termini per il versamento e gli strumenti di controllo sull’efficienza della gestione a disposizione degli operatori e del mercato, sono fissate con propria deliberazione dall'Autorità. La suddetta deliberazione è sottoposta al Presidente del Consiglio del ministri, sentito il Ministro dell'economia e delle finanze, per l'approvazione con decreto entro venti giorni dal ricevimento. Decorso il termine di venti giorni dal ricevimento senza che siano state formulate osservazioni, le deliberazioni di cui al presente comma diventano esecutive. Il bilancio preventivo e il rendiconto della gestione, soggetto al controllo della Corte dei conti, sono pubblicati nella 
 							<an:i>Gazzetta Ufficiale</an:i>
@@ -501,67 +519,67 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b7">
+				<an:paragraph id="d110e495">
 					<an:num>6. </an:num>
-					<an:content id="w1ab1ab3b4b7b1">
+					<an:content id="d110e498">
 						<an:p>Entro sei mesi dalla data di entrata in vigore della presente legge, l'Autorità adotta i regolamenti concernenti l'organizzazione e il funzionamento, i bilanci, i rendiconti e la gestione delle spese, nonché il trattamento giuridico ed economico del personale addetto, nei limiti stabiliti dalla presente legge.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d110e501">
 				<an:num>Art. 5.</an:num>
-				<an:heading id="w1ab1ab3b5b1">
+				<an:heading id="d110e504">
 					<an:i>(Disposizioni in materia di personale)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b5b2">
+				<an:paragraph id="d110e507">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b5b2b1">
+					<an:content id="d110e510">
 						<an:p>Alle dipendenze dell'Autorità è posto personale di ruolo, la cui pianta organica è inizialmente pari a cinquanta unità. Con regolamento dell'Autorità, nel limiti posti dagli stanziamenti ordinari di bilancio previsti per il suo funzionamento, si provvede alla fissazione definitiva della pianta organica del personale di ruolo, la cui consistenza può discostarsi da quella iniziale nel limite di cinquanta unità, anche tenuto conto dell'ampliamento ovvero della riduzione dei mercati sui quali l'Autorità esercita le proprie competenze. Il trattamento giuridico ed economico del personale e l'ordinamento delle carriere sono determinati, in conformità a quanto previsto dall'articolo 2, comma 28, della legge 14 novembre 1995, n. 481, e successive modificazioni, nel termine previsto dal comma 6 dell'articolo 4 della presente legge. Entro tre mesi dalla data di entrata in vigore della presente legge, sono emanati, ai sensi dell'articolo 17, comma 2, della legge 23 agosto 1988, n. 400, uno o più regolamenti, su proposta dei Ministri competenti, per la riduzione delle dotazioni organiche dei medesimi Ministeri e degli organismi pubblici interessati all'attuazione della presente legge di un numero di posti corrispondente alle funzioni trasferite. A decorrere dalla data di entrata in vigore dei predetti regolamenti sono abrogate le disposizioni legislative e regolamentari che disciplinano gli uffici riorganizzati o soppressi. Il personale è selezionato per pubblico concorso. Entro sei mesi dalla data di entrata in vigore della presente legge, il personale è reclutato, fino al 30 per cento della dotazione organica, mediante concorsi riservati al personale del Ministero delle infrastrutture e dei trasporti e dei relativi enti strumentali, del Ministero dell'economia e delle finanze con riferimento al personale operante nelle strutture concertanti le funzioni trasferite all'Autorità, nonché al personale e agli esperti del Comitato interministeriale per la programmazione economica (CIPE) e del Nucleo di consulenza per l'attuazione delle linee guida per la regolazione dei servizi di pubblica utilità (NARS), già in servizio a tempo indeterminato presso pubbliche amministrazioni.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b3">
+				<an:paragraph id="d110e513">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b5b3b1">
+					<an:content id="d110e516">
 						<an:p>Al fine di consentire l'immediato funzionamento dell'Autorità, fino all'immissione in servizio del personale di cui al comma 1 e all'effettiva riscossione delle entrate di cui all'articolo 6, la medesima Autorità può avvalersi, nel limiti di un contingente di trenta unità, di personale in posizione di comando proveniente dalle pubbliche amministrazioni, che conserva il trattamento giuridico ed economico fondamentale e accessorio delle amministrazioni di provenienza, con oneri a carico delle medesime.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b4">
+				<an:paragraph id="d110e519">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b5b4b1">
+					<an:content id="d110e522">
 						<an:p>L'Autorità può inoltre avvalersi, per motivate esigenze di carattere eccezionale, di un contingente di dipendenti dello Stato o di altre pubbliche amministrazioni collocati in posizione di comando o di fuori ruolo ovvero in aspettativa nelle forme previste dai rispettivi ordinamenti. Il contingente non può essere superiore, complessivamente, a un decimo della dotazione organica dell'Autorità e il numero dei dirigenti in esso incluso non può essere superiore a un decimo dei posti delle qualifiche dirigenziali previsti dalla pianta organica della stessa Autorità. In aggiunta al contingente ordinario e nel limite di un quinto della dotazione organica iniziale stabilita al comma 1, l'Autorità può assumere personale specializzato, con contratto a tempo determinato disciplinato dalle norme di diritto privato. Per particolari esigenze di natura tecnica, l'Autorità può avvalersi, in aggiunta al contingente ordinario e nel limite di un ventesimo della dotazione organica iniziale stabilita al comma l, di esperti assunti con contratto a tempo determinato disciplinato dalle norme di diritto privato. L'Autorità può altresì avvalersi di personale dipendente di altre autorità indipendenti in possesso delle competenze e dei requisiti di professionalità e di esperienza richiesti per l'espletamento delle singole funzioni, mediante collocamento fuori ruolo, nell'ambito di convenzioni concluse tra le autorità interessate.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b5">
+				<an:paragraph id="d110e525">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b5b5b1">
+					<an:content id="d110e528">
 						<an:p>Con proprio regolamento, l'Autorità stabilisce le modalità di accesso per pubblico concorso al ruolo organico in conformità ai princìpi stabiliti dalla presente legge.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b6">
+			<an:article id="d110e531">
 				<an:num>Art. 6.</an:num>
-				<an:heading id="w1ab1ab3b6b1">
+				<an:heading id="d110e534">
 					<an:i>(Finanziamento dell'Autorità)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b6b2">
+				<an:paragraph id="d110e537">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b6b2b1">
+					<an:content id="d110e540">
 						<an:p>All'onere derivante dall'istituzione e dal funzionamento dell'Autorità si provvede mediante contributi versati dai soggetti vigilati. I contributi sono versati entro il 31 luglio di ciascun anno. Al fine di consentire l'immediato funzionamento dell'Autorità, il primo versamento è effettuato entro quindici giorni dal perfezionamento dell'efficacia della deliberazione dell'Autorità di cui all’articolo 4, comma 5, adottata in via provvisoria entro quindici giorni dalla costituzione del collegio di cui al comma 1 dell'articolo 3. L'Autorità non può sostenere spese di organizzazione e di funzionamento prima dell'effettuazione del versamento di cui al presente comma.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b7">
+			<an:article id="d110e543">
 				<an:num>Art. 7.</an:num>
-				<an:heading id="w1ab1ab3b7b1">
+				<an:heading id="d110e546">
 					<an:i>
 						(Disposizioni in materia di procedimenti
 						<an:eol/>
 						e di atti dell'Autorità)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b7b2">
+				<an:paragraph id="d110e551">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b7b2b1">
+					<an:content id="d110e554">
 						<an:p>
 							I regolamenti e gli atti a contenuto generale adottati dall'Autorità sono pubblicati nella 
 							<an:i>Gazzetta Ufficiale</an:i>
@@ -573,15 +591,15 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b3">
+				<an:paragraph id="d110e566">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b7b3b1">
+					<an:content id="d110e569">
 						<an:p>I regolamenti e gli atti a contenuto generale dell'Autorità, esclusi quelli attinenti all'organizzazione interna, devono essere motivati con riferimento alle scelte di regolazione e di vigilanza del settore o della materia su cui vertono. Essi sono accompagnati da una relazione che illustra le conseguenze dei medesimi atti sulla regolamentazione, sull'attività degli operatori e sugli interessi dei consumatori e degli utenti.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b4">
+				<an:paragraph id="d110e572">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b7b4b1">
+					<an:content id="d110e575">
 						<an:p>
 							L'Autorità consulta i soggetti interessati e i loro organismi rappresentativi e si avvale di forme di consultazione pubblica, basate sulla diffusione di schemi e versioni preliminari dell'atto da adottare, al fine di acquisire, entro un congruo termine, osservazioni scritte. L'Autorità può altresì consentire agli interessati di presentare le loro osservazioni anche oralmente, in audizioni individuali o collettive, delle quali è redatto verbale. L'Autorità rende pubblici mediante il proprio sito 
 							<an:i>internet</an:i>
@@ -589,33 +607,33 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b5">
+				<an:paragraph id="d110e581">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b7b5b1">
+					<an:content id="d110e584">
 						<an:p>L'Autorità sottopone a revisione periodica, almeno ogni tre anni, il contenuto degli atti di regolazione da essa adottati, per adeguarli all'evoluzione delle condizioni di mercato e dei bisogni dei consumatori e degli utenti, nel rispetto del principio di proporzionalità.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b6">
+				<an:paragraph id="d110e587">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b7b6b1">
+					<an:content id="d110e590">
 						<an:p>L'Autorità disciplina con propri regolamenti l'applicazione dei princìpi di cui al presente articolo, indicando i termini massimi per la conclusione dei procedimenti e i casi di necessità e di urgenza o le ragioni di riservatezza per cui è ammesso derogarvi con decisione motivata.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b7">
+				<an:paragraph id="d110e593">
 					<an:num>6. </an:num>
-					<an:content id="w1ab1ab3b7b7b1">
+					<an:content id="d110e596">
 						<an:p>L'Autorità può promuovere la redazione di codici deontologici o norme di autoregolamentazione da parte di soggetti regolati o vigilati.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b8">
+				<an:paragraph id="d110e599">
 					<an:num>7. </an:num>
-					<an:content id="w1ab1ab3b7b8b1">
+					<an:content id="d110e602">
 						<an:p>I procedimenti di controllo a carattere contenzioso e i procedimenti sanzionatori sono svolti dall'Autorità nel rispetto dei princìpi della piena conoscenza degli atti istruttori, del contraddittorio e della verbalizzazione, nonché della distinzione tra funzioni istruttorie degli uffici e funzioni decisorie del collegio. Restano salve le disposizioni di cui al comma 3 dell'articolo 24 della legge 28 dicembre 2005, n. 262.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b9">
+				<an:paragraph id="d110e605">
 					<an:num>8. </an:num>
-					<an:content id="w1ab1ab3b7b9b1">
+					<an:content id="d110e608">
 						<an:p>
 							Per l'applicazione delle sanzioni amministrative pecuniarie diverse da quelle di cui all'articolo 2, comma 2, lettere 
 							<an:i>q), r), s)</an:i>
@@ -626,18 +644,18 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b8">
+			<an:article id="d110e617">
 				<an:num>Art. 8.</an:num>
-				<an:heading id="w1ab1ab3b8b1">
+				<an:heading id="d110e620">
 					<an:i>
 						(Disposizioni in materia di ricorsi avverso
 						<an:eol/>
 						i provvedimenti dell'Autorità)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b8b2">
+				<an:paragraph id="d110e625">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b8b2b1">
+					<an:content id="d110e628">
 						<an:p>
 							Ogni controversia avente ad oggetto atti e provvedimenti dell'Autorità è devoluta alla giurisdizione esclusiva del giudice amministrativo. La competenza di primo grado spetta in via esclusiva, anche per l'emanazione di misure cautelari, al tribunale amministrativo regionale del Lazio con sede in Roma. Le questioni di competenza di cui al presente comma sono rilevabili d'ufficio. I giudizi di cui al presente comma rientrano tra quelli di cui all'articolo 119, comma 1, lettera 
 							<an:i>b)</an:i>
@@ -645,15 +663,15 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b8b3">
+				<an:paragraph id="d110e634">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b8b3b1">
+					<an:content id="d110e637">
 						<an:p>È fatto salvo il foro del pubblico impiego di cui all'articolo 13, comma 2, del codice del processo amministrativo, di cui al decreto legislativo n. 104 del 2010, e alle relative controversie non si applica quanto previsto dal comma 1 del presente articolo.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b8b4">
+				<an:paragraph id="d110e640">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b8b4b1">
+					<an:content id="d110e643">
 						<an:p>
 							Restano ferme le eccezioni previste dagli articoli 187-
 							<an:i>septies</an:i>
@@ -662,42 +680,42 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b9">
+			<an:article id="d110e649">
 				<an:num>Art. 9.</an:num>
-				<an:heading id="w1ab1ab3b9b1">
+				<an:heading id="d110e652">
 					<an:i>
 						(Disposizioni in materia di rapporti
 						<an:eol/>
 						istituzionali)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b9b2">
+				<an:paragraph id="d110e657">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b9b2b1">
+					<an:content id="d110e660">
 						<an:p>L'Autorità riferisce alle Camere sull'attività svolta e sui risultati conseguiti presentando una relazione annuale che illustra, tra l'altro, l'andamento delle entrate in applicazione del meccanismo di auto finanziamento di cui all'articolo 6.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b9b3">
+				<an:paragraph id="d110e663">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b9b3b1">
+					<an:content id="d110e666">
 						<an:p>L'Autorità può presentare alle Camere e al Governo pareri e segnalazioni in ordine alle iniziative legislative o regolamentari necessarie alla promozione della concorrenza e al perseguimento dei suoi obiettivi.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b9b4">
+				<an:paragraph id="d110e669">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b9b4b1">
+					<an:content id="d110e672">
 						<an:p>L'Autorità collabora con le altre autorità autonome nelle materie di competenza concorrente, anche mediante la stipula di apposite convenzioni, e assicura la leale cooperazione, anche attraverso segnalazioni e scambi di informazioni, con le autorità e le amministrazioni competenti dell'Unione europea e degli altri Stati, al fine di agevolare le rispettive funzioni. L'Autorità è l'unico soggetto designato a partecipare alle reti e agli organismi europei e internazionali che riuniscono le autorità nazionali di regolamentazione, vigilanza e garanzia nel settori e negli ambiti di competenza. La designazione del soggetti partecipanti ai gruppi di consultazione del Consiglio dell'Unione europea spetta al Ministro delle infrastrutture e dei trasporti, il quale, sotto la propria responsabilità e il proprio controllo, può farsi assistere o sostituire da organi tecnici.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b9b5">
+				<an:paragraph id="d110e675">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b9b5b1">
+					<an:content id="d110e678">
 						<an:p>Le pubbliche amministrazioni sono tenute a fornire all'Autorità, oltre a notizie e informazioni, la collaborazione necessaria per l'adempimento delle sue funzioni.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b9b6">
+				<an:paragraph id="d110e681">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b9b6b1">
+					<an:content id="d110e684">
 						<an:p>Nell'esercizio dei poteri ispettivi e di raccolta di informazioni, l'Autorità può avvalersi, in relazione alle specifiche finalità degli accertamenti, del Corpo della guardia di finanza, che agisce con i poteri ad esso attribuiti per l'accertamento dell'imposta sul valore aggiunto e delle imposte sui redditi, utilizzando strutture e personale disponibili in modo da non determinare oneri aggiuntivi. Tutte le notizie, le informazioni e i dati acquisiti dal Corpo della guardia di finanza nell'assolvimento dei compiti previsti dal presente comma sono coperti dal segreto d'ufficio e sono senza indugio comunicati all'Autorità.</an:p>
 					</an:content>
 				</an:paragraph>
@@ -706,30 +724,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/106"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/106/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="106"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/106/ita@2013-03-15/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/106/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/106/ita@2013-03-15/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/106/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/106/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-15/106/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-25/274"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-25/274/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-25/274"/>
 					<an:FRBRdate date="2013-03-25" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-25/274/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-25/274/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="274"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-25/274/ita@2013-03-25/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-25/274/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-25/274/ita@"/>
 					<an:FRBRdate date="2013-03-25" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-25/274/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-25/274/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-25/274/ita@2013-03-25/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-25/274/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-25/274/ita@.akn"/>
 					<an:FRBRdate date="2013-03-25" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-25/274/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-25/274/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-25" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-25" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-25/274/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-25/274/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/63" id="w1ab1ab1b2aaab1b1" showAs="AMORUSO"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d83e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/63" id="d83e16" showAs="AMORUSO"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -50,7 +68,7 @@
 			</an:p>
 			<an:p>
 				d’iniziativa del senatore 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">AMORUSO</an:docProponent>
+				<an:docProponent as="#d83e16a1327" refersTo="#d83e16">AMORUSO</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -58,78 +76,78 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d83e39">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d83e42">
 					<an:i>
 						(Istituzione dell'Albo nazionale
 						<an:eol/>
 						dei cuochi professionisti)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d83e47">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d83e50">
 						<an:p>È istituito l'Albo nazionale dei cuochi professionisti, di seguito denominato «Albo».</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b3">
+				<an:paragraph id="d83e53">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b1b3b1">
+					<an:content id="d83e56">
 						<an:p>Gli iscritti all'Albo costituiscono l'Ordine nazionale dei cuochi professionisti.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b4">
+				<an:paragraph id="d83e59">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b1b4b1">
+					<an:content id="d83e62">
 						<an:p>La tenuta dell'Albo è demandata al Consiglio nazionale dell'Ordine eletto dagli iscritti all'Albo.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b5">
+				<an:paragraph id="d83e65">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b1b5b1">
+					<an:content id="d83e68">
 						<an:p>Entro tre mesi dalla data di entrata in vigore della presente legge, con decreto del Ministro della giustizia, di concerto con il Ministro dello sviluppo economico, sono adottate le norme relative alle modalità e ai requisiti richiesti per l'iscrizione all'Albo, all'istituzione delle sedi e del Consiglio nazionale dell'Ordine e ai procedimenti elettorali relativi agli organi di categoria.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b6">
+				<an:paragraph id="d83e71">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b1b6b1">
+					<an:content id="d83e74">
 						<an:p>L'iscrizione all'Albo è condizione necessaria per l'esercizio dell'attività professionale con la qualifica di cuoco professionista.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d83e77">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d83e80">
 					<an:i>(Iscrizione)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d83e83">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b2b1">
+					<an:content id="d83e86">
 						<an:p>Entro tre mesi dal ricevimento della domanda, il Consiglio nazionale dell'Ordine delibera l'iscrizione all'Albo, dopo avere verificato il possesso dei requisiti stabiliti dal decreto di cui all'articolo 1, comma 4, e dall'articolo 3.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b3">
+				<an:paragraph id="d83e89">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b2b3b1">
+					<an:content id="d83e92">
 						<an:p>L'iscrizione all'Albo avviene con la specifica annotazione della qualifica lavorativa risultante dal libretto di lavoro o dalla scheda professionale.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d83e95">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d83e98">
 					<an:i>(Requisiti per l'iscrizione)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d83e101">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b3b2b1">
+					<an:content id="d83e104">
 						<an:p>Sono iscritti all'Albo esclusivamente i cuochi professionisti in possesso dei requisiti stabiliti dal decreto di cui all'articolo 1, comma 4, e dal comma 3 del presente articolo, che hanno presentato la relativa richiesta al Consiglio nazionale dell'Ordine e che hanno superato positivamente l'esame di abilitazione indetto dallo stesso Consiglio nazionale.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b3">
+				<an:paragraph id="d83e107">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b3b3b1">
+					<an:content id="d83e110">
 						<an:p>
 							Sono iscritti di diritto all'Albo i maestri di cucina e gli chef di cucina in grado di documentare almeno dieci anni di attività o che dirigono 
 							<an:i>équipe</an:i>
@@ -137,69 +155,69 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b4">
+				<an:paragraph id="d83e116">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b3b4b1">
+					<an:content id="d83e119">
 						<an:p>All'atto dell'iscrizione all'Albo il richiedente deve depositare i documenti attestanti il possesso dei requisiti di cui al comma 1.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b5">
+				<an:paragraph id="d83e122">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b3b5b1">
+					<an:content id="d83e125">
 						<an:p>Le iscrizioni all'Albo non sono limitate nel numero.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d83e128">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab3b4b1">
+				<an:heading id="d83e131">
 					<an:i>(Prove di esame)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b4b2">
+				<an:paragraph id="d83e134">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b4b2b1">
+					<an:content id="d83e137">
 						<an:p>Entro tre mesi dalla data di entrata in vigore della presente legge, il Consiglio nazionale dell'Ordine delibera le materie e le prove, teoriche e pratiche, dell'esame di cui all'articolo 3, comma 1, comprendenti anche nozioni di scienza dell'alimentazione e di cucina del territorio.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d83e140">
 				<an:num>Art. 5.</an:num>
-				<an:heading id="w1ab1ab3b5b1">
+				<an:heading id="d83e143">
 					<an:i>(Contributi economici)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b5b2">
+				<an:paragraph id="d83e146">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b5b2b1">
+					<an:content id="d83e149">
 						<an:p>Il Consiglio nazionale dell'Ordine fissa il contributo obbligatorio che gli iscritti sono tenuti a versare annualmente, in modo da assicurare la copertura dei costi relativi alle funzioni svolte sia dal Consiglio nazionale sia dai collegi professionali territoriali, ai corsi di aggiornamento professionale e sanitario e alla tenuta dell'Albo.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b6">
+			<an:article id="d83e152">
 				<an:num>Art. 6.</an:num>
-				<an:heading id="w1ab1ab3b6b1">
+				<an:heading id="d83e155">
 					<an:i>(Azioni disciplinari)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b6b2">
+				<an:paragraph id="d83e158">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b6b2b1">
+					<an:content id="d83e161">
 						<an:p>L'azione disciplinare nei confronti degli iscritti all'Albo è promossa dal presidente del competente collegio professionale, previa comunicazione scritta all'interessato. Il procedimento è disciplinato dal regolamento interno, di cui il Consiglio nazionale dell'Ordine deve dotarsi entro un mese dalla data della sua costituzione. Il procedimento deve in ogni caso prevedere l'audizione dell'interessato.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b3">
+				<an:paragraph id="d83e164">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b6b3b1">
+					<an:content id="d83e167">
 						<an:p>Le deliberazioni del Consiglio nazionale dell'Ordine possono essere impugnate dagli interessati entro un mese dalla data di notificazione del provvedimento con ricorso presso il tribunale competente per territorio.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b4">
+				<an:paragraph id="d83e170">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b6b4b1">
+					<an:content id="d83e173">
 						<an:p>A seguito dell'irrogazione della sanzione della radiazione dall'Albo, la reiscrizione può essere richiesta dopo che siano trascorsi almeno tre anni.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b5">
+				<an:paragraph id="d83e176">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b6b5b1">
+					<an:content id="d83e179">
 						<an:p>Sulla domanda di reiscrizione di cui al comma 3 decide il Consiglio nazionale dell'Ordine, su parere del competente collegio professionale e sentito l'interessato.</an:p>
 					</an:content>
 				</an:paragraph>
@@ -208,30 +226,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-25/274"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-25/274/main/relazione"/>
 							<an:FRBRdate date="2013-03-25" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="274"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-25/274/ita@2013-03-25/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-25/274/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-25" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-25/274/ita@2013-03-25/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-25/274/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-25" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-25/274/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-25/274/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

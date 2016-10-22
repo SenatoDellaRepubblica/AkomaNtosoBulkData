@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-16/226"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-16/226/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-16/226"/>
 					<an:FRBRdate date="2013-03-16" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-16/226/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-16/226/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="226"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-16/226/ita@2013-03-16/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-16/226/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-16/226/ita@"/>
 					<an:FRBRdate date="2013-03-16" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-16/226/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-16/226/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-16/226/ita@2013-03-16/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-16/226/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-16/226/ita@.akn"/>
 					<an:FRBRdate date="2013-03-16" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-16/226/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-16/226/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-16" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-16" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-16/226/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-16/226/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25261" id="w1ab1ab1b2aaab1b1" showAs="D'AMBROSIO LETTIERI"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d75e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/25261" id="d75e16" showAs="D'AMBROSIO LETTIERI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -54,7 +72,7 @@
 			</an:p>
 			<an:p>
 				d’iniziativa del senatore 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">D'AMBROSIO LETTIERI</an:docProponent>
+				<an:docProponent as="#d75e16a1327" refersTo="#d75e16">D'AMBROSIO LETTIERI</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -62,11 +80,11 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d75e93">
 				<an:num>Art. 1.</an:num>
-				<an:paragraph id="w1ab1ab3b1b1">
+				<an:paragraph id="d75e96">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b1b1">
+					<an:content id="d75e99">
 						<an:p>L'articolo 1 della legge 11 gennaio 1994, n. 29, è sostituito dal seguente:</an:p>
 						<an:p>
 							«Art. 1. - 
@@ -80,11 +98,11 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d75e111">
 				<an:num>Art. 2.</an:num>
-				<an:paragraph id="w1ab1ab3b2b1">
+				<an:paragraph id="d75e114">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b1b1">
+					<an:content id="d75e117">
 						<an:p>L'articolo 2 della legge 11 gennaio 1994, n. 29, è sostituito dal seguente:</an:p>
 						<an:p>
 							«Art. 2. - 
@@ -102,11 +120,11 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d75e133">
 				<an:num>Art. 3.</an:num>
-				<an:paragraph id="w1ab1ab3b3b1">
+				<an:paragraph id="d75e136">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b3b1b1">
+					<an:content id="d75e139">
 						<an:p>L'articolo 3 della legge 11 gennaio 1994, n. 29, è sostituito dal seguente:</an:p>
 						<an:p>
 							«Art. 3. - 
@@ -120,11 +138,11 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d75e151">
 				<an:num>Art. 4.</an:num>
-				<an:paragraph id="w1ab1ab3b4b1">
+				<an:paragraph id="d75e154">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b4b1b1">
+					<an:content id="d75e157">
 						<an:p>L'articolo 4 della legge 11 gennaio 1994, n. 29, è sostituito dal seguente:</an:p>
 						<an:p>
 							«Art. 4. - 
@@ -172,29 +190,29 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d75e204">
 				<an:num>Art. 5.</an:num>
-				<an:paragraph id="w1ab1ab3b5b1">
+				<an:paragraph id="d75e207">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b5b1b1">
+					<an:content id="d75e210">
 						<an:p>All 'articolo 5 della legge 11 gennaio 1994, n. 29, le parole: «dall'articolo 10 della legge 29 marzo 1985, n. 113, e successive modificazioni» sono sostituite dalle seguenti: «dal Capo V della legge 12 marzo 1999, n. 68» e le parole: «terapisti della riabilitazione non vedenti» sono sostituite dalle seguenti: «fisioterapisti non vedenti».</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b6">
+			<an:article id="d75e213">
 				<an:num>Art. 6.</an:num>
-				<an:paragraph id="w1ab1ab3b6b1">
+				<an:paragraph id="d75e216">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b6b1b1">
+					<an:content id="d75e219">
 						<an:p>L'articolo 6 della legge 11 gennaio 1994, n. 29, è abrogato.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b7">
+			<an:article id="d75e222">
 				<an:num>Art. 7.</an:num>
-				<an:paragraph id="w1ab1ab3b7b1">
+				<an:paragraph id="d75e225">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b7b1b1">
+					<an:content id="d75e228">
 						<an:p>Nel titolo della legge 11 gennaio 1994, n. 29, le parole: «terapisti della riabilitazione» sono sostituite dalla seguente: «fisioterapisti».</an:p>
 					</an:content>
 				</an:paragraph>
@@ -203,30 +221,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-16/226"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-16/226/main/relazione"/>
 							<an:FRBRdate date="2013-03-16" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="226"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-16/226/ita@2013-03-16/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-16/226/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-16" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-16/226/ita@2013-03-16/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-16/226/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-16" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-16/226/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-16/226/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

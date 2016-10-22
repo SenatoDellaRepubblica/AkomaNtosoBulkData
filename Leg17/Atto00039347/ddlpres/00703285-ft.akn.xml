@@ -4,38 +4,56 @@
 		<an:meta>
 			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/39"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/39/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/39"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/39/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/39/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="39"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/39/ita@2013-03-15/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/39/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/39/ita@"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/39/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/39/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/39/ita@2013-03-15/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/39/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/39/ita@.akn"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/39/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/39/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-15" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-15" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/39/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-15/39/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/2553" id="w1ab1ab1b2aaab1b1" showAs="ZELLER"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29045" id="w1ab1ab1b2aaab3b1" showAs="BERGER"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d401e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/2553" id="d401e16" showAs="ZELLER"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29045" id="d401e18" showAs="BERGER"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -51,9 +69,9 @@
 			</an:p>
 			<an:p>
 				d’iniziativa dei senatori 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">ZELLER</an:docProponent>
+				<an:docProponent as="#d401e16a1327" refersTo="#d401e16">ZELLER</an:docProponent>
 				 e 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab3b1">BERGER</an:docProponent>
+				<an:docProponent as="#d401e16a1327" refersTo="#d401e18">BERGER</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -61,22 +79,22 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d401e87">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d401e90">
 					<an:i>(Introduzione del voto per corrispondenza all'estero di candidati italiani)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d401e93">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b1b2a">
-						<an:intro id="w1ab1ab3b1b2b1">
+					<an:list id="d401e94">
+						<an:intro id="d401e96">
 							<an:p>Alla legge 27 dicembre 2001, n. 459, sono apportate le seguenti modificazioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b1b2b2">
+						<an:point id="d401e98">
 							<an:num>
 								<an:i>a) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b1b2b2b1">
+							<an:content id="d401e102">
 								<an:p>il comma 3 dell'articolo 1 è sostituito dal seguente:</an:p>
 								<an:p>
 									«
@@ -85,11 +103,11 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b2b3">
+						<an:point id="d401e110">
 							<an:num>
 								<an:i>b) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b1b2b3b1">
+							<an:content id="d401e114">
 								<an:p>il comma 4 dell'articolo 4 è sostituito dal seguente:</an:p>
 								<an:p>
 									«
@@ -98,19 +116,19 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b2b4">
+						<an:point id="d401e122">
 							<an:num>
 								<an:i>c) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b1b2b4b1">
+							<an:content id="d401e126">
 								<an:p>al primo periodo del comma 2 dell'articolo 11, dopo le parole: «Le schede» sono inserite le seguenti: «per la votazione nella circoscrizione Estero»;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b2b5">
+						<an:point id="d401e129">
 							<an:num>
 								<an:i>d) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b1b2b5b1">
+							<an:content id="d401e133">
 								<an:p>dopo il comma 2 dell'articolo 11 è inserito il seguente:</an:p>
 								<an:p>
 									«
@@ -119,11 +137,11 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b2b6">
+						<an:point id="d401e141">
 							<an:num>
 								<an:i>e) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b1b2b6b1">
+							<an:content id="d401e145">
 								<an:p>all'articolo 12, dopo il comma 8, è aggiunto, in fine, il seguente:</an:p>
 								<an:p>
 									«
@@ -132,19 +150,19 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b2b7">
+						<an:point id="d401e153">
 							<an:num>
 								<an:i>f) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b1b2b7b1">
+							<an:content id="d401e157">
 								<an:p>al comma 1 dell'articolo 13, le parole: «che non abbiano esercitato l'opzione di cui all'articolo 1, comma 3» sono sostituite dalle seguenti: «, escludendo da tale numero coloro che abbiano esercitato l'opzione di votare personalmente nel territorio nazionale»;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b2b8">
+						<an:point id="d401e160">
 							<an:num>
 								<an:i>g) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b1b2b8b1">
+							<an:content id="d401e164">
 								<an:p>
 									al numero 3) della lettera 
 									<an:i>c)</an:i>
@@ -152,11 +170,11 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b2b9">
+						<an:point id="d401e170">
 							<an:num>
 								<an:i>h) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b1b2b9b1">
+							<an:content id="d401e174">
 								<an:p>
 									l'alinea della lettera 
 									<an:i>d) </an:i>
@@ -168,11 +186,11 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b2c10">
+						<an:point id="d401e184">
 							<an:num>
 								<an:i>i) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b1b2c10b1">
+							<an:content id="d401e188">
 								<an:p>dopo l'articolo 14 sono inseriti i seguenti:</an:p>
 								<an:p>
 									«Art. 14-
@@ -212,11 +230,11 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b2c11">
+						<an:point id="d401e229">
 							<an:num>
 								<an:i>l) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b1b2c11b1">
+							<an:content id="d401e233">
 								<an:p>
 									all'alinea del comma 1 dell'articolo 15, dopo le parole: «Concluse le operazioni di scrutinio» sono inserite le seguenti: «e le operazioni di cui all'articolo 14-
 									<an:i>ter»</an:i>
@@ -227,22 +245,22 @@
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d401e239">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d401e242">
 					<an:i>(Modifiche al testo unico delle leggi recanti norme per la elezione della Camera dei deputati, di cui al decreto del Presidente della Repubblica 30 marzo 1957, n. 361)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d401e245">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b2b2a">
-						<an:intro id="w1ab1ab3b2b2b1">
+					<an:list id="d401e246">
+						<an:intro id="d401e248">
 							<an:p>Al testo unico delle leggi recanti norme per la elezione della Camera dei deputati, di cui al decreto del Presidente della Repubblica 30 marzo 1957, n. 361, sono apportate le seguenti modificazioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b2b2b2">
+						<an:point id="d401e250">
 							<an:num>
 								<an:i>a) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b2b1">
+							<an:content id="d401e254">
 								<an:p>al primo comma dell'articolo 76 è aggiunto, in fine, il seguente numero:</an:p>
 								<an:p>
 									«2-
@@ -251,41 +269,41 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b3">
+						<an:point id="d401e262">
 							<an:num>
 								<an:i>b) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b3b1">
+							<an:content id="d401e266">
 								<an:p>al numero 1) del comma 1 dell'articolo 77, dopo le parole: «nelle singole sezioni elettorali della circoscrizione» sono aggiunte le seguenti: «e nelle schede votate per corrispondenza nella circoscrizione Estero»;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b4">
+						<an:point id="d401e269">
 							<an:num>
 								<an:i>c) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b4b1">
+							<an:content id="d401e273">
 								<an:p>al secondo comma dell'articolo 93, sono aggiunte, in fine, le seguenti parole: «, computando fra questi quelli eventualmente espressi per corrispondenza nella circoscrizione Estero».</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d401e276">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d401e279">
 					<an:i>(Modifiche al testo unico delle leggi recanti norme per l'elezione del Senato della Repubblica, di cui al decreto legislativo 20 dicembre 1993, n. 533)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d401e282">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b3b2a">
-						<an:intro id="w1ab1ab3b3b2b1">
+					<an:list id="d401e283">
+						<an:intro id="d401e285">
 							<an:p>Al testo unico delle leggi recanti norme per l'elezione del Senato della Repubblica, di cui al decreto legislativo 20 dicembre 1993, n. 533, sono apportate le seguenti modificazioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b3b2b2">
+						<an:point id="d401e287">
 							<an:num>
 								<an:i>a) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b3b2b2b1">
+							<an:content id="d401e291">
 								<an:p>
 									il secondo periodo della lettera 
 									<an:i>a)</an:i>
@@ -293,11 +311,11 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b3b2b3">
+						<an:point id="d401e297">
 							<an:num>
 								<an:i>b) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b3b2b3b1">
+							<an:content id="d401e301">
 								<an:p>
 									alla lettera 
 									<an:i>b)</an:i>
@@ -308,14 +326,14 @@
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d401e307">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab3b4b1">
+				<an:heading id="d401e310">
 					<an:i>(Norme regolamentari)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b4b2">
+				<an:paragraph id="d401e313">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b4b2b1">
+					<an:content id="d401e316">
 						<an:p>
 							Con regolamento emanato ai sensi dell'articolo 17, comma 1, lettera 
 							<an:i>b)</an:i>
@@ -331,27 +349,32 @@
 					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/39"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/39/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="39"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/39/ita@2013-03-15/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/39/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/39/ita@2013-03-15/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/39/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/39/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-15/39/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

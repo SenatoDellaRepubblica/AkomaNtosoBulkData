@@ -1,48 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-25/281"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-25/281/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-25/281"/>
 					<an:FRBRdate date="2013-03-25" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-25/281/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-25/281/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="281"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-25/281/ita@2013-03-25/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-25/281/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-25/281/ita@"/>
 					<an:FRBRdate date="2013-03-25" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-25/281/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-25/281/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-25/281/ita@2013-03-25/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-25/281/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-25/281/ita@.akn"/>
 					<an:FRBRdate date="2013-03-25" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-25/281/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-25/281/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-25" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-25" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-25/281/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-25/281/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17698" id="w1ab1ab1b2aaab1b1" showAs="MARINELLO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25398" id="w1ab1ab1b2aaab3b1" showAs="SCILIPOTI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25464" id="w1ab1ab1b2aaab5b1" showAs="MAZZONI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29126" id="w1ab1ab1b2aaab7b1" showAs="MANDELLI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22899" id="w1ab1ab1b2aaab9b1" showAs="CERONI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29178" id="w1ab1ab1b2aaac11b1" showAs="SCOMA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22863" id="w1ab1ab1b2aaac13b1" showAs="BARANI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29208" id="w1ab1ab1b2aaac15b1" showAs="GUALDANI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25271" id="w1ab1ab1b2aaac17b1" showAs="ALICATA"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d111e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/17698" id="d111e16" showAs="MARINELLO"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/25398" id="d111e18" showAs="SCILIPOTI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/25464" id="d111e20" showAs="MAZZONI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29126" id="d111e22" showAs="MANDELLI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/22899" id="d111e24" showAs="CERONI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29178" id="d111e27" showAs="SCOMA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/22863" id="d111e29" showAs="BARANI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29208" id="d111e31" showAs="GUALDANI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/25271" id="d111e33" showAs="ALICATA"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -62,23 +80,23 @@
 			</an:p>
 			<an:p>
 				d’iniziativa dei senatori 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">MARINELLO</an:docProponent>
+				<an:docProponent as="#d111e16a1327" refersTo="#d111e16">MARINELLO</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab3b1">SCILIPOTI</an:docProponent>
+				<an:docProponent as="#d111e16a1327" refersTo="#d111e18">SCILIPOTI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab5b1">MAZZONI</an:docProponent>
+				<an:docProponent as="#d111e16a1327" refersTo="#d111e20">MAZZONI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab7b1">MANDELLI</an:docProponent>
+				<an:docProponent as="#d111e16a1327" refersTo="#d111e22">MANDELLI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab9b1">CERONI</an:docProponent>
+				<an:docProponent as="#d111e16a1327" refersTo="#d111e24">CERONI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac11b1">SCOMA</an:docProponent>
+				<an:docProponent as="#d111e16a1327" refersTo="#d111e27">SCOMA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac13b1">BARANI</an:docProponent>
+				<an:docProponent as="#d111e16a1327" refersTo="#d111e29">BARANI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac15b1">GUALDANI</an:docProponent>
+				<an:docProponent as="#d111e16a1327" refersTo="#d111e31">GUALDANI</an:docProponent>
 				 e 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac17b1">ALICATA</an:docProponent>
+				<an:docProponent as="#d111e16a1327" refersTo="#d111e33">ALICATA</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -86,35 +104,35 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d111e82">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d111e85">
 					<an:i>(Finalità)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d111e88">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d111e91">
 						<an:p>La presente legge ha per oggetto l'attività di rappresentanza di interessi particolari e si informa ai princìpi di pubblicità e di partecipazione, al fine di garantire la trasparenza dei processi decisionali, la conoscibilità dell'attività dei soggetti che influenzano tali processi e una più ampia base informativa sulla quale i decisori pubblici possano fondare le proprie decisioni.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d111e94">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d111e97">
 					<an:i>(Definizioni)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d111e100">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b2b2a">
-						<an:intro id="w1ab1ab3b2b2b1">
+					<an:list id="d111e101">
+						<an:intro id="d111e103">
 							<an:p>Ai fini della presente legge l'espressione:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b2b2b2">
+						<an:point id="d111e105">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b2b1">
+							<an:content id="d111e110">
 								<an:p>
 									«rappresentanti di interessi particolari» indica i soggetti che rappresentano, presso i soggetti indicati alla lettera 
 									<an:i>c)</an:i>
@@ -124,12 +142,12 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b3">
+						<an:point id="d111e119">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b3b1">
+							<an:content id="d111e124">
 								<an:p>
 									«portatori di interessi particolari» indica i datori di lavoro che intrattengono un rapporto di lavoro dipendente con i rappresentanti di interessi particolari avente ad oggetto lo svolgimento dell'attività di cui alla lettera 
 									<an:i>e)</an:i>
@@ -139,48 +157,48 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b4">
+						<an:point id="d111e133">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b4b1">
+							<an:content id="d111e138">
 								<an:p>«decisori pubblici» indica il Presidente del Consiglio dei ministri, i Ministri, i Vice Ministri, i Sottosegretari di Stato, i vertici degli uffici di diretta collaborazione dei Ministri, dei Vice Ministri e dei Sottosegretari di Stato, i titolari di incarichi di funzione dirigenziale generale conferiti ai sensi dell'articolo 19, commi 3 e 4, del decreto legislativo 30 marzo 2001, n. 165, e successive modificazioni, i vertici delle autorità indipendenti nell'esercizio dell'attività di regolazione;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b5">
+						<an:point id="d111e141">
 							<an:num>
 								<an:i>d)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b5b1">
+							<an:content id="d111e146">
 								<an:p>«processi decisionali pubblici» indica i procedimenti di formazione degli atti normativi e degli atti amministrativi generali;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b2b6">
+						<an:point id="d111e149">
 							<an:num>
 								<an:i>e)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b2b2b6b1">
+							<an:content id="d111e154">
 								<an:p>«attività di rappresentanza di interessi particolari» indica ogni attività, non sollecitata da decisori pubblici, svolta dai rappresentanti di interessi particolari, attraverso proposte, richieste, suggerimenti, studi, ricerche, analisi e qualsiasi altra iniziativa o comunicazione orale e scritta, anche trasmessa per via telematica, intesa a perseguire interessi leciti di rilevanza non generale nei confronti dei decisori pubblici.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d111e157">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d111e160">
 					<an:i>
 						(Registro pubblico dei rappresentanti
 						<an:eol/>
 						di interessi particolari)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d111e165">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b3b2b1">
+					<an:content id="d111e168">
 						<an:p>
 							Chi intende svolgere attività di rappresentanza di interessi presso i decisori pubblici ha l'obbligo di iscriversi nel registro pubblico dei rappresentanti di interessi particolari, di seguito denominato «registro», istituito presso il Consiglio nazionale dell'economia e del lavoro (CNEL), che ne garantisce la pubblicità dei contenuti nell'ambito di una sezione dedicata e accessibile del proprio sito 
 							<an:i>internet</an:i>
@@ -188,94 +206,94 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b3">
+				<an:paragraph id="d111e174">
 					<an:num>2. </an:num>
-					<an:list id="w1ab1ab3b3b3a">
-						<an:intro id="w1ab1ab3b3b3b1">
+					<an:list id="d111e175">
+						<an:intro id="d111e177">
 							<an:p>Nel registro, articolato in sezioni distinte per categorie omogenee di interessi, sono indicati i seguenti dati, aggiornati periodicamente su richiesta dei rappresentanti di interessi particolari:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b3b3b2">
+						<an:point id="d111e179">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b3b2b1">
+							<an:content id="d111e184">
 								<an:p>i dati anagrafici e il domicilio professionale del rappresentante di interessi particolari;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b3b3b3">
+						<an:point id="d111e187">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b3b3b1">
+							<an:content id="d111e192">
 								<an:p>i dati identificativi del portatore di interessi particolari nell'interesse del quale è svolta l'attività di rappresentanza di interessi particolari;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b3b3b4">
+						<an:point id="d111e195">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b3b4b1">
+							<an:content id="d111e200">
 								<an:p>l'interesse particolare che si intende rappresentare, nonché i potenziali destinatari dell'attività di rappresentanza di interessi;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b3b3b5">
+						<an:point id="d111e203">
 							<an:num>
 								<an:i>d)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b3b5b1">
+							<an:content id="d111e208">
 								<an:p>le risorse economiche e umane di cui dispone il rappresentante di interessi particolari per lo svolgimento dell'attività di rappresentanza di interessi particolari.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d111e211">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab3b4b1">
+				<an:heading id="d111e214">
 					<an:i>(Requisiti di iscrizione nel registro)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b4b2">
+				<an:paragraph id="d111e217">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b4b2a">
-						<an:intro id="w1ab1ab3b4b2b1">
+					<an:list id="d111e218">
+						<an:intro id="d111e220">
 							<an:p>Ai fini dell'iscrizione nel registro di cui all’articolo 3, comma 1, il rappresentante di interessi particolari:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b4b2b2">
+						<an:point id="d111e222">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b4b2b2b1">
+							<an:content id="d111e227">
 								<an:p>deve aver compiuto il diciottesimo anno di età;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b4b2b3">
+						<an:point id="d111e230">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b4b2b3b1">
+							<an:content id="d111e235">
 								<an:p>non deve aver riportato condanne passate in giudicato per reati contro la personalità dello Stato, la pubblica amministrazione, l'amministrazione della giustizia, l'ordine pubblico, l'incolumità pubblica, l'economia pubblica, il patrimonio, la pubblica fede e la persona, e non essere mai stato interdetto, anche temporaneamente, dai pubblici uffici;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b4b2b4">
+						<an:point id="d111e238">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b4b2b4b1">
+							<an:content id="d111e243">
 								<an:p>non deve essere stato dichiarato fallito, salvo che sia stato riabilitato.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b3">
+				<an:paragraph id="d111e246">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b4b3b1">
+					<an:content id="d111e249">
 						<an:p>
 							L'iscrizione nel registro è subordinata all'impegno scritto del rappresentante di interessi particolari a rispettare un codice di deontologia deliberato dal CNEL entro novanta giorni dalla data di entrata in vigore della presente legge, previa consultazione delle organizzazioni rappresentative del settore che ne facciano tempestiva richiesta. Il codice di deontologia è pubblicato sul sito 
 							<an:i>internet</an:i>
@@ -284,18 +302,18 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d111e255">
 				<an:num>Art. 5.</an:num>
-				<an:heading id="w1ab1ab3b5b1">
+				<an:heading id="d111e258">
 					<an:i>
 						(Obblighi degli iscritti nel registro
 						<an:eol/>
 						e attività di verifica)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b5b2">
+				<an:paragraph id="d111e263">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b5b2b1">
+					<an:content id="d111e266">
 						<an:p>
 							A decorrere dall'anno successivo a quello dell'iscrizione nel registro di cui all’articolo 3, comma 1, entro il termine perentorio del 28 febbraio di ogni anno, il rappresentante di interessi particolari trasmette, sotto la propria responsabilità, in via telematica, una dettagliata relazione concernente l'attività svolta nell'anno precedente al CNEL, che ne garantisce la pubblicità dei contenuti attraverso la pubblicazione nel sito 
 							<an:i>internet</an:i>
@@ -303,27 +321,27 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b3">
+				<an:paragraph id="d111e272">
 					<an:num>2. </an:num>
-					<an:list id="w1ab1ab3b5b3a">
-						<an:intro id="w1ab1ab3b5b3b1">
+					<an:list id="d111e273">
+						<an:intro id="d111e275">
 							<an:p>La relazione di cui al comma 1 contiene:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b5b3b2">
+						<an:point id="d111e277">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b5b3b2b1">
+							<an:content id="d111e282">
 								<an:p>l'elenco dettagliato delle attività di rappresentanza di interessi particolari poste in essere;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b5b3b3">
+						<an:point id="d111e285">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b5b3b3b1">
+							<an:content id="d111e290">
 								<an:p>
 									l'elenco dei decisori pubblici nei confronti dei quali sono state svolte le attività di cui alla lettera 
 									<an:i>a)</an:i>
@@ -331,12 +349,12 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b5b3b4">
+						<an:point id="d111e296">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b5b3b4b1">
+							<an:content id="d111e301">
 								<an:p>
 									l'elenco delle risorse economiche ed umane effettivamente impiegate per lo svolgimento delle attività di cui alla lettera 
 									<an:i>a)</an:i>
@@ -346,21 +364,21 @@
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b4">
+				<an:paragraph id="d111e307">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b5b4b1">
+					<an:content id="d111e310">
 						<an:p>Il CNEL può richiedere ai rappresentanti di interessi particolari, ove necessario, la trasmissione di dati e informazioni integrativi rispetto a quelli contenuti nella relazione trasmessa ai sensi del comma 2.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b5">
+				<an:paragraph id="d111e313">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b5b5b1">
+					<an:content id="d111e316">
 						<an:p>Qualora nello svolgimento dell'attività di verifica emergano elementi che interessano le attribuzioni della Commissione per la valutazione, la trasparenza e l'integrità delle amministrazioni pubbliche, di cui all'articolo 13 del decreto legislativo 27 ottobre 2009, n. 150, e successive modificazioni, il CNEL provvede a fornire informazioni e a trasmettere i dati alla citata Commissione.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b6">
+				<an:paragraph id="d111e319">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b5b6b1">
+					<an:content id="d111e322">
 						<an:p>
 							Il CNEL trasmette alle Camere, entro il 30 giugno di ogni anno, un rapporto sulla verifica dell'attività dei rappresentanti di interessi particolari svolta nell'anno precedente. Il rapporto è contestualmente pubblicato sul sito 
 							<an:i>internet</an:i>
@@ -369,126 +387,126 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b6">
+			<an:article id="d111e328">
 				<an:num>Art. 6.</an:num>
-				<an:heading id="w1ab1ab3b6b1">
+				<an:heading id="d111e331">
 					<an:i>
 						(Diritti dei rappresentanti
 						<an:eol/>
 						di interessi particolari)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b6b2">
+				<an:paragraph id="d111e336">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b6b2b1">
+					<an:content id="d111e339">
 						<an:p>Il rappresentante di interessi particolari iscritto nel registro di cui all’articolo 3, comma 1, ha facoltà di presentare ai decisori pubblici proposte, richieste, suggerimenti, studi, ricerche, analisi, memorie scritte e documenti e qualsiasi altra comunicazione relativa all'interesse rappresentato.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b3">
+				<an:paragraph id="d111e342">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b6b3b1">
+					<an:content id="d111e345">
 						<an:p>Entro novanta giorni dalla data di entrata in vigore della presente legge, le amministrazioni dello Stato, anche ad ordinamento autonomo, e le autorità indipendenti, limitatamente all'attività di regolazione, definiscono con i provvedimenti previsti dai relativi ordinamenti le forme e le modalità di esercizio delle facoltà di cui al comma 1 da parte dei rappresentanti di interessi particolari iscritti al registro, secondo princìpi di imparzialità e di parità di trattamento.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b7">
+			<an:article id="d111e348">
 				<an:num>Art. 7.</an:num>
-				<an:heading id="w1ab1ab3b7b1">
+				<an:heading id="d111e351">
 					<an:i>(Obblighi dei decisori pubblici)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b7b2">
+				<an:paragraph id="d111e354">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b7b2b1">
+					<an:content id="d111e357">
 						<an:p>L'attività di rappresentanza di interessi particolari svolta nei confronti dei decisori pubblici è resa nota, ove pertinente all'oggetto dei processi decisionali, facendone menzione nella relazione illustrativa e nel preambolo degli atti normativi, nonché nelle premesse agli atti amministrativi generali. I decisori pubblici garantiscono l'accesso a chiunque ne abbia interesse ai documenti e alle comunicazioni di cui all'articolo 6, comma 1, ove siano pertinenti all'oggetto dei processi decisionali pubblici in atto, secondo quanto previsto dall'articolo 25 della legge 7 agosto 1990, n. 241, e successive modificazioni. È fatta salva l'applicazione dell'articolo 24 della medesima legge n. 241 del 1990.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b3">
+				<an:paragraph id="d111e360">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b7b3b1">
+					<an:content id="d111e363">
 						<an:p>Il decisore pubblico che ritiene violato dal rappresentante di interessi particolari il codice di deontologia di cui all'articolo 4, comma 2, o le disposizioni della presente legge ne dà immediata comunicazione al CNEL.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b8">
+			<an:article id="d111e366">
 				<an:num>Art. 8.</an:num>
-				<an:heading id="w1ab1ab3b8b1">
+				<an:heading id="d111e369">
 					<an:i>(Sanzioni)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b8b2">
+				<an:paragraph id="d111e372">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b8b2b1">
+					<an:content id="d111e375">
 						<an:p>Salvo che il fatto costituisca reato, il rappresentante di interessi particolari che svolge nei confronti di decisori pubblici l'attività di rappresentanza di interessi particolari in assenza di iscrizione nel registro di cui all’articolo 3, comma 1, è punito con una sanzione amministrativa pecuniaria da euro 2.000 ad euro 20.000.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b8b3">
+				<an:paragraph id="d111e378">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b8b3b1">
+					<an:content id="d111e381">
 						<an:p>La falsità delle informazioni fornite all’atto di iscrizione nel registro o nei successivi aggiornamenti, la violazione degli obblighi previsti dal codice di deontologia di cui all'articolo 4, comma 2, il mancato deposito della relazione di cui all'articolo 5, la falsità delle informazioni ivi contenute o la mancata ottemperanza alla richiesta di completare le informazioni, sono punite con la censura, con la sospensione o, nei casi di particolare gravità, con la cancellazione dal registro.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b8b4">
+				<an:paragraph id="d111e384">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b8b4b1">
+					<an:content id="d111e387">
 						<an:p>Le sanzioni di cui ai commi 1 e 2 sono irrogate dal CNEL con provvedimento motivato.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b8b5">
+				<an:paragraph id="d111e390">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b8b5b1">
+					<an:content id="d111e393">
 						<an:p>Il provvedimento di sospensione o di cancellazione dal registro è pubblicato, per estratto, entro il termine di trenta giorni dalla data di notificazione, a cura e a spese del responsabile delle violazioni, su almeno due quotidiani a diffusione nazionale, di cui uno economico. Il rappresentante di interessi particolari cancellato dal registro non può chiedere una nuova iscrizione prima di quattro anni dalla cancellazione.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b8b6">
+				<an:paragraph id="d111e396">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b8b6b1">
+					<an:content id="d111e399">
 						<an:p>Le controversie relative all'applicazione del presente articolo sono attribuite alla giurisdizione esclusiva del giudice amministrativo.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b9">
+			<an:article id="d111e402">
 				<an:num>Art. 9.</an:num>
-				<an:heading id="w1ab1ab3b9b1">
+				<an:heading id="d111e405">
 					<an:i>(Esclusioni)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b9b2">
+				<an:paragraph id="d111e408">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b9b2b1">
+					<an:content id="d111e411">
 						<an:p>Le disposizioni della presente legge non si applicano all'attività di rappresentanza di interessi particolari svolta da enti pubblici, da associazioni, da altri soggetti rappresentativi di enti pubblici, dai partiti politici nonché all’attività svolta, nell'ambito di processi decisionali che si concludono mediante protocolli d'intesa e altri strumenti di concertazione, da esponenti di organizzazioni sindacali e imprenditoriali.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b9b3">
+				<an:paragraph id="d111e414">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b9b3b1">
+					<an:content id="d111e417">
 						<an:p>È fatta salva l'applicazione di discipline speciali che regolamentano la rappresentanza di interessi particolari presso decisori pubblici.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c10">
+			<an:article id="d111e420">
 				<an:num>Art. 10.</an:num>
-				<an:heading id="w1ab1ab3c10b1">
+				<an:heading id="d111e423">
 					<an:i>(Principi generali)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c10b2">
+				<an:paragraph id="d111e426">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c10b2b1">
+					<an:content id="d111e429">
 						<an:p>Le disposizioni della presente legge concernenti gli obblighi di pubblicità e di trasparenza dell'attività di rappresentanza di interessi particolari, nonché gli obblighi dei decisori pubblici di garantire l'accesso a chiunque ne abbia interesse ai documenti e alle comunicazioni di cui all'articolo 6, comma 1, costituiscono princìpi generali dell'ordinamento giuridico.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c11">
+			<an:article id="d111e433">
 				<an:num>Art. 11.</an:num>
-				<an:heading id="w1ab1ab3c11b1">
+				<an:heading id="d111e436">
 					<an:i>(Clausola di invarianza finanziaria)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c11b2">
+				<an:paragraph id="d111e439">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c11b2b1">
+					<an:content id="d111e442">
 						<an:p>Dall'attuazione della presente legge non devono derivare nuovi o maggiori oneri a carico della finanza pubblica.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c11b3">
+				<an:paragraph id="d111e445">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3c11b3b1">
+					<an:content id="d111e448">
 						<an:p>Alle attività di cui agli articoli 3, 5 e 8, il CNEL fa fronte con le risorse umane, finanziarie e strumentali disponibili a legislazione vigente.</an:p>
 					</an:content>
 				</an:paragraph>
@@ -497,30 +515,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-25/281"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-25/281/main/relazione"/>
 							<an:FRBRdate date="2013-03-25" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="281"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-25/281/ita@2013-03-25/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-25/281/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-25" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-25/281/ita@2013-03-25/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-25/281/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-25" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-25/281/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-25/281/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

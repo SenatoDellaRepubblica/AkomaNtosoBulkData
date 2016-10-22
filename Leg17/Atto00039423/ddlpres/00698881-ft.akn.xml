@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/122"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/122/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/122"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/122/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/122/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="122"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/122/ita@2013-03-15/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/122/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/122/ita@"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/122/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/122/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/122/ita@2013-03-15/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/122/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/122/ita@.akn"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/122/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/122/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-15" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-15" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/122/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-15/122/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="w1ab1ab1b2aaab1b1" showAs="D'ALÌ"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d46e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d46e16" showAs="D'ALÌ"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -50,20 +68,20 @@
 			</an:p>
 			<an:p>
 				d’iniziativa del senatore 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">D'ALÌ</an:docProponent>
+				<an:docProponent as="#d46e16a1327" refersTo="#d46e16">D'ALÌ</an:docProponent>
 				 
 			</an:p>
 			<an:p> COMUNICATO ALLA PRESIDENZA IL 15 MARZO 2013</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d46e86">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d46e89">
 					<an:i>(Norme di semplificazione delle procedure di ricostruzione e riparazione degli edifici privati)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d46e92">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d46e95">
 						<an:p>
 							Entro sei mesi dalla data di entrata in vigore della presente legge, le commissioni di cui all'articolo 5 della legge 29 aprile 1976, n. 178, e successive modificazioni, esprimono, con la presenza del numero legale computato sui componenti aventi voto deliberativo, parere vincolante sulla determinazione dei contributi di cui agli articoli 4-
 							<an:i>bis</an:i>
@@ -75,9 +93,9 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b3">
+				<an:paragraph id="d46e107">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b1b3b1">
+					<an:content id="d46e110">
 						<an:p>
 							In riferimento ai lavori delle commissioni di cui al comma 1 è fatto salvo il compenso previsto dall'articolo 13-
 							<an:i>bis</an:i>
@@ -85,9 +103,9 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b4">
+				<an:paragraph id="d46e116">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b1b4b1">
+					<an:content id="d46e119">
 						<an:p>
 							Fermo restando quanto previsto dall'articolo 13-
 							<an:i>bis</an:i>
@@ -95,33 +113,33 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b5">
+				<an:paragraph id="d46e125">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b1b5b1">
+					<an:content id="d46e128">
 						<an:p>I lavori debbono essere iniziati entro sei mesi dalla assegnazione del contributo. Il sindaco provvede alla revoca del contributo in caso di mancata ultimazione dei lavori entro tre anni dall'assegnazione del contributo.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b6">
+				<an:paragraph id="d46e131">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b1b6b1">
+					<an:content id="d46e134">
 						<an:p>L'ordinanza del sindaco di cui all'articolo 43, comma 2, della legge 1º agosto 2002, n. 166, nonché tutti gli atti, contratti e formalità necessari alla ricostruzione degli immobili e al trasferimento in proprietà delle aree edificatorie assegnate dai comuni ai sensi dell'articolo 4 del decreto-legge 27 febbraio 1968, n. 79, convertito, con modificazioni, dalla legge 18 marzo 1968, n. 241, e successive modificazioni, ivi compresi il frazionamento, l'accatastamento e la voltura catastale, sono esenti da imposte, tasse e diritti.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b7">
+				<an:paragraph id="d46e137">
 					<an:num>6. </an:num>
-					<an:content id="w1ab1ab3b1b7b1">
+					<an:content id="d46e140">
 						<an:p>All'onere relativo alla copertura del fabbisogno per l'integrale pagamento dei contributi di cui al comma 1, quantificato in 300 milioni di euro, si provvede utilizzando il fondo per le aree sottoutilizzate nell'ambito delle risorse già assegnate dal Comitato interministeriale per la programmazione economica (CIPE) alla Regione siciliana.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d46e143">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d46e146">
 					<an:i>(Completamento delle opere pubbliche e perseguimento dei criteri di sicurezza e compatibilità ambientale)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d46e149">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b2b1">
+					<an:content id="d46e152">
 						<an:p>
 							Per la realizzazione delle opere di urbanizzazione e il completamento delle opere pubbliche individuate con decreto di natura non regolamentare del Ministro delle infrastrutture e dei trasporti nell'ambito dei programmi approvati dalla commissione di cui all'articolo 12 del decreto-legge 27 febbraio 1968, n. 79, convertito, con modificazioni, dalla legge 18 marzo 1968, n. 241, e successive modificazioni, è stanziata la somma di 150 milioni di euro nell'amblto delle risorse disponibili a legislazione vigente nel fondo di cui all'articolo 7-
 							<an:i>quinquies</an:i>
@@ -129,21 +147,21 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b3">
+				<an:paragraph id="d46e158">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b2b3b1">
+					<an:content id="d46e161">
 						<an:p>Ai fini dell'individuazione delle opere di cui al comma 1, il Provveditorato interregionale per le opere pubbliche per la Sicilia e la Calabria, entro due mesi dalla data di entrata in vigore della presente legge, sentiti i sindaci ed acquisito il parere della Regione siciliana, trasmette al Ministero delle infrastrutture e dei trasporti l'elenco delle opere necessarie al completamento dei servizi pubblici, delle reti e delle opere pubbliche. Laddove il parere della Regione siciliana non venga espresso entro un mese dalla richiesta, il Provveditorato procede d'ufficio alla trasmissione dell'elenco al Ministero delle infrastrutture e dei trasporti ed il parere si intende acquisito.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b4">
+				<an:paragraph id="d46e164">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b2b4b1">
+					<an:content id="d46e167">
 						<an:p>La progettazione, la direzione dei lavori e l'esecuzione delle opere di cui al presente articolo sono eseguite in concessione dai comuni interessati; l'atto di concessione è approvato con decreto del Provveditore per le opere pubbliche, che impegna la spesa e dispone l'accreditamento delle risorse al comune. All'approvazione dei progetti e all'affidamento dei lavori provvedono i comuni nel rispetto del codice dei contratti pubblici relativi a lavori, servizi e forniture, di cui al decreto legislativo 12 aprile 2006, n. 163. Il collaudatore è nominato dal Provveditorato per le opere pubbliche.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b5">
+				<an:paragraph id="d46e170">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b2b5b1">
+					<an:content id="d46e173">
 						<an:p>Tutti gli interventi, pubblici o privati, previsti per le finalità della presente legge, a decorrere dalla data della sua entrata in vigore, devono garantire la più rigorosa conformità ai criteri di sicurezza idrogeologica e sismica e di efficienza energetica nonché un adeguato livello di compatibilità paesaggistica e ambientale nel perseguimento del decoro estetico urbano nell'ambito delle tipologie tradizionali, così come previsto dalla vigente legislazione in materia.</an:p>
 					</an:content>
 				</an:paragraph>
@@ -152,30 +170,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/122"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/122/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="122"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/122/ita@2013-03-15/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/122/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/122/ita@2013-03-15/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/122/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/122/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-15/122/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

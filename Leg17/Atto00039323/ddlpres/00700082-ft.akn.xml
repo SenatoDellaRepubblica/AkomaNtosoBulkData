@@ -1,41 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/25"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/25/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/25"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/25/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/25/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="25"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/25/ita@2013-03-15/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/25/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/25/ita@"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/25/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/25/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/25/ita@2013-03-15/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/25/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/25/ita@.akn"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/25/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/25/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-15" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-15" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/25/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-15/25/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/2553" id="w1ab1ab1b2aaab1b1" showAs="ZELLER"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29045" id="w1ab1ab1b2aaab3b1" showAs="BERGER"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d257e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/2553" id="d257e16" showAs="ZELLER"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29045" id="d257e18" showAs="BERGER"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -51,9 +69,9 @@
 			</an:p>
 			<an:p>
 				d’iniziativa dei senatori 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">ZELLER</an:docProponent>
+				<an:docProponent as="#d257e16a1327" refersTo="#d257e16">ZELLER</an:docProponent>
 				 e 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab3b1">BERGER</an:docProponent>
+				<an:docProponent as="#d257e16a1327" refersTo="#d257e18">BERGER</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -61,135 +79,135 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d257e46">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d257e49">
 					<an:i>(Finalità e requisiti)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d257e52">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d257e55">
 						<an:p>La presente legge prevede agevolazioni fiscali e in materia di assegno per il nucleo familiare, finalizzate al sostegno delle famiglie numerose.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b3">
+				<an:paragraph id="d257e58">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b1b3b1">
+					<an:content id="d257e61">
 						<an:p>Agli effetti della presente legge, sono famiglie numerose i nuclei familiari con più di tre figli di età inferiore a ventisei anni compiuti.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b4">
+				<an:paragraph id="d257e64">
 					<an:num>3. </an:num>
-					<an:list id="w1ab1ab3b1b4a">
-						<an:intro id="w1ab1ab3b1b4b1">
+					<an:list id="d257e65">
+						<an:intro id="d257e67">
 							<an:p>Le agevolazioni previste dalla presente legge per le famiglie numerose si applicano anche:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b1b4b2">
+						<an:point id="d257e69">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b1b4b2b1">
+							<an:content id="d257e74">
 								<an:p>alle famiglie nelle quali sono presenti uno o più figli disabili, ai sensi dell'articolo 3 della legge 5 febbraio 1992, n. 104;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b4b3">
+						<an:point id="d257e77">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b1b4b3b1">
+							<an:content id="d257e82">
 								<an:p>alle famiglie che, secondo l'applicazione dell'indicatore della situazione economica equivalente (ISEE), di cui al decreto legislativo 31 marzo 1998, n. 109, e successive modificazioni, calcolato dall'Istituto nazionale della previdenza sociale (INPS) sulla base delle dichiarazioni degli interessati, si trovano al di sotto della soglia di povertà, determinata per ogni triennio con decreto del Ministro dell'economia e delle finanze.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b5">
+				<an:paragraph id="d257e85">
 					<an:num>4. </an:num>
-					<an:list id="w1ab1ab3b1b5a">
-						<an:intro id="w1ab1ab3b1b5b1">
+					<an:list id="d257e86">
+						<an:intro id="d257e88">
 							<an:p>Possono usufruire delle agevolazioni previste dalla presente legge le famiglie indicate ai commi 2 e 3 quando ricorrono le seguenti condizioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b1b5b2">
+						<an:point id="d257e90">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b1b5b2b1">
+							<an:content id="d257e95">
 								<an:p>almeno uno dei genitori è cittadino italiano o di uno Stato membro dell'Unione europea;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b5b3">
+						<an:point id="d257e98">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b1b5b3b1">
+							<an:content id="d257e103">
 								<an:p>i figli per i quali spetta l'assegno per il nucleo familiare hanno un'età inferiore a diciotto anni compiuti o un reddito complessivo, al lordo degli oneri deducibili, non superiore a 4.000 euro;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b5b4">
+						<an:point id="d257e106">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b1b5b4b1">
+							<an:content id="d257e111">
 								<an:p>il reddito complessivo di ciascun componente del nucleo familiare è interamente prodotto in Italia.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d257e114">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d257e117">
 					<an:i>(Agevolazioni agli effetti degli assegni per il nucleo familiare e dell'imposta sul reddito delle persone fisiche)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d257e120">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b2b1">
+					<an:content id="d257e123">
 						<an:p>L'importo complessivo dell'assegno per il nucleo familiare, determinato secondo la Tabella 1 allegata alla legge 27 dicembre 2006, n. 296, è aumentato di 500 euro in favore delle famiglie di cui all'articolo 1 della presente legge.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b3">
+				<an:paragraph id="d257e126">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b2b3b1">
+					<an:content id="d257e129">
 						<an:p>L'imposta sul reddito delle persone fisiche, per i componenti delle famiglie di cui all'articolo 1, è determinata applicando al reddito complessivo, al netto degli oneri deducibili, l'aliquota unica del 23 per cento.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d257e132">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d257e135">
 					<an:i>(Comunicazione delle variazioni)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d257e138">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b3b2b1">
+					<an:content id="d257e141">
 						<an:p>Il soggetto beneficiario dell'assegno per il nucleo familiare comunica al datore di lavoro e all'INPS qualunque variazione che determini la perdita dei requisiti previsti dall'articolo 1 entro trenta giorni dal momento in cui si è verificata.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d257e144">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab3b4b1">
+				<an:heading id="d257e147">
 					<an:i>(Copertura finanziaria)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b4b2">
+				<an:paragraph id="d257e150">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b4b2b1">
+					<an:content id="d257e153">
 						<an:p>All'onere derivante dall'attuazione della presente legge si provvede mediante corrispondente riduzione del Fondo per le politiche della famiglia di cui all'articolo 19, comma 1, del decreto-legge 4 luglio 2006, n. 223, convertito, con modificazioni, dalla legge 4 agosto 2006, n. 248, incrementato ai sensi dell'articolo 1, comma 1250, della legge 27 dicembre 2006, n. 296, e successive modificazioni.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d257e156">
 				<an:num>Art. 5.</an:num>
-				<an:heading id="w1ab1ab3b5b1">
+				<an:heading id="d257e159">
 					<an:i>(Entrata in vigore)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b5b2">
+				<an:paragraph id="d257e162">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b5b2b1">
+					<an:content id="d257e165">
 						<an:p>
 							La presente legge entra in vigore il giorno successivo a quello della sua pubblicazione nella 
 							<an:i>Gazzetta Ufficiale</an:i>
@@ -197,15 +215,15 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b3">
+				<an:paragraph id="d257e171">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b5b3b1">
+					<an:content id="d257e174">
 						<an:p>Le disposizioni dell'articolo 2, comma 1, si applicano a decorrere dal mese successivo alla data di entrata in vigore della presente legge.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b4">
+				<an:paragraph id="d257e177">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b5b4b1">
+					<an:content id="d257e180">
 						<an:p>Le disposizioni dell'articolo 2, comma 2, si applicano a decorrere dal periodo d'imposta in corso alla data di entrata in vigore della presente legge.</an:p>
 					</an:content>
 				</an:paragraph>
@@ -214,30 +232,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/25"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/25/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="25"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/25/ita@2013-03-15/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/25/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/25/ita@2013-03-15/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/25/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/25/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-15/25/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

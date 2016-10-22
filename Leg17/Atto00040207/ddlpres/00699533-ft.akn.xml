@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-29/347"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-29/347/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/347"/>
 					<an:FRBRdate date="2013-03-29" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/347/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/347/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="347"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-29/347/ita@2013-03-29/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-29/347/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/347/ita@"/>
 					<an:FRBRdate date="2013-03-29" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/347/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/347/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-29/347/ita@2013-03-29/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-29/347/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/347/ita@.akn"/>
 					<an:FRBRdate date="2013-03-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/347/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-29/347/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-29" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-29" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-29/347/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-29/347/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22814" id="w1ab1ab1b2aaab1b1" showAs="DE POLI"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d185e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/22814" id="d185e16" showAs="DE POLI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -50,7 +68,7 @@
 			</an:p>
 			<an:p>
 				d’iniziativa del senatore 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">DE POLI</an:docProponent>
+				<an:docProponent as="#d185e16a1327" refersTo="#d185e16">DE POLI</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -58,68 +76,68 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d185e87">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d185e90">
 					<an:i>(Organismo centrale di stoccaggio)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d185e93">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d185e96">
 						<an:p>Al fine di mantenere un adeguato livello di sicurezza nell'approvvigionamento di petrolio, di prodotti petroliferi semi-lavorati, lavorati e finiti, nonché di realizzare un sistema affidabile e trasparente che assicuri la disponibilità e l'accessibilità fisica alle scorte di sicurezza, è istituito, entro sei mesi dalla data di entrata in vigore della presente legge, con decreto del Ministro dello sviluppo economico, un organismo centrale di stoccaggio, senza scopo di lucro, sottoposto alla vigilanza del Ministero dello sviluppo economico. A tale organismo partecipano, obbligatoriamente, tutti i soggetti che hanno importato o immesso al consumo in Italia petrolio o prodotti semi-lavorati, lavorati o finiti.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b3">
+				<an:paragraph id="d185e99">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b1b3b1">
+					<an:content id="d185e102">
 						<an:p>All'organismo centrale di stoccaggio è affidato il compito di monitorare il funzionamento del mercato organizzato all'ingrosso dei prodotti petroliferi destinati all'autotrazione, di cui all'articolo 2, nonché quello di definire i criteri, le modalità, i diritti e gli obblighi di partecipazione al suddetto mercato degli operatori industriali e commerciali nonché dei gestori degli impianti di distribuzione dei carburanti per uso di autotrazione.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d185e105">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d185e108">
 					<an:i>(Mercato organizzato all'ingrosso dei prodotti petroliferi destinati all'autotrazione)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d185e111">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b2b1">
+					<an:content id="d185e114">
 						<an:p>Al fine di garantire un assetto maggiormente concorrenziale del mercato nazionale dei carburanti per uso di autotrazione e di assicurare il contenimento dei prezzi di vendita al consumo, entro tre mesi dalla data di istituzione dell'organismo centrale di stoccaggio, il Gestore dei mercati energetici Spa, che a decorrere dalla data di entrata in vigore della presente legge assume la denominazione di Gestore dei mercati energetici e dei carburanti per uso di autotrazione (GMEC) Spa, definisce un mercato organizzato all'ingrosso dei carburanti per uso di autotrazione, secondo i princìpi di neutralità, di trasparenza e di concorrenza, nel quale sono negoziati, mediante listini almeno settimanali, i prodotti petroliferi destinati all'autotrazione.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b3">
+				<an:paragraph id="d185e117">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b2b3b1">
+					<an:content id="d185e120">
 						<an:p>Gli eventuali maggiori oneri connessi all'attività corrente del GMEC Spa, necessari per espletare le funzioni previste al comma 1, sono finanziati attraverso una commissione da applicare sulle quantità di prodotti petroliferi destinati all'autotrazione negoziate dal medesimo GMEC Spa. L'entità di tale commissione è comunicata, annualmente, al Ministero dello sviluppo economico.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d185e123">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d185e126">
 					<an:i>(Approvvigionamento dei gestori degli impianti di distribuzione dei carburanti per uso di autotrazione)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d185e129">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b3b2a">
-						<an:intro id="w1ab1ab3b3b2b1">
+					<an:list id="d185e130">
+						<an:intro id="d185e132">
 							<an:p>Allo scopo di assicurare le condizioni più concorrenziali di approvvigionamento dei gestori degli impianti di distribuzione dei carburanti per uso di autotrazione, l'Acquirente unico Spa, nell'ambito del mercato organizzato all'ingrosso di cui all'articolo 2, assicura ai suddetti gestori i servizi:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b3b2b2">
+						<an:point id="d185e134">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b2b2b1">
+							<an:content id="d185e139">
 								<an:p>di acquisto sul mercato nazionale e internazionale e di rivendita all'ingrosso dei carburanti per uso di autotrazione;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b3b2b3">
+						<an:point id="d185e142">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b2b3b1">
+							<an:content id="d185e147">
 								<an:p>
 									di affitto o di acquisto di depositi di stoccaggio dei carburanti di cui alla lettera 
 									<an:i>a)</an:i>
@@ -129,144 +147,144 @@
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b3">
+				<an:paragraph id="d185e153">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b3b3b1">
+					<an:content id="d185e156">
 						<an:p>Le modalità e le condizioni di svolgimento dei servizi di cui al comma 1 da parte dell'Acquirente unico Spa sono definite dall'Autorità per l'energia elettrica ed il gas.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b4">
+				<an:paragraph id="d185e159">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b3b4b1">
+					<an:content id="d185e162">
 						<an:p>Per favorire le finalità concorrenziali, il contenimento dei prezzi al pubblico e l'attuazione di quanto disposto al presente articolo, il Ministero dello sviluppo economico promuove, con il decreto di cui all'articolo 1, comma 1, l'aggregazione tra i gestori di impianti di distribuzione dei carburanti per uso di autotrazione nelle forme consentite dalla legge, al fine di sviluppare e di incentivare la capacità di acquisto all'ingrosso dei carburanti per uso di autotrazione, nonché dei servizi di stoccaggio e di trasporto dei medesimi, sia nell'ambito dei mercati organizzati sia al di fuori di essi.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d185e165">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab3b4b1">
+				<an:heading id="d185e168">
 					<an:i>
 						(Separazione tra mercati all'ingrosso
 						<an:eol/>
 						e rete distributiva al dettaglio)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b4b2">
+				<an:paragraph id="d185e173">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b4b2a">
-						<an:intro id="w1ab1ab3b4b2b1">
+					<an:list id="d185e174">
+						<an:intro id="d185e176">
 							<an:p>Al fine di favorire le dinamiche concorrenziali e l'efficienza della rete di distribuzione dei carburanti per uso di autotrazione che assicura il diritto alla mobilità dei cittadini, le attività di gestione degli impianti di distribuzione posti lungo le strade e le autostrade e di vendita al dettaglio dei carburanti per uso di autotrazione non possono essere esercitate da soggetti attivi direttamente o attraverso società partecipate, controllate, controllanti o controllate dalla medesima controllante, in almeno uno dei seguenti comparti all'ingrosso:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b4b2b2">
+						<an:point id="d185e178">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b4b2b2b1">
+							<an:content id="d185e183">
 								<an:p>ricerca e coltivazione di idrocarburi liquidi e gassosi;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b4b2b3">
+						<an:point id="d185e186">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b4b2b3b1">
+							<an:content id="d185e191">
 								<an:p>raffinazione, importazione o commercializzazione di prodotti finiti;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b4b2b4">
+						<an:point id="d185e194">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b4b2b4b1">
+							<an:content id="d185e199">
 								<an:p>produzione o commercializzazione di benzine, petroli, gasoli per usi correnti, anche diversi da quello di autotrazione, olii lubrificanti e residuati, gas di petrolio liquefatto e metano per autotrazione.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b3">
+				<an:paragraph id="d185e202">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b4b3b1">
+					<an:content id="d185e205">
 						<an:p>La fase di separazione tra la titolarità delle attività di cui al comma 1 deve essere completata entro due anni dalla data di entrata in vigore della presente legge.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d185e208">
 				<an:num>Art. 5.</an:num>
-				<an:heading id="w1ab1ab3b5b1">
+				<an:heading id="d185e211">
 					<an:i>
 						(Rapporti contrattuali tra titolare
 						<an:eol/>
 						dell'impianto e gestore)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b5b2">
+				<an:paragraph id="d185e216">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b5b2a">
-						<an:intro id="w1ab1ab3b5b2b1">
+					<an:list id="d185e217">
+						<an:intro id="d185e219">
 							<an:p>L'attività di rivendita al pubblico dei carburanti per uso di autotrazione può essere esercitata:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b5b2b2">
+						<an:point id="d185e221">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b5b2b2b1">
+							<an:content id="d185e226">
 								<an:p>dai proprietari degli impianti di distribuzione dei carburanti per uso di autotrazione con proprio personale dipendente e con le limitazioni di cui all'articolo 4;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b5b2b3">
+						<an:point id="d185e229">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b5b2b3b1">
+							<an:content id="d185e234">
 								<an:p>da soggetti diversi da quelli di cui all'articolo 4, ai quali è affidata la gestione degli impianti di distribuzione automatica dei carburanti per uso di autotrazione attraverso rapporti contrattuali definiti ai sensi del presente articolo.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b3">
+				<an:paragraph id="d185e237">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b5b3b1">
+					<an:content id="d185e240">
 						<an:p>La forma contrattuale che regola il rapporto tra titolare dell'impianto e gestore è regolata dalla legge.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b4">
+				<an:paragraph id="d185e243">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b5b4b1">
+					<an:content id="d185e246">
 						<an:p>A parziale integrazione di quanto disposto dal decreto-legge 29 ottobre 1999, n. 383, convertito, con modificazioni, dalla legge 28 dicembre 1999, n. 496, è possibile adottare differenti tipologie contrattuali che sostanziano il contratto principale, alternative a quelle di fornitura o di somministrazione.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b5">
+				<an:paragraph id="d185e249">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b5b5b1">
+					<an:content id="d185e252">
 						<an:p>I contratti di cui al comma 3, ivi compresi quelli di fornitura e di somministrazione e quelli che disciplinano le attività complementari, esercitate presso gli impianti, devono essere conformi ai contratti-tipo definiti attraverso specifici accordi da sottoscrivere tra le rappresentanze associative dei proprietari degli impianti e quelle dei gestori maggiormente rappresentative a livello nazionale. I contratti sono approvati con decreto del Ministero dello sviluppo economico, che stabilisce i tempi e le modalità con i quali devono essere adeguati i rapporti contrattuali preesistenti.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b6">
+				<an:paragraph id="d185e255">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b5b6b1">
+					<an:content id="d185e258">
 						<an:p>Il Ministero dello sviluppo economico provvede, su istanza di una delle parti, a promuovere la sottoscrizione degli accordi di cui al comma 4.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b7">
+				<an:paragraph id="d185e261">
 					<an:num>6. </an:num>
-					<an:content id="w1ab1ab3b5b7b1">
+					<an:content id="d185e264">
 						<an:p>I contratti, definiti ai sensi del comma 4, possono essere oggetto di integrazioni applicative da concordare tra le parti individuate ai sensi dell'articolo 19 della legge 5 marzo 2001, n. 57.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b6">
+			<an:article id="d185e267">
 				<an:num>Art. 6.</an:num>
-				<an:heading id="w1ab1ab3b6b1">
+				<an:heading id="d185e270">
 					<an:i>(Divieto di imposizione unilaterale di approvvigionamento in esclusiva dei carburanti per uso di autotrazione)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b6b2">
+				<an:paragraph id="d185e273">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b6b2b1">
+					<an:content id="d185e276">
 						<an:p>
 							In deroga a quanto disposto dal decreto legislativo 11 febbraio 1998, n. 32, e dall'articolo 105, comma 2, lettera 
 							<an:i>f)</an:i>
@@ -274,69 +292,69 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b3">
+				<an:paragraph id="d185e282">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b6b3b1">
+					<an:content id="d185e285">
 						<an:p>Sono comunque fatti salvi gli accordi commerciali stipulati con le modalità previste dall'articolo 19 della legge 5 marzo 2001, n. 57, aventi ad oggetto la valorizzazione dell'utilizzo commerciale del marchio come elemento distintivo degli impianti di distribuzione dei carburanti per uso di autotrazione, nonché quella degli investimenti effettuati dai proprietari dei medesimi impianti.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b4">
+				<an:paragraph id="d185e288">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b6b4b1">
+					<an:content id="d185e291">
 						<an:p>Ai sensi del comma 1, i gestori degli impianti di distribuzione dei carburanti per uso di autotrazione possono rifornirsi liberamente, in alternativa al servizio assicurato dall'Acquirente unico Spa, da qualunque produttore o rivenditore nel rispetto della vigente normativa nazionale e dell'Unione europea.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b5">
+				<an:paragraph id="d185e294">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b6b5b1">
+					<an:content id="d185e297">
 						<an:p>A decorrere dalla data di entrata in vigore della presente legge, le clausole difformi contenute nei contratti vigenti, ai sensi dell'articolo 1339 del codice civile, sono automaticamente sostituite. Le eventuali clausole contrattuali che prevedono forme di esclusiva nell'approvvigionamento, fatto salvo quanto disposto dal comma 3, sono nulle per violazione della legge ovvero, ai sensi del citato articolo 1339 del codice civile.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b6">
+				<an:paragraph id="d185e300">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b6b6b1">
+					<an:content id="d185e303">
 						<an:p>Nel caso in cui, entro un anno dalla data di entrata in vigore della presente legge, non siano stati stipulati accordi commerciali o rapporti contrattuali conformi a quanto disposto dal presente articolo, i proprietari degli impianti possono chiedere all'Autorità per l'energia elettrica ed il gas la definizione di un corrispettivo annuale a carico dei rispettivi gestori degli impianti di distribuzione dei carburanti per uso di autotrazione. Il corrispettivo è determinato in misura tale da assicurare un'adeguata remunerazione degli investimenti senza pregiudicare l'economicità della gestione. La mancata corresponsione del corrispettivo determina la risoluzione dei rapporti in essere tra i proprietari e i gestori degli impianti.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b7">
+			<an:article id="d185e306">
 				<an:num>Art. 7.</an:num>
-				<an:heading id="w1ab1ab3b7b1">
+				<an:heading id="d185e309">
 					<an:i>
 						(Prezzi al pubblico dei carburanti
 						<an:eol/>
 						per uso di autotrazione)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b7b2">
+				<an:paragraph id="d185e314">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b7b2a">
-						<an:intro id="w1ab1ab3b7b2b1">
+					<an:list id="d185e315">
+						<an:intro id="d185e317">
 							<an:p>Al fine di assicurare una trasparente informazione agli utenti del servizio di distribuzione dei carburanti per uso di autotrazione, i gestori degli impianti di rifornimento dei carburanti sono obbligati:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b7b2b2">
+						<an:point id="d185e319">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b7b2b2b1">
+							<an:content id="d185e324">
 								<an:p>a indicare e a vendere i carburanti per uso di autotrazione con un prezzo unitario espresso in centesimi di euro, con l'aggiunta di un solo numero decimale;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b7b2b3">
+						<an:point id="d185e327">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b7b2b3b1">
+							<an:content id="d185e332">
 								<an:p>a esporre, in maniera visibile dalla carreggiata, ed a pubblicizzare, in prossimità degli erogatori, esclusivamente il prezzo effettivamente praticato attraverso i medesimi erogatori.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b3">
+				<an:paragraph id="d185e335">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b7b3b1">
+					<an:content id="d185e338">
 						<an:p>
 							Allo scopo di consentire il necessario adeguamento tecnico delle relative attrezzature di erogazione, le disposizioni della lettera 
 							<an:i>a)</an:i>
@@ -344,49 +362,49 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b4">
+				<an:paragraph id="d185e344">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b7b4b1">
+					<an:content id="d185e347">
 						<an:p>Dalla data di entrata in vigore della presente legge, è fatto comunque divieto a chiunque di esporre o di pubblicizzare, in qualsiasi forma, cartelli di sconto rispetto ai prezzi dei carburanti per uso di autotrazione. La violazione del presente comma è sanzionata ai sensi dell'articolo 22, comma 3, del decreto legislativo 31 marzo 1998, n. 114.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b5">
+				<an:paragraph id="d185e350">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b7b5b1">
+					<an:content id="d185e353">
 						<an:p>L'articolo 51 della legge 23 luglio 2009, n. 99, è abrogato.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b8">
+			<an:article id="d185e356">
 				<an:num>Art. 8.</an:num>
-				<an:heading id="w1ab1ab3b8b1">
+				<an:heading id="d185e359">
 					<an:i>
 						(Obblighi dei soggetti che immettono
 						<an:eol/>
 						al consumo prodotti petroliferi)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b8b2">
+				<an:paragraph id="d185e364">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b8b2a">
-						<an:intro id="w1ab1ab3b8b2b1">
+					<an:list id="d185e365">
+						<an:intro id="d185e367">
 							<an:p>Al fine di ottenere un più avanzato livello di competitività che contribuisca a realizzare un prezzo al consumo più contenuto nel territorio nazionale a vantaggio dei consumatori, nel rispetto del diritto alla mobilità dei cittadini, nonché un adeguato livello di informazione sull'andamento dei prezzi, chiunque immette al consumo prodotti petroliferi destinati all'autotrazione è obbligato:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b8b2b2">
+						<an:point id="d185e369">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b8b2b2b1">
+							<an:content id="d185e374">
 								<an:p>a trasferire a condizioni eque e non discriminatorie prodotti petroliferi destinati all'autotrazione ai rivenditori finali operanti nello stesso stadio distributivo e nello stesso bacino di utenza, al fine di garantire un'effettiva concorrenza tra i medesimi rivenditori;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b8b2b3">
+						<an:point id="d185e377">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b8b2b3b1">
+							<an:content id="d185e382">
 								<an:p>
 									a comunicare settimanalmente alla Commissione tecnica di valutazione delle dinamiche dei prezzi dei carburanti, istituita con decreto del Ministro dello sviluppo economico 28 gennaio 2011, i listini nazionali dei prezzi raccomandati per la sola modalità di rivendita 
 									<an:i>self</an:i>
@@ -398,39 +416,39 @@
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b8b3">
+				<an:paragraph id="d185e391">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b8b3b1">
+					<an:content id="d185e394">
 						<an:p>L'Autorità garante della concorrenza e del mercato vigila sul rispetto di quanto disposto dal comma 1 e applica alle eventuali infrazioni sanzioni amministrative pecuniarie di importo minimo pari a 100.000 euro, con un limite massimo pari al 10 per cento del fatturato realizzato in ciascuna impresa o ente nell'ultimo esercizio.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b9">
+			<an:article id="d185e397">
 				<an:num>Art. 9.</an:num>
-				<an:heading id="w1ab1ab3b9b1">
+				<an:heading id="d185e400">
 					<an:i>(Competenze delle amministrazioni locali)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b9b2">
+				<an:paragraph id="d185e403">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b9b2b1">
+					<an:content id="d185e406">
 						<an:p>Sono fatte salve le disposizioni emanate, nell'ambito delle rispettive competenze, dalle regioni, dalle province autonome e dagli enti locali, al fine di garantire il servizio universale destinato ad assicurare la mobilità dei cittadini sul rispettivo territorio, ai sensi di quanto disposto dal decreto-legge 25 giugno 2008, n. 112, convertito, con modificazioni, dalla legge 6 agosto 2008, n. 133.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b9b3">
+				<an:paragraph id="d185e409">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b9b3b1">
+					<an:content id="d185e412">
 						<an:p>Ai sensi dell'articolo 2, comma 4, del decreto legislativo 11 febbraio 1998, n. 32, i comuni, quando intendono riservare aree pubbliche all'installazione degli impianti di distribuzione dei carburanti per uso di autotrazione, stabiliscono i criteri per la loro assegnazione, cui si provvede previa pubblicazione di bandi di gara, secondo modalità che garantiscono la partecipazione di tutti gli interessati a condizioni eque e non discriminatorie. I bandi di gara sono pubblicati almeno due mesi prima del termine di scadenza per la presentazione delle domande.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c10">
+			<an:article id="d185e415">
 				<an:num>Art. 10.</an:num>
-				<an:heading id="w1ab1ab3c10b1">
+				<an:heading id="d185e418">
 					<an:i>(Norme transitorie)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c10b2">
+				<an:paragraph id="d185e421">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c10b2b1">
+					<an:content id="d185e424">
 						<an:p>
 							I comuni che non hanno già provveduto all'individuazione ed alla chiusura degli impianti di distribuzione di carburanti per uso di autotrazione definiti incompatibili ai sensi del Piano nazionale di ammodernamento della rete distributiva dei carburanti di cui al decreto del Ministro delle attività produttive 31 ottobre 2001, pubblicato nella 
 							<an:i>Gazzetta Ufficiale</an:i>
@@ -438,15 +456,15 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c10b3">
+				<an:paragraph id="d185e430">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3c10b3b1">
+					<an:content id="d185e433">
 						<an:p>I titolari che non hanno adeguato gli impianti di distribuzione dei carburanti per uso di autotrazione secondo le prescrizioni della pubblica amministrazione provvedono all'adeguamento entro tre mesi dalla data di entrata in vigore della presente legge.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c10b4">
+				<an:paragraph id="d185e436">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3c10b4b1">
+					<an:content id="d185e439">
 						<an:p>Decorsi inutilmente i termini di cui ai commi 1 e 2, le autorizzazioni rilasciate per i relativi impianti sono dichiarate decadute.</an:p>
 					</an:content>
 				</an:paragraph>
@@ -455,30 +473,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-29/347"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/347/main/relazione"/>
 							<an:FRBRdate date="2013-03-29" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="347"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-29/347/ita@2013-03-29/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/347/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-29" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-29/347/ita@2013-03-29/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-29/347/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-29" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-29/347/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-29/347/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-04-04/377"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-04-04/377/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-04/377"/>
 					<an:FRBRdate date="2013-04-04" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-04/377/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-04/377/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="377"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-04-04/377/ita@2013-04-04/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-04-04/377/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-04/377/ita@"/>
 					<an:FRBRdate date="2013-04-04" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-04/377/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-04/377/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-04-04/377/ita@2013-04-04/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-04-04/377/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-04/377/ita@.akn"/>
 					<an:FRBRdate date="2013-04-04" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-04/377/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-04/377/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-04-04" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-04-04" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-04-04/377/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-04-04/377/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22863" id="w1ab1ab1b2aaab1b1" showAs="BARANI"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d147e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/22863" id="d147e16" showAs="BARANI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -50,7 +68,7 @@
 			</an:p>
 			<an:p>
 				d'iniziativa del senatore 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">BARANI</an:docProponent>
+				<an:docProponent as="#d147e16a1327" refersTo="#d147e16">BARANI</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -58,18 +76,18 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d147e72">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d147e75">
 					<an:i>
 						(Modifica dell'articolo 196 dell'ordinamento giudiziario di cui al regio decreto
 						<an:eol/>
 						 30 gennaio 1941, n. 12)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d147e80">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d147e83">
 						<an:p>L'articolo 196 dell'ordinamento giudiziario di cui al regio decreto 30 gennaio 1941, n. 12, è sostituito dal seguente:</an:p>
 						<an:p>
 							«Art. 196. -- 
@@ -95,18 +113,18 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d147e107">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d147e110">
 					<an:i>
 						(Modifica dell'articolo 210 dell'ordinamento giudiziario di cui al regio decreto
 						<an:eol/>
 						30 gennaio 1941, n. 12)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d147e115">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b2b1">
+					<an:content id="d147e118">
 						<an:p>L'articolo 210 dell'ordinamento giudiziario, di cui al regio decreto 30 gennaio 1941, n. 12, è sostituito dal seguente:</an:p>
 						<an:p>
 							«Art. 210. 
@@ -128,14 +146,14 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d147e138">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d147e141">
 					<an:i>(Pubblicità degli incarichi)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d147e144">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b3b2b1">
+					<an:content id="d147e147">
 						<an:p>
 							Il Ministero della giustizia rende noto, mediante inserimento in un'apposita sezione del proprio sito 
 							<an:i>internet</an:i>
@@ -143,52 +161,52 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b3">
+				<an:paragraph id="d147e153">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b3b3b1">
+					<an:content id="d147e156">
 						<an:p>Nell'elenco di cui al comma 1, che deve essere tenuto costantemente e che deve essere tempestivamente aggiornato, sono indicati, per ciascun incarico, la natura, l'eventuale compenso percepito e gli incarichi precedentemente svolti dal magistrato nell'ultimo quadriennio.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d147e159">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab3b4b1">
+				<an:heading id="d147e162">
 					<an:i>(Incarichi extragiudiziari)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b4b2">
+				<an:paragraph id="d147e165">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b4b2b1">
+					<an:content id="d147e168">
 						<an:p>I magistrati ordinari in servizio non possono essere autorizzati a svolgere incarichi extragiudiziari che hanno ad oggetto attività diverse da quelle di natura didattica.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b3">
+				<an:paragraph id="d147e171">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b4b3b1">
+					<an:content id="d147e174">
 						<an:p>L'autorizzazione allo svolgimento di incarichi extragiudiziari non può in alcun modo comportare l'esonero in tutto o in parte dalle ordinarie funzioni giudiziarie.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d147e177">
 				<an:num>Art. 5.</an:num>
-				<an:heading id="w1ab1ab3b5b1">
+				<an:heading id="d147e180">
 					<an:i>
 						(Modifiche alla legge
 						<an:eol/>
 						24 marzo 1958, n. 195)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b5b2">
+				<an:paragraph id="d147e185">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b5b2a">
-						<an:intro id="w1ab1ab3b5b2b1">
+					<an:list id="d147e186">
+						<an:intro id="d147e188">
 							<an:p>Alla legge 24 marzo 1958, n. 195, sono apportate le seguenti modificazioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b5b2b2">
+						<an:point id="d147e190">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b5b2b2b1">
+							<an:content id="d147e195">
 								<an:p>l'articolo 7 è sostituito dal seguente:</an:p>
 								<an:p>
 									«Art. 7. -- 
@@ -217,12 +235,12 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b5b2b3">
+						<an:point id="d147e223">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b5b2b3b1">
+							<an:content id="d147e228">
 								<an:p>
 									il comma 3 dell'articolo 7-
 									<an:i>bis</an:i>
@@ -238,18 +256,18 @@
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b6">
+			<an:article id="d147e239">
 				<an:num>Art. 6.</an:num>
-				<an:heading id="w1ab1ab3b6b1">
+				<an:heading id="d147e242">
 					<an:i>
 						(Modifica dell'articolo 1 della legge
 						<an:eol/>
 						12 agosto 1962, n. 1131)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b6b2">
+				<an:paragraph id="d147e247">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b6b2b1">
+					<an:content id="d147e250">
 						<an:p>L'articolo l della legge 12 agosto 1962, n. 1311, è sostituito dal seguente:</an:p>
 						<an:p>
 							«Art. 1. -- 
@@ -287,27 +305,27 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b7">
+			<an:article id="d147e286">
 				<an:num>Art. 7.</an:num>
-				<an:heading id="w1ab1ab3b7b1">
+				<an:heading id="d147e289">
 					<an:i>
 						(Modifiche al decreto legislativo
 						<an:eol/>
 						30 gennaio 2006, n. 26)
 					</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b7b2">
+				<an:paragraph id="d147e294">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b7b2a">
-						<an:intro id="w1ab1ab3b7b2b1">
+					<an:list id="d147e295">
+						<an:intro id="d147e297">
 							<an:p>Al decreto legislativo 30 gennaio 2006, n. 26, sono apportate le seguenti modificazioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b7b2b2">
+						<an:point id="d147e299">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b7b2b2b1">
+							<an:content id="d147e304">
 								<an:p>il comma 1 dell'articolo 6 è sostituito dal seguente:</an:p>
 								<an:p>
 									«
@@ -316,12 +334,12 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b7b2b3">
+						<an:point id="d147e312">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b7b2b3b1">
+							<an:content id="d147e317">
 								<an:p>
 									l'articolo 17-
 									<an:i>ter</an:i>
@@ -345,50 +363,50 @@
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b8">
+			<an:article id="d147e336">
 				<an:num>Art. 8.</an:num>
-				<an:heading id="w1ab1ab3b8b1">
+				<an:heading id="d147e339">
 					<an:i>(Eleggibilità dei magistrati ordinari)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b8b2">
+				<an:paragraph id="d147e342">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b8b2b1">
+					<an:content id="d147e345">
 						<an:p>Non sono eleggibili alle cariche di componenti della Camera dei deputati e del Senato della Repubblica, di membri del Parlamento europeo spettanti all'Italia, alle cariche di componenti dei consigli regionali, provinciali, comunali e circoscrizionali, nonché alle cariche di presidente della regione, di presidente della provincia e di sindaco coloro che rivestono la qualità di magistrati ordinari, anche se collocati fuori ruolo o in aspettativa, fino a sei mesi prima della scadenza naturale della legislatura o della consiliatura ovvero all'atto dell'accettazione della candidatura in caso di scioglimento anticipato o di elezioni suppletive.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b8b3">
+				<an:paragraph id="d147e348">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b8b3b1">
+					<an:content id="d147e351">
 						<an:p>Le disposizioni del comma l si applicano ai magistrati ordinari che assumono o che intendono assumere cariche nel governo dello Stato e delle regioni nonché di assessore provinciale e comunale.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b9">
+			<an:article id="d147e354">
 				<an:num>Art. 9.</an:num>
-				<an:heading id="w1ab1ab3b9b1">
+				<an:heading id="d147e357">
 					<an:i>(Trattamento economico)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b9b2">
+				<an:paragraph id="d147e360">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b9b2b1">
+					<an:content id="d147e363">
 						<an:p>Il trattamento economico dei magistrati ordinari destinati a incarichi diversi da quelli giudiziari ai sensi della presente legge, con esclusione di quelli di cui all'articolo 4, è stabilito con decreto del Ministro della giustizia.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b9b3">
+				<an:paragraph id="d147e366">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b9b3b1">
+					<an:content id="d147e369">
 						<an:p>Il trattamento economico aggiuntivo onnicomprensivo stabilito ai sensi del comma 1 non può comunque essere inferiore al 20 per cento e superiore al 60 per cento del trattamento economico goduto e mantenuto dal magistrato.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c10">
+			<an:article id="d147e372">
 				<an:num>Art. 10.</an:num>
-				<an:heading id="w1ab1ab3c10b1">
+				<an:heading id="d147e375">
 					<an:i>(Abrogazione)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c10b2">
+				<an:paragraph id="d147e378">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c10b2b1">
+					<an:content id="d147e381">
 						<an:p>
 							Il comma 3 dell'articolo 1-
 							<an:i>bis</an:i>
@@ -397,26 +415,26 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c11">
+			<an:article id="d147e388">
 				<an:num>Art. 11.</an:num>
-				<an:heading id="w1ab1ab3c11b1">
+				<an:heading id="d147e391">
 					<an:i>(Clausola di invarianza finanziaria)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c11b2">
+				<an:paragraph id="d147e394">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c11b2b1">
+					<an:content id="d147e397">
 						<an:p>Dall'attuazione della presente legge non devono derivare oneri a carico del bilancio dello Stato.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c12">
+			<an:article id="d147e400">
 				<an:num>Art. 12.</an:num>
-				<an:heading id="w1ab1ab3c12b1">
+				<an:heading id="d147e403">
 					<an:i>(Entrata in vigore)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3c12b2">
+				<an:paragraph id="d147e406">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c12b2b1">
+					<an:content id="d147e409">
 						<an:p>
 							La presente legge entra in vigore sei mesi dopo la data della sua pubblicazione nella 
 							<an:i>Gazzetta Ufficiale.</an:i>
@@ -428,30 +446,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-04-04/377"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-04/377/main/relazione"/>
 							<an:FRBRdate date="2013-04-04" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="377"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-04-04/377/ita@2013-04-04/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-04/377/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-04-04" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-04-04/377/ita@2013-04-04/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-04/377/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-04-04" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-04-04/377/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-04-04/377/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-04-04/376"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-04-04/376/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-04/376"/>
 					<an:FRBRdate date="2013-04-04" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-04/376/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-04/376/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="376"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-04-04/376/ita@2013-04-04/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-04-04/376/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-04/376/ita@"/>
 					<an:FRBRdate date="2013-04-04" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-04/376/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-04/376/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-04-04/376/ita@2013-04-04/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-04-04/376/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-04/376/ita@.akn"/>
 					<an:FRBRdate date="2013-04-04" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-04/376/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-04/376/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-04-04" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-04-04" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-04-04/376/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-04-04/376/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22863" id="w1ab1ab1b2aaab1b1" showAs="BARANI"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d102e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/22863" id="d102e16" showAs="BARANI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -50,7 +68,7 @@
 			</an:p>
 			<an:p>
 				d’iniziativa del senatore 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">BARANI</an:docProponent>
+				<an:docProponent as="#d102e16a1327" refersTo="#d102e16">BARANI</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -58,71 +76,71 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d102e69">
 				<an:num>Art. 1.</an:num>
-				<an:paragraph id="w1ab1ab3b1b1">
+				<an:paragraph id="d102e72">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b1b1">
+					<an:content id="d102e75">
 						<an:p>Sono considerati fuori ruolo i magistrati ordinari, amministrativi, contabili e militari che non svolgono funzioni giudiziarie e che non sono collocati in uffici giudicanti o requirenti.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d102e78">
 				<an:num>Art. 2.</an:num>
-				<an:paragraph id="w1ab1ab3b2b1">
+				<an:paragraph id="d102e81">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b1b1">
+					<an:content id="d102e84">
 						<an:p>Il numero di magistrati posti fuori ruolo non può essere superiore a cento per i magistrati ordinari e a venticinque per ciascuna delle altre categorie.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d102e87">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b2b2b1">
+					<an:content id="d102e90">
 						<an:p>Il superamento del limite di cui al comma 1 rende nullo e privo di qualsiasi efficacia, anche per gli aspetti economici retributivi, il relativo provvedimento di collocamento fuori ruolo.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b3">
+				<an:paragraph id="d102e93">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b2b3b1">
+					<an:content id="d102e96">
 						<an:p>Per ciascun magistrato ordinario, amministrativo, contabile e militare la durata cumulativa dei periodi di collocamento fuori ruolo non può, durante l'intero corso della carriera, essere superiore a sei anni. Il collocamento fuori ruolo non può in ogni caso essere disposto nei primi dieci anni di carriera del magistrato.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b4">
+				<an:paragraph id="d102e99">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b2b4b1">
+					<an:content id="d102e102">
 						<an:p>Non possono essere posti fuori ruolo magistrati che svolgono le loro funzioni in uffici giudiziari in cui è presente una scopertura di organico superiore al 10 per cento, ovvero che siano impegnati nella trattazione di processi in relazione ai quali l'allontanamento possa avere gravi conseguenze negative.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b5">
+				<an:paragraph id="d102e105">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b2b5b1">
+					<an:content id="d102e108">
 						<an:p>Raggiunto il limite di cui al primo periodo del comma 3, il magistrato è automaticamente reinserito, senza necessità di alcuna domanda o istanza in tal senso, nel medesimo ufficio e con le medesime funzioni svolte prima del collocamento fuori ruolo.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b6">
+				<an:paragraph id="d102e111">
 					<an:num>6. </an:num>
-					<an:content id="w1ab1ab3b2b6b1">
+					<an:content id="d102e114">
 						<an:p>Qualora l'organico dell'ufficio in cui il magistrato deve essere reinserito ai sensi del comma 5 risulti pienamente coperto in relazione alle funzioni svolte dal magistrato stesso prima del collocamento fuori ruolo, il magistrato è assegnato ad altro ufficio limitrofo della medesima circoscrizione o, in mancanza, del medesimo distretto, ove risultino scoperti posti nelle funzioni svolte dal magistrato prima del collocamento fuori ruolo.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b7">
+				<an:paragraph id="d102e117">
 					<an:num>7. </an:num>
-					<an:content id="w1ab1ab3b2b7b1">
+					<an:content id="d102e120">
 						<an:p>In ogni caso, al raggiungimento del limite di cui al primo periodo del comma 3, il trattamento economico del magistrato è equiparato a quello dei magistrati, di pari anzianità, che svolgono funzioni giudiziarie.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d102e123">
 				<an:num>Art. 3.</an:num>
-				<an:paragraph id="w1ab1ab3b3b1">
+				<an:paragraph id="d102e126">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b3b1b1">
+					<an:content id="d102e129">
 						<an:p>I magistrati ordinari, amministrativi, contabili e militari non possono in alcun caso essere collocati fuori ruolo al fine di ricoprire, nell'ambito dell'amministrazione dello Stato e in relazione alla struttura organizzativa di ciascun Ministero, incarichi o ruoli di diretta collaborazione dei Ministri.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d102e132">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b3b2b1">
+					<an:content id="d102e135">
 						<an:p>
 							Nell'ambito del Ministero della giustizia, i magistrati possono essere preposti agli uffici dirigenziali generali istituiti all'interno dei Dipartimenti solo quando ricorrono specifiche esigenze di servizio e comunque in misura non superiore alla metà del numero totale degli uffici dirigenziali costituiti. In ogni caso i magistrati delle giurisdizioni ordinarie e amministrative non possono essere preposti alle Direzioni generali di cui agli articoli 4, comma 2, lettera 
 							<an:i>c)</an:i>
@@ -131,50 +149,50 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d102e141">
 				<an:num>Art. 4.</an:num>
-				<an:paragraph id="w1ab1ab3b4b1">
+				<an:paragraph id="d102e144">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b4b1b1">
+					<an:content id="d102e147">
 						<an:p>In nessun caso l'aver svolto funzioni fuori ruolo può essere considerato al fine dell'assegnazione al magistrato di incarichi direttivi o semidirettivi.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d102e150">
 				<an:num>Art. 5.</an:num>
-				<an:paragraph id="w1ab1ab3b5b1">
+				<an:paragraph id="d102e153">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b5b1b1">
+					<an:content id="d102e156">
 						<an:p>Previa autorizzazione del Consiglio superiore della magistratura, del Consiglio superiore della magistratura militare o dei rispettivi Consigli di presidenza, ciascun magistrato, annualmente, può svolgere incarichi extragiudiziari per un numero complessivo di ore lavorative non superiore a sessanta; l’importo complessivo dei compensi percepiti per detti incarichi non può comunque essere superiore a euro 15.000.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b6">
+			<an:article id="d102e159">
 				<an:num>Art. 6.</an:num>
-				<an:paragraph id="w1ab1ab3b6b1">
+				<an:paragraph id="d102e162">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b6b1b1">
+					<an:content id="d102e165">
 						<an:p>I magistrati contabili o amministrativi con giurisdizione regionale non possono assumere incarichi extragiudiziari o fuori ruolo nella stessa regione in cui prestano servizio, né possono trasferirsi nella regione nella quale hanno ricoperto i predetti incarichi prima che siano decorsi cinque anni dal termine degli incarichi stessi.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b2">
+				<an:paragraph id="d102e168">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b6b2b1">
+					<an:content id="d102e171">
 						<an:p>I magistrati ordinari non possono assumere incarichi extragiudiziari o fuori ruolo nello stesso distretto di corte d'appello nel quale prestano servizio, né possono trasferirsi nel distretto di corte d'appello nel quale hanno ricoperto i predetti incarichi prima che siano decorsi cinque anni dal termine degli incarichi stessi.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b6b3">
+				<an:paragraph id="d102e174">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b6b3b1">
+					<an:content id="d102e177">
 						<an:p>I magistrati che svolgono funzioni in seno alla Corte di cassazione, al Consiglio di Stato o alla Corte dei conti non possono assumere incarichi fuori ruolo o extragiudiziari, fatta eccezione per incarichi di insegnamento nei limiti temporali e retributivi di cui all'articolo 5.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b7">
+			<an:article id="d102e180">
 				<an:num>Art. 7.</an:num>
-				<an:paragraph id="w1ab1ab3b7b1">
+				<an:paragraph id="d102e183">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b7b1b1">
+					<an:content id="d102e186">
 						<an:p>
 							Gli elenchi dei magistrati ordinari, amministrativi, contabili e militari collocati fuori ruolo o autorizzati a svolgere incarichi extragiudiziari sono pubblicati in apposita sezione nei siti 
 							<an:i>internet</an:i>
@@ -182,27 +200,27 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b7b2">
+				<an:paragraph id="d102e192">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b7b2b1">
+					<an:content id="d102e195">
 						<an:p>Negli elenchi di cui al comma 1 sono indicati il tipo di incarico ricoperto, il compenso percepito, gli uffici di provenienza, la data di inizio dell'incarico stesso e la data in cui l'incarico avrà termine. I predetti elenchi sono trasmessi al Parlamento in allegato a un'apposita relazione, da parte dei rispettivi organi di autogoverno.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b8">
+			<an:article id="d102e198">
 				<an:num>Art. 8.</an:num>
-				<an:paragraph id="w1ab1ab3b8b1">
+				<an:paragraph id="d102e201">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b8b1b1">
+					<an:content id="d102e204">
 						<an:p>Dall'attuazione della presente legge non devono derivare nuovi o maggiori oneri a carico della finanza pubblica.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b9">
+			<an:article id="d102e207">
 				<an:num>Art. 9.</an:num>
-				<an:paragraph id="w1ab1ab3b9b1">
+				<an:paragraph id="d102e210">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b9b1b1">
+					<an:content id="d102e213">
 						<an:p>
 							La presente legge entra in vigore il quarantacinquesimo giorno successivo a quello della sua pubblicazione nella 
 							<an:i>Gazzetta Ufficiale</an:i>
@@ -215,30 +233,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-04-04/376"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-04/376/main/relazione"/>
 							<an:FRBRdate date="2013-04-04" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="376"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-04-04/376/ita@2013-04-04/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-04/376/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-04-04" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-04-04/376/ita@2013-04-04/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-04/376/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-04-04" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-04-04/376/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-04-04/376/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

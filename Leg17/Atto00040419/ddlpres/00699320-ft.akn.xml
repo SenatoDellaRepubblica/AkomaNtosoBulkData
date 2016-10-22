@@ -1,92 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-04-10/452"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-04-10/452/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-10/452"/>
 					<an:FRBRdate date="2013-04-10" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/452/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/452/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="452"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-04-10/452/ita@2013-04-10/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-04-10/452/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-10/452/ita@"/>
 					<an:FRBRdate date="2013-04-10" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/452/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/452/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-04-10/452/ita@2013-04-10/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-04-10/452/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-10/452/ita@.akn"/>
 					<an:FRBRdate date="2013-04-10" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/452/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/452/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-04-10" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-04-10" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-04-10/452/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-04-10/452/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29075" id="w1ab1ab1b2aaab1b1" showAs="CRIMI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29034" id="w1ab1ab1b2aaab3b1" showAs="AIROLA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29038" id="w1ab1ab1b2aaab5b1" showAs="ANITORI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29042" id="w1ab1ab1b2aaab7b1" showAs="BATTISTA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29044" id="w1ab1ab1b2aaab9b1" showAs="BENCINI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29046" id="w1ab1ab1b2aaac11b1" showAs="BERTOROTTA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29048" id="w1ab1ab1b2aaac13b1" showAs="BIGNAMI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29050" id="w1ab1ab1b2aaac15b1" showAs="BLUNDO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29051" id="w1ab1ab1b2aaac17b1" showAs="BOCCHINO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29053" id="w1ab1ab1b2aaac19b1" showAs="BOTTICI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29055" id="w1ab1ab1b2aaac21b1" showAs="BUCCARELLA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29056" id="w1ab1ab1b2aaac23b1" showAs="BULGARELLI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29058" id="w1ab1ab1b2aaac25b1" showAs="CAMPANELLA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29061" id="w1ab1ab1b2aaac27b1" showAs="CAPPELLETTI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29064" id="w1ab1ab1b2aaac29b1" showAs="CASALETTO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29065" id="w1ab1ab1b2aaac31b1" showAs="CASTALDI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29066" id="w1ab1ab1b2aaac33b1" showAs="CATALFO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29069" id="w1ab1ab1b2aaac35b1" showAs="CIAMPOLILLO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29070" id="w1ab1ab1b2aaac37b1" showAs="CIOFFI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29074" id="w1ab1ab1b2aaac39b1" showAs="COTTI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29083" id="w1ab1ab1b2aaac41b1" showAs="DE PIETRO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29084" id="w1ab1ab1b2aaac43b1" showAs="DE PIN"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29090" id="w1ab1ab1b2aaac45b1" showAs="DONNO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29091" id="w1ab1ab1b2aaac47b1" showAs="ENDRIZZI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29093" id="w1ab1ab1b2aaac49b1" showAs="FATTORI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29101" id="w1ab1ab1b2aaac51b1" showAs="FUCKSIA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29102" id="w1ab1ab1b2aaac53b1" showAs="GAETTI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29104" id="w1ab1ab1b2aaac55b1" showAs="GAMBARO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29106" id="w1ab1ab1b2aaac57b1" showAs="GIARRUSSO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29108" id="w1ab1ab1b2aaac59b1" showAs="GIROTTO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29117" id="w1ab1ab1b2aaac61b1" showAs="LEZZI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29123" id="w1ab1ab1b2aaac63b1" showAs="LUCIDI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29130" id="w1ab1ab1b2aaac65b1" showAs="MARTELLI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29132" id="w1ab1ab1b2aaac67b1" showAs="MARTON"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29133" id="w1ab1ab1b2aaac69b1" showAs="MASTRANGELI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29139" id="w1ab1ab1b2aaac71b1" showAs="MOLINARI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29140" id="w1ab1ab1b2aaac73b1" showAs="MONTEVECCHI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29142" id="w1ab1ab1b2aaac75b1" showAs="MORONESE"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29143" id="w1ab1ab1b2aaac77b1" showAs="MORRA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29146" id="w1ab1ab1b2aaac79b1" showAs="MUSSINI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29147" id="w1ab1ab1b2aaac81b1" showAs="NUGNES"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29149" id="w1ab1ab1b2aaac83b1" showAs="ORELLANA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29154" id="w1ab1ab1b2aaac85b1" showAs="PAGLINI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29158" id="w1ab1ab1b2aaac87b1" showAs="PEPE"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29161" id="w1ab1ab1b2aaac89b1" showAs="PETROCELLI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29164" id="w1ab1ab1b2aaac91b1" showAs="PUGLIA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29168" id="w1ab1ab1b2aaac93b1" showAs="Maurizio ROMANI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29174" id="w1ab1ab1b2aaac95b1" showAs="SANTANGELO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29177" id="w1ab1ab1b2aaac97b1" showAs="SCIBONA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29179" id="w1ab1ab1b2aaac99b1" showAs="SERRA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29181" id="w1ab1ab1b2aaad101b1" showAs="SIMEONI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29189" id="w1ab1ab1b2aaad103b1" showAs="TAVERNA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29193" id="w1ab1ab1b2aaad105b1" showAs="VACCIANO"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d132e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29075" id="d132e16" showAs="CRIMI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29034" id="d132e18" showAs="AIROLA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29038" id="d132e20" showAs="ANITORI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29042" id="d132e22" showAs="BATTISTA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29044" id="d132e24" showAs="BENCINI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29046" id="d132e27" showAs="BERTOROTTA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29048" id="d132e29" showAs="BIGNAMI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29050" id="d132e31" showAs="BLUNDO"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29051" id="d132e33" showAs="BOCCHINO"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29053" id="d132e35" showAs="BOTTICI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29055" id="d132e37" showAs="BUCCARELLA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29056" id="d132e40" showAs="BULGARELLI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29058" id="d132e42" showAs="CAMPANELLA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29061" id="d132e44" showAs="CAPPELLETTI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29064" id="d132e46" showAs="CASALETTO"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29065" id="d132e48" showAs="CASTALDI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29066" id="d132e50" showAs="CATALFO"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29069" id="d132e53" showAs="CIAMPOLILLO"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29070" id="d132e55" showAs="CIOFFI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29074" id="d132e57" showAs="COTTI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29083" id="d132e59" showAs="DE PIETRO"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29084" id="d132e61" showAs="DE PIN"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29090" id="d132e63" showAs="DONNO"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29091" id="d132e66" showAs="ENDRIZZI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29093" id="d132e68" showAs="FATTORI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29101" id="d132e70" showAs="FUCKSIA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29102" id="d132e72" showAs="GAETTI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29104" id="d132e74" showAs="GAMBARO"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29106" id="d132e76" showAs="GIARRUSSO"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29108" id="d132e79" showAs="GIROTTO"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29117" id="d132e81" showAs="LEZZI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29123" id="d132e83" showAs="LUCIDI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29130" id="d132e85" showAs="MARTELLI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29132" id="d132e87" showAs="MARTON"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29133" id="d132e89" showAs="MASTRANGELI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29139" id="d132e92" showAs="MOLINARI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29140" id="d132e94" showAs="MONTEVECCHI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29142" id="d132e96" showAs="MORONESE"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29143" id="d132e98" showAs="MORRA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29146" id="d132e100" showAs="MUSSINI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29147" id="d132e102" showAs="NUGNES"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29149" id="d132e105" showAs="ORELLANA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29154" id="d132e107" showAs="PAGLINI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29158" id="d132e109" showAs="PEPE"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29161" id="d132e111" showAs="PETROCELLI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29164" id="d132e113" showAs="PUGLIA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29168" id="d132e115" showAs="Maurizio ROMANI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29174" id="d132e118" showAs="SANTANGELO"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29177" id="d132e120" showAs="SCIBONA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29179" id="d132e122" showAs="SERRA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29181" id="d132e124" showAs="SIMEONI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29189" id="d132e126" showAs="TAVERNA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29193" id="d132e128" showAs="VACCIANO"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -102,123 +120,123 @@
 			</an:p>
 			<an:p>
 				d’iniziativa dei senatori 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">CRIMI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e16">CRIMI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab3b1">AIROLA</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e18">AIROLA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab5b1">ANITORI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e20">ANITORI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab7b1">BATTISTA</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e22">BATTISTA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab9b1">BENCINI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e24">BENCINI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac11b1">BERTOROTTA</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e27">BERTOROTTA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac13b1">BIGNAMI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e29">BIGNAMI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac15b1">BLUNDO</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e31">BLUNDO</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac17b1">BOCCHINO</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e33">BOCCHINO</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac19b1">BOTTICI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e35">BOTTICI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac21b1">BUCCARELLA</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e37">BUCCARELLA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac23b1">BULGARELLI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e40">BULGARELLI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac25b1">CAMPANELLA</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e42">CAMPANELLA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac27b1">CAPPELLETTI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e44">CAPPELLETTI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac29b1">CASALETTO</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e46">CASALETTO</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac31b1">CASTALDI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e48">CASTALDI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac33b1">CATALFO</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e50">CATALFO</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac35b1">CIAMPOLILLO</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e53">CIAMPOLILLO</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac37b1">CIOFFI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e55">CIOFFI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac39b1">COTTI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e57">COTTI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac41b1">DE PIETRO</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e59">DE PIETRO</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac43b1">DE PIN</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e61">DE PIN</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac45b1">DONNO</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e63">DONNO</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac47b1">ENDRIZZI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e66">ENDRIZZI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac49b1">FATTORI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e68">FATTORI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac51b1">FUCKSIA</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e70">FUCKSIA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac53b1">GAETTI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e72">GAETTI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac55b1">GAMBARO</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e74">GAMBARO</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac57b1">GIARRUSSO</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e76">GIARRUSSO</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac59b1">GIROTTO</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e79">GIROTTO</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac61b1">LEZZI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e81">LEZZI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac63b1">LUCIDI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e83">LUCIDI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac65b1">MARTELLI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e85">MARTELLI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac67b1">MARTON</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e87">MARTON</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac69b1">MASTRANGELI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e89">MASTRANGELI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac71b1">MOLINARI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e92">MOLINARI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac73b1">MONTEVECCHI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e94">MONTEVECCHI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac75b1">MORONESE</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e96">MORONESE</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac77b1">MORRA</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e98">MORRA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac79b1">MUSSINI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e100">MUSSINI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac81b1">NUGNES</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e102">NUGNES</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac83b1">ORELLANA</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e105">ORELLANA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac85b1">PAGLINI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e107">PAGLINI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac87b1">PEPE</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e109">PEPE</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac89b1">PETROCELLI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e111">PETROCELLI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac91b1">PUGLIA</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e113">PUGLIA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac93b1">Maurizio ROMANI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e115">Maurizio ROMANI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac95b1">SANTANGELO</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e118">SANTANGELO</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac97b1">SCIBONA</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e120">SCIBONA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac99b1">SERRA</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e122">SERRA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaad101b1">SIMEONI</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e124">SIMEONI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaad103b1">TAVERNA</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e126">TAVERNA</an:docProponent>
 				 e 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaad105b1">VACCIANO</an:docProponent>
+				<an:docProponent as="#d132e16a1327" refersTo="#d132e128">VACCIANO</an:docProponent>
 			</an:p>
 			<an:p>COMUNICATO ALLA PRESIDENZA IL 10 APRILE 2013</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d132e178">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d132e181">
 					<an:i>(Modifica dell'articolo 1 del decreto legislativo 31 dicembre 2012, n. 235, in materia di incandidabilità alle elezioni della Camera dei deputati e del Senato della Repubblica)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d132e184">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d132e187">
 						<an:p>L'articolo 1 del testo unico delle disposizioni in materia di incandidabilità e di divieto di ricoprire cariche elettive e di Governo conseguenti a sentenze definitive di condanna per delitti non colposi, di cui al decreto legislativo 31 dicembre 2012, n. 235, è sostituito dal seguente:</an:p>
 						<an:p>
 							«Art. 1. - 
@@ -236,14 +254,14 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d132e203">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d132e206">
 					<an:i>(Modifica all'articolo 3 del decreto legislativo 31 dicembre 2012, n. 235, in materia di incandidabilità sopravvenuta nel corso del mandato elettivo parlamentare)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d132e209">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b2b1">
+					<an:content id="d132e212">
 						<an:p>All'articolo 3 del citato testo unico di cui al decreto legislativo 31 dicembre 2012, n. 235, il comma 1 è sostituito dal seguente:</an:p>
 						<an:p>
 							«
@@ -253,23 +271,23 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d132e220">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d132e223">
 					<an:i>(Modifica all'articolo 13 del decreto legislativo 31 dicembre 2012, n. 235, in materia di durata dell'incandidabilità)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d132e226">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b3b2a">
-						<an:intro id="w1ab1ab3b3b2b1">
+					<an:list id="d132e227">
+						<an:intro id="d132e229">
 							<an:p>All'articolo 13 del citato testo unico di cui al decreto legislativo 31 dicembre 2012, n. 235, sono apportate le seguenti modificazioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b3b2b2">
+						<an:point id="d132e231">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b2b2b1">
+							<an:content id="d132e236">
 								<an:p>il comma 1 è sostituito dal seguente:</an:p>
 								<an:p>
 									«
@@ -278,26 +296,26 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b3b2b3">
+						<an:point id="d132e244">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b3b2b3b1">
+							<an:content id="d132e249">
 								<an:p>il comma 3 è abrogato.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d132e252">
 				<an:num>Art. 4.</an:num>
-				<an:heading id="w1ab1ab3b4b1">
+				<an:heading id="d132e255">
 					<an:i>(Introduzione del voto di preferenza per le elezioni della Camera dei deputati)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b4b2">
+				<an:paragraph id="d132e258">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b4b2b1">
+					<an:content id="d132e261">
 						<an:p>All’articolo 4 del testo unico delle leggi recanti norme per la elezione della Camera dei deputati, di cui al decreto del Presidente della Repubblica 30 marzo 1957, n. 361, il comma 2 è sostituito dai seguenti:</an:p>
 						<an:p>
 							«
@@ -314,15 +332,15 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b3">
+				<an:paragraph id="d132e277">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b4b3b1">
+					<an:content id="d132e280">
 						<an:p>All’articolo 31, comma 2, del citato testo unico di cui al decreto del Presidente della Repubblica n. 361 del 1957, il primo periodo è sostituito dai seguenti: «Sulle schede, i contrassegni delle liste sono riprodotti di seguito, in linea verticale, ciascuno in un unico quadrante. I contrassegni delle liste collegate appartenenti alla stessa coalizione sono riprodotti di seguito, in linea verticale, in un unico quadrante. Accanto ad ogni contrassegno è tracciata una linea orizzontale per l'espressione del voto di preferenza».</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b4">
+				<an:paragraph id="d132e283">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b4b4b1">
+					<an:content id="d132e286">
 						<an:p>
 							All’articolo 58, secondo comma, del citato testo unico di cui al decreto del Presidente della Repubblica n. 361 del 1957, dopo il primo periodo è inserito il seguente: «Con la stessa matita indica il voto di preferenza, con le modalità e nei limiti stabiliti dall’articolo 59-
 							<an:i>bis</an:i>
@@ -330,9 +348,9 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b5">
+				<an:paragraph id="d132e292">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b4b5b1">
+					<an:content id="d132e295">
 						<an:p>Dopo l’articolo 59 del citato testo unico di cui al decreto del Presidente della Repubblica n. 361 del 1957 è inserito il seguente:</an:p>
 						<an:p>
 							«Art. 59-
@@ -355,25 +373,25 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b6">
+				<an:paragraph id="d132e318">
 					<an:num>5. </an:num>
-					<an:list id="w1ab1ab3b4b6a">
-						<an:intro id="w1ab1ab3b4b6b1">
+					<an:list id="d132e319">
+						<an:intro id="d132e321">
 							<an:p>All'articolo 68 del citato testo unico di cui al decreto del Presidente della Repubblica n. 361 del 1957 sono apportate le seguenti modificazioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b4b6b2">
+						<an:point id="d132e323">
 							<an:num>
 								<an:i>a) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b4b6b2b1">
+							<an:content id="d132e327">
 								<an:p>al comma 3, al terzo periodo sono aggiunte, in fine, le seguenti parole: «ed il cognome del candidato al quale è stata attribuita la preferenza» e al quarto periodo sono aggiunte, in fine, le seguenti parole: «e dei voti di preferenza»;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b4b6b3">
+						<an:point id="d132e330">
 							<an:num>
 								<an:i>b) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b4b6b3b1">
+							<an:content id="d132e334">
 								<an:p>
 									al comma 3-
 									<an:i>bis</an:i>
@@ -381,11 +399,11 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b4b6b4">
+						<an:point id="d132e340">
 							<an:num>
 								<an:i>c) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b4b6b4b1">
+							<an:content id="d132e344">
 								<an:p>dopo il comma 4 è inserito il seguente:</an:p>
 								<an:p>
 									«
@@ -394,49 +412,49 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b4b6b5">
+						<an:point id="d132e352">
 							<an:num>
 								<an:i>d) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b4b6b5b1">
+							<an:content id="d132e356">
 								<an:p>al comma 6 è aggiunto, in fine, il seguente periodo: «Terminato lo scrutinio delle schede, il totale dei voti di preferenza conseguiti da ciascun candidato viene riportato nel verbale e nelle tabelle di scrutinio sia in cifre che in lettere».</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b7">
+				<an:paragraph id="d132e359">
 					<an:num>6. </an:num>
-					<an:list id="w1ab1ab3b4b7a">
-						<an:intro id="w1ab1ab3b4b7b1">
+					<an:list id="d132e360">
+						<an:intro id="d132e362">
 							<an:p>All'articolo 71 del citato testo unico di cui al decreto del Presidente della Repubblica n. 361 del 1957 sono apportate le seguenti modificazioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b4b7b2">
+						<an:point id="d132e364">
 							<an:num>
 								<an:i>a) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b4b7b2b1">
+							<an:content id="d132e368">
 								<an:p>al primo comma, numero 2), dopo le parole: «dà atto del numero dei voti di lista» sono inserite le seguenti: «e dei voti di preferenza»;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b4b7b3">
+						<an:point id="d132e371">
 							<an:num>
 								<an:i>b) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b4b7b3b1">
+							<an:content id="d132e375">
 								<an:p>al secondo comma, dopo le parole: «per le singole liste» sono inserite le seguenti: «e per i singoli candidati».</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b8">
+				<an:paragraph id="d132e378">
 					<an:num>7. </an:num>
-					<an:content id="w1ab1ab3b4b8b1">
+					<an:content id="d132e381">
 						<an:p>All'articolo 74, secondo comma, del citato testo unico di cui al decreto del Presidente della Repubblica n. 361 del 1957, dopo le parole: «siano stati o non attribuiti provvisoriamente alle liste» sono inserite le seguenti: «o ai candidati».</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4b9">
+				<an:paragraph id="d132e384">
 					<an:num>8. </an:num>
-					<an:content id="w1ab1ab3b4b9b1">
+					<an:content id="d132e387">
 						<an:p>All'articolo 77 del citato testo unico di cui al decreto del Presidente della Repubblica n. 361 del 1957, dopo il numero 1) sono inseriti i seguenti:</an:p>
 						<an:p>
 							«1-
@@ -450,9 +468,9 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4c10">
+				<an:paragraph id="d132e400">
 					<an:num>9. </an:num>
-					<an:content id="w1ab1ab3b4c10b1">
+					<an:content id="d132e403">
 						<an:p>All'articolo 84 del citato testo unico di cui al decreto del Presidente della Repubblica n. 361 del 1957, il comma 1 è sostituito dal seguente:</an:p>
 						<an:p>
 							«
@@ -463,9 +481,9 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b4c11">
+				<an:paragraph id="d132e415">
 					<an:num>10. </an:num>
-					<an:content id="w1ab1ab3b4c11b1">
+					<an:content id="d132e418">
 						<an:p>
 							All'articolo 86, comma 1, del citato testo unico di cui al decreto del Presidente della Repubblica n. 361 del 1957, le parole: «al candidato che nella lista segue immediatamente l'ultimo degli eletti nell'ordine progressivo di lista» sono sostituite dalle seguenti: «al candidato che nella lista segue immediatamente l'ultimo degli eletti nella graduatoria di cui all'articolo 77, numero 1
 							<an:i>-ter)</an:i>
@@ -474,20 +492,20 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d132e424">
 				<an:num>Art. 5.</an:num>
-				<an:heading id="w1ab1ab3b5b1">
+				<an:heading id="d132e427">
 					<an:i>(Introduzione del voto di preferenza per le elezioni del Senato della Repubblica)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b5b2">
+				<an:paragraph id="d132e430">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b5b2b1">
+					<an:content id="d132e433">
 						<an:p>All'articolo 11, comma 3, del testo unico delle leggi recanti norme per l'elezione del Senato della Repubblica, di cui al decreto legislativo 20 dicembre 1993, n. 533, il secondo periodo è sostituito dai seguenti: «Sulle schede, i contrassegni sono riprodotti di seguito, in linea verticale, ciascuno in un unico quadrante. I contrassegni delle liste collegate appartenenti alla stessa coalizione sono riprodotti di seguito, in linea verticale, in un unico quadrante. Accanto ad ogni contrassegno è tracciata una linea orizzontale per l'espressione del voto di preferenza».</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b3">
+				<an:paragraph id="d132e436">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b5b3b1">
+					<an:content id="d132e439">
 						<an:p>L'articolo 14 del citato testo unico di cui al decreto legislativo n. 533 del 1993 è sostituito dal seguente:</an:p>
 						<an:p>
 							«Art. 14. -- 
@@ -504,9 +522,9 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b4">
+				<an:paragraph id="d132e455">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b5b4b1">
+					<an:content id="d132e458">
 						<an:p>
 							All'articolo 16, comma 1, del citato testo unico di cui al decreto legislativo n. 533 del 1993, dopo la lettera 
 							<an:i>a) </an:i>
@@ -523,9 +541,9 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b5">
+				<an:paragraph id="d132e473">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b5b5b1">
+					<an:content id="d132e476">
 						<an:p>All'articolo 17 del citato testo unico di cui al decreto legislativo n. 533 del 1993, il comma 7 è sostituito dal seguente:</an:p>
 						<an:p>
 							«
@@ -536,9 +554,9 @@
 						</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b5b6">
+				<an:paragraph id="d132e487">
 					<an:num>5. </an:num>
-					<an:content id="w1ab1ab3b5b6b1">
+					<an:content id="d132e490">
 						<an:p>
 							All'articolo 19, comma 1, del citato testo unico di cui al decreto legislativo n. 533 del 1993, le parole: «al candidato che nella lista segue immediatamente l'ultimo degli eletti nell'ordine progressivo di lista» sono sostituite dalle seguenti: «al candidato che nella lista segue immediatamente l'ultimo degli eletti nella graduatoria di cui all'articolo 16, comma 1, lettera 
 							<an:i>a-</an:i>
@@ -547,14 +565,14 @@
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b6">
+			<an:article id="d132e496">
 				<an:num>Art. 6.</an:num>
-				<an:heading id="w1ab1ab3b6b1">
+				<an:heading id="d132e499">
 					<an:i>(Entrata in vigore)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b6b2">
+				<an:paragraph id="d132e502">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b6b2b1">
+					<an:content id="d132e505">
 						<an:p>
 							La presente legge entra in vigore il giorno successivo a quello della sua pubblicazione nella 
 							<an:i>Gazzetta Ufficiale</an:i>
@@ -567,30 +585,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-04-10/452"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-10/452/main/relazione"/>
 							<an:FRBRdate date="2013-04-10" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="452"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-04-10/452/ita@2013-04-10/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-10/452/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-04-10" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-04-10/452/ita@2013-04-10/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-10/452/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-04-10" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-04-10/452/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-04-10/452/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

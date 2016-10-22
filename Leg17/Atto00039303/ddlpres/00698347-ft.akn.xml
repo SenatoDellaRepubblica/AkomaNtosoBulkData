@@ -1,35 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-09/2"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-09/2/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-09/2"/>
 					<an:FRBRdate date="2013-03-09" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-09/2/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-09/2/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="2"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-09/2/ita@2013-03-09/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-09/2/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-09/2/ita@"/>
 					<an:FRBRdate date="2013-03-09" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-09/2/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-09/2/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-09/2/ita@2013-03-09/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-09/2/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-09/2/ita@.akn"/>
 					<an:FRBRdate date="2013-03-09" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-09/2/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-09/2/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-09" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-09" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-09/2/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-09/2/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
@@ -54,66 +72,66 @@
 			<an:p>COMUNICATO ALLA PRESIDENZA IL 9 MARZO 2009</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d3e160">
 				<an:num>Art. 1.</an:num>
-				<an:heading id="w1ab1ab3b1b1">
+				<an:heading id="d3e163">
 					<an:i>(Salario minimo intercategoriale - SMIC)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d3e166">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d3e169">
 						<an:p>La retribuzione oraria minima per tutte le tipologie di lavoro pubblico e privato, al netto dei contributi previdenziali e assistenziali, denominata salario minimo intercategoriale (SMIC), non può essere inferiore all'importo definito ai sensi della presente legge. Nessun contratto di lavoro può essere stipulato con una retribuzione inferiore allo SMIC.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b3">
+				<an:paragraph id="d3e172">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b1b3b1">
+					<an:content id="d3e175">
 						<an:p>Lo SMIC è incrementato al 1º gennaio di ogni anno in base alla variazione dell'indice dei prezzi al consumo per le famiglie di operai e impiegati definita dall'Istat.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b4">
+				<an:paragraph id="d3e178">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b1b4b1">
+					<an:content id="d3e181">
 						<an:p>Il valore orario dello SMIC per il 2008 è di 7,5 euro netti. La retribuzione è calcolata sulla base del predetto importo, da applicare alle ore di lavoro mensili previste dal contratto.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b5">
+				<an:paragraph id="d3e184">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b1b5b1">
+					<an:content id="d3e187">
 						<an:p>Per i contratti di lavoro in essere alla data di entrata in vigore della presente legge, fatte salve le condizioni di miglior favore, lo SMIC si applica al livello retributivo inferiore e si procede altresì alla riparametrazione dei livelli superiori fino ai successivi rinnovi.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d3e190">
 				<an:num>Art. 2.</an:num>
-				<an:heading id="w1ab1ab3b2b1">
+				<an:heading id="d3e193">
 					<an:i>(Delega al Governo)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d3e196">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b2b1">
+					<an:content id="d3e199">
 						<an:p>Il Governo è delegato ad adottare, entro dodici mesi dalla data di entrata in vigore della presente legge, uno o più decreti legislativi contenenti norme intese a modificare la disciplina delle indennità di disoccupazione e dei minimi previdenziali.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b3">
+				<an:paragraph id="d3e202">
 					<an:num>2. </an:num>
-					<an:list id="w1ab1ab3b2b3a">
-						<an:intro id="w1ab1ab3b2b3b1">
+					<an:list id="d3e203">
+						<an:intro id="d3e205">
 							<an:p>Il Governo, nell'esercizio della delega di cui al comma 1, fatte salve le competenze delle regioni a statuto speciale e delle province autonome di Trento e di Bolzano, previste dai relativi statuti, dalle norme di attuazione e dal titolo V della parte II della Costituzione, si atterrà ai seguenti principi e criteri direttivi:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b2b3b2">
+						<an:point id="d3e207">
 							<an:num>
 								<an:i>a) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b2b1">
+							<an:content id="d3e211">
 								<an:p>prevedere e disciplinare l'introduzione del salario sociale, da corrispondere a tutte le persone maggiorenni disoccupate da almeno dodici mesi e residenti in Italia da almeno diciotto mesi;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b3">
+						<an:point id="d3e214">
 							<an:num>
 								<an:i>b) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b3b1">
+							<an:content id="d3e218">
 								<an:p>
 									stabilire l'importo del salario sociale nella misura di 1.000 euro mensili e prevedere che esso sia corrisposto, per il 70 per cento, in forma monetaria dal Ministero del lavoro, della salute e delle politiche sociali e, per il restante 30 per cento, in beni e servizi gratuiti forniti dalla regione tramite 
 									<an:i>bonus </an:i>
@@ -121,57 +139,57 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b4">
+						<an:point id="d3e224">
 							<an:num>
 								<an:i>c) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b4b1">
+							<an:content id="d3e228">
 								<an:p>fissare l'importo dei minimi previdenziali nella misura minima di 1.000 euro;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b5">
+						<an:point id="d3e231">
 							<an:num>
 								<an:i>d) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b5b1">
+							<an:content id="d3e235">
 								<an:p>consentire il recupero del drenaggio fiscale di cui al decreto-legge 2 marzo 1989, n. 69, convertito, con modificazioni, dalla legge 27 aprile 1989, n. 154, modificando automaticamente le aliquote fiscali di retribuzioni ed erogazioni previdenziali sulla base dell'incremento dell'1 per cento dell'indice dei prezzi al consumo registrato al 31 agosto di ogni anno e disponendo l'abrogazione di tutte le norme che consentono deroghe a tale principio da parte del Ministero dell'economia e delle finanze;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b2b3b6">
+						<an:point id="d3e238">
 							<an:num>
 								<an:i>e) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b2b3b6b1">
+							<an:content id="d3e242">
 								<an:p>prevedere che il differenziale registrato annualmente tra inflazione programmata, o realisticamente prevedibile, e inflazione reale, sia recuperato integralmente con le retribuzioni e le erogazioni previdenziali del mese di gennaio di ogni anno.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d3e245">
 				<an:num>Art. 3.</an:num>
-				<an:heading id="w1ab1ab3b3b1">
+				<an:heading id="d3e248">
 					<an:i>(Copertura finanziaria)</an:i>
 				</an:heading>
-				<an:paragraph id="w1ab1ab3b3b2">
+				<an:paragraph id="d3e251">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b3b2a">
-						<an:intro id="w1ab1ab3b3b2b1">
+					<an:list id="d3e252">
+						<an:intro id="d3e254">
 							<an:p>Agli oneri derivanti dalla presente legge si provvede con le maggiori entrate conseguenti all'applicazione delle seguenti misure:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b3b2b2">
+						<an:point id="d3e256">
 							<an:num>
 								<an:i>a) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b3b2b2b1">
+							<an:content id="d3e260">
 								<an:p>unificazione al 20 per cento dell'aliquota fiscale applicabile ai proventi da interessi corrisposti sui conti correnti bancari e per le rendite finanziarie, con esclusione dei redditi annuali individuali fino a 50.000 euro che mantengono il regime di prelievo attuale per le rendite inserite nella dichiarazione dei redditi;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b3b2b3">
+						<an:point id="d3e263">
 							<an:num>
 								<an:i>b) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b3b2b3b1">
+							<an:content id="d3e267">
 								<an:p>
 									abolizione della riduzione del cuneo fiscale per imprese, banche e assicurazioni, previsto dalle disposizioni di cui all'articolo 1, commi da 266 a 269, della legge 27 dicembre 2006, n. 296, nonché dalle disposizioni introdotte dall'articolo 15-
 									<an:i>bis </an:i>
@@ -186,30 +204,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-09/2"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-09/2/main/relazione"/>
 							<an:FRBRdate date="2013-03-09" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="2"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-09/2/ita@2013-03-09/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-09/2/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-09" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-09/2/ita@2013-03-09/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-09/2/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-09" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-09/2/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-09/2/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

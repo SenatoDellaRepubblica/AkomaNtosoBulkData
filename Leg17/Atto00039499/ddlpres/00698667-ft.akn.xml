@@ -1,50 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/191"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/191/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/191"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/191/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/191/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="191"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/191/ita@2013-03-15/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/191/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/191/ita@"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/191/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/191/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/191/ita@2013-03-15/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/191/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/191/ita@.akn"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/191/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/191/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-15" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-15" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/191/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-15/191/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/32" id="w1ab1ab1b2aaab1b1" showAs="ALBERTI CASELLATI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22717" id="w1ab1ab1b2aaab3b1" showAs="BONFRISCO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29063" id="w1ab1ab1b2aaab5b1" showAs="CARIDI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="w1ab1ab1b2aaab7b1" showAs="D’ASCOLA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29079" id="w1ab1ab1b2aaab9b1" showAs="DALLA TOR"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/4639" id="w1ab1ab1b2aaac11b1" showAs="Giuseppe ESPOSITO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29128" id="w1ab1ab1b2aaac13b1" showAs="MARIN"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17739" id="w1ab1ab1b2aaac15b1" showAs="PALMA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29163" id="w1ab1ab1b2aaac17b1" showAs="PICCOLI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25398" id="w1ab1ab1b2aaac19b1" showAs="SCILIPOTI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17811" id="w1ab1ab1b2aaac21b1" showAs="ZANETTIN"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d28e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/32" id="d28e16" showAs="ALBERTI CASELLATI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/22717" id="d28e18" showAs="BONFRISCO"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29063" id="d28e20" showAs="CARIDI"/>
+				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d28e22" showAs="D’ASCOLA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29079" id="d28e24" showAs="DALLA TOR"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/4639" id="d28e27" showAs="Giuseppe ESPOSITO"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29128" id="d28e29" showAs="MARIN"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/17739" id="d28e31" showAs="PALMA"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/29163" id="d28e33" showAs="PICCOLI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/25398" id="d28e35" showAs="SCILIPOTI"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/17811" id="d28e37" showAs="ZANETTIN"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -66,27 +84,27 @@
 			</an:p>
 			<an:p>
 				d’iniziativa dei senatori 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">ALBERTI CASELLATI</an:docProponent>
+				<an:docProponent as="#d28e16a1327" refersTo="#d28e16">ALBERTI CASELLATI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab3b1">BONFRISCO</an:docProponent>
+				<an:docProponent as="#d28e16a1327" refersTo="#d28e18">BONFRISCO</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab5b1">CARIDI</an:docProponent>
+				<an:docProponent as="#d28e16a1327" refersTo="#d28e20">CARIDI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab7b1">D’ASCOLA</an:docProponent>
+				<an:docProponent as="#d28e16a1327" refersTo="#d28e22">D’ASCOLA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab9b1">DALLA TOR</an:docProponent>
+				<an:docProponent as="#d28e16a1327" refersTo="#d28e24">DALLA TOR</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac11b1">Giuseppe ESPOSITO</an:docProponent>
+				<an:docProponent as="#d28e16a1327" refersTo="#d28e27">Giuseppe ESPOSITO</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac13b1">MARIN</an:docProponent>
+				<an:docProponent as="#d28e16a1327" refersTo="#d28e29">MARIN</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac15b1">PALMA</an:docProponent>
+				<an:docProponent as="#d28e16a1327" refersTo="#d28e31">PALMA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac17b1">PICCOLI</an:docProponent>
+				<an:docProponent as="#d28e16a1327" refersTo="#d28e33">PICCOLI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac19b1">SCILIPOTI</an:docProponent>
+				<an:docProponent as="#d28e16a1327" refersTo="#d28e35">SCILIPOTI</an:docProponent>
 				 e 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaac21b1">ZANETTIN</an:docProponent>
+				<an:docProponent as="#d28e16a1327" refersTo="#d28e37">ZANETTIN</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -94,42 +112,42 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d28e72">
 				<an:num>Art. 1.</an:num>
-				<an:paragraph id="w1ab1ab3b1b1">
+				<an:paragraph id="d28e75">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b1b1a">
-						<an:intro id="w1ab1ab3b1b1b1">
+					<an:list id="d28e76">
+						<an:intro id="d28e78">
 							<an:p>All'articolo 13 del decreto-legge 6 dicembre 2011, n. 201, convertito, con modificazioni, dalla legge 22 dicembre 2011, n. 214, e successive modificazioni, sono apportate le seguenti modifiche:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b1b1b2">
+						<an:point id="d28e80">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:list id="w1ab1ab3b1b1b2a">
-								<an:intro id="w1ab1ab3b1b1b2b1">
+							<an:list id="d28e81">
+								<an:intro id="d28e85">
 									<an:p>al comma 2:</an:p>
 								</an:intro>
-								<an:point id="w1ab1ab3b1b1b2b2">
+								<an:point id="d28e87">
 									<an:num>1)</an:num>
-									<an:content id="w1ab1ab3b1b1b2b2b1">
+									<an:content id="d28e90">
 										<an:p> al primo periodo, le parole: «ivi comprese l'abitazione principale» sono sostituite dalle seguenti: «escluse l'abitazione principale»;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b1b1b2b3">
+								<an:point id="d28e93">
 									<an:num>2)</an:num>
-									<an:content id="w1ab1ab3b1b1b2b3b1">
+									<an:content id="d28e96">
 										<an:p> il quarto periodo è soppresso;</an:p>
 									</an:content>
 								</an:point>
 							</an:list>
 						</an:point>
-						<an:point id="w1ab1ab3b1b1b3">
+						<an:point id="d28e99">
 							<an:num>
 								<an:i>b) </an:i>
 							</an:num>
-							<an:content id="w1ab1ab3b1b1b3b1">
+							<an:content id="d28e103">
 								<an:p>
 									al comma 4, la lettera 
 									<an:i>a)</an:i>
@@ -137,45 +155,45 @@
 								</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b1b4">
+						<an:point id="d28e109">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b1b1b4b1">
+							<an:content id="d28e114">
 								<an:p>il comma 7 è abrogato;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b1b5">
+						<an:point id="d28e117">
 							<an:num>
 								<an:i>d)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b1b1b5b1">
+							<an:content id="d28e122">
 								<an:p>il comma 10 è abrogato;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b1b1b6">
+						<an:point id="d28e125">
 							<an:num>
 								<an:i>e) </an:i>
 							</an:num>
-							<an:list id="w1ab1ab3b1b1b6a">
-								<an:intro id="w1ab1ab3b1b1b6b1">
+							<an:list id="d28e126">
+								<an:intro id="d28e129">
 									<an:p>
 										al comma 12-
 										<an:i>bis</an:i>
 										:
 									</an:p>
 								</an:intro>
-								<an:point id="w1ab1ab3b1b1b6b2">
+								<an:point id="d28e134">
 									<an:num>1)</an:num>
-									<an:content id="w1ab1ab3b1b1b6b2b1">
+									<an:content id="d28e137">
 										<an:p> il secondo periodo è soppresso;</an:p>
 									</an:content>
 								</an:point>
-								<an:point id="w1ab1ab3b1b1b6b3">
+								<an:point id="d28e140">
 									<an:num>2)</an:num>
-									<an:content id="w1ab1ab3b1b1b6b3b1">
+									<an:content id="d28e143">
 										<an:p> al terzo periodo, le parole: «Per il medesimo anno» sono sostituite dalle seguenti: «Per l'anno 2012».</an:p>
 									</an:content>
 								</an:point>
@@ -184,20 +202,20 @@
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d28e146">
 				<an:num>Art. 2.</an:num>
-				<an:paragraph id="w1ab1ab3b2b1">
+				<an:paragraph id="d28e149">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b1b1">
+					<an:content id="d28e152">
 						<an:p>Con decreto del Ministro dell'economia e delle finanze, da emanare entro trenta giorni dalla data di entrata in vigore della presente legge, sono stabilite le modalità di restituzione delle somme pagate a titolo di imposta municipale propria sugli immobili adibiti ad abitazione principale e sulle pertinenze degli stessi.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d28e155">
 				<an:num>Art. 3.</an:num>
-				<an:paragraph id="w1ab1ab3b3b1">
+				<an:paragraph id="d28e158">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b3b1b1">
+					<an:content id="d28e161">
 						<an:p>Agli oneri derivanti dalla presente legge, pari a 8 miliardi di euro per l'anno 2013 e a 4 miliardi di euro annui a decorrere dall'anno 2014, si provvede mediante corrispondente riduzione percentuale lineare uniforme delle dotazioni finanziarie delle missioni di spesa di ciascun Ministero. Dalle predette riduzioni sono escluse le spese indicate nell'articolo 60, comma 2, del decreto-legge 25 giugno 2008, n. 112, convertito, con modificazioni, dalla legge 6 agosto 2008, n. 133.</an:p>
 					</an:content>
 				</an:paragraph>
@@ -206,30 +224,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/191"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/191/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="191"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/191/ita@2013-03-15/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/191/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/191/ita@2013-03-15/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/191/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/191/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-15/191/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>

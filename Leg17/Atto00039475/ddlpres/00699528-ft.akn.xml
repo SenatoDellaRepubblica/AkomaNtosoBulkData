@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/174"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/174/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/174"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/174/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/174/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
 					<an:FRBRnumber value="174"/>
+					<an:FRBRname value="disegno di legge"/>
 				</an:FRBRWork>
 				<an:FRBRExpression>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/174/ita@2013-03-15/main"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/174/ita@/main"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/174/ita@"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
-					<an:FRBRauthor href=""/>
+					<an:FRBRauthor href="#senato"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/174/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/174/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
 				<an:FRBRManifestation>
-					<an:FRBRthis value=""/>
-					<an:FRBRuri value="it/Ddl/2013-03-15/174/ita@2013-03-15/main.xml"/>
+					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-03-15/174/ita@/main.xml"/>
+					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/174/ita@.akn"/>
 					<an:FRBRdate date="2013-03-15" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
+					<an:componentInfo>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/174/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-03-15/174/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
+			<an:lifecycle source="#redattore">
+				<an:eventRef date="2013-03-15" id="event1" source="#ro1"/>
+			</an:lifecycle>
 			<an:workflow source="#redattore">
 				<an:step actor="#senato" date="2013-03-15" id="step1" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
+				<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/174/ita@/main" id="ro1" showAs="generation"/>
+				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-03-15/174/ita@/main/relazione" id="annex2" showAs="Relazione"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25398" id="w1ab1ab1b2aaab1b1" showAs="SCILIPOTI"/>
+				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d184e16a1327" showAs="Senatore"/>
+				<an:TLCPerson href="http://dati.senato.it/senatore/25398" id="d184e16" showAs="SCILIPOTI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -50,231 +68,231 @@
 			</an:p>
 			<an:p>
 				d'iniziativa del senatore 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">SCILIPOTI</an:docProponent>
+				<an:docProponent as="#d184e16a1327" refersTo="#d184e16">SCILIPOTI</an:docProponent>
 				 
 			</an:p>
 			<an:p>COMUNICATO ALLA PRESIDENZA IL 15 MARZO 2013</an:p>
 		</an:coverPage>
 		<an:body title="DISEGNO DI LEGGE">
-			<an:article id="w1ab1ab3b1">
+			<an:article id="d184e37">
 				<an:num>Art. 1.</an:num>
-				<an:paragraph id="w1ab1ab3b1b1">
+				<an:paragraph id="d184e40">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b1b1b1">
+					<an:content id="d184e43">
 						<an:p>La sovranità monetaria appartiene al popolo.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b1b2">
+				<an:paragraph id="d184e46">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b1b2b1">
+					<an:content id="d184e49">
 						<an:p>La moneta, all'atto dell'emissione, è di proprietà dei cittadini italiani.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b2">
+			<an:article id="d184e52">
 				<an:num>Art. 2.</an:num>
-				<an:paragraph id="w1ab1ab3b2b1">
+				<an:paragraph id="d184e55">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b2b1b1">
+					<an:content id="d184e58">
 						<an:p>È istituita la Banca italiana di emissione monetaria (BIEM).</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b2">
+				<an:paragraph id="d184e61">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b2b2b1">
+					<an:content id="d184e64">
 						<an:p>La BIEM è un istituto di diritto, proprietà e gestione interamente pubblici, il cui stato giuridico è inalienabile, che assolve le funzioni di banca centrale nazionale di cui all'articolo 128 del Trattato sul funzionamento dell'Unione europea e all'articolo 16 dello statuto del Sistema europeo di banche centrali (SEBC), di cui al Protocollo n. 4 del citato trattato sul funzionamento dell'Unione europea.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b2b3">
+				<an:paragraph id="d184e67">
 					<an:num>3. </an:num>
-					<an:content id="w1ab1ab3b2b3b1">
+					<an:content id="d184e70">
 						<an:p>La BIEM ha i seguenti compiti: emettere, in via esclusiva, ogni forma di valuta legale nelle quantità assegnate all'Italia, determinate dalla competente autorità europea monetaria a norma dei vigenti trattati; proporre alle Camere e al Governo il tasso di sconto e tutte le misure atte alla migliore utilizzazione del patrimonio valutario da essa prodotto; fungere da tesoreria di Stato gestendo a tasso zero, fatti salvi i costi dei servizi, il conto da rendita da emissione monetaria derivante dalla differenza tra il costo tipografico e di conio e il valore nominale delle banconote e delle monete.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b3">
+			<an:article id="d184e73">
 				<an:num>Art. 3.</an:num>
-				<an:paragraph id="w1ab1ab3b3b1">
+				<an:paragraph id="d184e76">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b3b1b1">
+					<an:content id="d184e79">
 						<an:p>La BIEM ha sede legale in Roma. Può avere sedi e succursali in altre città. L'articolazione territoriale e la competenza delle sedi e delle succursali sono stabilite con delibera del Consiglio superiore della stessa BIEM, di cui all'articolo 8, su proposta degli enti locali.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b4">
+			<an:article id="d184e82">
 				<an:num>Art. 4.</an:num>
-				<an:paragraph id="w1ab1ab3b4b1">
+				<an:paragraph id="d184e85">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b4b1b1">
+					<an:content id="d184e88">
 						<an:p>La rendita da emissione monetaria appartiene al popolo. Essa è iscritta all'attivo del bilancio dello Stato ed è gestita dal Ministero competente con l'obiettivo di raggiungere il pareggio del debito pubblico, di supportare le esigenze della spesa pubblica, di promuovere l'occupazione e lo sviluppo economico del Paese, di offrire un equo accesso creditizio a imprese e a privati in difficoltà, di ridurre le tasse e di costituire, col residuo, un reddito da cittadinanza in favore dei cittadini italiani.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b5">
+			<an:article id="d184e91">
 				<an:num>Art. 5.</an:num>
-				<an:paragraph id="w1ab1ab3b5b1">
+				<an:paragraph id="d184e94">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b5b1b1">
+					<an:content id="d184e97">
 						<an:p>La decisione sul tasso di sconto, fatti salvi i poteri del SEBC e della BCE, è di spettanza del Governo, attraverso il Ministero competente, previo parere del Consiglio superiore della BIEM.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b6">
+			<an:article id="d184e100">
 				<an:num>Art. 6.</an:num>
-				<an:paragraph id="w1ab1ab3b6b1">
+				<an:paragraph id="d184e103">
 					<an:num>1. </an:num>
-					<an:list id="w1ab1ab3b6b1a">
-						<an:intro id="w1ab1ab3b6b1b1">
+					<an:list id="d184e104">
+						<an:intro id="d184e106">
 							<an:p>Gli organi della BIEM sono:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b6b1b2">
+						<an:point id="d184e108">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b6b1b2b1">
+							<an:content id="d184e113">
 								<an:p>il Governatore;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b6b1b3">
+						<an:point id="d184e116">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b6b1b3b1">
+							<an:content id="d184e121">
 								<an:p>il Consiglio superiore;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b6b1b4">
+						<an:point id="d184e124">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b6b1b4b1">
+							<an:content id="d184e129">
 								<an:p>la Commissione di vigilanza;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b6b1b5">
+						<an:point id="d184e132">
 							<an:num>
 								<an:i>d)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b6b1b5b1">
+							<an:content id="d184e137">
 								<an:p>il Centro studi e ricerche.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b7">
+			<an:article id="d184e140">
 				<an:num>Art. 7.</an:num>
-				<an:paragraph id="w1ab1ab3b7b1">
+				<an:paragraph id="d184e143">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b7b1b1">
+					<an:content id="d184e146">
 						<an:p>La nomina del Governatore della BIEM è disposta con decreto del Presidente della Repubblica, su indicazione del Presidente del Consiglio dei ministri, previa deliberazione del Consiglio dei ministri, sentito il parere del Consiglio superiore della BIEM. Il Governatore dura in carica cinque anni e non è rieleggibile.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b8">
+			<an:article id="d184e149">
 				<an:num>Art. 8.</an:num>
-				<an:paragraph id="w1ab1ab3b8b1">
+				<an:paragraph id="d184e152">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b8b1b1">
+					<an:content id="d184e155">
 						<an:p>Il Consiglio superiore della BIEM, di seguito denominato «Consiglio», è luogo di confronto tra le diverse categorie interessate alla politica monetaria nazionale ed europea e alla buona gestione della BIEM.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b8b2">
+				<an:paragraph id="d184e158">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b8b2b1">
+					<an:content id="d184e161">
 						<an:p>Il Consiglio è formato da rappresentanti dell'Associazione bancaria italiana (ABI), della Confederazione generale dell'industria italiana (Confindustria), della Confederazione italiana della piccola e media industria privata (Confapi), delle organizzazioni sindacali, delle associazioni dei consumatori e delle associazioni professionali. È prevista anche una rappresentanza delle famiglie, con modalità stabilite dal regolamento di cui al comma 4.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b8b3">
+				<an:paragraph id="d184e164">
 					<an:num>3. </an:num>
-					<an:list id="w1ab1ab3b8b3a">
-						<an:intro id="w1ab1ab3b8b3b1">
+					<an:list id="d184e165">
+						<an:intro id="d184e167">
 							<an:p>Il Consiglio ha poteri di controllo sull'attività della BIEM, fatte salve le competenze che la legge assegna alla Corte dei conti. Il Consiglio svolge inoltre le seguenti funzioni:</an:p>
 						</an:intro>
-						<an:point id="w1ab1ab3b8b3b2">
+						<an:point id="d184e169">
 							<an:num>
 								<an:i>a)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b8b3b2b1">
+							<an:content id="d184e174">
 								<an:p>esprime pareri alle Camere e al Governo sul tasso di sconto;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b8b3b3">
+						<an:point id="d184e177">
 							<an:num>
 								<an:i>b)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b8b3b3b1">
+							<an:content id="d184e182">
 								<an:p>propone alle Camere e al Governo eventuali modifiche allo statuto della BIEM;</an:p>
 							</an:content>
 						</an:point>
-						<an:point id="w1ab1ab3b8b3b4">
+						<an:point id="d184e185">
 							<an:num>
 								<an:i>c)</an:i>
 								 
 							</an:num>
-							<an:content id="w1ab1ab3b8b3b4b1">
+							<an:content id="d184e190">
 								<an:p>esprime il parere di cui all'articolo 7 in merito alla nomina del Governatore della BIEM.</an:p>
 							</an:content>
 						</an:point>
 					</an:list>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b8b4">
+				<an:paragraph id="d184e193">
 					<an:num>4. </an:num>
-					<an:content id="w1ab1ab3b8b4b1">
+					<an:content id="d184e196">
 						<an:p>Entro trenta giorni dall'entrata in vigore della presente legge, con regolamento del Ministro dell'economia e delle finanze sono stabilite le quote di rappresentanza da assegnare ai soggetti di cui al comma 2 per un numero totale non superiore a cinquanta consiglieri.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3b9">
+			<an:article id="d184e199">
 				<an:num>Art. 9.</an:num>
-				<an:paragraph id="w1ab1ab3b9b1">
+				<an:paragraph id="d184e202">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3b9b1b1">
+					<an:content id="d184e205">
 						<an:p>Entro trenta giorni dalla data di entrata in vigore della presente legge, è istituita una Commissione parlamentare di vigilanza composta da cinque senatori e da dieci deputati, nominati rispettivamente dal Presidente del Senato della Repubblica e dal Presidente della Camera dei deputati nel rispetto della proporzione esistente tra i gruppi parlamentari, sulla base delle designazioni dei gruppi medesimi. La Commissione ha compiti ispettivi e di vigilanza sull'attività del Consiglio e del Governatore della BIEM, fatti salvi i diritti e i doveri della Corte dei conti.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3b9b2">
+				<an:paragraph id="d184e208">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3b9b2b1">
+					<an:content id="d184e211">
 						<an:p>Il Governatore della BIEM è tenuto a riferire alla Commissione di cui al comma 1 sull'attività del Consiglio almeno una volta ogni sei mesi.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c10">
+			<an:article id="d184e214">
 				<an:num>Art. 10.</an:num>
-				<an:paragraph id="w1ab1ab3c10b1">
+				<an:paragraph id="d184e217">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c10b1b1">
+					<an:content id="d184e220">
 						<an:p>Il Direttore del Centro studi e ricerche della BIEM è nominato dal Consiglio superiore della BIEM.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c11">
+			<an:article id="d184e224">
 				<an:num>Art. 11.</an:num>
-				<an:paragraph id="w1ab1ab3c11b1">
+				<an:paragraph id="d184e227">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c11b1b1">
+					<an:content id="d184e230">
 						<an:p>Presso la BIEM è attivato un conto personale per ogni cittadino italiano, denominato «reddito da cittadinanza», il cui importo è stabilito dal Ministero competente secondo il livello del debito pubblico e le esigenze della spesa pubblica.</an:p>
 					</an:content>
 				</an:paragraph>
-				<an:paragraph id="w1ab1ab3c11b2">
+				<an:paragraph id="d184e233">
 					<an:num>2. </an:num>
-					<an:content id="w1ab1ab3c11b2b1">
+					<an:content id="d184e236">
 						<an:p>L'accensione del reddito da cittadinanza avviene automaticamente entro due anni dalla data di entrata in vigore della presente legge, per tutti i cittadini italiani, residenti in Italia, ovvero entro tre mesi dalla nascita del cittadino o dall'acquisizione della cittadinanza italiana, dalla naturalizzazione o comunque dal momento in cui il soggetto acquisisce la cittadinanza italiana.</an:p>
 					</an:content>
 				</an:paragraph>
 			</an:article>
-			<an:article id="w1ab1ab3c12">
+			<an:article id="d184e239">
 				<an:num>Art. 12.</an:num>
-				<an:paragraph id="w1ab1ab3c12b1">
+				<an:paragraph id="d184e242">
 					<an:num>1. </an:num>
-					<an:content id="w1ab1ab3c12b1b1">
+					<an:content id="d184e245">
 						<an:p>In sede di prima attuazione della presente legge, il reddito da cittadinanza è temporaneamente garantito, entro sei mesi dalla prima acquisizione della rendita di emissione monetaria da parte della BIEM, a tutti i cittadini italiani residenti in Italia che hanno un reddito complessivo inferiore a 30.000 euro annui, al lordo delle ritenute fiscali di legge.</an:p>
 					</an:content>
 				</an:paragraph>
@@ -283,30 +301,35 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/174"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/174/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/RelPres"/>
 							<an:FRBRnumber value="174"/>
+							<an:FRBRname value="relazione"/>
 						</an:FRBRWork>
 						<an:FRBRExpression>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/174/ita@2013-03-15/main"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/174/ita@/main/relazione"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
-							<an:FRBRauthor href=""/>
+							<an:FRBRauthor href="#senato"/>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
 						<an:FRBRManifestation>
 							<an:FRBRthis value=""/>
-							<an:FRBRuri value="it/Ddl/2013-03-15/174/ita@2013-03-15/main.xml"/>
+							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-03-15/174/ita@/main/relazione.xml"/>
 							<an:FRBRdate date="2013-03-15" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 						</an:FRBRManifestation>
 					</an:identification>
+					<an:references source="#redattore">
+						<an:original href="http://dati.senato.it/osr/Ddl/2013-03-15/174/ita@/main/relazione" id="ro2" showAs="Relazione"/>
+						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-03-15/174/ita@/main" id="mainAnx2" showAs="Main"/>
+					</an:references>
 				</an:meta>
 				<an:mainBody>
 					<an:p>
