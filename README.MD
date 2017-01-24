@@ -1,6 +1,7 @@
 # Akoma Ntoso - Bulk Data - Senato della Repubblica #
 
 Il progetto contiene tutti i documenti legislativi del Senato della Repubblica in standard Akoma Ntoso.
+(README_ENG.MD for the English version)
 
 ## Descrizione dei dati ##
 
@@ -50,4 +51,4 @@ CC BY NC ND
 
 ## Aggiornamento ##
 
-Ultimo aggiornamento: 02:00:02 23/01/2017
+Ultimo aggiornamento: 02:00:02 24/01/2017

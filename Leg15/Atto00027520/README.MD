@@ -1,5 +1,7 @@
 ## 15a Legislatura - Atto Senato n. 1270 ##
 
+(README_ENG.MD for the English version)
+
 * Scheda del Disegno di Legge sul sito del Senato:
 	* Url: http://www.senato.it/leg/15/BGT/Schede/Ddliter/27520.htm
 
