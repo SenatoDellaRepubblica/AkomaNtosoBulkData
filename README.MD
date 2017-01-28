@@ -51,4 +51,4 @@ CC BY NC ND
 
 ## Aggiornamento ##
 
-Ultimo aggiornamento: 02:00:02 27/01/2017
+Ultimo aggiornamento: 02:00:02 28/01/2017
