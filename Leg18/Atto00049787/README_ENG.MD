@@ -1,10 +1,10 @@
-## 18a Legislature - Bill n. 355 ##
+## 18a Legislature - Bill n. 474 ##
 
 * Web page for the Bill:
-	* Url: http://www.senato.it/leg/18/BGT/Schede/Ddliter/49558.htm
+	* Url: http://www.senato.it/leg/18/BGT/Schede/Ddliter/49787.htm
 
 * OpenData site http://dati.senato.it/:
-	* Link OpenData: http://dati.senato.it/ddl/49558
+	* Link OpenData: http://dati.senato.it/ddl/49787
 	* Query SPARQL for the bill's texts:
 
         Query by bill's ID:
@@ -15,7 +15,7 @@
 		WHERE  
 		{  
 		    ?ddl a osr:Ddl.  
-		    ?ddl osr:idFase 49558 .  
+		    ?ddl osr:idFase 49787 .  
 		    OPTIONAL { ?ddl osr:testoPresentato ?testoPresentato }  
 		    OPTIONAL { ?ddl osr:testoApprovato ?testoApprovato }  
 		}
@@ -29,10 +29,10 @@
 		WHERE  
 		{  
 		    ?ddl a osr:Ddl.  
-		    ?ddl osr:numFase 355 .  
+		    ?ddl osr:numFase 474 .  
 		    OPTIONAL { ?ddl osr:testoPresentato ?testoPresentato }  
 		    OPTIONAL { ?ddl osr:testoApprovato ?testoApprovato }  
 		}		
 		```
 * GitHub page for the bill:
-    * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/tree/master/Leg18/Atto00049558		
+    * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/tree/master/Leg18/Atto00049787		

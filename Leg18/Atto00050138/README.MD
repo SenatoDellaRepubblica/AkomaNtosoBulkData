@@ -1,12 +1,12 @@
-## 18a Legislatura - Atto Senato n. 355 ##
+## 18a Legislatura - Atto Senato n. 623 ##
 
 (README_ENG.MD for the English version)
 
 * Scheda del Disegno di Legge sul sito del Senato:
-	* Url: http://www.senato.it/leg/18/BGT/Schede/Ddliter/49558.htm
+	* Url: http://www.senato.it/leg/18/BGT/Schede/Ddliter/50138.htm
 
 * Riferimenti al sito OpenData Senato http://dati.senato.it/:
-	* Link OpenData: http://dati.senato.it/ddl/49558
+	* Link OpenData: http://dati.senato.it/ddl/50138
 	* Query SPARQL per i documenti relativi all'Atto Senato:
 
         Query per ID della Fase:
@@ -17,7 +17,7 @@
 		WHERE  
 		{  
 		    ?ddl a osr:Ddl.  
-		    ?ddl osr:idFase 49558 .  
+		    ?ddl osr:idFase 50138 .  
 		    OPTIONAL { ?ddl osr:testoPresentato ?testoPresentato }  
 		    OPTIONAL { ?ddl osr:testoApprovato ?testoApprovato }  
 		}
@@ -31,10 +31,10 @@
 		WHERE  
 		{  
 		    ?ddl a osr:Ddl.  
-		    ?ddl osr:numFase 355 .  
+		    ?ddl osr:numFase 623 .  
 		    OPTIONAL { ?ddl osr:testoPresentato ?testoPresentato }  
 		    OPTIONAL { ?ddl osr:testoApprovato ?testoApprovato }  
 		}		
 		```
 * Contenuto dell'Atto nei Bulk Data su GitHub:
-    * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/tree/master/Leg18/Atto00049558		
+    * Url: https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData/tree/master/Leg18/Atto00050138		
