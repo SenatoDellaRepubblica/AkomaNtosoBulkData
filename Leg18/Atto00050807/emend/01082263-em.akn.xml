@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/886/A/22.0.1/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/886/A/22.0.1"/>
-					<an:FRBRdate date="2018-11-19" name="presentazione"/>
+					<an:FRBRdate date="2018-11-27" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/886/A/22.0.1/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/886/A/22.0.1/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/886/A/22.0.1/ita@"/>
-					<an:FRBRdate date="2018-11-19" name="presentazione"/>
+					<an:FRBRdate date="2018-11-27" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/886/A/22.0.1/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/886/A/22.0.1/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/886/A/22.0.1/ita@.akn"/>
-					<an:FRBRdate date="2018-11-19" name="presentazione"/>
+					<an:FRBRdate date="2018-11-27" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/886/A/22.0.1/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
@@ -37,10 +37,10 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-11-19" id="event1" source="#ro1"/>
+				<an:eventRef date="2018-11-27" id="event1" source="#ro1"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-11-19" id="step1" outcome="presentazione"/>
+				<an:step actor="#senato" date="2018-11-27" id="step1" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original href="http://dati.senato.it/18/Emend/S/886/A/22.0.1/ita@/main" id="ro1" showAs="generation"/>
@@ -49,9 +49,7 @@
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
 				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/23015" id="ID0E3" showAs="Enrico Montani"/>
-				<an:TLCPerson href="http://dati.senato.it/32712" id="ID0EGB" showAs="Paolo Saviane"/>
-				<an:TLCPerson href="http://dati.senato.it/32706" id="ID0EQB" showAs="Massimiliano Romeo"/>
+				<an:TLCOrganization href="http://dati.senato.it/senatore/0" id="ID0E3" showAs="La Commissione"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -62,18 +60,8 @@
 				<an:docNumber>Emendamento n. 22.0.1</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0E3">
-					<an:span style="font-variant:small-caps;">Montani</an:span>
-				</an:docProponent>
-			</an:p>
-			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0EGB">
-					<an:span style="font-variant:small-caps;">Saviane</an:span>
-				</an:docProponent>
-			</an:p>
-			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0EQB">
-					<an:span style="font-variant:small-caps;">Romeo</an:span>
+				<an:docProponent refersTo="#ID0E3">
+					<an:span style="font-variant:small-caps;">La Commissione</an:span>
 				</an:docProponent>
 			</an:p>
 		</an:preface>
@@ -82,22 +70,30 @@
 				<an:p>
 					<an:i>Dopo l'</an:i>
 					<an:strong>articolo</an:strong>
-					<an:i>, inserire il seguente:</an:i>
+					<an:i>, aggiungere il seguente:</an:i>
 				</an:p>
 				
 
-				<an:p>
+				<an:p style="margin-left:0cm; margin-right:0cm; text-align:center">
 					<an:strong>
-						«Art. 22-
-						<an:i>bis.</an:i>
+						<an:span style="font-size:medium">
+							«Art. 22-
+							<an:i>bis.</an:i>
+						</an:span>
 					</an:strong>
 				</an:p>
 				
 
-				<an:p>(Disposizioni in materia di transazioni con le aziende farmaceutiche per il ripiano della spesa farmaceutica)</an:p>
+				<an:p style="margin-left:0cm; margin-right:0cm; text-align:center">
+					<an:i>
+						<an:span style="font-size:medium">(Disposizioni in materia di transazioni con le aziende farmaceutiche per il ripiano della spesa farmaceutica)</an:span>
+					</an:i>
+				</an:p>
 				
 
-				<an:p>        1. Le transazioni; di cui all'articolo 1, comma 390, della legge 27 dicembre 2017, n. 205, sono valide per la parte pubblica con la sola sottoscrizione di AIFA e sono efficaci a decorrere dalla data di entrata in vigore del presente decreto».</an:p>
+				<an:p style="margin-left:0cm; margin-right:0cm">
+					<an:span style="font-size:medium">        1. Le transazioni; di cui all'articolo 1, comma 390, della legge 27 dicembre 2017, n. 205, sono valide per la parte pubblica con la sola sottoscrizione di AIFA e sono efficaci a decorrere dalla data di entrata in vigore del presente decreto».</an:span>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>
