@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/989/A/1.33/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/989/A/1.33"/>
-					<an:FRBRdate date="2019-01-23" name="presentazione"/>
+					<an:FRBRdate date="2019-01-26" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/989/A/1.33/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/989/A/1.33/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/989/A/1.33/ita@"/>
-					<an:FRBRdate date="2019-01-23" name="presentazione"/>
+					<an:FRBRdate date="2019-01-26" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/989/A/1.33/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/989/A/1.33/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/989/A/1.33/ita@.akn"/>
-					<an:FRBRdate date="2019-01-23" name="presentazione"/>
+					<an:FRBRdate date="2019-01-26" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/989/A/1.33/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
@@ -37,10 +37,10 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2019-01-23" id="event1" source="#ro1"/>
+				<an:eventRef date="2019-01-26" id="event1" source="#ro1"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2019-01-23" id="step1" outcome="presentazione"/>
+				<an:step actor="#senato" date="2019-01-26" id="step1" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original href="http://dati.senato.it/18/Emend/S/989/A/1.33/ita@/main" id="ro1" showAs="generation"/>
@@ -49,12 +49,7 @@
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
 				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32623" id="ID0E4" showAs="Tiziana Carmela Rosaria Drago"/>
-				<an:TLCPerson href="http://dati.senato.it/29053" id="ID0EHB" showAs="Laura Bottici"/>
-				<an:TLCPerson href="http://dati.senato.it/32639" id="ID0ERB" showAs="Vincenzo Garruti"/>
-				<an:TLCPerson href="http://dati.senato.it/32618" id="ID0E2B" showAs="Emanuele Dessì"/>
-				<an:TLCPerson href="http://dati.senato.it/32638" id="ID0EFC" showAs="Agnese Gallicchio"/>
-				<an:TLCPerson href="http://dati.senato.it/32684" id="ID0EPC" showAs="Marco Pellegrini"/>
+				<an:TLCOrganization href="http://dati.senato.it/senatore/0" id="ID0E4" showAs="Le Commissioni Riunite"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -65,91 +60,61 @@
 				<an:docNumber>Emendamento n. 1.33 (testo 3)</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0E4">
-					<an:span style="font-variant:small-caps;">Drago</an:span>
-				</an:docProponent>
-			</an:p>
-			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0EHB">
-					<an:span style="font-variant:small-caps;">Bottici</an:span>
-				</an:docProponent>
-			</an:p>
-			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0ERB">
-					<an:span style="font-variant:small-caps;">Garruti</an:span>
-				</an:docProponent>
-			</an:p>
-			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0E2B">
-					<an:span style="font-variant:small-caps;">Dessì</an:span>
-				</an:docProponent>
-			</an:p>
-			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0EFC">
-					<an:span style="font-variant:small-caps;">Gallicchio</an:span>
-				</an:docProponent>
-			</an:p>
-			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0EPC">
-					<an:span style="font-variant:normal;">Marco </an:span>
-					<an:span style="font-variant:small-caps;">Pellegrini</an:span>
+				<an:docProponent refersTo="#ID0E4">
+					<an:span style="font-variant:small-caps;">Le</an:span>
+					 
+					<an:span style="font-variant:small-caps;">Commissioni</an:span>
+					 
+					<an:span style="font-variant:small-caps;">Riunite</an:span>
 				</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
 				<an:p>
-					<an:i>Dopo il comma 8; aggiungere i seguenti:</an:i>
+					<an:i>Dopo il comma 8 aggiungere i seguenti:</an:i>
 				</an:p>
 				
 
 				<an:p>
 					        «8-
+					<an:i>bis.</an:i>
+					 I benefici di cui al presente articolo non operano nei confronti delle imprese i cui membri degli organi amministrativi o i soci illimitatamente responsabili siano stati condannati con sentenza definitiva per uno dei seguenti delitti:
+				</an:p>
+				
+
+				<an:p>
+					            a) di cui agli articoli 338, 346-
+					<an:i>bis,</an:i>
+					 347, 353, 355, 356, 514, 515 e 640 del codice penale, nonché agli articoli di cui al libro II, titolo sesto, capo II del medesimo codice;
+				</an:p>
+				
+
+				<an:p>            b) di cui all'articolo 4 del decreto legislativo 6 settembre 2011, n. 159;</an:p>
+				
+
+				<an:p>
+					            c) di cui agli articoli 2621, 2621-
 					<an:i>bis</an:i>
-					. I benefici di cui al presente articolo non operano nei confronti delle imprese i cui membri degli organi amministrativi o i soci illimitatamente responsabili siano stati condannati con sentenza definitiva per uno dei seguenti delitti:
+					, 2621-
+					<an:i>ter</an:i>
+					, 2622 del codice civile;
 				</an:p>
 				
 
+				<an:p>            d) di cui agli articoli 216 e 217 della legge 16 marzo 1942, n. 267;</an:p>
+				
+
+				<an:p>            e) di cui agli articoli 2 e 3 del decreto legislativo 10 marzo 2000, n. 74.</an:p>
+				
+
 				<an:p>
-					            
-					<an:i>a)</an:i>
-					 di cui agli articoli 338, 346-
+					        8-
+					<an:i>ter</an:i>
+					. L'esclusione dai benefici di cui al presente articolo opera anche nei confronti dei soggetti di cui al comma 8-
 					<an:i>bis</an:i>
-					, 347, 353, 355, 356, 514, 515 e 640 del codice penale, nonché agli articoli di cui al libro II, titolo sesto, capo II del medesimo codice;
+					, destinatari di misure di prevenzione di cui all'articolo 4 del decreto legislativo 6 settembre 2011, n. 159».
 				</an:p>
-				
-
-				<an:p>
-					            
-					<an:i>b)</an:i>
-					 di cui all'articolo 4 del decreto legislativo 6 settembre 2011, n. 159;
-				</an:p>
-				
-
-				<an:p>
-					            
-					<an:i>c)</an:i>
-					 di cui agli articoli 2621, 2621-bis, 2621-ter, 2622 del codice civile;
-				</an:p>
-				
-
-				<an:p>
-					            
-					<an:i>d)</an:i>
-					 di cui agli articoli 216 e 217 della legge 16 marzo 1942, n, 267;
-				</an:p>
-				
-
-				<an:p>
-					            
-					<an:i>e)</an:i>
-					 di cui agli articoli 2 e 3 del decreto legislativo 10 marzo 2000, n. 74.
-				</an:p>
-				
-
-				<an:p>        8-ter. L'esclusione dai benefici di cui al presente articolo opera anche nei confronti dei soggetti di cui al comma 8-bis, destinatari di misure di prevenzione di cui all'articolo 4 del decreto legislativo 6 settembre 2011, n. 159».</an:p>
-				
-
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>
