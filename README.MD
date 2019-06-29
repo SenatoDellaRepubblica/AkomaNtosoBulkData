@@ -47,7 +47,7 @@ Senato della Repubblica - Servizio dell'Informatica
 
 ## Licenza ##
 
-CC BY NC ND
+CC BY 3.0
 
 ## Aggiornamento ##
 
