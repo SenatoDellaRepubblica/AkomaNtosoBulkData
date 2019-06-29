@@ -46,7 +46,7 @@ Italian Senate - IT Office
 
 ## License ##
 
-CC BY NC ND
+CC BY 3.0
 
 ## Updates ##
 
