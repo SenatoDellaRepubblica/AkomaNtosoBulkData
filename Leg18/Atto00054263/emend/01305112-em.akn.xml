@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
 			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/G3.1/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/G3.1"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/G3.1/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/G3.1/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/G3.1/ita@"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/G3.1/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/G3.1/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/G3.1/ita@.akn"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/G3.1/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
@@ -37,52 +37,80 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2021-07-22" id="event1" source="#ro1"/>
+				<an:eventRef date="2021-07-23" id="event1" source="#ro1"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2021-07-22" id="step1" outcome="presentazione"/>
+				<an:step actor="#senato" date="2021-07-23" id="step1" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original href="http://dati.senato.it/18/Emend/S/2320/A/G3.1/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/2320" id="ar1" showAs="DDL 2320"/>
+				<an:activeRef href="http://dati.senato.it/Ddl/18/2320" id="ar1" showAs="Ddl 2320"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
 				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29555" id="IDOTVMXX5XCZDJLYAMPPKMKSRTPPLI45EORIQFJXCD43ZCGFQ5MUUC" showAs="RICHETTI"/>
+				<an:TLCPerson href="http://dati.senato.it/29555" id="ID0E5" showAs="Matteo Richetti"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
 			<an:p>
-				<an:affectedDocument href="#ar1">DDL 2320</an:affectedDocument>
+				<an:affectedDocument href="#ar1">Ddl 2320</an:affectedDocument>
 			</an:p>
 			<an:p>
 				<an:docNumber>Ordine del giorno n. G3.1</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDOTVMXX5XCZDJLYAMPPKMKSRTPPLI45EORIQFJXCD43ZCGFQ5MUUC">RICHETTI</an:docProponent>
+				<an:docProponent as="#tipoSenatore" refersTo="#ID0E5">
+					<an:span style="font-variant:small-caps;">Richetti</an:span>
+				</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
 				<an:p>Il Senato,</an:p>
-				<an:p>                      in sede di esame del disegno di legge &quot;Conversione in legge, con modificazioni, del decreto-legge 25 maggio 2021, n. 73, recante misure urgenti connesse all'emergenza da COVID-19, per le imprese, il lavoro, i giovani, la salute e i servizi elettorali&quot; (AS 2320);</an:p>
-				<an:p>                   premesso che:</an:p>
-				<an:p>                  la Commissione Europea ha più volte riconosciuto che molte località - per la loro ubicazione e per l'utenza prevalentemente di prossimità - non operano in concorrenza transnazionale e che quindi il finanziamento pubblico a favore di questi ultimi non costituisce la fattispecie di &quot;aiuto di Stato&quot;;</an:p>
+				
+
+				<an:p>                      in sede di esame del disegno di legge &quot;Conversione in legge, con modificazioni, del decreto-legge 25 maggio 2021, n. 73, recante misure urgenti connesse all'emergenza da COVID-19, per le imprese, il lavoro, i giovani, la salute e i servizi elettorali&quot; (AS 2320);</an:p>
+				
+
+				<an:p>                   premesso che:</an:p>
+				
+
+				<an:p>                  la Commissione Europea ha più volte riconosciuto che molte località - per la loro ubicazione e per l'utenza prevalentemente di prossimità - non operano in concorrenza transnazionale e che quindi il finanziamento pubblico a favore di questi ultimi non costituisce la fattispecie di &quot;aiuto di Stato&quot;;</an:p>
+				
+
 				<an:p>
-					                      tale definizione è quindi applicabile, senza ulteriore confronto con la Commissione Europea, nei vari provvedimenti di sostegno alle aziende di gestione degli impianti di risalita operanti in località che rispettano i parametri che la stessa Commissione Europea ha definito riguardo il numero di impianti, il numeri di posti letto alberghieri e il numero di 
+					                      tale definizione è quindi applicabile, senza ulteriore confronto con la Commissione Europea, nei vari provvedimenti di sostegno alle aziende di gestione degli impianti di risalita operanti in località che rispettano i parametri che la stessa Commissione Europea ha definito riguardo il numero di impianti, il numeri di posti letto alberghieri e il numero di 
 					<an:i>skipass</an:i>
 					 settimanali venduti;
 				</an:p>
-				<an:p>                      il riconoscimento e l'inserimento del concetto di stazione a utenza prevalentemente di prossimità è stato previsto dall'articolo 3 del decreto in questione, così come modificato dalla Camera dei Deputati, per l'erogazione dei fondi destinati ai soggetti gestori di impianti a fune. Tale definizione, peraltro, rende immediatamente erogabili i fondi previsti a seguito dell'emanazione di un decreto ministeriale di attuazione;</an:p>
-				<an:p>                 considerato che:</an:p>
-				<an:p>                  la mancata apertura degli impianti di risalita ha comportato necessariamente il mancato utilizzo dei beni, dei terreni, o degli impianti affidati in concessione da parte di Enti Pubblici a soggetti gestori privati, rendendo così necessario un rimedio attraverso una proroga automatica di un anno di tali contratti di concessione senza alcun onere per il bilancio dello Stato;</an:p>
-				<an:p>                      nel corso dell'esame in prima lettura del decreto in questione non è stata accolta la richiesta di specificare quella dei gestori di impianti di risalita tra le categorie di aziende beneficiarie della possibilità di decontribuzione, così come previsto dall'articolo 43, in quanto considerati all'interno della categoria del turismo, penalizzando così un intero settore che ha perso due importanti stagioni di lavoro consecutive;</an:p>
-				<an:p>                 impegna il Governo:</an:p>
-				<an:p>                  ad erogare le misure di sostegno nel minor tempo possibile alle aziende aventi le caratteristiche definite dalla Commissione Europea per essere considerate a carattere locale nella percentuale del 49% del fatturato medio del triennio 2017-2019, ovvero nei limiti dei costi fissi e variabili sostenuti per la gestione caratteristica del trasporto a fune durante il periodo corrente dal 1° aprile 2020 al 31 marzo 2021, detratti i corrispettivi incassati in detto periodo per l' attività di trasporto a fune esercitata;</an:p>
-				<an:p>                      a prorogare di un anno tutte le scadenze dei contratti di concessione, a qualsiasi titolo assegnati, tra enti pubblici, di qualsiasi tipologia, e soggetti privati con oggetto beni, terreni ed infrastrutture attinenti la gestione di un'area sciabile;</an:p>
-				<an:p>                      a riaprire i termini e modificare i criteri di assegnazione per la presentazione delle domande di assegnazione dei diversi bonus stagionali previsti per i singoli operatori dipendenti di aziende del settore del turismo bianco, al fine di poter consentire una parità di trattamento tra i dipendenti delle aziende appartenenti alle diverse categorie merceologiche, rimandando ad un confronto tra i competenti uffici statali e le parti sociali le modalità di attuazione;</an:p>
-				<an:p>                      ad includere i gestori degli impianti di risalita tra i beneficiari della possibilità di decontribuzione garantita dall'articolo 43 del decreto in oggetto.</an:p>
+				
+
+				<an:p>                      il riconoscimento e l'inserimento del concetto di stazione a utenza prevalentemente di prossimità è stato previsto dall'articolo 3 del decreto in questione, così come modificato dalla Camera dei Deputati, per l'erogazione dei fondi destinati ai soggetti gestori di impianti a fune. Tale definizione, peraltro, rende immediatamente erogabili i fondi previsti a seguito dell'emanazione di un decreto ministeriale di attuazione;</an:p>
+				
+
+				<an:p>                 considerato che:</an:p>
+				
+
+				<an:p>                  la mancata apertura degli impianti di risalita ha comportato necessariamente il mancato utilizzo dei beni, dei terreni, o degli impianti affidati in concessione da parte di Enti Pubblici a soggetti gestori privati, rendendo così necessario un rimedio attraverso una proroga automatica di un anno di tali contratti di concessione senza alcun onere per il bilancio dello Stato;</an:p>
+				
+
+				<an:p>                      nel corso dell'esame in prima lettura del decreto in questione non è stata accolta la richiesta di specificare quella dei gestori di impianti di risalita tra le categorie di aziende beneficiarie della possibilità di decontribuzione, così come previsto dall'articolo 43, in quanto considerati all'interno della categoria del turismo, penalizzando così un intero settore che ha perso due importanti stagioni di lavoro consecutive;</an:p>
+				
+
+				<an:p>                 impegna il Governo:</an:p>
+				
+
+				<an:p>                  ad erogare le misure di sostegno nel minor tempo possibile alle aziende aventi le caratteristiche definite dalla Commissione Europea per essere considerate a carattere locale nella percentuale del 49% del fatturato medio del triennio 2017-2019, ovvero nei limiti dei costi fissi e variabili sostenuti per la gestione caratteristica del trasporto a fune durante il periodo corrente dal 1° aprile 2020 al 31 marzo 2021, detratti i corrispettivi incassati in detto periodo per l' attività di trasporto a fune esercitata;</an:p>
+				
+
+				<an:p>                      a prorogare di un anno tutte le scadenze dei contratti di concessione, a qualsiasi titolo assegnati, tra enti pubblici, di qualsiasi tipologia, e soggetti privati con oggetto beni, terreni ed infrastrutture attinenti la gestione di un'area sciabile;</an:p>
+				
+
+				<an:p>                      a riaprire i termini e modificare i criteri di assegnazione per la presentazione delle domande di assegnazione dei diversi bonus stagionali previsti per i singoli operatori dipendenti di aziende del settore del turismo bianco, al fine di poter consentire una parità di trattamento tra i dipendenti delle aziende appartenenti alle diverse categorie merceologiche, rimandando ad un confronto tra i competenti uffici statali e le parti sociali le modalità di attuazione;</an:p>
+				
+
+				<an:p>                      ad includere i gestori degli impianti di risalita tra i beneficiari della possibilità di decontribuzione garantita dall'articolo 43 del decreto in oggetto.</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>

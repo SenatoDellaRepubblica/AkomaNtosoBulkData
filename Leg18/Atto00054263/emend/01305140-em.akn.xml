@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
 			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/G36.1/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/G36.1"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/G36.1/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/G36.1/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/G36.1/ita@"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/G36.1/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/G36.1/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/G36.1/ita@.akn"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/G36.1/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
@@ -37,50 +37,82 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2021-07-22" id="event1" source="#ro1"/>
+				<an:eventRef date="2021-07-23" id="event1" source="#ro1"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2021-07-22" id="step1" outcome="presentazione"/>
+				<an:step actor="#senato" date="2021-07-23" id="step1" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original href="http://dati.senato.it/18/Emend/S/2320/A/G36.1/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/2320" id="ar1" showAs="DDL 2320"/>
+				<an:activeRef href="http://dati.senato.it/Ddl/18/2320" id="ar1" showAs="Ddl 2320"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
 				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29164" id="ID1YIQTV224ET3GNV25FQR3LRCMCQOUO5LHJBITYJZJHM3TMOFPBTF" showAs="PUGLIA"/>
+				<an:TLCPerson href="http://dati.senato.it/29164" id="ID0E5" showAs="Sergio Puglia"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
 			<an:p>
-				<an:affectedDocument href="#ar1">DDL 2320</an:affectedDocument>
+				<an:affectedDocument href="#ar1">Ddl 2320</an:affectedDocument>
 			</an:p>
 			<an:p>
 				<an:docNumber>Ordine del giorno n. G36.1</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID1YIQTV224ET3GNV25FQR3LRCMCQOUO5LHJBITYJZJHM3TMOFPBTF">PUGLIA</an:docProponent>
+				<an:docProponent as="#tipoSenatore" refersTo="#ID0E5">
+					<an:span style="font-variant:small-caps;">Puglia</an:span>
+				</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
 				<an:p>Il Senato,</an:p>
-				<an:p>            in sede d'esame del disegno di legge di conversione in legge, con modificazioni, del decreto-legge 25 maggio 2021, n. 73, recante misure urgenti connesse all'emergenza da COVID-19, per le imprese, il lavoro, i giovani, la salute e i servizi territoriali (A.S. 2320),</an:p>
-				<an:p>        premesso che:</an:p>
-				<an:p>            il Titolo IV del decreto-legge in esame reca disposizioni in materia di lavoro e politiche sociali;</an:p>
-				<an:p>            il decreto-legge prospetta, in generale, misure economiche espansive dirette a sostenere lo sviluppo e l'occupazione e ad avviare la transizione verso un modello di crescita più inclusivo e sostenibile, salvaguardando al contempo le esigenze di consolidamento della finanza pubblica;</an:p>
-				<an:p>        considerato che:</an:p>
-				<an:p>            è indispensabile assicurare la repentinità e universalità del sostegno al reddito dei lavoratori, stante la crisi pandemica in atto in costante crescita esponenziale, non si può non fare tesoro dell'analisi dei dati inerenti l'efficienza e la repentinità delle misure tradizionali di sostegno ai lavoratori, in situazioni emergenziali, quale la CIG;</an:p>
-				<an:p>            la valutazione del «caso concreto» evidenzia ritardi burocratici nell'evasione di migliaia di richieste, sia per l'elevato numero delle istanze da vagliare, sia per la frammentarietà ed eccessiva procedimentalizzazione delle procedure volte al loro riconoscimento, nonché per l'eterogeneità delle misure stesse;</an:p>
-				<an:p>            come evidenziato dai Consigli degli ordini professionali emerge la necessità dell'introduzione di nuove misure a sostegno dei lavoratori, dipendenti e non, al fine di ridurre l'evidente disparità sussistente tra un rapporto di lavoro svolto in regime di libera professione e quello dipendente;</an:p>
-				<an:p>            le criticità sopra segnalate hanno, di fatto, ridotto il ristoro dei destinatari delle stesse ed appesantito di oneri ulteriori gli studi professionali che si occupano di fiscalità;</an:p>
-				<an:p>            appare opportuno prevedere l'introduzione di «regole emergenziali» semplificate in materia fiscale e di ammortizzatori sociali, ragionando sulla individuazione delle misure necessarie a scongiurare, nell'immediato, crisi e fallimenti aziendali che spingerebbero verso una dimensione sempre più strutturale e meno congiunturale l'evoluzione della crisi che stiamo affrontando;</an:p>
-				<an:p>            al fine di velocizzare, senza appesantire l'ordinamento giuridico primario, si potrebbe intervenire attraverso una rinnovata gestione della Cassa integrazione per Covid-19 in base a fonti normative secondarie;</an:p>
-				<an:p>            una utile innovazione, in particolare, potrebbe essere costituita dall'utilizzo di un unico modello di dichiarazione e richiesta delle CIG, quindi un unico invio da parte dei datori di lavoro, attraverso il sistema di inoltro delle denunce mensili relative ai lavoratori dipendenti, il cosiddetto «Flusso UNIEMENS»;</an:p>
-				<an:p>            tale dichiarazione va inoltrata obbligatoriamente ogni mese da parte dei datori di lavoro, e già esiste a partire dalle denunce con competenza relativa al mese di maggio 2009 (come indicato nel Messaggio INPS n. 11903 del 25 maggio 2009),</an:p>
-				<an:p>        impegna il Governo:</an:p>
-				<an:p>            nel rispetto dei vincoli di finanza pubblica, a valutare l'opportunità di introdurre lo strumento dell'ammortizzatore sociale unico con causale Covid-19 per tutte le indennità collegate all'emergenza sanitaria, in nome di una necessaria semplificazione degli strumenti di gestione della crisi.</an:p>
+				
+
+				<an:p>            in sede d'esame del disegno di legge di conversione in legge, con modificazioni, del decreto-legge 25 maggio 2021, n. 73, recante misure urgenti connesse all'emergenza da COVID-19, per le imprese, il lavoro, i giovani, la salute e i servizi territoriali (A.S. 2320),</an:p>
+				
+
+				<an:p>        premesso che:</an:p>
+				
+
+				<an:p>            il Titolo IV del decreto-legge in esame reca disposizioni in materia di lavoro e politiche sociali;</an:p>
+				
+
+				<an:p>            il decreto-legge prospetta, in generale, misure economiche espansive dirette a sostenere lo sviluppo e l'occupazione e ad avviare la transizione verso un modello di crescita più inclusivo e sostenibile, salvaguardando al contempo le esigenze di consolidamento della finanza pubblica;</an:p>
+				
+
+				<an:p>        considerato che:</an:p>
+				
+
+				<an:p>            è indispensabile assicurare la repentinità e universalità del sostegno al reddito dei lavoratori, stante la crisi pandemica in atto in costante crescita esponenziale, non si può non fare tesoro dell'analisi dei dati inerenti l'efficienza e la repentinità delle misure tradizionali di sostegno ai lavoratori, in situazioni emergenziali, quale la CIG;</an:p>
+				
+
+				<an:p>            la valutazione del «caso concreto» evidenzia ritardi burocratici nell'evasione di migliaia di richieste, sia per l'elevato numero delle istanze da vagliare, sia per la frammentarietà ed eccessiva procedimentalizzazione delle procedure volte al loro riconoscimento, nonché per l'eterogeneità delle misure stesse;</an:p>
+				
+
+				<an:p>            come evidenziato dai Consigli degli ordini professionali emerge la necessità dell'introduzione di nuove misure a sostegno dei lavoratori, dipendenti e non, al fine di ridurre l'evidente disparità sussistente tra un rapporto di lavoro svolto in regime di libera professione e quello dipendente;</an:p>
+				
+
+				<an:p>            le criticità sopra segnalate hanno, di fatto, ridotto il ristoro dei destinatari delle stesse ed appesantito di oneri ulteriori gli studi professionali che si occupano di fiscalità;</an:p>
+				
+
+				<an:p>            appare opportuno prevedere l'introduzione di «regole emergenziali» semplificate in materia fiscale e di ammortizzatori sociali, ragionando sulla individuazione delle misure necessarie a scongiurare, nell'immediato, crisi e fallimenti aziendali che spingerebbero verso una dimensione sempre più strutturale e meno congiunturale l'evoluzione della crisi che stiamo affrontando;</an:p>
+				
+
+				<an:p>            al fine di velocizzare, senza appesantire l'ordinamento giuridico primario, si potrebbe intervenire attraverso una rinnovata gestione della Cassa integrazione per Covid-19 in base a fonti normative secondarie;</an:p>
+				
+
+				<an:p>            una utile innovazione, in particolare, potrebbe essere costituita dall'utilizzo di un unico modello di dichiarazione e richiesta delle CIG, quindi un unico invio da parte dei datori di lavoro, attraverso il sistema di inoltro delle denunce mensili relative ai lavoratori dipendenti, il cosiddetto «Flusso UNIEMENS»;</an:p>
+				
+
+				<an:p>            tale dichiarazione va inoltrata obbligatoriamente ogni mese da parte dei datori di lavoro, e già esiste a partire dalle denunce con competenza relativa al mese di maggio 2009 (come indicato nel Messaggio INPS n. 11903 del 25 maggio 2009),</an:p>
+				
+
+				<an:p>        impegna il Governo:</an:p>
+				
+
+				<an:p>            nel rispetto dei vincoli di finanza pubblica, a valutare l'opportunità di introdurre lo strumento dell'ammortizzatore sociale unico con causale Covid-19 per tutte le indennità collegate all'emergenza sanitaria, in nome di una necessaria semplificazione degli strumenti di gestione della crisi.</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
 			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/4.11/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/4.11"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/4.11/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/4.11/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/4.11/ita@"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/4.11/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/4.11/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/4.11/ita@.akn"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/4.11/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
@@ -37,34 +37,40 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2021-07-22" id="event1" source="#ro1"/>
+				<an:eventRef date="2021-07-23" id="event1" source="#ro1"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2021-07-22" id="step1" outcome="presentazione"/>
+				<an:step actor="#senato" date="2021-07-23" id="step1" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original href="http://dati.senato.it/18/Emend/S/2320/A/4.11/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/2320" id="ar1" showAs="DDL 2320"/>
+				<an:activeRef href="http://dati.senato.it/Ddl/18/2320" id="ar1" showAs="Ddl 2320"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
 				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/34485" id="ID3325X4XGYIRLDT3PCABCLQTF3B4LSYH0FZR5WNL2R5WOAL0TZ1ON" showAs="CALANDRINI"/>
-				<an:TLCPerson href="http://dati.senato.it/32898" id="ID4XA5VBXCTPTVOFLV3NHV0S51QLTTDTM0ZMSKENBXMZTRMGRQ5LPK" showAs="DE CARLO"/>
+				<an:TLCPerson href="http://dati.senato.it/34485" id="ID0E5" showAs="Nicola Calandrini"/>
+				<an:TLCPerson href="http://dati.senato.it/32898" id="ID0EIB" showAs="Luca De Carlo"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
 			<an:p>
-				<an:affectedDocument href="#ar1">DDL 2320</an:affectedDocument>
+				<an:affectedDocument href="#ar1">Ddl 2320</an:affectedDocument>
 			</an:p>
 			<an:p>
 				<an:docNumber>Emendamento n. 4.11</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID3325X4XGYIRLDT3PCABCLQTF3B4LSYH0FZR5WNL2R5WOAL0TZ1ON">CALANDRINI</an:docProponent>
+				<an:docProponent as="#tipoSenatore" refersTo="#ID0E5">
+					<an:span style="font-variant:small-caps;">Calandrini</an:span>
+				</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID4XA5VBXCTPTVOFLV3NHV0S51QLTTDTM0ZMSKENBXMZTRMGRQ5LPK">DE CARLO</an:docProponent>
+				<an:docProponent as="#tipoSenatore" refersTo="#ID0EIB">
+					<an:span style="font-variant:small-caps;">De</an:span>
+					 
+					<an:span style="font-variant:small-caps;">Carlo</an:span>
+				</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
@@ -74,8 +80,10 @@
 					bis
 					<an:i>, aggiungere il seguente:</an:i>
 				</an:p>
+				
+
 				<an:p>
-					        «4-
+					        «4-
 					<an:i>ter</an:i>
 					. Il canone di locazione relativo ai contratti stipulati, rinnovati o rinegoziati a decorrere dal 1º luglio 2021, aventi ad oggetto unità immobiliari classificate nella categoria catastale C/1, di superficie fino a 600 metri quadrati, escluse le pertinenze, e le relative pertinenze locate congiuntamente, può, in alternativa rispetto al regime ordinario vigente per la tassazione del reddito fondiario ai fini dell'imposta sul reddito delle persone fisiche, essere assoggettato al regime della cedolare secca, di cui all'articolo 3, del decreto legislativo 14 marzo 2011, n. 23, con aliquota al 21 per cento».
 				</an:p>

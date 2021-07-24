@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
 			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/G26.1/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/G26.1"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/G26.1/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/G26.1/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/G26.1/ita@"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/G26.1/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/G26.1/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/G26.1/ita@.akn"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/G26.1/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
@@ -37,51 +37,77 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2021-07-22" id="event1" source="#ro1"/>
+				<an:eventRef date="2021-07-23" id="event1" source="#ro1"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2021-07-22" id="step1" outcome="presentazione"/>
+				<an:step actor="#senato" date="2021-07-23" id="step1" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original href="http://dati.senato.it/18/Emend/S/2320/A/G26.1/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/2320" id="ar1" showAs="DDL 2320"/>
+				<an:activeRef href="http://dati.senato.it/Ddl/18/2320" id="ar1" showAs="Ddl 2320"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
 				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32600" id="IDHO4LNWMHWAHQN2WGNIYXTA2QQLY4T55EMOUF12KWC0DTLB3TS13G" showAs="CASTELLONE"/>
+				<an:TLCPerson href="http://dati.senato.it/32600" id="ID0E5" showAs="Maria Domenica Castellone"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
 			<an:p>
-				<an:affectedDocument href="#ar1">DDL 2320</an:affectedDocument>
+				<an:affectedDocument href="#ar1">Ddl 2320</an:affectedDocument>
 			</an:p>
 			<an:p>
 				<an:docNumber>Ordine del giorno n. G26.1</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDHO4LNWMHWAHQN2WGNIYXTA2QQLY4T55EMOUF12KWC0DTLB3TS13G">CASTELLONE</an:docProponent>
+				<an:docProponent as="#tipoSenatore" refersTo="#ID0E5">
+					<an:span style="font-variant:small-caps;">Castellone</an:span>
+				</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
 				<an:p>Il Senato,</an:p>
-				<an:p>            in sede d'esame del disegno di legge di conversione in legge, con modificazioni, del decreto-legge 25 maggio 2021, n. 73, recante misure urgenti connesse all'emergenza da COVID-19, per le imprese, il lavoro, i giovani, la salute e i servizi territoriali (A.S. 2320),</an:p>
-				<an:p>        premesso che:</an:p>
-				<an:p>            il Titolo III del decreto legge in esame reca disposizioni in materia di tutela della salute;</an:p>
-				<an:p>            l'attuale normativa IVA prevede un'aliquota del 22 per cento sulla compravendita di prodotti per la ricerca biomedica, anche in relazione agli acquisti effettuati nell'ambito della ricerca finanziata con fondi pubblici da centri senza finalità di lucro, che per loro stessa natura non possono usufruire delle detrazioni sugli acquisti, di fatto depotenziando il finanziamento stesso che lo Stato eroga;</an:p>
-				<an:p>            l'emergenza pandemica ha fatto emergere in modo dirompente il ruolo della ricerca biomedica nel garantire la sostenibilità dello sviluppo sociale ed economico mondiale e la conseguente necessità di potenziare le risorse umane, infrastrutturali ed economiche dell'intero settore sanitario;</an:p>
-				<an:p>            tra i maggiori Paesi europei, l'Italia è l'unico Stato che prevede il pagamento integrale IVA sull'acquisto di reagenti e attrezzature necessarie per scopi di ricerca biomedica. L'imposta sul valore aggiunto non si applica infatti su questa tipologia di forniture in Inghilterra e Svezia, in Germania sono esentati gli istituti di ricerca federali, in Spagna è previsto un meccanismo che restituisce a fine anno l'imposta versata, mentre in Svizzera l'imposta è pari a solo il 7 per cento;</an:p>
-				<an:p>            il 4 ottobre 2020, nell'ambito della approvazione del parere relativo alla proposta di «Linee guida per la definizione del Piano nazionale di ripresa e resilienza (PNRR)», la Commissione Igiene e Sanità del Senato, proponeva l'eliminazione e la riduzione dell'IVA su reagenti e apparecchiature a favore di Enti pubblici di ricerca, IRCCS, Università e Enti di ricerca senza scopo di lucro;</an:p>
-				<an:p>            la settimana successiva, nell'ambito dell'esame della NADEF 2020, la risoluzione approvata in Senato impegnava il Governo a prevedere nella Legge di Bilancio 2021 una misura - a valere delle risorse del pacchetto Next Generation EU (NGEU) «volta a incrementare gli investimenti in ricerca biomedica, anche attraverso la detassazione o la riduzione IVA su reagenti e apparecchiature a favore di enti pubblici di ricerca, IRCCS, università ed enti di ricerca senza scopo di lucro,</an:p>
-				<an:p>        considerato che:</an:p>
+				
+
+				<an:p>            in sede d'esame del disegno di legge di conversione in legge, con modificazioni, del decreto-legge 25 maggio 2021, n. 73, recante misure urgenti connesse all'emergenza da COVID-19, per le imprese, il lavoro, i giovani, la salute e i servizi territoriali (A.S. 2320),</an:p>
+				
+
+				<an:p>        premesso che:</an:p>
+				
+
+				<an:p>            il Titolo III del decreto legge in esame reca disposizioni in materia di tutela della salute;</an:p>
+				
+
+				<an:p>            l'attuale normativa IVA prevede un'aliquota del 22 per cento sulla compravendita di prodotti per la ricerca biomedica, anche in relazione agli acquisti effettuati nell'ambito della ricerca finanziata con fondi pubblici da centri senza finalità di lucro, che per loro stessa natura non possono usufruire delle detrazioni sugli acquisti, di fatto depotenziando il finanziamento stesso che lo Stato eroga;</an:p>
+				
+
+				<an:p>            l'emergenza pandemica ha fatto emergere in modo dirompente il ruolo della ricerca biomedica nel garantire la sostenibilità dello sviluppo sociale ed economico mondiale e la conseguente necessità di potenziare le risorse umane, infrastrutturali ed economiche dell'intero settore sanitario;</an:p>
+				
+
+				<an:p>            tra i maggiori Paesi europei, l'Italia è l'unico Stato che prevede il pagamento integrale IVA sull'acquisto di reagenti e attrezzature necessarie per scopi di ricerca biomedica. L'imposta sul valore aggiunto non si applica infatti su questa tipologia di forniture in Inghilterra e Svezia, in Germania sono esentati gli istituti di ricerca federali, in Spagna è previsto un meccanismo che restituisce a fine anno l'imposta versata, mentre in Svizzera l'imposta è pari a solo il 7 per cento;</an:p>
+				
+
+				<an:p>            il 4 ottobre 2020, nell'ambito della approvazione del parere relativo alla proposta di «Linee guida per la definizione del Piano nazionale di ripresa e resilienza (PNRR)», la Commissione Igiene e Sanità del Senato, proponeva l'eliminazione e la riduzione dell'IVA su reagenti e apparecchiature a favore di Enti pubblici di ricerca, IRCCS, Università e Enti di ricerca senza scopo di lucro;</an:p>
+				
+
+				<an:p>            la settimana successiva, nell'ambito dell'esame della NADEF 2020, la risoluzione approvata in Senato impegnava il Governo a prevedere nella Legge di Bilancio 2021 una misura - a valere delle risorse del pacchetto Next Generation EU (NGEU) «volta a incrementare gli investimenti in ricerca biomedica, anche attraverso la detassazione o la riduzione IVA su reagenti e apparecchiature a favore di enti pubblici di ricerca, IRCCS, università ed enti di ricerca senza scopo di lucro,</an:p>
+				
+
+				<an:p>        considerato che:</an:p>
+				
+
 				<an:p>
-					            l'articolo 31-
+					            l'articolo 31-
 					<an:i>bis</an:i>
 					 del presente decreto legge reca «Credito d'imposta per la ricerca biomedica». In particolare si prevede che al fine di favorire lo sviluppo della ricerca biomedica e la capacità degli enti di ricerca nazionali di competere a livello europeo, è riconosciuto in via sperimentale, per l'anno 2021, nel limite di spesa complessivo di u milioni di euro per l'anno 2021, un contributo sotto forma di credito d'imposta nella misura del 17 per cento delle spese sostenute da enti di ricerca privati senza finalità di lucro per l'acquisto di reagenti e apparecchiature destinati alla ricerca scientifica,
 				</an:p>
-				<an:p>        impegna il Governo:</an:p>
-				<an:p>            a valutare l'opportunità di prevedere, nella prossima legge di bilancio, una misura volta a stabilizzare e rendere strutturale il riconoscimento del credito di imposta per la ricerca biomedica a decorrere dal 2022 e ampliare la platea di beneficiari anche a università, pubbliche e private, enti di ricerca pubblici e IRCCS, pubblici e privati.</an:p>
+				
+
+				<an:p>        impegna il Governo:</an:p>
+				
+
+				<an:p>            a valutare l'opportunità di prevedere, nella prossima legge di bilancio, una misura volta a stabilizzare e rendere strutturale il riconoscimento del credito di imposta per la ricerca biomedica a decorrere dal 2022 e ampliare la platea di beneficiari anche a università, pubbliche e private, enti di ricerca pubblici e IRCCS, pubblici e privati.</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>

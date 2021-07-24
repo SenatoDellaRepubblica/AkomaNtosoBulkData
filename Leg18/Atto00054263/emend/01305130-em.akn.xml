@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
 			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/G1.13/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/G1.13"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/G1.13/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/G1.13/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/G1.13/ita@"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/G1.13/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2320/A/G1.13/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2320/A/G1.13/ita@.akn"/>
-					<an:FRBRdate date="2021-07-22" name="presentazione"/>
+					<an:FRBRdate date="2021-07-23" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData href="http://dati.senato.it/18/Emend/S/2320/A/G1.13/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
@@ -37,41 +37,55 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2021-07-22" id="event1" source="#ro1"/>
+				<an:eventRef date="2021-07-23" id="event1" source="#ro1"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2021-07-22" id="step1" outcome="presentazione"/>
+				<an:step actor="#senato" date="2021-07-23" id="step1" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original href="http://dati.senato.it/18/Emend/S/2320/A/G1.13/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/2320" id="ar1" showAs="DDL 2320"/>
+				<an:activeRef href="http://dati.senato.it/Ddl/18/2320" id="ar1" showAs="Ddl 2320"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
 				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
 				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32659" id="IDQV5RPH30YOFNJ0FS2XBR2VJRAKZABTLUBAW04WJAQXWSQSF5NBTE" showAs="MALLEGNI"/>
+				<an:TLCPerson href="http://dati.senato.it/32659" id="ID0E5" showAs="Massimo Mallegni"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
 			<an:p>
-				<an:affectedDocument href="#ar1">DDL 2320</an:affectedDocument>
+				<an:affectedDocument href="#ar1">Ddl 2320</an:affectedDocument>
 			</an:p>
 			<an:p>
 				<an:docNumber>Ordine del giorno n. G1.13</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDQV5RPH30YOFNJ0FS2XBR2VJRAKZABTLUBAW04WJAQXWSQSF5NBTE">MALLEGNI</an:docProponent>
+				<an:docProponent as="#tipoSenatore" refersTo="#ID0E5">
+					<an:span style="font-variant:small-caps;">Mallegni</an:span>
+				</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
 				<an:p>Il Senato,</an:p>
-				<an:p>            in sede di discussione del decreto-legge 25 maggio 2021, n. 73, recante misure urgenti connesse all'emergenza da COVID-19, per le imprese, il lavoro, i giovani, la salute e i servizi territoriali,</an:p>
-				<an:p>        premesso che:</an:p>
-				<an:p>            le imprese italiane sono state colpite da una notevole riduzione di attività connessa all'emergenza epidemiologica;</an:p>
-				<an:p>            occorrerebbe introdurre la possibilità di «superdedurre» le spese sostenute dalle imprese per le feste aziendali,</an:p>
-				<an:p>        impegna il Governo:</an:p>
-				<an:p>            a valutare l'opportunità di introdurre la possibilità innalzare i limiti di deducibilità delle spese di rappresentanza delle imprese di cui al comma 2 dell'articolo 108 del decreto del Presidente della Repubblica 22 dicembre 1986, n. 917 relative a feste ed altri eventi di intrattenimento svoltesi sul territorio nazionale sostenute per inaugurare nuove sedi o uffici di impresa o connessi a mostre, fiere ed altri eventi in cui vengono esposti i beni e servizi prodotti dall'impresa.</an:p>
+				
+
+				<an:p>            in sede di discussione del decreto-legge 25 maggio 2021, n. 73, recante misure urgenti connesse all'emergenza da COVID-19, per le imprese, il lavoro, i giovani, la salute e i servizi territoriali,</an:p>
+				
+
+				<an:p>        premesso che:</an:p>
+				
+
+				<an:p>            le imprese italiane sono state colpite da una notevole riduzione di attività connessa all'emergenza epidemiologica;</an:p>
+				
+
+				<an:p>            occorrerebbe introdurre la possibilità di «superdedurre» le spese sostenute dalle imprese per le feste aziendali,</an:p>
+				
+
+				<an:p>        impegna il Governo:</an:p>
+				
+
+				<an:p>            a valutare l'opportunità di introdurre la possibilità innalzare i limiti di deducibilità delle spese di rappresentanza delle imprese di cui al comma 2 dell'articolo 108 del decreto del Presidente della Repubblica 22 dicembre 1986, n. 917 relative a feste ed altri eventi di intrattenimento svoltesi sul territorio nazionale sostenute per inaugurare nuove sedi o uffici di impresa o connessi a mostre, fiere ed altri eventi in cui vengono esposti i beni e servizi prodotti dall'impresa.</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>
