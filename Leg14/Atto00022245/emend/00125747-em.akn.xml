@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/14/Emend/S/3223/A/1.2000/main"/>
 					<an:FRBRuri value="http://dati.senato.it/14/Emend/S/3223/A/1.2000"/>
 					<an:FRBRdate date="2005-01-21" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/14/Emend/S/3223/A/1.2000/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/14/Emend/S/3223/A/1.2000/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2005-01-21" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/14/Emend/S/3223/A/1.2000/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/14/Emend/S/3223/A/1.2000/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,24 +32,24 @@
 					<an:FRBRdate date="2005-01-21" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/14/Emend/S/3223/A/1.2000/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/14/Emend/S/3223/A/1.2000/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2005-01-21" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2005-01-21"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2005-01-21" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2005-01-21" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/14/Emend/S/3223/A/1.2000/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/14/3223" id="ar1" showAs="DDL 3223"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCOrganization href="http://dati.senato.it/" id="EZ" showAs="IL GOVERNO"/>
+				<an:original id="ro1" href="http://dati.senato.it/14/Emend/S/3223/A/1.2000/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/14/3223" showAs="DDL 3223"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCOrganization id="EZ" href="http://dati.senato.it/" showAs="IL GOVERNO"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -3309,7 +3309,7 @@ DI ATTIVITÀ ISTITUZIONALE
 NATURA OBBLIGATORIA
 					</an:i>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EXCAI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EXCAI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -3419,7 +3419,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">        (2) Le dotazioni iniziali delle unità previsionali di base, del disegno di legge di bilancio a legislazione vigente per il 2005, sono ridotte del 9,63 per cento.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EGHAI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EGHAI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -3526,7 +3526,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">        (1) Le dotazioni iniziali delle unità previsionali di base, del disegno di legge di bilancio a legislazione vigente per il 2005, sono ridotte del 26,4 per cento.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="ERLAI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="ERLAI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -3636,7 +3636,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">        (2) Le dotazioni iniziali delle unità previsionali di base, del disegno di legge di bilancio a legislazione vigente per il 2005, sono ridotte del 23,0 per cento.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EAQAI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EAQAI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -3746,7 +3746,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">        (2) Le dotazioni iniziali delle unità previsionali di base, del disegno di legge di bilancio a legislazione vigente per il 2005, sono ridotte del 9,9 per cento.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EPUAI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EPUAI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -3856,7 +3856,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">        (2) Le dotazioni iniziali delle unità previsionali di base, del disegno di legge di bilancio a legislazione vigente per il 2005, sono ridotte del 32,7 per cento.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="E5YAI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="E5YAI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -3963,7 +3963,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">        (1) Le dotazioni iniziali delle unità previsionali di base, del disegno di legge di bilancio a legislazione vigente per il 2005, sono ridotte del 3,8 per cento.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EJ4AI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EJ4AI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -4070,7 +4070,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">        (1) Le dotazioni iniziali delle unità previsionali di base, del disegno di legge di bilancio a legislazione vigente per il 2005, sono ridotte del 10,3 per cento.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EUBBI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EUBBI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -4180,7 +4180,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">        (2) Le dotazioni iniziali delle unità previsionali di base, del disegno di legge di bilancio a legislazione vigente per il 2005, sono ridotte del 29,0 per cento.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EDGBI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EDGBI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -4290,7 +4290,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">        (2) Le dotazioni iniziali delle unità previsionali di base, del disegno di legge di bilancio a legislazione vigente per il 2005, sono ridotte del 9,6 per cento.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="ESKBI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="ESKBI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -4400,7 +4400,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">        (2) Le dotazioni iniziali delle unità previsionali di base, del disegno di legge di bilancio a legislazione vigente per il 2005, sono ridotte del 21,4 per cento.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EBPBI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EBPBI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -4510,7 +4510,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">        (2) Le dotazioni iniziali delle unità previsionali di base, del disegno di legge di bilancio a legislazione vigente per il 2005, sono ridotte del 21,2 per cento.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EQTBI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EQTBI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -4620,7 +4620,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">        (2) Le dotazioni iniziali delle unità previsionali di base, del disegno di legge di bilancio a legislazione vigente per il 2005, sono ridotte del 12,5 per cento.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="E6XBI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="E6XBI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -4730,7 +4730,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">        (2) Le dotazioni iniziali delle unità previsionali di base, del disegno di legge di bilancio a legislazione vigente per il 2005, sono ridotte del 22,3 per cento.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EO3BI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EO3BI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -4840,7 +4840,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">        (2) Le dotazioni iniziali delle unità previsionali di base, del disegno di legge di bilancio a legislazione vigente per il 2005, sono ridotte del 3,3 per cento.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="E4ACI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="E4ACI">
 					<an:tr>
 						<an:td colspan="4">
 							<an:p align="center">
@@ -4933,7 +4933,7 @@ NATURA OBBLIGATORIA
 						 (euro/mq)
 					</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EVECI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EVECI">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -5005,7 +5005,7 @@ NATURA OBBLIGATORIA
 						 (euro/mq)
 					</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EPHCI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EPHCI">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -5073,7 +5073,7 @@ NATURA OBBLIGATORIA
 				<an:p align="justify">
 					<an:font size="3">3. Coefficienti correttivi per zone territoriali omogenee</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EGKCI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EGKCI">
 					<an:tr>
 						<an:td colspan="5">
 							<an:p align="center">
@@ -5166,7 +5166,7 @@ NATURA OBBLIGATORIA
 						quater), della legge n. 468 del 1978)
 					</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="E6NCI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="E6NCI">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -6395,7 +6395,7 @@ NATURA OBBLIGATORIA
 						<an:b>FONDI PER GLI INVESTIMENTI</an:b>
 					</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="E16DI">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="E16DI">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -7867,7 +7867,7 @@ PREVISTI DALLA LEGGE FINANZIARIA
 (Articolo 11, comma 5, della legge n. 468 del 1978)
 					</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EM1BK">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EM1BK">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -8685,7 +8685,7 @@ PREVISTI DALLA LEGGE FINANZIARIA
 						<an:i>(in milioni di euro)</an:i>
 					</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EF2CK">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EF2CK">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -10200,7 +10200,7 @@ PREVISTI DALLA LEGGE FINANZIARIA
 				<an:p align="center">
 					<an:font size="3">DI PARTE CORRENTE</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EE1EK">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EE1EK">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -10611,7 +10611,7 @@ DI CONTO CAPITALE
 						<an:eol/>
 					</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="ELKFK">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="ELKFK">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -10875,7 +10875,7 @@ ALLA LEGGE FINANZIARIA
 				<an:p align="justify">
 					<an:font size="3">N.B.  -  Le autorizzazioni di spesa di cui alla presente Tabella riportano il riferimento alla unità previsionale di base, con il relativo codice, sotto la quale è ricompreso il capitolo.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EXUFK">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EXUFK">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -13966,7 +13966,7 @@ E DEI TRASPORTI
 				<an:p align="justify">
 					<an:font size="3">N.B. - Le autorizzazioni di spesa di cui alla presente Tabella - indicate secondo l'amministrazione pertinente - riportano il riferimento all'unità previsionale di base, con il relativo codice, sotto la quale è ricompreso il capitolo, nonché il settore della Tabella F in cui si riflettono.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EFOBM">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EFOBM">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -14962,7 +14962,7 @@ E DEI TRASPORTI
 				<an:p align="center">
 					<an:font size="3">VARIAZIONI DA APPORTARE AL BILANCIO A LEGISLAZIONE VIGENTE A SEGUITO DELLA RIDUZIONE DI AUTORIZZAZIONI LEGISLATIVE DI SPESA PRECEDENTEMENTE DISPOSTE</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EMTCM">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EMTCM">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -15283,7 +15283,7 @@ E DEI TRASPORTI
 				<an:p align="center">
 					<an:font size="3">RECATE DA LEGGI PLURIENNALI</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EDBDM">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EDBDM">
 					<an:tr>
 						<an:td>
 							<an:p align="center">

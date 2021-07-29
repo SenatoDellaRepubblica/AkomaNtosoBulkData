@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/14/Emend/S/3613/A/1.2000/main"/>
 					<an:FRBRuri value="http://dati.senato.it/14/Emend/S/3613/A/1.2000"/>
 					<an:FRBRdate date="2005-12-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/14/Emend/S/3613/A/1.2000/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/14/Emend/S/3613/A/1.2000/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2005-12-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/14/Emend/S/3613/A/1.2000/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/14/Emend/S/3613/A/1.2000/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,24 +32,24 @@
 					<an:FRBRdate date="2005-12-05" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/14/Emend/S/3613/A/1.2000/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/14/Emend/S/3613/A/1.2000/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2005-12-05" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2005-12-05"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2005-12-05" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2005-12-05" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/14/Emend/S/3613/A/1.2000/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/14/3613" id="ar1" showAs="DDL 3613"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCOrganization href="http://dati.senato.it/" id="EY" showAs="Il Governo"/>
+				<an:original id="ro1" href="http://dati.senato.it/14/Emend/S/3613/A/1.2000/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/14/3613" showAs="DDL 3613"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCOrganization id="EY" href="http://dati.senato.it/" showAs="Il Governo"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -1984,7 +1984,7 @@
 				<an:p align="center">RIDUZIONE CONSUMI INTERMEDI</an:p>
 				<an:p align="center">DOTAZIONE DELLE UNITÀ PREVISIONALI DI BASE CONCERNENTI SPESE</an:p>
 				<an:p align="center">PER CONSUMI INTERMEDI</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="ELRAG">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="ELRAG">
 					<an:tr>
 						<an:td colspan="2">
 							<an:p> </an:p>
@@ -7676,7 +7676,7 @@
 DOTAZIONI DELLE UNITÀ PREVISIONALI DI BASE CONCERNENTI SPESE PER INVESTIMENTI FISSI
 					</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="E62BK">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="E62BK">
 					<an:tr>
 						<an:td>
 							<an:p/>
@@ -10254,8 +10254,8 @@ DOTAZIONI DELLE UNITÀ PREVISIONALI DI BASE CONCERNENTI SPESE PER INVESTIMENTI F
 					<an:tr>
 						<an:td>
 							<an:p>
-								<an:div id="EQFFK" start="2" style="margin-left: 6em">
-									<an:ol id="ETFFK" start="2">
+								<an:div start="2" style="margin-left: 6em" id="EQFFK">
+									<an:ol start="2" id="ETFFK">
 										<an:li style="list-style: none; display: inline">
 											<an:p align="justify"/>
 										</an:li>
@@ -10285,7 +10285,7 @@ DOTAZIONI DELLE UNITÀ PREVISIONALI DI BASE CONCERNENTI SPESE PER INVESTIMENTI F
 					<an:tr>
 						<an:td>
 							<an:p>
-								<an:div id="EVGFK" style="margin-left: 6em">
+								<an:div style="margin-left: 6em" id="EVGFK">
 									<an:ol id="EXGFK">
 										<an:li style="list-style: none; display: inline">
 											<an:p align="justify"/>
@@ -10426,8 +10426,8 @@ DOTAZIONI DELLE UNITÀ PREVISIONALI DI BASE CONCERNENTI SPESE PER INVESTIMENTI F
 					<an:tr>
 						<an:td>
 							<an:p>
-								<an:div id="EJMFK" start="3" style="margin-left: 6em">
-									<an:ol id="EMMFK" start="3">
+								<an:div start="3" style="margin-left: 6em" id="EJMFK">
+									<an:ol start="3" id="EMMFK">
 										<an:li style="list-style: none; display: inline">
 											<an:p align="justify"/>
 										</an:li>
@@ -10482,7 +10482,7 @@ DOTAZIONI DELLE UNITÀ PREVISIONALI DI BASE CONCERNENTI SPESE PER INVESTIMENTI F
 					<an:tr>
 						<an:td>
 							<an:p>
-								<an:div id="ENOFK" style="margin-left: 6em">
+								<an:div style="margin-left: 6em" id="ENOFK">
 									<an:ol id="EPOFK">
 										<an:li style="list-style: none; display: inline">
 											<an:p align="justify"/>
@@ -10607,7 +10607,7 @@ DOTAZIONI DELLE UNITÀ PREVISIONALI DI BASE CONCERNENTI SPESE PER INVESTIMENTI F
 					<an:tr>
 						<an:td>
 							<an:p>
-								<an:div id="EITFK" style="margin-left: 6em">
+								<an:div style="margin-left: 6em" id="EITFK">
 									<an:ol id="EKTFK">
 										<an:li style="list-style: none; display: inline">
 											<an:p align="justify"/>
@@ -11265,8 +11265,8 @@ DOTAZIONI DELLE UNITÀ PREVISIONALI DI BASE CONCERNENTI SPESE PER INVESTIMENTI F
 					<an:tr>
 						<an:td>
 							<an:p>
-								<an:div id="EZNGK" start="3" style="margin-left: 6em">
-									<an:ol id="E3NGK" start="3">
+								<an:div start="3" style="margin-left: 6em" id="EZNGK">
+									<an:ol start="3" id="E3NGK">
 										<an:li style="list-style: none; display: inline">
 											<an:p align="justify"/>
 										</an:li>
@@ -11653,7 +11653,7 @@ DOTAZIONI DELLE UNITÀ PREVISIONALI DI BASE CONCERNENTI SPESE PER INVESTIMENTI F
 				<an:p align="center">
 					<an:font size="3">RIDETERMINAZIONE DELLE DOTAZIONI DI BILANCIO DELLE SPESE PER TRASFERIMENTI CORRENTI ALLE IMPRESE</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EM4GK">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EM4GK">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -14071,7 +14071,7 @@ DOTAZIONI DELLE UNITÀ PREVISIONALI DI BASE CONCERNENTI SPESE PER INVESTIMENTI F
 						<an:i>(articolo 1, comma 58)</an:i>
 					</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EW5BM">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EW5BM">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -14502,7 +14502,7 @@ DOTAZIONI DELLE UNITÀ PREVISIONALI DI BASE CONCERNENTI SPESE PER INVESTIMENTI F
 						quater), della legge n. 468 del 1978)
 					</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="E1LCM">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="E1LCM">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -15058,7 +15058,7 @@ DOTAZIONI DELLE UNITÀ PREVISIONALI DI BASE CONCERNENTI SPESE PER INVESTIMENTI F
 					<an:tr>
 						<an:td>
 							<an:p>
-								<an:ol id="ETCDM" start="4">
+								<an:ol start="4" id="ETCDM">
 									<an:li style="list-style: none; display: inline">
 										<an:p align="justify"/>
 									</an:li>
@@ -15097,7 +15097,7 @@ DOTAZIONI DELLE UNITÀ PREVISIONALI DI BASE CONCERNENTI SPESE PER INVESTIMENTI F
 					<an:tr>
 						<an:td>
 							<an:p>
-								<an:ol id="EEEDM" start="5">
+								<an:ol start="5" id="EEEDM">
 									<an:li style="list-style: none; display: inline">
 										<an:p align="justify"/>
 									</an:li>
@@ -15584,7 +15584,7 @@ DOTAZIONI DELLE UNITÀ PREVISIONALI DI BASE CONCERNENTI SPESE PER INVESTIMENTI F
 				<an:p align="center">
 					<an:font size="3">FONDI PER GLI INVESTIMENTI</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EKXDM">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EKXDM">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -16810,7 +16810,7 @@ PREVISTI DALLA LEGGE FINANZIARIA
 				<an:p align="center">
 					<an:font size="3">(Articolo 11, comma 5, della legge n. 468 del 1978)</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EMKFM">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EMKFM">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -17746,7 +17746,7 @@ PREVISTI DALLA LEGGE FINANZIARIA
 						<an:i>(in milioni di euro)</an:i>
 					</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="E1PGM">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="E1PGM">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -18967,7 +18967,7 @@ PREVISTI DALLA LEGGE FINANZIARIA
 				<an:p align="center">
 					<an:font size="3">DI PARTE CORRENTE</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="ESCIM">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="ESCIM">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -19295,7 +19295,7 @@ PREVISTI DALLA LEGGE FINANZIARIA
 				<an:p align="center">
 					<an:font size="3">DI CONTO CAPITALE</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="ECQIM">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="ECQIM">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -19469,7 +19469,7 @@ PREVISTI DALLA LEGGE FINANZIARIA
 				<an:p align="justify">
 					<an:font size="3">N.B.  -  Le autorizzazioni di spesa di cui alla presente Tabella riportano il riferimento alla unità previsionale di base, con il relativo codice, sotto la quale è ricompreso il capitolo.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EHXIM">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EHXIM">
 					<an:tr>
 						<an:td>
 							<an:p align="center">
@@ -22220,7 +22220,7 @@ PREVISTI DALLA LEGGE FINANZIARIA
 				<an:p align="justify">
 					<an:font size="3">N.B.  -  Le autorizzazioni di spesa di cui alla presente tabella - indicate secondo l'amministrazione pertinente - riportano il riferimento alla unità previsionale di base, con il relativo codice, sotto la quale è ricompreso il capitolo, nonché il settore della Tabella F in cui si riflettono.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EJHMM">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EJHMM">
 					<an:tr>
 						<an:td>
 							<an:p align="justify">
@@ -22786,7 +22786,7 @@ PREVISTI DALLA LEGGE FINANZIARIA
 				<an:p align="justify">
 					<an:font size="3">N.B.  -  Le autorizzazioni di spesa di cui alla presente Tabella - indicate secondo l'amministrazione pertinente - riportano il riferimento alla unità previsionale di base, con il relativo codice, sotto la quale è ricompreso il capitolo, nonché il settore della Tabella F in cui eventualmente si riflettono.</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EO4MM">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EO4MM">
 					<an:tr>
 						<an:td>
 							<an:p align="justify">
@@ -24810,7 +24810,7 @@ PREVISTI DALLA LEGGE FINANZIARIA
 				<an:p align="center">
 					<an:font size="3">IMPORTI DA ISCRIVERE IN BILANCIO IN RELAZIONE ALLE AUTORIZZAZIONI DI SPESA RECATE DA LEGGI PLURIENNALI</an:font>
 				</an:p>
-				<an:table border="1" cellpadding="5" cellspacing="1" id="EEPPM">
+				<an:table border="1" cellspacing="1" cellpadding="5" id="EEPPM">
 					<an:tr>
 						<an:td>
 							<an:p align="center">

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/14/Emend/S/1514/A/2.13/main"/>
 					<an:FRBRuri value="http://dati.senato.it/14/Emend/S/1514/A/2.13"/>
 					<an:FRBRdate date="2003-12-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/14/Emend/S/1514/A/2.13/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/14/Emend/S/1514/A/2.13/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2003-12-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/14/Emend/S/1514/A/2.13/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/14/Emend/S/1514/A/2.13/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2003-12-03" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/14/Emend/S/1514/A/2.13/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/14/Emend/S/1514/A/2.13/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2003-12-03" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2003-12-03"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2003-12-03" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2003-12-03" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/14/Emend/S/1514/A/2.13/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/14/1514" id="ar1" showAs="DDL 1514"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/829" id="EY" showAs="Del Pennino"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17576" id="E4" showAs="Crino'"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/524" id="ECB" showAs="Castagnetti"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/666" id="EHB" showAs="Contestabile"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/6770" id="EMB" showAs="Iannuzzi"/>
+				<an:original id="ro1" href="http://dati.senato.it/14/Emend/S/1514/A/2.13/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/14/1514" showAs="DDL 1514"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="EY" href="http://dati.senato.it/senatore/829" showAs="Del Pennino"/>
+				<an:TLCPerson id="E4" href="http://dati.senato.it/senatore/17576" showAs="Crino'"/>
+				<an:TLCPerson id="ECB" href="http://dati.senato.it/senatore/524" showAs="Castagnetti"/>
+				<an:TLCPerson id="EHB" href="http://dati.senato.it/senatore/666" showAs="Contestabile"/>
+				<an:TLCPerson id="EMB" href="http://dati.senato.it/senatore/6770" showAs="Iannuzzi"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,19 +64,19 @@
 				<an:docNumber>Emendamento n. 2.13</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EY">Del Pennino</an:docProponent>
+				<an:docProponent refersTo="#EY" as="#tipoSenatore">Del Pennino</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#E4">Crino'</an:docProponent>
+				<an:docProponent refersTo="#E4" as="#tipoSenatore">Crino'</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ECB">Castagnetti</an:docProponent>
+				<an:docProponent refersTo="#ECB" as="#tipoSenatore">Castagnetti</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EHB">Contestabile</an:docProponent>
+				<an:docProponent refersTo="#EHB" as="#tipoSenatore">Contestabile</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EMB">Iannuzzi</an:docProponent>
+				<an:docProponent refersTo="#EMB" as="#tipoSenatore">Iannuzzi</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
