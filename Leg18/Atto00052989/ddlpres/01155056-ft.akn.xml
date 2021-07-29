@@ -2,15 +2,15 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2020-05-16/1812/main"/>
 					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2020-05-16/1812"/>
 					<an:FRBRdate date="2020-05-16" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/main/allegato" id="wcomp2" name="Allegato" showAs="Allegato"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/main/allegato" id="wcomp3" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="wcomp2" href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/main/allegato" showAs="Allegato" name="Allegato"/>
+						<an:componentData id="wcomp3" href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/main/allegato" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
@@ -23,8 +23,8 @@
 					<an:FRBRdate date="2020-05-16" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato" id="ecomp2" name="Allegato" showAs="Allegato"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato" id="ecomp3" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="ecomp2" href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato" showAs="Allegato" name="Allegato"/>
+						<an:componentData id="ecomp3" href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -34,34 +34,34 @@
 					<an:FRBRdate date="2020-05-16" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato.xml" id="mcomp2" name="Allegato" showAs="Allegato"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato.xml" id="mcomp3" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="mcomp2" href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato.xml" showAs="Allegato" name="Allegato"/>
+						<an:componentData id="mcomp3" href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato.xml" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2020-05-16" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2020-05-16"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2020-05-16" id="step1" outcome="Presentazione"/>
+				<an:step id="step1" date="2020-05-16" actor="#senato" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main" id="ro1" showAs="generation"/>
-				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato" id="annex2" showAs="Allegato"/>
-				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato" id="annex3" showAs="Allegato"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="w1aab1b3b7b1b1b1b1a" showAs="Presidente del Consiglio dei ministri"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="w1aab1b3b7b1b1b1b3a" showAs="Ministro della salute"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="w1aab1b3b7b1b1b1b5a" showAs="Ministro dell'interno"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="w1aab1b3b7b1b1b1b7a" showAs="Ministro della giustizia"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="w1aab1b3b7b1b1b1b9a" showAs="Ministro dell'economia e delle finanze"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="w1aab1b3b7b1b1b1b1" showAs="CONTE"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="w1aab1b3b7b1b1b1b3" showAs="SPERANZA"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="w1aab1b3b7b1b1b1b5" showAs="LAMORGESE"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="w1aab1b3b7b1b1b1b7" showAs="BONAFEDE"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="w1aab1b3b7b1b1b1b9" showAs="GUALTIERI"/>
+				<an:original id="ro1" href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main" showAs="generation"/>
+				<an:hasAttachment id="annex2" href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato" showAs="Allegato"/>
+				<an:hasAttachment id="annex3" href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato" showAs="Allegato"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="w1aab1b3b7b1b1b1b1a" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Presidente del Consiglio dei ministri"/>
+				<an:TLCRole id="w1aab1b3b7b1b1b1b3a" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro della salute"/>
+				<an:TLCRole id="w1aab1b3b7b1b1b1b5a" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro dell'interno"/>
+				<an:TLCRole id="w1aab1b3b7b1b1b1b7a" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro della giustizia"/>
+				<an:TLCRole id="w1aab1b3b7b1b1b1b9a" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro dell'economia e delle finanze"/>
+				<an:TLCPerson id="w1aab1b3b7b1b1b1b1" href="http://dati.senato.it/osr/Persona" showAs="CONTE"/>
+				<an:TLCPerson id="w1aab1b3b7b1b1b1b3" href="http://dati.senato.it/osr/Persona" showAs="SPERANZA"/>
+				<an:TLCPerson id="w1aab1b3b7b1b1b1b5" href="http://dati.senato.it/osr/Persona" showAs="LAMORGESE"/>
+				<an:TLCPerson id="w1aab1b3b7b1b1b1b7" href="http://dati.senato.it/osr/Persona" showAs="BONAFEDE"/>
+				<an:TLCPerson id="w1aab1b3b7b1b1b1b9" href="http://dati.senato.it/osr/Persona" showAs="GUALTIERI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -80,15 +80,15 @@
                   
 			<an:p>
 				presentato dal 
-				<an:docProponent as="#w1aab1b3b7b1b1b1b1a" refersTo="#w1aab1b3b7b1b1b1b1">Presidente del Consiglio dei ministri (CONTE)</an:docProponent>
+				<an:docProponent refersTo="#w1aab1b3b7b1b1b1b1" as="#w1aab1b3b7b1b1b1b1a">Presidente del Consiglio dei ministri (CONTE)</an:docProponent>
 				e dal 
-				<an:docProponent as="#w1aab1b3b7b1b1b1b3a" refersTo="#w1aab1b3b7b1b1b1b3">Ministro della salute (SPERANZA)</an:docProponent>
+				<an:docProponent refersTo="#w1aab1b3b7b1b1b1b3" as="#w1aab1b3b7b1b1b1b3a">Ministro della salute (SPERANZA)</an:docProponent>
 				di concerto con il 
-				<an:docProponent as="#w1aab1b3b7b1b1b1b5a" refersTo="#w1aab1b3b7b1b1b1b5">Ministro dell'interno (LAMORGESE)</an:docProponent>
+				<an:docProponent refersTo="#w1aab1b3b7b1b1b1b5" as="#w1aab1b3b7b1b1b1b5a">Ministro dell'interno (LAMORGESE)</an:docProponent>
 				con il 
-				<an:docProponent as="#w1aab1b3b7b1b1b1b7a" refersTo="#w1aab1b3b7b1b1b1b7">Ministro della giustizia (BONAFEDE)</an:docProponent>
+				<an:docProponent refersTo="#w1aab1b3b7b1b1b1b7" as="#w1aab1b3b7b1b1b1b7a">Ministro della giustizia (BONAFEDE)</an:docProponent>
 				e con il 
-				<an:docProponent as="#w1aab1b3b7b1b1b1b9a" refersTo="#w1aab1b3b7b1b1b1b9">Ministro dell'economia e delle finanze (GUALTIERI)</an:docProponent>
+				<an:docProponent refersTo="#w1aab1b3b7b1b1b1b9" as="#w1aab1b3b7b1b1b1b9a">Ministro dell'economia e delle finanze (GUALTIERI)</an:docProponent>
 				
                   
 			</an:p>
@@ -103,7 +103,7 @@
 		<an:attachments>
 			<an:doc name="Altro">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2020-05-16/1812/main/allegato"/>
@@ -129,8 +129,8 @@
 						</an:FRBRManifestation>
 					</an:identification>
 					<an:references source="#redattore">
-						<an:original href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato" id="ro2" showAs="Allegato"/>
-						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main" id="mainAnx2" showAs="Main"/>
+						<an:original id="ro2" href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato" showAs="Allegato"/>
+						<an:attachmentOf id="mainAnx2" href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main" showAs="Main"/>
 					</an:references>
 				</an:meta>
 				<an:mainBody>
@@ -149,19 +149,19 @@
 			</an:doc>
 			<an:doc name="Altro">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2020-05-16/1812/main/allegato"/>
 							<an:FRBRdate date="2020-05-16" name="presentazione"/>
 							<an:FRBRauthor href="#senato"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0001.png" id="wimg118-DDL-10457_0001.png" name="" showAs="18-DDL-10457_0001.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0002.png" id="wimg218-DDL-10457_0002.png" name="" showAs="18-DDL-10457_0002.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0003.png" id="wimg318-DDL-10457_0003.png" name="" showAs="18-DDL-10457_0003.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0004.png" id="wimg418-DDL-10457_0004.png" name="" showAs="18-DDL-10457_0004.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0005.png" id="wimg518-DDL-10457_0005.png" name="" showAs="18-DDL-10457_0005.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0006.png" id="wimg618-DDL-10457_0006.png" name="" showAs="18-DDL-10457_0006.png"/>
+								<an:componentData id="wimg118-DDL-10457_0001.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0001.png" showAs="18-DDL-10457_0001.png" name=""/>
+								<an:componentData id="wimg218-DDL-10457_0002.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0002.png" showAs="18-DDL-10457_0002.png" name=""/>
+								<an:componentData id="wimg318-DDL-10457_0003.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0003.png" showAs="18-DDL-10457_0003.png" name=""/>
+								<an:componentData id="wimg418-DDL-10457_0004.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0004.png" showAs="18-DDL-10457_0004.png" name=""/>
+								<an:componentData id="wimg518-DDL-10457_0005.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0005.png" showAs="18-DDL-10457_0005.png" name=""/>
+								<an:componentData id="wimg618-DDL-10457_0006.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0006.png" showAs="18-DDL-10457_0006.png" name=""/>
 							</an:componentInfo>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/Altro"/>
@@ -174,12 +174,12 @@
 							<an:FRBRdate date="2020-05-16" name="presentazione"/>
 							<an:FRBRauthor href="#senato"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0001.png" id="eimg118-DDL-10457_0001.png" name="" showAs="18-DDL-10457_0001.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0002.png" id="eimg218-DDL-10457_0002.png" name="" showAs="18-DDL-10457_0002.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0003.png" id="eimg318-DDL-10457_0003.png" name="" showAs="18-DDL-10457_0003.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0004.png" id="eimg418-DDL-10457_0004.png" name="" showAs="18-DDL-10457_0004.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0005.png" id="eimg518-DDL-10457_0005.png" name="" showAs="18-DDL-10457_0005.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0006.png" id="eimg618-DDL-10457_0006.png" name="" showAs="18-DDL-10457_0006.png"/>
+								<an:componentData id="eimg118-DDL-10457_0001.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0001.png" showAs="18-DDL-10457_0001.png" name=""/>
+								<an:componentData id="eimg218-DDL-10457_0002.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0002.png" showAs="18-DDL-10457_0002.png" name=""/>
+								<an:componentData id="eimg318-DDL-10457_0003.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0003.png" showAs="18-DDL-10457_0003.png" name=""/>
+								<an:componentData id="eimg418-DDL-10457_0004.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0004.png" showAs="18-DDL-10457_0004.png" name=""/>
+								<an:componentData id="eimg518-DDL-10457_0005.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0005.png" showAs="18-DDL-10457_0005.png" name=""/>
+								<an:componentData id="eimg618-DDL-10457_0006.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0006.png" showAs="18-DDL-10457_0006.png" name=""/>
 							</an:componentInfo>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
@@ -189,18 +189,18 @@
 							<an:FRBRdate date="2020-05-16" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0001.png" id="mimg118-DDL-10457_0001.png" name="" showAs="18-DDL-10457_0001.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0002.png" id="mimg218-DDL-10457_0002.png" name="" showAs="18-DDL-10457_0002.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0003.png" id="mimg318-DDL-10457_0003.png" name="" showAs="18-DDL-10457_0003.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0004.png" id="mimg418-DDL-10457_0004.png" name="" showAs="18-DDL-10457_0004.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0005.png" id="mimg518-DDL-10457_0005.png" name="" showAs="18-DDL-10457_0005.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0006.png" id="mimg618-DDL-10457_0006.png" name="" showAs="18-DDL-10457_0006.png"/>
+								<an:componentData id="mimg118-DDL-10457_0001.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0001.png" showAs="18-DDL-10457_0001.png" name=""/>
+								<an:componentData id="mimg218-DDL-10457_0002.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0002.png" showAs="18-DDL-10457_0002.png" name=""/>
+								<an:componentData id="mimg318-DDL-10457_0003.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0003.png" showAs="18-DDL-10457_0003.png" name=""/>
+								<an:componentData id="mimg418-DDL-10457_0004.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0004.png" showAs="18-DDL-10457_0004.png" name=""/>
+								<an:componentData id="mimg518-DDL-10457_0005.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0005.png" showAs="18-DDL-10457_0005.png" name=""/>
+								<an:componentData id="mimg618-DDL-10457_0006.png" href="http://www.senato.it/japp/bgt/showdoc/18/DDLPRES/01155056/18-DDL-10457_0006.png" showAs="18-DDL-10457_0006.png" name=""/>
 							</an:componentInfo>
 						</an:FRBRManifestation>
 					</an:identification>
 					<an:references source="#redattore">
-						<an:original href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato" id="ro3" showAs="Allegato"/>
-						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main" id="mainAnx3" showAs="Main"/>
+						<an:original id="ro3" href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main/allegato" showAs="Allegato"/>
+						<an:attachmentOf id="mainAnx3" href="http://dati.senato.it/osr/Ddl/2020-05-16/1812/ita@/main" showAs="Main"/>
 					</an:references>
 				</an:meta>
 				<an:mainBody>
