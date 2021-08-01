@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/2124/A/G1.10/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/2124/A/G1.10"/>
 					<an:FRBRdate date="2015-11-25" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2124/A/G1.10/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/2124/A/G1.10/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2015-11-25" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2124/A/G1.10/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/2124/A/G1.10/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,33 +32,33 @@
 					<an:FRBRdate date="2015-11-25" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2124/A/G1.10/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/2124/A/G1.10/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2015-11-25" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2015-11-25"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2015-11-25" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2015-11-25" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/2124/A/G1.10/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/2124" id="ar1" showAs="DDL 2124"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29066" id="IDAKRCP" showAs="CATALFO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29127" id="IDAMWCP" showAs="MANGILI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29050" id="IDAPQCP" showAs="BLUNDO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29179" id="IDA3RCP" showAs="SERRA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29140" id="IDAFRCP" showAs="MONTEVECCHI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29154" id="IDAEXCP" showAs="PAGLINI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29117" id="IDASXCP" showAs="LEZZI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29164" id="IDARRCP" showAs="PUGLIA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29090" id="IDAVWCP" showAs="DONNO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29101" id="IDA4WCP" showAs="FUCKSIA"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/2124/A/G1.10/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/2124" showAs="DDL 2124"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDAKRCP" href="http://dati.senato.it/senatore/29066" showAs="CATALFO"/>
+				<an:TLCPerson id="IDAMWCP" href="http://dati.senato.it/senatore/29127" showAs="MANGILI"/>
+				<an:TLCPerson id="IDAPQCP" href="http://dati.senato.it/senatore/29050" showAs="BLUNDO"/>
+				<an:TLCPerson id="IDA3RCP" href="http://dati.senato.it/senatore/29179" showAs="SERRA"/>
+				<an:TLCPerson id="IDAFRCP" href="http://dati.senato.it/senatore/29140" showAs="MONTEVECCHI"/>
+				<an:TLCPerson id="IDAEXCP" href="http://dati.senato.it/senatore/29154" showAs="PAGLINI"/>
+				<an:TLCPerson id="IDASXCP" href="http://dati.senato.it/senatore/29117" showAs="LEZZI"/>
+				<an:TLCPerson id="IDARRCP" href="http://dati.senato.it/senatore/29164" showAs="PUGLIA"/>
+				<an:TLCPerson id="IDAVWCP" href="http://dati.senato.it/senatore/29090" showAs="DONNO"/>
+				<an:TLCPerson id="IDA4WCP" href="http://dati.senato.it/senatore/29101" showAs="FUCKSIA"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -69,34 +69,34 @@
 				<an:docNumber>Ordine del giorno n. G1.10</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAKRCP">CATALFO</an:docProponent>
+				<an:docProponent refersTo="#IDAKRCP" as="#tipoSenatore">CATALFO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAMWCP">MANGILI</an:docProponent>
+				<an:docProponent refersTo="#IDAMWCP" as="#tipoSenatore">MANGILI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAPQCP">BLUNDO</an:docProponent>
+				<an:docProponent refersTo="#IDAPQCP" as="#tipoSenatore">BLUNDO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDA3RCP">SERRA</an:docProponent>
+				<an:docProponent refersTo="#IDA3RCP" as="#tipoSenatore">SERRA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAFRCP">MONTEVECCHI</an:docProponent>
+				<an:docProponent refersTo="#IDAFRCP" as="#tipoSenatore">MONTEVECCHI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAEXCP">PAGLINI</an:docProponent>
+				<an:docProponent refersTo="#IDAEXCP" as="#tipoSenatore">PAGLINI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDASXCP">LEZZI</an:docProponent>
+				<an:docProponent refersTo="#IDASXCP" as="#tipoSenatore">LEZZI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDARRCP">PUGLIA</an:docProponent>
+				<an:docProponent refersTo="#IDARRCP" as="#tipoSenatore">PUGLIA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAVWCP">DONNO</an:docProponent>
+				<an:docProponent refersTo="#IDAVWCP" as="#tipoSenatore">DONNO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDA4WCP">FUCKSIA</an:docProponent>
+				<an:docProponent refersTo="#IDA4WCP" as="#tipoSenatore">FUCKSIA</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

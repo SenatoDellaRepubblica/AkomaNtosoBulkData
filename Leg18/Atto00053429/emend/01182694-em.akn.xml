@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/1994/A/10.0.90/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/1994/A/10.0.90"/>
 					<an:FRBRdate date="2020-12-16" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1994/A/10.0.90/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/1994/A/10.0.90/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2020-12-16" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1994/A/10.0.90/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/1994/A/10.0.90/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,26 +32,26 @@
 					<an:FRBRdate date="2020-12-16" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1994/A/10.0.90/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/1994/A/10.0.90/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2020-12-16" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2020-12-16"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2020-12-16" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2020-12-16" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/1994/A/10.0.90/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/1994" id="ar1" showAs="DDL 1994"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/2064" id="IDCIKGCPYIOP2YONHTB511OA1SPMUC4KSUZPBS0JMO5DVWZ1CP1K3E" showAs="ROMANI"/>
-				<an:TLCPerson href="http://dati.senato.it/32587" id="IDYA20CGISVRVMG2KWML5GAHJCVCVKGYYZEUZ5JWIGBG3CLENL5EYD" showAs="BERUTTI"/>
-				<an:TLCPerson href="http://dati.senato.it/18715" id="IDMU1ZXLWQQL4SJ0ZI0Q220O0505SER0WWJAFE5MPHMTDZ4J1WX0H" showAs="QUAGLIARIELLO"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/1994/A/10.0.90/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/1994" showAs="DDL 1994"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDCIKGCPYIOP2YONHTB511OA1SPMUC4KSUZPBS0JMO5DVWZ1CP1K3E" href="http://dati.senato.it/2064" showAs="ROMANI"/>
+				<an:TLCPerson id="IDYA20CGISVRVMG2KWML5GAHJCVCVKGYYZEUZ5JWIGBG3CLENL5EYD" href="http://dati.senato.it/32587" showAs="BERUTTI"/>
+				<an:TLCPerson id="IDMU1ZXLWQQL4SJ0ZI0Q220O0505SER0WWJAFE5MPHMTDZ4J1WX0H" href="http://dati.senato.it/18715" showAs="QUAGLIARIELLO"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -62,13 +62,13 @@
 				<an:docNumber>Emendamento n. 10.0.90</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDCIKGCPYIOP2YONHTB511OA1SPMUC4KSUZPBS0JMO5DVWZ1CP1K3E">ROMANI</an:docProponent>
+				<an:docProponent refersTo="#IDCIKGCPYIOP2YONHTB511OA1SPMUC4KSUZPBS0JMO5DVWZ1CP1K3E" as="#tipoSenatore">ROMANI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDYA20CGISVRVMG2KWML5GAHJCVCVKGYYZEUZ5JWIGBG3CLENL5EYD">BERUTTI</an:docProponent>
+				<an:docProponent refersTo="#IDYA20CGISVRVMG2KWML5GAHJCVCVKGYYZEUZ5JWIGBG3CLENL5EYD" as="#tipoSenatore">BERUTTI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDMU1ZXLWQQL4SJ0ZI0Q220O0505SER0WWJAFE5MPHMTDZ4J1WX0H">QUAGLIARIELLO</an:docProponent>
+				<an:docProponent refersTo="#IDMU1ZXLWQQL4SJ0ZI0Q220O0505SER0WWJAFE5MPHMTDZ4J1WX0H" as="#tipoSenatore">QUAGLIARIELLO</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

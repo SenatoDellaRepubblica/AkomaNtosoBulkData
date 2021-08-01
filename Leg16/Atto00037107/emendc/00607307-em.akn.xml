@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/16/Emend/S/2814/C/10.0.1/main"/>
 					<an:FRBRuri value="http://dati.senato.it/16/Emend/S/2814/C/10.0.1"/>
 					<an:FRBRdate date="2011-07-15" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/16/Emend/S/2814/C/10.0.1/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/16/Emend/S/2814/C/10.0.1/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2011-07-15" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/16/Emend/S/2814/C/10.0.1/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/16/Emend/S/2814/C/10.0.1/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,36 +32,36 @@
 					<an:FRBRdate date="2011-07-15" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/16/Emend/S/2814/C/10.0.1/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/16/Emend/S/2814/C/10.0.1/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2011-07-15" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2011-07-15"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2011-07-15" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2011-07-15" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/16/Emend/S/2814/C/10.0.1/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/16/2814" id="ar1" showAs="DDL 2814"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/5" id="commissione" showAs="Bilancio"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17685" id="EBB" showAs="D'Alia"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/991" id="EGB" showAs="Finocchiaro"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25272" id="ELB" showAs="Galioto"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/4562" id="EQB" showAs="Serra"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25223" id="EVB" showAs="Gustavino"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22792" id="E1B" showAs="Giai"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/2194" id="E6B" showAs="Sbarbati"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17849" id="EEC" showAs="Fistarol"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25221" id="EJC" showAs="Musso"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17710" id="EOC" showAs="Milana"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25238" id="ETC" showAs="De Angelis"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22772" id="EYC" showAs="Pistorio"/>
+				<an:original id="ro1" href="http://dati.senato.it/16/Emend/S/2814/C/10.0.1/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/16/2814" showAs="DDL 2814"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="Bilancio" href="/dati.senato.it/osr/Commissione/5"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="EBB" href="http://dati.senato.it/senatore/17685" showAs="D'Alia"/>
+				<an:TLCPerson id="EGB" href="http://dati.senato.it/senatore/991" showAs="Finocchiaro"/>
+				<an:TLCPerson id="ELB" href="http://dati.senato.it/senatore/25272" showAs="Galioto"/>
+				<an:TLCPerson id="EQB" href="http://dati.senato.it/senatore/4562" showAs="Serra"/>
+				<an:TLCPerson id="EVB" href="http://dati.senato.it/senatore/25223" showAs="Gustavino"/>
+				<an:TLCPerson id="E1B" href="http://dati.senato.it/senatore/22792" showAs="Giai"/>
+				<an:TLCPerson id="E6B" href="http://dati.senato.it/senatore/2194" showAs="Sbarbati"/>
+				<an:TLCPerson id="EEC" href="http://dati.senato.it/senatore/17849" showAs="Fistarol"/>
+				<an:TLCPerson id="EJC" href="http://dati.senato.it/senatore/25221" showAs="Musso"/>
+				<an:TLCPerson id="EOC" href="http://dati.senato.it/senatore/17710" showAs="Milana"/>
+				<an:TLCPerson id="ETC" href="http://dati.senato.it/senatore/25238" showAs="De Angelis"/>
+				<an:TLCPerson id="EYC" href="http://dati.senato.it/senatore/22772" showAs="Pistorio"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -72,40 +72,40 @@
 				<an:docNumber>Emendamento n. 10.0.1 (testo 2)</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EBB">D'Alia</an:docProponent>
+				<an:docProponent refersTo="#EBB" as="#tipoSenatore">D'Alia</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EGB">Finocchiaro</an:docProponent>
+				<an:docProponent refersTo="#EGB" as="#tipoSenatore">Finocchiaro</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ELB">Galioto</an:docProponent>
+				<an:docProponent refersTo="#ELB" as="#tipoSenatore">Galioto</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EQB">Serra</an:docProponent>
+				<an:docProponent refersTo="#EQB" as="#tipoSenatore">Serra</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EVB">Gustavino</an:docProponent>
+				<an:docProponent refersTo="#EVB" as="#tipoSenatore">Gustavino</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#E1B">Giai</an:docProponent>
+				<an:docProponent refersTo="#E1B" as="#tipoSenatore">Giai</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#E6B">Sbarbati</an:docProponent>
+				<an:docProponent refersTo="#E6B" as="#tipoSenatore">Sbarbati</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EEC">Fistarol</an:docProponent>
+				<an:docProponent refersTo="#EEC" as="#tipoSenatore">Fistarol</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EJC">Musso</an:docProponent>
+				<an:docProponent refersTo="#EJC" as="#tipoSenatore">Musso</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EOC">Milana</an:docProponent>
+				<an:docProponent refersTo="#EOC" as="#tipoSenatore">Milana</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ETC">De Angelis</an:docProponent>
+				<an:docProponent refersTo="#ETC" as="#tipoSenatore">De Angelis</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EYC">Pistorio</an:docProponent>
+				<an:docProponent refersTo="#EYC" as="#tipoSenatore">Pistorio</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

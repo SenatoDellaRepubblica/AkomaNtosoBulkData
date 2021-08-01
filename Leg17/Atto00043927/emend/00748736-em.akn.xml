@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/1299/A/1.77/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/1299/A/1.77"/>
 					<an:FRBRdate date="2014-02-20" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1299/A/1.77/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/1299/A/1.77/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2014-02-20" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1299/A/1.77/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/1299/A/1.77/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,31 +32,31 @@
 					<an:FRBRdate date="2014-02-20" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1299/A/1.77/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/1299/A/1.77/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2014-02-20" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2014-02-20"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2014-02-20" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2014-02-20" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/1299/A/1.77/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/1299" id="ar1" showAs="DDL 1299"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25458" id="EY" showAs="Milo"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/23035" id="E4" showAs="Pelino"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22899" id="ECB" showAs="Ceroni"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29120" id="EHB" showAs="Longo"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/1407" id="EMB" showAs="Malan"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29126" id="ERB" showAs="Mandelli"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29159" id="EWB" showAs="Perrone"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25206" id="E2B" showAs="Sciascia"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/1299/A/1.77/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/1299" showAs="DDL 1299"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="EY" href="http://dati.senato.it/senatore/25458" showAs="Milo"/>
+				<an:TLCPerson id="E4" href="http://dati.senato.it/senatore/23035" showAs="Pelino"/>
+				<an:TLCPerson id="ECB" href="http://dati.senato.it/senatore/22899" showAs="Ceroni"/>
+				<an:TLCPerson id="EHB" href="http://dati.senato.it/senatore/29120" showAs="Longo"/>
+				<an:TLCPerson id="EMB" href="http://dati.senato.it/senatore/1407" showAs="Malan"/>
+				<an:TLCPerson id="ERB" href="http://dati.senato.it/senatore/29126" showAs="Mandelli"/>
+				<an:TLCPerson id="EWB" href="http://dati.senato.it/senatore/29159" showAs="Perrone"/>
+				<an:TLCPerson id="E2B" href="http://dati.senato.it/senatore/25206" showAs="Sciascia"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -67,28 +67,28 @@
 				<an:docNumber>Emendamento n. 1.77</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EY">Milo</an:docProponent>
+				<an:docProponent refersTo="#EY" as="#tipoSenatore">Milo</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#E4">Pelino</an:docProponent>
+				<an:docProponent refersTo="#E4" as="#tipoSenatore">Pelino</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ECB">Ceroni</an:docProponent>
+				<an:docProponent refersTo="#ECB" as="#tipoSenatore">Ceroni</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EHB">Longo</an:docProponent>
+				<an:docProponent refersTo="#EHB" as="#tipoSenatore">Longo</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EMB">Malan</an:docProponent>
+				<an:docProponent refersTo="#EMB" as="#tipoSenatore">Malan</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ERB">Mandelli</an:docProponent>
+				<an:docProponent refersTo="#ERB" as="#tipoSenatore">Mandelli</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EWB">Perrone</an:docProponent>
+				<an:docProponent refersTo="#EWB" as="#tipoSenatore">Perrone</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#E2B">Sciascia</an:docProponent>
+				<an:docProponent refersTo="#E2B" as="#tipoSenatore">Sciascia</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

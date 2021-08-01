@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/2208/C/1.200/1/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/2208/C/1.200/1"/>
 					<an:FRBRdate date="2017-07-11" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2208/C/1.200/1/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/2208/C/1.200/1/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2017-07-11" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2208/C/1.200/1/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/2208/C/1.200/1/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2017-07-11" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2208/C/1.200/1/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/2208/C/1.200/1/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2017-07-11" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2017-07-11"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2017-07-11" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2017-07-11" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/2208/C/1.200/1/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/2208" id="ar1" showAs="DDL 2208"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/1" id="commissione" showAs="1ª Commissione permanente"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29146" id="IDIF5OUMXS2DJSBSPXS2SSN4KKZOOQ05N1DJ0CF5PFITUYMBE14NTI" showAs="MUSSINI"/>
-				<an:TLCPerson href="http://dati.senato.it/29181" id="IDEPUAFRIHUXMBH4D0SCZV0K1CKLMQSI2GCPMFCMJ1H4HTMJCUIH0N" showAs="SIMEONI"/>
-				<an:TLCPerson href="http://dati.senato.it/29044" id="IDXAGAS44UKHDNGP40IQQ5XLKVAKC1WNXBMSA3QMOB5IJ3ODHGT2RF" showAs="BENCINI"/>
-				<an:TLCPerson href="http://dati.senato.it/29193" id="ID2X0KRXXHQVVFKN2KJD2QTDHE3NKYFVVDVUMA2KIA4Y4N124W1CYL" showAs="VACCIANO"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/2208/C/1.200/1/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/2208" showAs="DDL 2208"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="1ª Commissione permanente" href="/dati.senato.it/osr/Commissione/1"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDIF5OUMXS2DJSBSPXS2SSN4KKZOOQ05N1DJ0CF5PFITUYMBE14NTI" href="http://dati.senato.it/29146" showAs="MUSSINI"/>
+				<an:TLCPerson id="IDEPUAFRIHUXMBH4D0SCZV0K1CKLMQSI2GCPMFCMJ1H4HTMJCUIH0N" href="http://dati.senato.it/29181" showAs="SIMEONI"/>
+				<an:TLCPerson id="IDXAGAS44UKHDNGP40IQQ5XLKVAKC1WNXBMSA3QMOB5IJ3ODHGT2RF" href="http://dati.senato.it/29044" showAs="BENCINI"/>
+				<an:TLCPerson id="ID2X0KRXXHQVVFKN2KJD2QTDHE3NKYFVVDVUMA2KIA4Y4N124W1CYL" href="http://dati.senato.it/29193" showAs="VACCIANO"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,16 +64,16 @@
 				<an:docNumber>Emendamento n. 1.200/1</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDIF5OUMXS2DJSBSPXS2SSN4KKZOOQ05N1DJ0CF5PFITUYMBE14NTI">MUSSINI</an:docProponent>
+				<an:docProponent refersTo="#IDIF5OUMXS2DJSBSPXS2SSN4KKZOOQ05N1DJ0CF5PFITUYMBE14NTI" as="#tipoSenatore">MUSSINI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDEPUAFRIHUXMBH4D0SCZV0K1CKLMQSI2GCPMFCMJ1H4HTMJCUIH0N">SIMEONI</an:docProponent>
+				<an:docProponent refersTo="#IDEPUAFRIHUXMBH4D0SCZV0K1CKLMQSI2GCPMFCMJ1H4HTMJCUIH0N" as="#tipoSenatore">SIMEONI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDXAGAS44UKHDNGP40IQQ5XLKVAKC1WNXBMSA3QMOB5IJ3ODHGT2RF">BENCINI</an:docProponent>
+				<an:docProponent refersTo="#IDXAGAS44UKHDNGP40IQQ5XLKVAKC1WNXBMSA3QMOB5IJ3ODHGT2RF" as="#tipoSenatore">BENCINI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID2X0KRXXHQVVFKN2KJD2QTDHE3NKYFVVDVUMA2KIA4Y4N124W1CYL">VACCIANO</an:docProponent>
+				<an:docProponent refersTo="#ID2X0KRXXHQVVFKN2KJD2QTDHE3NKYFVVDVUMA2KIA4Y4N124W1CYL" as="#tipoSenatore">VACCIANO</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

@@ -2,14 +2,14 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/1925/C/26.0.23/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/1925/C/26.0.23"/>
 					<an:FRBRdate date="2020-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1925/C/26.0.23/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/1925/C/26.0.23/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2020-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1925/C/26.0.23/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/1925/C/26.0.23/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,32 +32,32 @@
 					<an:FRBRdate date="2020-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1925/C/26.0.23/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/1925/C/26.0.23/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2020-10-14" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2020-10-14"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2020-10-14" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2020-10-14" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/1925/C/26.0.23/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/Ddl/18/1925" id="ar1" showAs="Ddl 1925"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32644" id="ID0E5" showAs="Barbara Guidolin"/>
-				<an:TLCPerson href="http://dati.senato.it/32674" id="ID0EIB" showAs="Simona Nunzia Nocerino"/>
-				<an:TLCPerson href="http://dati.senato.it/32667" id="ID0ESB" showAs="Susy Matrisciano"/>
-				<an:TLCPerson href="http://dati.senato.it/29164" id="ID0E3B" showAs="Sergio Puglia"/>
-				<an:TLCPerson href="http://dati.senato.it/32638" id="ID0EGC" showAs="Agnese Gallicchio"/>
-				<an:TLCPerson href="http://dati.senato.it/32696" id="ID0EQC" showAs="Vincenzo Presutto"/>
-				<an:TLCPerson href="http://dati.senato.it/34677" id="ID0E1C" showAs="Emma Pavanelli"/>
-				<an:TLCPerson href="http://dati.senato.it/29142" id="ID0EED" showAs="Vilma Moronese"/>
-				<an:TLCPerson href="http://dati.senato.it/32594" id="ID0EOD" showAs="Antonella Campagna"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/1925/C/26.0.23/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/Ddl/18/1925" showAs="Ddl 1925"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/32644" showAs="Barbara Guidolin"/>
+				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/32674" showAs="Simona Nunzia Nocerino"/>
+				<an:TLCPerson id="ID0ESB" href="http://dati.senato.it/32667" showAs="Susy Matrisciano"/>
+				<an:TLCPerson id="ID0E3B" href="http://dati.senato.it/29164" showAs="Sergio Puglia"/>
+				<an:TLCPerson id="ID0EGC" href="http://dati.senato.it/32638" showAs="Agnese Gallicchio"/>
+				<an:TLCPerson id="ID0EQC" href="http://dati.senato.it/32696" showAs="Vincenzo Presutto"/>
+				<an:TLCPerson id="ID0E1C" href="http://dati.senato.it/34677" showAs="Emma Pavanelli"/>
+				<an:TLCPerson id="ID0EED" href="http://dati.senato.it/29142" showAs="Vilma Moronese"/>
+				<an:TLCPerson id="ID0EOD" href="http://dati.senato.it/32594" showAs="Antonella Campagna"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -68,47 +68,47 @@
 				<an:docNumber>Emendamento n. 26.0.23</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0E5">
+				<an:docProponent refersTo="#ID0E5" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Guidolin</an:span>
 				</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0EIB">
+				<an:docProponent refersTo="#ID0EIB" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Nocerino</an:span>
 				</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0ESB">
+				<an:docProponent refersTo="#ID0ESB" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Matrisciano</an:span>
 				</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0E3B">
+				<an:docProponent refersTo="#ID0E3B" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Puglia</an:span>
 				</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0EGC">
+				<an:docProponent refersTo="#ID0EGC" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Gallicchio</an:span>
 				</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0EQC">
+				<an:docProponent refersTo="#ID0EQC" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Presutto</an:span>
 				</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0E1C">
+				<an:docProponent refersTo="#ID0E1C" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Pavanelli</an:span>
 				</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0EED">
+				<an:docProponent refersTo="#ID0EED" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Moronese</an:span>
 				</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0EOD">
+				<an:docProponent refersTo="#ID0EOD" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Campagna</an:span>
 				</an:docProponent>
 			</an:p>

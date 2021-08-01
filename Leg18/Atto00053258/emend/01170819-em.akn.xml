@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/1928/A/1.11/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/1928/A/1.11"/>
 					<an:FRBRdate date="2020-09-23" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1928/A/1.11/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/1928/A/1.11/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2020-09-23" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1928/A/1.11/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/1928/A/1.11/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2020-09-23" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1928/A/1.11/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/1928/A/1.11/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2020-09-23" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2020-09-23"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2020-09-23" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2020-09-23" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/1928/A/1.11/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/1928" id="ar1" showAs="DDL 1928"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/19244" id="IDEXKSVAZQG2XCIJZ5HLXAJXYS0ETD5MOP54ZLG0OPJI2KTH3LN4HF" showAs="AUGUSSORI"/>
-				<an:TLCPerson href="http://dati.senato.it/32700" id="IDWSL3ENSCFY4XG01PEWEMYMR1JB1FLPS3XBNTB2K5IZT2ZOF4SWBB" showAs="RICCARDI"/>
-				<an:TLCPerson href="http://dati.senato.it/18562" id="IDN54F31BP1LWWJRIRCKXAXOUZTPUKMFWHMQUQSRJLBRN3FK1UGOPB" showAs="PIROVANO"/>
-				<an:TLCPerson href="http://dati.senato.it/32642" id="IDMLFC4HMDHQE4CJAUOJHIVUFW5LZZFA3UG2LDZVNDVQIOVGQNSJO" showAs="GRASSI"/>
-				<an:TLCPerson href="http://dati.senato.it/422" id="IDPUMH2LMPGOOZEDWKF4XON4GAQLISANHORBDC2NEXJ5PLTLRS2VVK" showAs="CALDEROLI"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/1928/A/1.11/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/1928" showAs="DDL 1928"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDEXKSVAZQG2XCIJZ5HLXAJXYS0ETD5MOP54ZLG0OPJI2KTH3LN4HF" href="http://dati.senato.it/19244" showAs="AUGUSSORI"/>
+				<an:TLCPerson id="IDWSL3ENSCFY4XG01PEWEMYMR1JB1FLPS3XBNTB2K5IZT2ZOF4SWBB" href="http://dati.senato.it/32700" showAs="RICCARDI"/>
+				<an:TLCPerson id="IDN54F31BP1LWWJRIRCKXAXOUZTPUKMFWHMQUQSRJLBRN3FK1UGOPB" href="http://dati.senato.it/18562" showAs="PIROVANO"/>
+				<an:TLCPerson id="IDMLFC4HMDHQE4CJAUOJHIVUFW5LZZFA3UG2LDZVNDVQIOVGQNSJO" href="http://dati.senato.it/32642" showAs="GRASSI"/>
+				<an:TLCPerson id="IDPUMH2LMPGOOZEDWKF4XON4GAQLISANHORBDC2NEXJ5PLTLRS2VVK" href="http://dati.senato.it/422" showAs="CALDEROLI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,19 +64,19 @@
 				<an:docNumber>Emendamento n. 1.11</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDEXKSVAZQG2XCIJZ5HLXAJXYS0ETD5MOP54ZLG0OPJI2KTH3LN4HF">AUGUSSORI</an:docProponent>
+				<an:docProponent refersTo="#IDEXKSVAZQG2XCIJZ5HLXAJXYS0ETD5MOP54ZLG0OPJI2KTH3LN4HF" as="#tipoSenatore">AUGUSSORI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDWSL3ENSCFY4XG01PEWEMYMR1JB1FLPS3XBNTB2K5IZT2ZOF4SWBB">RICCARDI</an:docProponent>
+				<an:docProponent refersTo="#IDWSL3ENSCFY4XG01PEWEMYMR1JB1FLPS3XBNTB2K5IZT2ZOF4SWBB" as="#tipoSenatore">RICCARDI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDN54F31BP1LWWJRIRCKXAXOUZTPUKMFWHMQUQSRJLBRN3FK1UGOPB">PIROVANO</an:docProponent>
+				<an:docProponent refersTo="#IDN54F31BP1LWWJRIRCKXAXOUZTPUKMFWHMQUQSRJLBRN3FK1UGOPB" as="#tipoSenatore">PIROVANO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDMLFC4HMDHQE4CJAUOJHIVUFW5LZZFA3UG2LDZVNDVQIOVGQNSJO">GRASSI</an:docProponent>
+				<an:docProponent refersTo="#IDMLFC4HMDHQE4CJAUOJHIVUFW5LZZFA3UG2LDZVNDVQIOVGQNSJO" as="#tipoSenatore">GRASSI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDPUMH2LMPGOOZEDWKF4XON4GAQLISANHORBDC2NEXJ5PLTLRS2VVK">CALDEROLI</an:docProponent>
+				<an:docProponent refersTo="#IDPUMH2LMPGOOZEDWKF4XON4GAQLISANHORBDC2NEXJ5PLTLRS2VVK" as="#tipoSenatore">CALDEROLI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

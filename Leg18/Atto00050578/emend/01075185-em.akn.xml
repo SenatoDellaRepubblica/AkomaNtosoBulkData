@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/717-B/A/G6.71/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/717-B/A/G6.71"/>
 					<an:FRBRdate date="2018-09-21" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/717-B/A/G6.71/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/717-B/A/G6.71/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2018-09-21" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/717-B/A/G6.71/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/717-B/A/G6.71/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2018-09-21" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/717-B/A/G6.71/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/717-B/A/G6.71/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-09-21" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2018-09-21"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-09-21" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2018-09-21" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/717-B/A/G6.71/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/717-B" id="ar1" showAs="DDL 717-B"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29467" id="IDGI5VT2YQ1DH0LPIQ5DZV01TCZPPCMUGG5J3A1DKQ2EQ1M2CTRDF" showAs="MALPEZZI"/>
-				<an:TLCPerson href="http://dati.senato.it/29443" id="ID32SFT1U51LO4N1IB4C0PZZQB1KB1UCCW0A245YFI2A0YMXSA0EDJ" showAs="IORI"/>
-				<an:TLCPerson href="http://dati.senato.it/28924" id="IDJSUOLLG5VCQKBT1V5UVGMQ3BZB20MXWRX0D5IDITIG4BP2UIDQZP" showAs="VERDUCCI"/>
-				<an:TLCPerson href="http://dati.senato.it/29552" id="IDNJDV04CXYL1UGEA2HSOB0G0BYCTJHUUHJVBXMACYMTCIPYS2IQXE" showAs="RAMPI"/>
-				<an:TLCPerson href="http://dati.senato.it/29521" id="IDVQKVHKFZDXB3JDRQPJ45OHJ1NEZTM5I03V5FU1NBM4SI1PNHNA5F" showAs="PARRINI"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/717-B/A/G6.71/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/717-B" showAs="DDL 717-B"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDGI5VT2YQ1DH0LPIQ5DZV01TCZPPCMUGG5J3A1DKQ2EQ1M2CTRDF" href="http://dati.senato.it/29467" showAs="MALPEZZI"/>
+				<an:TLCPerson id="ID32SFT1U51LO4N1IB4C0PZZQB1KB1UCCW0A245YFI2A0YMXSA0EDJ" href="http://dati.senato.it/29443" showAs="IORI"/>
+				<an:TLCPerson id="IDJSUOLLG5VCQKBT1V5UVGMQ3BZB20MXWRX0D5IDITIG4BP2UIDQZP" href="http://dati.senato.it/28924" showAs="VERDUCCI"/>
+				<an:TLCPerson id="IDNJDV04CXYL1UGEA2HSOB0G0BYCTJHUUHJVBXMACYMTCIPYS2IQXE" href="http://dati.senato.it/29552" showAs="RAMPI"/>
+				<an:TLCPerson id="IDVQKVHKFZDXB3JDRQPJ45OHJ1NEZTM5I03V5FU1NBM4SI1PNHNA5F" href="http://dati.senato.it/29521" showAs="PARRINI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,19 +64,19 @@
 				<an:docNumber>Ordine del giorno n. G6.71</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDGI5VT2YQ1DH0LPIQ5DZV01TCZPPCMUGG5J3A1DKQ2EQ1M2CTRDF">MALPEZZI</an:docProponent>
+				<an:docProponent refersTo="#IDGI5VT2YQ1DH0LPIQ5DZV01TCZPPCMUGG5J3A1DKQ2EQ1M2CTRDF" as="#tipoSenatore">MALPEZZI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID32SFT1U51LO4N1IB4C0PZZQB1KB1UCCW0A245YFI2A0YMXSA0EDJ">IORI</an:docProponent>
+				<an:docProponent refersTo="#ID32SFT1U51LO4N1IB4C0PZZQB1KB1UCCW0A245YFI2A0YMXSA0EDJ" as="#tipoSenatore">IORI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDJSUOLLG5VCQKBT1V5UVGMQ3BZB20MXWRX0D5IDITIG4BP2UIDQZP">VERDUCCI</an:docProponent>
+				<an:docProponent refersTo="#IDJSUOLLG5VCQKBT1V5UVGMQ3BZB20MXWRX0D5IDITIG4BP2UIDQZP" as="#tipoSenatore">VERDUCCI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDNJDV04CXYL1UGEA2HSOB0G0BYCTJHUUHJVBXMACYMTCIPYS2IQXE">RAMPI</an:docProponent>
+				<an:docProponent refersTo="#IDNJDV04CXYL1UGEA2HSOB0G0BYCTJHUUHJVBXMACYMTCIPYS2IQXE" as="#tipoSenatore">RAMPI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDVQKVHKFZDXB3JDRQPJ45OHJ1NEZTM5I03V5FU1NBM4SI1PNHNA5F">PARRINI</an:docProponent>
+				<an:docProponent refersTo="#IDVQKVHKFZDXB3JDRQPJ45OHJ1NEZTM5I03V5FU1NBM4SI1PNHNA5F" as="#tipoSenatore">PARRINI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

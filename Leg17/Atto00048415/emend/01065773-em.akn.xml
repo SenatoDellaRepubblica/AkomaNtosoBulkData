@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/2960/A/69-BIS.500/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/2960/A/69-BIS.500"/>
 					<an:FRBRdate date="2018-02-09" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2960/A/69-BIS.500/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/2960/A/69-BIS.500/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2018-02-09" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2960/A/69-BIS.500/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/2960/A/69-BIS.500/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,27 +32,27 @@
 					<an:FRBRdate date="2018-02-09" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2960/A/69-BIS.500/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/2960/A/69-BIS.500/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-02-09" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2018-02-09"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-02-09" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2018-02-09" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/2960/A/69-BIS.500/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/2960" id="ar1" showAs="DDL 2960"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29070" id="IDA11DRVQT4UNWD02ZLD4W5HA4LGR11YMFP1SBUEEYOUMFQZAE3KIG" showAs="CIOFFI"/>
-				<an:TLCPerson href="http://dati.senato.it/29056" id="IDRVBUNESIE0XMGISGY2XAUWQVZPL4KUC2ERDEK1CIBCIALTVUIVGE" showAs="BULGARELLI"/>
-				<an:TLCPerson href="http://dati.senato.it/29117" id="IDERYDPDVXD3MODW2JTS4YUCVJBLRUJS1KNESPLXLCAWP4KGGH3V2C" showAs="LEZZI"/>
-				<an:TLCPerson href="http://dati.senato.it/29127" id="IDYX1LACBYY5ZWEXVKHOFRI1JLGHZO1YE5YQHNPPJVRG0S5XFBEBAD" showAs="MANGILI"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/2960/A/69-BIS.500/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/2960" showAs="DDL 2960"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDA11DRVQT4UNWD02ZLD4W5HA4LGR11YMFP1SBUEEYOUMFQZAE3KIG" href="http://dati.senato.it/29070" showAs="CIOFFI"/>
+				<an:TLCPerson id="IDRVBUNESIE0XMGISGY2XAUWQVZPL4KUC2ERDEK1CIBCIALTVUIVGE" href="http://dati.senato.it/29056" showAs="BULGARELLI"/>
+				<an:TLCPerson id="IDERYDPDVXD3MODW2JTS4YUCVJBLRUJS1KNESPLXLCAWP4KGGH3V2C" href="http://dati.senato.it/29117" showAs="LEZZI"/>
+				<an:TLCPerson id="IDYX1LACBYY5ZWEXVKHOFRI1JLGHZO1YE5YQHNPPJVRG0S5XFBEBAD" href="http://dati.senato.it/29127" showAs="MANGILI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -63,16 +63,16 @@
 				<an:docNumber>Emendamento n. 69-BIS.500</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDA11DRVQT4UNWD02ZLD4W5HA4LGR11YMFP1SBUEEYOUMFQZAE3KIG">CIOFFI</an:docProponent>
+				<an:docProponent refersTo="#IDA11DRVQT4UNWD02ZLD4W5HA4LGR11YMFP1SBUEEYOUMFQZAE3KIG" as="#tipoSenatore">CIOFFI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDRVBUNESIE0XMGISGY2XAUWQVZPL4KUC2ERDEK1CIBCIALTVUIVGE">BULGARELLI</an:docProponent>
+				<an:docProponent refersTo="#IDRVBUNESIE0XMGISGY2XAUWQVZPL4KUC2ERDEK1CIBCIALTVUIVGE" as="#tipoSenatore">BULGARELLI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDERYDPDVXD3MODW2JTS4YUCVJBLRUJS1KNESPLXLCAWP4KGGH3V2C">LEZZI</an:docProponent>
+				<an:docProponent refersTo="#IDERYDPDVXD3MODW2JTS4YUCVJBLRUJS1KNESPLXLCAWP4KGGH3V2C" as="#tipoSenatore">LEZZI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDYX1LACBYY5ZWEXVKHOFRI1JLGHZO1YE5YQHNPPJVRG0S5XFBEBAD">MANGILI</an:docProponent>
+				<an:docProponent refersTo="#IDYX1LACBYY5ZWEXVKHOFRI1JLGHZO1YE5YQHNPPJVRG0S5XFBEBAD" as="#tipoSenatore">MANGILI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

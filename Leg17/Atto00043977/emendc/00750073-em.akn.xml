@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/1214-B/C/13.0.1/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/1214-B/C/13.0.1"/>
 					<an:FRBRdate date="2014-02-25" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1214-B/C/13.0.1/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/1214-B/C/13.0.1/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2014-02-25" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1214-B/C/13.0.1/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/1214-B/C/13.0.1/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,25 +32,25 @@
 					<an:FRBRdate date="2014-02-25" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1214-B/C/13.0.1/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/1214-B/C/13.0.1/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2014-02-25" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2014-02-25"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2014-02-25" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2014-02-25" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/1214-B/C/13.0.1/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/1214-B" id="ar1" showAs="DDL 1214-B"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/1" id="commissione" showAs="Affari Costituzionali"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25517" id="EAB" showAs="Di Biagio"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/1214-B/C/13.0.1/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/1214-B" showAs="DDL 1214-B"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="Affari Costituzionali" href="/dati.senato.it/osr/Commissione/1"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="EAB" href="http://dati.senato.it/senatore/25517" showAs="Di Biagio"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -61,7 +61,7 @@
 				<an:docNumber>Emendamento n. 13.0.1</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EAB">Di Biagio</an:docProponent>
+				<an:docProponent refersTo="#EAB" as="#tipoSenatore">Di Biagio</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
@@ -108,14 +108,14 @@
 				<an:p> </an:p>
 				<an:p>Da compilare a cura del detentore:</an:p>
 				<an:p> </an:p>
-				<an:table border="1" cellpadding="0" cellspacing="0" id="ELC">
+				<an:table border="1" cellspacing="0" cellpadding="0" id="ELC">
 					<an:tr>
 						<an:td>
 							<an:p>Denominazione</an:p>
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1041" name="_x0000_i1041" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1041" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1041"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -125,7 +125,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1040" name="_x0000_i1040" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1040" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1040"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -135,7 +135,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1039" name="_x0000_i1039" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1039" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1039"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -145,7 +145,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1038" name="_x0000_i1038" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1038" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1038"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -155,7 +155,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1037" name="_x0000_i1037" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1037" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1037"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -165,7 +165,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1036" name="_x0000_i1036" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1036" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1036"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -175,7 +175,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1035" name="_x0000_i1035" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1035" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1035"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -185,7 +185,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1034" name="_x0000_i1034" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1034" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1034"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -195,7 +195,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1033" name="_x0000_i1033" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1033" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1033"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -203,11 +203,11 @@
 				<an:p/>
 				<an:p>Tipologie d'impianti antincendio:</an:p>
 				<an:p> </an:p>
-				<an:table border="1" cellpadding="0" cellspacing="0" id="EDH">
+				<an:table border="1" cellspacing="0" cellpadding="0" id="EDH">
 					<an:tr>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1032" name="_x0000_i1032" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1032" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1032"/>
 							</an:p>
 						</an:td>
 						<an:td>
@@ -226,7 +226,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1031" name="_x0000_i1031" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1031" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1031"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -239,7 +239,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1030" name="_x0000_i1030" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1030" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1030"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -247,7 +247,7 @@
 				<an:p/>
 				<an:p>Tipologia delle sostanze controllate</an:p>
 				<an:p> </an:p>
-				<an:table border="1" cellpadding="0" cellspacing="0" id="EIBAC">
+				<an:table border="1" cellspacing="0" cellpadding="0" id="EIBAC">
 					<an:tr>
 						<an:td>
 							<an:p> </an:p>
@@ -262,7 +262,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1029" name="_x0000_i1029" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1029" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1029"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -272,7 +272,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1028" name="_x0000_i1028" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1028" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1028"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -282,7 +282,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1027" name="_x0000_i1027" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1027" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1027"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -292,7 +292,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1026" name="_x0000_i1026" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1026" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1026"/>
 							</an:p>
 						</an:td>
 					</an:tr>
@@ -302,7 +302,7 @@
 						</an:td>
 						<an:td>
 							<an:p>
-								<an:img border="0" height="2" id="_x0000_i1025" name="_x0000_i1025" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif"/>
+								<an:img border="0" height="2" id="_x0000_i1025" src="http://www.senato.it/japp/bgt/showdoc/17/EMEND/00750073/../Allegato%20Provvisorio/FascEmend_file/image002.gif" name="_x0000_i1025"/>
 							</an:p>
 						</an:td>
 					</an:tr>

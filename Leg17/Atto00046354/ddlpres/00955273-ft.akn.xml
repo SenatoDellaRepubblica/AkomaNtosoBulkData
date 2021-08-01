@@ -2,14 +2,14 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2016-01-12/1429-D/main"/>
 					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2016-01-12/1429-D"/>
 					<an:FRBRdate date="2016-01-12" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2016-01-12/1429-D/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/osr/Ddl/2016-01-12/1429-D/main" showAs="disegno di legge" name="disegno di legge"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2016-01-12" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2016-01-12/1429-D/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/osr/Ddl/2016-01-12/1429-D/ita@/main" showAs="disegno di legge" name="disegno di legge"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2016-01-12" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2016-01-12/1429-D/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/osr/Ddl/2016-01-12/1429-D/ita@/main.xml" showAs="disegno di legge" name="disegno di legge"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2016-01-12" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2016-01-12"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2014-08-08" href="it/Ddl/2014-08-08/1429" id="step1" outcome="Presentazione"/>
-				<an:step actor="#camera" date="2015-03-10" href="it/Ddl/2015-03-10/2613" id="step2" outcome="Generica"/>
-				<an:step actor="#senato" date="2015-10-13" href="it/Ddl/2015-10-13/1429-B" id="step3" outcome="Generica"/>
-				<an:step actor="#camera" date="2016-01-11" href="it/Ddl/2016-01-11/2613-B" id="step4" outcome="Generica"/>
+				<an:step id="step1" date="2014-08-08" actor="#senato" outcome="Presentazione" href="it/Ddl/2014-08-08/1429"/>
+				<an:step id="step2" date="2015-03-10" actor="#camera" outcome="Generica" href="it/Ddl/2015-03-10/2613"/>
+				<an:step id="step3" date="2015-10-13" actor="#senato" outcome="Generica" href="it/Ddl/2015-10-13/1429-B"/>
+				<an:step id="step4" date="2016-01-11" actor="#camera" outcome="Generica" href="it/Ddl/2016-01-11/2613-B"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/osr/Ddl/2016-01-12/1429-D/ita@/main" id="ro1" showAs="generation"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d2081e15a1327" showAs="Presidente del Consiglio dei ministri"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d2081e17a1327" showAs="Ministro per le riforme costituzionali e i rapporti con il Parlamento"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/30742" id="d2081e15" showAs="RENZI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2081e17" showAs="BOSCHI"/>
+				<an:original id="ro1" href="http://dati.senato.it/osr/Ddl/2016-01-12/1429-D/ita@/main" showAs="generation"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="d2081e15a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Presidente del Consiglio dei ministri"/>
+				<an:TLCRole id="d2081e17a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro per le riforme costituzionali e i rapporti con il Parlamento"/>
+				<an:TLCPerson id="d2081e15" href="http://dati.senato.it/osr/Persona" showAs="RENZI"/>
+				<an:TLCPerson id="d2081e17" href="http://dati.senato.it/osr/Persona" showAs="BOSCHI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -69,9 +69,9 @@
 			</an:p>
 			<an:p>
 				presentato dal 
-				<an:docProponent as="#d2081e15a1327" refersTo="#d2081e15">Presidente del Consiglio dei ministri (RENZI)</an:docProponent>
+				<an:docProponent refersTo="#d2081e15" as="#d2081e15a1327">Presidente del Consiglio dei ministri (RENZI)</an:docProponent>
 				 e dal 
-				<an:docProponent as="#d2081e17a1327" refersTo="#d2081e17">Ministro per le riforme costituzionali e i rapporti con il Parlamento (BOSCHI)</an:docProponent>
+				<an:docProponent refersTo="#d2081e17" as="#d2081e17a1327">Ministro per le riforme costituzionali e i rapporti con il Parlamento (BOSCHI)</an:docProponent>
 				 
 			</an:p>
 			<an:p>

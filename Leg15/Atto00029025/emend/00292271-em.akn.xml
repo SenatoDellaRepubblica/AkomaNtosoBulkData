@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/15/Emend/S/1817/A/G54.0.100/main"/>
 					<an:FRBRuri value="http://dati.senato.it/15/Emend/S/1817/A/G54.0.100"/>
 					<an:FRBRdate date="2008-02-04" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/15/Emend/S/1817/A/G54.0.100/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/15/Emend/S/1817/A/G54.0.100/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2008-02-04" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/15/Emend/S/1817/A/G54.0.100/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/15/Emend/S/1817/A/G54.0.100/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,30 +32,30 @@
 					<an:FRBRdate date="2008-02-04" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/15/Emend/S/1817/A/G54.0.100/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/15/Emend/S/1817/A/G54.0.100/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2008-02-04" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2008-02-04"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2008-02-04" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2008-02-04" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/15/Emend/S/1817/A/G54.0.100/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/15/1817" id="ar1" showAs="DDL 1817"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17569" id="E3" showAs="Ciccanti"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/2247" id="EBB" showAs="Serafini"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17631" id="EGB" showAs="Forte"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/3886" id="ELB" showAs="Bornacin"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/2460" id="EQB" showAs="Valpiana"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17754" id="EVB" showAs="Polledri"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/403" id="E1B" showAs="Burani Procaccini"/>
+				<an:original id="ro1" href="http://dati.senato.it/15/Emend/S/1817/A/G54.0.100/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/15/1817" showAs="DDL 1817"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="E3" href="http://dati.senato.it/senatore/17569" showAs="Ciccanti"/>
+				<an:TLCPerson id="EBB" href="http://dati.senato.it/senatore/2247" showAs="Serafini"/>
+				<an:TLCPerson id="EGB" href="http://dati.senato.it/senatore/17631" showAs="Forte"/>
+				<an:TLCPerson id="ELB" href="http://dati.senato.it/senatore/3886" showAs="Bornacin"/>
+				<an:TLCPerson id="EQB" href="http://dati.senato.it/senatore/2460" showAs="Valpiana"/>
+				<an:TLCPerson id="EVB" href="http://dati.senato.it/senatore/17754" showAs="Polledri"/>
+				<an:TLCPerson id="E1B" href="http://dati.senato.it/senatore/403" showAs="Burani Procaccini"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -66,25 +66,25 @@
 				<an:docNumber>Ordine del giorno n. G54.0.100</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#E3">Ciccanti</an:docProponent>
+				<an:docProponent refersTo="#E3" as="#tipoSenatore">Ciccanti</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EBB">Serafini</an:docProponent>
+				<an:docProponent refersTo="#EBB" as="#tipoSenatore">Serafini</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EGB">Forte</an:docProponent>
+				<an:docProponent refersTo="#EGB" as="#tipoSenatore">Forte</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ELB">Bornacin</an:docProponent>
+				<an:docProponent refersTo="#ELB" as="#tipoSenatore">Bornacin</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EQB">Valpiana</an:docProponent>
+				<an:docProponent refersTo="#EQB" as="#tipoSenatore">Valpiana</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EVB">Polledri</an:docProponent>
+				<an:docProponent refersTo="#EVB" as="#tipoSenatore">Polledri</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#E1B">Burani Procaccini</an:docProponent>
+				<an:docProponent refersTo="#E1B" as="#tipoSenatore">Burani Procaccini</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

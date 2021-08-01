@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/741/A/4.33/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/741/A/4.33"/>
 					<an:FRBRdate date="2018-08-07" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/741/A/4.33/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/741/A/4.33/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2018-08-07" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/741/A/4.33/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/741/A/4.33/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2018-08-07" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/741/A/4.33/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/741/A/4.33/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-08-07" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2018-08-07"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-08-07" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2018-08-07" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/741/A/4.33/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/741" id="ar1" showAs="DDL 741"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32603" id="IDAD0N0BEFZMUWMJG4ZGDZ0BRTNGE3DGUXVT31H4PTPC0DMMX3ULEK" showAs="CIRIANI"/>
-				<an:TLCPerson href="http://dati.senato.it/31009" id="IDIDDXZSWJD4CJP5AUYXSNHVPQOFAFDADZG3IFT45NCY2HNQ1EUBB" showAs="BERTACCO"/>
-				<an:TLCPerson href="http://dati.senato.it/32613" id="IDZH4Q5RRJFIUFPY4L302IOKIFCLIGXIRSOIUYXHIM3X2AGZZYJBJI" showAs="DE BERTOLDI"/>
-				<an:TLCPerson href="http://dati.senato.it/32645" id="IDX0TOQQUMHKGWMBWFJCZURXMXTIUXKSSDEFO13KICXFDMDVUWRRKG" showAs="IANNONE"/>
-				<an:TLCPerson href="http://dati.senato.it/32650" id="IDZC20UGT5OG0OFBQ5GDWW2FTPQIIZOSMTWLFKIFIAF3PLMWBFJKEH" showAs="LA PIETRA"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/741/A/4.33/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/741" showAs="DDL 741"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDAD0N0BEFZMUWMJG4ZGDZ0BRTNGE3DGUXVT31H4PTPC0DMMX3ULEK" href="http://dati.senato.it/32603" showAs="CIRIANI"/>
+				<an:TLCPerson id="IDIDDXZSWJD4CJP5AUYXSNHVPQOFAFDADZG3IFT45NCY2HNQ1EUBB" href="http://dati.senato.it/31009" showAs="BERTACCO"/>
+				<an:TLCPerson id="IDZH4Q5RRJFIUFPY4L302IOKIFCLIGXIRSOIUYXHIM3X2AGZZYJBJI" href="http://dati.senato.it/32613" showAs="DE BERTOLDI"/>
+				<an:TLCPerson id="IDX0TOQQUMHKGWMBWFJCZURXMXTIUXKSSDEFO13KICXFDMDVUWRRKG" href="http://dati.senato.it/32645" showAs="IANNONE"/>
+				<an:TLCPerson id="IDZC20UGT5OG0OFBQ5GDWW2FTPQIIZOSMTWLFKIFIAF3PLMWBFJKEH" href="http://dati.senato.it/32650" showAs="LA PIETRA"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,19 +64,19 @@
 				<an:docNumber>Emendamento n. 4.33</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAD0N0BEFZMUWMJG4ZGDZ0BRTNGE3DGUXVT31H4PTPC0DMMX3ULEK">CIRIANI</an:docProponent>
+				<an:docProponent refersTo="#IDAD0N0BEFZMUWMJG4ZGDZ0BRTNGE3DGUXVT31H4PTPC0DMMX3ULEK" as="#tipoSenatore">CIRIANI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDIDDXZSWJD4CJP5AUYXSNHVPQOFAFDADZG3IFT45NCY2HNQ1EUBB">BERTACCO</an:docProponent>
+				<an:docProponent refersTo="#IDIDDXZSWJD4CJP5AUYXSNHVPQOFAFDADZG3IFT45NCY2HNQ1EUBB" as="#tipoSenatore">BERTACCO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDZH4Q5RRJFIUFPY4L302IOKIFCLIGXIRSOIUYXHIM3X2AGZZYJBJI">DE BERTOLDI</an:docProponent>
+				<an:docProponent refersTo="#IDZH4Q5RRJFIUFPY4L302IOKIFCLIGXIRSOIUYXHIM3X2AGZZYJBJI" as="#tipoSenatore">DE BERTOLDI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDX0TOQQUMHKGWMBWFJCZURXMXTIUXKSSDEFO13KICXFDMDVUWRRKG">IANNONE</an:docProponent>
+				<an:docProponent refersTo="#IDX0TOQQUMHKGWMBWFJCZURXMXTIUXKSSDEFO13KICXFDMDVUWRRKG" as="#tipoSenatore">IANNONE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDZC20UGT5OG0OFBQ5GDWW2FTPQIIZOSMTWLFKIFIAF3PLMWBFJKEH">LA PIETRA</an:docProponent>
+				<an:docProponent refersTo="#IDZC20UGT5OG0OFBQ5GDWW2FTPQIIZOSMTWLFKIFIAF3PLMWBFJKEH" as="#tipoSenatore">LA PIETRA</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

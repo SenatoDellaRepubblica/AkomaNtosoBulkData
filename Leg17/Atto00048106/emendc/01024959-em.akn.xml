@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/2853/C/62.24/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/2853/C/62.24"/>
 					<an:FRBRdate date="2017-06-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2853/C/62.24/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/2853/C/62.24/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2017-06-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2853/C/62.24/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/2853/C/62.24/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,30 +32,30 @@
 					<an:FRBRdate date="2017-06-14" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2853/C/62.24/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/2853/C/62.24/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2017-06-14" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2017-06-14"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2017-06-14" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2017-06-14" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/2853/C/62.24/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/2853" id="ar1" showAs="DDL 2853"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/5" id="commissione" showAs="5ª Commissione permanente"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29070" id="IDXMV05HVPYXZKHWZNYVVOQCXFCFA3W1TXTWFILBD53123GLJSPR5C" showAs="CIOFFI"/>
-				<an:TLCPerson href="http://dati.senato.it/29140" id="IDMAIMBHFCA1TOBJG0NTJIWPNFGCA25ZZRUP5XZIGDFHIPFVRHKPWO" showAs="MONTEVECCHI"/>
-				<an:TLCPerson href="http://dati.senato.it/29179" id="IDAXNXJTUP323YPI05F3J2T5AOKM0RFJMRPBVHBC1PBSOPW5UXJ4L" showAs="SERRA"/>
-				<an:TLCPerson href="http://dati.senato.it/29127" id="IDWOIKP3MLA1TMCNK52TQMYSJ5CZYXUXY104YWYBPQ2XWALGGQQND" showAs="MANGILI"/>
-				<an:TLCPerson href="http://dati.senato.it/29117" id="IDQAIEV2GVV320E045K1L14CRYBF3BFTH5VRZQYYO2PJT5KHLQPAAP" showAs="LEZZI"/>
-				<an:TLCPerson href="http://dati.senato.it/29056" id="IDEIQ0DOZ3EE5PBM2R2OYTS32EANFTB1Q4DR1NT2BT4ERVH11HNWDC" showAs="BULGARELLI"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/2853/C/62.24/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/2853" showAs="DDL 2853"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="5ª Commissione permanente" href="/dati.senato.it/osr/Commissione/5"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDXMV05HVPYXZKHWZNYVVOQCXFCFA3W1TXTWFILBD53123GLJSPR5C" href="http://dati.senato.it/29070" showAs="CIOFFI"/>
+				<an:TLCPerson id="IDMAIMBHFCA1TOBJG0NTJIWPNFGCA25ZZRUP5XZIGDFHIPFVRHKPWO" href="http://dati.senato.it/29140" showAs="MONTEVECCHI"/>
+				<an:TLCPerson id="IDAXNXJTUP323YPI05F3J2T5AOKM0RFJMRPBVHBC1PBSOPW5UXJ4L" href="http://dati.senato.it/29179" showAs="SERRA"/>
+				<an:TLCPerson id="IDWOIKP3MLA1TMCNK52TQMYSJ5CZYXUXY104YWYBPQ2XWALGGQQND" href="http://dati.senato.it/29127" showAs="MANGILI"/>
+				<an:TLCPerson id="IDQAIEV2GVV320E045K1L14CRYBF3BFTH5VRZQYYO2PJT5KHLQPAAP" href="http://dati.senato.it/29117" showAs="LEZZI"/>
+				<an:TLCPerson id="IDEIQ0DOZ3EE5PBM2R2OYTS32EANFTB1Q4DR1NT2BT4ERVH11HNWDC" href="http://dati.senato.it/29056" showAs="BULGARELLI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -66,22 +66,22 @@
 				<an:docNumber>Emendamento n. 62.24</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDXMV05HVPYXZKHWZNYVVOQCXFCFA3W1TXTWFILBD53123GLJSPR5C">CIOFFI</an:docProponent>
+				<an:docProponent refersTo="#IDXMV05HVPYXZKHWZNYVVOQCXFCFA3W1TXTWFILBD53123GLJSPR5C" as="#tipoSenatore">CIOFFI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDMAIMBHFCA1TOBJG0NTJIWPNFGCA25ZZRUP5XZIGDFHIPFVRHKPWO">MONTEVECCHI</an:docProponent>
+				<an:docProponent refersTo="#IDMAIMBHFCA1TOBJG0NTJIWPNFGCA25ZZRUP5XZIGDFHIPFVRHKPWO" as="#tipoSenatore">MONTEVECCHI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAXNXJTUP323YPI05F3J2T5AOKM0RFJMRPBVHBC1PBSOPW5UXJ4L">SERRA</an:docProponent>
+				<an:docProponent refersTo="#IDAXNXJTUP323YPI05F3J2T5AOKM0RFJMRPBVHBC1PBSOPW5UXJ4L" as="#tipoSenatore">SERRA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDWOIKP3MLA1TMCNK52TQMYSJ5CZYXUXY104YWYBPQ2XWALGGQQND">MANGILI</an:docProponent>
+				<an:docProponent refersTo="#IDWOIKP3MLA1TMCNK52TQMYSJ5CZYXUXY104YWYBPQ2XWALGGQQND" as="#tipoSenatore">MANGILI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDQAIEV2GVV320E045K1L14CRYBF3BFTH5VRZQYYO2PJT5KHLQPAAP">LEZZI</an:docProponent>
+				<an:docProponent refersTo="#IDQAIEV2GVV320E045K1L14CRYBF3BFTH5VRZQYYO2PJT5KHLQPAAP" as="#tipoSenatore">LEZZI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDEIQ0DOZ3EE5PBM2R2OYTS32EANFTB1Q4DR1NT2BT4ERVH11HNWDC">BULGARELLI</an:docProponent>
+				<an:docProponent refersTo="#IDEIQ0DOZ3EE5PBM2R2OYTS32EANFTB1Q4DR1NT2BT4ERVH11HNWDC" as="#tipoSenatore">BULGARELLI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

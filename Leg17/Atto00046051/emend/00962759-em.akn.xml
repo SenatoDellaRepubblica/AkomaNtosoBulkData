@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/2081/A/5.6017/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/2081/A/5.6017"/>
 					<an:FRBRdate date="2016-02-25" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2081/A/5.6017/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/2081/A/5.6017/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2016-02-25" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2081/A/5.6017/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/2081/A/5.6017/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,29 +32,29 @@
 					<an:FRBRdate date="2016-02-25" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2081/A/5.6017/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/2081/A/5.6017/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2016-02-25" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2016-02-25"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2016-02-25" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2016-02-25" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/2081/A/5.6017/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/2081" id="ar1" showAs="DDL 2081"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29153" id="IDAHCO4" showAs="PAGLIARI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/16924" id="IDA4AO4" showAs="CHITI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/4387" id="IDAIBO4" showAs="CORSINI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29071" id="IDAIEO4" showAs="COCIANCICH"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29157" id="IDALEO4" showAs="PARENTE"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25224" id="IDAOGO4" showAs="SANGALLI"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/2081/A/5.6017/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/2081" showAs="DDL 2081"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDAHCO4" href="http://dati.senato.it/senatore/29153" showAs="PAGLIARI"/>
+				<an:TLCPerson id="IDA4AO4" href="http://dati.senato.it/senatore/16924" showAs="CHITI"/>
+				<an:TLCPerson id="IDAIBO4" href="http://dati.senato.it/senatore/4387" showAs="CORSINI"/>
+				<an:TLCPerson id="IDAIEO4" href="http://dati.senato.it/senatore/29071" showAs="COCIANCICH"/>
+				<an:TLCPerson id="IDALEO4" href="http://dati.senato.it/senatore/29157" showAs="PARENTE"/>
+				<an:TLCPerson id="IDAOGO4" href="http://dati.senato.it/senatore/25224" showAs="SANGALLI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -65,22 +65,22 @@
 				<an:docNumber>Emendamento n. 5.6017</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAHCO4">PAGLIARI</an:docProponent>
+				<an:docProponent refersTo="#IDAHCO4" as="#tipoSenatore">PAGLIARI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDA4AO4">CHITI</an:docProponent>
+				<an:docProponent refersTo="#IDA4AO4" as="#tipoSenatore">CHITI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAIBO4">CORSINI</an:docProponent>
+				<an:docProponent refersTo="#IDAIBO4" as="#tipoSenatore">CORSINI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAIEO4">COCIANCICH</an:docProponent>
+				<an:docProponent refersTo="#IDAIEO4" as="#tipoSenatore">COCIANCICH</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDALEO4">PARENTE</an:docProponent>
+				<an:docProponent refersTo="#IDALEO4" as="#tipoSenatore">PARENTE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAOGO4">SANGALLI</an:docProponent>
+				<an:docProponent refersTo="#IDAOGO4" as="#tipoSenatore">SANGALLI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

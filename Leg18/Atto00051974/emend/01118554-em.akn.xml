@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/1374/A/1.202a/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/1374/A/1.202a"/>
 					<an:FRBRdate date="2019-07-24" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1374/A/1.202a/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/1374/A/1.202a/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2019-07-24" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1374/A/1.202a/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/1374/A/1.202a/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,27 +32,27 @@
 					<an:FRBRdate date="2019-07-24" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1374/A/1.202a/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/1374/A/1.202a/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2019-07-24" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2019-07-24"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2019-07-24" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2019-07-24" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/1374/A/1.202a/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/1374" id="ar1" showAs="DDL 1374"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32723" id="IDOCXXJKQ0YXSFB2SPILQLR02SQHGKHNND01GXAFFMG1OX0SFI3O1L" showAs="TOFFANIN"/>
-				<an:TLCPerson href="http://dati.senato.it/25199" id="ID1MCP0ZFDUHKUG5PM42FR5YZO4LEJHDTMXDJ2NEEMUDQ2SLQZZKG" showAs="PICHETTO FRATIN"/>
-				<an:TLCPerson href="http://dati.senato.it/26539" id="IDR1QUH0BEUCZKK4PJ04VR05QTHPGGN152NRDZYQU4GTB5T2JAOBE" showAs="GALLONE"/>
-				<an:TLCPerson href="http://dati.senato.it/29209" id="IDDKZIOTKBPGDEBWN1ZRX3TJWAZNRPC2NLP4ECWGPMEAQVSLAU1OFL" showAs="FLORIS"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/1374/A/1.202a/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/1374" showAs="DDL 1374"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDOCXXJKQ0YXSFB2SPILQLR02SQHGKHNND01GXAFFMG1OX0SFI3O1L" href="http://dati.senato.it/32723" showAs="TOFFANIN"/>
+				<an:TLCPerson id="ID1MCP0ZFDUHKUG5PM42FR5YZO4LEJHDTMXDJ2NEEMUDQ2SLQZZKG" href="http://dati.senato.it/25199" showAs="PICHETTO FRATIN"/>
+				<an:TLCPerson id="IDR1QUH0BEUCZKK4PJ04VR05QTHPGGN152NRDZYQU4GTB5T2JAOBE" href="http://dati.senato.it/26539" showAs="GALLONE"/>
+				<an:TLCPerson id="IDDKZIOTKBPGDEBWN1ZRX3TJWAZNRPC2NLP4ECWGPMEAQVSLAU1OFL" href="http://dati.senato.it/29209" showAs="FLORIS"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -63,16 +63,16 @@
 				<an:docNumber>Emendamento n. 1.202a</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDOCXXJKQ0YXSFB2SPILQLR02SQHGKHNND01GXAFFMG1OX0SFI3O1L">TOFFANIN</an:docProponent>
+				<an:docProponent refersTo="#IDOCXXJKQ0YXSFB2SPILQLR02SQHGKHNND01GXAFFMG1OX0SFI3O1L" as="#tipoSenatore">TOFFANIN</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID1MCP0ZFDUHKUG5PM42FR5YZO4LEJHDTMXDJ2NEEMUDQ2SLQZZKG">PICHETTO FRATIN</an:docProponent>
+				<an:docProponent refersTo="#ID1MCP0ZFDUHKUG5PM42FR5YZO4LEJHDTMXDJ2NEEMUDQ2SLQZZKG" as="#tipoSenatore">PICHETTO FRATIN</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDR1QUH0BEUCZKK4PJ04VR05QTHPGGN152NRDZYQU4GTB5T2JAOBE">GALLONE</an:docProponent>
+				<an:docProponent refersTo="#IDR1QUH0BEUCZKK4PJ04VR05QTHPGGN152NRDZYQU4GTB5T2JAOBE" as="#tipoSenatore">GALLONE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDDKZIOTKBPGDEBWN1ZRX3TJWAZNRPC2NLP4ECWGPMEAQVSLAU1OFL">FLORIS</an:docProponent>
+				<an:docProponent refersTo="#IDDKZIOTKBPGDEBWN1ZRX3TJWAZNRPC2NLP4ECWGPMEAQVSLAU1OFL" as="#tipoSenatore">FLORIS</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

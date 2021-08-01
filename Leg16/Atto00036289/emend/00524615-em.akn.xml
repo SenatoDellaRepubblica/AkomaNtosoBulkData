@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/16/Emend/S/2518/A/2.243/main"/>
 					<an:FRBRuri value="http://dati.senato.it/16/Emend/S/2518/A/2.243"/>
 					<an:FRBRdate date="2011-02-16" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/16/Emend/S/2518/A/2.243/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/16/Emend/S/2518/A/2.243/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2011-02-16" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/16/Emend/S/2518/A/2.243/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/16/Emend/S/2518/A/2.243/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,32 +32,32 @@
 					<an:FRBRdate date="2011-02-16" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/16/Emend/S/2518/A/2.243/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/16/Emend/S/2518/A/2.243/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2011-02-16" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2011-02-16"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2011-02-16" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2011-02-16" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/16/Emend/S/2518/A/2.243/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/16/2518" id="ar1" showAs="DDL 2518"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/23259" id="EY" showAs="Vimercati"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/4583" id="E4" showAs="Vita"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22740" id="ECB" showAs="Filippi"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25235" id="EHB" showAs="Ranucci"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/23267" id="EMB" showAs="Donaggio"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17597" id="ERB" showAs="Magistrelli"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/12613" id="EWB" showAs="Morri"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22167" id="E2B" showAs="Papania"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/23072" id="EAC" showAs="Sircana"/>
+				<an:original id="ro1" href="http://dati.senato.it/16/Emend/S/2518/A/2.243/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/16/2518" showAs="DDL 2518"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="EY" href="http://dati.senato.it/senatore/23259" showAs="Vimercati"/>
+				<an:TLCPerson id="E4" href="http://dati.senato.it/senatore/4583" showAs="Vita"/>
+				<an:TLCPerson id="ECB" href="http://dati.senato.it/senatore/22740" showAs="Filippi"/>
+				<an:TLCPerson id="EHB" href="http://dati.senato.it/senatore/25235" showAs="Ranucci"/>
+				<an:TLCPerson id="EMB" href="http://dati.senato.it/senatore/23267" showAs="Donaggio"/>
+				<an:TLCPerson id="ERB" href="http://dati.senato.it/senatore/17597" showAs="Magistrelli"/>
+				<an:TLCPerson id="EWB" href="http://dati.senato.it/senatore/12613" showAs="Morri"/>
+				<an:TLCPerson id="E2B" href="http://dati.senato.it/senatore/22167" showAs="Papania"/>
+				<an:TLCPerson id="EAC" href="http://dati.senato.it/senatore/23072" showAs="Sircana"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -68,31 +68,31 @@
 				<an:docNumber>Emendamento n. 2.243</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EY">Vimercati</an:docProponent>
+				<an:docProponent refersTo="#EY" as="#tipoSenatore">Vimercati</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#E4">Vita</an:docProponent>
+				<an:docProponent refersTo="#E4" as="#tipoSenatore">Vita</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ECB">Filippi</an:docProponent>
+				<an:docProponent refersTo="#ECB" as="#tipoSenatore">Filippi</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EHB">Ranucci</an:docProponent>
+				<an:docProponent refersTo="#EHB" as="#tipoSenatore">Ranucci</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EMB">Donaggio</an:docProponent>
+				<an:docProponent refersTo="#EMB" as="#tipoSenatore">Donaggio</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ERB">Magistrelli</an:docProponent>
+				<an:docProponent refersTo="#ERB" as="#tipoSenatore">Magistrelli</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EWB">Morri</an:docProponent>
+				<an:docProponent refersTo="#EWB" as="#tipoSenatore">Morri</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#E2B">Papania</an:docProponent>
+				<an:docProponent refersTo="#E2B" as="#tipoSenatore">Papania</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EAC">Sircana</an:docProponent>
+				<an:docProponent refersTo="#EAC" as="#tipoSenatore">Sircana</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

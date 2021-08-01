@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/2070/A/2.22/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/2070/A/2.22"/>
 					<an:FRBRdate date="2015-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2070/A/2.22/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/2070/A/2.22/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2015-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2070/A/2.22/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/2070/A/2.22/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,31 +32,31 @@
 					<an:FRBRdate date="2015-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2070/A/2.22/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/2070/A/2.22/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2015-10-29" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2015-10-29"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2015-10-29" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2015-10-29" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/2070/A/2.22/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/2070" id="ar1" showAs="DDL 2070"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22790" id="IDAPNDP" showAs="MICHELONI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29099" id="IDAGODP" showAs="FORNARO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22794" id="IDAYPDP" showAs="TURANO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29121" id="IDABODP" showAs="Fausto Guilherme LONGO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29105" id="IDAFNDP" showAs="GIACOBBE"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22767" id="IDAUNDP" showAs="PEGORER"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25517" id="IDAHNDP" showAs="DI BIAGIO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29196" id="IDADNDP" showAs="ZIN"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/2070/A/2.22/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/2070" showAs="DDL 2070"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDAPNDP" href="http://dati.senato.it/senatore/22790" showAs="MICHELONI"/>
+				<an:TLCPerson id="IDAGODP" href="http://dati.senato.it/senatore/29099" showAs="FORNARO"/>
+				<an:TLCPerson id="IDAYPDP" href="http://dati.senato.it/senatore/22794" showAs="TURANO"/>
+				<an:TLCPerson id="IDABODP" href="http://dati.senato.it/senatore/29121" showAs="Fausto Guilherme LONGO"/>
+				<an:TLCPerson id="IDAFNDP" href="http://dati.senato.it/senatore/29105" showAs="GIACOBBE"/>
+				<an:TLCPerson id="IDAUNDP" href="http://dati.senato.it/senatore/22767" showAs="PEGORER"/>
+				<an:TLCPerson id="IDAHNDP" href="http://dati.senato.it/senatore/25517" showAs="DI BIAGIO"/>
+				<an:TLCPerson id="IDADNDP" href="http://dati.senato.it/senatore/29196" showAs="ZIN"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -67,28 +67,28 @@
 				<an:docNumber>Emendamento n. 2.22</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAPNDP">MICHELONI</an:docProponent>
+				<an:docProponent refersTo="#IDAPNDP" as="#tipoSenatore">MICHELONI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAGODP">FORNARO</an:docProponent>
+				<an:docProponent refersTo="#IDAGODP" as="#tipoSenatore">FORNARO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAYPDP">TURANO</an:docProponent>
+				<an:docProponent refersTo="#IDAYPDP" as="#tipoSenatore">TURANO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDABODP">Fausto Guilherme LONGO</an:docProponent>
+				<an:docProponent refersTo="#IDABODP" as="#tipoSenatore">Fausto Guilherme LONGO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAFNDP">GIACOBBE</an:docProponent>
+				<an:docProponent refersTo="#IDAFNDP" as="#tipoSenatore">GIACOBBE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAUNDP">PEGORER</an:docProponent>
+				<an:docProponent refersTo="#IDAUNDP" as="#tipoSenatore">PEGORER</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAHNDP">DI BIAGIO</an:docProponent>
+				<an:docProponent refersTo="#IDAHNDP" as="#tipoSenatore">DI BIAGIO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDADNDP">ZIN</an:docProponent>
+				<an:docProponent refersTo="#IDADNDP" as="#tipoSenatore">ZIN</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

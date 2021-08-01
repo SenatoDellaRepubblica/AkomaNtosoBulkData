@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/1977/A/7.182/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/1977/A/7.182"/>
 					<an:FRBRdate date="2015-07-28" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1977/A/7.182/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/1977/A/7.182/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2015-07-28" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1977/A/7.182/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/1977/A/7.182/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,31 +32,31 @@
 					<an:FRBRdate date="2015-07-28" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1977/A/7.182/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/1977/A/7.182/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2015-07-28" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2015-07-28"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2015-07-28" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2015-07-28" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/1977/A/7.182/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/1977" id="ar1" showAs="DDL 1977"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29146" id="IDAVZG3G" showAs="MUSSINI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29149" id="IDAR2G3G" showAs="ORELLANA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29168" id="IDAY0G3G" showAs="Maurizio ROMANI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29193" id="IDA3YG3G" showAs="VACCIANO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29104" id="IDAT4G3G" showAs="GAMBARO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29044" id="IDAU4G3G" showAs="BENCINI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29139" id="IDAC2G3G" showAs="MOLINARI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29181" id="IDAW0G3G" showAs="SIMEONI"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/1977/A/7.182/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/1977" showAs="DDL 1977"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDAVZG3G" href="http://dati.senato.it/senatore/29146" showAs="MUSSINI"/>
+				<an:TLCPerson id="IDAR2G3G" href="http://dati.senato.it/senatore/29149" showAs="ORELLANA"/>
+				<an:TLCPerson id="IDAY0G3G" href="http://dati.senato.it/senatore/29168" showAs="Maurizio ROMANI"/>
+				<an:TLCPerson id="IDA3YG3G" href="http://dati.senato.it/senatore/29193" showAs="VACCIANO"/>
+				<an:TLCPerson id="IDAT4G3G" href="http://dati.senato.it/senatore/29104" showAs="GAMBARO"/>
+				<an:TLCPerson id="IDAU4G3G" href="http://dati.senato.it/senatore/29044" showAs="BENCINI"/>
+				<an:TLCPerson id="IDAC2G3G" href="http://dati.senato.it/senatore/29139" showAs="MOLINARI"/>
+				<an:TLCPerson id="IDAW0G3G" href="http://dati.senato.it/senatore/29181" showAs="SIMEONI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -67,28 +67,28 @@
 				<an:docNumber>Emendamento n. 7.182</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAVZG3G">MUSSINI</an:docProponent>
+				<an:docProponent refersTo="#IDAVZG3G" as="#tipoSenatore">MUSSINI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAR2G3G">ORELLANA</an:docProponent>
+				<an:docProponent refersTo="#IDAR2G3G" as="#tipoSenatore">ORELLANA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAY0G3G">Maurizio ROMANI</an:docProponent>
+				<an:docProponent refersTo="#IDAY0G3G" as="#tipoSenatore">Maurizio ROMANI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDA3YG3G">VACCIANO</an:docProponent>
+				<an:docProponent refersTo="#IDA3YG3G" as="#tipoSenatore">VACCIANO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAT4G3G">GAMBARO</an:docProponent>
+				<an:docProponent refersTo="#IDAT4G3G" as="#tipoSenatore">GAMBARO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAU4G3G">BENCINI</an:docProponent>
+				<an:docProponent refersTo="#IDAU4G3G" as="#tipoSenatore">BENCINI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAC2G3G">MOLINARI</an:docProponent>
+				<an:docProponent refersTo="#IDAC2G3G" as="#tipoSenatore">MOLINARI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAW0G3G">SIMEONI</an:docProponent>
+				<an:docProponent refersTo="#IDAW0G3G" as="#tipoSenatore">SIMEONI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

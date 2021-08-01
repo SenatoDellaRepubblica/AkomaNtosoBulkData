@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/1698/C/3.4109/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/1698/C/3.4109"/>
 					<an:FRBRdate date="2014-12-19" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1698/C/3.4109/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/1698/C/3.4109/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2014-12-19" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1698/C/3.4109/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/1698/C/3.4109/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,25 +32,25 @@
 					<an:FRBRdate date="2014-12-19" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1698/C/3.4109/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/1698/C/3.4109/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2014-12-19" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2014-12-19"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2014-12-19" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2014-12-19" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/1698/C/3.4109/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/1698" id="ar1" showAs="DDL 1698"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/5" id="commissione" showAs="Bilancio"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCOrganization href="http://dati.senato.it/" id="EAB" showAs="IL GOVERNO"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/1698/C/3.4109/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/1698" showAs="DDL 1698"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="Bilancio" href="/dati.senato.it/osr/Commissione/5"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCOrganization id="EAB" href="http://dati.senato.it/" showAs="IL GOVERNO"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -137,7 +137,7 @@
 				<an:p>
 					<an:i>(migliaia di Euro)</an:i>
 				</an:p>
-				<an:table border="0" cellpadding="0" cellspacing="0" id="E6C">
+				<an:table border="0" cellspacing="0" cellpadding="0" id="E6C">
 					<an:tr>
 						<an:td>
 							<an:p>
@@ -838,7 +838,7 @@
 					<an:b>Riduzione stanziamenti di bilancio accantonati ai sensi dell'articolo 12, comma 4, del decreto-legge n.35 del 2013, convertito, con modificazioni, dalla legge n.64 del 2013</an:b>
 				</an:p>
 				<an:p>(migliaia di Euro)</an:p>
-				<an:table border="0" cellpadding="0" cellspacing="0" id="ETEAE">
+				<an:table border="0" cellspacing="0" cellpadding="0" id="ETEAE">
 					<an:tr>
 						<an:td>
 							<an:p>
@@ -1168,7 +1168,7 @@
 					<an:b>Riduzione stanziamenti di bilancio accantonati ai sensi dell'articolo 12, comma 4, del decreto-legge n.35 del 2013, convertito, con modificazioni, dalla legge n.64 del 2013</an:b>
 				</an:p>
 				<an:p>(migliaia di Euro)</an:p>
-				<an:table border="0" cellpadding="0" cellspacing="0" id="ECRAE">
+				<an:table border="0" cellspacing="0" cellpadding="0" id="ECRAE">
 					<an:tr>
 						<an:td>
 							<an:p>
@@ -1420,7 +1420,7 @@
 					<an:b>Riduzione stanziamenti di bilancio accantonati ai sensi dell'articolo 12, comma 4, del decreto-legge n.35 del 2013, convertito, con modificazioni, dalla legge n.64 del 2013</an:b>
 				</an:p>
 				<an:p>(migliaia di Euro)</an:p>
-				<an:table border="0" cellpadding="0" cellspacing="0" id="EB1AE">
+				<an:table border="0" cellspacing="0" cellpadding="0" id="EB1AE">
 					<an:tr>
 						<an:td>
 							<an:p>
@@ -1561,7 +1561,7 @@
 					<an:b>Riduzione stanziamenti di bilancio accantonati ai sensi dell'articolo 12, comma 4, del decreto-legge n.35 del 2013, convertito, con modificazioni, dalla legge n.64 del 2013</an:b>
 				</an:p>
 				<an:p>(migliaia di Euro)</an:p>
-				<an:table border="0" cellpadding="0" cellspacing="0" id="E45AE">
+				<an:table border="0" cellspacing="0" cellpadding="0" id="E45AE">
 					<an:tr>
 						<an:td>
 							<an:p>
@@ -1801,7 +1801,7 @@
 					<an:b>Riduzione stanziamenti di bilancio accantonati ai sensi dell'articolo 12, comma 4, del decreto-legge n.35 del 2013, convertito, con modificazioni, dalla legge n.64 del 2013</an:b>
 				</an:p>
 				<an:p>(migliaia di Euro)</an:p>
-				<an:table border="0" cellpadding="0" cellspacing="0" id="EPHAG">
+				<an:table border="0" cellspacing="0" cellpadding="0" id="EPHAG">
 					<an:tr>
 						<an:td>
 							<an:p>
@@ -2110,7 +2110,7 @@
 					<an:b>Riduzione stanziamenti di bilancio accantonati ai sensi dell'articolo 12, comma 4, del decreto-legge n.35 del 2013, convertito, con modificazioni, dalla legge n.64 del 2013</an:b>
 				</an:p>
 				<an:p>(migliaia di Euro)</an:p>
-				<an:table border="0" cellpadding="0" cellspacing="0" id="EQSAG">
+				<an:table border="0" cellspacing="0" cellpadding="0" id="EQSAG">
 					<an:tr>
 						<an:td>
 							<an:p>
@@ -2284,7 +2284,7 @@
 					<an:b>Riduzione stanziamenti di bilancio accantonati ai sensi dell'articolo 12, comma 4, del decreto-legge n.35 del 2013, convertito, con modificazioni, dalla legge n.64 del 2013</an:b>
 				</an:p>
 				<an:p>(migliaia di Euro)</an:p>
-				<an:table border="0" cellpadding="0" cellspacing="0" id="ETYAG">
+				<an:table border="0" cellspacing="0" cellpadding="0" id="ETYAG">
 					<an:tr>
 						<an:td>
 							<an:p>
@@ -2568,7 +2568,7 @@
 					<an:b>Riduzione stanziamenti di bilancio accantonati ai sensi dell'articolo 12, comma 4, del decreto-legge n.35 del 2013, convertito, con modificazioni, dalla legge n.64 del 2013</an:b>
 				</an:p>
 				<an:p>(migliaia di Euro)</an:p>
-				<an:table border="0" cellpadding="0" cellspacing="0" id="EYCBG">
+				<an:table border="0" cellspacing="0" cellpadding="0" id="EYCBG">
 					<an:tr>
 						<an:td>
 							<an:p>
@@ -2603,7 +2603,7 @@
 						</an:td>
 					</an:tr>
 				</an:table>
-				<an:table border="1" cellpadding="0" cellspacing="0" id="E1DBG">
+				<an:table border="1" cellspacing="0" cellpadding="0" id="E1DBG">
 					<an:tr>
 						<an:td>
 							<an:p>
@@ -2755,7 +2755,7 @@
 					<an:b>Riduzione stanziamenti di bilancio accantonati ai sensi dell'articolo 12, comma 4, del decreto-legge n.35 del 2013, convertito, con modificazioni, dalla legge n.64 del 2013</an:b>
 				</an:p>
 				<an:p>(migliaia di Euro)</an:p>
-				<an:table border="0" cellpadding="0" cellspacing="0" id="ENJBG">
+				<an:table border="0" cellspacing="0" cellpadding="0" id="ENJBG">
 					<an:tr>
 						<an:td>
 							<an:p>
@@ -2973,7 +2973,7 @@
 					<an:b>Riduzione stanziamenti di bilancio accantonati ai sensi dell'articolo 12, comma 4, del decreto-legge n.35 del 2013, convertito, con modificazioni, dalla legge n.64 del 2013</an:b>
 				</an:p>
 				<an:p>(migliaia di Euro)</an:p>
-				<an:table border="0" cellpadding="0" cellspacing="0" id="EERBG">
+				<an:table border="0" cellspacing="0" cellpadding="0" id="EERBG">
 					<an:tr>
 						<an:td>
 							<an:p>
@@ -3213,7 +3213,7 @@
 					<an:b>Riduzione stanziamenti di bilancio accantonati ai sensi dell'articolo 12, comma 4, del decreto-legge n.35 del 2013, convertito, con modificazioni, dalla legge n.64 del 2013</an:b>
 				</an:p>
 				<an:p>(migliaia di Euro)</an:p>
-				<an:table border="0" cellpadding="0" cellspacing="0" id="EVZBG">
+				<an:table border="0" cellspacing="0" cellpadding="0" id="EVZBG">
 					<an:tr>
 						<an:td>
 							<an:p>

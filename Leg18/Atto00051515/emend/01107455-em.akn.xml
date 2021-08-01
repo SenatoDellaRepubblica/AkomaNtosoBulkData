@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/1165/A/G14.102/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/1165/A/G14.102"/>
 					<an:FRBRdate date="2019-04-18" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1165/A/G14.102/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/1165/A/G14.102/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2019-04-18" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1165/A/G14.102/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/1165/A/G14.102/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2019-04-18" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1165/A/G14.102/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/1165/A/G14.102/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2019-04-18" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2019-04-18"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2019-04-18" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2019-04-18" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/1165/A/G14.102/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/1165" id="ar1" showAs="DDL 1165"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29053" id="IDMYKOUFMMATLRMBX50AA1HH0CIPEDUM4ETHYF50GL3D21MJH4B1" showAs="BOTTICI"/>
-				<an:TLCPerson href="http://dati.senato.it/32652" id="IDPEC43WDHS3XIK1FKDH0CKA4OCHPBIU2PAFC4UROHR4C3TJO3AYKN" showAs="LEONE"/>
-				<an:TLCPerson href="http://dati.senato.it/17211" id="IDKKUT5FHN1DC1NK2OZHORGV0VHDSMPQNIRZWA24CLVYBHF4BMVOAL" showAs="LANNUTTI"/>
-				<an:TLCPerson href="http://dati.senato.it/32623" id="IDEC1LBO0WRRMQEBEUEC2DCJFEHPMHABVODECIUZCO2QK5DTREYQGK" showAs="DRAGO"/>
-				<an:TLCPerson href="http://dati.senato.it/32630" id="IDIOUYFEYCFEFDKEQ1NTX41PFKBDSZKYKJIYURT1CHSBFRDINJNMBI" showAs="FENU"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/1165/A/G14.102/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/1165" showAs="DDL 1165"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDMYKOUFMMATLRMBX50AA1HH0CIPEDUM4ETHYF50GL3D21MJH4B1" href="http://dati.senato.it/29053" showAs="BOTTICI"/>
+				<an:TLCPerson id="IDPEC43WDHS3XIK1FKDH0CKA4OCHPBIU2PAFC4UROHR4C3TJO3AYKN" href="http://dati.senato.it/32652" showAs="LEONE"/>
+				<an:TLCPerson id="IDKKUT5FHN1DC1NK2OZHORGV0VHDSMPQNIRZWA24CLVYBHF4BMVOAL" href="http://dati.senato.it/17211" showAs="LANNUTTI"/>
+				<an:TLCPerson id="IDEC1LBO0WRRMQEBEUEC2DCJFEHPMHABVODECIUZCO2QK5DTREYQGK" href="http://dati.senato.it/32623" showAs="DRAGO"/>
+				<an:TLCPerson id="IDIOUYFEYCFEFDKEQ1NTX41PFKBDSZKYKJIYURT1CHSBFRDINJNMBI" href="http://dati.senato.it/32630" showAs="FENU"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,19 +64,19 @@
 				<an:docNumber>Ordine del giorno n. G14.102</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDMYKOUFMMATLRMBX50AA1HH0CIPEDUM4ETHYF50GL3D21MJH4B1">BOTTICI</an:docProponent>
+				<an:docProponent refersTo="#IDMYKOUFMMATLRMBX50AA1HH0CIPEDUM4ETHYF50GL3D21MJH4B1" as="#tipoSenatore">BOTTICI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDPEC43WDHS3XIK1FKDH0CKA4OCHPBIU2PAFC4UROHR4C3TJO3AYKN">LEONE</an:docProponent>
+				<an:docProponent refersTo="#IDPEC43WDHS3XIK1FKDH0CKA4OCHPBIU2PAFC4UROHR4C3TJO3AYKN" as="#tipoSenatore">LEONE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDKKUT5FHN1DC1NK2OZHORGV0VHDSMPQNIRZWA24CLVYBHF4BMVOAL">LANNUTTI</an:docProponent>
+				<an:docProponent refersTo="#IDKKUT5FHN1DC1NK2OZHORGV0VHDSMPQNIRZWA24CLVYBHF4BMVOAL" as="#tipoSenatore">LANNUTTI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDEC1LBO0WRRMQEBEUEC2DCJFEHPMHABVODECIUZCO2QK5DTREYQGK">DRAGO</an:docProponent>
+				<an:docProponent refersTo="#IDEC1LBO0WRRMQEBEUEC2DCJFEHPMHABVODECIUZCO2QK5DTREYQGK" as="#tipoSenatore">DRAGO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDIOUYFEYCFEFDKEQ1NTX41PFKBDSZKYKJIYURT1CHSBFRDINJNMBI">FENU</an:docProponent>
+				<an:docProponent refersTo="#IDIOUYFEYCFEFDKEQ1NTX41PFKBDSZKYKJIYURT1CHSBFRDINJNMBI" as="#tipoSenatore">FENU</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

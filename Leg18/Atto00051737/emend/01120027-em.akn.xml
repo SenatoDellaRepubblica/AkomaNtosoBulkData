@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/1264/A/3.12/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/1264/A/3.12"/>
 					<an:FRBRdate date="2019-08-01" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1264/A/3.12/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/1264/A/3.12/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2019-08-01" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1264/A/3.12/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/1264/A/3.12/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2019-08-01" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1264/A/3.12/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/1264/A/3.12/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2019-08-01" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2019-08-01"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2019-08-01" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2019-08-01" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/1264/A/3.12/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/1264" id="ar1" showAs="DDL 1264"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32741" id="IDXBHBZT5FWQHVGZ00D4DCANHE4BBTOJKMVOEXAVA10NIULTZW2EI" showAs="AIMI"/>
-				<an:TLCPerson href="http://dati.senato.it/32597" id="IDNEF5LHJ150BHISO0LEBHDETHMGSABDTBLDKMRJLQNE4F0Y4TRGK" showAs="CANGINI"/>
-				<an:TLCPerson href="http://dati.senato.it/22970" id="IDJBUC3MCA1RCOK0SN101AAOPUUPDUI1HNN1UGEBEH23O1VCWKECCG" showAs="GIRO"/>
-				<an:TLCPerson href="http://dati.senato.it/32742" id="IDLYL1TTF40KFDBGUMV0CMO3V3HFUUWNDSQHIHI3FNHHPCKOPCD0EC" showAs="ALDERISI"/>
-				<an:TLCPerson href="http://dati.senato.it/18740" id="IDOSZYEHZNHST0IMHYOUEHQOOXQK2XY004NP2T0XPXDV2SQAV2PRJD" showAs="MOLES"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/1264/A/3.12/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/1264" showAs="DDL 1264"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDXBHBZT5FWQHVGZ00D4DCANHE4BBTOJKMVOEXAVA10NIULTZW2EI" href="http://dati.senato.it/32741" showAs="AIMI"/>
+				<an:TLCPerson id="IDNEF5LHJ150BHISO0LEBHDETHMGSABDTBLDKMRJLQNE4F0Y4TRGK" href="http://dati.senato.it/32597" showAs="CANGINI"/>
+				<an:TLCPerson id="IDJBUC3MCA1RCOK0SN101AAOPUUPDUI1HNN1UGEBEH23O1VCWKECCG" href="http://dati.senato.it/22970" showAs="GIRO"/>
+				<an:TLCPerson id="IDLYL1TTF40KFDBGUMV0CMO3V3HFUUWNDSQHIHI3FNHHPCKOPCD0EC" href="http://dati.senato.it/32742" showAs="ALDERISI"/>
+				<an:TLCPerson id="IDOSZYEHZNHST0IMHYOUEHQOOXQK2XY004NP2T0XPXDV2SQAV2PRJD" href="http://dati.senato.it/18740" showAs="MOLES"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,19 +64,19 @@
 				<an:docNumber>Emendamento n. 3.12</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDXBHBZT5FWQHVGZ00D4DCANHE4BBTOJKMVOEXAVA10NIULTZW2EI">AIMI</an:docProponent>
+				<an:docProponent refersTo="#IDXBHBZT5FWQHVGZ00D4DCANHE4BBTOJKMVOEXAVA10NIULTZW2EI" as="#tipoSenatore">AIMI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDNEF5LHJ150BHISO0LEBHDETHMGSABDTBLDKMRJLQNE4F0Y4TRGK">CANGINI</an:docProponent>
+				<an:docProponent refersTo="#IDNEF5LHJ150BHISO0LEBHDETHMGSABDTBLDKMRJLQNE4F0Y4TRGK" as="#tipoSenatore">CANGINI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDJBUC3MCA1RCOK0SN101AAOPUUPDUI1HNN1UGEBEH23O1VCWKECCG">GIRO</an:docProponent>
+				<an:docProponent refersTo="#IDJBUC3MCA1RCOK0SN101AAOPUUPDUI1HNN1UGEBEH23O1VCWKECCG" as="#tipoSenatore">GIRO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDLYL1TTF40KFDBGUMV0CMO3V3HFUUWNDSQHIHI3FNHHPCKOPCD0EC">ALDERISI</an:docProponent>
+				<an:docProponent refersTo="#IDLYL1TTF40KFDBGUMV0CMO3V3HFUUWNDSQHIHI3FNHHPCKOPCD0EC" as="#tipoSenatore">ALDERISI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDOSZYEHZNHST0IMHYOUEHQOOXQK2XY004NP2T0XPXDV2SQAV2PRJD">MOLES</an:docProponent>
+				<an:docProponent refersTo="#IDOSZYEHZNHST0IMHYOUEHQOOXQK2XY004NP2T0XPXDV2SQAV2PRJD" as="#tipoSenatore">MOLES</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

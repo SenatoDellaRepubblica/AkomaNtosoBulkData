@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/1429-B/A/QP2/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/1429-B/A/QP2"/>
 					<an:FRBRdate date="2015-09-17" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1429-B/A/QP2/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/1429-B/A/QP2/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2015-09-17" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1429-B/A/QP2/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/1429-B/A/QP2/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,30 +32,30 @@
 					<an:FRBRdate date="2015-09-17" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1429-B/A/QP2/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/1429-B/A/QP2/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2015-09-17" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2015-09-17"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2015-09-17" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2015-09-17" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/1429-B/A/QP2/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/1429-B" id="ar1" showAs="DDL 1429-B"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/2064" id="IDAKZJUB" showAs="Paolo ROMANI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25558" id="IDAXZJUB" showAs="BERNINI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/1407" id="IDA3ZJUB" showAs="MALAN"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/4192" id="IDASZJUB" showAs="FAZZONE"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29209" id="IDA5ZJUB" showAs="FLORIS"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/23035" id="IDAI0JUB" showAs="PELINO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/752" id="IDAO0JUB" showAs="D'ALI'"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/1429-B/A/QP2/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/1429-B" showAs="DDL 1429-B"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDAKZJUB" href="http://dati.senato.it/senatore/2064" showAs="Paolo ROMANI"/>
+				<an:TLCPerson id="IDAXZJUB" href="http://dati.senato.it/senatore/25558" showAs="BERNINI"/>
+				<an:TLCPerson id="IDA3ZJUB" href="http://dati.senato.it/senatore/1407" showAs="MALAN"/>
+				<an:TLCPerson id="IDASZJUB" href="http://dati.senato.it/senatore/4192" showAs="FAZZONE"/>
+				<an:TLCPerson id="IDA5ZJUB" href="http://dati.senato.it/senatore/29209" showAs="FLORIS"/>
+				<an:TLCPerson id="IDAI0JUB" href="http://dati.senato.it/senatore/23035" showAs="PELINO"/>
+				<an:TLCPerson id="IDAO0JUB" href="http://dati.senato.it/senatore/752" showAs="D'ALI'"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -66,25 +66,25 @@
 				<an:docNumber>Questione pregiudiziale n. QP2</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAKZJUB">Paolo ROMANI</an:docProponent>
+				<an:docProponent refersTo="#IDAKZJUB" as="#tipoSenatore">Paolo ROMANI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAXZJUB">BERNINI</an:docProponent>
+				<an:docProponent refersTo="#IDAXZJUB" as="#tipoSenatore">BERNINI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDA3ZJUB">MALAN</an:docProponent>
+				<an:docProponent refersTo="#IDA3ZJUB" as="#tipoSenatore">MALAN</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDASZJUB">FAZZONE</an:docProponent>
+				<an:docProponent refersTo="#IDASZJUB" as="#tipoSenatore">FAZZONE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDA5ZJUB">FLORIS</an:docProponent>
+				<an:docProponent refersTo="#IDA5ZJUB" as="#tipoSenatore">FLORIS</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAI0JUB">PELINO</an:docProponent>
+				<an:docProponent refersTo="#IDAI0JUB" as="#tipoSenatore">PELINO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAO0JUB">D'ALI'</an:docProponent>
+				<an:docProponent refersTo="#IDAO0JUB" as="#tipoSenatore">D'ALI'</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

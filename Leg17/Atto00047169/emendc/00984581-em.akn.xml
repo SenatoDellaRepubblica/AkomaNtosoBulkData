@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/2495/C/21.15/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/2495/C/21.15"/>
 					<an:FRBRdate date="2016-08-02" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2495/C/21.15/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/2495/C/21.15/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2016-08-02" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2495/C/21.15/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/2495/C/21.15/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,29 +32,29 @@
 					<an:FRBRdate date="2016-08-02" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2495/C/21.15/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/2495/C/21.15/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2016-08-02" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2016-08-02"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2016-08-02" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2016-08-02" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/2495/C/21.15/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/2495" id="ar1" showAs="DDL 2495"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/5" id="commissione" showAs="5ª Commissione permanente"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29189" id="IDECVI44PHBGRQPKQXK3NBIHSJQIAKQFRC05NF4VKQ2BKXMYMBS2FM" showAs="TAVERNA"/>
-				<an:TLCPerson href="http://dati.senato.it/29102" id="IDSOWFPTTJBLLXI1KMCINWHEX5ZFM2L2JGB1YR3XHOIETQXAM0RDPG" showAs="GAETTI"/>
-				<an:TLCPerson href="http://dati.senato.it/29056" id="IDH1UYMQUQ5UYHK5NBUI2HJJ4SEFPRQGJ5PCI2F2BWBOCYVIYGVMNE" showAs="BULGARELLI"/>
-				<an:TLCPerson href="http://dati.senato.it/29127" id="IDYVHVLSPFPTPEH053N5LJRU54THY4NOEOXTU5CHBBGAFTAXAVZ0WF" showAs="MANGILI"/>
-				<an:TLCPerson href="http://dati.senato.it/29117" id="IDIOOK5JIWALJ0IIW5EHB2GBCE5I1UZLP3BJESPCOYV0V1LCTHVWWM" showAs="LEZZI"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/2495/C/21.15/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/2495" showAs="DDL 2495"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="5ª Commissione permanente" href="/dati.senato.it/osr/Commissione/5"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDECVI44PHBGRQPKQXK3NBIHSJQIAKQFRC05NF4VKQ2BKXMYMBS2FM" href="http://dati.senato.it/29189" showAs="TAVERNA"/>
+				<an:TLCPerson id="IDSOWFPTTJBLLXI1KMCINWHEX5ZFM2L2JGB1YR3XHOIETQXAM0RDPG" href="http://dati.senato.it/29102" showAs="GAETTI"/>
+				<an:TLCPerson id="IDH1UYMQUQ5UYHK5NBUI2HJJ4SEFPRQGJ5PCI2F2BWBOCYVIYGVMNE" href="http://dati.senato.it/29056" showAs="BULGARELLI"/>
+				<an:TLCPerson id="IDYVHVLSPFPTPEH053N5LJRU54THY4NOEOXTU5CHBBGAFTAXAVZ0WF" href="http://dati.senato.it/29127" showAs="MANGILI"/>
+				<an:TLCPerson id="IDIOOK5JIWALJ0IIW5EHB2GBCE5I1UZLP3BJESPCOYV0V1LCTHVWWM" href="http://dati.senato.it/29117" showAs="LEZZI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -65,19 +65,19 @@
 				<an:docNumber>Emendamento n. 21.15</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDECVI44PHBGRQPKQXK3NBIHSJQIAKQFRC05NF4VKQ2BKXMYMBS2FM">TAVERNA</an:docProponent>
+				<an:docProponent refersTo="#IDECVI44PHBGRQPKQXK3NBIHSJQIAKQFRC05NF4VKQ2BKXMYMBS2FM" as="#tipoSenatore">TAVERNA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDSOWFPTTJBLLXI1KMCINWHEX5ZFM2L2JGB1YR3XHOIETQXAM0RDPG">GAETTI</an:docProponent>
+				<an:docProponent refersTo="#IDSOWFPTTJBLLXI1KMCINWHEX5ZFM2L2JGB1YR3XHOIETQXAM0RDPG" as="#tipoSenatore">GAETTI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDH1UYMQUQ5UYHK5NBUI2HJJ4SEFPRQGJ5PCI2F2BWBOCYVIYGVMNE">BULGARELLI</an:docProponent>
+				<an:docProponent refersTo="#IDH1UYMQUQ5UYHK5NBUI2HJJ4SEFPRQGJ5PCI2F2BWBOCYVIYGVMNE" as="#tipoSenatore">BULGARELLI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDYVHVLSPFPTPEH053N5LJRU54THY4NOEOXTU5CHBBGAFTAXAVZ0WF">MANGILI</an:docProponent>
+				<an:docProponent refersTo="#IDYVHVLSPFPTPEH053N5LJRU54THY4NOEOXTU5CHBBGAFTAXAVZ0WF" as="#tipoSenatore">MANGILI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDIOOK5JIWALJ0IIW5EHB2GBCE5I1UZLP3BJESPCOYV0V1LCTHVWWM">LEZZI</an:docProponent>
+				<an:docProponent refersTo="#IDIOOK5JIWALJ0IIW5EHB2GBCE5I1UZLP3BJESPCOYV0V1LCTHVWWM" as="#tipoSenatore">LEZZI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

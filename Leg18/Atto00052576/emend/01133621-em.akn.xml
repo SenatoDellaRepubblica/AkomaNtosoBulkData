@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/1631/A/9.0.4/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/1631/A/9.0.4"/>
 					<an:FRBRdate date="2019-12-11" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1631/A/9.0.4/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/1631/A/9.0.4/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2019-12-11" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1631/A/9.0.4/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/1631/A/9.0.4/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,27 +32,27 @@
 					<an:FRBRdate date="2019-12-11" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1631/A/9.0.4/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/1631/A/9.0.4/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2019-12-11" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2019-12-11"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2019-12-11" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2019-12-11" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/1631/A/9.0.4/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/1631" id="ar1" showAs="DDL 1631"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32682" id="IDMH50WN3MXRRBBVPP2IP11U3KGNEPY5I2T52AWOJZ2KQDYC5N2VAL" showAs="PAZZAGLINI"/>
-				<an:TLCPerson href="http://dati.senato.it/29039" id="IDP03YFBRD21VWGFNSV4CA3WFUKIKGLKI1CAQJVSJQEEL0D03ZWFGG" showAs="ARRIGONI"/>
-				<an:TLCPerson href="http://dati.senato.it/32593" id="IDQJFRS3GBK0ONDPL0WATGDKM1YMF5PEMORW0ZZMEZ0YFSSWLVRYAK" showAs="BRIZIARELLI"/>
-				<an:TLCPerson href="http://dati.senato.it/32743" id="IDOVS0YIRTSFOYLWIDW5T5WZDD1ERHSSD44P3UQFMI3MVJ4E45RACJ" showAs="BRUZZONE"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/1631/A/9.0.4/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/1631" showAs="DDL 1631"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDMH50WN3MXRRBBVPP2IP11U3KGNEPY5I2T52AWOJZ2KQDYC5N2VAL" href="http://dati.senato.it/32682" showAs="PAZZAGLINI"/>
+				<an:TLCPerson id="IDP03YFBRD21VWGFNSV4CA3WFUKIKGLKI1CAQJVSJQEEL0D03ZWFGG" href="http://dati.senato.it/29039" showAs="ARRIGONI"/>
+				<an:TLCPerson id="IDQJFRS3GBK0ONDPL0WATGDKM1YMF5PEMORW0ZZMEZ0YFSSWLVRYAK" href="http://dati.senato.it/32593" showAs="BRIZIARELLI"/>
+				<an:TLCPerson id="IDOVS0YIRTSFOYLWIDW5T5WZDD1ERHSSD44P3UQFMI3MVJ4E45RACJ" href="http://dati.senato.it/32743" showAs="BRUZZONE"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -63,16 +63,16 @@
 				<an:docNumber>Emendamento n. 9.0.4</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDMH50WN3MXRRBBVPP2IP11U3KGNEPY5I2T52AWOJZ2KQDYC5N2VAL">PAZZAGLINI</an:docProponent>
+				<an:docProponent refersTo="#IDMH50WN3MXRRBBVPP2IP11U3KGNEPY5I2T52AWOJZ2KQDYC5N2VAL" as="#tipoSenatore">PAZZAGLINI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDP03YFBRD21VWGFNSV4CA3WFUKIKGLKI1CAQJVSJQEEL0D03ZWFGG">ARRIGONI</an:docProponent>
+				<an:docProponent refersTo="#IDP03YFBRD21VWGFNSV4CA3WFUKIKGLKI1CAQJVSJQEEL0D03ZWFGG" as="#tipoSenatore">ARRIGONI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDQJFRS3GBK0ONDPL0WATGDKM1YMF5PEMORW0ZZMEZ0YFSSWLVRYAK">BRIZIARELLI</an:docProponent>
+				<an:docProponent refersTo="#IDQJFRS3GBK0ONDPL0WATGDKM1YMF5PEMORW0ZZMEZ0YFSSWLVRYAK" as="#tipoSenatore">BRIZIARELLI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDOVS0YIRTSFOYLWIDW5T5WZDD1ERHSSD44P3UQFMI3MVJ4E45RACJ">BRUZZONE</an:docProponent>
+				<an:docProponent refersTo="#IDOVS0YIRTSFOYLWIDW5T5WZDD1ERHSSD44P3UQFMI3MVJ4E45RACJ" as="#tipoSenatore">BRUZZONE</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/2960/A/46.0.5/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/2960/A/46.0.5"/>
 					<an:FRBRdate date="2018-02-09" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2960/A/46.0.5/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/2960/A/46.0.5/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2018-02-09" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2960/A/46.0.5/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/2960/A/46.0.5/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,24 +32,24 @@
 					<an:FRBRdate date="2018-02-09" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2960/A/46.0.5/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/2960/A/46.0.5/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-02-09" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2018-02-09"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-02-09" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2018-02-09" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/2960/A/46.0.5/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/2960" id="ar1" showAs="DDL 2960"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/17805" id="IDBURHRM0ATSTCLPQSTY5OYJ0F5FXZLVKOYYZS0VHQWL2SMSER5ZSL" showAs="VICECONTE"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/2960/A/46.0.5/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/2960" showAs="DDL 2960"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDBURHRM0ATSTCLPQSTY5OYJ0F5FXZLVKOYYZS0VHQWL2SMSER5ZSL" href="http://dati.senato.it/17805" showAs="VICECONTE"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -60,7 +60,7 @@
 				<an:docNumber>Emendamento n. 46.0.5</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDBURHRM0ATSTCLPQSTY5OYJ0F5FXZLVKOYYZS0VHQWL2SMSER5ZSL">VICECONTE</an:docProponent>
+				<an:docProponent refersTo="#IDBURHRM0ATSTCLPQSTY5OYJ0F5FXZLVKOYYZS0VHQWL2SMSER5ZSL" as="#tipoSenatore">VICECONTE</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
@@ -87,7 +87,7 @@
 				<an:p>        4. Per l'attuazione delle disposizioni di cui ai commi precedenti è autorizzata la spesa di euro 1.255.534 per l'anno 2018, di euro 2.511.067 per l'anno 2019 e di euro 2.587.276 a decorrere dall'anno 2020. Ai maggiori oneri derivanti dal presente articolo, pari a 1.255.534 per l'anno 2018, di euro 2.511.067 per l'anno 2019 e di euro 2.587.276 a decorrere dall'anno 2020 si provvede mediante corrispondente riduzione della dotazione del Fondo di cui all'articolo 1, comma 200, della legge 23 dicembre 2014, n. 190, come incrementato dall'articolo 92 della presente legge».</an:p>
 				<an:p>Allegati</an:p>
 				<an:p>Tabella I (articolo 16, comma 9)</an:p>
-				<an:table border="0" cellpadding="3" cellspacing="0" id="IDFMR3AXGIBKQDNZJKTRQB3YC4XM4WL3MDC2HKOHO0SGU3SODD1D1H">
+				<an:table border="0" cellspacing="0" cellpadding="3" id="IDFMR3AXGIBKQDNZJKTRQB3YC4XM4WL3MDC2HKOHO0SGU3SODD1D1H">
 					<an:tr>
 						<an:td colspan="2">
 							<an:p>Ministero della Giustizia</an:p>
@@ -156,7 +156,7 @@
 					</an:tr>
 				</an:table>
 				<an:p>Tabella II (articolo 16, comma 1 e 9)</an:p>
-				<an:table border="0" cellpadding="3" cellspacing="0" id="IDROL2150FP1NRE0HEZ0P0R4X1LLUBRY1JBURZSPJI20SLYUYUTSYN">
+				<an:table border="0" cellspacing="0" cellpadding="3" id="IDROL2150FP1NRE0HEZ0P0R4X1LLUBRY1JBURZSPJI20SLYUYUTSYN">
 					<an:tr>
 						<an:td colspan="2">
 							<an:p>Ministero della Giustizia</an:p>

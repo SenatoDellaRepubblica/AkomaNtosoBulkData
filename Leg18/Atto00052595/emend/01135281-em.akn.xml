@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/1638/A/G33-bis.100/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/1638/A/G33-bis.100"/>
 					<an:FRBRdate date="2019-12-17" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1638/A/G33-bis.100/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/1638/A/G33-bis.100/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2019-12-17" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1638/A/G33-bis.100/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/1638/A/G33-bis.100/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,31 +32,31 @@
 					<an:FRBRdate date="2019-12-17" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1638/A/G33-bis.100/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/1638/A/G33-bis.100/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2019-12-17" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2019-12-17"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2019-12-17" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2019-12-17" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/1638/A/G33-bis.100/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/1638" id="ar1" showAs="DDL 1638"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32576" id="ID4NJW3LTLGIBNBGVK2HLVTLPBBFJUNAHOTCBL23MGRMWAZ1OOY4KJ" showAs="ABATE"/>
-				<an:TLCPerson href="http://dati.senato.it/32725" id="IDR3TC5F2RWFDBECI3AYHWGF4YOPGCV2AMVWDNIHBYBZTP1ZSJCJJI" showAs="TRENTACOSTE"/>
-				<an:TLCPerson href="http://dati.senato.it/32672" id="IDN3CRTMJUSQ2SN2KQ2W2AX0X0LFUNXBLZ35Q0LSIVTUILBB1UGFFJ" showAs="MOLLAME"/>
-				<an:TLCPerson href="http://dati.senato.it/32673" id="ID2GLK5XZF2XMWBPFYK4ODOJR2UIMOLPTTQWTJ0TKX1FJPJFAXQUFK" showAs="NATURALE"/>
-				<an:TLCPerson href="http://dati.senato.it/29248" id="IDMM5BG5UUUKBPOCRZ2NOVIX5JRIZAVWJAZEAJTWD3TMPIWWK4KDBC" showAs="AGOSTINELLI"/>
-				<an:TLCPerson href="http://dati.senato.it/17211" id="IDOWAXJ53IOAHCPFYKGTCKZCJO3EANPJX3TVEDM0FL3NBOKE13JSJJ" showAs="LANNUTTI"/>
-				<an:TLCPerson href="http://dati.senato.it/32675" id="ID5WGXUZ2SIUGKB0LTKRKJZADUEJTYL5GR5W0EF0KTRAKZ10NIPCBI" showAs="ORTIS"/>
-				<an:TLCPerson href="http://dati.senato.it/29090" id="IDTKVUBO5GDOVZCH20XGTE3TTUBDOGTEC1AFGIG2BG3DCIV34DY5FK" showAs="DONNO"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/1638/A/G33-bis.100/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/1638" showAs="DDL 1638"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="ID4NJW3LTLGIBNBGVK2HLVTLPBBFJUNAHOTCBL23MGRMWAZ1OOY4KJ" href="http://dati.senato.it/32576" showAs="ABATE"/>
+				<an:TLCPerson id="IDR3TC5F2RWFDBECI3AYHWGF4YOPGCV2AMVWDNIHBYBZTP1ZSJCJJI" href="http://dati.senato.it/32725" showAs="TRENTACOSTE"/>
+				<an:TLCPerson id="IDN3CRTMJUSQ2SN2KQ2W2AX0X0LFUNXBLZ35Q0LSIVTUILBB1UGFFJ" href="http://dati.senato.it/32672" showAs="MOLLAME"/>
+				<an:TLCPerson id="ID2GLK5XZF2XMWBPFYK4ODOJR2UIMOLPTTQWTJ0TKX1FJPJFAXQUFK" href="http://dati.senato.it/32673" showAs="NATURALE"/>
+				<an:TLCPerson id="IDMM5BG5UUUKBPOCRZ2NOVIX5JRIZAVWJAZEAJTWD3TMPIWWK4KDBC" href="http://dati.senato.it/29248" showAs="AGOSTINELLI"/>
+				<an:TLCPerson id="IDOWAXJ53IOAHCPFYKGTCKZCJO3EANPJX3TVEDM0FL3NBOKE13JSJJ" href="http://dati.senato.it/17211" showAs="LANNUTTI"/>
+				<an:TLCPerson id="ID5WGXUZ2SIUGKB0LTKRKJZADUEJTYL5GR5W0EF0KTRAKZ10NIPCBI" href="http://dati.senato.it/32675" showAs="ORTIS"/>
+				<an:TLCPerson id="IDTKVUBO5GDOVZCH20XGTE3TTUBDOGTEC1AFGIG2BG3DCIV34DY5FK" href="http://dati.senato.it/29090" showAs="DONNO"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -67,28 +67,28 @@
 				<an:docNumber>Ordine del giorno n. G33-bis.100</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID4NJW3LTLGIBNBGVK2HLVTLPBBFJUNAHOTCBL23MGRMWAZ1OOY4KJ">ABATE</an:docProponent>
+				<an:docProponent refersTo="#ID4NJW3LTLGIBNBGVK2HLVTLPBBFJUNAHOTCBL23MGRMWAZ1OOY4KJ" as="#tipoSenatore">ABATE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDR3TC5F2RWFDBECI3AYHWGF4YOPGCV2AMVWDNIHBYBZTP1ZSJCJJI">TRENTACOSTE</an:docProponent>
+				<an:docProponent refersTo="#IDR3TC5F2RWFDBECI3AYHWGF4YOPGCV2AMVWDNIHBYBZTP1ZSJCJJI" as="#tipoSenatore">TRENTACOSTE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDN3CRTMJUSQ2SN2KQ2W2AX0X0LFUNXBLZ35Q0LSIVTUILBB1UGFFJ">MOLLAME</an:docProponent>
+				<an:docProponent refersTo="#IDN3CRTMJUSQ2SN2KQ2W2AX0X0LFUNXBLZ35Q0LSIVTUILBB1UGFFJ" as="#tipoSenatore">MOLLAME</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID2GLK5XZF2XMWBPFYK4ODOJR2UIMOLPTTQWTJ0TKX1FJPJFAXQUFK">NATURALE</an:docProponent>
+				<an:docProponent refersTo="#ID2GLK5XZF2XMWBPFYK4ODOJR2UIMOLPTTQWTJ0TKX1FJPJFAXQUFK" as="#tipoSenatore">NATURALE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDMM5BG5UUUKBPOCRZ2NOVIX5JRIZAVWJAZEAJTWD3TMPIWWK4KDBC">AGOSTINELLI</an:docProponent>
+				<an:docProponent refersTo="#IDMM5BG5UUUKBPOCRZ2NOVIX5JRIZAVWJAZEAJTWD3TMPIWWK4KDBC" as="#tipoSenatore">AGOSTINELLI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDOWAXJ53IOAHCPFYKGTCKZCJO3EANPJX3TVEDM0FL3NBOKE13JSJJ">LANNUTTI</an:docProponent>
+				<an:docProponent refersTo="#IDOWAXJ53IOAHCPFYKGTCKZCJO3EANPJX3TVEDM0FL3NBOKE13JSJJ" as="#tipoSenatore">LANNUTTI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID5WGXUZ2SIUGKB0LTKRKJZADUEJTYL5GR5W0EF0KTRAKZ10NIPCBI">ORTIS</an:docProponent>
+				<an:docProponent refersTo="#ID5WGXUZ2SIUGKB0LTKRKJZADUEJTYL5GR5W0EF0KTRAKZ10NIPCBI" as="#tipoSenatore">ORTIS</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDTKVUBO5GDOVZCH20XGTE3TTUBDOGTEC1AFGIG2BG3DCIV34DY5FK">DONNO</an:docProponent>
+				<an:docProponent refersTo="#IDTKVUBO5GDOVZCH20XGTE3TTUBDOGTEC1AFGIG2BG3DCIV34DY5FK" as="#tipoSenatore">DONNO</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

@@ -2,14 +2,14 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2016-09-15/2521/main"/>
 					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2016-09-15/2521"/>
 					<an:FRBRdate date="2016-09-15" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2016-09-15/2521/main/allegato" id="wcomp2" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="wcomp2" href="http://dati.senato.it/osr/Ddl/2016-09-15/2521/main/allegato" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2016-09-15" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2016-09-15/2521/ita@/main/allegato" id="ecomp2" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="ecomp2" href="http://dati.senato.it/osr/Ddl/2016-09-15/2521/ita@/main/allegato" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,24 +32,24 @@
 					<an:FRBRdate date="2016-09-15" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2016-09-15/2521/ita@/main/allegato.xml" id="mcomp2" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="mcomp2" href="http://dati.senato.it/osr/Ddl/2016-09-15/2521/ita@/main/allegato.xml" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2016-09-15" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2016-09-15"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2016-09-13" href="it/Ddl/2016-09-13/3973" id="step1" outcome="Presentazione"/>
+				<an:step id="step1" date="2016-09-13" actor="#senato" outcome="Presentazione" href="it/Ddl/2016-09-13/3973"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/osr/Ddl/2016-09-15/2521/ita@/main" id="ro1" showAs="generation"/>
-				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2016-09-15/2521/ita@/main/allegato" id="annex2" showAs="Allegato"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d2421e15a1327" showAs="Ministro dell'economia e delle finanze"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2421e15" showAs="PADOAN"/>
+				<an:original id="ro1" href="http://dati.senato.it/osr/Ddl/2016-09-15/2521/ita@/main" showAs="generation"/>
+				<an:hasAttachment id="annex2" href="http://dati.senato.it/osr/Ddl/2016-09-15/2521/ita@/main/allegato" showAs="Allegato"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="d2421e15a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro dell'economia e delle finanze"/>
+				<an:TLCPerson id="d2421e15" href="http://dati.senato.it/osr/Persona" showAs="PADOAN"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -69,7 +69,7 @@
 			</an:p>
 			<an:p>
 				presentato dal 
-				<an:docProponent as="#d2421e15a1327" refersTo="#d2421e15">Ministro dell'economia e delle finanze (PADOAN)</an:docProponent>
+				<an:docProponent refersTo="#d2421e15" as="#d2421e15a1327">Ministro dell'economia e delle finanze (PADOAN)</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -90,29 +90,29 @@
 		<an:attachments>
 			<an:doc name="Altro">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2016-09-15/2521/main/allegato"/>
 							<an:FRBRdate date="2016-09-15" name="presentazione"/>
 							<an:FRBRauthor href="#senato"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_001.png" id="wimg1TAB_REND_001.png" name="" showAs="TAB_REND_001.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_002.png" id="wimg2TAB_REND_002.png" name="" showAs="TAB_REND_002.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_003.png" id="wimg3TAB_REND_003.png" name="" showAs="TAB_REND_003.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_004.png" id="wimg4TAB_REND_004.png" name="" showAs="TAB_REND_004.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_005.png" id="wimg5TAB_REND_005.png" name="" showAs="TAB_REND_005.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_006.png" id="wimg6TAB_REND_006.png" name="" showAs="TAB_REND_006.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_007.png" id="wimg7TAB_REND_007.png" name="" showAs="TAB_REND_007.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_008.png" id="wimg8TAB_REND_008.png" name="" showAs="TAB_REND_008.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_009.png" id="wimg9TAB_REND_009.png" name="" showAs="TAB_REND_009.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_010.png" id="wimg10TAB_REND_010.png" name="" showAs="TAB_REND_010.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_011.png" id="wimg11TAB_REND_011.png" name="" showAs="TAB_REND_011.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_012.png" id="wimg12TAB_REND_012.png" name="" showAs="TAB_REND_012.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_013.png" id="wimg13TAB_REND_013.png" name="" showAs="TAB_REND_013.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_014.png" id="wimg14TAB_REND_014.png" name="" showAs="TAB_REND_014.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_015.png" id="wimg15TAB_REND_015.png" name="" showAs="TAB_REND_015.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_016.png" id="wimg16TAB_REND_016.png" name="" showAs="TAB_REND_016.png"/>
+								<an:componentData id="wimg1TAB_REND_001.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_001.png" showAs="TAB_REND_001.png" name=""/>
+								<an:componentData id="wimg2TAB_REND_002.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_002.png" showAs="TAB_REND_002.png" name=""/>
+								<an:componentData id="wimg3TAB_REND_003.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_003.png" showAs="TAB_REND_003.png" name=""/>
+								<an:componentData id="wimg4TAB_REND_004.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_004.png" showAs="TAB_REND_004.png" name=""/>
+								<an:componentData id="wimg5TAB_REND_005.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_005.png" showAs="TAB_REND_005.png" name=""/>
+								<an:componentData id="wimg6TAB_REND_006.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_006.png" showAs="TAB_REND_006.png" name=""/>
+								<an:componentData id="wimg7TAB_REND_007.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_007.png" showAs="TAB_REND_007.png" name=""/>
+								<an:componentData id="wimg8TAB_REND_008.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_008.png" showAs="TAB_REND_008.png" name=""/>
+								<an:componentData id="wimg9TAB_REND_009.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_009.png" showAs="TAB_REND_009.png" name=""/>
+								<an:componentData id="wimg10TAB_REND_010.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_010.png" showAs="TAB_REND_010.png" name=""/>
+								<an:componentData id="wimg11TAB_REND_011.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_011.png" showAs="TAB_REND_011.png" name=""/>
+								<an:componentData id="wimg12TAB_REND_012.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_012.png" showAs="TAB_REND_012.png" name=""/>
+								<an:componentData id="wimg13TAB_REND_013.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_013.png" showAs="TAB_REND_013.png" name=""/>
+								<an:componentData id="wimg14TAB_REND_014.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_014.png" showAs="TAB_REND_014.png" name=""/>
+								<an:componentData id="wimg15TAB_REND_015.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_015.png" showAs="TAB_REND_015.png" name=""/>
+								<an:componentData id="wimg16TAB_REND_016.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_016.png" showAs="TAB_REND_016.png" name=""/>
 							</an:componentInfo>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/Altro"/>
@@ -125,22 +125,22 @@
 							<an:FRBRdate date="2016-09-15" name="presentazione"/>
 							<an:FRBRauthor href="#senato"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_001.png" id="eimg1TAB_REND_001.png" name="" showAs="TAB_REND_001.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_002.png" id="eimg2TAB_REND_002.png" name="" showAs="TAB_REND_002.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_003.png" id="eimg3TAB_REND_003.png" name="" showAs="TAB_REND_003.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_004.png" id="eimg4TAB_REND_004.png" name="" showAs="TAB_REND_004.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_005.png" id="eimg5TAB_REND_005.png" name="" showAs="TAB_REND_005.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_006.png" id="eimg6TAB_REND_006.png" name="" showAs="TAB_REND_006.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_007.png" id="eimg7TAB_REND_007.png" name="" showAs="TAB_REND_007.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_008.png" id="eimg8TAB_REND_008.png" name="" showAs="TAB_REND_008.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_009.png" id="eimg9TAB_REND_009.png" name="" showAs="TAB_REND_009.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_010.png" id="eimg10TAB_REND_010.png" name="" showAs="TAB_REND_010.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_011.png" id="eimg11TAB_REND_011.png" name="" showAs="TAB_REND_011.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_012.png" id="eimg12TAB_REND_012.png" name="" showAs="TAB_REND_012.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_013.png" id="eimg13TAB_REND_013.png" name="" showAs="TAB_REND_013.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_014.png" id="eimg14TAB_REND_014.png" name="" showAs="TAB_REND_014.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_015.png" id="eimg15TAB_REND_015.png" name="" showAs="TAB_REND_015.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_016.png" id="eimg16TAB_REND_016.png" name="" showAs="TAB_REND_016.png"/>
+								<an:componentData id="eimg1TAB_REND_001.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_001.png" showAs="TAB_REND_001.png" name=""/>
+								<an:componentData id="eimg2TAB_REND_002.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_002.png" showAs="TAB_REND_002.png" name=""/>
+								<an:componentData id="eimg3TAB_REND_003.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_003.png" showAs="TAB_REND_003.png" name=""/>
+								<an:componentData id="eimg4TAB_REND_004.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_004.png" showAs="TAB_REND_004.png" name=""/>
+								<an:componentData id="eimg5TAB_REND_005.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_005.png" showAs="TAB_REND_005.png" name=""/>
+								<an:componentData id="eimg6TAB_REND_006.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_006.png" showAs="TAB_REND_006.png" name=""/>
+								<an:componentData id="eimg7TAB_REND_007.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_007.png" showAs="TAB_REND_007.png" name=""/>
+								<an:componentData id="eimg8TAB_REND_008.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_008.png" showAs="TAB_REND_008.png" name=""/>
+								<an:componentData id="eimg9TAB_REND_009.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_009.png" showAs="TAB_REND_009.png" name=""/>
+								<an:componentData id="eimg10TAB_REND_010.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_010.png" showAs="TAB_REND_010.png" name=""/>
+								<an:componentData id="eimg11TAB_REND_011.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_011.png" showAs="TAB_REND_011.png" name=""/>
+								<an:componentData id="eimg12TAB_REND_012.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_012.png" showAs="TAB_REND_012.png" name=""/>
+								<an:componentData id="eimg13TAB_REND_013.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_013.png" showAs="TAB_REND_013.png" name=""/>
+								<an:componentData id="eimg14TAB_REND_014.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_014.png" showAs="TAB_REND_014.png" name=""/>
+								<an:componentData id="eimg15TAB_REND_015.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_015.png" showAs="TAB_REND_015.png" name=""/>
+								<an:componentData id="eimg16TAB_REND_016.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_016.png" showAs="TAB_REND_016.png" name=""/>
 							</an:componentInfo>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
@@ -150,28 +150,28 @@
 							<an:FRBRdate date="2016-09-15" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_001.png" id="mimg1TAB_REND_001.png" name="" showAs="TAB_REND_001.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_002.png" id="mimg2TAB_REND_002.png" name="" showAs="TAB_REND_002.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_003.png" id="mimg3TAB_REND_003.png" name="" showAs="TAB_REND_003.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_004.png" id="mimg4TAB_REND_004.png" name="" showAs="TAB_REND_004.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_005.png" id="mimg5TAB_REND_005.png" name="" showAs="TAB_REND_005.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_006.png" id="mimg6TAB_REND_006.png" name="" showAs="TAB_REND_006.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_007.png" id="mimg7TAB_REND_007.png" name="" showAs="TAB_REND_007.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_008.png" id="mimg8TAB_REND_008.png" name="" showAs="TAB_REND_008.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_009.png" id="mimg9TAB_REND_009.png" name="" showAs="TAB_REND_009.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_010.png" id="mimg10TAB_REND_010.png" name="" showAs="TAB_REND_010.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_011.png" id="mimg11TAB_REND_011.png" name="" showAs="TAB_REND_011.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_012.png" id="mimg12TAB_REND_012.png" name="" showAs="TAB_REND_012.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_013.png" id="mimg13TAB_REND_013.png" name="" showAs="TAB_REND_013.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_014.png" id="mimg14TAB_REND_014.png" name="" showAs="TAB_REND_014.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_015.png" id="mimg15TAB_REND_015.png" name="" showAs="TAB_REND_015.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_016.png" id="mimg16TAB_REND_016.png" name="" showAs="TAB_REND_016.png"/>
+								<an:componentData id="mimg1TAB_REND_001.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_001.png" showAs="TAB_REND_001.png" name=""/>
+								<an:componentData id="mimg2TAB_REND_002.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_002.png" showAs="TAB_REND_002.png" name=""/>
+								<an:componentData id="mimg3TAB_REND_003.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_003.png" showAs="TAB_REND_003.png" name=""/>
+								<an:componentData id="mimg4TAB_REND_004.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_004.png" showAs="TAB_REND_004.png" name=""/>
+								<an:componentData id="mimg5TAB_REND_005.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_005.png" showAs="TAB_REND_005.png" name=""/>
+								<an:componentData id="mimg6TAB_REND_006.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_006.png" showAs="TAB_REND_006.png" name=""/>
+								<an:componentData id="mimg7TAB_REND_007.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_007.png" showAs="TAB_REND_007.png" name=""/>
+								<an:componentData id="mimg8TAB_REND_008.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_008.png" showAs="TAB_REND_008.png" name=""/>
+								<an:componentData id="mimg9TAB_REND_009.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_009.png" showAs="TAB_REND_009.png" name=""/>
+								<an:componentData id="mimg10TAB_REND_010.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_010.png" showAs="TAB_REND_010.png" name=""/>
+								<an:componentData id="mimg11TAB_REND_011.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_011.png" showAs="TAB_REND_011.png" name=""/>
+								<an:componentData id="mimg12TAB_REND_012.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_012.png" showAs="TAB_REND_012.png" name=""/>
+								<an:componentData id="mimg13TAB_REND_013.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_013.png" showAs="TAB_REND_013.png" name=""/>
+								<an:componentData id="mimg14TAB_REND_014.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_014.png" showAs="TAB_REND_014.png" name=""/>
+								<an:componentData id="mimg15TAB_REND_015.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_015.png" showAs="TAB_REND_015.png" name=""/>
+								<an:componentData id="mimg16TAB_REND_016.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00988733/TAB_REND_016.png" showAs="TAB_REND_016.png" name=""/>
 							</an:componentInfo>
 						</an:FRBRManifestation>
 					</an:identification>
 					<an:references source="#redattore">
-						<an:original href="http://dati.senato.it/osr/Ddl/2016-09-15/2521/ita@/main/allegato" id="ro2" showAs="Allegato"/>
-						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2016-09-15/2521/ita@/main" id="mainAnx2" showAs="Main"/>
+						<an:original id="ro2" href="http://dati.senato.it/osr/Ddl/2016-09-15/2521/ita@/main/allegato" showAs="Allegato"/>
+						<an:attachmentOf id="mainAnx2" href="http://dati.senato.it/osr/Ddl/2016-09-15/2521/ita@/main" showAs="Main"/>
 					</an:references>
 				</an:meta>
 				<an:mainBody>

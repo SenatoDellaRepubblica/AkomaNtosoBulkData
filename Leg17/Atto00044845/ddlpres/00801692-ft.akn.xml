@@ -2,15 +2,15 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2014-09-19/1624/main"/>
 					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2014-09-19/1624"/>
 					<an:FRBRdate date="2014-09-19" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/main/allegato" id="wcomp3" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/main" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="wcomp3" href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/main/allegato" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
@@ -23,8 +23,8 @@
 					<an:FRBRdate date="2014-09-19" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main/allegato" id="ecomp3" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="ecomp3" href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main/allegato" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -34,33 +34,33 @@
 					<an:FRBRdate date="2014-09-19" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main/allegato.xml" id="mcomp3" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main.xml" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="mcomp3" href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main/allegato.xml" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2014-09-19" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2014-09-19"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2014-09-18" href="it/Ddl/2014-09-18/" id="step1" outcome="Presentazione"/>
+				<an:step id="step1" date="2014-09-18" actor="#senato" outcome="Presentazione" href="it/Ddl/2014-09-18/"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main" id="ro1" showAs="generation"/>
-				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main/allegato" id="annex3" showAs="Allegato"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d1514e15a1327" showAs="Ministro degli affari esteri"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d1514e17a1327" showAs="Ministro dell’economia e delle finanze"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d1514e19a1327" showAs="Ministro dell’istruzione, dell'università e della ricerca"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d1514e21a1327" showAs="Ministro dei beni e delle attività culturali e del turismo"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d1514e23a1327" showAs="Ministro per l'integrazione"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/321" id="d1514e15" showAs="BONINO"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d1514e17" showAs="SACCOMANNI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d1514e19" showAs="CARROZZA"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d1514e21" showAs="BRAY"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d1514e23" showAs="KYENGE"/>
+				<an:original id="ro1" href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main" showAs="generation"/>
+				<an:hasAttachment id="annex3" href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main/allegato" showAs="Allegato"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="d1514e15a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro degli affari esteri"/>
+				<an:TLCRole id="d1514e17a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro dell’economia e delle finanze"/>
+				<an:TLCRole id="d1514e19a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro dell’istruzione, dell'università e della ricerca"/>
+				<an:TLCRole id="d1514e21a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro dei beni e delle attività culturali e del turismo"/>
+				<an:TLCRole id="d1514e23a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro per l'integrazione"/>
+				<an:TLCPerson id="d1514e15" href="http://dati.senato.it/osr/Persona" showAs="BONINO"/>
+				<an:TLCPerson id="d1514e17" href="http://dati.senato.it/osr/Persona" showAs="SACCOMANNI"/>
+				<an:TLCPerson id="d1514e19" href="http://dati.senato.it/osr/Persona" showAs="CARROZZA"/>
+				<an:TLCPerson id="d1514e21" href="http://dati.senato.it/osr/Persona" showAs="BRAY"/>
+				<an:TLCPerson id="d1514e23" href="http://dati.senato.it/osr/Persona" showAs="KYENGE"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -76,15 +76,15 @@
 			</an:p>
 			<an:p>
 				presentato dal 
-				<an:docProponent as="#d1514e15a1327" refersTo="#d1514e15">Ministro degli affari esteri (BONINO)</an:docProponent>
+				<an:docProponent refersTo="#d1514e15" as="#d1514e15a1327">Ministro degli affari esteri (BONINO)</an:docProponent>
 				 di concerto con il 
-				<an:docProponent as="#d1514e17a1327" refersTo="#d1514e17">Ministro dell’economia e delle finanze (SACCOMANNI)</an:docProponent>
+				<an:docProponent refersTo="#d1514e17" as="#d1514e17a1327">Ministro dell’economia e delle finanze (SACCOMANNI)</an:docProponent>
 				con il 
-				<an:docProponent as="#d1514e19a1327" refersTo="#d1514e19">Ministro dell’istruzione, dell'università e della ricerca (CARROZZA)</an:docProponent>
+				<an:docProponent refersTo="#d1514e19" as="#d1514e19a1327">Ministro dell’istruzione, dell'università e della ricerca (CARROZZA)</an:docProponent>
 				 con il 
-				<an:docProponent as="#d1514e21a1327" refersTo="#d1514e21">Ministro dei beni e delle attività culturali e del turismo (BRAY)</an:docProponent>
+				<an:docProponent refersTo="#d1514e21" as="#d1514e21a1327">Ministro dei beni e delle attività culturali e del turismo (BRAY)</an:docProponent>
 				 e con il 
-				<an:docProponent as="#d1514e23a1327" refersTo="#d1514e23">Ministro per l'integrazione (KYENGE)</an:docProponent>
+				<an:docProponent refersTo="#d1514e23" as="#d1514e23a1327">Ministro per l'integrazione (KYENGE)</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -180,18 +180,18 @@
 		<an:attachments>
 			<an:doc name="Altro">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2014-09-19/1624/main/allegato"/>
 							<an:FRBRdate date="2014-09-19" name="presentazione"/>
 							<an:FRBRauthor href="#senato"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-01.png" id="wimg1FFFF-01.png" name="" showAs="FFFF-01.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-02.png" id="wimg2FFFF-02.png" name="" showAs="FFFF-02.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-03.png" id="wimg3FFFF-03.png" name="" showAs="FFFF-03.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-04.png" id="wimg4FFFF-04.png" name="" showAs="FFFF-04.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-05.png" id="wimg5FFFF-05.png" name="" showAs="FFFF-05.png"/>
+								<an:componentData id="wimg1FFFF-01.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-01.png" showAs="FFFF-01.png" name=""/>
+								<an:componentData id="wimg2FFFF-02.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-02.png" showAs="FFFF-02.png" name=""/>
+								<an:componentData id="wimg3FFFF-03.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-03.png" showAs="FFFF-03.png" name=""/>
+								<an:componentData id="wimg4FFFF-04.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-04.png" showAs="FFFF-04.png" name=""/>
+								<an:componentData id="wimg5FFFF-05.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-05.png" showAs="FFFF-05.png" name=""/>
 							</an:componentInfo>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/Altro"/>
@@ -204,11 +204,11 @@
 							<an:FRBRdate date="2014-09-19" name="presentazione"/>
 							<an:FRBRauthor href="#senato"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-01.png" id="eimg1FFFF-01.png" name="" showAs="FFFF-01.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-02.png" id="eimg2FFFF-02.png" name="" showAs="FFFF-02.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-03.png" id="eimg3FFFF-03.png" name="" showAs="FFFF-03.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-04.png" id="eimg4FFFF-04.png" name="" showAs="FFFF-04.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-05.png" id="eimg5FFFF-05.png" name="" showAs="FFFF-05.png"/>
+								<an:componentData id="eimg1FFFF-01.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-01.png" showAs="FFFF-01.png" name=""/>
+								<an:componentData id="eimg2FFFF-02.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-02.png" showAs="FFFF-02.png" name=""/>
+								<an:componentData id="eimg3FFFF-03.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-03.png" showAs="FFFF-03.png" name=""/>
+								<an:componentData id="eimg4FFFF-04.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-04.png" showAs="FFFF-04.png" name=""/>
+								<an:componentData id="eimg5FFFF-05.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-05.png" showAs="FFFF-05.png" name=""/>
 							</an:componentInfo>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
@@ -218,17 +218,17 @@
 							<an:FRBRdate date="2014-09-19" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-01.png" id="mimg1FFFF-01.png" name="" showAs="FFFF-01.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-02.png" id="mimg2FFFF-02.png" name="" showAs="FFFF-02.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-03.png" id="mimg3FFFF-03.png" name="" showAs="FFFF-03.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-04.png" id="mimg4FFFF-04.png" name="" showAs="FFFF-04.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-05.png" id="mimg5FFFF-05.png" name="" showAs="FFFF-05.png"/>
+								<an:componentData id="mimg1FFFF-01.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-01.png" showAs="FFFF-01.png" name=""/>
+								<an:componentData id="mimg2FFFF-02.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-02.png" showAs="FFFF-02.png" name=""/>
+								<an:componentData id="mimg3FFFF-03.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-03.png" showAs="FFFF-03.png" name=""/>
+								<an:componentData id="mimg4FFFF-04.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-04.png" showAs="FFFF-04.png" name=""/>
+								<an:componentData id="mimg5FFFF-05.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00801692/FFFF-05.png" showAs="FFFF-05.png" name=""/>
 							</an:componentInfo>
 						</an:FRBRManifestation>
 					</an:identification>
 					<an:references source="#redattore">
-						<an:original href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main/allegato" id="ro3" showAs="Allegato"/>
-						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main" id="mainAnx3" showAs="Main"/>
+						<an:original id="ro3" href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main/allegato" showAs="Allegato"/>
+						<an:attachmentOf id="mainAnx3" href="http://dati.senato.it/osr/Ddl/2014-09-19/1624/ita@/main" showAs="Main"/>
 					</an:references>
 				</an:meta>
 				<an:mainBody>

@@ -2,15 +2,15 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-12-12/1202/main"/>
 					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-12-12/1202"/>
 					<an:FRBRdate date="2013-12-12" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/main" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="wcomp2" href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/main/relazione" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
@@ -23,8 +23,8 @@
 					<an:FRBRdate date="2013-12-12" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="ecomp2" href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main/relazione" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -34,25 +34,25 @@
 					<an:FRBRdate date="2013-12-12" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main.xml" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="mcomp2" href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main/relazione.xml" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2013-12-12" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2013-12-12"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2013-12-12" id="step1" outcome="Presentazione"/>
+				<an:step id="step1" date="2013-12-12" actor="#senato" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main" id="ro1" showAs="generation"/>
-				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main/relazione" id="annex2" showAs="Relazione"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d1066e16a1327" showAs="Senatrice "/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29185" id="d1066e16" showAs="STEFANI"/>
+				<an:original id="ro1" href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main" showAs="generation"/>
+				<an:hasAttachment id="annex2" href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main/relazione" showAs="Relazione"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="d1066e16a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Senatrice "/>
+				<an:TLCPerson id="d1066e16" href="http://dati.senato.it/osr/Persona" showAs="STEFANI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -72,7 +72,7 @@
 			</an:p>
 			<an:p>
 				d’iniziativa della senatrice 
-				<an:docProponent as="#d1066e16a1327" refersTo="#d1066e16">senatrice  (STEFANI)</an:docProponent>
+				<an:docProponent refersTo="#d1066e16" as="#d1066e16a1327">senatrice  (STEFANI)</an:docProponent>
 				 
 			</an:p>
 			<an:p>COMUNICATO ALLA PRESIDENZA IL 12 DICEMBRE 2013</an:p>
@@ -1353,7 +1353,7 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-12-12/1202/main/relazione"/>
@@ -1379,8 +1379,8 @@
 						</an:FRBRManifestation>
 					</an:identification>
 					<an:references source="#redattore">
-						<an:original href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main/relazione" id="ro2" showAs="Relazione"/>
-						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main" id="mainAnx2" showAs="Main"/>
+						<an:original id="ro2" href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main/relazione" showAs="Relazione"/>
+						<an:attachmentOf id="mainAnx2" href="http://dati.senato.it/osr/Ddl/2013-12-12/1202/ita@/main" showAs="Main"/>
 					</an:references>
 				</an:meta>
 				<an:mainBody>

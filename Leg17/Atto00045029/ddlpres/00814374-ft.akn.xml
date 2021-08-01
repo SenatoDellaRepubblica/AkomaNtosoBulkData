@@ -2,14 +2,14 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2014-11-25/1428-B/main"/>
 					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2014-11-25/1428-B"/>
 					<an:FRBRdate date="2014-11-25" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-11-25/1428-B/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/osr/Ddl/2014-11-25/1428-B/main" showAs="disegno di legge" name="disegno di legge"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2014-11-25" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-11-25/1428-B/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/osr/Ddl/2014-11-25/1428-B/ita@/main" showAs="disegno di legge" name="disegno di legge"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,26 +32,26 @@
 					<an:FRBRdate date="2014-11-25" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-11-25/1428-B/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/osr/Ddl/2014-11-25/1428-B/ita@/main.xml" showAs="disegno di legge" name="disegno di legge"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2014-11-25" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2014-11-25"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2014-10-08" href="it/Ddl/2014-10-08/1428" id="step1" outcome="Presentazione"/>
-				<an:step actor="#camera" date="2014-11-25" href="it/Ddl/2014-11-25/2498" id="step2" outcome="Generica"/>
+				<an:step id="step1" date="2014-10-08" actor="#senato" outcome="Presentazione" href="it/Ddl/2014-10-08/1428"/>
+				<an:step id="step2" date="2014-11-25" actor="#camera" outcome="Generica" href="it/Ddl/2014-11-25/2498"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/osr/Ddl/2014-11-25/1428-B/ita@/main" id="ro1" showAs="generation"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d1566e15a1327" showAs="Presidente del Consiglio dei ministri"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d1566e17a1327" showAs="Ministro del lavoro e delle politiche sociali"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/30742" id="d1566e15" showAs="RENZI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d1566e17" showAs="POLETTI"/>
+				<an:original id="ro1" href="http://dati.senato.it/osr/Ddl/2014-11-25/1428-B/ita@/main" showAs="generation"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="d1566e15a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Presidente del Consiglio dei ministri"/>
+				<an:TLCRole id="d1566e17a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro del lavoro e delle politiche sociali"/>
+				<an:TLCPerson id="d1566e15" href="http://dati.senato.it/osr/Persona" showAs="RENZI"/>
+				<an:TLCPerson id="d1566e17" href="http://dati.senato.it/osr/Persona" showAs="POLETTI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -67,9 +67,9 @@
 			</an:p>
 			<an:p>
 				presentato dal 
-				<an:docProponent as="#d1566e15a1327" refersTo="#d1566e15">Presidente del Consiglio dei ministri (RENZI)</an:docProponent>
+				<an:docProponent refersTo="#d1566e15" as="#d1566e15a1327">Presidente del Consiglio dei ministri (RENZI)</an:docProponent>
 				 e dal 
-				<an:docProponent as="#d1566e17a1327" refersTo="#d1566e17">Ministro del lavoro e delle politiche sociali (POLETTI)</an:docProponent>
+				<an:docProponent refersTo="#d1566e17" as="#d1566e17a1327">Ministro del lavoro e delle politiche sociali (POLETTI)</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -96,7 +96,7 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="Articolato">
-			<an:hcontainer id="d1566e57" name="Testo a fronte">
+			<an:hcontainer name="Testo a fronte" id="d1566e57">
 				<an:num/>
 				<an:content id="d1566e57-c">
 					<an:table id="d1566e58">

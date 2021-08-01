@@ -2,14 +2,14 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2120/C/3.0.20/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2120/C/3.0.20"/>
 					<an:FRBRdate date="2021-04-12" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/2120/C/3.0.20/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/2120/C/3.0.20/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2021-04-12" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/2120/C/3.0.20/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/2120/C/3.0.20/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,24 +32,24 @@
 					<an:FRBRdate date="2021-04-12" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/2120/C/3.0.20/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/2120/C/3.0.20/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2021-04-12" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2021-04-12"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2021-04-12" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2021-04-12" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/2120/C/3.0.20/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/Ddl/18/2120" id="ar1" showAs="Ddl 2120"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32643" id="ID0E6" showAs="Leonardo Grimani"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/2120/C/3.0.20/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/Ddl/18/2120" showAs="Ddl 2120"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="ID0E6" href="http://dati.senato.it/32643" showAs="Leonardo Grimani"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -60,7 +60,7 @@
 				<an:docNumber>Emendamento n. 3.0.20 (testo 4)</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0E6">
+				<an:docProponent refersTo="#ID0E6" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Grimani</an:span>
 				</an:docProponent>
 			</an:p>
@@ -99,7 +99,7 @@
 				</an:p>
 				
 
-				<an:ol id="ID0EGC" start="1" style="list-style-type:decimal">
+				<an:ol start="1" style="list-style-type:decimal" id="ID0EGC">
 					
 
 					<an:li style="text-align: justify;">Per le medesime finalità della presente legge, in relazione alle procedure elettorali per il rinnovo degli organi collegiali e monocratici delle università e delle istituzioni dell'alta formazione artistica, musicale e coreutica di cui alla legge 21 dicembre 1999, n. 508, in corso alla data di entrata in vigore del presente decreto ovvero da svolgersi durante lo stato di emergenza deliberato dal Consiglio dei ministri in data 31 gennaio 2020, tali enti, nell'esercizio della loro autonomia, possono individuare, in deroga alle disposizioni normative e regolamentari vigenti, modalità, anche telematiche, di svolgimento che assicurino il rispetto delle misure di prevenzione sanitaria disposte in relazione al contenimento del contagio da COVID-19.</an:li>

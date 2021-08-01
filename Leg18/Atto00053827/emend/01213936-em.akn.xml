@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2144/A/13.0.8/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2144/A/13.0.8"/>
 					<an:FRBRdate date="2021-05-11" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/2144/A/13.0.8/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/2144/A/13.0.8/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2021-05-11" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/2144/A/13.0.8/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/2144/A/13.0.8/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,27 +32,27 @@
 					<an:FRBRdate date="2021-05-11" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/2144/A/13.0.8/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/2144/A/13.0.8/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2021-05-11" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2021-05-11"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2021-05-11" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2021-05-11" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/2144/A/13.0.8/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/2144" id="ar1" showAs="DDL 2144"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29108" id="ID51XQE3GR5Q2TOORSWU4OHE4IVCGC4HDBMR3ODJGYNU3XOWJ3JOYH" showAs="GIROTTO"/>
-				<an:TLCPerson href="http://dati.senato.it/29065" id="IDBPO5AVET53XDLTSUHUNZ0GBJZGONZ0YC4PRXSKBW2EJCB1CCQW0P" showAs="CASTALDI"/>
-				<an:TLCPerson href="http://dati.senato.it/32608" id="IDQPQWOZZH5LBIJGSIZLEHMHANHN43ZCYDLA1VUHINXWDPP5I1CSXJ" showAs="CROATTI"/>
-				<an:TLCPerson href="http://dati.senato.it/32725" id="IDB4IRQKGYSUS2P4SZ4OLXBHBCJFBEOMKD5WNTMFPLXIYMLHZAYTO" showAs="TRENTACOSTE"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/2144/A/13.0.8/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/2144" showAs="DDL 2144"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="ID51XQE3GR5Q2TOORSWU4OHE4IVCGC4HDBMR3ODJGYNU3XOWJ3JOYH" href="http://dati.senato.it/29108" showAs="GIROTTO"/>
+				<an:TLCPerson id="IDBPO5AVET53XDLTSUHUNZ0GBJZGONZ0YC4PRXSKBW2EJCB1CCQW0P" href="http://dati.senato.it/29065" showAs="CASTALDI"/>
+				<an:TLCPerson id="IDQPQWOZZH5LBIJGSIZLEHMHANHN43ZCYDLA1VUHINXWDPP5I1CSXJ" href="http://dati.senato.it/32608" showAs="CROATTI"/>
+				<an:TLCPerson id="IDB4IRQKGYSUS2P4SZ4OLXBHBCJFBEOMKD5WNTMFPLXIYMLHZAYTO" href="http://dati.senato.it/32725" showAs="TRENTACOSTE"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -63,16 +63,16 @@
 				<an:docNumber>Emendamento n. 13.0.8</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID51XQE3GR5Q2TOORSWU4OHE4IVCGC4HDBMR3ODJGYNU3XOWJ3JOYH">GIROTTO</an:docProponent>
+				<an:docProponent refersTo="#ID51XQE3GR5Q2TOORSWU4OHE4IVCGC4HDBMR3ODJGYNU3XOWJ3JOYH" as="#tipoSenatore">GIROTTO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDBPO5AVET53XDLTSUHUNZ0GBJZGONZ0YC4PRXSKBW2EJCB1CCQW0P">CASTALDI</an:docProponent>
+				<an:docProponent refersTo="#IDBPO5AVET53XDLTSUHUNZ0GBJZGONZ0YC4PRXSKBW2EJCB1CCQW0P" as="#tipoSenatore">CASTALDI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDQPQWOZZH5LBIJGSIZLEHMHANHN43ZCYDLA1VUHINXWDPP5I1CSXJ">CROATTI</an:docProponent>
+				<an:docProponent refersTo="#IDQPQWOZZH5LBIJGSIZLEHMHANHN43ZCYDLA1VUHINXWDPP5I1CSXJ" as="#tipoSenatore">CROATTI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDB4IRQKGYSUS2P4SZ4OLXBHBCJFBEOMKD5WNTMFPLXIYMLHZAYTO">TRENTACOSTE</an:docProponent>
+				<an:docProponent refersTo="#IDB4IRQKGYSUS2P4SZ4OLXBHBCJFBEOMKD5WNTMFPLXIYMLHZAYTO" as="#tipoSenatore">TRENTACOSTE</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

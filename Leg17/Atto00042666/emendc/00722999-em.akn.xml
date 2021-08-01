@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/1150/C/5.0.1/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/1150/C/5.0.1"/>
 					<an:FRBRdate date="2018-01-19" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1150/C/5.0.1/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/1150/C/5.0.1/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2018-01-19" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1150/C/5.0.1/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/1150/C/5.0.1/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,29 +32,29 @@
 					<an:FRBRdate date="2018-01-19" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1150/C/5.0.1/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/1150/C/5.0.1/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-01-19" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2018-01-19"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-01-19" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2018-01-19" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/1150/C/5.0.1/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/1150" id="ar1" showAs="DDL 1150"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/7" id="commissione" showAs="7ª Commissione permanente"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/2214" id="IDUXIDFKLVAKX5PAWSJMEWSUYKFKLXQKVWRXCLXMCH0KIXRNQOTLAH" showAs="SCAVONE"/>
-				<an:TLCPerson href="http://dati.senato.it/17704" id="IDHTPWMOOSWHTGNZ432ER2MAQ22ON0RYTL2MKB1WOQL4SL2Y4R25MO" showAs="Giovanni MAURO"/>
-				<an:TLCPerson href="http://dati.senato.it/29049" id="IDLF1KVVVOMCB5BJ4NQ4GPD41R1NCHXMJAFJCXFFN2FZ5DJYY3CQVL" showAs="BILARDI"/>
-				<an:TLCPerson href="http://dati.senato.it/29073" id="ID0YKLMUN10TDPO4RR2ZOHI4A0SBMOBDQVQMMHIZOJAYOM1FIJTTXD" showAs="COMPAGNONE"/>
-				<an:TLCPerson href="http://dati.senato.it/961" id="IDABDFX3FQRY5INBEYHOBRL0LIMCMBKE1TPCCE2LMPZKSPYWRCBX4J" showAs="Mario FERRARA"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/1150/C/5.0.1/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/1150" showAs="DDL 1150"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="7ª Commissione permanente" href="/dati.senato.it/osr/Commissione/7"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDUXIDFKLVAKX5PAWSJMEWSUYKFKLXQKVWRXCLXMCH0KIXRNQOTLAH" href="http://dati.senato.it/2214" showAs="SCAVONE"/>
+				<an:TLCPerson id="IDHTPWMOOSWHTGNZ432ER2MAQ22ON0RYTL2MKB1WOQL4SL2Y4R25MO" href="http://dati.senato.it/17704" showAs="Giovanni MAURO"/>
+				<an:TLCPerson id="IDLF1KVVVOMCB5BJ4NQ4GPD41R1NCHXMJAFJCXFFN2FZ5DJYY3CQVL" href="http://dati.senato.it/29049" showAs="BILARDI"/>
+				<an:TLCPerson id="ID0YKLMUN10TDPO4RR2ZOHI4A0SBMOBDQVQMMHIZOJAYOM1FIJTTXD" href="http://dati.senato.it/29073" showAs="COMPAGNONE"/>
+				<an:TLCPerson id="IDABDFX3FQRY5INBEYHOBRL0LIMCMBKE1TPCCE2LMPZKSPYWRCBX4J" href="http://dati.senato.it/961" showAs="Mario FERRARA"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -65,19 +65,19 @@
 				<an:docNumber>Emendamento n. 5.0.1</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDUXIDFKLVAKX5PAWSJMEWSUYKFKLXQKVWRXCLXMCH0KIXRNQOTLAH">SCAVONE</an:docProponent>
+				<an:docProponent refersTo="#IDUXIDFKLVAKX5PAWSJMEWSUYKFKLXQKVWRXCLXMCH0KIXRNQOTLAH" as="#tipoSenatore">SCAVONE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDHTPWMOOSWHTGNZ432ER2MAQ22ON0RYTL2MKB1WOQL4SL2Y4R25MO">Giovanni MAURO</an:docProponent>
+				<an:docProponent refersTo="#IDHTPWMOOSWHTGNZ432ER2MAQ22ON0RYTL2MKB1WOQL4SL2Y4R25MO" as="#tipoSenatore">Giovanni MAURO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDLF1KVVVOMCB5BJ4NQ4GPD41R1NCHXMJAFJCXFFN2FZ5DJYY3CQVL">BILARDI</an:docProponent>
+				<an:docProponent refersTo="#IDLF1KVVVOMCB5BJ4NQ4GPD41R1NCHXMJAFJCXFFN2FZ5DJYY3CQVL" as="#tipoSenatore">BILARDI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID0YKLMUN10TDPO4RR2ZOHI4A0SBMOBDQVQMMHIZOJAYOM1FIJTTXD">COMPAGNONE</an:docProponent>
+				<an:docProponent refersTo="#ID0YKLMUN10TDPO4RR2ZOHI4A0SBMOBDQVQMMHIZOJAYOM1FIJTTXD" as="#tipoSenatore">COMPAGNONE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDABDFX3FQRY5INBEYHOBRL0LIMCMBKE1TPCCE2LMPZKSPYWRCBX4J">Mario FERRARA</an:docProponent>
+				<an:docProponent refersTo="#IDABDFX3FQRY5INBEYHOBRL0LIMCMBKE1TPCCE2LMPZKSPYWRCBX4J" as="#tipoSenatore">Mario FERRARA</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

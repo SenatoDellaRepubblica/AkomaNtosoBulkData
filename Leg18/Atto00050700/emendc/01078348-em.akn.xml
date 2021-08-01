@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/840/C/14.28/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/840/C/14.28"/>
 					<an:FRBRdate date="2018-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/840/C/14.28/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/840/C/14.28/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2018-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/840/C/14.28/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/840/C/14.28/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,27 +32,27 @@
 					<an:FRBRdate date="2018-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/840/C/14.28/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/840/C/14.28/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-11-05" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2018-11-05"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-11-05" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2018-11-05" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/840/C/14.28/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/840" id="ar1" showAs="DDL 840"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/1" id="commissione" showAs="1ª Commissione permanente"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29105" id="IDP1BFI025MOF1PGHC3NQRCU5V5DB044OFWFIQ1LDVYU4IXA3QCWJL" showAs="GIACOBBE"/>
-				<an:TLCPerson href="http://dati.senato.it/25498" id="IDHPLC3NR4PHYRHTT4CLUCFTDFIDB50GRG2AYDWFLUQG2424PXP4HP" showAs="GARAVINI"/>
-				<an:TLCPerson href="http://dati.senato.it/32742" id="IDWRKZCS5RHOVTCQ1CUIOTGMN2EPP0AE2M4BQZ2YIQ5MDZOFQBOBJO" showAs="ALDERISI"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/840/C/14.28/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/840" showAs="DDL 840"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="1ª Commissione permanente" href="/dati.senato.it/osr/Commissione/1"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDP1BFI025MOF1PGHC3NQRCU5V5DB044OFWFIQ1LDVYU4IXA3QCWJL" href="http://dati.senato.it/29105" showAs="GIACOBBE"/>
+				<an:TLCPerson id="IDHPLC3NR4PHYRHTT4CLUCFTDFIDB50GRG2AYDWFLUQG2424PXP4HP" href="http://dati.senato.it/25498" showAs="GARAVINI"/>
+				<an:TLCPerson id="IDWRKZCS5RHOVTCQ1CUIOTGMN2EPP0AE2M4BQZ2YIQ5MDZOFQBOBJO" href="http://dati.senato.it/32742" showAs="ALDERISI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -63,13 +63,13 @@
 				<an:docNumber>Emendamento n. 14.28</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDP1BFI025MOF1PGHC3NQRCU5V5DB044OFWFIQ1LDVYU4IXA3QCWJL">GIACOBBE</an:docProponent>
+				<an:docProponent refersTo="#IDP1BFI025MOF1PGHC3NQRCU5V5DB044OFWFIQ1LDVYU4IXA3QCWJL" as="#tipoSenatore">GIACOBBE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDHPLC3NR4PHYRHTT4CLUCFTDFIDB50GRG2AYDWFLUQG2424PXP4HP">GARAVINI</an:docProponent>
+				<an:docProponent refersTo="#IDHPLC3NR4PHYRHTT4CLUCFTDFIDB50GRG2AYDWFLUQG2424PXP4HP" as="#tipoSenatore">GARAVINI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDWRKZCS5RHOVTCQ1CUIOTGMN2EPP0AE2M4BQZ2YIQ5MDZOFQBOBJO">ALDERISI</an:docProponent>
+				<an:docProponent refersTo="#IDWRKZCS5RHOVTCQ1CUIOTGMN2EPP0AE2M4BQZ2YIQ5MDZOFQBOBJO" as="#tipoSenatore">ALDERISI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

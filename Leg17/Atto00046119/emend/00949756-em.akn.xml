@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/2111/A/27.186/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/2111/A/27.186"/>
 					<an:FRBRdate date="2015-11-20" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2111/A/27.186/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/2111/A/27.186/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2015-11-20" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2111/A/27.186/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/2111/A/27.186/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,33 +32,33 @@
 					<an:FRBRdate date="2015-11-20" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2111/A/27.186/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/2111/A/27.186/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2015-11-20" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2015-11-20"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2015-11-20" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2015-11-20" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/2111/A/27.186/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/2111" id="ar1" showAs="DDL 2111"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22717" id="IDAEZRP" showAs="BONFRISCO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25458" id="IDAB3RP" showAs="MILO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29207" id="IDAT1RP" showAs="BRUNI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25261" id="IDAU1RP" showAs="D'AMBROSIO LETTIERI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29203" id="IDARYRP" showAs="DI MAGGIO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29118" id="IDAZ3RP" showAs="LIUZZI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/30259" id="IDAZZRP" showAs="PAGNONCELLI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29159" id="IDAU2RP" showAs="PERRONE"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29188" id="IDAL1RP" showAs="TARQUINIO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29197" id="IDAN4RP" showAs="ZIZZA"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/2111/A/27.186/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/2111" showAs="DDL 2111"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDAEZRP" href="http://dati.senato.it/senatore/22717" showAs="BONFRISCO"/>
+				<an:TLCPerson id="IDAB3RP" href="http://dati.senato.it/senatore/25458" showAs="MILO"/>
+				<an:TLCPerson id="IDAT1RP" href="http://dati.senato.it/senatore/29207" showAs="BRUNI"/>
+				<an:TLCPerson id="IDAU1RP" href="http://dati.senato.it/senatore/25261" showAs="D'AMBROSIO LETTIERI"/>
+				<an:TLCPerson id="IDARYRP" href="http://dati.senato.it/senatore/29203" showAs="DI MAGGIO"/>
+				<an:TLCPerson id="IDAZ3RP" href="http://dati.senato.it/senatore/29118" showAs="LIUZZI"/>
+				<an:TLCPerson id="IDAZZRP" href="http://dati.senato.it/senatore/30259" showAs="PAGNONCELLI"/>
+				<an:TLCPerson id="IDAU2RP" href="http://dati.senato.it/senatore/29159" showAs="PERRONE"/>
+				<an:TLCPerson id="IDAL1RP" href="http://dati.senato.it/senatore/29188" showAs="TARQUINIO"/>
+				<an:TLCPerson id="IDAN4RP" href="http://dati.senato.it/senatore/29197" showAs="ZIZZA"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -69,34 +69,34 @@
 				<an:docNumber>Emendamento n. 27.186</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAEZRP">BONFRISCO</an:docProponent>
+				<an:docProponent refersTo="#IDAEZRP" as="#tipoSenatore">BONFRISCO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAB3RP">MILO</an:docProponent>
+				<an:docProponent refersTo="#IDAB3RP" as="#tipoSenatore">MILO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAT1RP">BRUNI</an:docProponent>
+				<an:docProponent refersTo="#IDAT1RP" as="#tipoSenatore">BRUNI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAU1RP">D'AMBROSIO LETTIERI</an:docProponent>
+				<an:docProponent refersTo="#IDAU1RP" as="#tipoSenatore">D'AMBROSIO LETTIERI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDARYRP">DI MAGGIO</an:docProponent>
+				<an:docProponent refersTo="#IDARYRP" as="#tipoSenatore">DI MAGGIO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAZ3RP">LIUZZI</an:docProponent>
+				<an:docProponent refersTo="#IDAZ3RP" as="#tipoSenatore">LIUZZI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAZZRP">PAGNONCELLI</an:docProponent>
+				<an:docProponent refersTo="#IDAZZRP" as="#tipoSenatore">PAGNONCELLI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAU2RP">PERRONE</an:docProponent>
+				<an:docProponent refersTo="#IDAU2RP" as="#tipoSenatore">PERRONE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAL1RP">TARQUINIO</an:docProponent>
+				<an:docProponent refersTo="#IDAL1RP" as="#tipoSenatore">TARQUINIO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAN4RP">ZIZZA</an:docProponent>
+				<an:docProponent refersTo="#IDAN4RP" as="#tipoSenatore">ZIZZA</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

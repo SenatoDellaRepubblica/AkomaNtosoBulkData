@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/1874/A/72.12/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/1874/A/72.12"/>
 					<an:FRBRdate date="2020-09-16" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1874/A/72.12/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/1874/A/72.12/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2020-09-16" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1874/A/72.12/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/1874/A/72.12/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2020-09-16" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1874/A/72.12/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/1874/A/72.12/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2020-09-16" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2020-09-16"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2020-09-16" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2020-09-16" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/1874/A/72.12/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/1874" id="ar1" showAs="DDL 1874"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/18562" id="IDTKHALEBWAWIPODJDLWDKBTJ2EEPXWMEII2E523P3P3DXEPUPKCHN" showAs="PIROVANO"/>
-				<an:TLCPerson href="http://dati.senato.it/32633" id="IDH31FRIDLI4XMJJA34WY1DGRJ5HR25E13OKWNIZGHTGARXGLU2Q0K" showAs="FERRERO"/>
-				<an:TLCPerson href="http://dati.senato.it/32627" id="IDZIGZINQYTG13JPUIZXUFEPJPCMHJT25RVSTUOG2HUAZFL5YBFFB" showAs="FAGGI"/>
-				<an:TLCPerson href="http://dati.senato.it/25415" id="IDSRW4PEFH5FQHPXDYVG40PYI32DT1TF1BUULVK5DCBO0SQGSHQ2IJ" showAs="RIVOLTA"/>
-				<an:TLCPerson href="http://dati.senato.it/32733" id="IDMCH3NQUTAHATI1IXEFZJBY4O3ELFH3V332HQD5FG1D2XZMCX05NI" showAs="ZULIANI"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/1874/A/72.12/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/1874" showAs="DDL 1874"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDTKHALEBWAWIPODJDLWDKBTJ2EEPXWMEII2E523P3P3DXEPUPKCHN" href="http://dati.senato.it/18562" showAs="PIROVANO"/>
+				<an:TLCPerson id="IDH31FRIDLI4XMJJA34WY1DGRJ5HR25E13OKWNIZGHTGARXGLU2Q0K" href="http://dati.senato.it/32633" showAs="FERRERO"/>
+				<an:TLCPerson id="IDZIGZINQYTG13JPUIZXUFEPJPCMHJT25RVSTUOG2HUAZFL5YBFFB" href="http://dati.senato.it/32627" showAs="FAGGI"/>
+				<an:TLCPerson id="IDSRW4PEFH5FQHPXDYVG40PYI32DT1TF1BUULVK5DCBO0SQGSHQ2IJ" href="http://dati.senato.it/25415" showAs="RIVOLTA"/>
+				<an:TLCPerson id="IDMCH3NQUTAHATI1IXEFZJBY4O3ELFH3V332HQD5FG1D2XZMCX05NI" href="http://dati.senato.it/32733" showAs="ZULIANI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,19 +64,19 @@
 				<an:docNumber>Emendamento n. 72.12</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDTKHALEBWAWIPODJDLWDKBTJ2EEPXWMEII2E523P3P3DXEPUPKCHN">PIROVANO</an:docProponent>
+				<an:docProponent refersTo="#IDTKHALEBWAWIPODJDLWDKBTJ2EEPXWMEII2E523P3P3DXEPUPKCHN" as="#tipoSenatore">PIROVANO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDH31FRIDLI4XMJJA34WY1DGRJ5HR25E13OKWNIZGHTGARXGLU2Q0K">FERRERO</an:docProponent>
+				<an:docProponent refersTo="#IDH31FRIDLI4XMJJA34WY1DGRJ5HR25E13OKWNIZGHTGARXGLU2Q0K" as="#tipoSenatore">FERRERO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDZIGZINQYTG13JPUIZXUFEPJPCMHJT25RVSTUOG2HUAZFL5YBFFB">FAGGI</an:docProponent>
+				<an:docProponent refersTo="#IDZIGZINQYTG13JPUIZXUFEPJPCMHJT25RVSTUOG2HUAZFL5YBFFB" as="#tipoSenatore">FAGGI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDSRW4PEFH5FQHPXDYVG40PYI32DT1TF1BUULVK5DCBO0SQGSHQ2IJ">RIVOLTA</an:docProponent>
+				<an:docProponent refersTo="#IDSRW4PEFH5FQHPXDYVG40PYI32DT1TF1BUULVK5DCBO0SQGSHQ2IJ" as="#tipoSenatore">RIVOLTA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDMCH3NQUTAHATI1IXEFZJBY4O3ELFH3V332HQD5FG1D2XZMCX05NI">ZULIANI</an:docProponent>
+				<an:docProponent refersTo="#IDMCH3NQUTAHATI1IXEFZJBY4O3ELFH3V332HQD5FG1D2XZMCX05NI" as="#tipoSenatore">ZULIANI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

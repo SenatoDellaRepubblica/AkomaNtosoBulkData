@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/1018/A/9.3/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/1018/A/9.3"/>
 					<an:FRBRdate date="2019-02-27" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1018/A/9.3/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/1018/A/9.3/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2019-02-27" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1018/A/9.3/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/1018/A/9.3/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2019-02-27" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1018/A/9.3/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/1018/A/9.3/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2019-02-27" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2019-02-27"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2019-02-27" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2019-02-27" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/1018/A/9.3/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/1018" id="ar1" showAs="DDL 1018"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32706" id="IDC54YAR1UNERFGUANHBAT2SA2BOOTEPKMONZ4QDB3YPPILCF5KVII" showAs="ROMEO"/>
-				<an:TLCPerson href="http://dati.senato.it/32748" id="IDD3AAIT2WLGL0HMLBJ0CQG32XJVO0NXIGZKGO1LWMO3SE0FMXQSG" showAs="DE VECCHIS"/>
-				<an:TLCPerson href="http://dati.senato.it/32695" id="IDZUW1MWJQ0XQYIKPGKRGO3PCYPBWFSE4X3C50OLNXH5ODNZYZAW0N" showAs="PIZZOL"/>
-				<an:TLCPerson href="http://dati.senato.it/356" id="IDDKKJYHRX51HBI4CB5MTI2PGQAFFSIQCKZB122FLNRITI2NWIPYOD" showAs="Umberto BOSSI"/>
-				<an:TLCPerson href="http://dati.senato.it/32591" id="IDSFYYJCADJ023DHBUQYVXKCI3TNUDTA14QM3OA2OADKSJIIRAVTCD" showAs="Simone BOSSI"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/1018/A/9.3/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/1018" showAs="DDL 1018"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDC54YAR1UNERFGUANHBAT2SA2BOOTEPKMONZ4QDB3YPPILCF5KVII" href="http://dati.senato.it/32706" showAs="ROMEO"/>
+				<an:TLCPerson id="IDD3AAIT2WLGL0HMLBJ0CQG32XJVO0NXIGZKGO1LWMO3SE0FMXQSG" href="http://dati.senato.it/32748" showAs="DE VECCHIS"/>
+				<an:TLCPerson id="IDZUW1MWJQ0XQYIKPGKRGO3PCYPBWFSE4X3C50OLNXH5ODNZYZAW0N" href="http://dati.senato.it/32695" showAs="PIZZOL"/>
+				<an:TLCPerson id="IDDKKJYHRX51HBI4CB5MTI2PGQAFFSIQCKZB122FLNRITI2NWIPYOD" href="http://dati.senato.it/356" showAs="Umberto BOSSI"/>
+				<an:TLCPerson id="IDSFYYJCADJ023DHBUQYVXKCI3TNUDTA14QM3OA2OADKSJIIRAVTCD" href="http://dati.senato.it/32591" showAs="Simone BOSSI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,19 +64,19 @@
 				<an:docNumber>Emendamento n. 9.3</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDC54YAR1UNERFGUANHBAT2SA2BOOTEPKMONZ4QDB3YPPILCF5KVII">ROMEO</an:docProponent>
+				<an:docProponent refersTo="#IDC54YAR1UNERFGUANHBAT2SA2BOOTEPKMONZ4QDB3YPPILCF5KVII" as="#tipoSenatore">ROMEO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDD3AAIT2WLGL0HMLBJ0CQG32XJVO0NXIGZKGO1LWMO3SE0FMXQSG">DE VECCHIS</an:docProponent>
+				<an:docProponent refersTo="#IDD3AAIT2WLGL0HMLBJ0CQG32XJVO0NXIGZKGO1LWMO3SE0FMXQSG" as="#tipoSenatore">DE VECCHIS</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDZUW1MWJQ0XQYIKPGKRGO3PCYPBWFSE4X3C50OLNXH5ODNZYZAW0N">PIZZOL</an:docProponent>
+				<an:docProponent refersTo="#IDZUW1MWJQ0XQYIKPGKRGO3PCYPBWFSE4X3C50OLNXH5ODNZYZAW0N" as="#tipoSenatore">PIZZOL</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDDKKJYHRX51HBI4CB5MTI2PGQAFFSIQCKZB122FLNRITI2NWIPYOD">Umberto BOSSI</an:docProponent>
+				<an:docProponent refersTo="#IDDKKJYHRX51HBI4CB5MTI2PGQAFFSIQCKZB122FLNRITI2NWIPYOD" as="#tipoSenatore">Umberto BOSSI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDSFYYJCADJ023DHBUQYVXKCI3TNUDTA14QM3OA2OADKSJIIRAVTCD">Simone BOSSI</an:docProponent>
+				<an:docProponent refersTo="#IDSFYYJCADJ023DHBUQYVXKCI3TNUDTA14QM3OA2OADKSJIIRAVTCD" as="#tipoSenatore">Simone BOSSI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/1925/A/113.0.21/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/1925/A/113.0.21"/>
 					<an:FRBRdate date="2020-10-09" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1925/A/113.0.21/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/1925/A/113.0.21/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2020-10-09" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1925/A/113.0.21/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/1925/A/113.0.21/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,27 +32,27 @@
 					<an:FRBRdate date="2020-10-09" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1925/A/113.0.21/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/1925/A/113.0.21/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2020-10-09" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2020-10-09"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2020-10-09" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2020-10-09" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/1925/A/113.0.21/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/1925" id="ar1" showAs="DDL 1925"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32612" id="IDFJYJDVPMV4B5IOXY1I432BH4UGSWG4HEZWVCFRI52GDRDN5YWGPE" showAs="D'ANGELO"/>
-				<an:TLCPerson href="http://dati.senato.it/32616" id="IDBZCAGPA2ON5AGYUXOM4J3UGBOIGT3K5WJGSVSCNFJPGRHE0KJ3P" showAs="DELL'OLIO"/>
-				<an:TLCPerson href="http://dati.senato.it/29164" id="ID45EQ44FRSU5HPVSU5E1ZC3KQYJAR0T01G5PJD2KMGYWJWA00K2ZB" showAs="PUGLIA"/>
-				<an:TLCPerson href="http://dati.senato.it/32634" id="IDYCNDSMFP13RXMRXXYYPHSGU5PGLW1RUDUSTZUMFPVYBF4MKJ4ZWD" showAs="FLORIDIA"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/1925/A/113.0.21/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/1925" showAs="DDL 1925"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDFJYJDVPMV4B5IOXY1I432BH4UGSWG4HEZWVCFRI52GDRDN5YWGPE" href="http://dati.senato.it/32612" showAs="D'ANGELO"/>
+				<an:TLCPerson id="IDBZCAGPA2ON5AGYUXOM4J3UGBOIGT3K5WJGSVSCNFJPGRHE0KJ3P" href="http://dati.senato.it/32616" showAs="DELL'OLIO"/>
+				<an:TLCPerson id="ID45EQ44FRSU5HPVSU5E1ZC3KQYJAR0T01G5PJD2KMGYWJWA00K2ZB" href="http://dati.senato.it/29164" showAs="PUGLIA"/>
+				<an:TLCPerson id="IDYCNDSMFP13RXMRXXYYPHSGU5PGLW1RUDUSTZUMFPVYBF4MKJ4ZWD" href="http://dati.senato.it/32634" showAs="FLORIDIA"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -63,16 +63,16 @@
 				<an:docNumber>Emendamento n. 113.0.21</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDFJYJDVPMV4B5IOXY1I432BH4UGSWG4HEZWVCFRI52GDRDN5YWGPE">D'ANGELO</an:docProponent>
+				<an:docProponent refersTo="#IDFJYJDVPMV4B5IOXY1I432BH4UGSWG4HEZWVCFRI52GDRDN5YWGPE" as="#tipoSenatore">D'ANGELO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDBZCAGPA2ON5AGYUXOM4J3UGBOIGT3K5WJGSVSCNFJPGRHE0KJ3P">DELL'OLIO</an:docProponent>
+				<an:docProponent refersTo="#IDBZCAGPA2ON5AGYUXOM4J3UGBOIGT3K5WJGSVSCNFJPGRHE0KJ3P" as="#tipoSenatore">DELL'OLIO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID45EQ44FRSU5HPVSU5E1ZC3KQYJAR0T01G5PJD2KMGYWJWA00K2ZB">PUGLIA</an:docProponent>
+				<an:docProponent refersTo="#ID45EQ44FRSU5HPVSU5E1ZC3KQYJAR0T01G5PJD2KMGYWJWA00K2ZB" as="#tipoSenatore">PUGLIA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDYCNDSMFP13RXMRXXYYPHSGU5PGLW1RUDUSTZUMFPVYBF4MKJ4ZWD">FLORIDIA</an:docProponent>
+				<an:docProponent refersTo="#IDYCNDSMFP13RXMRXXYYPHSGU5PGLW1RUDUSTZUMFPVYBF4MKJ4ZWD" as="#tipoSenatore">FLORIDIA</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

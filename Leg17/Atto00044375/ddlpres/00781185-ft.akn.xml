@@ -2,15 +2,15 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="/it/Ddl/2014-04-30/1471/main"/>
 					<an:FRBRuri value="/it/Ddl/2014-04-30/1471"/>
 					<an:FRBRdate date="2014-04-30" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="/it/Ddl/2014-04-30/1471/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="/it/Ddl/2014-04-30/1471/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="wcompmain" href="/it/Ddl/2014-04-30/1471/main" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="wcomp2" href="/it/Ddl/2014-04-30/1471/main/relazione" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
@@ -23,8 +23,8 @@
 					<an:FRBRdate date="2014-04-30" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="/it/Ddl/2014-04-30/1471/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="/it/Ddl/2014-04-30/1471/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="ecompmain" href="/it/Ddl/2014-04-30/1471/ita@/main" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="ecomp2" href="/it/Ddl/2014-04-30/1471/ita@/main/relazione" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -34,29 +34,29 @@
 					<an:FRBRdate date="2014-04-30" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="/it/Ddl/2014-04-30/1471/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="/it/Ddl/2014-04-30/1471/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="mcompmain" href="/it/Ddl/2014-04-30/1471/ita@/main.xml" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="mcomp2" href="/it/Ddl/2014-04-30/1471/ita@/main/relazione.xml" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2014-04-30" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2014-04-30"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2014-04-30" id="step1" outcome="Presentazione"/>
+				<an:step id="step1" date="2014-04-30" actor="#senato" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="/it/Ddl/2014-04-30/1471/ita@/main" id="ro1" showAs="generation"/>
-				<an:hasAttachment href="/it/Ddl/2014-04-30/1471/ita@/main/relazione" id="annex2" showAs="Relazione"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="w1ab1ab1b2aaab1a" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29123" id="w1ab1ab1b2aaab1b1" showAs="LUCIDI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29143" id="w1ab1ab1b2aaab3b1" showAs="MORRA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29075" id="w1ab1ab1b2aaab5b1" showAs="CRIMI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="w1ab1ab1b2aaab7b1" showAs="SCIBONA"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="w1ab1ab1b2aaab9b1" showAs="SERRA"/>
+				<an:original id="ro1" href="/it/Ddl/2014-04-30/1471/ita@/main" showAs="generation"/>
+				<an:hasAttachment id="annex2" href="/it/Ddl/2014-04-30/1471/ita@/main/relazione" showAs="Relazione"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="w1ab1ab1b2aaab1a" href="http://dati.senato.it/osr/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="w1ab1ab1b2aaab1b1" href="http://dati.senato.it/osr/Persona" showAs="LUCIDI"/>
+				<an:TLCPerson id="w1ab1ab1b2aaab3b1" href="http://dati.senato.it/osr/Persona" showAs="MORRA"/>
+				<an:TLCPerson id="w1ab1ab1b2aaab5b1" href="http://dati.senato.it/osr/Persona" showAs="CRIMI"/>
+				<an:TLCPerson id="w1ab1ab1b2aaab7b1" href="http://dati.senato.it/osr/Persona" showAs="SCIBONA"/>
+				<an:TLCPerson id="w1ab1ab1b2aaab9b1" href="http://dati.senato.it/osr/Persona" showAs="SERRA"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -72,15 +72,15 @@
 			</an:p>
 			<an:p>
 				d’iniziativa dei senatori 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">LUCIDI</an:docProponent>
+				<an:docProponent refersTo="#w1ab1ab1b2aaab1b1" as="#w1ab1ab1b2aaab1a">LUCIDI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab3b1">MORRA</an:docProponent>
+				<an:docProponent refersTo="#w1ab1ab1b2aaab3b1" as="#w1ab1ab1b2aaab1a">MORRA</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab5b1">CRIMI</an:docProponent>
+				<an:docProponent refersTo="#w1ab1ab1b2aaab5b1" as="#w1ab1ab1b2aaab1a">CRIMI</an:docProponent>
 				, 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab7b1">SCIBONA</an:docProponent>
+				<an:docProponent refersTo="#w1ab1ab1b2aaab7b1" as="#w1ab1ab1b2aaab1a">SCIBONA</an:docProponent>
 				 e 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab9b1">SERRA</an:docProponent>
+				<an:docProponent refersTo="#w1ab1ab1b2aaab9b1" as="#w1ab1ab1b2aaab1a">SERRA</an:docProponent>
 				 
 			</an:p>
 			<an:p> COMUNICATO ALLA PRESIDENZA IL 30 APRILE 2014 </an:p>
@@ -392,7 +392,7 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="/it/Ddl/2014-04-30/1471/main/relazione"/>
@@ -418,8 +418,8 @@
 						</an:FRBRManifestation>
 					</an:identification>
 					<an:references source="#redattore">
-						<an:original href="/it/Ddl/2014-04-30/1471/ita@/main/relazione" id="ro2" showAs="Relazione"/>
-						<an:attachmentOf href="/it/Ddl/2014-04-30/1471/ita@/main" id="mainAnx2" showAs="Main"/>
+						<an:original id="ro2" href="/it/Ddl/2014-04-30/1471/ita@/main/relazione" showAs="Relazione"/>
+						<an:attachmentOf id="mainAnx2" href="/it/Ddl/2014-04-30/1471/ita@/main" showAs="Main"/>
 					</an:references>
 				</an:meta>
 				<an:mainBody>

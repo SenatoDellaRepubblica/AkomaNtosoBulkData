@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/2111-B/A/G1.7/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/2111-B/A/G1.7"/>
 					<an:FRBRdate date="2015-12-22" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2111-B/A/G1.7/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/2111-B/A/G1.7/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2015-12-22" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2111-B/A/G1.7/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/2111-B/A/G1.7/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,31 +32,31 @@
 					<an:FRBRdate date="2015-12-22" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2111-B/A/G1.7/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/2111-B/A/G1.7/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2015-12-22" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2015-12-22"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2015-12-22" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2015-12-22" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/2111-B/A/G1.7/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/2111-B" id="ar1" showAs="DDL 2111-B"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/31010" id="IDAN0QO" showAs="AMIDEI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22899" id="IDAH4QO" showAs="CERONI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29163" id="IDA01QO" showAs="PICCOLI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/31009" id="IDAC2QO" showAs="BERTACCO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29128" id="IDAU3QO" showAs="MARIN"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25491" id="IDAG1QO" showAs="GIBIINO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29209" id="IDA14QO" showAs="FLORIS"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/1407" id="IDAFYQO" showAs="MALAN"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/2111-B/A/G1.7/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/2111-B" showAs="DDL 2111-B"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDAN0QO" href="http://dati.senato.it/senatore/31010" showAs="AMIDEI"/>
+				<an:TLCPerson id="IDAH4QO" href="http://dati.senato.it/senatore/22899" showAs="CERONI"/>
+				<an:TLCPerson id="IDA01QO" href="http://dati.senato.it/senatore/29163" showAs="PICCOLI"/>
+				<an:TLCPerson id="IDAC2QO" href="http://dati.senato.it/senatore/31009" showAs="BERTACCO"/>
+				<an:TLCPerson id="IDAU3QO" href="http://dati.senato.it/senatore/29128" showAs="MARIN"/>
+				<an:TLCPerson id="IDAG1QO" href="http://dati.senato.it/senatore/25491" showAs="GIBIINO"/>
+				<an:TLCPerson id="IDA14QO" href="http://dati.senato.it/senatore/29209" showAs="FLORIS"/>
+				<an:TLCPerson id="IDAFYQO" href="http://dati.senato.it/senatore/1407" showAs="MALAN"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -67,28 +67,28 @@
 				<an:docNumber>Ordine del giorno n. G1.7</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAN0QO">AMIDEI</an:docProponent>
+				<an:docProponent refersTo="#IDAN0QO" as="#tipoSenatore">AMIDEI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAH4QO">CERONI</an:docProponent>
+				<an:docProponent refersTo="#IDAH4QO" as="#tipoSenatore">CERONI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDA01QO">PICCOLI</an:docProponent>
+				<an:docProponent refersTo="#IDA01QO" as="#tipoSenatore">PICCOLI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAC2QO">BERTACCO</an:docProponent>
+				<an:docProponent refersTo="#IDAC2QO" as="#tipoSenatore">BERTACCO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAU3QO">MARIN</an:docProponent>
+				<an:docProponent refersTo="#IDAU3QO" as="#tipoSenatore">MARIN</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAG1QO">GIBIINO</an:docProponent>
+				<an:docProponent refersTo="#IDAG1QO" as="#tipoSenatore">GIBIINO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDA14QO">FLORIS</an:docProponent>
+				<an:docProponent refersTo="#IDA14QO" as="#tipoSenatore">FLORIS</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAFYQO">MALAN</an:docProponent>
+				<an:docProponent refersTo="#IDAFYQO" as="#tipoSenatore">MALAN</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

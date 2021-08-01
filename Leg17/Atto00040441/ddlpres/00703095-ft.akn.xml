@@ -2,15 +2,15 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-04-10/460/main"/>
 					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-10/460"/>
 					<an:FRBRdate date="2013-04-10" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/460/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/460/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/osr/Ddl/2013-04-10/460/main" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="wcomp2" href="http://dati.senato.it/osr/Ddl/2013-04-10/460/main/relazione" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
@@ -23,8 +23,8 @@
 					<an:FRBRdate date="2013-04-10" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="ecomp2" href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main/relazione" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -34,33 +34,33 @@
 					<an:FRBRdate date="2013-04-10" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main.xml" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="mcomp2" href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main/relazione.xml" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2013-04-10" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2013-04-10"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2013-04-10" id="step1" outcome="Presentazione"/>
+				<an:step id="step1" date="2013-04-10" actor="#senato" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main" id="ro1" showAs="generation"/>
-				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main/relazione" id="annex2" showAs="Relazione"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d397e16a1327" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d397e16" showAs="PEZZOPANE"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d397e18" showAs="ALBANO"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d397e20" showAs="CIRlNNÁ"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29105" id="d397e22" showAs="GIACOBBE"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/23135" id="d397e24" showAs="MARGIOTTA"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d397e27" showAs="MICHELONI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d397e29" showAs="PUPPATO"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d397e31" showAs="TOMASELLI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d397e33" showAs="VACCARI"/>
+				<an:original id="ro1" href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main" showAs="generation"/>
+				<an:hasAttachment id="annex2" href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main/relazione" showAs="Relazione"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="d397e16a1327" href="http://dati.senato.it/osr/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="d397e16" href="http://dati.senato.it/osr/Persona" showAs="PEZZOPANE"/>
+				<an:TLCPerson id="d397e18" href="http://dati.senato.it/osr/Persona" showAs="ALBANO"/>
+				<an:TLCPerson id="d397e20" href="http://dati.senato.it/osr/Persona" showAs="CIRlNNÁ"/>
+				<an:TLCPerson id="d397e22" href="http://dati.senato.it/osr/Persona" showAs="GIACOBBE"/>
+				<an:TLCPerson id="d397e24" href="http://dati.senato.it/osr/Persona" showAs="MARGIOTTA"/>
+				<an:TLCPerson id="d397e27" href="http://dati.senato.it/osr/Persona" showAs="MICHELONI"/>
+				<an:TLCPerson id="d397e29" href="http://dati.senato.it/osr/Persona" showAs="PUPPATO"/>
+				<an:TLCPerson id="d397e31" href="http://dati.senato.it/osr/Persona" showAs="TOMASELLI"/>
+				<an:TLCPerson id="d397e33" href="http://dati.senato.it/osr/Persona" showAs="VACCARI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -76,23 +76,23 @@
 			</an:p>
 			<an:p>
 				d’iniziativa dei senatori 
-				<an:docProponent as="#d397e16a1327" refersTo="#d397e16">PEZZOPANE</an:docProponent>
+				<an:docProponent refersTo="#d397e16" as="#d397e16a1327">PEZZOPANE</an:docProponent>
 				, 
-				<an:docProponent as="#d397e16a1327" refersTo="#d397e18">ALBANO</an:docProponent>
+				<an:docProponent refersTo="#d397e18" as="#d397e16a1327">ALBANO</an:docProponent>
 				, 
-				<an:docProponent as="#d397e16a1327" refersTo="#d397e20">CIRlNNÁ</an:docProponent>
+				<an:docProponent refersTo="#d397e20" as="#d397e16a1327">CIRlNNÁ</an:docProponent>
 				, 
-				<an:docProponent as="#d397e16a1327" refersTo="#d397e22">GIACOBBE</an:docProponent>
+				<an:docProponent refersTo="#d397e22" as="#d397e16a1327">GIACOBBE</an:docProponent>
 				, 
-				<an:docProponent as="#d397e16a1327" refersTo="#d397e24">MARGIOTTA</an:docProponent>
+				<an:docProponent refersTo="#d397e24" as="#d397e16a1327">MARGIOTTA</an:docProponent>
 				, 
-				<an:docProponent as="#d397e16a1327" refersTo="#d397e27">MICHELONI</an:docProponent>
+				<an:docProponent refersTo="#d397e27" as="#d397e16a1327">MICHELONI</an:docProponent>
 				, 
-				<an:docProponent as="#d397e16a1327" refersTo="#d397e29">PUPPATO</an:docProponent>
+				<an:docProponent refersTo="#d397e29" as="#d397e16a1327">PUPPATO</an:docProponent>
 				, 
-				<an:docProponent as="#d397e16a1327" refersTo="#d397e31">TOMASELLI</an:docProponent>
+				<an:docProponent refersTo="#d397e31" as="#d397e16a1327">TOMASELLI</an:docProponent>
 				 e 
-				<an:docProponent as="#d397e16a1327" refersTo="#d397e33">VACCARI</an:docProponent>
+				<an:docProponent refersTo="#d397e33" as="#d397e16a1327">VACCARI</an:docProponent>
 				 
 			</an:p>
 			<an:p>
@@ -124,7 +124,7 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-10/460/main/relazione"/>
@@ -150,8 +150,8 @@
 						</an:FRBRManifestation>
 					</an:identification>
 					<an:references source="#redattore">
-						<an:original href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main/relazione" id="ro2" showAs="Relazione"/>
-						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main" id="mainAnx2" showAs="Main"/>
+						<an:original id="ro2" href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main/relazione" showAs="Relazione"/>
+						<an:attachmentOf id="mainAnx2" href="http://dati.senato.it/osr/Ddl/2013-04-10/460/ita@/main" showAs="Main"/>
 					</an:references>
 				</an:meta>
 				<an:mainBody>

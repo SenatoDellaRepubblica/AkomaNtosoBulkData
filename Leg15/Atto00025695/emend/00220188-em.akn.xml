@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/15/Emend/S/635/A/1.700/main"/>
 					<an:FRBRuri value="http://dati.senato.it/15/Emend/S/635/A/1.700"/>
 					<an:FRBRdate date="2006-10-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/15/Emend/S/635/A/1.700/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/15/Emend/S/635/A/1.700/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2006-10-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/15/Emend/S/635/A/1.700/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/15/Emend/S/635/A/1.700/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,24 +32,24 @@
 					<an:FRBRdate date="2006-10-05" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/15/Emend/S/635/A/1.700/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/15/Emend/S/635/A/1.700/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2006-10-05" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2006-10-05"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2006-10-05" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2006-10-05" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/15/Emend/S/635/A/1.700/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/15/635" id="ar1" showAs="DDL 635"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/" id="EZ" showAs="IL RELATORE"/>
+				<an:original id="ro1" href="http://dati.senato.it/15/Emend/S/635/A/1.700/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/15/635" showAs="DDL 635"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="EZ" href="http://dati.senato.it/senatore/" showAs="IL RELATORE"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -118,7 +118,7 @@
 						<an:i>è sostituita dalla seguente:</an:i>
 					</an:li>
 				</an:ol>
-				<an:div id="ETC" style="margin-left: 2em">
+				<an:div style="margin-left: 2em" id="ETC">
 					<an:p align="justify">ff. l'adozione di provvedimenti non previsti da norme vigenti ovvero sulla base di un errore</an:p>
 					<an:p align="justify">macroscopico o di grave e inescusabile negligenza;</an:p>
 				</an:div>
@@ -173,7 +173,7 @@
 					<an:i>bis</an:i>
 				</an:p>
 				<an:p align="center">Condotta disciplinare irrilevante.</an:p>
-				<an:div id="ESE" style="margin-left: 4em">
+				<an:div style="margin-left: 4em" id="ESE">
 					<an:p align="justify">1. l'illecito disciplinare non è configurabile quando il fatto è di scarsa rilevanza</an:p>
 				</an:div>
 				<an:p align="justify">
@@ -212,7 +212,7 @@
 					due anni
 					<an:i>».</an:i>
 				</an:p>
-				<an:div id="EAG" style="margin-left: 4em">
+				<an:div style="margin-left: 4em" id="EAG">
 					<an:p align="justify">
 						3) 
 						<an:i>al comma 8, dopo le parole: «</an:i>
@@ -251,7 +251,7 @@
 				<an:p align="justify">motivatamente, che dalla divulgazione degli atti coperti da segreto investigativo possa derivare grave</an:p>
 				<an:p align="justify">pregiudizio alle indagini, il Procuratore generale dispone, con decreto, che i detti atti rimangano</an:p>
 				<an:p align="justify">segreti per un periodo non superiore a dodici mesi prorogabile di altri sei mesi su richiesta motivata</an:p>
-				<an:div id="EOH" style="margin-left: 4em">
+				<an:div style="margin-left: 4em" id="EOH">
 					<an:p align="justify">del procuratore della Repubblica ovvero dodici mesi quando si procede per reati di cui all'articolo 407, secondo comma del codice di procedura penale e sospende il procedimento disciplinare per un analogo periodo. Successivamente il Procuratore generale presso la Corte di cassazione può prendere visione degli atti. Il procedimento può essere altresì sospeso nel corso delle indagini preliminari.</an:p>
 				</an:div>
 				<an:p align="justify">
@@ -332,14 +332,14 @@
 					</an:li>
 					<an:li>La Corte di cassazione decide a sezioni unite civili, entro sei mesi dalla data di proposizione del</an:li>
 				</an:ol>
-				<an:div id="ERCAC" style="margin-left: 4em">
+				<an:div style="margin-left: 4em" id="ERCAC">
 					<an:p align="justify">ricorso.</an:p>
 				</an:div>
 				<an:p align="justify">
 					p) 
 					<an:i>all'articolo 25, i commi 7 e 8 sono sostituiti dai seguenti:</an:i>
 				</an:p>
-				<an:div id="EZCAC" style="margin-left: 4em">
+				<an:div style="margin-left: 4em" id="EZCAC">
 					<an:p align="justify">7. La sezione disciplinare acquisisce gli atti del procedimento disciplinare e, sentiti il Procuratore generale presso la Corte di cassazione, l'istante ed il suo difensore, dichiara inammissibile l'istanza di revisione se proposta fuori dai casi di cui al comma 2, o senza l'osservanza delle disposizioni di cui al comma 4 ovvero se risulta manifestamente infondata; altrimenti, dispone il procedersi al giudizio di revisione, al quale si applicano le norme stabilite per il procedimento disciplinare.</an:p>
 					<an:p align="justify">8. Contro la decisione che dichiara inammissibile l'istanza di revisione è ammesso ricorso alle</an:p>
 					<an:p align="justify">sezioni unite civili della Corte di cassazione.</an:p>
@@ -359,7 +359,7 @@
 					</an:li>
 					<an:li>Le disposizioni di cui al presente decreto legislativo si applicano ai procedimenti disciplinari</an:li>
 				</an:ol>
-				<an:div id="ERDAC" style="margin-left: 4em">
+				<an:div style="margin-left: 4em" id="ERDAC">
 					<an:p align="justify">promossi a decorrere dalla sua entrata in vigore.</an:p>
 					<an:p align="justify">2. Per i fatti commessi anteriormente alla data di entrata in vigore delle disposizioni del presente decreto legislativo continuano ad applicarsi, se più favorevoli, gli articoli 17, 18, 19, 20, 21, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37 e 38 del regio decreto legislativo 31 maggio 1946, n. 511.</an:p>
 					<an:p align="justify">3. I ricorsi proposti avverso le sentenze pronunziate dalla sezione disciplinare del Consiglio</an:p>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/1018-B/A/10.1/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/1018-B/A/10.1"/>
 					<an:FRBRdate date="2019-03-27" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1018-B/A/10.1/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/1018-B/A/10.1/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2019-03-27" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1018-B/A/10.1/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/1018-B/A/10.1/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,27 +32,27 @@
 					<an:FRBRdate date="2019-03-27" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1018-B/A/10.1/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/1018-B/A/10.1/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2019-03-27" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2019-03-27"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2019-03-27" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2019-03-27" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/1018-B/A/10.1/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/1018-B" id="ar1" showAs="DDL 1018-B"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29157" id="IDTOGQQUNBL4J4BFGMBWLO23UXSPHKFATQJ2J4F1NBXWQTB1QBDLF" showAs="PARENTE"/>
-				<an:TLCPerson href="http://dati.senato.it/31572" id="IDSZZI0VHZXDDBBEIMVI4LRVO32EKNUIYEOAKU1SDNXMVC32H5ONLI" showAs="NANNICINI"/>
-				<an:TLCPerson href="http://dati.senato.it/29524" id="IDDR3O3FH251PHJLAXEE54C5GKND0OVS410XOCSLBBU0M4ID2RX4JH" showAs="PATRIARCA"/>
-				<an:TLCPerson href="http://dati.senato.it/32651" id="IDUDUB20EU1UHSMDYABH2HW3M03LRPJVORBHTWCWPE5HDFCKEZR0IK" showAs="LAUS"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/1018-B/A/10.1/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/1018-B" showAs="DDL 1018-B"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDTOGQQUNBL4J4BFGMBWLO23UXSPHKFATQJ2J4F1NBXWQTB1QBDLF" href="http://dati.senato.it/29157" showAs="PARENTE"/>
+				<an:TLCPerson id="IDSZZI0VHZXDDBBEIMVI4LRVO32EKNUIYEOAKU1SDNXMVC32H5ONLI" href="http://dati.senato.it/31572" showAs="NANNICINI"/>
+				<an:TLCPerson id="IDDR3O3FH251PHJLAXEE54C5GKND0OVS410XOCSLBBU0M4ID2RX4JH" href="http://dati.senato.it/29524" showAs="PATRIARCA"/>
+				<an:TLCPerson id="IDUDUB20EU1UHSMDYABH2HW3M03LRPJVORBHTWCWPE5HDFCKEZR0IK" href="http://dati.senato.it/32651" showAs="LAUS"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -63,16 +63,16 @@
 				<an:docNumber>Emendamento n. 10.1</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDTOGQQUNBL4J4BFGMBWLO23UXSPHKFATQJ2J4F1NBXWQTB1QBDLF">PARENTE</an:docProponent>
+				<an:docProponent refersTo="#IDTOGQQUNBL4J4BFGMBWLO23UXSPHKFATQJ2J4F1NBXWQTB1QBDLF" as="#tipoSenatore">PARENTE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDSZZI0VHZXDDBBEIMVI4LRVO32EKNUIYEOAKU1SDNXMVC32H5ONLI">NANNICINI</an:docProponent>
+				<an:docProponent refersTo="#IDSZZI0VHZXDDBBEIMVI4LRVO32EKNUIYEOAKU1SDNXMVC32H5ONLI" as="#tipoSenatore">NANNICINI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDDR3O3FH251PHJLAXEE54C5GKND0OVS410XOCSLBBU0M4ID2RX4JH">PATRIARCA</an:docProponent>
+				<an:docProponent refersTo="#IDDR3O3FH251PHJLAXEE54C5GKND0OVS410XOCSLBBU0M4ID2RX4JH" as="#tipoSenatore">PATRIARCA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDUDUB20EU1UHSMDYABH2HW3M03LRPJVORBHTWCWPE5HDFCKEZR0IK">LAUS</an:docProponent>
+				<an:docProponent refersTo="#IDUDUB20EU1UHSMDYABH2HW3M03LRPJVORBHTWCWPE5HDFCKEZR0IK" as="#tipoSenatore">LAUS</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

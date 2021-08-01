@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/690/C/3.15/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/690/C/3.15"/>
 					<an:FRBRdate date="2018-10-25" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/690/C/3.15/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/690/C/3.15/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2018-10-25" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/690/C/3.15/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/690/C/3.15/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,29 +32,29 @@
 					<an:FRBRdate date="2018-10-25" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/690/C/3.15/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/690/C/3.15/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-10-25" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2018-10-25"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-10-25" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2018-10-25" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/690/C/3.15/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/690" id="ar1" showAs="DDL 690"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/6" id="commissione" showAs="6ª Commissione permanente"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/25206" id="IDOM2YG2SM5HYPOZEXVMKYN4KKTP1APVANWZZR54KLXZSMZWVKW0CC" showAs="SCIASCIA"/>
-				<an:TLCPerson href="http://dati.senato.it/32605" id="IDG2LOVX5IT4P5MRSKFF4JPGTZON1NN2LUJCMAYIBH0M4ZPLZ5XD4M" showAs="CONZATTI"/>
-				<an:TLCPerson href="http://dati.senato.it/32688" id="IDPFHYSI22RX44IDLMWN4MDUYIKI1A3A3DT13BUSG3FPUAQBUIC3IB" showAs="PEROSINO"/>
-				<an:TLCPerson href="http://dati.senato.it/25412" id="IDA35RMLCXNBA2GNFEB5DQ35CNPDHDJFW2HLFMCLXEIBB4S3X5AWH" showAs="ROSSI"/>
-				<an:TLCPerson href="http://dati.senato.it/32671" id="ID41A5NIXX0SPIDDX4XOZP2K0KPBBKGLHULXCJVFI2ZYVL2ZP00LKB" showAs="MODENA"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/690/C/3.15/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/690" showAs="DDL 690"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="6ª Commissione permanente" href="/dati.senato.it/osr/Commissione/6"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDOM2YG2SM5HYPOZEXVMKYN4KKTP1APVANWZZR54KLXZSMZWVKW0CC" href="http://dati.senato.it/25206" showAs="SCIASCIA"/>
+				<an:TLCPerson id="IDG2LOVX5IT4P5MRSKFF4JPGTZON1NN2LUJCMAYIBH0M4ZPLZ5XD4M" href="http://dati.senato.it/32605" showAs="CONZATTI"/>
+				<an:TLCPerson id="IDPFHYSI22RX44IDLMWN4MDUYIKI1A3A3DT13BUSG3FPUAQBUIC3IB" href="http://dati.senato.it/32688" showAs="PEROSINO"/>
+				<an:TLCPerson id="IDA35RMLCXNBA2GNFEB5DQ35CNPDHDJFW2HLFMCLXEIBB4S3X5AWH" href="http://dati.senato.it/25412" showAs="ROSSI"/>
+				<an:TLCPerson id="ID41A5NIXX0SPIDDX4XOZP2K0KPBBKGLHULXCJVFI2ZYVL2ZP00LKB" href="http://dati.senato.it/32671" showAs="MODENA"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -65,19 +65,19 @@
 				<an:docNumber>Emendamento n. 3.15</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDOM2YG2SM5HYPOZEXVMKYN4KKTP1APVANWZZR54KLXZSMZWVKW0CC">SCIASCIA</an:docProponent>
+				<an:docProponent refersTo="#IDOM2YG2SM5HYPOZEXVMKYN4KKTP1APVANWZZR54KLXZSMZWVKW0CC" as="#tipoSenatore">SCIASCIA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDG2LOVX5IT4P5MRSKFF4JPGTZON1NN2LUJCMAYIBH0M4ZPLZ5XD4M">CONZATTI</an:docProponent>
+				<an:docProponent refersTo="#IDG2LOVX5IT4P5MRSKFF4JPGTZON1NN2LUJCMAYIBH0M4ZPLZ5XD4M" as="#tipoSenatore">CONZATTI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDPFHYSI22RX44IDLMWN4MDUYIKI1A3A3DT13BUSG3FPUAQBUIC3IB">PEROSINO</an:docProponent>
+				<an:docProponent refersTo="#IDPFHYSI22RX44IDLMWN4MDUYIKI1A3A3DT13BUSG3FPUAQBUIC3IB" as="#tipoSenatore">PEROSINO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDA35RMLCXNBA2GNFEB5DQ35CNPDHDJFW2HLFMCLXEIBB4S3X5AWH">ROSSI</an:docProponent>
+				<an:docProponent refersTo="#IDA35RMLCXNBA2GNFEB5DQ35CNPDHDJFW2HLFMCLXEIBB4S3X5AWH" as="#tipoSenatore">ROSSI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID41A5NIXX0SPIDDX4XOZP2K0KPBBKGLHULXCJVFI2ZYVL2ZP00LKB">MODENA</an:docProponent>
+				<an:docProponent refersTo="#ID41A5NIXX0SPIDDX4XOZP2K0KPBBKGLHULXCJVFI2ZYVL2ZP00LKB" as="#tipoSenatore">MODENA</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

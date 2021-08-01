@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/981/A/9. Tab.8.2.5/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/981/A/9. Tab.8.2.5"/>
 					<an:FRBRdate date="2018-12-21" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/981/A/9. Tab.8.2.5/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/981/A/9. Tab.8.2.5/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2018-12-21" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/981/A/9. Tab.8.2.5/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/981/A/9. Tab.8.2.5/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2018-12-21" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/981/A/9. Tab.8.2.5/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/981/A/9. Tab.8.2.5/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-12-21" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2018-12-21"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-12-21" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2018-12-21" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/981/A/9. Tab.8.2.5/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/981" id="ar1" showAs="DDL 981"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32706" id="IDD3R1BR14D4IFLFQ2U32LKA0BYF05ZRTZS42YAZP3PQIFQX51LXBH" showAs="ROMEO"/>
-				<an:TLCPerson href="http://dati.senato.it/25415" id="IDNJ143E55UKIKLEEEIRFDEHWKWEN230RRRP0NYIGREGOGE5TBXUFC" showAs="RIVOLTA"/>
-				<an:TLCPerson href="http://dati.senato.it/32633" id="IDQRGZS0Q5KHF5FAWJMEHGD4CCDDS3SGUPY53XXVCH0HLB3YVBHJZG" showAs="FERRERO"/>
-				<an:TLCPerson href="http://dati.senato.it/32716" id="IDSM12WB2WMZSFGD5NBR5KA0YWAGEPNAE2YNVBKNOYB5CO0APB2JR" showAs="SOLINAS"/>
-				<an:TLCPerson href="http://dati.senato.it/32733" id="IDMY0NWYUEGGNDLHGGJCFZ1RRUYFSYQA2ZLEK4TVKZCHOUBOXFPSBO" showAs="ZULIANI"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/981/A/9. Tab.8.2.5/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/981" showAs="DDL 981"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDD3R1BR14D4IFLFQ2U32LKA0BYF05ZRTZS42YAZP3PQIFQX51LXBH" href="http://dati.senato.it/32706" showAs="ROMEO"/>
+				<an:TLCPerson id="IDNJ143E55UKIKLEEEIRFDEHWKWEN230RRRP0NYIGREGOGE5TBXUFC" href="http://dati.senato.it/25415" showAs="RIVOLTA"/>
+				<an:TLCPerson id="IDQRGZS0Q5KHF5FAWJMEHGD4CCDDS3SGUPY53XXVCH0HLB3YVBHJZG" href="http://dati.senato.it/32633" showAs="FERRERO"/>
+				<an:TLCPerson id="IDSM12WB2WMZSFGD5NBR5KA0YWAGEPNAE2YNVBKNOYB5CO0APB2JR" href="http://dati.senato.it/32716" showAs="SOLINAS"/>
+				<an:TLCPerson id="IDMY0NWYUEGGNDLHGGJCFZ1RRUYFSYQA2ZLEK4TVKZCHOUBOXFPSBO" href="http://dati.senato.it/32733" showAs="ZULIANI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,19 +64,19 @@
 				<an:docNumber>Emendamento n. 9. Tab.8.2.5</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDD3R1BR14D4IFLFQ2U32LKA0BYF05ZRTZS42YAZP3PQIFQX51LXBH">ROMEO</an:docProponent>
+				<an:docProponent refersTo="#IDD3R1BR14D4IFLFQ2U32LKA0BYF05ZRTZS42YAZP3PQIFQX51LXBH" as="#tipoSenatore">ROMEO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDNJ143E55UKIKLEEEIRFDEHWKWEN230RRRP0NYIGREGOGE5TBXUFC">RIVOLTA</an:docProponent>
+				<an:docProponent refersTo="#IDNJ143E55UKIKLEEEIRFDEHWKWEN230RRRP0NYIGREGOGE5TBXUFC" as="#tipoSenatore">RIVOLTA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDQRGZS0Q5KHF5FAWJMEHGD4CCDDS3SGUPY53XXVCH0HLB3YVBHJZG">FERRERO</an:docProponent>
+				<an:docProponent refersTo="#IDQRGZS0Q5KHF5FAWJMEHGD4CCDDS3SGUPY53XXVCH0HLB3YVBHJZG" as="#tipoSenatore">FERRERO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDSM12WB2WMZSFGD5NBR5KA0YWAGEPNAE2YNVBKNOYB5CO0APB2JR">SOLINAS</an:docProponent>
+				<an:docProponent refersTo="#IDSM12WB2WMZSFGD5NBR5KA0YWAGEPNAE2YNVBKNOYB5CO0APB2JR" as="#tipoSenatore">SOLINAS</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDMY0NWYUEGGNDLHGGJCFZ1RRUYFSYQA2ZLEK4TVKZCHOUBOXFPSBO">ZULIANI</an:docProponent>
+				<an:docProponent refersTo="#IDMY0NWYUEGGNDLHGGJCFZ1RRUYFSYQA2ZLEK4TVKZCHOUBOXFPSBO" as="#tipoSenatore">ZULIANI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

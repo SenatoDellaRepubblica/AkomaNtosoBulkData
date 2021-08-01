@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/2728/C/1.5/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/2728/C/1.5"/>
 					<an:FRBRdate date="2017-09-12" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2728/C/1.5/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/2728/C/1.5/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2017-09-12" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2728/C/1.5/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/2728/C/1.5/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,33 +32,33 @@
 					<an:FRBRdate date="2017-09-12" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2728/C/1.5/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/2728/C/1.5/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2017-09-12" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2017-09-12"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2017-09-12" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2017-09-12" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/2728/C/1.5/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/2728" id="ar1" showAs="DDL 2728"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/4" id="commissione" showAs="4ª Commissione permanente"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29099" id="ID3K1SN4CMKQ2YCRJBZ5WD0IJGZMLE0SORL0AWXWOGSUJ4JSPAKCGH" showAs="FORNARO"/>
-				<an:TLCPerson href="http://dati.senato.it/29042" id="IDRDF1YRHUDJWSDNE5BJWZKMBWFLJGOSZJQQNAZLD0HYYMQVT2DKAN" showAs="BATTISTA"/>
-				<an:TLCPerson href="http://dati.senato.it/22767" id="IDRXDVNKHTL2MECPAGPPT4EMKBTVY3RDYOUPBRWMQEOHVIGRUMDSI" showAs="PEGORER"/>
-				<an:TLCPerson href="http://dati.senato.it/28580" id="IDXMCMLU0LNSXZKF0MLIWH3RVMMNKR42JDSWVU0BPBXGB0GRKWR4QD" showAs="GUERRA"/>
-				<an:TLCPerson href="http://dati.senato.it/25477" id="IDEG1Z13JFB1KPH4NDRRI2EXIMIT5I1YDRRET32L24FYC3DXJUWVC" showAs="LO MORO"/>
-				<an:TLCPerson href="http://dati.senato.it/4493" id="ID1X4IJFAMXQXZCKCZ4O40J4R0GPI3XXWFAVAEREFS40DFWQ1WFIG" showAs="MIGLIAVACCA"/>
-				<an:TLCPerson href="http://dati.senato.it/22337" id="IDGBG2PPYHTK2LEPXWOY2BB0WAKPATS4CMI1CV4VC2QS2AJNPTVQTO" showAs="CASSON"/>
-				<an:TLCPerson href="http://dati.senato.it/4387" id="IDGMLLY4FP0BJQDEK5O5RUJPBQXPXNNSQQROV5CWN0T4X41WMDK0KC" showAs="CORSINI"/>
-				<an:TLCPerson href="http://dati.senato.it/25495" id="IDZS1TT2WAJRQWKSPRRBIB1EPRLJ0NLF1CQUWBUTIM3QRQXOTN4NZI" showAs="GATTI"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/2728/C/1.5/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/2728" showAs="DDL 2728"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="4ª Commissione permanente" href="/dati.senato.it/osr/Commissione/4"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="ID3K1SN4CMKQ2YCRJBZ5WD0IJGZMLE0SORL0AWXWOGSUJ4JSPAKCGH" href="http://dati.senato.it/29099" showAs="FORNARO"/>
+				<an:TLCPerson id="IDRDF1YRHUDJWSDNE5BJWZKMBWFLJGOSZJQQNAZLD0HYYMQVT2DKAN" href="http://dati.senato.it/29042" showAs="BATTISTA"/>
+				<an:TLCPerson id="IDRXDVNKHTL2MECPAGPPT4EMKBTVY3RDYOUPBRWMQEOHVIGRUMDSI" href="http://dati.senato.it/22767" showAs="PEGORER"/>
+				<an:TLCPerson id="IDXMCMLU0LNSXZKF0MLIWH3RVMMNKR42JDSWVU0BPBXGB0GRKWR4QD" href="http://dati.senato.it/28580" showAs="GUERRA"/>
+				<an:TLCPerson id="IDEG1Z13JFB1KPH4NDRRI2EXIMIT5I1YDRRET32L24FYC3DXJUWVC" href="http://dati.senato.it/25477" showAs="LO MORO"/>
+				<an:TLCPerson id="ID1X4IJFAMXQXZCKCZ4O40J4R0GPI3XXWFAVAEREFS40DFWQ1WFIG" href="http://dati.senato.it/4493" showAs="MIGLIAVACCA"/>
+				<an:TLCPerson id="IDGBG2PPYHTK2LEPXWOY2BB0WAKPATS4CMI1CV4VC2QS2AJNPTVQTO" href="http://dati.senato.it/22337" showAs="CASSON"/>
+				<an:TLCPerson id="IDGMLLY4FP0BJQDEK5O5RUJPBQXPXNNSQQROV5CWN0T4X41WMDK0KC" href="http://dati.senato.it/4387" showAs="CORSINI"/>
+				<an:TLCPerson id="IDZS1TT2WAJRQWKSPRRBIB1EPRLJ0NLF1CQUWBUTIM3QRQXOTN4NZI" href="http://dati.senato.it/25495" showAs="GATTI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -69,31 +69,31 @@
 				<an:docNumber>Emendamento n. 1.5</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID3K1SN4CMKQ2YCRJBZ5WD0IJGZMLE0SORL0AWXWOGSUJ4JSPAKCGH">FORNARO</an:docProponent>
+				<an:docProponent refersTo="#ID3K1SN4CMKQ2YCRJBZ5WD0IJGZMLE0SORL0AWXWOGSUJ4JSPAKCGH" as="#tipoSenatore">FORNARO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDRDF1YRHUDJWSDNE5BJWZKMBWFLJGOSZJQQNAZLD0HYYMQVT2DKAN">BATTISTA</an:docProponent>
+				<an:docProponent refersTo="#IDRDF1YRHUDJWSDNE5BJWZKMBWFLJGOSZJQQNAZLD0HYYMQVT2DKAN" as="#tipoSenatore">BATTISTA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDRXDVNKHTL2MECPAGPPT4EMKBTVY3RDYOUPBRWMQEOHVIGRUMDSI">PEGORER</an:docProponent>
+				<an:docProponent refersTo="#IDRXDVNKHTL2MECPAGPPT4EMKBTVY3RDYOUPBRWMQEOHVIGRUMDSI" as="#tipoSenatore">PEGORER</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDXMCMLU0LNSXZKF0MLIWH3RVMMNKR42JDSWVU0BPBXGB0GRKWR4QD">GUERRA</an:docProponent>
+				<an:docProponent refersTo="#IDXMCMLU0LNSXZKF0MLIWH3RVMMNKR42JDSWVU0BPBXGB0GRKWR4QD" as="#tipoSenatore">GUERRA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDEG1Z13JFB1KPH4NDRRI2EXIMIT5I1YDRRET32L24FYC3DXJUWVC">LO MORO</an:docProponent>
+				<an:docProponent refersTo="#IDEG1Z13JFB1KPH4NDRRI2EXIMIT5I1YDRRET32L24FYC3DXJUWVC" as="#tipoSenatore">LO MORO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID1X4IJFAMXQXZCKCZ4O40J4R0GPI3XXWFAVAEREFS40DFWQ1WFIG">MIGLIAVACCA</an:docProponent>
+				<an:docProponent refersTo="#ID1X4IJFAMXQXZCKCZ4O40J4R0GPI3XXWFAVAEREFS40DFWQ1WFIG" as="#tipoSenatore">MIGLIAVACCA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDGBG2PPYHTK2LEPXWOY2BB0WAKPATS4CMI1CV4VC2QS2AJNPTVQTO">CASSON</an:docProponent>
+				<an:docProponent refersTo="#IDGBG2PPYHTK2LEPXWOY2BB0WAKPATS4CMI1CV4VC2QS2AJNPTVQTO" as="#tipoSenatore">CASSON</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDGMLLY4FP0BJQDEK5O5RUJPBQXPXNNSQQROV5CWN0T4X41WMDK0KC">CORSINI</an:docProponent>
+				<an:docProponent refersTo="#IDGMLLY4FP0BJQDEK5O5RUJPBQXPXNNSQQROV5CWN0T4X41WMDK0KC" as="#tipoSenatore">CORSINI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDZS1TT2WAJRQWKSPRRBIB1EPRLJ0NLF1CQUWBUTIM3QRQXOTN4NZI">GATTI</an:docProponent>
+				<an:docProponent refersTo="#IDZS1TT2WAJRQWKSPRRBIB1EPRLJ0NLF1CQUWBUTIM3QRQXOTN4NZI" as="#tipoSenatore">GATTI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

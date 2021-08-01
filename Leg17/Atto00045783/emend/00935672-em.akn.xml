@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/1977/A/9.0.2000/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/1977/A/9.0.2000"/>
 					<an:FRBRdate date="2015-07-28" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1977/A/9.0.2000/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/1977/A/9.0.2000/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2015-07-28" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1977/A/9.0.2000/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/1977/A/9.0.2000/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,23 +32,23 @@
 					<an:FRBRdate date="2015-07-28" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1977/A/9.0.2000/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/1977/A/9.0.2000/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2015-07-28" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2015-07-28"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2015-07-28" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2015-07-28" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/1977/A/9.0.2000/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/1977" id="ar1" showAs="DDL 1977"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/1977/A/9.0.2000/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/1977" showAs="DDL 1977"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -95,7 +95,7 @@
 				<an:p align="justify">        5. Al comma 12 dell'articolo 158 del decreto legislativo 24 aprile 2006, n. 219, e successive modificazioni, i primi due periodi sono sostituiti dai seguenti: «Le tariffe vigenti alla data del lo gennaio 2015 sono aggiornate con decreto del Ministro della salute, sentita l'Agenzia. Con lo stesso decreto sono individuate, in misura che tiene conto delle affinità tra le prestazioni rese, le tariffe relative a prestazioni non ancora tariffate, nonché tariffe ridotte per le piccole e medie imprese, in analogia a quanto già previsto dall'articolo 17 del decreto-legge 6 luglio 2011, n. 98, convertito, con modificazioni, dalla legge 15 luglio 2011, n. 111, in materia di diritto annuale, applicabili alle variazioni delle AIC di carattere amministrativo ed a quelle connesse alla modifica del sito di produzione.» .</an:p>
 				<an:p align="justify">        Il decreto del «Ministro della salute di cui al comma 12 dell'articolo 158, del decreto legislativo 24 aprile 2006, n. 219, e successive modificazioni, come modificato dal comma 5 del presente articolo, è adottato entro 90 giorni dall'entrata in vigore della legge di conversione del presente decreto ed è applicabile dal mese successivo.».</an:p>
 				<an:p align="right">Allegato</an:p>
-				<an:table border="1" cellpadding="3" cellspacing="0" id="IDABPH3G">
+				<an:table border="1" cellspacing="0" cellpadding="3" id="IDABPH3G">
 					<an:tr>
 						<an:td>
 							<an:p align="justify">Aumento % tariffe anno per anno</an:p>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2070/A/2-bis.0.5/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2070/A/2-bis.0.5"/>
 					<an:FRBRdate date="2021-01-28" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/2070/A/2-bis.0.5/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/2070/A/2-bis.0.5/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2021-01-28" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/2070/A/2-bis.0.5/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/2070/A/2-bis.0.5/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,26 +32,26 @@
 					<an:FRBRdate date="2021-01-28" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/2070/A/2-bis.0.5/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/2070/A/2-bis.0.5/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2021-01-28" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2021-01-28"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2021-01-28" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2021-01-28" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/2070/A/2-bis.0.5/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/2070" id="ar1" showAs="DDL 2070"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32732" id="IDHUFC30ERMZC2HQ1W2XA2ZLDDSB0PGGCI3YXQIXNBRSS3NOAL23GP" showAs="ZAFFINI"/>
-				<an:TLCPerson href="http://dati.senato.it/32603" id="IDMJNKROYYQYYBFOR1IUDMT3OMPGZKYK1G43UKFPB5YG5HFZFJUSDE" showAs="CIRIANI"/>
-				<an:TLCPerson href="http://dati.senato.it/32650" id="ID4R1M1LPGFFCWCTAKTURWUDTGKGY432FV13USZ0FXFXDGGMOOF1J" showAs="LA PIETRA"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/2070/A/2-bis.0.5/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/2070" showAs="DDL 2070"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDHUFC30ERMZC2HQ1W2XA2ZLDDSB0PGGCI3YXQIXNBRSS3NOAL23GP" href="http://dati.senato.it/32732" showAs="ZAFFINI"/>
+				<an:TLCPerson id="IDMJNKROYYQYYBFOR1IUDMT3OMPGZKYK1G43UKFPB5YG5HFZFJUSDE" href="http://dati.senato.it/32603" showAs="CIRIANI"/>
+				<an:TLCPerson id="ID4R1M1LPGFFCWCTAKTURWUDTGKGY432FV13USZ0FXFXDGGMOOF1J" href="http://dati.senato.it/32650" showAs="LA PIETRA"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -62,13 +62,13 @@
 				<an:docNumber>Emendamento n. 2-bis.0.5</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDHUFC30ERMZC2HQ1W2XA2ZLDDSB0PGGCI3YXQIXNBRSS3NOAL23GP">ZAFFINI</an:docProponent>
+				<an:docProponent refersTo="#IDHUFC30ERMZC2HQ1W2XA2ZLDDSB0PGGCI3YXQIXNBRSS3NOAL23GP" as="#tipoSenatore">ZAFFINI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDMJNKROYYQYYBFOR1IUDMT3OMPGZKYK1G43UKFPB5YG5HFZFJUSDE">CIRIANI</an:docProponent>
+				<an:docProponent refersTo="#IDMJNKROYYQYYBFOR1IUDMT3OMPGZKYK1G43UKFPB5YG5HFZFJUSDE" as="#tipoSenatore">CIRIANI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID4R1M1LPGFFCWCTAKTURWUDTGKGY432FV13USZ0FXFXDGGMOOF1J">LA PIETRA</an:docProponent>
+				<an:docProponent refersTo="#ID4R1M1LPGFFCWCTAKTURWUDTGKGY432FV13USZ0FXFXDGGMOOF1J" as="#tipoSenatore">LA PIETRA</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

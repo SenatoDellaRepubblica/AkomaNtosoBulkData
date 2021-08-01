@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/2567/C/6.25/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/2567/C/6.25"/>
 					<an:FRBRdate date="2016-11-24" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2567/C/6.25/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/2567/C/6.25/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2016-11-24" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2567/C/6.25/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/2567/C/6.25/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,27 +32,27 @@
 					<an:FRBRdate date="2016-11-24" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2567/C/6.25/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/2567/C/6.25/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2016-11-24" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2016-11-24"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2016-11-24" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2016-11-24" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/2567/C/6.25/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/2567" id="ar1" showAs="DDL 2567"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/5" id="commissione" showAs="5ª Commissione permanente"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/25531" id="IDXVQPTN510LBFQ5XCRKF2G4LNCYU4UEGERX0FVLGBVE1QU5VHQM" showAs="COMAROLI"/>
-				<an:TLCPerson href="http://dati.senato.it/29039" id="IDQDGS3JJDHOZNEIUJM4HJBOIOHNCLX4IMNH2L2CMQ10AORZOXVTPN" showAs="ARRIGONI"/>
-				<an:TLCPerson href="http://dati.senato.it/29059" id="IDPPGSOG1JFXSOFP4YHSKOSIGOUKGQTDTTWUKSL4LLAJD5MAA2LAJI" showAs="CANDIANI"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/2567/C/6.25/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/2567" showAs="DDL 2567"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="5ª Commissione permanente" href="/dati.senato.it/osr/Commissione/5"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDXVQPTN510LBFQ5XCRKF2G4LNCYU4UEGERX0FVLGBVE1QU5VHQM" href="http://dati.senato.it/25531" showAs="COMAROLI"/>
+				<an:TLCPerson id="IDQDGS3JJDHOZNEIUJM4HJBOIOHNCLX4IMNH2L2CMQ10AORZOXVTPN" href="http://dati.senato.it/29039" showAs="ARRIGONI"/>
+				<an:TLCPerson id="IDPPGSOG1JFXSOFP4YHSKOSIGOUKGQTDTTWUKSL4LLAJD5MAA2LAJI" href="http://dati.senato.it/29059" showAs="CANDIANI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -63,13 +63,13 @@
 				<an:docNumber>Emendamento n. 6.25</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDXVQPTN510LBFQ5XCRKF2G4LNCYU4UEGERX0FVLGBVE1QU5VHQM">COMAROLI</an:docProponent>
+				<an:docProponent refersTo="#IDXVQPTN510LBFQ5XCRKF2G4LNCYU4UEGERX0FVLGBVE1QU5VHQM" as="#tipoSenatore">COMAROLI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDQDGS3JJDHOZNEIUJM4HJBOIOHNCLX4IMNH2L2CMQ10AORZOXVTPN">ARRIGONI</an:docProponent>
+				<an:docProponent refersTo="#IDQDGS3JJDHOZNEIUJM4HJBOIOHNCLX4IMNH2L2CMQ10AORZOXVTPN" as="#tipoSenatore">ARRIGONI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDPPGSOG1JFXSOFP4YHSKOSIGOUKGQTDTTWUKSL4LLAJD5MAA2LAJI">CANDIANI</an:docProponent>
+				<an:docProponent refersTo="#IDPPGSOG1JFXSOFP4YHSKOSIGOUKGQTDTTWUKSL4LLAJD5MAA2LAJI" as="#tipoSenatore">CANDIANI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/1018-B/C/2.37/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/1018-B/C/2.37"/>
 					<an:FRBRdate date="2019-03-26" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1018-B/C/2.37/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/1018-B/C/2.37/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2019-03-26" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1018-B/C/2.37/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/1018-B/C/2.37/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2019-03-26" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/1018-B/C/2.37/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/1018-B/C/2.37/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2019-03-26" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2019-03-26"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2019-03-26" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2019-03-26" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/1018-B/C/2.37/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/1018-B" id="ar1" showAs="DDL 1018-B"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/11" id="commissione" showAs="11ª Commissione permanente"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/17542" id="IDZU0VM0EYEOXZLKGANJ1CS0LTXOOIWJNS0RF0AAFEH2IJMNUPZNCG" showAs="BALBONI"/>
-				<an:TLCPerson href="http://dati.senato.it/31009" id="IDP4NLQNNFXNDWEEL4DOPU2FKGFLQEQXCV0AWCFMDYMI0CCOLA3HDP" showAs="BERTACCO"/>
-				<an:TLCPerson href="http://dati.senato.it/32603" id="ID1VQHCGRPFSRTIPC5LGG242UHQGSY0EIMANL3U3EWCL2NOMYJW4XK" showAs="CIRIANI"/>
-				<an:TLCPerson href="http://dati.senato.it/34485" id="IDOPXKB55SWGRVEUILRLP50JHETFDZBBRCHGXGC3IY0LPSRA0ELBBM" showAs="CALANDRINI"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/1018-B/C/2.37/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/1018-B" showAs="DDL 1018-B"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="11ª Commissione permanente" href="/dati.senato.it/osr/Commissione/11"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDZU0VM0EYEOXZLKGANJ1CS0LTXOOIWJNS0RF0AAFEH2IJMNUPZNCG" href="http://dati.senato.it/17542" showAs="BALBONI"/>
+				<an:TLCPerson id="IDP4NLQNNFXNDWEEL4DOPU2FKGFLQEQXCV0AWCFMDYMI0CCOLA3HDP" href="http://dati.senato.it/31009" showAs="BERTACCO"/>
+				<an:TLCPerson id="ID1VQHCGRPFSRTIPC5LGG242UHQGSY0EIMANL3U3EWCL2NOMYJW4XK" href="http://dati.senato.it/32603" showAs="CIRIANI"/>
+				<an:TLCPerson id="IDOPXKB55SWGRVEUILRLP50JHETFDZBBRCHGXGC3IY0LPSRA0ELBBM" href="http://dati.senato.it/34485" showAs="CALANDRINI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,16 +64,16 @@
 				<an:docNumber>Emendamento n. 2.37</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDZU0VM0EYEOXZLKGANJ1CS0LTXOOIWJNS0RF0AAFEH2IJMNUPZNCG">BALBONI</an:docProponent>
+				<an:docProponent refersTo="#IDZU0VM0EYEOXZLKGANJ1CS0LTXOOIWJNS0RF0AAFEH2IJMNUPZNCG" as="#tipoSenatore">BALBONI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDP4NLQNNFXNDWEEL4DOPU2FKGFLQEQXCV0AWCFMDYMI0CCOLA3HDP">BERTACCO</an:docProponent>
+				<an:docProponent refersTo="#IDP4NLQNNFXNDWEEL4DOPU2FKGFLQEQXCV0AWCFMDYMI0CCOLA3HDP" as="#tipoSenatore">BERTACCO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID1VQHCGRPFSRTIPC5LGG242UHQGSY0EIMANL3U3EWCL2NOMYJW4XK">CIRIANI</an:docProponent>
+				<an:docProponent refersTo="#ID1VQHCGRPFSRTIPC5LGG242UHQGSY0EIMANL3U3EWCL2NOMYJW4XK" as="#tipoSenatore">CIRIANI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDOPXKB55SWGRVEUILRLP50JHETFDZBBRCHGXGC3IY0LPSRA0ELBBM">CALANDRINI</an:docProponent>
+				<an:docProponent refersTo="#IDOPXKB55SWGRVEUILRLP50JHETFDZBBRCHGXGC3IY0LPSRA0ELBBM" as="#tipoSenatore">CALANDRINI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

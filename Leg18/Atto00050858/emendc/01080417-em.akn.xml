@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/909/C/4.5/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/909/C/4.5"/>
 					<an:FRBRdate date="2018-11-22" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/909/C/4.5/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/909/C/4.5/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2018-11-22" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/909/C/4.5/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/909/C/4.5/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,29 +32,29 @@
 					<an:FRBRdate date="2018-11-22" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/909/C/4.5/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/909/C/4.5/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-11-22" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2018-11-22"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-11-22" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2018-11-22" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/909/C/4.5/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/909" id="ar1" showAs="DDL 909"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/124" id="commissione" showAs="Commissioni 8° e 13° riunite"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/17578" id="IDWIIFEKFGH1UGHR5T2AFX0QS5LKUTZY5XL3NFKDFRZMHGDQ13ZGUK" showAs="DE PETRIS"/>
-				<an:TLCPerson href="http://dati.senato.it/32625" id="IDZCARCO1P5CH0KG2WFDM53ZCQPOQ42LTNH1TDJICBTROGWZH3YMRP" showAs="ERRANI"/>
-				<an:TLCPerson href="http://dati.senato.it/29110" id="ID00PNXAN4DVBQEMN3BT3ZW3EOQH2Y1X5PN4D0VXLXNXEJHHNGRKXB" showAs="GRASSO"/>
-				<an:TLCPerson href="http://dati.senato.it/29450" id="IDAS4JIWNET3HVC13GWKSIQRBQMGEOV2ISIUILF0F25HWX1EM3AQGJ" showAs="LAFORGIA"/>
-				<an:TLCPerson href="http://dati.senato.it/29130" id="ID5HNVJPYHESYYF4RQQBPORM0T0KURRZQI5EVZ0JO0AV5GA54ETMOK" showAs="MARTELLI"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/909/C/4.5/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/909" showAs="DDL 909"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="Commissioni 8° e 13° riunite" href="/dati.senato.it/osr/Commissione/124"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDWIIFEKFGH1UGHR5T2AFX0QS5LKUTZY5XL3NFKDFRZMHGDQ13ZGUK" href="http://dati.senato.it/17578" showAs="DE PETRIS"/>
+				<an:TLCPerson id="IDZCARCO1P5CH0KG2WFDM53ZCQPOQ42LTNH1TDJICBTROGWZH3YMRP" href="http://dati.senato.it/32625" showAs="ERRANI"/>
+				<an:TLCPerson id="ID00PNXAN4DVBQEMN3BT3ZW3EOQH2Y1X5PN4D0VXLXNXEJHHNGRKXB" href="http://dati.senato.it/29110" showAs="GRASSO"/>
+				<an:TLCPerson id="IDAS4JIWNET3HVC13GWKSIQRBQMGEOV2ISIUILF0F25HWX1EM3AQGJ" href="http://dati.senato.it/29450" showAs="LAFORGIA"/>
+				<an:TLCPerson id="ID5HNVJPYHESYYF4RQQBPORM0T0KURRZQI5EVZ0JO0AV5GA54ETMOK" href="http://dati.senato.it/29130" showAs="MARTELLI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -65,19 +65,19 @@
 				<an:docNumber>Emendamento n. 4.5</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDWIIFEKFGH1UGHR5T2AFX0QS5LKUTZY5XL3NFKDFRZMHGDQ13ZGUK">DE PETRIS</an:docProponent>
+				<an:docProponent refersTo="#IDWIIFEKFGH1UGHR5T2AFX0QS5LKUTZY5XL3NFKDFRZMHGDQ13ZGUK" as="#tipoSenatore">DE PETRIS</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDZCARCO1P5CH0KG2WFDM53ZCQPOQ42LTNH1TDJICBTROGWZH3YMRP">ERRANI</an:docProponent>
+				<an:docProponent refersTo="#IDZCARCO1P5CH0KG2WFDM53ZCQPOQ42LTNH1TDJICBTROGWZH3YMRP" as="#tipoSenatore">ERRANI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID00PNXAN4DVBQEMN3BT3ZW3EOQH2Y1X5PN4D0VXLXNXEJHHNGRKXB">GRASSO</an:docProponent>
+				<an:docProponent refersTo="#ID00PNXAN4DVBQEMN3BT3ZW3EOQH2Y1X5PN4D0VXLXNXEJHHNGRKXB" as="#tipoSenatore">GRASSO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAS4JIWNET3HVC13GWKSIQRBQMGEOV2ISIUILF0F25HWX1EM3AQGJ">LAFORGIA</an:docProponent>
+				<an:docProponent refersTo="#IDAS4JIWNET3HVC13GWKSIQRBQMGEOV2ISIUILF0F25HWX1EM3AQGJ" as="#tipoSenatore">LAFORGIA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID5HNVJPYHESYYF4RQQBPORM0T0KURRZQI5EVZ0JO0AV5GA54ETMOK">MARTELLI</an:docProponent>
+				<an:docProponent refersTo="#ID5HNVJPYHESYYF4RQQBPORM0T0KURRZQI5EVZ0JO0AV5GA54ETMOK" as="#tipoSenatore">MARTELLI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

@@ -2,14 +2,14 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2015-10-22/1880-B/main"/>
 					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2015-10-22/1880-B"/>
 					<an:FRBRdate date="2015-10-22" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2015-10-22/1880-B/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/osr/Ddl/2015-10-22/1880-B/main" showAs="disegno di legge" name="disegno di legge"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2015-10-22" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2015-10-22/1880-B/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/osr/Ddl/2015-10-22/1880-B/ita@/main" showAs="disegno di legge" name="disegno di legge"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,26 +32,26 @@
 					<an:FRBRdate date="2015-10-22" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2015-10-22/1880-B/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/osr/Ddl/2015-10-22/1880-B/ita@/main.xml" showAs="disegno di legge" name="disegno di legge"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2015-10-22" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2015-10-22"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2015-07-31" href="it/Ddl/2015-07-31/1880" id="step1" outcome="Presentazione"/>
-				<an:step actor="#camera" date="2015-10-21" href="it/Ddl/2015-10-21/3272" id="step2" outcome="Generica"/>
+				<an:step id="step1" date="2015-07-31" actor="#senato" outcome="Presentazione" href="it/Ddl/2015-07-31/1880"/>
+				<an:step id="step2" date="2015-10-21" actor="#camera" outcome="Generica" href="it/Ddl/2015-10-21/3272"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/osr/Ddl/2015-10-22/1880-B/ita@/main" id="ro1" showAs="generation"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d2005e15a1327" showAs="Ministro dello sviluppo economico"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d2005e17a1327" showAs="Ministro dell'economia e delle finanze"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2005e15" showAs="GUIDI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2005e17" showAs="PADOAN"/>
+				<an:original id="ro1" href="http://dati.senato.it/osr/Ddl/2015-10-22/1880-B/ita@/main" showAs="generation"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="d2005e15a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro dello sviluppo economico"/>
+				<an:TLCRole id="d2005e17a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro dell'economia e delle finanze"/>
+				<an:TLCPerson id="d2005e15" href="http://dati.senato.it/osr/Persona" showAs="GUIDI"/>
+				<an:TLCPerson id="d2005e17" href="http://dati.senato.it/osr/Persona" showAs="PADOAN"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -67,9 +67,9 @@
 			</an:p>
 			<an:p>
 				presentato dal 
-				<an:docProponent as="#d2005e15a1327" refersTo="#d2005e15">Ministro dello sviluppo economico (GUIDI)</an:docProponent>
+				<an:docProponent refersTo="#d2005e15" as="#d2005e15a1327">Ministro dello sviluppo economico (GUIDI)</an:docProponent>
 				di concerto con il 
-				<an:docProponent as="#d2005e17a1327" refersTo="#d2005e17">Ministro dell'economia e delle finanze (PADOAN)</an:docProponent>
+				<an:docProponent refersTo="#d2005e17" as="#d2005e17a1327">Ministro dell'economia e delle finanze (PADOAN)</an:docProponent>
 			</an:p>
 			<an:p>
 				(V. 
@@ -95,7 +95,7 @@
 			</an:p>
 		</an:coverPage>
 		<an:body title="Articolato">
-			<an:hcontainer id="d2005e48" name="Testo a fronte">
+			<an:hcontainer name="Testo a fronte" id="d2005e48">
 				<an:num/>
 				<an:content id="d2005e48-c">
 					<an:table id="d2005e49">

@@ -2,15 +2,15 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2014-10-23/1612/main"/>
 					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2014-10-23/1612"/>
 					<an:FRBRdate date="2014-10-23" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/main" id="wcompmain" name="messaggio" showAs="messaggio"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/main/allegato" id="wcomp3" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/main" showAs="messaggio" name="messaggio"/>
+						<an:componentData id="wcomp3" href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/main/allegato" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLMESS"/>
@@ -23,8 +23,8 @@
 					<an:FRBRdate date="2014-10-23" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main" id="ecompmain" name="messaggio" showAs="messaggio"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main/allegato" id="ecomp3" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main" showAs="messaggio" name="messaggio"/>
+						<an:componentData id="ecomp3" href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main/allegato" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -34,20 +34,20 @@
 					<an:FRBRdate date="2014-10-23" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main.xml" id="mcompmain" name="messaggio" showAs="messaggio"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main/allegato.xml" id="mcomp3" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main.xml" showAs="messaggio" name="messaggio"/>
+						<an:componentData id="mcomp3" href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main/allegato.xml" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2014-10-23" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2014-10-23"/>
 			</an:lifecycle>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main" id="ro1" showAs="generation"/>
-				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main/allegato" id="annex3" showAs="Allegato"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
+				<an:original id="ro1" href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main" showAs="generation"/>
+				<an:hasAttachment id="annex3" href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main/allegato" showAs="Allegato"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -87,107 +87,107 @@
 		<an:attachments>
 			<an:doc name="Allegato">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2014-10-23/1612/main/allegato"/>
 							<an:FRBRdate date="2014-10-23" name="presentazione"/>
 							<an:FRBRauthor href="#senato"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-01.png" id="wimg1mes1612-01.png" name="" showAs="mes1612-01.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-02.png" id="wimg2mes1612-02.png" name="" showAs="mes1612-02.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-03.png" id="wimg3mes1612-03.png" name="" showAs="mes1612-03.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-04.png" id="wimg4mes1612-04.png" name="" showAs="mes1612-04.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-05.png" id="wimg5mes1612-05.png" name="" showAs="mes1612-05.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-06.png" id="wimg6mes1612-06.png" name="" showAs="mes1612-06.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-07.png" id="wimg7mes1612-07.png" name="" showAs="mes1612-07.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-08.png" id="wimg8mes1612-08.png" name="" showAs="mes1612-08.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-09.png" id="wimg9mes1612-09.png" name="" showAs="mes1612-09.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-10.png" id="wimg10mes1612-10.png" name="" showAs="mes1612-10.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-11.png" id="wimg11mes1612-11.png" name="" showAs="mes1612-11.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-12.png" id="wimg12mes1612-12.png" name="" showAs="mes1612-12.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-13.png" id="wimg13mes1612-13.png" name="" showAs="mes1612-13.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-14.png" id="wimg14mes1612-14.png" name="" showAs="mes1612-14.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-15.png" id="wimg15mes1612-15.png" name="" showAs="mes1612-15.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-16.png" id="wimg16mes1612-16.png" name="" showAs="mes1612-16.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-17.png" id="wimg17mes1612-17.png" name="" showAs="mes1612-17.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-18.png" id="wimg18mes1612-18.png" name="" showAs="mes1612-18.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-19.png" id="wimg19mes1612-19.png" name="" showAs="mes1612-19.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-20.png" id="wimg20mes1612-20.png" name="" showAs="mes1612-20.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-21.png" id="wimg21mes1612-21.png" name="" showAs="mes1612-21.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-22.png" id="wimg22mes1612-22.png" name="" showAs="mes1612-22.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-23.png" id="wimg23mes1612-23.png" name="" showAs="mes1612-23.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-24.png" id="wimg24mes1612-24.png" name="" showAs="mes1612-24.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-25.png" id="wimg25mes1612-25.png" name="" showAs="mes1612-25.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-26.png" id="wimg26mes1612-26.png" name="" showAs="mes1612-26.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-27.png" id="wimg27mes1612-27.png" name="" showAs="mes1612-27.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-28.png" id="wimg28mes1612-28.png" name="" showAs="mes1612-28.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-29.png" id="wimg29mes1612-29.png" name="" showAs="mes1612-29.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-30.png" id="wimg30mes1612-30.png" name="" showAs="mes1612-30.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-31.png" id="wimg31mes1612-31.png" name="" showAs="mes1612-31.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-32.png" id="wimg32mes1612-32.png" name="" showAs="mes1612-32.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-33.png" id="wimg33mes1612-33.png" name="" showAs="mes1612-33.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-34.png" id="wimg34mes1612-34.png" name="" showAs="mes1612-34.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-35.png" id="wimg35mes1612-35.png" name="" showAs="mes1612-35.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-36.png" id="wimg36mes1612-36.png" name="" showAs="mes1612-36.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-37.png" id="wimg37mes1612-37.png" name="" showAs="mes1612-37.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-38.png" id="wimg38mes1612-38.png" name="" showAs="mes1612-38.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-39.png" id="wimg39mes1612-39.png" name="" showAs="mes1612-39.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-40.png" id="wimg40mes1612-40.png" name="" showAs="mes1612-40.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-41.png" id="wimg41mes1612-41.png" name="" showAs="mes1612-41.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-42.png" id="wimg42mes1612-42.png" name="" showAs="mes1612-42.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-43.png" id="wimg43mes1612-43.png" name="" showAs="mes1612-43.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-44.png" id="wimg44mes1612-44.png" name="" showAs="mes1612-44.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-45.png" id="wimg45mes1612-45.png" name="" showAs="mes1612-45.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-46.png" id="wimg46mes1612-46.png" name="" showAs="mes1612-46.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-47.png" id="wimg47mes1612-47.png" name="" showAs="mes1612-47.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-48.png" id="wimg48mes1612-48.png" name="" showAs="mes1612-48.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-49.png" id="wimg49mes1612-49.png" name="" showAs="mes1612-49.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-50.png" id="wimg50mes1612-50.png" name="" showAs="mes1612-50.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-51.png" id="wimg51mes1612-51.png" name="" showAs="mes1612-51.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-52.png" id="wimg52mes1612-52.png" name="" showAs="mes1612-52.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-53.png" id="wimg53mes1612-53.png" name="" showAs="mes1612-53.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-54.png" id="wimg54mes1612-54.png" name="" showAs="mes1612-54.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-55.png" id="wimg55mes1612-55.png" name="" showAs="mes1612-55.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-56.png" id="wimg56mes1612-56.png" name="" showAs="mes1612-56.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-57.png" id="wimg57mes1612-57.png" name="" showAs="mes1612-57.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-58.png" id="wimg58mes1612-58.png" name="" showAs="mes1612-58.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-59.png" id="wimg59mes1612-59.png" name="" showAs="mes1612-59.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-60.png" id="wimg60mes1612-60.png" name="" showAs="mes1612-60.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-61.png" id="wimg61mes1612-61.png" name="" showAs="mes1612-61.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-62.png" id="wimg62mes1612-62.png" name="" showAs="mes1612-62.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-63.png" id="wimg63mes1612-63.png" name="" showAs="mes1612-63.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-64.png" id="wimg64mes1612-64.png" name="" showAs="mes1612-64.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-65.png" id="wimg65mes1612-65.png" name="" showAs="mes1612-65.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-66.png" id="wimg66mes1612-66.png" name="" showAs="mes1612-66.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-67.png" id="wimg67mes1612-67.png" name="" showAs="mes1612-67.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-68.png" id="wimg68mes1612-68.png" name="" showAs="mes1612-68.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-69.png" id="wimg69mes1612-69.png" name="" showAs="mes1612-69.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-70.png" id="wimg70mes1612-70.png" name="" showAs="mes1612-70.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-71.png" id="wimg71mes1612-71.png" name="" showAs="mes1612-71.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-72.png" id="wimg72mes1612-72.png" name="" showAs="mes1612-72.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-73.png" id="wimg73mes1612-73.png" name="" showAs="mes1612-73.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-74.png" id="wimg74mes1612-74.png" name="" showAs="mes1612-74.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-75.png" id="wimg75mes1612-75.png" name="" showAs="mes1612-75.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-76.png" id="wimg76mes1612-76.png" name="" showAs="mes1612-76.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-77.png" id="wimg77mes1612-77.png" name="" showAs="mes1612-77.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-78.png" id="wimg78mes1612-78.png" name="" showAs="mes1612-78.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-79.png" id="wimg79mes1612-79.png" name="" showAs="mes1612-79.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-80.png" id="wimg80mes1612-80.png" name="" showAs="mes1612-80.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-81.png" id="wimg81mes1612-81.png" name="" showAs="mes1612-81.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-82.png" id="wimg82mes1612-82.png" name="" showAs="mes1612-82.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-83.png" id="wimg83mes1612-83.png" name="" showAs="mes1612-83.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-84.png" id="wimg84mes1612-84.png" name="" showAs="mes1612-84.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-85.png" id="wimg85mes1612-85.png" name="" showAs="mes1612-85.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-86.png" id="wimg86mes1612-86.png" name="" showAs="mes1612-86.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-87.png" id="wimg87mes1612-87.png" name="" showAs="mes1612-87.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-88.png" id="wimg88mes1612-88.png" name="" showAs="mes1612-88.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-89.png" id="wimg89mes1612-89.png" name="" showAs="mes1612-89.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-90.png" id="wimg90mes1612-90.png" name="" showAs="mes1612-90.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-91.png" id="wimg91mes1612-91.png" name="" showAs="mes1612-91.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-92.png" id="wimg92mes1612-92.png" name="" showAs="mes1612-92.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-93.png" id="wimg93mes1612-93.png" name="" showAs="mes1612-93.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-94.png" id="wimg94mes1612-94.png" name="" showAs="mes1612-94.png"/>
+								<an:componentData id="wimg1mes1612-01.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-01.png" showAs="mes1612-01.png" name=""/>
+								<an:componentData id="wimg2mes1612-02.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-02.png" showAs="mes1612-02.png" name=""/>
+								<an:componentData id="wimg3mes1612-03.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-03.png" showAs="mes1612-03.png" name=""/>
+								<an:componentData id="wimg4mes1612-04.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-04.png" showAs="mes1612-04.png" name=""/>
+								<an:componentData id="wimg5mes1612-05.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-05.png" showAs="mes1612-05.png" name=""/>
+								<an:componentData id="wimg6mes1612-06.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-06.png" showAs="mes1612-06.png" name=""/>
+								<an:componentData id="wimg7mes1612-07.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-07.png" showAs="mes1612-07.png" name=""/>
+								<an:componentData id="wimg8mes1612-08.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-08.png" showAs="mes1612-08.png" name=""/>
+								<an:componentData id="wimg9mes1612-09.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-09.png" showAs="mes1612-09.png" name=""/>
+								<an:componentData id="wimg10mes1612-10.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-10.png" showAs="mes1612-10.png" name=""/>
+								<an:componentData id="wimg11mes1612-11.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-11.png" showAs="mes1612-11.png" name=""/>
+								<an:componentData id="wimg12mes1612-12.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-12.png" showAs="mes1612-12.png" name=""/>
+								<an:componentData id="wimg13mes1612-13.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-13.png" showAs="mes1612-13.png" name=""/>
+								<an:componentData id="wimg14mes1612-14.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-14.png" showAs="mes1612-14.png" name=""/>
+								<an:componentData id="wimg15mes1612-15.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-15.png" showAs="mes1612-15.png" name=""/>
+								<an:componentData id="wimg16mes1612-16.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-16.png" showAs="mes1612-16.png" name=""/>
+								<an:componentData id="wimg17mes1612-17.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-17.png" showAs="mes1612-17.png" name=""/>
+								<an:componentData id="wimg18mes1612-18.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-18.png" showAs="mes1612-18.png" name=""/>
+								<an:componentData id="wimg19mes1612-19.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-19.png" showAs="mes1612-19.png" name=""/>
+								<an:componentData id="wimg20mes1612-20.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-20.png" showAs="mes1612-20.png" name=""/>
+								<an:componentData id="wimg21mes1612-21.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-21.png" showAs="mes1612-21.png" name=""/>
+								<an:componentData id="wimg22mes1612-22.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-22.png" showAs="mes1612-22.png" name=""/>
+								<an:componentData id="wimg23mes1612-23.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-23.png" showAs="mes1612-23.png" name=""/>
+								<an:componentData id="wimg24mes1612-24.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-24.png" showAs="mes1612-24.png" name=""/>
+								<an:componentData id="wimg25mes1612-25.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-25.png" showAs="mes1612-25.png" name=""/>
+								<an:componentData id="wimg26mes1612-26.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-26.png" showAs="mes1612-26.png" name=""/>
+								<an:componentData id="wimg27mes1612-27.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-27.png" showAs="mes1612-27.png" name=""/>
+								<an:componentData id="wimg28mes1612-28.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-28.png" showAs="mes1612-28.png" name=""/>
+								<an:componentData id="wimg29mes1612-29.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-29.png" showAs="mes1612-29.png" name=""/>
+								<an:componentData id="wimg30mes1612-30.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-30.png" showAs="mes1612-30.png" name=""/>
+								<an:componentData id="wimg31mes1612-31.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-31.png" showAs="mes1612-31.png" name=""/>
+								<an:componentData id="wimg32mes1612-32.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-32.png" showAs="mes1612-32.png" name=""/>
+								<an:componentData id="wimg33mes1612-33.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-33.png" showAs="mes1612-33.png" name=""/>
+								<an:componentData id="wimg34mes1612-34.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-34.png" showAs="mes1612-34.png" name=""/>
+								<an:componentData id="wimg35mes1612-35.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-35.png" showAs="mes1612-35.png" name=""/>
+								<an:componentData id="wimg36mes1612-36.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-36.png" showAs="mes1612-36.png" name=""/>
+								<an:componentData id="wimg37mes1612-37.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-37.png" showAs="mes1612-37.png" name=""/>
+								<an:componentData id="wimg38mes1612-38.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-38.png" showAs="mes1612-38.png" name=""/>
+								<an:componentData id="wimg39mes1612-39.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-39.png" showAs="mes1612-39.png" name=""/>
+								<an:componentData id="wimg40mes1612-40.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-40.png" showAs="mes1612-40.png" name=""/>
+								<an:componentData id="wimg41mes1612-41.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-41.png" showAs="mes1612-41.png" name=""/>
+								<an:componentData id="wimg42mes1612-42.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-42.png" showAs="mes1612-42.png" name=""/>
+								<an:componentData id="wimg43mes1612-43.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-43.png" showAs="mes1612-43.png" name=""/>
+								<an:componentData id="wimg44mes1612-44.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-44.png" showAs="mes1612-44.png" name=""/>
+								<an:componentData id="wimg45mes1612-45.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-45.png" showAs="mes1612-45.png" name=""/>
+								<an:componentData id="wimg46mes1612-46.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-46.png" showAs="mes1612-46.png" name=""/>
+								<an:componentData id="wimg47mes1612-47.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-47.png" showAs="mes1612-47.png" name=""/>
+								<an:componentData id="wimg48mes1612-48.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-48.png" showAs="mes1612-48.png" name=""/>
+								<an:componentData id="wimg49mes1612-49.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-49.png" showAs="mes1612-49.png" name=""/>
+								<an:componentData id="wimg50mes1612-50.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-50.png" showAs="mes1612-50.png" name=""/>
+								<an:componentData id="wimg51mes1612-51.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-51.png" showAs="mes1612-51.png" name=""/>
+								<an:componentData id="wimg52mes1612-52.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-52.png" showAs="mes1612-52.png" name=""/>
+								<an:componentData id="wimg53mes1612-53.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-53.png" showAs="mes1612-53.png" name=""/>
+								<an:componentData id="wimg54mes1612-54.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-54.png" showAs="mes1612-54.png" name=""/>
+								<an:componentData id="wimg55mes1612-55.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-55.png" showAs="mes1612-55.png" name=""/>
+								<an:componentData id="wimg56mes1612-56.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-56.png" showAs="mes1612-56.png" name=""/>
+								<an:componentData id="wimg57mes1612-57.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-57.png" showAs="mes1612-57.png" name=""/>
+								<an:componentData id="wimg58mes1612-58.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-58.png" showAs="mes1612-58.png" name=""/>
+								<an:componentData id="wimg59mes1612-59.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-59.png" showAs="mes1612-59.png" name=""/>
+								<an:componentData id="wimg60mes1612-60.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-60.png" showAs="mes1612-60.png" name=""/>
+								<an:componentData id="wimg61mes1612-61.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-61.png" showAs="mes1612-61.png" name=""/>
+								<an:componentData id="wimg62mes1612-62.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-62.png" showAs="mes1612-62.png" name=""/>
+								<an:componentData id="wimg63mes1612-63.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-63.png" showAs="mes1612-63.png" name=""/>
+								<an:componentData id="wimg64mes1612-64.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-64.png" showAs="mes1612-64.png" name=""/>
+								<an:componentData id="wimg65mes1612-65.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-65.png" showAs="mes1612-65.png" name=""/>
+								<an:componentData id="wimg66mes1612-66.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-66.png" showAs="mes1612-66.png" name=""/>
+								<an:componentData id="wimg67mes1612-67.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-67.png" showAs="mes1612-67.png" name=""/>
+								<an:componentData id="wimg68mes1612-68.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-68.png" showAs="mes1612-68.png" name=""/>
+								<an:componentData id="wimg69mes1612-69.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-69.png" showAs="mes1612-69.png" name=""/>
+								<an:componentData id="wimg70mes1612-70.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-70.png" showAs="mes1612-70.png" name=""/>
+								<an:componentData id="wimg71mes1612-71.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-71.png" showAs="mes1612-71.png" name=""/>
+								<an:componentData id="wimg72mes1612-72.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-72.png" showAs="mes1612-72.png" name=""/>
+								<an:componentData id="wimg73mes1612-73.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-73.png" showAs="mes1612-73.png" name=""/>
+								<an:componentData id="wimg74mes1612-74.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-74.png" showAs="mes1612-74.png" name=""/>
+								<an:componentData id="wimg75mes1612-75.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-75.png" showAs="mes1612-75.png" name=""/>
+								<an:componentData id="wimg76mes1612-76.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-76.png" showAs="mes1612-76.png" name=""/>
+								<an:componentData id="wimg77mes1612-77.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-77.png" showAs="mes1612-77.png" name=""/>
+								<an:componentData id="wimg78mes1612-78.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-78.png" showAs="mes1612-78.png" name=""/>
+								<an:componentData id="wimg79mes1612-79.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-79.png" showAs="mes1612-79.png" name=""/>
+								<an:componentData id="wimg80mes1612-80.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-80.png" showAs="mes1612-80.png" name=""/>
+								<an:componentData id="wimg81mes1612-81.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-81.png" showAs="mes1612-81.png" name=""/>
+								<an:componentData id="wimg82mes1612-82.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-82.png" showAs="mes1612-82.png" name=""/>
+								<an:componentData id="wimg83mes1612-83.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-83.png" showAs="mes1612-83.png" name=""/>
+								<an:componentData id="wimg84mes1612-84.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-84.png" showAs="mes1612-84.png" name=""/>
+								<an:componentData id="wimg85mes1612-85.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-85.png" showAs="mes1612-85.png" name=""/>
+								<an:componentData id="wimg86mes1612-86.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-86.png" showAs="mes1612-86.png" name=""/>
+								<an:componentData id="wimg87mes1612-87.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-87.png" showAs="mes1612-87.png" name=""/>
+								<an:componentData id="wimg88mes1612-88.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-88.png" showAs="mes1612-88.png" name=""/>
+								<an:componentData id="wimg89mes1612-89.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-89.png" showAs="mes1612-89.png" name=""/>
+								<an:componentData id="wimg90mes1612-90.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-90.png" showAs="mes1612-90.png" name=""/>
+								<an:componentData id="wimg91mes1612-91.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-91.png" showAs="mes1612-91.png" name=""/>
+								<an:componentData id="wimg92mes1612-92.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-92.png" showAs="mes1612-92.png" name=""/>
+								<an:componentData id="wimg93mes1612-93.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-93.png" showAs="mes1612-93.png" name=""/>
+								<an:componentData id="wimg94mes1612-94.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-94.png" showAs="mes1612-94.png" name=""/>
 							</an:componentInfo>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/Allegato"/>
@@ -200,100 +200,100 @@
 							<an:FRBRdate date="2014-10-23" name="presentazione"/>
 							<an:FRBRauthor href="#senato"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-01.png" id="eimg1mes1612-01.png" name="" showAs="mes1612-01.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-02.png" id="eimg2mes1612-02.png" name="" showAs="mes1612-02.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-03.png" id="eimg3mes1612-03.png" name="" showAs="mes1612-03.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-04.png" id="eimg4mes1612-04.png" name="" showAs="mes1612-04.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-05.png" id="eimg5mes1612-05.png" name="" showAs="mes1612-05.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-06.png" id="eimg6mes1612-06.png" name="" showAs="mes1612-06.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-07.png" id="eimg7mes1612-07.png" name="" showAs="mes1612-07.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-08.png" id="eimg8mes1612-08.png" name="" showAs="mes1612-08.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-09.png" id="eimg9mes1612-09.png" name="" showAs="mes1612-09.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-10.png" id="eimg10mes1612-10.png" name="" showAs="mes1612-10.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-11.png" id="eimg11mes1612-11.png" name="" showAs="mes1612-11.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-12.png" id="eimg12mes1612-12.png" name="" showAs="mes1612-12.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-13.png" id="eimg13mes1612-13.png" name="" showAs="mes1612-13.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-14.png" id="eimg14mes1612-14.png" name="" showAs="mes1612-14.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-15.png" id="eimg15mes1612-15.png" name="" showAs="mes1612-15.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-16.png" id="eimg16mes1612-16.png" name="" showAs="mes1612-16.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-17.png" id="eimg17mes1612-17.png" name="" showAs="mes1612-17.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-18.png" id="eimg18mes1612-18.png" name="" showAs="mes1612-18.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-19.png" id="eimg19mes1612-19.png" name="" showAs="mes1612-19.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-20.png" id="eimg20mes1612-20.png" name="" showAs="mes1612-20.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-21.png" id="eimg21mes1612-21.png" name="" showAs="mes1612-21.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-22.png" id="eimg22mes1612-22.png" name="" showAs="mes1612-22.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-23.png" id="eimg23mes1612-23.png" name="" showAs="mes1612-23.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-24.png" id="eimg24mes1612-24.png" name="" showAs="mes1612-24.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-25.png" id="eimg25mes1612-25.png" name="" showAs="mes1612-25.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-26.png" id="eimg26mes1612-26.png" name="" showAs="mes1612-26.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-27.png" id="eimg27mes1612-27.png" name="" showAs="mes1612-27.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-28.png" id="eimg28mes1612-28.png" name="" showAs="mes1612-28.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-29.png" id="eimg29mes1612-29.png" name="" showAs="mes1612-29.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-30.png" id="eimg30mes1612-30.png" name="" showAs="mes1612-30.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-31.png" id="eimg31mes1612-31.png" name="" showAs="mes1612-31.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-32.png" id="eimg32mes1612-32.png" name="" showAs="mes1612-32.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-33.png" id="eimg33mes1612-33.png" name="" showAs="mes1612-33.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-34.png" id="eimg34mes1612-34.png" name="" showAs="mes1612-34.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-35.png" id="eimg35mes1612-35.png" name="" showAs="mes1612-35.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-36.png" id="eimg36mes1612-36.png" name="" showAs="mes1612-36.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-37.png" id="eimg37mes1612-37.png" name="" showAs="mes1612-37.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-38.png" id="eimg38mes1612-38.png" name="" showAs="mes1612-38.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-39.png" id="eimg39mes1612-39.png" name="" showAs="mes1612-39.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-40.png" id="eimg40mes1612-40.png" name="" showAs="mes1612-40.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-41.png" id="eimg41mes1612-41.png" name="" showAs="mes1612-41.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-42.png" id="eimg42mes1612-42.png" name="" showAs="mes1612-42.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-43.png" id="eimg43mes1612-43.png" name="" showAs="mes1612-43.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-44.png" id="eimg44mes1612-44.png" name="" showAs="mes1612-44.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-45.png" id="eimg45mes1612-45.png" name="" showAs="mes1612-45.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-46.png" id="eimg46mes1612-46.png" name="" showAs="mes1612-46.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-47.png" id="eimg47mes1612-47.png" name="" showAs="mes1612-47.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-48.png" id="eimg48mes1612-48.png" name="" showAs="mes1612-48.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-49.png" id="eimg49mes1612-49.png" name="" showAs="mes1612-49.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-50.png" id="eimg50mes1612-50.png" name="" showAs="mes1612-50.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-51.png" id="eimg51mes1612-51.png" name="" showAs="mes1612-51.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-52.png" id="eimg52mes1612-52.png" name="" showAs="mes1612-52.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-53.png" id="eimg53mes1612-53.png" name="" showAs="mes1612-53.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-54.png" id="eimg54mes1612-54.png" name="" showAs="mes1612-54.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-55.png" id="eimg55mes1612-55.png" name="" showAs="mes1612-55.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-56.png" id="eimg56mes1612-56.png" name="" showAs="mes1612-56.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-57.png" id="eimg57mes1612-57.png" name="" showAs="mes1612-57.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-58.png" id="eimg58mes1612-58.png" name="" showAs="mes1612-58.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-59.png" id="eimg59mes1612-59.png" name="" showAs="mes1612-59.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-60.png" id="eimg60mes1612-60.png" name="" showAs="mes1612-60.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-61.png" id="eimg61mes1612-61.png" name="" showAs="mes1612-61.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-62.png" id="eimg62mes1612-62.png" name="" showAs="mes1612-62.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-63.png" id="eimg63mes1612-63.png" name="" showAs="mes1612-63.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-64.png" id="eimg64mes1612-64.png" name="" showAs="mes1612-64.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-65.png" id="eimg65mes1612-65.png" name="" showAs="mes1612-65.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-66.png" id="eimg66mes1612-66.png" name="" showAs="mes1612-66.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-67.png" id="eimg67mes1612-67.png" name="" showAs="mes1612-67.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-68.png" id="eimg68mes1612-68.png" name="" showAs="mes1612-68.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-69.png" id="eimg69mes1612-69.png" name="" showAs="mes1612-69.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-70.png" id="eimg70mes1612-70.png" name="" showAs="mes1612-70.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-71.png" id="eimg71mes1612-71.png" name="" showAs="mes1612-71.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-72.png" id="eimg72mes1612-72.png" name="" showAs="mes1612-72.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-73.png" id="eimg73mes1612-73.png" name="" showAs="mes1612-73.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-74.png" id="eimg74mes1612-74.png" name="" showAs="mes1612-74.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-75.png" id="eimg75mes1612-75.png" name="" showAs="mes1612-75.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-76.png" id="eimg76mes1612-76.png" name="" showAs="mes1612-76.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-77.png" id="eimg77mes1612-77.png" name="" showAs="mes1612-77.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-78.png" id="eimg78mes1612-78.png" name="" showAs="mes1612-78.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-79.png" id="eimg79mes1612-79.png" name="" showAs="mes1612-79.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-80.png" id="eimg80mes1612-80.png" name="" showAs="mes1612-80.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-81.png" id="eimg81mes1612-81.png" name="" showAs="mes1612-81.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-82.png" id="eimg82mes1612-82.png" name="" showAs="mes1612-82.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-83.png" id="eimg83mes1612-83.png" name="" showAs="mes1612-83.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-84.png" id="eimg84mes1612-84.png" name="" showAs="mes1612-84.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-85.png" id="eimg85mes1612-85.png" name="" showAs="mes1612-85.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-86.png" id="eimg86mes1612-86.png" name="" showAs="mes1612-86.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-87.png" id="eimg87mes1612-87.png" name="" showAs="mes1612-87.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-88.png" id="eimg88mes1612-88.png" name="" showAs="mes1612-88.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-89.png" id="eimg89mes1612-89.png" name="" showAs="mes1612-89.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-90.png" id="eimg90mes1612-90.png" name="" showAs="mes1612-90.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-91.png" id="eimg91mes1612-91.png" name="" showAs="mes1612-91.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-92.png" id="eimg92mes1612-92.png" name="" showAs="mes1612-92.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-93.png" id="eimg93mes1612-93.png" name="" showAs="mes1612-93.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-94.png" id="eimg94mes1612-94.png" name="" showAs="mes1612-94.png"/>
+								<an:componentData id="eimg1mes1612-01.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-01.png" showAs="mes1612-01.png" name=""/>
+								<an:componentData id="eimg2mes1612-02.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-02.png" showAs="mes1612-02.png" name=""/>
+								<an:componentData id="eimg3mes1612-03.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-03.png" showAs="mes1612-03.png" name=""/>
+								<an:componentData id="eimg4mes1612-04.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-04.png" showAs="mes1612-04.png" name=""/>
+								<an:componentData id="eimg5mes1612-05.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-05.png" showAs="mes1612-05.png" name=""/>
+								<an:componentData id="eimg6mes1612-06.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-06.png" showAs="mes1612-06.png" name=""/>
+								<an:componentData id="eimg7mes1612-07.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-07.png" showAs="mes1612-07.png" name=""/>
+								<an:componentData id="eimg8mes1612-08.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-08.png" showAs="mes1612-08.png" name=""/>
+								<an:componentData id="eimg9mes1612-09.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-09.png" showAs="mes1612-09.png" name=""/>
+								<an:componentData id="eimg10mes1612-10.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-10.png" showAs="mes1612-10.png" name=""/>
+								<an:componentData id="eimg11mes1612-11.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-11.png" showAs="mes1612-11.png" name=""/>
+								<an:componentData id="eimg12mes1612-12.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-12.png" showAs="mes1612-12.png" name=""/>
+								<an:componentData id="eimg13mes1612-13.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-13.png" showAs="mes1612-13.png" name=""/>
+								<an:componentData id="eimg14mes1612-14.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-14.png" showAs="mes1612-14.png" name=""/>
+								<an:componentData id="eimg15mes1612-15.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-15.png" showAs="mes1612-15.png" name=""/>
+								<an:componentData id="eimg16mes1612-16.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-16.png" showAs="mes1612-16.png" name=""/>
+								<an:componentData id="eimg17mes1612-17.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-17.png" showAs="mes1612-17.png" name=""/>
+								<an:componentData id="eimg18mes1612-18.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-18.png" showAs="mes1612-18.png" name=""/>
+								<an:componentData id="eimg19mes1612-19.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-19.png" showAs="mes1612-19.png" name=""/>
+								<an:componentData id="eimg20mes1612-20.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-20.png" showAs="mes1612-20.png" name=""/>
+								<an:componentData id="eimg21mes1612-21.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-21.png" showAs="mes1612-21.png" name=""/>
+								<an:componentData id="eimg22mes1612-22.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-22.png" showAs="mes1612-22.png" name=""/>
+								<an:componentData id="eimg23mes1612-23.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-23.png" showAs="mes1612-23.png" name=""/>
+								<an:componentData id="eimg24mes1612-24.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-24.png" showAs="mes1612-24.png" name=""/>
+								<an:componentData id="eimg25mes1612-25.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-25.png" showAs="mes1612-25.png" name=""/>
+								<an:componentData id="eimg26mes1612-26.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-26.png" showAs="mes1612-26.png" name=""/>
+								<an:componentData id="eimg27mes1612-27.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-27.png" showAs="mes1612-27.png" name=""/>
+								<an:componentData id="eimg28mes1612-28.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-28.png" showAs="mes1612-28.png" name=""/>
+								<an:componentData id="eimg29mes1612-29.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-29.png" showAs="mes1612-29.png" name=""/>
+								<an:componentData id="eimg30mes1612-30.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-30.png" showAs="mes1612-30.png" name=""/>
+								<an:componentData id="eimg31mes1612-31.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-31.png" showAs="mes1612-31.png" name=""/>
+								<an:componentData id="eimg32mes1612-32.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-32.png" showAs="mes1612-32.png" name=""/>
+								<an:componentData id="eimg33mes1612-33.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-33.png" showAs="mes1612-33.png" name=""/>
+								<an:componentData id="eimg34mes1612-34.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-34.png" showAs="mes1612-34.png" name=""/>
+								<an:componentData id="eimg35mes1612-35.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-35.png" showAs="mes1612-35.png" name=""/>
+								<an:componentData id="eimg36mes1612-36.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-36.png" showAs="mes1612-36.png" name=""/>
+								<an:componentData id="eimg37mes1612-37.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-37.png" showAs="mes1612-37.png" name=""/>
+								<an:componentData id="eimg38mes1612-38.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-38.png" showAs="mes1612-38.png" name=""/>
+								<an:componentData id="eimg39mes1612-39.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-39.png" showAs="mes1612-39.png" name=""/>
+								<an:componentData id="eimg40mes1612-40.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-40.png" showAs="mes1612-40.png" name=""/>
+								<an:componentData id="eimg41mes1612-41.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-41.png" showAs="mes1612-41.png" name=""/>
+								<an:componentData id="eimg42mes1612-42.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-42.png" showAs="mes1612-42.png" name=""/>
+								<an:componentData id="eimg43mes1612-43.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-43.png" showAs="mes1612-43.png" name=""/>
+								<an:componentData id="eimg44mes1612-44.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-44.png" showAs="mes1612-44.png" name=""/>
+								<an:componentData id="eimg45mes1612-45.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-45.png" showAs="mes1612-45.png" name=""/>
+								<an:componentData id="eimg46mes1612-46.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-46.png" showAs="mes1612-46.png" name=""/>
+								<an:componentData id="eimg47mes1612-47.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-47.png" showAs="mes1612-47.png" name=""/>
+								<an:componentData id="eimg48mes1612-48.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-48.png" showAs="mes1612-48.png" name=""/>
+								<an:componentData id="eimg49mes1612-49.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-49.png" showAs="mes1612-49.png" name=""/>
+								<an:componentData id="eimg50mes1612-50.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-50.png" showAs="mes1612-50.png" name=""/>
+								<an:componentData id="eimg51mes1612-51.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-51.png" showAs="mes1612-51.png" name=""/>
+								<an:componentData id="eimg52mes1612-52.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-52.png" showAs="mes1612-52.png" name=""/>
+								<an:componentData id="eimg53mes1612-53.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-53.png" showAs="mes1612-53.png" name=""/>
+								<an:componentData id="eimg54mes1612-54.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-54.png" showAs="mes1612-54.png" name=""/>
+								<an:componentData id="eimg55mes1612-55.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-55.png" showAs="mes1612-55.png" name=""/>
+								<an:componentData id="eimg56mes1612-56.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-56.png" showAs="mes1612-56.png" name=""/>
+								<an:componentData id="eimg57mes1612-57.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-57.png" showAs="mes1612-57.png" name=""/>
+								<an:componentData id="eimg58mes1612-58.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-58.png" showAs="mes1612-58.png" name=""/>
+								<an:componentData id="eimg59mes1612-59.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-59.png" showAs="mes1612-59.png" name=""/>
+								<an:componentData id="eimg60mes1612-60.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-60.png" showAs="mes1612-60.png" name=""/>
+								<an:componentData id="eimg61mes1612-61.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-61.png" showAs="mes1612-61.png" name=""/>
+								<an:componentData id="eimg62mes1612-62.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-62.png" showAs="mes1612-62.png" name=""/>
+								<an:componentData id="eimg63mes1612-63.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-63.png" showAs="mes1612-63.png" name=""/>
+								<an:componentData id="eimg64mes1612-64.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-64.png" showAs="mes1612-64.png" name=""/>
+								<an:componentData id="eimg65mes1612-65.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-65.png" showAs="mes1612-65.png" name=""/>
+								<an:componentData id="eimg66mes1612-66.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-66.png" showAs="mes1612-66.png" name=""/>
+								<an:componentData id="eimg67mes1612-67.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-67.png" showAs="mes1612-67.png" name=""/>
+								<an:componentData id="eimg68mes1612-68.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-68.png" showAs="mes1612-68.png" name=""/>
+								<an:componentData id="eimg69mes1612-69.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-69.png" showAs="mes1612-69.png" name=""/>
+								<an:componentData id="eimg70mes1612-70.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-70.png" showAs="mes1612-70.png" name=""/>
+								<an:componentData id="eimg71mes1612-71.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-71.png" showAs="mes1612-71.png" name=""/>
+								<an:componentData id="eimg72mes1612-72.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-72.png" showAs="mes1612-72.png" name=""/>
+								<an:componentData id="eimg73mes1612-73.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-73.png" showAs="mes1612-73.png" name=""/>
+								<an:componentData id="eimg74mes1612-74.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-74.png" showAs="mes1612-74.png" name=""/>
+								<an:componentData id="eimg75mes1612-75.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-75.png" showAs="mes1612-75.png" name=""/>
+								<an:componentData id="eimg76mes1612-76.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-76.png" showAs="mes1612-76.png" name=""/>
+								<an:componentData id="eimg77mes1612-77.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-77.png" showAs="mes1612-77.png" name=""/>
+								<an:componentData id="eimg78mes1612-78.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-78.png" showAs="mes1612-78.png" name=""/>
+								<an:componentData id="eimg79mes1612-79.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-79.png" showAs="mes1612-79.png" name=""/>
+								<an:componentData id="eimg80mes1612-80.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-80.png" showAs="mes1612-80.png" name=""/>
+								<an:componentData id="eimg81mes1612-81.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-81.png" showAs="mes1612-81.png" name=""/>
+								<an:componentData id="eimg82mes1612-82.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-82.png" showAs="mes1612-82.png" name=""/>
+								<an:componentData id="eimg83mes1612-83.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-83.png" showAs="mes1612-83.png" name=""/>
+								<an:componentData id="eimg84mes1612-84.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-84.png" showAs="mes1612-84.png" name=""/>
+								<an:componentData id="eimg85mes1612-85.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-85.png" showAs="mes1612-85.png" name=""/>
+								<an:componentData id="eimg86mes1612-86.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-86.png" showAs="mes1612-86.png" name=""/>
+								<an:componentData id="eimg87mes1612-87.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-87.png" showAs="mes1612-87.png" name=""/>
+								<an:componentData id="eimg88mes1612-88.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-88.png" showAs="mes1612-88.png" name=""/>
+								<an:componentData id="eimg89mes1612-89.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-89.png" showAs="mes1612-89.png" name=""/>
+								<an:componentData id="eimg90mes1612-90.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-90.png" showAs="mes1612-90.png" name=""/>
+								<an:componentData id="eimg91mes1612-91.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-91.png" showAs="mes1612-91.png" name=""/>
+								<an:componentData id="eimg92mes1612-92.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-92.png" showAs="mes1612-92.png" name=""/>
+								<an:componentData id="eimg93mes1612-93.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-93.png" showAs="mes1612-93.png" name=""/>
+								<an:componentData id="eimg94mes1612-94.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-94.png" showAs="mes1612-94.png" name=""/>
 							</an:componentInfo>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
@@ -303,106 +303,106 @@
 							<an:FRBRdate date="2014-10-23" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-01.png" id="mimg1mes1612-01.png" name="" showAs="mes1612-01.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-02.png" id="mimg2mes1612-02.png" name="" showAs="mes1612-02.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-03.png" id="mimg3mes1612-03.png" name="" showAs="mes1612-03.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-04.png" id="mimg4mes1612-04.png" name="" showAs="mes1612-04.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-05.png" id="mimg5mes1612-05.png" name="" showAs="mes1612-05.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-06.png" id="mimg6mes1612-06.png" name="" showAs="mes1612-06.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-07.png" id="mimg7mes1612-07.png" name="" showAs="mes1612-07.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-08.png" id="mimg8mes1612-08.png" name="" showAs="mes1612-08.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-09.png" id="mimg9mes1612-09.png" name="" showAs="mes1612-09.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-10.png" id="mimg10mes1612-10.png" name="" showAs="mes1612-10.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-11.png" id="mimg11mes1612-11.png" name="" showAs="mes1612-11.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-12.png" id="mimg12mes1612-12.png" name="" showAs="mes1612-12.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-13.png" id="mimg13mes1612-13.png" name="" showAs="mes1612-13.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-14.png" id="mimg14mes1612-14.png" name="" showAs="mes1612-14.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-15.png" id="mimg15mes1612-15.png" name="" showAs="mes1612-15.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-16.png" id="mimg16mes1612-16.png" name="" showAs="mes1612-16.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-17.png" id="mimg17mes1612-17.png" name="" showAs="mes1612-17.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-18.png" id="mimg18mes1612-18.png" name="" showAs="mes1612-18.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-19.png" id="mimg19mes1612-19.png" name="" showAs="mes1612-19.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-20.png" id="mimg20mes1612-20.png" name="" showAs="mes1612-20.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-21.png" id="mimg21mes1612-21.png" name="" showAs="mes1612-21.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-22.png" id="mimg22mes1612-22.png" name="" showAs="mes1612-22.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-23.png" id="mimg23mes1612-23.png" name="" showAs="mes1612-23.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-24.png" id="mimg24mes1612-24.png" name="" showAs="mes1612-24.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-25.png" id="mimg25mes1612-25.png" name="" showAs="mes1612-25.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-26.png" id="mimg26mes1612-26.png" name="" showAs="mes1612-26.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-27.png" id="mimg27mes1612-27.png" name="" showAs="mes1612-27.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-28.png" id="mimg28mes1612-28.png" name="" showAs="mes1612-28.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-29.png" id="mimg29mes1612-29.png" name="" showAs="mes1612-29.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-30.png" id="mimg30mes1612-30.png" name="" showAs="mes1612-30.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-31.png" id="mimg31mes1612-31.png" name="" showAs="mes1612-31.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-32.png" id="mimg32mes1612-32.png" name="" showAs="mes1612-32.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-33.png" id="mimg33mes1612-33.png" name="" showAs="mes1612-33.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-34.png" id="mimg34mes1612-34.png" name="" showAs="mes1612-34.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-35.png" id="mimg35mes1612-35.png" name="" showAs="mes1612-35.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-36.png" id="mimg36mes1612-36.png" name="" showAs="mes1612-36.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-37.png" id="mimg37mes1612-37.png" name="" showAs="mes1612-37.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-38.png" id="mimg38mes1612-38.png" name="" showAs="mes1612-38.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-39.png" id="mimg39mes1612-39.png" name="" showAs="mes1612-39.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-40.png" id="mimg40mes1612-40.png" name="" showAs="mes1612-40.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-41.png" id="mimg41mes1612-41.png" name="" showAs="mes1612-41.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-42.png" id="mimg42mes1612-42.png" name="" showAs="mes1612-42.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-43.png" id="mimg43mes1612-43.png" name="" showAs="mes1612-43.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-44.png" id="mimg44mes1612-44.png" name="" showAs="mes1612-44.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-45.png" id="mimg45mes1612-45.png" name="" showAs="mes1612-45.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-46.png" id="mimg46mes1612-46.png" name="" showAs="mes1612-46.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-47.png" id="mimg47mes1612-47.png" name="" showAs="mes1612-47.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-48.png" id="mimg48mes1612-48.png" name="" showAs="mes1612-48.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-49.png" id="mimg49mes1612-49.png" name="" showAs="mes1612-49.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-50.png" id="mimg50mes1612-50.png" name="" showAs="mes1612-50.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-51.png" id="mimg51mes1612-51.png" name="" showAs="mes1612-51.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-52.png" id="mimg52mes1612-52.png" name="" showAs="mes1612-52.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-53.png" id="mimg53mes1612-53.png" name="" showAs="mes1612-53.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-54.png" id="mimg54mes1612-54.png" name="" showAs="mes1612-54.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-55.png" id="mimg55mes1612-55.png" name="" showAs="mes1612-55.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-56.png" id="mimg56mes1612-56.png" name="" showAs="mes1612-56.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-57.png" id="mimg57mes1612-57.png" name="" showAs="mes1612-57.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-58.png" id="mimg58mes1612-58.png" name="" showAs="mes1612-58.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-59.png" id="mimg59mes1612-59.png" name="" showAs="mes1612-59.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-60.png" id="mimg60mes1612-60.png" name="" showAs="mes1612-60.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-61.png" id="mimg61mes1612-61.png" name="" showAs="mes1612-61.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-62.png" id="mimg62mes1612-62.png" name="" showAs="mes1612-62.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-63.png" id="mimg63mes1612-63.png" name="" showAs="mes1612-63.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-64.png" id="mimg64mes1612-64.png" name="" showAs="mes1612-64.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-65.png" id="mimg65mes1612-65.png" name="" showAs="mes1612-65.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-66.png" id="mimg66mes1612-66.png" name="" showAs="mes1612-66.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-67.png" id="mimg67mes1612-67.png" name="" showAs="mes1612-67.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-68.png" id="mimg68mes1612-68.png" name="" showAs="mes1612-68.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-69.png" id="mimg69mes1612-69.png" name="" showAs="mes1612-69.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-70.png" id="mimg70mes1612-70.png" name="" showAs="mes1612-70.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-71.png" id="mimg71mes1612-71.png" name="" showAs="mes1612-71.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-72.png" id="mimg72mes1612-72.png" name="" showAs="mes1612-72.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-73.png" id="mimg73mes1612-73.png" name="" showAs="mes1612-73.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-74.png" id="mimg74mes1612-74.png" name="" showAs="mes1612-74.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-75.png" id="mimg75mes1612-75.png" name="" showAs="mes1612-75.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-76.png" id="mimg76mes1612-76.png" name="" showAs="mes1612-76.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-77.png" id="mimg77mes1612-77.png" name="" showAs="mes1612-77.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-78.png" id="mimg78mes1612-78.png" name="" showAs="mes1612-78.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-79.png" id="mimg79mes1612-79.png" name="" showAs="mes1612-79.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-80.png" id="mimg80mes1612-80.png" name="" showAs="mes1612-80.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-81.png" id="mimg81mes1612-81.png" name="" showAs="mes1612-81.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-82.png" id="mimg82mes1612-82.png" name="" showAs="mes1612-82.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-83.png" id="mimg83mes1612-83.png" name="" showAs="mes1612-83.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-84.png" id="mimg84mes1612-84.png" name="" showAs="mes1612-84.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-85.png" id="mimg85mes1612-85.png" name="" showAs="mes1612-85.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-86.png" id="mimg86mes1612-86.png" name="" showAs="mes1612-86.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-87.png" id="mimg87mes1612-87.png" name="" showAs="mes1612-87.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-88.png" id="mimg88mes1612-88.png" name="" showAs="mes1612-88.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-89.png" id="mimg89mes1612-89.png" name="" showAs="mes1612-89.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-90.png" id="mimg90mes1612-90.png" name="" showAs="mes1612-90.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-91.png" id="mimg91mes1612-91.png" name="" showAs="mes1612-91.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-92.png" id="mimg92mes1612-92.png" name="" showAs="mes1612-92.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-93.png" id="mimg93mes1612-93.png" name="" showAs="mes1612-93.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-94.png" id="mimg94mes1612-94.png" name="" showAs="mes1612-94.png"/>
+								<an:componentData id="mimg1mes1612-01.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-01.png" showAs="mes1612-01.png" name=""/>
+								<an:componentData id="mimg2mes1612-02.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-02.png" showAs="mes1612-02.png" name=""/>
+								<an:componentData id="mimg3mes1612-03.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-03.png" showAs="mes1612-03.png" name=""/>
+								<an:componentData id="mimg4mes1612-04.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-04.png" showAs="mes1612-04.png" name=""/>
+								<an:componentData id="mimg5mes1612-05.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-05.png" showAs="mes1612-05.png" name=""/>
+								<an:componentData id="mimg6mes1612-06.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-06.png" showAs="mes1612-06.png" name=""/>
+								<an:componentData id="mimg7mes1612-07.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-07.png" showAs="mes1612-07.png" name=""/>
+								<an:componentData id="mimg8mes1612-08.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-08.png" showAs="mes1612-08.png" name=""/>
+								<an:componentData id="mimg9mes1612-09.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-09.png" showAs="mes1612-09.png" name=""/>
+								<an:componentData id="mimg10mes1612-10.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-10.png" showAs="mes1612-10.png" name=""/>
+								<an:componentData id="mimg11mes1612-11.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-11.png" showAs="mes1612-11.png" name=""/>
+								<an:componentData id="mimg12mes1612-12.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-12.png" showAs="mes1612-12.png" name=""/>
+								<an:componentData id="mimg13mes1612-13.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-13.png" showAs="mes1612-13.png" name=""/>
+								<an:componentData id="mimg14mes1612-14.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-14.png" showAs="mes1612-14.png" name=""/>
+								<an:componentData id="mimg15mes1612-15.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-15.png" showAs="mes1612-15.png" name=""/>
+								<an:componentData id="mimg16mes1612-16.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-16.png" showAs="mes1612-16.png" name=""/>
+								<an:componentData id="mimg17mes1612-17.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-17.png" showAs="mes1612-17.png" name=""/>
+								<an:componentData id="mimg18mes1612-18.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-18.png" showAs="mes1612-18.png" name=""/>
+								<an:componentData id="mimg19mes1612-19.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-19.png" showAs="mes1612-19.png" name=""/>
+								<an:componentData id="mimg20mes1612-20.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-20.png" showAs="mes1612-20.png" name=""/>
+								<an:componentData id="mimg21mes1612-21.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-21.png" showAs="mes1612-21.png" name=""/>
+								<an:componentData id="mimg22mes1612-22.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-22.png" showAs="mes1612-22.png" name=""/>
+								<an:componentData id="mimg23mes1612-23.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-23.png" showAs="mes1612-23.png" name=""/>
+								<an:componentData id="mimg24mes1612-24.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-24.png" showAs="mes1612-24.png" name=""/>
+								<an:componentData id="mimg25mes1612-25.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-25.png" showAs="mes1612-25.png" name=""/>
+								<an:componentData id="mimg26mes1612-26.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-26.png" showAs="mes1612-26.png" name=""/>
+								<an:componentData id="mimg27mes1612-27.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-27.png" showAs="mes1612-27.png" name=""/>
+								<an:componentData id="mimg28mes1612-28.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-28.png" showAs="mes1612-28.png" name=""/>
+								<an:componentData id="mimg29mes1612-29.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-29.png" showAs="mes1612-29.png" name=""/>
+								<an:componentData id="mimg30mes1612-30.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-30.png" showAs="mes1612-30.png" name=""/>
+								<an:componentData id="mimg31mes1612-31.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-31.png" showAs="mes1612-31.png" name=""/>
+								<an:componentData id="mimg32mes1612-32.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-32.png" showAs="mes1612-32.png" name=""/>
+								<an:componentData id="mimg33mes1612-33.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-33.png" showAs="mes1612-33.png" name=""/>
+								<an:componentData id="mimg34mes1612-34.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-34.png" showAs="mes1612-34.png" name=""/>
+								<an:componentData id="mimg35mes1612-35.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-35.png" showAs="mes1612-35.png" name=""/>
+								<an:componentData id="mimg36mes1612-36.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-36.png" showAs="mes1612-36.png" name=""/>
+								<an:componentData id="mimg37mes1612-37.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-37.png" showAs="mes1612-37.png" name=""/>
+								<an:componentData id="mimg38mes1612-38.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-38.png" showAs="mes1612-38.png" name=""/>
+								<an:componentData id="mimg39mes1612-39.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-39.png" showAs="mes1612-39.png" name=""/>
+								<an:componentData id="mimg40mes1612-40.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-40.png" showAs="mes1612-40.png" name=""/>
+								<an:componentData id="mimg41mes1612-41.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-41.png" showAs="mes1612-41.png" name=""/>
+								<an:componentData id="mimg42mes1612-42.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-42.png" showAs="mes1612-42.png" name=""/>
+								<an:componentData id="mimg43mes1612-43.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-43.png" showAs="mes1612-43.png" name=""/>
+								<an:componentData id="mimg44mes1612-44.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-44.png" showAs="mes1612-44.png" name=""/>
+								<an:componentData id="mimg45mes1612-45.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-45.png" showAs="mes1612-45.png" name=""/>
+								<an:componentData id="mimg46mes1612-46.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-46.png" showAs="mes1612-46.png" name=""/>
+								<an:componentData id="mimg47mes1612-47.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-47.png" showAs="mes1612-47.png" name=""/>
+								<an:componentData id="mimg48mes1612-48.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-48.png" showAs="mes1612-48.png" name=""/>
+								<an:componentData id="mimg49mes1612-49.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-49.png" showAs="mes1612-49.png" name=""/>
+								<an:componentData id="mimg50mes1612-50.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-50.png" showAs="mes1612-50.png" name=""/>
+								<an:componentData id="mimg51mes1612-51.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-51.png" showAs="mes1612-51.png" name=""/>
+								<an:componentData id="mimg52mes1612-52.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-52.png" showAs="mes1612-52.png" name=""/>
+								<an:componentData id="mimg53mes1612-53.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-53.png" showAs="mes1612-53.png" name=""/>
+								<an:componentData id="mimg54mes1612-54.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-54.png" showAs="mes1612-54.png" name=""/>
+								<an:componentData id="mimg55mes1612-55.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-55.png" showAs="mes1612-55.png" name=""/>
+								<an:componentData id="mimg56mes1612-56.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-56.png" showAs="mes1612-56.png" name=""/>
+								<an:componentData id="mimg57mes1612-57.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-57.png" showAs="mes1612-57.png" name=""/>
+								<an:componentData id="mimg58mes1612-58.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-58.png" showAs="mes1612-58.png" name=""/>
+								<an:componentData id="mimg59mes1612-59.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-59.png" showAs="mes1612-59.png" name=""/>
+								<an:componentData id="mimg60mes1612-60.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-60.png" showAs="mes1612-60.png" name=""/>
+								<an:componentData id="mimg61mes1612-61.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-61.png" showAs="mes1612-61.png" name=""/>
+								<an:componentData id="mimg62mes1612-62.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-62.png" showAs="mes1612-62.png" name=""/>
+								<an:componentData id="mimg63mes1612-63.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-63.png" showAs="mes1612-63.png" name=""/>
+								<an:componentData id="mimg64mes1612-64.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-64.png" showAs="mes1612-64.png" name=""/>
+								<an:componentData id="mimg65mes1612-65.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-65.png" showAs="mes1612-65.png" name=""/>
+								<an:componentData id="mimg66mes1612-66.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-66.png" showAs="mes1612-66.png" name=""/>
+								<an:componentData id="mimg67mes1612-67.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-67.png" showAs="mes1612-67.png" name=""/>
+								<an:componentData id="mimg68mes1612-68.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-68.png" showAs="mes1612-68.png" name=""/>
+								<an:componentData id="mimg69mes1612-69.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-69.png" showAs="mes1612-69.png" name=""/>
+								<an:componentData id="mimg70mes1612-70.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-70.png" showAs="mes1612-70.png" name=""/>
+								<an:componentData id="mimg71mes1612-71.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-71.png" showAs="mes1612-71.png" name=""/>
+								<an:componentData id="mimg72mes1612-72.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-72.png" showAs="mes1612-72.png" name=""/>
+								<an:componentData id="mimg73mes1612-73.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-73.png" showAs="mes1612-73.png" name=""/>
+								<an:componentData id="mimg74mes1612-74.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-74.png" showAs="mes1612-74.png" name=""/>
+								<an:componentData id="mimg75mes1612-75.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-75.png" showAs="mes1612-75.png" name=""/>
+								<an:componentData id="mimg76mes1612-76.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-76.png" showAs="mes1612-76.png" name=""/>
+								<an:componentData id="mimg77mes1612-77.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-77.png" showAs="mes1612-77.png" name=""/>
+								<an:componentData id="mimg78mes1612-78.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-78.png" showAs="mes1612-78.png" name=""/>
+								<an:componentData id="mimg79mes1612-79.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-79.png" showAs="mes1612-79.png" name=""/>
+								<an:componentData id="mimg80mes1612-80.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-80.png" showAs="mes1612-80.png" name=""/>
+								<an:componentData id="mimg81mes1612-81.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-81.png" showAs="mes1612-81.png" name=""/>
+								<an:componentData id="mimg82mes1612-82.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-82.png" showAs="mes1612-82.png" name=""/>
+								<an:componentData id="mimg83mes1612-83.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-83.png" showAs="mes1612-83.png" name=""/>
+								<an:componentData id="mimg84mes1612-84.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-84.png" showAs="mes1612-84.png" name=""/>
+								<an:componentData id="mimg85mes1612-85.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-85.png" showAs="mes1612-85.png" name=""/>
+								<an:componentData id="mimg86mes1612-86.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-86.png" showAs="mes1612-86.png" name=""/>
+								<an:componentData id="mimg87mes1612-87.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-87.png" showAs="mes1612-87.png" name=""/>
+								<an:componentData id="mimg88mes1612-88.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-88.png" showAs="mes1612-88.png" name=""/>
+								<an:componentData id="mimg89mes1612-89.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-89.png" showAs="mes1612-89.png" name=""/>
+								<an:componentData id="mimg90mes1612-90.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-90.png" showAs="mes1612-90.png" name=""/>
+								<an:componentData id="mimg91mes1612-91.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-91.png" showAs="mes1612-91.png" name=""/>
+								<an:componentData id="mimg92mes1612-92.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-92.png" showAs="mes1612-92.png" name=""/>
+								<an:componentData id="mimg93mes1612-93.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-93.png" showAs="mes1612-93.png" name=""/>
+								<an:componentData id="mimg94mes1612-94.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLMESS/00806267/mes1612-94.png" showAs="mes1612-94.png" name=""/>
 							</an:componentInfo>
 						</an:FRBRManifestation>
 					</an:identification>
 					<an:references source="#redattore">
-						<an:original href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main/allegato" id="ro3" showAs="Allegato"/>
-						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main" id="mainAnx3" showAs="Main"/>
+						<an:original id="ro3" href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main/allegato" showAs="Allegato"/>
+						<an:attachmentOf id="mainAnx3" href="http://dati.senato.it/osr/Ddl/2014-10-23/1612/ita@/main" showAs="Main"/>
 					</an:references>
 				</an:meta>
 				<an:mainBody>

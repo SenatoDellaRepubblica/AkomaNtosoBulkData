@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/2960/C/30.0.2/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/2960/C/30.0.2"/>
 					<an:FRBRdate date="2017-11-30" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2960/C/30.0.2/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/2960/C/30.0.2/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2017-11-30" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2960/C/30.0.2/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/2960/C/30.0.2/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,25 +32,25 @@
 					<an:FRBRdate date="2017-11-30" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2960/C/30.0.2/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/2960/C/30.0.2/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2017-11-30" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2017-11-30"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2017-11-30" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2017-11-30" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/2960/C/30.0.2/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/2960" id="ar1" showAs="DDL 2960"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/5" id="commissione" showAs="5ª Commissione permanente"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/" id="IDBDSQAG0R3AG0LR30PTP10KNCEZKL0WNXBSOZMEDDUJX1X23PDTK" showAs="Bignami, Sacconi, Paolo Romani, De Petris, Zeller, Mario Ferrara, Guerra, Barani, Centinaio, Quagliariello, Albertini, Amidei, Aracri, Arrigoni, Augello, Barozzino, Battista, Bellot, Bencini, Berger, Bernini, Bilardi, Bisinella, Bocchino, Bonfrisco, Borioli, Bruni, Bubbico, Buemi, Calderoli, Caleo, Campanella, Candiani, Carraro, Casaletto, Casini, Cassano, Ceroni, Comaroli, Compagna, Consiglio, Conte, Conti, Corsini, D'ali', D'ambrosio Lettieri, D'anna, Davico, De Cristofaro, De Pietro, De Poli, De Siano, Di Biagio, Dalla Zuanna, Dalla Tor, Di Giacomo, Di Maggio, Divina, D'onghia, Falanga, Fasano, Fasiolo, Fattorini, Fravezzi, Floris, Formigoni, Fucksia, Gambaro, Gasparri, Gatti, Giovanardi, Gotor, Idem, Iurlaro, Lai, Laniece, Liuzzi, Lo Moro, Eva Longo, Fausto Guilherme Longo, Malan, Mandelli, Marin, Marinello, Luigi Marino, Mastrangeli, Giovanni Mauro, Mario Mauro, Merloni, Micheloni, Migliavacca, Mineo, Molinari, Munerato, Mussini, Nencini, Olivero, Orellana, Pagnoncelli, Palermo, Panizza, Pelino, Pepe, Perrone, Petraglia, Piccinelli, Piccoli, Puppato, Razzi, Rizzotti, Maurizio Romani, Romano, Mariarosaria Rossi, Maurizio Rossi, Ruta, Scalia, Scilipoti Isgro', Scoma, Serafini, Sibilia, Silvestro, Simeoni, Sollo, Stefani, Stefano, Tarquinio, Tosato, Turano, Uras, Vaccari, Vacciano, Vicari, Zin, Zizza, Tocci, Zavoli, Angioni, Endrizzi, Padua, Anitori, Parente, D'adda, Favero, Ichino, Spilabotte, Boccardi, Azzollini, Bianconi, RICCHIUTI, ZANDA, LANGELLA, GUALDANI, ZANONI, MILO"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/2960/C/30.0.2/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/2960" showAs="DDL 2960"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="5ª Commissione permanente" href="/dati.senato.it/osr/Commissione/5"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDBDSQAG0R3AG0LR30PTP10KNCEZKL0WNXBSOZMEDDUJX1X23PDTK" href="http://dati.senato.it/" showAs="Bignami, Sacconi, Paolo Romani, De Petris, Zeller, Mario Ferrara, Guerra, Barani, Centinaio, Quagliariello, Albertini, Amidei, Aracri, Arrigoni, Augello, Barozzino, Battista, Bellot, Bencini, Berger, Bernini, Bilardi, Bisinella, Bocchino, Bonfrisco, Borioli, Bruni, Bubbico, Buemi, Calderoli, Caleo, Campanella, Candiani, Carraro, Casaletto, Casini, Cassano, Ceroni, Comaroli, Compagna, Consiglio, Conte, Conti, Corsini, D'ali', D'ambrosio Lettieri, D'anna, Davico, De Cristofaro, De Pietro, De Poli, De Siano, Di Biagio, Dalla Zuanna, Dalla Tor, Di Giacomo, Di Maggio, Divina, D'onghia, Falanga, Fasano, Fasiolo, Fattorini, Fravezzi, Floris, Formigoni, Fucksia, Gambaro, Gasparri, Gatti, Giovanardi, Gotor, Idem, Iurlaro, Lai, Laniece, Liuzzi, Lo Moro, Eva Longo, Fausto Guilherme Longo, Malan, Mandelli, Marin, Marinello, Luigi Marino, Mastrangeli, Giovanni Mauro, Mario Mauro, Merloni, Micheloni, Migliavacca, Mineo, Molinari, Munerato, Mussini, Nencini, Olivero, Orellana, Pagnoncelli, Palermo, Panizza, Pelino, Pepe, Perrone, Petraglia, Piccinelli, Piccoli, Puppato, Razzi, Rizzotti, Maurizio Romani, Romano, Mariarosaria Rossi, Maurizio Rossi, Ruta, Scalia, Scilipoti Isgro', Scoma, Serafini, Sibilia, Silvestro, Simeoni, Sollo, Stefani, Stefano, Tarquinio, Tosato, Turano, Uras, Vaccari, Vacciano, Vicari, Zin, Zizza, Tocci, Zavoli, Angioni, Endrizzi, Padua, Anitori, Parente, D'adda, Favero, Ichino, Spilabotte, Boccardi, Azzollini, Bianconi, RICCHIUTI, ZANDA, LANGELLA, GUALDANI, ZANONI, MILO"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -61,7 +61,7 @@
 				<an:docNumber>Emendamento n. 30.0.2 (testo 4)</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDBDSQAG0R3AG0LR30PTP10KNCEZKL0WNXBSOZMEDDUJX1X23PDTK">Bignami, Sacconi, Paolo Romani, De Petris, Zeller, Mario Ferrara, Guerra, Barani, Centinaio, Quagliariello, Albertini, Amidei, Aracri, Arrigoni, Augello, Barozzino, Battista, Bellot, Bencini, Berger, Bernini, Bilardi, Bisinella, Bocchino, Bonfrisco, Borioli, Bruni, Bubbico, Buemi, Calderoli, Caleo, Campanella, Candiani, Carraro, Casaletto, Casini, Cassano, Ceroni, Comaroli, Compagna, Consiglio, Conte, Conti, Corsini, D'ali', D'ambrosio Lettieri, D'anna, Davico, De Cristofaro, De Pietro, De Poli, De Siano, Di Biagio, Dalla Zuanna, Dalla Tor, Di Giacomo, Di Maggio, Divina, D'onghia, Falanga, Fasano, Fasiolo, Fattorini, Fravezzi, Floris, Formigoni, Fucksia, Gambaro, Gasparri, Gatti, Giovanardi, Gotor, Idem, Iurlaro, Lai, Laniece, Liuzzi, Lo Moro, Eva Longo, Fausto Guilherme Longo, Malan, Mandelli, Marin, Marinello, Luigi Marino, Mastrangeli, Giovanni Mauro, Mario Mauro, Merloni, Micheloni, Migliavacca, Mineo, Molinari, Munerato, Mussini, Nencini, Olivero, Orellana, Pagnoncelli, Palermo, Panizza, Pelino, Pepe, Perrone, Petraglia, Piccinelli, Piccoli, Puppato, Razzi, Rizzotti, Maurizio Romani, Romano, Mariarosaria Rossi, Maurizio Rossi, Ruta, Scalia, Scilipoti Isgro', Scoma, Serafini, Sibilia, Silvestro, Simeoni, Sollo, Stefani, Stefano, Tarquinio, Tosato, Turano, Uras, Vaccari, Vacciano, Vicari, Zin, Zizza, Tocci, Zavoli, Angioni, Endrizzi, Padua, Anitori, Parente, D'adda, Favero, Ichino, Spilabotte, Boccardi, Azzollini, Bianconi, RICCHIUTI, ZANDA, LANGELLA, GUALDANI, ZANONI, MILO</an:docProponent>
+				<an:docProponent refersTo="#IDBDSQAG0R3AG0LR30PTP10KNCEZKL0WNXBSOZMEDDUJX1X23PDTK" as="#tipoSenatore">Bignami, Sacconi, Paolo Romani, De Petris, Zeller, Mario Ferrara, Guerra, Barani, Centinaio, Quagliariello, Albertini, Amidei, Aracri, Arrigoni, Augello, Barozzino, Battista, Bellot, Bencini, Berger, Bernini, Bilardi, Bisinella, Bocchino, Bonfrisco, Borioli, Bruni, Bubbico, Buemi, Calderoli, Caleo, Campanella, Candiani, Carraro, Casaletto, Casini, Cassano, Ceroni, Comaroli, Compagna, Consiglio, Conte, Conti, Corsini, D'ali', D'ambrosio Lettieri, D'anna, Davico, De Cristofaro, De Pietro, De Poli, De Siano, Di Biagio, Dalla Zuanna, Dalla Tor, Di Giacomo, Di Maggio, Divina, D'onghia, Falanga, Fasano, Fasiolo, Fattorini, Fravezzi, Floris, Formigoni, Fucksia, Gambaro, Gasparri, Gatti, Giovanardi, Gotor, Idem, Iurlaro, Lai, Laniece, Liuzzi, Lo Moro, Eva Longo, Fausto Guilherme Longo, Malan, Mandelli, Marin, Marinello, Luigi Marino, Mastrangeli, Giovanni Mauro, Mario Mauro, Merloni, Micheloni, Migliavacca, Mineo, Molinari, Munerato, Mussini, Nencini, Olivero, Orellana, Pagnoncelli, Palermo, Panizza, Pelino, Pepe, Perrone, Petraglia, Piccinelli, Piccoli, Puppato, Razzi, Rizzotti, Maurizio Romani, Romano, Mariarosaria Rossi, Maurizio Rossi, Ruta, Scalia, Scilipoti Isgro', Scoma, Serafini, Sibilia, Silvestro, Simeoni, Sollo, Stefani, Stefano, Tarquinio, Tosato, Turano, Uras, Vaccari, Vacciano, Vicari, Zin, Zizza, Tocci, Zavoli, Angioni, Endrizzi, Padua, Anitori, Parente, D'adda, Favero, Ichino, Spilabotte, Boccardi, Azzollini, Bianconi, RICCHIUTI, ZANDA, LANGELLA, GUALDANI, ZANONI, MILO</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

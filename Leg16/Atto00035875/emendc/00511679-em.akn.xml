@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/16/Emend/S/2363/C/6.0.2/main"/>
 					<an:FRBRuri value="http://dati.senato.it/16/Emend/S/2363/C/6.0.2"/>
 					<an:FRBRdate date="2010-11-10" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/16/Emend/S/2363/C/6.0.2/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/16/Emend/S/2363/C/6.0.2/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2010-11-10" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/16/Emend/S/2363/C/6.0.2/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/16/Emend/S/2363/C/6.0.2/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,25 +32,25 @@
 					<an:FRBRdate date="2010-11-10" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/16/Emend/S/2363/C/6.0.2/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/16/Emend/S/2363/C/6.0.2/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2010-11-10" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2010-11-10"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2010-11-10" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2010-11-10" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/16/Emend/S/2363/C/6.0.2/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/16/2363" id="ar1" showAs="DDL 2363"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/9" id="commissione" showAs="Agricoltura e produzione agroalimentare"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/16658" id="EAB" showAs="Piccioni"/>
+				<an:original id="ro1" href="http://dati.senato.it/16/Emend/S/2363/C/6.0.2/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/16/2363" showAs="DDL 2363"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="Agricoltura e produzione agroalimentare" href="/dati.senato.it/osr/Commissione/9"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="EAB" href="http://dati.senato.it/senatore/16658" showAs="Piccioni"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -61,7 +61,7 @@
 				<an:docNumber>Emendamento n. 6.0.2</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EAB">Piccioni</an:docProponent>
+				<an:docProponent refersTo="#EAB" as="#tipoSenatore">Piccioni</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
@@ -89,7 +89,7 @@
 				<an:p>        6. I dirigenti generali forestali sono nominati tra i dirigenti superiori forestali con decreto del Presidente della Repubblica, previa deliberazione del Consiglio dei Ministri, su proposta del Ministro delle politiche agricole alimentari e forestali nei limiti delle disponibilità in organico. Con regolamento del Ministro delle politiche agricole alimentari e forestali, di concerto con il Ministro dell'economia e delle finanze e con il Ministro per la pubblica amministrazione e l'innovazione, adottato ai sensi dell'articolo 17, comma 3, della legge 23 agosto 1988, n. 400, verranno determinate le procedure per la nomina a dirigente generale forestale.</an:p>
 				<an:p>        7. Nella prima applicazione della presente legge i dirigenti generali forestali sono nominati tra i dirigenti superiori del Corpo forestale dello Stato con decreto del Presidente della Repubblica, previa deliberazione del Consiglio dei Ministri, su proposta del Ministro delle politiche agricole alimentari e forestali''».</an:p>
 				<an:p> </an:p>
-				<an:table border="1" cellpadding="0" cellspacing="0" id="E2B">
+				<an:table border="1" cellspacing="0" cellpadding="0" id="E2B">
 					<an:tr>
 						<an:td>
 							<an:p>Livello di funzione</an:p>

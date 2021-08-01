@@ -2,15 +2,15 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2013-04-09/401/main"/>
 					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-09/401"/>
 					<an:FRBRdate date="2013-04-09" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-09/401/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-09/401/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/osr/Ddl/2013-04-09/401/main" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="wcomp2" href="http://dati.senato.it/osr/Ddl/2013-04-09/401/main/relazione" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
@@ -23,8 +23,8 @@
 					<an:FRBRdate date="2013-04-09" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="ecomp2" href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main/relazione" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -34,38 +34,38 @@
 					<an:FRBRdate date="2013-04-09" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main.xml" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="mcomp2" href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main/relazione.xml" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2013-04-09" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2013-04-09"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2013-04-09" id="step1" outcome="Presentazione"/>
+				<an:step id="step1" date="2013-04-09" actor="#senato" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main" id="ro1" showAs="generation"/>
-				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main/relazione" id="annex2" showAs="Relazione"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d664e15a1327" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d664e15" showAs="SCILIPOTI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d664e17" showAs="GALIMBERTI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d664e19" showAs="D'ASCOLA"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d664e21" showAs="MANCUSO"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d664e23" showAs="GENTILE"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d664e26" showAs="PELINO"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d664e28" showAs="Giuseppe ESPOSITO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/32665" id="d664e30" showAs="MARINELLO"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d664e32" showAs="TORRISI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/32679" id="d664e34" showAs="PAGANO"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d664e36" showAs="VICECONTE"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d664e39" showAs="D'AMBROSIO LETTIERI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d664e41" showAs="AIELLO"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d664e43" showAs="CARIDI"/>
+				<an:original id="ro1" href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main" showAs="generation"/>
+				<an:hasAttachment id="annex2" href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main/relazione" showAs="Relazione"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="d664e15a1327" href="http://dati.senato.it/osr/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="d664e15" href="http://dati.senato.it/osr/Persona" showAs="SCILIPOTI"/>
+				<an:TLCPerson id="d664e17" href="http://dati.senato.it/osr/Persona" showAs="GALIMBERTI"/>
+				<an:TLCPerson id="d664e19" href="http://dati.senato.it/osr/Persona" showAs="D'ASCOLA"/>
+				<an:TLCPerson id="d664e21" href="http://dati.senato.it/osr/Persona" showAs="MANCUSO"/>
+				<an:TLCPerson id="d664e23" href="http://dati.senato.it/osr/Persona" showAs="GENTILE"/>
+				<an:TLCPerson id="d664e26" href="http://dati.senato.it/osr/Persona" showAs="PELINO"/>
+				<an:TLCPerson id="d664e28" href="http://dati.senato.it/osr/Persona" showAs="Giuseppe ESPOSITO"/>
+				<an:TLCPerson id="d664e30" href="http://dati.senato.it/osr/Persona" showAs="MARINELLO"/>
+				<an:TLCPerson id="d664e32" href="http://dati.senato.it/osr/Persona" showAs="TORRISI"/>
+				<an:TLCPerson id="d664e34" href="http://dati.senato.it/osr/Persona" showAs="PAGANO"/>
+				<an:TLCPerson id="d664e36" href="http://dati.senato.it/osr/Persona" showAs="VICECONTE"/>
+				<an:TLCPerson id="d664e39" href="http://dati.senato.it/osr/Persona" showAs="D'AMBROSIO LETTIERI"/>
+				<an:TLCPerson id="d664e41" href="http://dati.senato.it/osr/Persona" showAs="AIELLO"/>
+				<an:TLCPerson id="d664e43" href="http://dati.senato.it/osr/Persona" showAs="CARIDI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -81,33 +81,33 @@
 			</an:p>
 			<an:p>
 				d’iniziativa dei senatori 
-				<an:docProponent as="#d664e15a1327" refersTo="#d664e15">SCILIPOTI</an:docProponent>
+				<an:docProponent refersTo="#d664e15" as="#d664e15a1327">SCILIPOTI</an:docProponent>
 				, 
-				<an:docProponent as="#d664e15a1327" refersTo="#d664e17">GALIMBERTI</an:docProponent>
+				<an:docProponent refersTo="#d664e17" as="#d664e15a1327">GALIMBERTI</an:docProponent>
 				, 
-				<an:docProponent as="#d664e15a1327" refersTo="#d664e19">D'ASCOLA</an:docProponent>
+				<an:docProponent refersTo="#d664e19" as="#d664e15a1327">D'ASCOLA</an:docProponent>
 				, 
-				<an:docProponent as="#d664e15a1327" refersTo="#d664e21">MANCUSO</an:docProponent>
+				<an:docProponent refersTo="#d664e21" as="#d664e15a1327">MANCUSO</an:docProponent>
 				, 
-				<an:docProponent as="#d664e15a1327" refersTo="#d664e23">GENTILE</an:docProponent>
+				<an:docProponent refersTo="#d664e23" as="#d664e15a1327">GENTILE</an:docProponent>
 				, 
-				<an:docProponent as="#d664e15a1327" refersTo="#d664e26">PELINO</an:docProponent>
+				<an:docProponent refersTo="#d664e26" as="#d664e15a1327">PELINO</an:docProponent>
 				, 
-				<an:docProponent as="#d664e15a1327" refersTo="#d664e28">Giuseppe ESPOSITO</an:docProponent>
+				<an:docProponent refersTo="#d664e28" as="#d664e15a1327">Giuseppe ESPOSITO</an:docProponent>
 				, 
-				<an:docProponent as="#d664e15a1327" refersTo="#d664e30">MARINELLO</an:docProponent>
+				<an:docProponent refersTo="#d664e30" as="#d664e15a1327">MARINELLO</an:docProponent>
 				, 
-				<an:docProponent as="#d664e15a1327" refersTo="#d664e32">TORRISI</an:docProponent>
+				<an:docProponent refersTo="#d664e32" as="#d664e15a1327">TORRISI</an:docProponent>
 				, 
-				<an:docProponent as="#d664e15a1327" refersTo="#d664e34">PAGANO</an:docProponent>
+				<an:docProponent refersTo="#d664e34" as="#d664e15a1327">PAGANO</an:docProponent>
 				, 
-				<an:docProponent as="#d664e15a1327" refersTo="#d664e36">VICECONTE</an:docProponent>
+				<an:docProponent refersTo="#d664e36" as="#d664e15a1327">VICECONTE</an:docProponent>
 				, 
-				<an:docProponent as="#d664e15a1327" refersTo="#d664e39">D'AMBROSIO LETTIERI</an:docProponent>
+				<an:docProponent refersTo="#d664e39" as="#d664e15a1327">D'AMBROSIO LETTIERI</an:docProponent>
 				, 
-				<an:docProponent as="#d664e15a1327" refersTo="#d664e41">AIELLO</an:docProponent>
+				<an:docProponent refersTo="#d664e41" as="#d664e15a1327">AIELLO</an:docProponent>
 				 e 
-				<an:docProponent as="#d664e15a1327" refersTo="#d664e43">CARIDI</an:docProponent>
+				<an:docProponent refersTo="#d664e43" as="#d664e15a1327">CARIDI</an:docProponent>
 			</an:p>
 			<an:p>
 				<an:b>COMUNICATO ALLA PRESIDENZA IL 9 APRILE 2013</an:b>
@@ -359,7 +359,7 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2013-04-09/401/main/relazione"/>
@@ -385,8 +385,8 @@
 						</an:FRBRManifestation>
 					</an:identification>
 					<an:references source="#redattore">
-						<an:original href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main/relazione" id="ro2" showAs="Relazione"/>
-						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main" id="mainAnx2" showAs="Main"/>
+						<an:original id="ro2" href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main/relazione" showAs="Relazione"/>
+						<an:attachmentOf id="mainAnx2" href="http://dati.senato.it/osr/Ddl/2013-04-09/401/ita@/main" showAs="Main"/>
 					</an:references>
 				</an:meta>
 				<an:mainBody>

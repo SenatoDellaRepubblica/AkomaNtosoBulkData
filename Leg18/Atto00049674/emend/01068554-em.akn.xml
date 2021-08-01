@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/435/A/1.115/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/435/A/1.115"/>
 					<an:FRBRdate date="2018-06-21" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/435/A/1.115/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/435/A/1.115/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2018-06-21" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/435/A/1.115/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/435/A/1.115/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2018-06-21" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/435/A/1.115/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/435/A/1.115/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-06-21" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2018-06-21"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-06-21" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2018-06-21" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/435/A/1.115/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/435" id="ar1" showAs="DDL 435"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/28924" id="IDZ3VJAIRL1P10LHQTWGIRYS2ZQNCRALCTTISL3FCM4ZBEBHSKSIVL" showAs="VERDUCCI"/>
-				<an:TLCPerson href="http://dati.senato.it/4522" id="IDTRRQG5F4X5Z5DPLJOB3QHB3BGI5RYR244GG3YPF3JTBJY2OCDDUN" showAs="PITTELLA"/>
-				<an:TLCPerson href="http://dati.senato.it/29467" id="IDNRGG3HINBHPNE1DKIU13DDJC4DV5TI2JR5XZOBS3NMJS3NUNGJL" showAs="MALPEZZI"/>
-				<an:TLCPerson href="http://dati.senato.it/21507" id="IDAPHAUULP0J0WJ1IYA2WH40NNNIUDKHZPWBOG55CW23ILSV2LSVYP" showAs="MARINO"/>
-				<an:TLCPerson href="http://dati.senato.it/23011" id="IDMBD3ZSGBBPQZCMJJIDMPJSPLBJNLTTWSJY0LMQM0QER3DZJ10LBE" showAs="MISIANI"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/435/A/1.115/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/435" showAs="DDL 435"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDZ3VJAIRL1P10LHQTWGIRYS2ZQNCRALCTTISL3FCM4ZBEBHSKSIVL" href="http://dati.senato.it/28924" showAs="VERDUCCI"/>
+				<an:TLCPerson id="IDTRRQG5F4X5Z5DPLJOB3QHB3BGI5RYR244GG3YPF3JTBJY2OCDDUN" href="http://dati.senato.it/4522" showAs="PITTELLA"/>
+				<an:TLCPerson id="IDNRGG3HINBHPNE1DKIU13DDJC4DV5TI2JR5XZOBS3NMJS3NUNGJL" href="http://dati.senato.it/29467" showAs="MALPEZZI"/>
+				<an:TLCPerson id="IDAPHAUULP0J0WJ1IYA2WH40NNNIUDKHZPWBOG55CW23ILSV2LSVYP" href="http://dati.senato.it/21507" showAs="MARINO"/>
+				<an:TLCPerson id="IDMBD3ZSGBBPQZCMJJIDMPJSPLBJNLTTWSJY0LMQM0QER3DZJ10LBE" href="http://dati.senato.it/23011" showAs="MISIANI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,19 +64,19 @@
 				<an:docNumber>Emendamento n. 1.115</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDZ3VJAIRL1P10LHQTWGIRYS2ZQNCRALCTTISL3FCM4ZBEBHSKSIVL">VERDUCCI</an:docProponent>
+				<an:docProponent refersTo="#IDZ3VJAIRL1P10LHQTWGIRYS2ZQNCRALCTTISL3FCM4ZBEBHSKSIVL" as="#tipoSenatore">VERDUCCI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDTRRQG5F4X5Z5DPLJOB3QHB3BGI5RYR244GG3YPF3JTBJY2OCDDUN">PITTELLA</an:docProponent>
+				<an:docProponent refersTo="#IDTRRQG5F4X5Z5DPLJOB3QHB3BGI5RYR244GG3YPF3JTBJY2OCDDUN" as="#tipoSenatore">PITTELLA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDNRGG3HINBHPNE1DKIU13DDJC4DV5TI2JR5XZOBS3NMJS3NUNGJL">MALPEZZI</an:docProponent>
+				<an:docProponent refersTo="#IDNRGG3HINBHPNE1DKIU13DDJC4DV5TI2JR5XZOBS3NMJS3NUNGJL" as="#tipoSenatore">MALPEZZI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDAPHAUULP0J0WJ1IYA2WH40NNNIUDKHZPWBOG55CW23ILSV2LSVYP">MARINO</an:docProponent>
+				<an:docProponent refersTo="#IDAPHAUULP0J0WJ1IYA2WH40NNNIUDKHZPWBOG55CW23ILSV2LSVYP" as="#tipoSenatore">MARINO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDMBD3ZSGBBPQZCMJJIDMPJSPLBJNLTTWSJY0LMQM0QER3DZJ10LBE">MISIANI</an:docProponent>
+				<an:docProponent refersTo="#IDMBD3ZSGBBPQZCMJJIDMPJSPLBJNLTTWSJY0LMQM0QER3DZJ10LBE" as="#tipoSenatore">MISIANI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

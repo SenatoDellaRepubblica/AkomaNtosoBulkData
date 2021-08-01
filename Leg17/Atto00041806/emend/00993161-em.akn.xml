@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/119/A/5.123/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/119/A/5.123"/>
 					<an:FRBRdate date="2016-11-09" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/119/A/5.123/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/119/A/5.123/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2016-11-09" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/119/A/5.123/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/119/A/5.123/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2016-11-09" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/119/A/5.123/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/119/A/5.123/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2016-11-09" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2016-11-09"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2016-11-09" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2016-11-09" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/119/A/5.123/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/Congiunzione/17/119" id="ar1" showAs="Congiunzione 119"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29120" id="IDPLMUWZTAWLMFLRC2ZEHR5PQDRITTVPIZZ2BQW0PANOPBJG0H0WAD" showAs="Eva LONGO"/>
-				<an:TLCPerson href="http://dati.senato.it/30913" id="IDFOPTXIM0NZ3NHOH2JNR0XJLSNEW4LFASRLRBOGHEU4Y2B13XA23C" showAs="AURICCHIO"/>
-				<an:TLCPerson href="http://dati.senato.it/27647" id="IDG11QC1H1UWHFP4JK1KAPBDRPYLCKN5XX2035K0M0KDH2E1OV3WPP" showAs="D'ANNA"/>
-				<an:TLCPerson href="http://dati.senato.it/22558" id="IDWVJQO1KAFSOYFQIRTC4RXLFT0PDP1EH5CLEDYECWPW11XGMWRP2C" showAs="IURLARO"/>
-				<an:TLCPerson href="http://dati.senato.it/29114" id="IDGDIUMBF5C2RUBNMWNE5D5XQHUISIHC0QS30ALFJG1GAFYI131EV" showAs="LANGELLA"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/119/A/5.123/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/Congiunzione/17/119" showAs="Congiunzione 119"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDPLMUWZTAWLMFLRC2ZEHR5PQDRITTVPIZZ2BQW0PANOPBJG0H0WAD" href="http://dati.senato.it/29120" showAs="Eva LONGO"/>
+				<an:TLCPerson id="IDFOPTXIM0NZ3NHOH2JNR0XJLSNEW4LFASRLRBOGHEU4Y2B13XA23C" href="http://dati.senato.it/30913" showAs="AURICCHIO"/>
+				<an:TLCPerson id="IDG11QC1H1UWHFP4JK1KAPBDRPYLCKN5XX2035K0M0KDH2E1OV3WPP" href="http://dati.senato.it/27647" showAs="D'ANNA"/>
+				<an:TLCPerson id="IDWVJQO1KAFSOYFQIRTC4RXLFT0PDP1EH5CLEDYECWPW11XGMWRP2C" href="http://dati.senato.it/22558" showAs="IURLARO"/>
+				<an:TLCPerson id="IDGDIUMBF5C2RUBNMWNE5D5XQHUISIHC0QS30ALFJG1GAFYI131EV" href="http://dati.senato.it/29114" showAs="LANGELLA"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,19 +64,19 @@
 				<an:docNumber>Emendamento n. 5.123</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDPLMUWZTAWLMFLRC2ZEHR5PQDRITTVPIZZ2BQW0PANOPBJG0H0WAD">Eva LONGO</an:docProponent>
+				<an:docProponent refersTo="#IDPLMUWZTAWLMFLRC2ZEHR5PQDRITTVPIZZ2BQW0PANOPBJG0H0WAD" as="#tipoSenatore">Eva LONGO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDFOPTXIM0NZ3NHOH2JNR0XJLSNEW4LFASRLRBOGHEU4Y2B13XA23C">AURICCHIO</an:docProponent>
+				<an:docProponent refersTo="#IDFOPTXIM0NZ3NHOH2JNR0XJLSNEW4LFASRLRBOGHEU4Y2B13XA23C" as="#tipoSenatore">AURICCHIO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDG11QC1H1UWHFP4JK1KAPBDRPYLCKN5XX2035K0M0KDH2E1OV3WPP">D'ANNA</an:docProponent>
+				<an:docProponent refersTo="#IDG11QC1H1UWHFP4JK1KAPBDRPYLCKN5XX2035K0M0KDH2E1OV3WPP" as="#tipoSenatore">D'ANNA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDWVJQO1KAFSOYFQIRTC4RXLFT0PDP1EH5CLEDYECWPW11XGMWRP2C">IURLARO</an:docProponent>
+				<an:docProponent refersTo="#IDWVJQO1KAFSOYFQIRTC4RXLFT0PDP1EH5CLEDYECWPW11XGMWRP2C" as="#tipoSenatore">IURLARO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDGDIUMBF5C2RUBNMWNE5D5XQHUISIHC0QS30ALFJG1GAFYI131EV">LANGELLA</an:docProponent>
+				<an:docProponent refersTo="#IDGDIUMBF5C2RUBNMWNE5D5XQHUISIHC0QS30ALFJG1GAFYI131EV" as="#tipoSenatore">LANGELLA</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

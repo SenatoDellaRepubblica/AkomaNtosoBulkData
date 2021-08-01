@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/844/A/1.36/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/844/A/1.36"/>
 					<an:FRBRdate date="2019-04-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/844/A/1.36/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/844/A/1.36/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2019-04-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/844/A/1.36/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/844/A/1.36/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,30 +32,30 @@
 					<an:FRBRdate date="2019-04-03" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/844/A/1.36/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/844/A/1.36/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2019-04-03" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2019-04-03"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2019-04-03" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2019-04-03" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/844/A/1.36/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/844" id="ar1" showAs="DDL 844"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/22865" id="IDZFBC1FE0TQZFBAVUB4T3BBTOVGITETMM2DGGEVNICIQSHHZQI4EL" showAs="BELLANOVA"/>
-				<an:TLCPerson href="http://dati.senato.it/29076" id="IDRURA0REYI3ZOCLCLXI4YQMQLTOZFUT30RMDDK5JEEFQIIPDE0Y4H" showAs="CUCCA"/>
-				<an:TLCPerson href="http://dati.senato.it/29398" id="ID1IYLOVA5SAK4OGGRVUB0HSVDOC4GTYH4LHCFUYBCLWQSDWEHUOFN" showAs="FERRARI"/>
-				<an:TLCPerson href="http://dati.senato.it/29555" id="IDY3JLSBIC4ZHVJ1FSVHUZYMANIKWO3SXYFT3OILF113H0PTCSZFE" showAs="RICHETTI"/>
-				<an:TLCPerson href="http://dati.senato.it/25411" id="IDEJZGMVELHLKNLGNEAJBAVZ55QJJZLXG5WHDG3CHCQ0PQUL2QRKC" showAs="ROSSOMANDO"/>
-				<an:TLCPerson href="http://dati.senato.it/18499" id="ID3JH5R5W425XOFG4PRJFNIPTNNLWPPHSD3IOMMGTWDH4NU4EF4PJ" showAs="CIRINNA'"/>
-				<an:TLCPerson href="http://dati.senato.it/29604" id="IDWTERVZZTY0LNMDPO44IDFVWX4FPNHWXDTGI2GAEFGWZ0MQLJNB1J" showAs="VALENTE"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/844/A/1.36/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/844" showAs="DDL 844"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDZFBC1FE0TQZFBAVUB4T3BBTOVGITETMM2DGGEVNICIQSHHZQI4EL" href="http://dati.senato.it/22865" showAs="BELLANOVA"/>
+				<an:TLCPerson id="IDRURA0REYI3ZOCLCLXI4YQMQLTOZFUT30RMDDK5JEEFQIIPDE0Y4H" href="http://dati.senato.it/29076" showAs="CUCCA"/>
+				<an:TLCPerson id="ID1IYLOVA5SAK4OGGRVUB0HSVDOC4GTYH4LHCFUYBCLWQSDWEHUOFN" href="http://dati.senato.it/29398" showAs="FERRARI"/>
+				<an:TLCPerson id="IDY3JLSBIC4ZHVJ1FSVHUZYMANIKWO3SXYFT3OILF113H0PTCSZFE" href="http://dati.senato.it/29555" showAs="RICHETTI"/>
+				<an:TLCPerson id="IDEJZGMVELHLKNLGNEAJBAVZ55QJJZLXG5WHDG3CHCQ0PQUL2QRKC" href="http://dati.senato.it/25411" showAs="ROSSOMANDO"/>
+				<an:TLCPerson id="ID3JH5R5W425XOFG4PRJFNIPTNNLWPPHSD3IOMMGTWDH4NU4EF4PJ" href="http://dati.senato.it/18499" showAs="CIRINNA'"/>
+				<an:TLCPerson id="IDWTERVZZTY0LNMDPO44IDFVWX4FPNHWXDTGI2GAEFGWZ0MQLJNB1J" href="http://dati.senato.it/29604" showAs="VALENTE"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -66,25 +66,25 @@
 				<an:docNumber>Emendamento n. 1.36</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDZFBC1FE0TQZFBAVUB4T3BBTOVGITETMM2DGGEVNICIQSHHZQI4EL">BELLANOVA</an:docProponent>
+				<an:docProponent refersTo="#IDZFBC1FE0TQZFBAVUB4T3BBTOVGITETMM2DGGEVNICIQSHHZQI4EL" as="#tipoSenatore">BELLANOVA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDRURA0REYI3ZOCLCLXI4YQMQLTOZFUT30RMDDK5JEEFQIIPDE0Y4H">CUCCA</an:docProponent>
+				<an:docProponent refersTo="#IDRURA0REYI3ZOCLCLXI4YQMQLTOZFUT30RMDDK5JEEFQIIPDE0Y4H" as="#tipoSenatore">CUCCA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID1IYLOVA5SAK4OGGRVUB0HSVDOC4GTYH4LHCFUYBCLWQSDWEHUOFN">FERRARI</an:docProponent>
+				<an:docProponent refersTo="#ID1IYLOVA5SAK4OGGRVUB0HSVDOC4GTYH4LHCFUYBCLWQSDWEHUOFN" as="#tipoSenatore">FERRARI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDY3JLSBIC4ZHVJ1FSVHUZYMANIKWO3SXYFT3OILF113H0PTCSZFE">RICHETTI</an:docProponent>
+				<an:docProponent refersTo="#IDY3JLSBIC4ZHVJ1FSVHUZYMANIKWO3SXYFT3OILF113H0PTCSZFE" as="#tipoSenatore">RICHETTI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDEJZGMVELHLKNLGNEAJBAVZ55QJJZLXG5WHDG3CHCQ0PQUL2QRKC">ROSSOMANDO</an:docProponent>
+				<an:docProponent refersTo="#IDEJZGMVELHLKNLGNEAJBAVZ55QJJZLXG5WHDG3CHCQ0PQUL2QRKC" as="#tipoSenatore">ROSSOMANDO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ID3JH5R5W425XOFG4PRJFNIPTNNLWPPHSD3IOMMGTWDH4NU4EF4PJ">CIRINNA'</an:docProponent>
+				<an:docProponent refersTo="#ID3JH5R5W425XOFG4PRJFNIPTNNLWPPHSD3IOMMGTWDH4NU4EF4PJ" as="#tipoSenatore">CIRINNA'</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDWTERVZZTY0LNMDPO44IDFVWX4FPNHWXDTGI2GAEFGWZ0MQLJNB1J">VALENTE</an:docProponent>
+				<an:docProponent refersTo="#IDWTERVZZTY0LNMDPO44IDFVWX4FPNHWXDTGI2GAEFGWZ0MQLJNB1J" as="#tipoSenatore">VALENTE</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

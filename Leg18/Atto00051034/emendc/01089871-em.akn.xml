@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/981/C/1.603/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/981/C/1.603"/>
 					<an:FRBRdate date="2018-12-20" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/981/C/1.603/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/981/C/1.603/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2018-12-20" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/981/C/1.603/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/981/C/1.603/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,31 +32,31 @@
 					<an:FRBRdate date="2018-12-20" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/981/C/1.603/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/981/C/1.603/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-12-20" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2018-12-20"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-12-20" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2018-12-20" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/981/C/1.603/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/981" id="ar1" showAs="DDL 981"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/5" id="commissione" showAs="5ª Commissione permanente"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/26539" id="IDTCJ1SQQAHKPNOZJNLX4QW2RU4BZICDUCBXHK41MWMYGK0JSBN4MP" showAs="GALLONE"/>
-				<an:TLCPerson href="http://dati.senato.it/4584" id="IDERSROAWUZPESBHY21HNNCQXNFBC2UTWV3ITU4XGBCQ1JECBNUCSG" showAs="VITALI"/>
-				<an:TLCPerson href="http://dati.senato.it/32637" id="IDB4CEJUKAU4O5FDYP113CYBHLOJSXNGA5CQTCT4OLFC2EI2OLAFN" showAs="GALLIANI"/>
-				<an:TLCPerson href="http://dati.senato.it/32723" id="IDCTYGGPB4J4MKPOMJJBBRN1DFDQZMR4ZSY4QO1ETBVHJELS3CTWF" showAs="TOFFANIN"/>
-				<an:TLCPerson href="http://dati.senato.it/32722" id="IDTW1HM2FFXF1CLNZLB3O5AXOMOG1ZZFPW05RARI0KKA4DJVQWIDF" showAs="TIRABOSCHI"/>
-				<an:TLCPerson href="http://dati.senato.it/32747" id="IDVQPMQAWMRL5MFI3P5S0FB0EFZMRLPMC4QDSYRYEMR3PMKCBGM5W" showAs="DAMIANI"/>
-				<an:TLCPerson href="http://dati.senato.it/25199" id="IDTSNFQ2LRXKCSGKCPYLZ3X13YAHCMP1P2IZ13K3C2C12J33D5SJEK" showAs="PICHETTO FRATIN"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/981/C/1.603/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/981" showAs="DDL 981"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="5ª Commissione permanente" href="/dati.senato.it/osr/Commissione/5"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDTCJ1SQQAHKPNOZJNLX4QW2RU4BZICDUCBXHK41MWMYGK0JSBN4MP" href="http://dati.senato.it/26539" showAs="GALLONE"/>
+				<an:TLCPerson id="IDERSROAWUZPESBHY21HNNCQXNFBC2UTWV3ITU4XGBCQ1JECBNUCSG" href="http://dati.senato.it/4584" showAs="VITALI"/>
+				<an:TLCPerson id="IDB4CEJUKAU4O5FDYP113CYBHLOJSXNGA5CQTCT4OLFC2EI2OLAFN" href="http://dati.senato.it/32637" showAs="GALLIANI"/>
+				<an:TLCPerson id="IDCTYGGPB4J4MKPOMJJBBRN1DFDQZMR4ZSY4QO1ETBVHJELS3CTWF" href="http://dati.senato.it/32723" showAs="TOFFANIN"/>
+				<an:TLCPerson id="IDTW1HM2FFXF1CLNZLB3O5AXOMOG1ZZFPW05RARI0KKA4DJVQWIDF" href="http://dati.senato.it/32722" showAs="TIRABOSCHI"/>
+				<an:TLCPerson id="IDVQPMQAWMRL5MFI3P5S0FB0EFZMRLPMC4QDSYRYEMR3PMKCBGM5W" href="http://dati.senato.it/32747" showAs="DAMIANI"/>
+				<an:TLCPerson id="IDTSNFQ2LRXKCSGKCPYLZ3X13YAHCMP1P2IZ13K3C2C12J33D5SJEK" href="http://dati.senato.it/25199" showAs="PICHETTO FRATIN"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -67,25 +67,25 @@
 				<an:docNumber>Emendamento n. 1.603 (testo 2)</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDTCJ1SQQAHKPNOZJNLX4QW2RU4BZICDUCBXHK41MWMYGK0JSBN4MP">GALLONE</an:docProponent>
+				<an:docProponent refersTo="#IDTCJ1SQQAHKPNOZJNLX4QW2RU4BZICDUCBXHK41MWMYGK0JSBN4MP" as="#tipoSenatore">GALLONE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDERSROAWUZPESBHY21HNNCQXNFBC2UTWV3ITU4XGBCQ1JECBNUCSG">VITALI</an:docProponent>
+				<an:docProponent refersTo="#IDERSROAWUZPESBHY21HNNCQXNFBC2UTWV3ITU4XGBCQ1JECBNUCSG" as="#tipoSenatore">VITALI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDB4CEJUKAU4O5FDYP113CYBHLOJSXNGA5CQTCT4OLFC2EI2OLAFN">GALLIANI</an:docProponent>
+				<an:docProponent refersTo="#IDB4CEJUKAU4O5FDYP113CYBHLOJSXNGA5CQTCT4OLFC2EI2OLAFN" as="#tipoSenatore">GALLIANI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDCTYGGPB4J4MKPOMJJBBRN1DFDQZMR4ZSY4QO1ETBVHJELS3CTWF">TOFFANIN</an:docProponent>
+				<an:docProponent refersTo="#IDCTYGGPB4J4MKPOMJJBBRN1DFDQZMR4ZSY4QO1ETBVHJELS3CTWF" as="#tipoSenatore">TOFFANIN</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDTW1HM2FFXF1CLNZLB3O5AXOMOG1ZZFPW05RARI0KKA4DJVQWIDF">TIRABOSCHI</an:docProponent>
+				<an:docProponent refersTo="#IDTW1HM2FFXF1CLNZLB3O5AXOMOG1ZZFPW05RARI0KKA4DJVQWIDF" as="#tipoSenatore">TIRABOSCHI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDVQPMQAWMRL5MFI3P5S0FB0EFZMRLPMC4QDSYRYEMR3PMKCBGM5W">DAMIANI</an:docProponent>
+				<an:docProponent refersTo="#IDVQPMQAWMRL5MFI3P5S0FB0EFZMRLPMC4QDSYRYEMR3PMKCBGM5W" as="#tipoSenatore">DAMIANI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDTSNFQ2LRXKCSGKCPYLZ3X13YAHCMP1P2IZ13K3C2C12J33D5SJEK">PICHETTO FRATIN</an:docProponent>
+				<an:docProponent refersTo="#IDTSNFQ2LRXKCSGKCPYLZ3X13YAHCMP1P2IZ13K3C2C12J33D5SJEK" as="#tipoSenatore">PICHETTO FRATIN</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

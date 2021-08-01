@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/1870/A/9.0.100/55/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/1870/A/9.0.100/55"/>
 					<an:FRBRdate date="2016-03-30" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1870/A/9.0.100/55/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/1870/A/9.0.100/55/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2016-03-30" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1870/A/9.0.100/55/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/1870/A/9.0.100/55/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,27 +32,27 @@
 					<an:FRBRdate date="2016-03-30" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1870/A/9.0.100/55/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/1870/A/9.0.100/55/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2016-03-30" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2016-03-30"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2016-03-30" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2016-03-30" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/1870/A/9.0.100/55/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/1870" id="ar1" showAs="DDL 1870"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29046" id="IDDI15MTBP0WD4GIWZW2V5PB1ZFEX54BDVP2YHK1IVXBQBV3I3VEME" showAs="BERTOROTTA"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29066" id="IDL0AX1RKHDXBQJ0K0ARZ2J1MZLBSR2RMHPDLUHKN15KBS3H5JDHIH" showAs="CATALFO"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29075" id="IDY4EIMZ2NC2DFCWGD5VTQA0R4SBWNHZMKMIQYGMHTQLHMUZVWOVWL" showAs="CRIMI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29179" id="IDS5LC0KTBHWNNFJ5AKFDBUT4KHOKO0CPONZ44ZVOADFL12VKY0S0G" showAs="SERRA"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/1870/A/9.0.100/55/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/1870" showAs="DDL 1870"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDDI15MTBP0WD4GIWZW2V5PB1ZFEX54BDVP2YHK1IVXBQBV3I3VEME" href="http://dati.senato.it/senatore/29046" showAs="BERTOROTTA"/>
+				<an:TLCPerson id="IDL0AX1RKHDXBQJ0K0ARZ2J1MZLBSR2RMHPDLUHKN15KBS3H5JDHIH" href="http://dati.senato.it/senatore/29066" showAs="CATALFO"/>
+				<an:TLCPerson id="IDY4EIMZ2NC2DFCWGD5VTQA0R4SBWNHZMKMIQYGMHTQLHMUZVWOVWL" href="http://dati.senato.it/senatore/29075" showAs="CRIMI"/>
+				<an:TLCPerson id="IDS5LC0KTBHWNNFJ5AKFDBUT4KHOKO0CPONZ44ZVOADFL12VKY0S0G" href="http://dati.senato.it/senatore/29179" showAs="SERRA"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -63,16 +63,16 @@
 				<an:docNumber>Emendamento n. 9.0.100/55</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDDI15MTBP0WD4GIWZW2V5PB1ZFEX54BDVP2YHK1IVXBQBV3I3VEME">BERTOROTTA</an:docProponent>
+				<an:docProponent refersTo="#IDDI15MTBP0WD4GIWZW2V5PB1ZFEX54BDVP2YHK1IVXBQBV3I3VEME" as="#tipoSenatore">BERTOROTTA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDL0AX1RKHDXBQJ0K0ARZ2J1MZLBSR2RMHPDLUHKN15KBS3H5JDHIH">CATALFO</an:docProponent>
+				<an:docProponent refersTo="#IDL0AX1RKHDXBQJ0K0ARZ2J1MZLBSR2RMHPDLUHKN15KBS3H5JDHIH" as="#tipoSenatore">CATALFO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDY4EIMZ2NC2DFCWGD5VTQA0R4SBWNHZMKMIQYGMHTQLHMUZVWOVWL">CRIMI</an:docProponent>
+				<an:docProponent refersTo="#IDY4EIMZ2NC2DFCWGD5VTQA0R4SBWNHZMKMIQYGMHTQLHMUZVWOVWL" as="#tipoSenatore">CRIMI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDS5LC0KTBHWNNFJ5AKFDBUT4KHOKO0CPONZ44ZVOADFL12VKY0S0G">SERRA</an:docProponent>
+				<an:docProponent refersTo="#IDS5LC0KTBHWNNFJ5AKFDBUT4KHOKO0CPONZ44ZVOADFL12VKY0S0G" as="#tipoSenatore">SERRA</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

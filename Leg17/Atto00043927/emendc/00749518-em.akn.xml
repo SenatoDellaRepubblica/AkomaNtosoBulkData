@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/1299/C/12.2/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/1299/C/12.2"/>
 					<an:FRBRdate date="2018-01-24" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1299/C/12.2/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/1299/C/12.2/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2018-01-24" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1299/C/12.2/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/1299/C/12.2/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,30 +32,30 @@
 					<an:FRBRdate date="2018-01-24" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/1299/C/12.2/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/1299/C/12.2/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-01-24" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2018-01-24"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-01-24" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2018-01-24" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/1299/C/12.2/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/1299" id="ar1" showAs="DDL 1299"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/89" id="commissione" showAs="Commissioni 6° e 10° riunite"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29065" id="IDESR24PPP4MNZGT1PNLWMYI3D4PRUJMPZDY0JQZLBYA1QEWIWSWQG" showAs="CASTALDI"/>
-				<an:TLCPerson href="http://dati.senato.it/29108" id="IDJBZBFIUOBFUGKD52PAAB50AABG00EYSABPHBE1NLZ3N25Y1QFMW" showAs="GIROTTO"/>
-				<an:TLCPerson href="http://dati.senato.it/29161" id="IDIW0SGM5OGY1LIMBAHR3FJX1ORLIGGQA0DPO5CJEJWUIPXTZZFBMJ" showAs="PETROCELLI"/>
-				<an:TLCPerson href="http://dati.senato.it/29174" id="IDYXBKLPYM4Q3JIW2CFGPYQAFK5BXWJRWTVP5DBDPPQBVOUEBZCYFB" showAs="SANTANGELO"/>
-				<an:TLCPerson href="http://dati.senato.it/29193" id="IDX5UJUOGSTCD1CWAQUUAVUCQKYDM5KC4XTZMJCXJFRKBS4GS5QCJ" showAs="VACCIANO"/>
-				<an:TLCPerson href="http://dati.senato.it/29139" id="IDF110NATWWKVOPSTIHXTDLZBH2C1W5XBMPGLPWABUJQB2RSGRM5O" showAs="MOLINARI"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/1299/C/12.2/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/1299" showAs="DDL 1299"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="Commissioni 6° e 10° riunite" href="/dati.senato.it/osr/Commissione/89"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDESR24PPP4MNZGT1PNLWMYI3D4PRUJMPZDY0JQZLBYA1QEWIWSWQG" href="http://dati.senato.it/29065" showAs="CASTALDI"/>
+				<an:TLCPerson id="IDJBZBFIUOBFUGKD52PAAB50AABG00EYSABPHBE1NLZ3N25Y1QFMW" href="http://dati.senato.it/29108" showAs="GIROTTO"/>
+				<an:TLCPerson id="IDIW0SGM5OGY1LIMBAHR3FJX1ORLIGGQA0DPO5CJEJWUIPXTZZFBMJ" href="http://dati.senato.it/29161" showAs="PETROCELLI"/>
+				<an:TLCPerson id="IDYXBKLPYM4Q3JIW2CFGPYQAFK5BXWJRWTVP5DBDPPQBVOUEBZCYFB" href="http://dati.senato.it/29174" showAs="SANTANGELO"/>
+				<an:TLCPerson id="IDX5UJUOGSTCD1CWAQUUAVUCQKYDM5KC4XTZMJCXJFRKBS4GS5QCJ" href="http://dati.senato.it/29193" showAs="VACCIANO"/>
+				<an:TLCPerson id="IDF110NATWWKVOPSTIHXTDLZBH2C1W5XBMPGLPWABUJQB2RSGRM5O" href="http://dati.senato.it/29139" showAs="MOLINARI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -66,22 +66,22 @@
 				<an:docNumber>Emendamento n. 12.2</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDESR24PPP4MNZGT1PNLWMYI3D4PRUJMPZDY0JQZLBYA1QEWIWSWQG">CASTALDI</an:docProponent>
+				<an:docProponent refersTo="#IDESR24PPP4MNZGT1PNLWMYI3D4PRUJMPZDY0JQZLBYA1QEWIWSWQG" as="#tipoSenatore">CASTALDI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDJBZBFIUOBFUGKD52PAAB50AABG00EYSABPHBE1NLZ3N25Y1QFMW">GIROTTO</an:docProponent>
+				<an:docProponent refersTo="#IDJBZBFIUOBFUGKD52PAAB50AABG00EYSABPHBE1NLZ3N25Y1QFMW" as="#tipoSenatore">GIROTTO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDIW0SGM5OGY1LIMBAHR3FJX1ORLIGGQA0DPO5CJEJWUIPXTZZFBMJ">PETROCELLI</an:docProponent>
+				<an:docProponent refersTo="#IDIW0SGM5OGY1LIMBAHR3FJX1ORLIGGQA0DPO5CJEJWUIPXTZZFBMJ" as="#tipoSenatore">PETROCELLI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDYXBKLPYM4Q3JIW2CFGPYQAFK5BXWJRWTVP5DBDPPQBVOUEBZCYFB">SANTANGELO</an:docProponent>
+				<an:docProponent refersTo="#IDYXBKLPYM4Q3JIW2CFGPYQAFK5BXWJRWTVP5DBDPPQBVOUEBZCYFB" as="#tipoSenatore">SANTANGELO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDX5UJUOGSTCD1CWAQUUAVUCQKYDM5KC4XTZMJCXJFRKBS4GS5QCJ">VACCIANO</an:docProponent>
+				<an:docProponent refersTo="#IDX5UJUOGSTCD1CWAQUUAVUCQKYDM5KC4XTZMJCXJFRKBS4GS5QCJ" as="#tipoSenatore">VACCIANO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDF110NATWWKVOPSTIHXTDLZBH2C1W5XBMPGLPWABUJQB2RSGRM5O">MOLINARI</an:docProponent>
+				<an:docProponent refersTo="#IDF110NATWWKVOPSTIHXTDLZBH2C1W5XBMPGLPWABUJQB2RSGRM5O" as="#tipoSenatore">MOLINARI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

@@ -2,7 +2,7 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value=""/>
 					<an:FRBRuri value="it/Ddl/2013-01-14/3658"/>
@@ -27,18 +27,18 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2013-01-14" id="step1" outcome="Presentazione"/>
+				<an:step id="step1" date="2013-01-14" actor="#senato" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="w1ab1ab1b2aaab1a" showAs="Presidente del Consiglio dei ministri"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="w1ab1ab1b2aaab3a" showAs="Ministro dell'ambiente e della tutela del territorio e del mare"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="w1ab1ab1b2aaab5a" showAs="Ministro dell'economia e delle finanze"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="w1ab1ab1b2aaab1b1" showAs="MONTI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="w1ab1ab1b2aaab3b1" showAs="CLINI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="w1ab1ab1b2aaab5b1" showAs="GRILLI"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="w1ab1ab1b2aaab1a" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Presidente del Consiglio dei ministri"/>
+				<an:TLCRole id="w1ab1ab1b2aaab3a" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro dell'ambiente e della tutela del territorio e del mare"/>
+				<an:TLCRole id="w1ab1ab1b2aaab5a" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro dell'economia e delle finanze"/>
+				<an:TLCPerson id="w1ab1ab1b2aaab1b1" href="http://dati.senato.it/osr/Persona" showAs="MONTI"/>
+				<an:TLCPerson id="w1ab1ab1b2aaab3b1" href="http://dati.senato.it/osr/Persona" showAs="CLINI"/>
+				<an:TLCPerson id="w1ab1ab1b2aaab5b1" href="http://dati.senato.it/osr/Persona" showAs="GRILLI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -62,11 +62,11 @@
 			</an:p>
 			<an:p>
 				presentato dal 
-				<an:docProponent as="#w1ab1ab1b2aaab1a" refersTo="#w1ab1ab1b2aaab1b1">Presidente del Consiglio dei ministri (MONTI)</an:docProponent>
+				<an:docProponent refersTo="#w1ab1ab1b2aaab1b1" as="#w1ab1ab1b2aaab1a">Presidente del Consiglio dei ministri (MONTI)</an:docProponent>
 				 e dal 
-				<an:docProponent as="#w1ab1ab1b2aaab3a" refersTo="#w1ab1ab1b2aaab3b1">Ministro dell'ambiente e della tutela del territorio e del mare (CLINI)</an:docProponent>
+				<an:docProponent refersTo="#w1ab1ab1b2aaab3b1" as="#w1ab1ab1b2aaab3a">Ministro dell'ambiente e della tutela del territorio e del mare (CLINI)</an:docProponent>
 				di concerto con il 
-				<an:docProponent as="#w1ab1ab1b2aaab5a" refersTo="#w1ab1ab1b2aaab5b1">Ministro dell'economia e delle finanze (GRILLI)</an:docProponent>
+				<an:docProponent refersTo="#w1ab1ab1b2aaab5b1" as="#w1ab1ab1b2aaab5a">Ministro dell'economia e delle finanze (GRILLI)</an:docProponent>
 			</an:p>
 			<an:p>
 				<an:b>COMUNICATO ALLA PRESIDENZA IL 14 GENNAIO 2013</an:b>
@@ -96,7 +96,7 @@
 		<an:attachments>
 			<an:doc name="Relazione">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="it/Ddl/2013-01-14/3658"/>
@@ -200,7 +200,7 @@
 			</an:doc>
 			<an:doc name="Relazione tecnica">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="it/Ddl/2013-01-14/3658"/>
@@ -260,7 +260,7 @@
 			</an:doc>
 			<an:doc name="Analisi tecnico-normativa">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="it/Ddl/2013-01-14/3658"/>
@@ -529,7 +529,7 @@
 			</an:doc>
 			<an:act>
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD02" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="it/Ddl/2013-01-14/3658"/>

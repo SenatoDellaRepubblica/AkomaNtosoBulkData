@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/886/A/1.25/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/886/A/1.25"/>
 					<an:FRBRdate date="2018-11-28" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/886/A/1.25/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/886/A/1.25/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2018-11-28" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/886/A/1.25/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/886/A/1.25/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,28 +32,28 @@
 					<an:FRBRdate date="2018-11-28" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/886/A/1.25/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/886/A/1.25/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-11-28" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2018-11-28"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-11-28" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2018-11-28" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/886/A/1.25/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/886" id="ar1" showAs="DDL 886"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32610" id="IDKAHLEMDQRSYACSORS53X54YH0IF4LVY0W0BAZYIJWNKUCNOGHFHD" showAs="D'ALFONSO"/>
-				<an:TLCPerson href="http://dati.senato.it/29288" id="IDW4PBLWV1DCL4NHHGJKHGZ3K24GGFJURKHUPIABJ1XMK5TZ2HCEPE" showAs="BONIFAZI"/>
-				<an:TLCPerson href="http://dati.senato.it/32746" id="IDLY5YKMG40GUBOHZ4JP2UMZMWFCFMF2IPUOZEYCPMN01Y0SKFFNKI" showAs="COMINCINI"/>
-				<an:TLCPerson href="http://dati.senato.it/32643" id="IDSFN0EBLXSPSJDAQII2HTYUMZ5OTESL0F5RY2PFV5MISNNMXCSNB" showAs="GRIMANI"/>
-				<an:TLCPerson href="http://dati.senato.it/29358" id="IDOFJ3CVFSH3PRLKHH1AJZPXRVGHLLEBUO4A2F2JBPENLJ1NMFRU3G" showAs="D'ARIENZO"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/886/A/1.25/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/886" showAs="DDL 886"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDKAHLEMDQRSYACSORS53X54YH0IF4LVY0W0BAZYIJWNKUCNOGHFHD" href="http://dati.senato.it/32610" showAs="D'ALFONSO"/>
+				<an:TLCPerson id="IDW4PBLWV1DCL4NHHGJKHGZ3K24GGFJURKHUPIABJ1XMK5TZ2HCEPE" href="http://dati.senato.it/29288" showAs="BONIFAZI"/>
+				<an:TLCPerson id="IDLY5YKMG40GUBOHZ4JP2UMZMWFCFMF2IPUOZEYCPMN01Y0SKFFNKI" href="http://dati.senato.it/32746" showAs="COMINCINI"/>
+				<an:TLCPerson id="IDSFN0EBLXSPSJDAQII2HTYUMZ5OTESL0F5RY2PFV5MISNNMXCSNB" href="http://dati.senato.it/32643" showAs="GRIMANI"/>
+				<an:TLCPerson id="IDOFJ3CVFSH3PRLKHH1AJZPXRVGHLLEBUO4A2F2JBPENLJ1NMFRU3G" href="http://dati.senato.it/29358" showAs="D'ARIENZO"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,19 +64,19 @@
 				<an:docNumber>Emendamento n. 1.25</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDKAHLEMDQRSYACSORS53X54YH0IF4LVY0W0BAZYIJWNKUCNOGHFHD">D'ALFONSO</an:docProponent>
+				<an:docProponent refersTo="#IDKAHLEMDQRSYACSORS53X54YH0IF4LVY0W0BAZYIJWNKUCNOGHFHD" as="#tipoSenatore">D'ALFONSO</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDW4PBLWV1DCL4NHHGJKHGZ3K24GGFJURKHUPIABJ1XMK5TZ2HCEPE">BONIFAZI</an:docProponent>
+				<an:docProponent refersTo="#IDW4PBLWV1DCL4NHHGJKHGZ3K24GGFJURKHUPIABJ1XMK5TZ2HCEPE" as="#tipoSenatore">BONIFAZI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDLY5YKMG40GUBOHZ4JP2UMZMWFCFMF2IPUOZEYCPMN01Y0SKFFNKI">COMINCINI</an:docProponent>
+				<an:docProponent refersTo="#IDLY5YKMG40GUBOHZ4JP2UMZMWFCFMF2IPUOZEYCPMN01Y0SKFFNKI" as="#tipoSenatore">COMINCINI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDSFN0EBLXSPSJDAQII2HTYUMZ5OTESL0F5RY2PFV5MISNNMXCSNB">GRIMANI</an:docProponent>
+				<an:docProponent refersTo="#IDSFN0EBLXSPSJDAQII2HTYUMZ5OTESL0F5RY2PFV5MISNNMXCSNB" as="#tipoSenatore">GRIMANI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDOFJ3CVFSH3PRLKHH1AJZPXRVGHLLEBUO4A2F2JBPENLJ1NMFRU3G">D'ARIENZO</an:docProponent>
+				<an:docProponent refersTo="#IDOFJ3CVFSH3PRLKHH1AJZPXRVGHLLEBUO4A2F2JBPENLJ1NMFRU3G" as="#tipoSenatore">D'ARIENZO</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

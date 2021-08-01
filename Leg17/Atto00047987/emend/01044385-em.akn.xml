@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/17/Emend/S/2810/A/G6.100/main"/>
 					<an:FRBRuri value="http://dati.senato.it/17/Emend/S/2810/A/G6.100"/>
 					<an:FRBRdate date="2017-09-26" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2810/A/G6.100/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/17/Emend/S/2810/A/G6.100/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2017-09-26" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2810/A/G6.100/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/17/Emend/S/2810/A/G6.100/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,26 +32,26 @@
 					<an:FRBRdate date="2017-09-26" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/17/Emend/S/2810/A/G6.100/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/17/Emend/S/2810/A/G6.100/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2017-09-26" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2017-09-26"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2017-09-26" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2017-09-26" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/17/Emend/S/2810/A/G6.100/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/17/2810" id="ar1" showAs="DDL 2810"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/29140" id="IDGV10GBQLY0PXL3PGYE3CHJ2H5N3PDDUCUVYLHBPBH4ZJKVJVQ2XC" showAs="MONTEVECCHI"/>
-				<an:TLCPerson href="http://dati.senato.it/29179" id="IDFDKXD3YEZSUBJD1RHPN52EISZKKMT1UBBWETZRDC3ZX0QYAYIOFO" showAs="SERRA"/>
-				<an:TLCPerson href="http://dati.senato.it/29050" id="IDYUIWGU1NQX0YEQRRLF1EUYQBGEJ43VBX1VM3FXC5R1CH02W2KDXL" showAs="BLUNDO"/>
+				<an:original id="ro1" href="http://dati.senato.it/17/Emend/S/2810/A/G6.100/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/17/2810" showAs="DDL 2810"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDGV10GBQLY0PXL3PGYE3CHJ2H5N3PDDUCUVYLHBPBH4ZJKVJVQ2XC" href="http://dati.senato.it/29140" showAs="MONTEVECCHI"/>
+				<an:TLCPerson id="IDFDKXD3YEZSUBJD1RHPN52EISZKKMT1UBBWETZRDC3ZX0QYAYIOFO" href="http://dati.senato.it/29179" showAs="SERRA"/>
+				<an:TLCPerson id="IDYUIWGU1NQX0YEQRRLF1EUYQBGEJ43VBX1VM3FXC5R1CH02W2KDXL" href="http://dati.senato.it/29050" showAs="BLUNDO"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -62,13 +62,13 @@
 				<an:docNumber>Ordine del giorno n. G6.100</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDGV10GBQLY0PXL3PGYE3CHJ2H5N3PDDUCUVYLHBPBH4ZJKVJVQ2XC">MONTEVECCHI</an:docProponent>
+				<an:docProponent refersTo="#IDGV10GBQLY0PXL3PGYE3CHJ2H5N3PDDUCUVYLHBPBH4ZJKVJVQ2XC" as="#tipoSenatore">MONTEVECCHI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDFDKXD3YEZSUBJD1RHPN52EISZKKMT1UBBWETZRDC3ZX0QYAYIOFO">SERRA</an:docProponent>
+				<an:docProponent refersTo="#IDFDKXD3YEZSUBJD1RHPN52EISZKKMT1UBBWETZRDC3ZX0QYAYIOFO" as="#tipoSenatore">SERRA</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDYUIWGU1NQX0YEQRRLF1EUYQBGEJ43VBX1VM3FXC5R1CH02W2KDXL">BLUNDO</an:docProponent>
+				<an:docProponent refersTo="#IDYUIWGU1NQX0YEQRRLF1EUYQBGEJ43VBX1VM3FXC5R1CH02W2KDXL" as="#tipoSenatore">BLUNDO</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

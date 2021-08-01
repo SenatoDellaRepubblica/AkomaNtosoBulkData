@@ -2,14 +2,14 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2017-10-29/2960/main"/>
 					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2017-10-29/2960"/>
 					<an:FRBRdate date="2017-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2017-10-29/2960/main/allegato" id="wcomp2" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="wcomp2" href="http://dati.senato.it/osr/Ddl/2017-10-29/2960/main/allegato" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2017-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2017-10-29/2960/ita@/main/allegato" id="ecomp2" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="ecomp2" href="http://dati.senato.it/osr/Ddl/2017-10-29/2960/ita@/main/allegato" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,24 +32,24 @@
 					<an:FRBRdate date="2017-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2017-10-29/2960/ita@/main/allegato.xml" id="mcomp2" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="mcomp2" href="http://dati.senato.it/osr/Ddl/2017-10-29/2960/ita@/main/allegato.xml" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2017-10-29" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2017-10-29"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2017-10-29" id="step1" outcome="Presentazione"/>
+				<an:step id="step1" date="2017-10-29" actor="#senato" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/osr/Ddl/2017-10-29/2960/ita@/main" id="ro1" showAs="generation"/>
-				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2017-10-29/2960/ita@/main/allegato" id="annex2" showAs="Allegato"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="w1ab1ab1b4aaab1a" showAs="Ministro dell'economia e delle finanze"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="w1ab1ab1b4aaab1" showAs="PADOAN"/>
+				<an:original id="ro1" href="http://dati.senato.it/osr/Ddl/2017-10-29/2960/ita@/main" showAs="generation"/>
+				<an:hasAttachment id="annex2" href="http://dati.senato.it/osr/Ddl/2017-10-29/2960/ita@/main/allegato" showAs="Allegato"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="w1ab1ab1b4aaab1a" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro dell'economia e delle finanze"/>
+				<an:TLCPerson id="w1ab1ab1b4aaab1" href="http://dati.senato.it/osr/Persona" showAs="PADOAN"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -69,7 +69,7 @@
 			</an:p>
 			<an:p>
 				presentato dal 
-				<an:docProponent as="#w1ab1ab1b4aaab1a" refersTo="#w1ab1ab1b4aaab1">Ministro dell'economia e delle finanze (PADOAN)</an:docProponent>
+				<an:docProponent refersTo="#w1ab1ab1b4aaab1" as="#w1ab1ab1b4aaab1a">Ministro dell'economia e delle finanze (PADOAN)</an:docProponent>
 				 
 			</an:p>
 			<an:p>COMUNICATO ALLA PRESIDENZA IL 29 OTTOBRE 2017</an:p>
@@ -78,16 +78,16 @@
 		<an:attachments>
 			<an:doc name="Altro">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2017-10-29/2960/main/allegato"/>
 							<an:FRBRdate date="2017-10-29" name="presentazione"/>
 							<an:FRBRauthor href="#senato"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_1.png" id="wimg1Testatina_1.png" name="" showAs="Testatina_1.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_2.png" id="wimg2Testatina_2.png" name="" showAs="Testatina_2.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_3.png" id="wimg3Testatina_3.png" name="" showAs="Testatina_3.png"/>
+								<an:componentData id="wimg1Testatina_1.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_1.png" showAs="Testatina_1.png" name=""/>
+								<an:componentData id="wimg2Testatina_2.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_2.png" showAs="Testatina_2.png" name=""/>
+								<an:componentData id="wimg3Testatina_3.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_3.png" showAs="Testatina_3.png" name=""/>
 							</an:componentInfo>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/Altro"/>
@@ -100,9 +100,9 @@
 							<an:FRBRdate date="2017-10-29" name="presentazione"/>
 							<an:FRBRauthor href="#senato"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_1.png" id="eimg1Testatina_1.png" name="" showAs="Testatina_1.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_2.png" id="eimg2Testatina_2.png" name="" showAs="Testatina_2.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_3.png" id="eimg3Testatina_3.png" name="" showAs="Testatina_3.png"/>
+								<an:componentData id="eimg1Testatina_1.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_1.png" showAs="Testatina_1.png" name=""/>
+								<an:componentData id="eimg2Testatina_2.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_2.png" showAs="Testatina_2.png" name=""/>
+								<an:componentData id="eimg3Testatina_3.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_3.png" showAs="Testatina_3.png" name=""/>
 							</an:componentInfo>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
@@ -112,15 +112,15 @@
 							<an:FRBRdate date="2017-10-29" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_1.png" id="mimg1Testatina_1.png" name="" showAs="Testatina_1.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_2.png" id="mimg2Testatina_2.png" name="" showAs="Testatina_2.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_3.png" id="mimg3Testatina_3.png" name="" showAs="Testatina_3.png"/>
+								<an:componentData id="mimg1Testatina_1.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_1.png" showAs="Testatina_1.png" name=""/>
+								<an:componentData id="mimg2Testatina_2.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_2.png" showAs="Testatina_2.png" name=""/>
+								<an:componentData id="mimg3Testatina_3.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/01048767/Testatina_3.png" showAs="Testatina_3.png" name=""/>
 							</an:componentInfo>
 						</an:FRBRManifestation>
 					</an:identification>
 					<an:references source="#redattore">
-						<an:original href="http://dati.senato.it/osr/Ddl/2017-10-29/2960/ita@/main/allegato" id="ro2" showAs="Allegato"/>
-						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2017-10-29/2960/ita@/main" id="mainAnx2" showAs="Main"/>
+						<an:original id="ro2" href="http://dati.senato.it/osr/Ddl/2017-10-29/2960/ita@/main/allegato" showAs="Allegato"/>
+						<an:attachmentOf id="mainAnx2" href="http://dati.senato.it/osr/Ddl/2017-10-29/2960/ita@/main" showAs="Main"/>
 					</an:references>
 				</an:meta>
 				<an:mainBody>

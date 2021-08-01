@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:xp_0="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xp_0:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/16/Emend/S/3075/A/12.0.1/main"/>
 					<an:FRBRuri value="http://dati.senato.it/16/Emend/S/3075/A/12.0.1"/>
 					<an:FRBRdate date="2012-01-31" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/16/Emend/S/3075/A/12.0.1/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/16/Emend/S/3075/A/12.0.1/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2012-01-31" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/16/Emend/S/3075/A/12.0.1/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/16/Emend/S/3075/A/12.0.1/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,33 +32,33 @@
 					<an:FRBRdate date="2012-01-31" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/16/Emend/S/3075/A/12.0.1/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/16/Emend/S/3075/A/12.0.1/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2012-01-31" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2012-01-31"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2012-01-31" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2012-01-31" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/16/Emend/S/3075/A/12.0.1/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/16/3075" id="ar1" showAs="DDL 3075"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/23946" id="EZ" showAs="Della Monica"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/17685" id="E5" showAs="D'Alia"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22729" id="EDB" showAs="D'Ambrosio"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/12932" id="EIB" showAs="Maritati"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/22337" id="ENB" showAs="Casson"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25263" id="ESB" showAs="Chiurazzi"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25258" id="EXB" showAs="Carofiglio"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25203" id="E3B" showAs="Galperti"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/25230" id="EBC" showAs="Perduca"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/4562" id="EGC" showAs="Serra"/>
+				<an:original id="ro1" href="http://dati.senato.it/16/Emend/S/3075/A/12.0.1/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/16/3075" showAs="DDL 3075"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="EZ" href="http://dati.senato.it/senatore/23946" showAs="Della Monica"/>
+				<an:TLCPerson id="E5" href="http://dati.senato.it/senatore/17685" showAs="D'Alia"/>
+				<an:TLCPerson id="EDB" href="http://dati.senato.it/senatore/22729" showAs="D'Ambrosio"/>
+				<an:TLCPerson id="EIB" href="http://dati.senato.it/senatore/12932" showAs="Maritati"/>
+				<an:TLCPerson id="ENB" href="http://dati.senato.it/senatore/22337" showAs="Casson"/>
+				<an:TLCPerson id="ESB" href="http://dati.senato.it/senatore/25263" showAs="Chiurazzi"/>
+				<an:TLCPerson id="EXB" href="http://dati.senato.it/senatore/25258" showAs="Carofiglio"/>
+				<an:TLCPerson id="E3B" href="http://dati.senato.it/senatore/25203" showAs="Galperti"/>
+				<an:TLCPerson id="EBC" href="http://dati.senato.it/senatore/25230" showAs="Perduca"/>
+				<an:TLCPerson id="EGC" href="http://dati.senato.it/senatore/4562" showAs="Serra"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -69,34 +69,34 @@
 				<an:docNumber>Emendamento n. 12.0.1 (testo 2)</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EZ">Della Monica</an:docProponent>
+				<an:docProponent refersTo="#EZ" as="#tipoSenatore">Della Monica</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#E5">D'Alia</an:docProponent>
+				<an:docProponent refersTo="#E5" as="#tipoSenatore">D'Alia</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EDB">D'Ambrosio</an:docProponent>
+				<an:docProponent refersTo="#EDB" as="#tipoSenatore">D'Ambrosio</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EIB">Maritati</an:docProponent>
+				<an:docProponent refersTo="#EIB" as="#tipoSenatore">Maritati</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ENB">Casson</an:docProponent>
+				<an:docProponent refersTo="#ENB" as="#tipoSenatore">Casson</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#ESB">Chiurazzi</an:docProponent>
+				<an:docProponent refersTo="#ESB" as="#tipoSenatore">Chiurazzi</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EXB">Carofiglio</an:docProponent>
+				<an:docProponent refersTo="#EXB" as="#tipoSenatore">Carofiglio</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#E3B">Galperti</an:docProponent>
+				<an:docProponent refersTo="#E3B" as="#tipoSenatore">Galperti</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EBC">Perduca</an:docProponent>
+				<an:docProponent refersTo="#EBC" as="#tipoSenatore">Perduca</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#EGC">Serra</an:docProponent>
+				<an:docProponent refersTo="#EGC" as="#tipoSenatore">Serra</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

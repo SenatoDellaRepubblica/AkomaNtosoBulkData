@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance">
+<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/920/C/4.27/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/920/C/4.27"/>
 					<an:FRBRdate date="2018-12-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/920/C/4.27/main" id="wcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/920/C/4.27/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="EMEND"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2018-12-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/920/C/4.27/ita@/main" id="ecompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/920/C/4.27/ita@/main" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,31 +32,31 @@
 					<an:FRBRdate date="2018-12-05" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/18/Emend/S/920/C/4.27/ita@/main.xml" id="mcompmain" name="emendamento" showAs="emendamento"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/920/C/4.27/ita@/main.xml" showAs="emendamento" name="emendamento"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2018-12-05" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2018-12-05"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2018-12-05" id="step1" outcome="presentazione"/>
+				<an:step id="step1" date="2018-12-05" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/18/Emend/S/920/C/4.27/ita@/main" id="ro1" showAs="generation"/>
-				<an:activeRef href="http://dati.senato.it/DDL/18/920" id="ar1" showAs="DDL 920"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Commissione/11" id="commissione" showAs="11ª Commissione permanente"/>
-				<an:TLCRole href="http://dati.senato.it/Senatore" id="tipoSenatore" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/32723" id="IDFE1XYTZZPUASI5HRWU2QRV35PLD2KA4NVUL1CLGCTIFYBQMRVBEC" showAs="TOFFANIN"/>
-				<an:TLCPerson href="http://dati.senato.it/29209" id="IDRPCXL5QWH0B4BVAFIDM53X2PMLLMCGF010UV1MCGG0QIXR2BOJZJ" showAs="FLORIS"/>
-				<an:TLCPerson href="http://dati.senato.it/26539" id="IDYH1EYG5TDQ0PJLADR1I1SDWVUH2OBXUSPVV2X0HVGL4NQPG01PDH" showAs="GALLONE"/>
-				<an:TLCPerson href="http://dati.senato.it/25198" id="IDGIXZUZSC2D3ZIF2PZWMQZ4Q22IDRQOP3GX0VRJOD2PLM2RFLUVAE" showAs="RIZZOTTI"/>
-				<an:TLCPerson href="http://dati.senato.it/32747" id="IDIUEXL4QV5JPVEYMKQDWPGJFFGNYD24DBYVIQO3FF4YMYJ3AEY4ZI" showAs="DAMIANI"/>
-				<an:TLCPerson href="http://dati.senato.it/32707" id="IDK5URIGOULI1TCG3XKZDFKIN1OKGLAZLCYUIKQCVPQIYXG0JE2QG" showAs="RONZULLI"/>
-				<an:TLCPerson href="http://dati.senato.it/22814" id="IDGTJW2NZGYH3CGF3QNKRAEUTTMN2QUEZ1R4YZDYOQLEKCFDT23BPB" showAs="DE POLI"/>
+				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/920/C/4.27/ita@/main" showAs="generation"/>
+				<an:activeRef id="ar1" href="http://dati.senato.it/DDL/18/920" showAs="DDL 920"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCOrganization id="commissione" showAs="11ª Commissione permanente" href="/dati.senato.it/osr/Commissione/11"/>
+				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="IDFE1XYTZZPUASI5HRWU2QRV35PLD2KA4NVUL1CLGCTIFYBQMRVBEC" href="http://dati.senato.it/32723" showAs="TOFFANIN"/>
+				<an:TLCPerson id="IDRPCXL5QWH0B4BVAFIDM53X2PMLLMCGF010UV1MCGG0QIXR2BOJZJ" href="http://dati.senato.it/29209" showAs="FLORIS"/>
+				<an:TLCPerson id="IDYH1EYG5TDQ0PJLADR1I1SDWVUH2OBXUSPVV2X0HVGL4NQPG01PDH" href="http://dati.senato.it/26539" showAs="GALLONE"/>
+				<an:TLCPerson id="IDGIXZUZSC2D3ZIF2PZWMQZ4Q22IDRQOP3GX0VRJOD2PLM2RFLUVAE" href="http://dati.senato.it/25198" showAs="RIZZOTTI"/>
+				<an:TLCPerson id="IDIUEXL4QV5JPVEYMKQDWPGJFFGNYD24DBYVIQO3FF4YMYJ3AEY4ZI" href="http://dati.senato.it/32747" showAs="DAMIANI"/>
+				<an:TLCPerson id="IDK5URIGOULI1TCG3XKZDFKIN1OKGLAZLCYUIKQCVPQIYXG0JE2QG" href="http://dati.senato.it/32707" showAs="RONZULLI"/>
+				<an:TLCPerson id="IDGTJW2NZGYH3CGF3QNKRAEUTTMN2QUEZ1R4YZDYOQLEKCFDT23BPB" href="http://dati.senato.it/22814" showAs="DE POLI"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -67,25 +67,25 @@
 				<an:docNumber>Emendamento n. 4.27</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDFE1XYTZZPUASI5HRWU2QRV35PLD2KA4NVUL1CLGCTIFYBQMRVBEC">TOFFANIN</an:docProponent>
+				<an:docProponent refersTo="#IDFE1XYTZZPUASI5HRWU2QRV35PLD2KA4NVUL1CLGCTIFYBQMRVBEC" as="#tipoSenatore">TOFFANIN</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDRPCXL5QWH0B4BVAFIDM53X2PMLLMCGF010UV1MCGG0QIXR2BOJZJ">FLORIS</an:docProponent>
+				<an:docProponent refersTo="#IDRPCXL5QWH0B4BVAFIDM53X2PMLLMCGF010UV1MCGG0QIXR2BOJZJ" as="#tipoSenatore">FLORIS</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDYH1EYG5TDQ0PJLADR1I1SDWVUH2OBXUSPVV2X0HVGL4NQPG01PDH">GALLONE</an:docProponent>
+				<an:docProponent refersTo="#IDYH1EYG5TDQ0PJLADR1I1SDWVUH2OBXUSPVV2X0HVGL4NQPG01PDH" as="#tipoSenatore">GALLONE</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDGIXZUZSC2D3ZIF2PZWMQZ4Q22IDRQOP3GX0VRJOD2PLM2RFLUVAE">RIZZOTTI</an:docProponent>
+				<an:docProponent refersTo="#IDGIXZUZSC2D3ZIF2PZWMQZ4Q22IDRQOP3GX0VRJOD2PLM2RFLUVAE" as="#tipoSenatore">RIZZOTTI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDIUEXL4QV5JPVEYMKQDWPGJFFGNYD24DBYVIQO3FF4YMYJ3AEY4ZI">DAMIANI</an:docProponent>
+				<an:docProponent refersTo="#IDIUEXL4QV5JPVEYMKQDWPGJFFGNYD24DBYVIQO3FF4YMYJ3AEY4ZI" as="#tipoSenatore">DAMIANI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDK5URIGOULI1TCG3XKZDFKIN1OKGLAZLCYUIKQCVPQIYXG0JE2QG">RONZULLI</an:docProponent>
+				<an:docProponent refersTo="#IDK5URIGOULI1TCG3XKZDFKIN1OKGLAZLCYUIKQCVPQIYXG0JE2QG" as="#tipoSenatore">RONZULLI</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent as="#tipoSenatore" refersTo="#IDGTJW2NZGYH3CGF3QNKRAEUTTMN2QUEZ1R4YZDYOQLEKCFDT23BPB">DE POLI</an:docProponent>
+				<an:docProponent refersTo="#IDGTJW2NZGYH3CGF3QNKRAEUTTMN2QUEZ1R4YZDYOQLEKCFDT23BPB" as="#tipoSenatore">DE POLI</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>

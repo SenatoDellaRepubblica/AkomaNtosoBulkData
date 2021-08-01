@@ -2,14 +2,14 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2015-11-14/2133/main"/>
 					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2015-11-14/2133"/>
 					<an:FRBRdate date="2015-11-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2015-11-14/2133/main/allegato" id="wcomp2" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="wcomp2" href="http://dati.senato.it/osr/Ddl/2015-11-14/2133/main/allegato" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
@@ -22,7 +22,7 @@
 					<an:FRBRdate date="2015-11-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2015-11-14/2133/ita@/main/allegato" id="ecomp2" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="ecomp2" href="http://dati.senato.it/osr/Ddl/2015-11-14/2133/ita@/main/allegato" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -32,30 +32,30 @@
 					<an:FRBRdate date="2015-11-14" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2015-11-14/2133/ita@/main/allegato.xml" id="mcomp2" name="Allegato" showAs="Allegato"/>
+						<an:componentData id="mcomp2" href="http://dati.senato.it/osr/Ddl/2015-11-14/2133/ita@/main/allegato.xml" showAs="Allegato" name="Allegato"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2015-11-14" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2015-11-14"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2015-11-14" id="step1" outcome="Presentazione"/>
+				<an:step id="step1" date="2015-11-14" actor="#senato" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/osr/Ddl/2015-11-14/2133/ita@/main" id="ro1" showAs="generation"/>
-				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2015-11-14/2133/ita@/main/allegato" id="annex2" showAs="Allegato"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d2039e17a1327" showAs="Presidente del Consiglio dei ministri"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d2039e19a1327" showAs="Ministro dell'economia e delle finanze"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d2039e21a1327" showAs="Ministro della salute"/>
-				<an:TLCRole href="http://dati.senato.it/osr/IncaricoGoverno" id="d2039e23a1327" showAs="Ministro dell'interno"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/30742" id="d2039e17" showAs="RENZI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2039e19" showAs="PADOAN"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2039e21" showAs="LORENZIN"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2039e23" showAs="ALFANO"/>
+				<an:original id="ro1" href="http://dati.senato.it/osr/Ddl/2015-11-14/2133/ita@/main" showAs="generation"/>
+				<an:hasAttachment id="annex2" href="http://dati.senato.it/osr/Ddl/2015-11-14/2133/ita@/main/allegato" showAs="Allegato"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="d2039e17a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Presidente del Consiglio dei ministri"/>
+				<an:TLCRole id="d2039e19a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro dell'economia e delle finanze"/>
+				<an:TLCRole id="d2039e21a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro della salute"/>
+				<an:TLCRole id="d2039e23a1327" href="http://dati.senato.it/osr/IncaricoGoverno" showAs="Ministro dell'interno"/>
+				<an:TLCPerson id="d2039e17" href="http://dati.senato.it/osr/Persona" showAs="RENZI"/>
+				<an:TLCPerson id="d2039e19" href="http://dati.senato.it/osr/Persona" showAs="PADOAN"/>
+				<an:TLCPerson id="d2039e21" href="http://dati.senato.it/osr/Persona" showAs="LORENZIN"/>
+				<an:TLCPerson id="d2039e23" href="http://dati.senato.it/osr/Persona" showAs="ALFANO"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -71,13 +71,13 @@
 			</an:p>
 			<an:p>
 				presentato dal 
-				<an:docProponent as="#d2039e17a1327" refersTo="#d2039e17">Presidente del Consiglio dei ministri (RENZI)</an:docProponent>
+				<an:docProponent refersTo="#d2039e17" as="#d2039e17a1327">Presidente del Consiglio dei ministri (RENZI)</an:docProponent>
 				 di concerto con il 
-				<an:docProponent as="#d2039e19a1327" refersTo="#d2039e19">Ministro dell'economia e delle finanze (PADOAN)</an:docProponent>
+				<an:docProponent refersTo="#d2039e19" as="#d2039e19a1327">Ministro dell'economia e delle finanze (PADOAN)</an:docProponent>
 				con il 
-				<an:docProponent as="#d2039e21a1327" refersTo="#d2039e21">Ministro della salute (LORENZIN)</an:docProponent>
+				<an:docProponent refersTo="#d2039e21" as="#d2039e21a1327">Ministro della salute (LORENZIN)</an:docProponent>
 				e con il 
-				<an:docProponent as="#d2039e23a1327" refersTo="#d2039e23">Ministro dell'interno (ALFANO)</an:docProponent>
+				<an:docProponent refersTo="#d2039e23" as="#d2039e23a1327">Ministro dell'interno (ALFANO)</an:docProponent>
 			</an:p>
 			<an:p>COMUNICATO ALLA PRESIDENZA IL 14 NOVEMBRE 2015</an:p>
 		</an:coverPage>
@@ -85,20 +85,20 @@
 		<an:attachments>
 			<an:doc name="Altro">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2015-11-14/2133/main/allegato"/>
 							<an:FRBRdate date="2015-11-14" name="presentazione"/>
 							<an:FRBRauthor href="#senato"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-01.png" id="wimg1DDL2133_ERRATA-01.png" name="" showAs="DDL2133_ERRATA-01.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-02.png" id="wimg2DDL2133_ERRATA-02.png" name="" showAs="DDL2133_ERRATA-02.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-03.png" id="wimg3DDL2133_ERRATA-03.png" name="" showAs="DDL2133_ERRATA-03.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-04.png" id="wimg4DDL2133_ERRATA-04.png" name="" showAs="DDL2133_ERRATA-04.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-05.png" id="wimg5DDL2133_ERRATA-05.png" name="" showAs="DDL2133_ERRATA-05.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-06.png" id="wimg6DDL2133_ERRATA-06.png" name="" showAs="DDL2133_ERRATA-06.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-07.png" id="wimg7DDL2133_ERRATA-07.png" name="" showAs="DDL2133_ERRATA-07.png"/>
+								<an:componentData id="wimg1DDL2133_ERRATA-01.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-01.png" showAs="DDL2133_ERRATA-01.png" name=""/>
+								<an:componentData id="wimg2DDL2133_ERRATA-02.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-02.png" showAs="DDL2133_ERRATA-02.png" name=""/>
+								<an:componentData id="wimg3DDL2133_ERRATA-03.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-03.png" showAs="DDL2133_ERRATA-03.png" name=""/>
+								<an:componentData id="wimg4DDL2133_ERRATA-04.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-04.png" showAs="DDL2133_ERRATA-04.png" name=""/>
+								<an:componentData id="wimg5DDL2133_ERRATA-05.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-05.png" showAs="DDL2133_ERRATA-05.png" name=""/>
+								<an:componentData id="wimg6DDL2133_ERRATA-06.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-06.png" showAs="DDL2133_ERRATA-06.png" name=""/>
+								<an:componentData id="wimg7DDL2133_ERRATA-07.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-07.png" showAs="DDL2133_ERRATA-07.png" name=""/>
 							</an:componentInfo>
 							<an:FRBRcountry value="ita"/>
 							<an:FRBRsubtype value="allegato/Altro"/>
@@ -111,13 +111,13 @@
 							<an:FRBRdate date="2015-11-14" name="presentazione"/>
 							<an:FRBRauthor href="#senato"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-01.png" id="eimg1DDL2133_ERRATA-01.png" name="" showAs="DDL2133_ERRATA-01.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-02.png" id="eimg2DDL2133_ERRATA-02.png" name="" showAs="DDL2133_ERRATA-02.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-03.png" id="eimg3DDL2133_ERRATA-03.png" name="" showAs="DDL2133_ERRATA-03.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-04.png" id="eimg4DDL2133_ERRATA-04.png" name="" showAs="DDL2133_ERRATA-04.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-05.png" id="eimg5DDL2133_ERRATA-05.png" name="" showAs="DDL2133_ERRATA-05.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-06.png" id="eimg6DDL2133_ERRATA-06.png" name="" showAs="DDL2133_ERRATA-06.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-07.png" id="eimg7DDL2133_ERRATA-07.png" name="" showAs="DDL2133_ERRATA-07.png"/>
+								<an:componentData id="eimg1DDL2133_ERRATA-01.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-01.png" showAs="DDL2133_ERRATA-01.png" name=""/>
+								<an:componentData id="eimg2DDL2133_ERRATA-02.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-02.png" showAs="DDL2133_ERRATA-02.png" name=""/>
+								<an:componentData id="eimg3DDL2133_ERRATA-03.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-03.png" showAs="DDL2133_ERRATA-03.png" name=""/>
+								<an:componentData id="eimg4DDL2133_ERRATA-04.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-04.png" showAs="DDL2133_ERRATA-04.png" name=""/>
+								<an:componentData id="eimg5DDL2133_ERRATA-05.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-05.png" showAs="DDL2133_ERRATA-05.png" name=""/>
+								<an:componentData id="eimg6DDL2133_ERRATA-06.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-06.png" showAs="DDL2133_ERRATA-06.png" name=""/>
+								<an:componentData id="eimg7DDL2133_ERRATA-07.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-07.png" showAs="DDL2133_ERRATA-07.png" name=""/>
 							</an:componentInfo>
 							<an:FRBRlanguage language="it"/>
 						</an:FRBRExpression>
@@ -127,19 +127,19 @@
 							<an:FRBRdate date="2015-11-14" name="presentazione"/>
 							<an:FRBRauthor href="#redattore"/>
 							<an:componentInfo>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-01.png" id="mimg1DDL2133_ERRATA-01.png" name="" showAs="DDL2133_ERRATA-01.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-02.png" id="mimg2DDL2133_ERRATA-02.png" name="" showAs="DDL2133_ERRATA-02.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-03.png" id="mimg3DDL2133_ERRATA-03.png" name="" showAs="DDL2133_ERRATA-03.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-04.png" id="mimg4DDL2133_ERRATA-04.png" name="" showAs="DDL2133_ERRATA-04.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-05.png" id="mimg5DDL2133_ERRATA-05.png" name="" showAs="DDL2133_ERRATA-05.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-06.png" id="mimg6DDL2133_ERRATA-06.png" name="" showAs="DDL2133_ERRATA-06.png"/>
-								<an:componentData href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-07.png" id="mimg7DDL2133_ERRATA-07.png" name="" showAs="DDL2133_ERRATA-07.png"/>
+								<an:componentData id="mimg1DDL2133_ERRATA-01.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-01.png" showAs="DDL2133_ERRATA-01.png" name=""/>
+								<an:componentData id="mimg2DDL2133_ERRATA-02.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-02.png" showAs="DDL2133_ERRATA-02.png" name=""/>
+								<an:componentData id="mimg3DDL2133_ERRATA-03.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-03.png" showAs="DDL2133_ERRATA-03.png" name=""/>
+								<an:componentData id="mimg4DDL2133_ERRATA-04.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-04.png" showAs="DDL2133_ERRATA-04.png" name=""/>
+								<an:componentData id="mimg5DDL2133_ERRATA-05.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-05.png" showAs="DDL2133_ERRATA-05.png" name=""/>
+								<an:componentData id="mimg6DDL2133_ERRATA-06.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-06.png" showAs="DDL2133_ERRATA-06.png" name=""/>
+								<an:componentData id="mimg7DDL2133_ERRATA-07.png" href="http://www.senato.it/japp/bgt/showdoc/17/DDLPRES/00950486/DDL2133_ERRATA-07.png" showAs="DDL2133_ERRATA-07.png" name=""/>
 							</an:componentInfo>
 						</an:FRBRManifestation>
 					</an:identification>
 					<an:references source="#redattore">
-						<an:original href="http://dati.senato.it/osr/Ddl/2015-11-14/2133/ita@/main/allegato" id="ro2" showAs="Allegato"/>
-						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2015-11-14/2133/ita@/main" id="mainAnx2" showAs="Main"/>
+						<an:original id="ro2" href="http://dati.senato.it/osr/Ddl/2015-11-14/2133/ita@/main/allegato" showAs="Allegato"/>
+						<an:attachmentOf id="mainAnx2" href="http://dati.senato.it/osr/Ddl/2015-11-14/2133/ita@/main" showAs="Main"/>
 					</an:references>
 				</an:meta>
 				<an:mainBody>

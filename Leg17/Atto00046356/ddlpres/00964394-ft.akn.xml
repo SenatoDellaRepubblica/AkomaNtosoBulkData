@@ -2,15 +2,15 @@
 <an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:bill contains="originalVersion">
 		<an:meta>
-			<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/osr/Ddl/2016-01-12/2188/main"/>
 					<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2016-01-12/2188"/>
 					<an:FRBRdate date="2016-01-12" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/main" id="wcompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/main/relazione" id="wcomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="wcompmain" href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/main" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="wcomp2" href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/main/relazione" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 					<an:FRBRcountry value="ita"/>
 					<an:FRBRsubtype value="DDLPRES"/>
@@ -23,8 +23,8 @@
 					<an:FRBRdate date="2016-01-12" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main" id="ecompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main/relazione" id="ecomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="ecompmain" href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="ecomp2" href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main/relazione" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 					<an:FRBRlanguage language="it"/>
 				</an:FRBRExpression>
@@ -34,60 +34,60 @@
 					<an:FRBRdate date="2016-01-12" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main.xml" id="mcompmain" name="disegno di legge" showAs="disegno di legge"/>
-						<an:componentData href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main/relazione.xml" id="mcomp2" name="Relazione" showAs="Relazione"/>
+						<an:componentData id="mcompmain" href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main.xml" showAs="disegno di legge" name="disegno di legge"/>
+						<an:componentData id="mcomp2" href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main/relazione.xml" showAs="Relazione" name="Relazione"/>
 					</an:componentInfo>
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef date="2016-01-12" id="event1" source="#ro1"/>
+				<an:eventRef source="#ro1" id="event1" date="2016-01-12"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step actor="#senato" date="2016-01-12" id="step1" outcome="Presentazione"/>
+				<an:step id="step1" date="2016-01-12" actor="#senato" outcome="Presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
-				<an:original href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main" id="ro1" showAs="generation"/>
-				<an:hasAttachment href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main/relazione" id="annex2" showAs="Relazione"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato/Servizio Informatica" id="redattore" showAs="Servizio Informatica del Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Senato" id="senato" showAs="Senato della Repubblica"/>
-				<an:TLCOrganization href="/dati.senato.it/osr/Camera" id="camera" showAs="Camera dei Deputati"/>
-				<an:TLCRole href="http://dati.senato.it/osr/Senatore" id="d2139e15a1327" showAs="Senatore"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e15" showAs="CALEO"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e17" showAs="VACCARI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e19" showAs="SCALIA"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e21" showAs="GATTI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e23" showAs="Gianluca ROSSI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e26" showAs="PUPPATO"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e28" showAs="FABBRI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e30" showAs="PAGNONCELLI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e32" showAs="PANIZZA"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e34" showAs="MATTESINI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e36" showAs="Stefano ESPOSITO"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e39" showAs="SCAVONE"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e41" showAs="FASIOLO"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e43" showAs="FRAVEZZI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29115" id="d2139e45" showAs="LANIECE"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e47" showAs="SOLLO"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e49" showAs="CANTINI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29138" id="d2139e52" showAs="MIRABELLI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e54" showAs="PAGLIARI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e56" showAs="DALLA TOR"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e58" showAs="CARDINALI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e60" showAs="Maurizio ROMANI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e62" showAs="LAI"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29072" id="d2139e65" showAs="COLLINA"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e67" showAs="BERTUZZI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e69" showAs="PEZZOPANE"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e71" showAs="GUERRA"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e73" showAs="CAPACCHIONE"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e75" showAs="SPILABOTTE"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e78" showAs="Lucio ROMANO"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e80" showAs="DALLA ZUANNA"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e82" showAs="Elena FERRARA"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e84" showAs="IDEM"/>
-				<an:TLCPerson href="http://dati.senato.it/senatore/29194" id="d2139e86" showAs="VATTUONE"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e88" showAs="FILIPPI"/>
-				<an:TLCPerson href="http://dati.senato.it/osr/Persona" id="d2139e91" showAs="CHITI"/>
+				<an:original id="ro1" href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main" showAs="generation"/>
+				<an:hasAttachment id="annex2" href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main/relazione" showAs="Relazione"/>
+				<an:TLCOrganization id="redattore" showAs="Servizio Informatica del Senato della Repubblica" href="/dati.senato.it/osr/Senato/Servizio Informatica"/>
+				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
+				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
+				<an:TLCRole id="d2139e15a1327" href="http://dati.senato.it/osr/Senatore" showAs="Senatore"/>
+				<an:TLCPerson id="d2139e15" href="http://dati.senato.it/osr/Persona" showAs="CALEO"/>
+				<an:TLCPerson id="d2139e17" href="http://dati.senato.it/osr/Persona" showAs="VACCARI"/>
+				<an:TLCPerson id="d2139e19" href="http://dati.senato.it/osr/Persona" showAs="SCALIA"/>
+				<an:TLCPerson id="d2139e21" href="http://dati.senato.it/osr/Persona" showAs="GATTI"/>
+				<an:TLCPerson id="d2139e23" href="http://dati.senato.it/osr/Persona" showAs="Gianluca ROSSI"/>
+				<an:TLCPerson id="d2139e26" href="http://dati.senato.it/osr/Persona" showAs="PUPPATO"/>
+				<an:TLCPerson id="d2139e28" href="http://dati.senato.it/osr/Persona" showAs="FABBRI"/>
+				<an:TLCPerson id="d2139e30" href="http://dati.senato.it/osr/Persona" showAs="PAGNONCELLI"/>
+				<an:TLCPerson id="d2139e32" href="http://dati.senato.it/osr/Persona" showAs="PANIZZA"/>
+				<an:TLCPerson id="d2139e34" href="http://dati.senato.it/osr/Persona" showAs="MATTESINI"/>
+				<an:TLCPerson id="d2139e36" href="http://dati.senato.it/osr/Persona" showAs="Stefano ESPOSITO"/>
+				<an:TLCPerson id="d2139e39" href="http://dati.senato.it/osr/Persona" showAs="SCAVONE"/>
+				<an:TLCPerson id="d2139e41" href="http://dati.senato.it/osr/Persona" showAs="FASIOLO"/>
+				<an:TLCPerson id="d2139e43" href="http://dati.senato.it/osr/Persona" showAs="FRAVEZZI"/>
+				<an:TLCPerson id="d2139e45" href="http://dati.senato.it/osr/Persona" showAs="LANIECE"/>
+				<an:TLCPerson id="d2139e47" href="http://dati.senato.it/osr/Persona" showAs="SOLLO"/>
+				<an:TLCPerson id="d2139e49" href="http://dati.senato.it/osr/Persona" showAs="CANTINI"/>
+				<an:TLCPerson id="d2139e52" href="http://dati.senato.it/osr/Persona" showAs="MIRABELLI"/>
+				<an:TLCPerson id="d2139e54" href="http://dati.senato.it/osr/Persona" showAs="PAGLIARI"/>
+				<an:TLCPerson id="d2139e56" href="http://dati.senato.it/osr/Persona" showAs="DALLA TOR"/>
+				<an:TLCPerson id="d2139e58" href="http://dati.senato.it/osr/Persona" showAs="CARDINALI"/>
+				<an:TLCPerson id="d2139e60" href="http://dati.senato.it/osr/Persona" showAs="Maurizio ROMANI"/>
+				<an:TLCPerson id="d2139e62" href="http://dati.senato.it/osr/Persona" showAs="LAI"/>
+				<an:TLCPerson id="d2139e65" href="http://dati.senato.it/osr/Persona" showAs="COLLINA"/>
+				<an:TLCPerson id="d2139e67" href="http://dati.senato.it/osr/Persona" showAs="BERTUZZI"/>
+				<an:TLCPerson id="d2139e69" href="http://dati.senato.it/osr/Persona" showAs="PEZZOPANE"/>
+				<an:TLCPerson id="d2139e71" href="http://dati.senato.it/osr/Persona" showAs="GUERRA"/>
+				<an:TLCPerson id="d2139e73" href="http://dati.senato.it/osr/Persona" showAs="CAPACCHIONE"/>
+				<an:TLCPerson id="d2139e75" href="http://dati.senato.it/osr/Persona" showAs="SPILABOTTE"/>
+				<an:TLCPerson id="d2139e78" href="http://dati.senato.it/osr/Persona" showAs="Lucio ROMANO"/>
+				<an:TLCPerson id="d2139e80" href="http://dati.senato.it/osr/Persona" showAs="DALLA ZUANNA"/>
+				<an:TLCPerson id="d2139e82" href="http://dati.senato.it/osr/Persona" showAs="Elena FERRARA"/>
+				<an:TLCPerson id="d2139e84" href="http://dati.senato.it/osr/Persona" showAs="IDEM"/>
+				<an:TLCPerson id="d2139e86" href="http://dati.senato.it/osr/Persona" showAs="VATTUONE"/>
+				<an:TLCPerson id="d2139e88" href="http://dati.senato.it/osr/Persona" showAs="FILIPPI"/>
+				<an:TLCPerson id="d2139e91" href="http://dati.senato.it/osr/Persona" showAs="CHITI"/>
 			</an:references>
 		</an:meta>
 		<an:coverPage>
@@ -103,77 +103,77 @@
 			</an:p>
 			<an:p>
 				d’iniziativa dei senatori 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e15">CALEO</an:docProponent>
+				<an:docProponent refersTo="#d2139e15" as="#d2139e15a1327">CALEO</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e17">VACCARI</an:docProponent>
+				<an:docProponent refersTo="#d2139e17" as="#d2139e15a1327">VACCARI</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e19">SCALIA</an:docProponent>
+				<an:docProponent refersTo="#d2139e19" as="#d2139e15a1327">SCALIA</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e21">GATTI</an:docProponent>
+				<an:docProponent refersTo="#d2139e21" as="#d2139e15a1327">GATTI</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e23">Gianluca ROSSI</an:docProponent>
+				<an:docProponent refersTo="#d2139e23" as="#d2139e15a1327">Gianluca ROSSI</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e26">PUPPATO</an:docProponent>
+				<an:docProponent refersTo="#d2139e26" as="#d2139e15a1327">PUPPATO</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e28">FABBRI</an:docProponent>
+				<an:docProponent refersTo="#d2139e28" as="#d2139e15a1327">FABBRI</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e30">PAGNONCELLI</an:docProponent>
+				<an:docProponent refersTo="#d2139e30" as="#d2139e15a1327">PAGNONCELLI</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e32">PANIZZA</an:docProponent>
+				<an:docProponent refersTo="#d2139e32" as="#d2139e15a1327">PANIZZA</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e34">MATTESINI</an:docProponent>
+				<an:docProponent refersTo="#d2139e34" as="#d2139e15a1327">MATTESINI</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e36">Stefano ESPOSITO</an:docProponent>
+				<an:docProponent refersTo="#d2139e36" as="#d2139e15a1327">Stefano ESPOSITO</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e39">SCAVONE</an:docProponent>
+				<an:docProponent refersTo="#d2139e39" as="#d2139e15a1327">SCAVONE</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e41">FASIOLO</an:docProponent>
+				<an:docProponent refersTo="#d2139e41" as="#d2139e15a1327">FASIOLO</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e43">FRAVEZZI</an:docProponent>
+				<an:docProponent refersTo="#d2139e43" as="#d2139e15a1327">FRAVEZZI</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e45">LANIECE</an:docProponent>
+				<an:docProponent refersTo="#d2139e45" as="#d2139e15a1327">LANIECE</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e47">SOLLO</an:docProponent>
+				<an:docProponent refersTo="#d2139e47" as="#d2139e15a1327">SOLLO</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e49">CANTINI</an:docProponent>
+				<an:docProponent refersTo="#d2139e49" as="#d2139e15a1327">CANTINI</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e52">MIRABELLI</an:docProponent>
+				<an:docProponent refersTo="#d2139e52" as="#d2139e15a1327">MIRABELLI</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e54">PAGLIARI</an:docProponent>
+				<an:docProponent refersTo="#d2139e54" as="#d2139e15a1327">PAGLIARI</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e56">DALLA TOR</an:docProponent>
+				<an:docProponent refersTo="#d2139e56" as="#d2139e15a1327">DALLA TOR</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e58">CARDINALI</an:docProponent>
+				<an:docProponent refersTo="#d2139e58" as="#d2139e15a1327">CARDINALI</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e60">Maurizio ROMANI</an:docProponent>
+				<an:docProponent refersTo="#d2139e60" as="#d2139e15a1327">Maurizio ROMANI</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e62">LAI</an:docProponent>
+				<an:docProponent refersTo="#d2139e62" as="#d2139e15a1327">LAI</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e65">COLLINA</an:docProponent>
+				<an:docProponent refersTo="#d2139e65" as="#d2139e15a1327">COLLINA</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e67">BERTUZZI</an:docProponent>
+				<an:docProponent refersTo="#d2139e67" as="#d2139e15a1327">BERTUZZI</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e69">PEZZOPANE</an:docProponent>
+				<an:docProponent refersTo="#d2139e69" as="#d2139e15a1327">PEZZOPANE</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e71">GUERRA</an:docProponent>
+				<an:docProponent refersTo="#d2139e71" as="#d2139e15a1327">GUERRA</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e73">CAPACCHIONE</an:docProponent>
+				<an:docProponent refersTo="#d2139e73" as="#d2139e15a1327">CAPACCHIONE</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e75">SPILABOTTE</an:docProponent>
+				<an:docProponent refersTo="#d2139e75" as="#d2139e15a1327">SPILABOTTE</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e78">Lucio ROMANO</an:docProponent>
+				<an:docProponent refersTo="#d2139e78" as="#d2139e15a1327">Lucio ROMANO</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e80">DALLA ZUANNA</an:docProponent>
+				<an:docProponent refersTo="#d2139e80" as="#d2139e15a1327">DALLA ZUANNA</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e82">Elena FERRARA</an:docProponent>
+				<an:docProponent refersTo="#d2139e82" as="#d2139e15a1327">Elena FERRARA</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e84">IDEM</an:docProponent>
+				<an:docProponent refersTo="#d2139e84" as="#d2139e15a1327">IDEM</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e86">VATTUONE</an:docProponent>
+				<an:docProponent refersTo="#d2139e86" as="#d2139e15a1327">VATTUONE</an:docProponent>
 				, 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e88">FILIPPI</an:docProponent>
+				<an:docProponent refersTo="#d2139e88" as="#d2139e15a1327">FILIPPI</an:docProponent>
 				 e 
-				<an:docProponent as="#d2139e15a1327" refersTo="#d2139e91">CHITI</an:docProponent>
+				<an:docProponent refersTo="#d2139e91" as="#d2139e15a1327">CHITI</an:docProponent>
 				 
 			</an:p>
 			<an:p>COMUNICATO ALLA PRESIDENZA IL 12 GENNAIO 2016</an:p>
@@ -347,7 +347,7 @@
 		<an:attachments>
 			<an:doc name="RelPres">
 				<an:meta>
-					<an:identification source="#redattore" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 						<an:FRBRWork>
 							<an:FRBRthis value=""/>
 							<an:FRBRuri value="http://dati.senato.it/osr/Ddl/2016-01-12/2188/main/relazione"/>
@@ -373,8 +373,8 @@
 						</an:FRBRManifestation>
 					</an:identification>
 					<an:references source="#redattore">
-						<an:original href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main/relazione" id="ro2" showAs="Relazione"/>
-						<an:attachmentOf href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main" id="mainAnx2" showAs="Main"/>
+						<an:original id="ro2" href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main/relazione" showAs="Relazione"/>
+						<an:attachmentOf id="mainAnx2" href="http://dati.senato.it/osr/Ddl/2016-01-12/2188/ita@/main" showAs="Main"/>
 					</an:references>
 				</an:meta>
 				<an:mainBody>
