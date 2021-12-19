@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2448/C/165.0.66/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2448/C/165.0.66"/>
-					<an:FRBRdate date="2021-12-06" name="presentazione"/>
+					<an:FRBRdate date="2021-12-13" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/18/Emend/S/2448/C/165.0.66/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2448/C/165.0.66/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2448/C/165.0.66/ita@"/>
-					<an:FRBRdate date="2021-12-06" name="presentazione"/>
+					<an:FRBRdate date="2021-12-13" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/18/Emend/S/2448/C/165.0.66/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/18/Emend/S/2448/C/165.0.66/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/18/Emend/S/2448/C/165.0.66/ita@.akn"/>
-					<an:FRBRdate date="2021-12-06" name="presentazione"/>
+					<an:FRBRdate date="2021-12-13" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/18/Emend/S/2448/C/165.0.66/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,10 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2021-12-06"/>
+				<an:eventRef source="#ro1" id="event1" date="2021-12-13"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2021-12-06" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2021-12-13" actor="#senato" outcome="presentazione"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/18/Emend/S/2448/C/165.0.66/ita@/main" showAs="generation"/>
@@ -54,6 +54,9 @@
 				<an:TLCPerson id="ID0ESB" href="http://dati.senato.it/32673" showAs="Gisella Naturale"/>
 				<an:TLCPerson id="ID0E3B" href="http://dati.senato.it/32652" showAs="Cinzia Leone"/>
 				<an:TLCPerson id="ID0EGC" href="http://dati.senato.it/32638" showAs="Agnese Gallicchio"/>
+				<an:TLCPerson id="ID0EQC" href="http://dati.senato.it/29248" showAs="Donatella Agostinelli"/>
+				<an:TLCPerson id="ID0E1C" href="http://dati.senato.it/32725" showAs="Fabrizio Trentacoste"/>
+				<an:TLCPerson id="ID0EED" href="http://dati.senato.it/32647" showAs="Patty L'Abbate"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -88,25 +91,40 @@
 					<an:span style="font-variant:small-caps;">Gallicchio</an:span>
 				</an:docProponent>
 			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0EQC" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Agostinelli</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0E1C" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Trentacoste</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0EED" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">L'Abbate</an:span>
+				</an:docProponent>
+			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
 				<an:p>
 					<an:i>Dopo l'</an:i>
-					<an:b>articolo</an:b>
+					<an:strong>articolo</an:strong>
 					<an:i>, aggiungere il seguente:</an:i>
 				</an:p>
 				
 
-				<an:p align="center">
+				<an:p>
 					«Art. 165-
-					<an:b>
+					<an:strong>
 						<an:i>bis.</an:i>
-					</an:b>
+					</an:strong>
 				</an:p>
 				
 
-				<an:p align="center">
+				<an:p>
 					<an:i>(Interventi urgenti per garantire la continuità delle attività di approvvigionamento idrico in alcuni territori delle Regioni Puglia, Basilicata e Campania)</an:i>
 				</an:p>
 				
@@ -141,7 +159,7 @@
 				<an:p>
 					            
 					<an:i>d)</an:i>
-					 al comma 5, è aggiunto, in fine, il seguente periodo: ''Al fine di garantire lo svolgimento delle attività necessarie ad assicurare il mantenimento dello stato di efficienza e funzionalità delle opere idrauliche nonché le manutenzioni ordinaria e straordinaria delle stesse, il Commissario dell'EIPLI è autorizzato a procedere, in deroga alla normativa vigente, all'assunzione di un numero massimo di Il unità di personale con contratto a tempo determinato da reclutarsi tra i candidati risultati idonei alla selezione bandita con Decreto Commissariale n. 341/2018 ed inseriti nella graduatoria approvata con Decreto Commissariale n. 93, del 4 marzo 2019.''».
+					 al comma 5, è aggiunto, in fine, il seguente periodo: ''Al fine di garantire lo svolgimento delle attività necessarie ad assicurare il mantenimento dello stato di efficienza e funzionalità delle opere idrauliche nonché le manutenzioni ordinaria e straordinaria delle stesse, il Commissario dell'EIPLI è autorizzato a procedere, in deroga alla normativa vigente, all'assunzione di un numero massimo di 11 unità di personale con contratto a tempo determinato da reclutarsi tra i candidati risultati idonei alla selezione bandita con Decreto Commissariale n. 341/2018 ed inseriti nella graduatoria approvata con Decreto Commissariale n. 93, del 4 marzo 2019.''».
 				</an:p>
 				
 
