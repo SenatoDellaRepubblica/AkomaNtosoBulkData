@@ -4,7 +4,8 @@
 
 * Scheda del Disegno di Legge sul sito del Senato:
 	* Url: http://www.senato.it/leg/19/BGT/Schede/Ddliter/55190.htm
-
+* Titolo del disegno di legge: Disposizioni per la tutela della famiglia e della vita nascente, per la conciliazione tra lavoro e famiglia e delega al Governo per la disciplina del fattore famiglia
+* Consultazioni: (Interventi di esperti e tecnici alla discussione della presente DDL) 
 * Riferimenti al sito OpenData Senato http://dati.senato.it/:
 	* Link OpenData: http://dati.senato.it/ddl/55190
 	* Query SPARQL per i documenti relativi all'Atto Senato:
