@@ -26,7 +26,8 @@ The following section contains a detailed schema of the folders structure descri
             * ID_TESTO-em.akn.xml
         *   **emendc**
             * ID_TESTO-em.akn.xml
-    
+        *   **resaula**
+            * ID_TESTO-ra.akn.xml    
 
 ### Legenda ###
 
@@ -34,7 +35,8 @@ The following section contains a detailed schema of the folders structure descri
 * **ddlcomm**:    it contains the text of the debate in the Committee for the proposed bill
 * **ddlmess**:    it contains the text of the approved bill from the Italian Senate
 * **emend**:      it contains the amendments voted on the Assembly  
-* **emendc**:     it contains the amendments voted on the Committees 
+* **emendc**:     it contains the amendments voted on the Committees
+* **resaula**:    it contains the Assembly Debates 
 * **NUM_LEG**:    the Legislature number in the Italian Senate  
 * **ID_FASE**:    Unique ID for the bill
 * **ID_TESTO**:   Unique ID for the bill's text
@@ -50,4 +52,4 @@ CC BY 3.0
 
 ## Updates ##
 
-Last update: 11:00:02 14/05/2024
+Last update: 16:32:04 14/05/2024

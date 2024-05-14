@@ -27,6 +27,8 @@ Nella seguente sezione vi è uno schema dettagliato della struttura appena descr
             * ID_TESTO-em.akn.xml
         *   **emendc**
             * ID_TESTO-em.akn.xml
+        *   **resaula**
+            * ID_TESTO-ra.akn.xml
     
 
 ### Legenda ###
@@ -36,6 +38,7 @@ Nella seguente sezione vi è uno schema dettagliato della struttura appena descr
 * **ddlmess**:    cartella che contiene il testo del messaggio trasmesso alla successiva istituzione coinvolta nell'iter  
 * **emend**:      cartella che contiene gli emendamenti in Assemblea  
 * **emendc**:     cartella che contiene gli emendamenti in Commissione  
+* **resaula**:    cartella che contiene i Resoconti stenografici di Aula
 * **NUM_LEG**:    Numero della legislatura Senato  
 * **ID_FASE**:    ID univoco della fase dell'Atto nell'iter Senato  
 * **ID_TESTO**:   ID univoco del testo nella BGT Senato
@@ -51,4 +54,4 @@ CC BY 3.0
 
 ## Aggiornamento ##
 
-Ultimo aggiornamento: 11:00:02 14/05/2024
+Ultimo aggiornamento: 16:32:04 14/05/2024
