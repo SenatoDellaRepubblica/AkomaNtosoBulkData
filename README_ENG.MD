@@ -27,8 +27,10 @@ The following section contains a detailed schema of the folders structure descri
         *   **emendc**
             * ID_TESTO-em.akn.xml
         *   **resaula**
-            * ID_TESTO-ra.akn.xml    
-
+            * ID_TESTO-ra.akn.xml
+        *   **sommcomm**
+            * ID_TESTO-rc.akn.xml
+            
 ### Legenda ###
 
 * **ddlpres**:    it contains the text of the proposed bill
@@ -36,7 +38,8 @@ The following section contains a detailed schema of the folders structure descri
 * **ddlmess**:    it contains the text of the approved bill from the Italian Senate
 * **emend**:      it contains the amendments voted on the Assembly  
 * **emendc**:     it contains the amendments voted on the Committees
-* **resaula**:    it contains the Assembly Debates 
+* **resaula**:    it contains the Assembly Debates
+* **sommcomm**:   it contains the Committees summary reports 
 * **NUM_LEG**:    the Legislature number in the Italian Senate  
 * **ID_FASE**:    Unique ID for the bill
 * **ID_TESTO**:   Unique ID for the bill's text
@@ -52,4 +55,4 @@ CC BY 3.0
 
 ## Updates ##
 
-Last update: 11:00:01 07/10/2024
+Last update: 16:07:41 09/10/2024
