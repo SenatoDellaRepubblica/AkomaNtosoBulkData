@@ -57,4 +57,4 @@ CC BY 3.0
 
 ## Aggiornamento ##
 
-Ultimo aggiornamento: 16:00:02 15/05/2025
+Ultimo aggiornamento: 17:00:01 15/05/2025
