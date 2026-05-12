@@ -53,7 +53,7 @@ Senato della Repubblica - Servizio dell'Informatica
 
 ## Licenza ##
 
-CC BY 3.0
+CC BY 4.0
 
 ## Aggiornamento ##
 
