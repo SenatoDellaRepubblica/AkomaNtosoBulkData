@@ -51,8 +51,8 @@ Italian Senate - IT Office
 
 ## License ##
 
-CC BY 3.0
+CC BY 4.0
 
 ## Updates ##
 
-Last update: 09:00:02 20/05/2026
+Last update: 14:00:01 20/05/2026
