@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/G/2029/1/8/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/G/2029/1/8"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2029/C/G/2029/1/8/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/G/2029/1/8/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/G/2029/1/8/ita@"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2029/C/G/2029/1/8/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/G/2029/1/8/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/G/2029/1/8/ita@.akn"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2029/C/G/2029/1/8/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-05"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-14"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-05" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-14" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-14" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2029/C/G/2029/1/8/ita@/main" showAs="generation"/>
@@ -49,7 +50,8 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/36440" showAs="Domenico Matera"/>
+				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/36440" showAs="Domenico Matera"/>
+				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/senatore/32619" showAs="Gabriella Di Girolamo"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -62,6 +64,13 @@
 			<an:p>
 				<an:docProponent refersTo="#ID0E5" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Matera</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0EIB" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Di</an:span>
+					 
+					<an:span style="font-variant:small-caps;">Girolamo</an:span>
 				</an:docProponent>
 			</an:p>
 		</an:preface>
@@ -89,6 +98,11 @@
 				
 
 				<an:p style="text-align:justify">          a valutare l'opportunità di adottare iniziative volte a promuovere, durante il perdurare di crisi dei mercati internazionali o in presenza di aumenti dei prezzi dei prodotti energetici, la stipula di accordi o contratti aziendali, proposti dalle rappresentanze sindacali aziendali e sottoscritti dai datori di lavoro pubblici e privati, finalizzati a incrementare, compatibilmente con le esigenze organizzative del datore di lavoro e senza nuovi o maggiori oneri a carico della finanza pubblica, le ore o i giorni di lavoro svolti in modalità agile rispetto a quelli già previsti dai contratti collettivi nazionali di lavoro e dagli accordi o contratti aziendali previgenti.</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome>Accolto come raccomandazione</an:outcome>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>

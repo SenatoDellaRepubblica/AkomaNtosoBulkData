@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/1.8/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/1.8"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2029/C/1.8/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/1.8/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/1.8/ita@"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2029/C/1.8/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/1.8/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/1.8/ita@.akn"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2029/C/1.8/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-05"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-14"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-05" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-14" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-14" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2029/C/1.8/ita@/main" showAs="generation"/>
@@ -49,11 +50,11 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/32608" showAs="Marco Croatti"/>
-				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/32726" showAs="Mario Turco"/>
-				<an:TLCPerson id="ID0ESB" href="http://dati.senato.it/32619" showAs="Gabriella Di Girolamo"/>
-				<an:TLCPerson id="ID0E6B" href="http://dati.senato.it/36410" showAs="Luigi Nave"/>
-				<an:TLCPerson id="ID0EJC" href="http://dati.senato.it/36425" showAs="Elena Sironi"/>
+				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/32608" showAs="Marco Croatti"/>
+				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/senatore/32726" showAs="Mario Turco"/>
+				<an:TLCPerson id="ID0ESB" href="http://dati.senato.it/senatore/32619" showAs="Gabriella Di Girolamo"/>
+				<an:TLCPerson id="ID0E6B" href="http://dati.senato.it/senatore/36410" showAs="Luigi Nave"/>
+				<an:TLCPerson id="ID0EJC" href="http://dati.senato.it/senatore/36425" showAs="Elena Sironi"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -100,6 +101,11 @@
 					. Le aliquote di accisa applicate sui prodotti energetici usati come carburanti ovvero come combustibili per riscaldamento per usi civili, stabilite dal testo unico delle disposizioni legislative concernenti le imposte sulla produzione e sui consumi e relative sanzioni penali e amministrative, di cui al decreto legislativo 26 ottobre 1995, n. 504, e successive modificazioni, possono essere rideterminate con decreto del Ministro dell'economia e delle finanze, di concerto con il Ministro dell'ambiente e della sicurezza energetica, ai sensi dell'articolo 1, comma 290, della legge 24 dicembre 2007, n. 244, ferme restando le condizioni di cui all'articolo 1, comma 291, della stessa legge, anche con cadenza inferiore a quella prevista nel medesimo comma 291. Relativamente ai prodotti energetici usati come carburanti, il decreto di cui al presente comma può contenere anche disposizioni necessarie a coordinare l'applicazione dell'aliquota di accisa sul gasolio usato come carburante, diminuita dallo stesso decreto, con l'applicazione dell'aliquota di accisa sul gasolio commerciale di cui al numero 4
 					<an:i>-bis</an:i>
 					 della tabella A allegata al testo unico di cui al decreto legislativo 26 ottobre 1995, n. 504, nonché prevedere l'obbligo, stabilendone termini e modalità, da parte degli esercenti i depositi commerciali e degli esercenti gli impianti di distribuzione stradale di carburanti, di trasmettere i dati relativi alle giacenze, rilevate presso i rispettivi depositi e impianti, dei prodotti energetici per i quali il medesimo decreto di cui all'articolo 1, comma 290, della legge n. 244 del 2007 prevede la riduzione della relativa aliquota di accisa. Per la mancata comunicazione delle suddette giacenze nonché per l'invio della medesima comunicazione con dati incompleti o non veritieri, si applica la sanzione prevista dall'articolo 50, comma 1, del predetto testo unico.».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome>Respinto</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

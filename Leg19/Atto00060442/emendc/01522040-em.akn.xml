@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/2.0.3/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/2.0.3"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2029/C/2.0.3/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/2.0.3/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/2.0.3/ita@"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2029/C/2.0.3/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/2.0.3/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/2.0.3/ita@.akn"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2029/C/2.0.3/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-05"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-14"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-05" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-14" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-14" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2029/C/2.0.3/ita@/main" showAs="generation"/>
@@ -49,7 +50,7 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/4192" showAs="Claudio Fazzone"/>
+				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/4192" showAs="Claudio Fazzone"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -87,6 +88,11 @@
 				
 
 				<an:p style="margin-left:0cm; margin-right:3.6pt; text-align:justify">          1. Al fine di favorire il processo di elettrificazione dei consumi e il raggiungimento degli obiettivi fissati dal Piano nazionale energia e clima in termini di elettrificazione dei consumi, in linea con gli orientamenti dell'Unione Europea, ARERA, nell'ambito della revisione delle condizioni economiche per l'erogazione del servizio di connessione, rimodula i contributi, ivi compresi quelli a titolo di "Quota potenza", legati alla possibilità massima di prelievo dalla rete, e quelli a titolo di "Quota distanza", dovuti in fase di primo allacciamento alla rete per acquisire il diritto alla connessione.».</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome>V.testo 2</an:outcome>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>

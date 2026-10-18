@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/1.15/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/1.15"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2029/C/1.15/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/1.15/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/1.15/ita@"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2029/C/1.15/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/1.15/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/1.15/ita@.akn"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2029/C/1.15/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-05"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-14"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-05" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-14" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-14" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2029/C/1.15/ita@/main" showAs="generation"/>
@@ -49,11 +50,11 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/36401" showAs="Nicola Irto"/>
-				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/29270" showAs="Lorenzo Basso"/>
-				<an:TLCPerson id="ID0ESB" href="http://dati.senato.it/30294" showAs="Michele Fina"/>
-				<an:TLCPerson id="ID0E3B" href="http://dati.senato.it/37739" showAs="Cristina Tajani"/>
-				<an:TLCPerson id="ID0EGC" href="http://dati.senato.it/32660" showAs="Daniele Manca"/>
+				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/36401" showAs="Nicola Irto"/>
+				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/senatore/29270" showAs="Lorenzo Basso"/>
+				<an:TLCPerson id="ID0ESB" href="http://dati.senato.it/senatore/30294" showAs="Michele Fina"/>
+				<an:TLCPerson id="ID0E3B" href="http://dati.senato.it/senatore/37739" showAs="Cristina Tajani"/>
+				<an:TLCPerson id="ID0EGC" href="http://dati.senato.it/senatore/32660" showAs="Daniele Manca"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -98,6 +99,11 @@
 					. All'articolo 3 del decreto-legge 18 marzo 2026, n. 33, convertito, con modificazioni, dalla legge 13 maggio 2026, n. 79, dopo il comma 1 è inserito il seguente: "1
 					<an:i>-bis</an:i>
 					. Il contributo di cui al comma 1 è riconosciuto, alle medesime condizioni e con le medesime modalità, anche alle imprese di cui al medesimo comma 1 per la maggiore spesa sostenuta, nel periodo ivi indicato, per l'acquisto di gas naturale liquefatto, anche di origine biologica, impiegato come carburante in veicoli di massa massima complessiva pari o superiore a 7,5 tonnellate adibiti all'esercizio delle attività di trasporto ivi indicate. Ai fini del primo periodo, la maggiore spesa è determinata rispetto al prezzo medio del gas naturale liquefatto per autotrazione rilevato dal Ministero dell'ambiente e della sicurezza energetica nel mese di febbraio 2026. Il contributo di cui al presente comma è riconosciuto nell'ambito delle risorse autorizzate ai sensi del comma 1, secondo periodo, che costituiscono limite massimo di spesa."».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome>Respinto</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

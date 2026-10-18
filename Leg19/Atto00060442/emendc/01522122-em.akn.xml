@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/2.0.12/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/2.0.12"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2029/C/2.0.12/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/2.0.12/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/2.0.12/ita@"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2029/C/2.0.12/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2029/C/2.0.12/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2029/C/2.0.12/ita@.akn"/>
-					<an:FRBRdate date="2026-10-05" name="presentazione"/>
+					<an:FRBRdate date="2026-10-14" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2029/C/2.0.12/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-05"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-14"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-05" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-14" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-14" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2029/C/2.0.12/ita@/main" showAs="generation"/>
@@ -49,11 +50,11 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/36401" showAs="Nicola Irto"/>
-				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/29270" showAs="Lorenzo Basso"/>
-				<an:TLCPerson id="ID0ESB" href="http://dati.senato.it/30294" showAs="Michele Fina"/>
-				<an:TLCPerson id="ID0E3B" href="http://dati.senato.it/37739" showAs="Cristina Tajani"/>
-				<an:TLCPerson id="ID0EGC" href="http://dati.senato.it/32660" showAs="Daniele Manca"/>
+				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/36401" showAs="Nicola Irto"/>
+				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/senatore/29270" showAs="Lorenzo Basso"/>
+				<an:TLCPerson id="ID0ESB" href="http://dati.senato.it/senatore/30294" showAs="Michele Fina"/>
+				<an:TLCPerson id="ID0E3B" href="http://dati.senato.it/senatore/37739" showAs="Cristina Tajani"/>
+				<an:TLCPerson id="ID0EGC" href="http://dati.senato.it/senatore/32660" showAs="Daniele Manca"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -120,6 +121,11 @@
 				
 
 				<an:p style="text-align:justify">          3. Al fine di garantire la copertura degli oneri derivanti dall'applicazione della presente disposizione e di ridurre gli oneri gravanti su passeggeri e merci, è istituito il Fondo per la compensazione dei costi di trasporto delle regioni insulari, a cui è destinata una quota non inferiore al 20 per cento dei proventi delle aste delle quote di emissione riferibili al settore marittimo. Agli oneri derivanti dal presente articolo, nel limite massimo di 200 milioni di euro annui per ciascuno degli anni 2026, 2027 e 2028, si provvede mediante utilizzo del Fondo di cui al presente comma. Con decreto del Ministro dell'economia e delle finanze, di concerto con il Ministro dell'ambiente e della sicurezza energetica e con il Ministro delle infrastrutture e dei trasporti, da adottarsi entro sessanta giorni dalla data di entrata in vigore della legge di conversione del presente decreto, sono stabilite i criteri di determinazione dei maggiori costi ETS, le modalità attuative e le procedure di riparto del Fondo di cui al presente articolo, nonché le disposizioni in materia di controllo e rendicontazione.».</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome>Respinto</an:outcome>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>
