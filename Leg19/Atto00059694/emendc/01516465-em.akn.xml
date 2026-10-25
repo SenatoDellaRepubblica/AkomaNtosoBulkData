@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1712/C/1.301/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1712/C/1.301"/>
-					<an:FRBRdate date="2026-10-13" name="presentazione"/>
+					<an:FRBRdate date="2026-10-21" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1712/C/1.301/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1712/C/1.301/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1712/C/1.301/ita@"/>
-					<an:FRBRdate date="2026-10-13" name="presentazione"/>
+					<an:FRBRdate date="2026-10-21" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1712/C/1.301/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1712/C/1.301/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1712/C/1.301/ita@.akn"/>
-					<an:FRBRdate date="2026-10-13" name="presentazione"/>
+					<an:FRBRdate date="2026-10-21" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1712/C/1.301/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-13"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-21"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-13" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-21" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-21" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1712/C/1.301/ita@/main" showAs="generation"/>
@@ -83,6 +84,11 @@
 					          «6. Per gli iscritti nell'elenco speciale di cui all'articolo 5, comma 1, terzo periodo, il potere disciplinare è esercitato dal datore di lavoro. L'azione disciplinare può essere in ogni caso promossa dal consiglio dell'ordine territoriale al cui albo il professionista è iscritto per l'accertamento delle violazioni del codice deontologico che ledono il decoro e la dignità della professione e per l'accertamento di gravi mancanze nell'esercizio dell'attività professionale da cui può discendere l'irrogazione delle sanzioni disciplinari di cui all'articolo 6-
 					<an:i>decies,</an:i>
 					 comma 1, lettere b) e c).».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome>Approvato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

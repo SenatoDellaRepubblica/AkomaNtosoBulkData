@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1712/C/2.300/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1712/C/2.300"/>
-					<an:FRBRdate date="2026-10-13" name="presentazione"/>
+					<an:FRBRdate date="2026-10-21" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1712/C/2.300/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1712/C/2.300/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1712/C/2.300/ita@"/>
-					<an:FRBRdate date="2026-10-13" name="presentazione"/>
+					<an:FRBRdate date="2026-10-21" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1712/C/2.300/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1712/C/2.300/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1712/C/2.300/ita@.akn"/>
-					<an:FRBRdate date="2026-10-13" name="presentazione"/>
+					<an:FRBRdate date="2026-10-21" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1712/C/2.300/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-13"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-21"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-13" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-21" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-21" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1712/C/2.300/ita@/main" showAs="generation"/>
@@ -76,6 +77,11 @@
 					: «Fatto salvo quanto previsto dall'articolo 14, comma 3, del decreto legislativo 13 aprile 2017, n. 65, come modificato dall'articolo 2, comma 1
 					<an:i>-quater</an:i>
 					, lettere a) e b), del decreto-legge 24 giugno 2025, n. 90, convertito, con modificazioni, dalla legge 30 luglio 2025, n. 109, coloro che».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome>Approvato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
