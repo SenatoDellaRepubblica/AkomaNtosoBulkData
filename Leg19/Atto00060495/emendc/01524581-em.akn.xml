@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/7.41/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/7.41"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/7.41/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/7.41/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/7.41/ita@"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2053/C/7.41/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/7.41/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/7.41/ita@.akn"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/7.41/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-21"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-29"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-21" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-29" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-29" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2053/C/7.41/ita@/main" showAs="generation"/>
@@ -91,6 +92,11 @@
 					. In deroga al termine previsto dal comma 1, al fine del raggiungimento degli obiettivi previsti dalla riforma 2.1 della Missione 4, Componente 1, del Piano nazionale di ripresa e resilienza, limitatamente all'anno scolastico 2026/2027, le procedure assunzionali del personale docente  sono completate entro il 31 dicembre 2026 attingendo anche alle graduatorie pubblicate dopo il 31 agosto 2026, comunque non oltre il 10 dicembre 2026, dei concorsi banditi ai sensi dell'articolo 59, comma 11, del decreto-legge 25 maggio 2021, n. 73, convertito, con modificazioni, dalla legge 23 luglio 2021, n. 106. I vincitori dei concorsi di cui al primo periodo inseriti nelle graduatorie pubblicate dopo il 31 agosto 2026, e comunque non oltre il 10 dicembre 2026, sono destinatari di nomina giuridica con decorrenza 1° settembre 2026 ed economica dalla data dell'effettiva presa di servizio. Ai vincitori dei concorsi di cui al secondo periodo, se privi di abilitazione, si applica quanto previsto dagli articoli 13, comma 2, e 18-
 					<an:i>bis</an:i>
 					, comma 4, del decreto legislativo 13 aprile 2017, n. 59."."
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Accantonato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

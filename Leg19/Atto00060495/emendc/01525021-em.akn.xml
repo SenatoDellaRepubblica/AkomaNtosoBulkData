@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/13.88/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/13.88"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/13.88/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/13.88/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/13.88/ita@"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2053/C/13.88/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/13.88/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/13.88/ita@.akn"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/13.88/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-21"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-29"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-21" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-29" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-29" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2053/C/13.88/ita@/main" showAs="generation"/>
@@ -105,6 +106,11 @@
 					     
 					<an:i>Conseguentemente</an:i>
 					, al comma 4, aggiungere, in fine, i seguenti periodi: «La dotazione del fondo di cui al primo periodo è incrementata di 2,4 milioni di euro per l'anno 2026 e di 7,2 milioni di euro annui a decorrere dall'anno 2027. Le risorse di cui al periodo precedente sono destinate esclusivamente ai percorsi didattici personalizzati di cui all'articolo 45, comma 2, del regolamento di cui al decreto del Presidente della Repubblica 31 agosto 1999, n. 394, come modificato dal comma 6 del presente articolo, e sono ripartite tra le istituzioni scolastiche con decreto del Ministro dell'istruzione e del merito: per l'anno 2026, in proporzione al numero degli alunni con cittadinanza non italiana iscritti per la prima volta al sistema nazionale di istruzione; a decorrere dall'anno 2027, in proporzione al numero degli alunni iscritti a una classe inferiore a quella corrispondente all'età anagrafica, rilevato annualmente dal Ministero attraverso l'Anagrafe nazionale degli studenti. Ai relativi oneri, pari a 2,4 milioni di euro per l'anno 2026 e a 7,2 milioni di euro annui a decorrere dall'anno 2027, si provvede mediante corrispondente riduzione del Fondo per interventi strutturali di politica economica, di cui all'articolo 10, comma 5, del decreto-legge 29 novembre 2004, n. 282, convertito, con modificazioni, dalla legge 27 dicembre 2004, n. 307.».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Accantonato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

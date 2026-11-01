@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/2.10/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/2.10"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/2.10/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/2.10/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/2.10/ita@"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2053/C/2.10/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/2.10/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/2.10/ita@.akn"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/2.10/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-21"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-29"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-21" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-29" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-29" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2053/C/2.10/ita@/main" showAs="generation"/>
@@ -100,6 +101,11 @@
 					         
 					<an:i> c) al comma 2, aggiungere, in fine, il seguente periodo:</an:i>
 					 «Qualora il decreto di cui all'articolo 7, comma 9, della legge 12 settembre 2025, n. 131, non sia adottato entro il 31 marzo 2027, i criteri, ivi inclusi quelli per l'individuazione dei comuni limitrofi, e le modalità di concessione del credito d'imposta di cui ai commi 5, 6 e 7 del medesimo articolo, anche ai fini del rispetto del limite di spesa di cui al comma 8, nonché le disposizioni relative ai controlli e al recupero del beneficio indebitamente fruito, sono definiti, entro i successivi trenta giorni, con provvedimento del direttore dell'Agenzia delle entrate.».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

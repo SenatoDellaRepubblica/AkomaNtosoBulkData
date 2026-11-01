@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/14.0.21/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/14.0.21"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/14.0.21/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/14.0.21/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/14.0.21/ita@"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2053/C/14.0.21/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/14.0.21/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/14.0.21/ita@.akn"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/14.0.21/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-21"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-29"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-21" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-29" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-29" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2053/C/14.0.21/ita@/main" showAs="generation"/>
@@ -52,6 +53,7 @@
 				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/22918" showAs="Peppe De Cristofaro"/>
 				<an:TLCPerson id="ID0ELB" href="http://dati.senato.it/senatore/36390" showAs="Ilaria Cucchi"/>
 				<an:TLCPerson id="ID0EVB" href="http://dati.senato.it/senatore/36437" showAs="Tino Magni"/>
+				<an:TLCPerson id="ID0E6B" href="http://dati.senato.it/senatore/31875" showAs="Cecilia D'Elia"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -78,6 +80,11 @@
 					<an:span style="font-variant:small-caps;">Magni</an:span>
 				</an:docProponent>
 			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0E6B" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">D'Elia</an:span>
+				</an:docProponent>
+			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
@@ -99,7 +106,7 @@
 				</an:p>
 				
 
-				<an:ol start="1" type="1" style="margin-top:0cm;" id="ID0ERC">
+				<an:ol start="1" type="1" style="margin-top:0cm;" id="ID0E3C">
 					
 
 					<an:li style="text-align:justify;">Al fine di assicurare la trasparenza e la qualità dell'offerta formativa universitaria, il Ministero dell'università e della ricerca, avvalendosi dell'Agenzia nazionale di valutazione del sistema universitario e della ricerca (ANVUR), istituisce un sistema permanente di monitoraggio dei corsi di studio erogati prevalentemente o integralmente a distanza, con particolare riferimento alle università telematiche.</an:li>
@@ -132,7 +139,7 @@
 				<an:p style="text-align:justify;">          g) esiti delle procedure di accreditamento e delle verifiche sulla qualità dell'offerta formativa.</an:p>
 				
 
-				<an:ol start="3" type="1" style="margin-top:0cm;" id="ID0EZD">
+				<an:ol start="3" type="1" style="margin-top:0cm;" id="ID0EEE">
 					
 
 					<an:li style="text-align:justify;">Il Ministero dell'università e della ricerca pubblica annualmente, sul proprio sito istituzionale, una relazione contenente i risultati del monitoraggio, con dati aggregati e comparabili, distinti per ateneo e corso di studio, nel rispetto della normativa in materia di protezione dei dati personali. La relazione evidenzia eventuali anomalie significative rispetto agli indicatori di qualità del sistema universitario e le conseguenti iniziative di approfondimento e verifica.</an:li>
@@ -148,6 +155,11 @@
 					
 
 				</an:ol>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Accantonato</an:outcome>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>

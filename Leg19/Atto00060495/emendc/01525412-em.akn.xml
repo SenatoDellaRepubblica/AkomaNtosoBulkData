@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/13.0.8/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/13.0.8"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/13.0.8/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/13.0.8/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/13.0.8/ita@"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2053/C/13.0.8/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/13.0.8/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/13.0.8/ita@.akn"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/13.0.8/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-21"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-29"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-21" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-29" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-29" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2053/C/13.0.8/ita@/main" showAs="generation"/>
@@ -52,6 +53,7 @@
 				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/32634" showAs="Barbara Floridia"/>
 				<an:TLCPerson id="ID0EKB" href="http://dati.senato.it/senatore/36417" showAs="Luca Pirondini"/>
 				<an:TLCPerson id="ID0EUB" href="http://dati.senato.it/senatore/36381" showAs="Vincenza Aloisio"/>
+				<an:TLCPerson id="ID0E5B" href="http://dati.senato.it/senatore/36385" showAs="Dolores Bevilacqua"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -75,6 +77,11 @@
 			<an:p>
 				<an:docProponent refersTo="#ID0EUB" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Aloisio</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0E5B" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Bevilacqua</an:span>
 				</an:docProponent>
 			</an:p>
 		</an:preface>
@@ -202,6 +209,11 @@
 					          
 					<an:i>11.</an:i>
 					 Al personale docente, educativo e amministrativo, tecnico e ausiliario delle istituzioni scolastiche ed educative statali è riconosciuto il diritto al buono pasto per le giornate nelle quali la prestazione lavorativa complessiva ecceda le sei ore, comprese le attività funzionali e le ulteriori attività obbligatorie connesse al servizio. Le modalità, i criteri e le condizioni di riconoscimento e di erogazione del buono pasto sono disciplinati dalla contrattazione collettiva nazionale del comparto Istruzione e ricerca, settore scuola. A decorrere dall'anno 2027 è istituito presso il Ministero dell'istruzione e del merito un apposito fondo destinato al finanziamento del buono pasto per il personale della scuola, con una dotazione di 250 milioni di euro per l'anno 2027 e di 450 milioni di euro annui a decorrere dall'anno 2028: ai relativi oneri delle disposizioni di cui al presente comma si provvede mediante corrispondente riduzione della dotazione del Fondo per interventi strutturali di politica economica, di cui all'articolo 10, comma 5, del decreto-legge 29 novembre 2004, n. 282, convertito, con modificazioni, dalla legge 27 dicembre 2004, n. 307».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Accantonato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

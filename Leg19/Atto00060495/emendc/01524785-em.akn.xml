@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/1.74/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/1.74"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/1.74/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/1.74/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/1.74/ita@"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2053/C/1.74/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/1.74/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/1.74/ita@.akn"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/1.74/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-21"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-29"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-21" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-29" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-29" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2053/C/1.74/ita@/main" showAs="generation"/>
@@ -110,6 +111,11 @@
 					          «11
 					<an:i>-bis</an:i>
 					. Al fine di assicurare la partecipazione effettiva di tutte le componenti del Gruppo di lavoro operativo per l'inclusione, la convocazione è effettuata con modalità tempestive, comprensibili e accessibili ed è accompagnata dalla messa a disposizione preventiva della documentazione necessaria; le riunioni sono programmate, per quanto possibile, in orari compatibili con le esigenze delle famiglie e dei professionisti coinvolti ed è garantita, quando appropriata, la partecipazione a distanza. Qualora la presenza diretta non sia possibile, sono acquisiti contributi scritti o valutazioni professionali. La partecipazione dell'alunno è valorizzata anche attraverso strumenti di comunicazione appropriati. Il contributo professionale dei servizi sanitari è assicurato attraverso modalità organizzative definite in raccordo tra le amministrazioni interessate. Qualora i genitori non possano partecipare per motivi oggettivi, l'istituzione scolastica concorda con la famiglia una diversa data ovvero il collegamento a distanza. Il PEI può essere approvato in assenza di un'intera componente prevista, purché regolarmente convocata, soltanto qualora un ulteriore differimento comprometta concretamente l'attivazione degli interventi necessari all'alunno; in tal caso la decisione è specificamente motivata, tiene conto dei contributi e delle osservazioni già acquisiti e prevede, quando siano mancati elementi essenziali per la progettazione, una successiva verifica collegiale tempestiva. Resta fermo quanto disposto dall'articolo 7, comma 2, lettera b), del decreto legislativo 13 aprile 2017, n. 66. All'attuazione del presente comma si provvede nell'ambito delle risorse umane, strumentali e finanziarie disponibili a legislazione vigente.».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Accantonato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

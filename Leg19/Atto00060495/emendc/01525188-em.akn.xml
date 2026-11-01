@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/9.3/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/9.3"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/9.3/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/9.3/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/9.3/ita@"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2053/C/9.3/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/9.3/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/9.3/ita@.akn"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/9.3/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-21"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-29"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-21" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-29" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-29" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2053/C/9.3/ita@/main" showAs="generation"/>
@@ -52,6 +53,7 @@
 				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/22918" showAs="Peppe De Cristofaro"/>
 				<an:TLCPerson id="ID0ELB" href="http://dati.senato.it/senatore/36390" showAs="Ilaria Cucchi"/>
 				<an:TLCPerson id="ID0EVB" href="http://dati.senato.it/senatore/36437" showAs="Tino Magni"/>
+				<an:TLCPerson id="ID0E6B" href="http://dati.senato.it/senatore/31875" showAs="Cecilia D'Elia"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -78,6 +80,11 @@
 					<an:span style="font-variant:small-caps;">Magni</an:span>
 				</an:docProponent>
 			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0E6B" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">D'Elia</an:span>
+				</an:docProponent>
+			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
@@ -92,7 +99,7 @@
 				<an:p style="text-align:justify;">          MONTE ORE AREA DI ISTRUZIONE GENERALE NAZIONALE </an:p>
 				
 
-				<an:table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;" id="ID0ENC">
+				<an:table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;" id="ID0EYC">
 					
 
 					<an:tr>
@@ -505,7 +512,7 @@
 				<an:p style="text-align:justify;">          MONTE ORE AREA DI INDIRIZZO FLESSIBILE SETTORE ECONOMICO </an:p>
 				
 
-				<an:table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;" id="ID0EJFAC">
+				<an:table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;" id="ID0EUFAC">
 					
 
 					<an:tr>
@@ -878,7 +885,7 @@
 				<an:p style="margin-top:0cm;margin-right:38.3pt;margin-bottom:.15pt;margin-left:-.25pt;text-align:justify;">          MONTE ORE AREA DI INDIRIZZO FLESSIBILE SETTORE TECNOLOGICO AMBIENTALE </an:p>
 				
 
-				<an:table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;" id="ID0EDPAC">
+				<an:table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;" id="ID0EOPAC">
 					
 
 					<an:tr>
@@ -1302,6 +1309,11 @@
 					. Al fine di rafforzare l'offerta formativa del primo biennio degli istituti tecnici e garantire la continuità degli insegnamenti, le ore rese disponibili a seguito dell'eliminazione della "Quota del curricolo a disposizione della scuola" nel secondo biennio e nel quinto anno, di cui al comma 1, sono destinate, prioritariamente a partire dal primo biennio dei settori economico e tecnologico-ambientale, al riallineamento della dotazione oraria delle singole discipline a quella prevista dall'ordinamento di cui al decreto del Presidente della Repubblica 15 marzo 2010, n. 88, previgente alla riforma introdotta dall'articolo 26
 					<an:i>-bis</an:i>
 					 del decreto-legge 23 settembre 2022, n. 144, convertito, con modificazioni, dalla legge 17 novembre 2022, n. 175. La riorganizzazione dei percorsi di studio è attuata senza riduzioni delle dotazioni organiche del personale docente, senza determinare situazioni di soprannumerarietà nelle istituzioni scolastiche e senza procedere all'accorpamento degli insegnamenti afferenti a discipline distinte».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Accantonato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

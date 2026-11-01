@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/9.16/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/9.16"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/9.16/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/9.16/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/9.16/ita@"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2053/C/9.16/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/9.16/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/9.16/ita@.akn"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/9.16/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-21"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-29"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-21" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-29" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-29" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2053/C/9.16/ita@/main" showAs="generation"/>
@@ -49,9 +50,10 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/22918" showAs="Peppe De Cristofaro"/>
-				<an:TLCPerson id="ID0ELB" href="http://dati.senato.it/senatore/36390" showAs="Ilaria Cucchi"/>
-				<an:TLCPerson id="ID0EVB" href="http://dati.senato.it/senatore/36437" showAs="Tino Magni"/>
+				<an:TLCPerson id="ID0E6" href="http://dati.senato.it/senatore/22918" showAs="Peppe De Cristofaro"/>
+				<an:TLCPerson id="ID0EMB" href="http://dati.senato.it/senatore/36390" showAs="Ilaria Cucchi"/>
+				<an:TLCPerson id="ID0EWB" href="http://dati.senato.it/senatore/36437" showAs="Tino Magni"/>
+				<an:TLCPerson id="ID0EAC" href="http://dati.senato.it/senatore/31875" showAs="Cecilia D'Elia"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -62,20 +64,25 @@
 				<an:docNumber>Emendamento n. 9.16</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#ID0E5" as="#tipoSenatore">
+				<an:docProponent refersTo="#ID0E6" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">De</an:span>
 					 
 					<an:span style="font-variant:small-caps;">Cristofaro</an:span>
 				</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#ID0ELB" as="#tipoSenatore">
+				<an:docProponent refersTo="#ID0EMB" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Cucchi</an:span>
 				</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#ID0EVB" as="#tipoSenatore">
+				<an:docProponent refersTo="#ID0EWB" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Magni</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0EAC" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">D'Elia</an:span>
 				</an:docProponent>
 			</an:p>
 		</an:preface>
@@ -86,10 +93,15 @@
 				</an:p>
 				
 
-				<an:p style="text-align:justify;line-height:normal;">
+				<an:p style="text-align:justify">
 					          «1
 					<an:i>-bis</an:i>
 					. Entro trenta giorni dalla data di entrata in vigore della legge di conversione del presente decreto, il Ministero dell'istruzione e del merito provvede all'aggiornamento dei quadri orari di cui al Decreto ministeriale n. 29 del 19 febbraio 2026 e delle disposizioni attuative relative agli insegnamenti geografici negli istituti tecnici, definendo in modo univoco, per ciascun indirizzo e annualità, le denominazioni delle discipline, i relativi contenuti essenziali, la consistenza oraria e le classi di concorso di assegnazione. Le disposizioni assicurano criteri uniformi di applicazione sul territorio nazionale, evitando sovrapposizioni e ambiguità tra gli insegnamenti di Geografia, Geografia economica e Geografia turistica.»
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Accantonato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

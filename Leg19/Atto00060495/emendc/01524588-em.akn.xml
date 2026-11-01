@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/7.78/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/7.78"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/7.78/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/7.78/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/7.78/ita@"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2053/C/7.78/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/7.78/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/7.78/ita@.akn"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/7.78/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-21"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-29"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-21" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-29" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-29" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2053/C/7.78/ita@/main" showAs="generation"/>
@@ -114,6 +115,11 @@
 					 del presente articolo,  al fine di garantire il potenziamento e l'implementazione dei processi di formazione, vigilanza e supporto alle istituzioni scolastiche autonome e di valorizzare l'esperienza maturata presso l'amministrazione, il Ministero dell'istruzione e del merito è autorizzato a bandire, con decreto da adottare entro sessanta giorni dalla data di entrata in vigore della legge di conversione del presente decreto, una procedura selettiva per l'assunzione a tempo indeterminato di dirigenti tecnici con funzioni ispettive nel ruolo di cui all'articolo 419 del decreto legislativo 16 aprile 1994, n. 297. La procedura di cui al precedente periodo è riservata ai soggetti in servizio, alla data di entrata in vigore della presente disposizione, in qualità di dirigenti tecnici con funzioni ispettive con incarico a tempo determinato, individuati ai sensi dell'art. 19, commi 5-
 					<an:i>bis</an:i>
 					 e 6 del decreto legislativo 30 marzo 2001, n. 165, che abbiano svolto il predetto incarico per almeno un triennio entro la data di entrata in vigore del presente comma, presso gli uffici dell'amministrazione centrale o periferica del Ministero dell'istruzione e del merito.  Con il decreto di cui al secondo periodo sono definite le modalità di partecipazione e lo svolgimento della procedura selettiva che si articola nella valutazione dei titoli e in una prova orale esperienziale superata dai candidati che conseguono un punteggio complessivo pari o superiore a 6/10 o equivalente. Alla procedura si provvede con le risorse disponibili a legislazione vigente, senza nuovi o maggiori oneri a carico della finanza pubblica. Il bando della procedura determina l'ammontare del contributo a carico dei partecipanti alla procedura, in misura tale da assicurarne l'integrale copertura. Fatti salvi i posti assegnati ai vincitori del concorso di cui all'articolo 2, comma 3, del decreto-legge 29 ottobre 2019, n. 126, convertito, con modificazioni, dalla legge 20 dicembre 2019, n. 159, il Ministero dell'istruzione del merito è autorizzato ad assumere, annualmente, a decorrere dall'anno 2027, i vincitori e gli idonei della procedura di cui al presente comma nei limiti e nell'ambito della dotazione organica e delle facoltà assunzionali previsti a legislazione vigente, fino a esaurimento della graduatoria, senza nuovi o maggiori oneri a carico della finanza pubblica e, in ogni caso, in coda ai vincitori del concorso di cui all'articolo 2, comma 3, del decreto-legge 29 ottobre 2019, n. 126, convertito, con modificazioni, dalla legge 20 dicembre 2019, n. 159.»
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Accantonato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

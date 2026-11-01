@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/14.0.27/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/14.0.27"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/14.0.27/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/14.0.27/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/14.0.27/ita@"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2053/C/14.0.27/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/14.0.27/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/14.0.27/ita@.akn"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/14.0.27/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-21"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-29"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-21" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-29" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-29" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2053/C/14.0.27/ita@/main" showAs="generation"/>
@@ -51,6 +52,12 @@
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
 				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/33005" showAs="Raffaella Paita"/>
 				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/senatore/25402" showAs="Daniela Sbrollini"/>
+				<an:TLCPerson id="ID0ESB" href="http://dati.senato.it/senatore/28924" showAs="Francesco Verducci"/>
+				<an:TLCPerson id="ID0E3B" href="http://dati.senato.it/senatore/31875" showAs="Cecilia D'Elia"/>
+				<an:TLCPerson id="ID0EGC" href="http://dati.senato.it/senatore/36417" showAs="Luca Pirondini"/>
+				<an:TLCPerson id="ID0EQC" href="http://dati.senato.it/senatore/32634" showAs="Barbara Floridia"/>
+				<an:TLCPerson id="ID0E3C" href="http://dati.senato.it/senatore/36381" showAs="Vincenza Aloisio"/>
+				<an:TLCPerson id="ID0EGD" href="http://dati.senato.it/senatore/36385" showAs="Dolores Bevilacqua"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -70,34 +77,70 @@
 					<an:span style="font-variant:small-caps;">Sbrollini</an:span>
 				</an:docProponent>
 			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0ESB" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Verducci</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0E3B" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">D'Elia</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0EGC" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Pirondini</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0EQC" as="#tipoSenatore">
+					<an:span style="font-variant:normal;">Barbara </an:span>
+					<an:span style="font-variant:small-caps;">Floridia</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0E3C" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Aloisio</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0EGD" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Bevilacqua</an:span>
+				</an:docProponent>
+			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
-				<an:p style="text-align:justify;">
+				<an:p style="text-align:justify">
 					<an:i>Dopo l'articolo, aggiungere il seguente:</an:i>
 				</an:p>
 				
 
 				<an:p style="text-align:center">
-					<an:b>
+					<an:strong>
 						«Art. 14-
 						<an:i>bis</an:i>
-					</an:b>
+					</an:strong>
 				</an:p>
 				
 
-				<an:p style="text-align:center;line-height:normal;">
+				<an:p style="text-align:center">
 					<an:i>(Aumento del fondo per favorire l'organizzazione da parte delle scuole secondarie di secondo grado di «viaggi della memoria» nei campi medesimi.)</an:i>
 				</an:p>
 				
 
-				<an:p style="line-height:normal;">          1. All'articolo 1, della legge 25 marzo  2025, n. 46, sono apportate le seguenti modificazioni:</an:p>
+				<an:p>          1. All'articolo 1, della legge 25 marzo  2025, n. 46, sono apportate le seguenti modificazioni:</an:p>
 				
 
-				<an:p style="text-align:justify;line-height:normal;">          a) al comma 1, le parole: "di 2 milioni di euro per ciascuno degli anni 2025, 2026 e 2027" sono sostituite dalle seguenti: di 2 milioni di euro per l'anno 2025 e di 5 milioni di euro per ciascuno degli anni dal 2026 e 2028</an:p>
+				<an:p style="text-align:justify">          a) al comma 1, le parole: "di 2 milioni di euro per ciascuno degli anni 2025, 2026 e 2027" sono sostituite dalle seguenti: di 2 milioni di euro per l'anno 2025 e di 5 milioni di euro per ciascuno degli anni dal 2026 e 2028</an:p>
 				
 
-				<an:p style="text-align:justify;line-height:normal;">          b) al comma 2, le parole da: "pari a 2 milioni di euro" fino alla fine del periodo sono sostituite delle seguente: " di 2 milioni di euro per l'anno 2025 e di 5 milioni di euro per ciascuno degli anni dal 2026 e 2028, si provvede mediante corrispondente riduzione del Fondo di cui all'articolo 1, comma 200, della legge 23 dicembre 2014, n. 190"</an:p>
+				<an:p style="text-align:justify">          b) al comma 2, le parole da: "pari a 2 milioni di euro" fino alla fine del periodo sono sostituite delle seguente: " di 2 milioni di euro per l'anno 2025 e di 5 milioni di euro per ciascuno degli anni dal 2026 e 2028, si provvede mediante corrispondente riduzione del Fondo di cui all'articolo 1, comma 200, della legge 23 dicembre 2014, n. 190"</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>

@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/14.38/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/14.38"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/14.38/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/14.38/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/14.38/ita@"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2053/C/14.38/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/14.38/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/14.38/ita@.akn"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/14.38/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-21"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-29"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-21" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-29" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-29" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2053/C/14.38/ita@/main" showAs="generation"/>
@@ -108,6 +109,11 @@
 					 e 22
 					<an:i>-ter</an:i>
 					 ovvero di posizioni ai sensi dell'articolo 22 e dell'articolo 24, comma 3, lettera a) della presente legge nel testo previgente alla entrata in vigore del decreto-legge 30 aprile 2022, n. 36, come modificato dalla legge 29 giugno 2022, n. 79, nel medesimo o in altro Ateneo, ovvero presso istituzioni dell'Alta formazione artistica, musicale e coreutica, istituzioni il cui diploma di perfezionamento scientifico è stato riconosciuto equipollente al titolo di dottore di ricerca ai sensi dell'articolo 74, quarto comma, del decreto del Presidente della Repubblica 11 luglio 1980, n. 382, nonché enti pubblici di ricerca, per un periodo complessivo superiore a cinque anni, anche non continuativi, la durata complessiva del contratto è ridotta, a richiesta dell'interessato, in misura corrispondente al periodo eccedente tale termine. Nel caso di riduzione della durata del contratto, si intende anche anticipato, di un numero di anni pari a quelli di cui è ridotta la durata del contratto medesimo, il termine a partire dal quale è possibile procedere alla valutazione ai sensi del comma 5. In ogni caso, il contratto stipulato ai sensi del primo periodo non può avere durata inferiore a un anno e la valutazione di cui al comma 5 non può essere anticipata antecedentemente alla conclusione del primo anno di contratto. Il riconoscimento di cui al presente comma non può essere cumulato con quelli previsti dall'articolo 14, comma 6-duodevicies, del decreto-legge 30 aprile 2022, n. 36, come modificato dalla legge 29 giugno 2022, n. 79»
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Accantonato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/1.73/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/1.73"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/1.73/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/1.73/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/1.73/ita@"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2053/C/1.73/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/1.73/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/1.73/ita@.akn"/>
-					<an:FRBRdate date="2026-10-21" name="presentazione"/>
+					<an:FRBRdate date="2026-10-29" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/1.73/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-21"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-10-29"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-21" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-10-29" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-10-29" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2053/C/1.73/ita@/main" showAs="generation"/>
@@ -99,6 +100,11 @@
 					          «11-
 					<an:i>bis</an:i>
 					. La convocazione del Gruppo di lavoro operativo per l'inclusione è comunicata ai componenti con un preavviso di almeno cinque giorni, salvo motivate ragioni di urgenza, ed è accompagnata dalla documentazione necessaria alla deliberazione. Ai soggetti esercenti la responsabilità genitoriale e allo studente di cui al comma 11 sono assicurate modalità accessibili di partecipazione, anche mediante collegamento a distanza. Qualora una componente regolarmente convocata non possa partecipare per un impedimento comunicato prima della riunione, il dirigente scolastico dispone il rinvio a una data non successiva ai dieci giorni seguenti, salvo quanto previsto dal quarto periodo. In caso di assenza di una componente regolarmente convocata, il Gruppo può comunque approvare il PEI quando il rinvio impedisce il rispetto dei termini di adozione o determina un ritardo nell'attivazione degli interventi di sostegno, dando conto nel verbale delle ragioni dell'assenza e delle osservazioni scritte eventualmente trasmesse dalla componente assente. In tale caso il PEI è riesaminato, con una nuova convocazione di tutti i componenti, entro trenta giorni dalla sua approvazione. Il PEI e il relativo verbale sono comunicati ai componenti del Gruppo entro cinque giorni dall'approvazione. Il riesame non sospende l'attuazione degli interventi già definiti. Restano fermi il supporto dell'unità di valutazione multidisciplinare di cui al comma 10 e quanto previsto dall'articolo 7, comma 2, lettera b), del decreto legislativo 13 aprile 2017, n. 66».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Accantonato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
