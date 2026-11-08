@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
 			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/2.1/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/2.1"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1457/A/2.1/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/2.1/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/2.1/ita@"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1457/A/2.1/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/2.1/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/2.1/ita@.akn"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1457/A/2.1/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2025-12-27"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-03"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2025-12-27" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-03" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-03" actor="#aula" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1457/A/2.1/ita@/main" showAs="generation"/>
@@ -49,10 +50,10 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="IDGXJDWD5VAH3DPI3GZWJIHZCV4BCMWKUHGG00KYP1LA3EOK22BF5O" href="http://dati.senato.it/32658" showAs="MAIORINO"/>
-				<an:TLCPerson id="IDX502XECVVZXCOCNNOZIECQA0YLQIKNFJJGPUWAKMSB5C241QF15G" href="http://dati.senato.it/33065" showAs="CATALDI"/>
-				<an:TLCPerson id="IDYYSS5R5SC3L0JG3MAAKWE5MRBO5VD32D5KVE3ZKO0LU50XVGIBJB" href="http://dati.senato.it/32640" showAs="GAUDIANO"/>
-				<an:TLCPerson id="ID1K53EAF4BHIMMEG0E4V10MFYHLLYARTMBKFH2QFGSBFP2YSEQCTM" href="http://dati.senato.it/36404" showAs="LOPREIATO"/>
+				<an:TLCPerson id="IDNBHDE5BG03CNHMG1M521RM30SPYUE4WPVUVVGVLGEZUYJYB5IPQD" href="http://dati.senato.it/senatore/32658" showAs="Alessandra Maiorino"/>
+				<an:TLCPerson id="IDZDP3I221SSBAJRAZN0WL21TQ0H5N41ZSGNETUKTZKBQZFDVATEM" href="http://dati.senato.it/senatore/33065" showAs="Roberto Cataldi"/>
+				<an:TLCPerson id="IDSP1LSMJPDPVBD3MEDKBXVSA1KIDHYQGUT5H0HJIPAZ11COKFLKAB" href="http://dati.senato.it/senatore/32640" showAs="Felicia Gaudiano"/>
+				<an:TLCPerson id="IDRS31V0U2BO3KFLZ2XZLMUN5EELY0XAHOBZUPO0IJYJAB3PRDYC5J" href="http://dati.senato.it/senatore/36404" showAs="Ada Lopreiato"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -63,29 +64,48 @@
 				<an:docNumber>Emendamento n. 2.1</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDGXJDWD5VAH3DPI3GZWJIHZCV4BCMWKUHGG00KYP1LA3EOK22BF5O" as="#tipoSenatore">MAIORINO</an:docProponent>
+				<an:docProponent refersTo="#IDNBHDE5BG03CNHMG1M521RM30SPYUE4WPVUVVGVLGEZUYJYB5IPQD" as="#tipoSenatore">Alessandra Maiorino</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDX502XECVVZXCOCNNOZIECQA0YLQIKNFJJGPUWAKMSB5C241QF15G" as="#tipoSenatore">CATALDI</an:docProponent>
+				<an:docProponent refersTo="#IDZDP3I221SSBAJRAZN0WL21TQ0H5N41ZSGNETUKTZKBQZFDVATEM" as="#tipoSenatore">Roberto Cataldi</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDYYSS5R5SC3L0JG3MAAKWE5MRBO5VD32D5KVE3ZKO0LU50XVGIBJB" as="#tipoSenatore">GAUDIANO</an:docProponent>
+				<an:docProponent refersTo="#IDSP1LSMJPDPVBD3MEDKBXVSA1KIDHYQGUT5H0HJIPAZ11COKFLKAB" as="#tipoSenatore">Felicia Gaudiano</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#ID1K53EAF4BHIMMEG0E4V10MFYHLLYARTMBKFH2QFGSBFP2YSEQCTM" as="#tipoSenatore">LOPREIATO</an:docProponent>
+				<an:docProponent refersTo="#IDRS31V0U2BO3KFLZ2XZLMUN5EELY0XAHOBZUPO0IJYJAB3PRDYC5J" as="#tipoSenatore">Ada Lopreiato</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
+				
+
 				<an:p>
 					<an:i>Sostituire l'articolo con il seguente:</an:i>
 				</an:p>
-				<an:p>"Art. 2</an:p>
+				
+
+				<an:p>
+					<an:strong>"Art. 2</an:strong>
+				</an:p>
+				
+
 				<an:p>
 					<an:i>(Attività consultiva della Corte dei conti in materia di contabilità pubblica)</an:i>
 				</an:p>
+				
+
 				<an:p>          «1. Le Sezioni riunite della Corte dei conti in sede consultiva, su richiesta delle amministrazioni centrali e degli altri organismi nazionali di diritto pubblico nazionali, rendono pareri in materie di contabilità pubblica, anche su questioni giuridiche applicabili a fattispecie concrete connesse all'attuazione del Piano nazionale di ripresa e resilienza (PNRR) e del Piano nazionale per gli investimenti complementari al PNRR (PNC), di valore complessivo non inferiore a un milione di euro. Le Sezioni regionali di controllo della Corte dei conti rendono i pareri di cui al primo periodo, su richiesta dei comuni, delle province, delle città metropolitane e delle regioni. È esclusa, in ogni caso, la gravità della colpa per gli atti adottati in conformità ai pareri resi. Le Sezioni riunite della Corte dei conti assicurano la funzione nomofilattica sull'attività consultiva.</an:p>
+				
+
 				<an:p>          2. I pareri di cui al comma 1 sono resi entro il termine di trenta giorni dalla richiesta.».</an:p>
+				
+
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
 			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/1.27/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/1.27"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1457/A/1.27/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/1.27/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/1.27/ita@"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1457/A/1.27/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/1.27/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/1.27/ita@.akn"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1457/A/1.27/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2025-12-27"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-03"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2025-12-27" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-03" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-03" actor="#aula" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1457/A/1.27/ita@/main" showAs="generation"/>
@@ -49,10 +50,10 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="ID3PVONAGPYYX2DOJFOTUYOXQNPGUWBKPGDKW2POGIOZUDVOGPTDK" href="http://dati.senato.it/36404" showAs="LOPREIATO"/>
-				<an:TLCPerson id="IDBNDT4UIUNDZCFRQ311OPTOQWJKJNR5HZVGEI0TDIQOA4NMEB53N" href="http://dati.senato.it/32658" showAs="MAIORINO"/>
-				<an:TLCPerson id="IDOWMD3SDOMZN5CJ04XDHWUTNMDCZ5C2Q5Q2WWMOGC52PNSRCBLMJ" href="http://dati.senato.it/33065" showAs="CATALDI"/>
-				<an:TLCPerson id="IDDIZOXMTF0UJCPFX0L0EU3FEYKL1W3QJUMBCKPMMHWXYC1GL5UBAH" href="http://dati.senato.it/32640" showAs="GAUDIANO"/>
+				<an:TLCPerson id="IDNBHDE5BG03CNHMG1M521RM30SPYUE4WPVUVVGVLGEZUYJYB5IPQD" href="http://dati.senato.it/senatore/36404" showAs="Ada Lopreiato"/>
+				<an:TLCPerson id="IDZDP3I221SSBAJRAZN0WL21TQ0H5N41ZSGNETUKTZKBQZFDVATEM" href="http://dati.senato.it/senatore/32658" showAs="Alessandra Maiorino"/>
+				<an:TLCPerson id="IDSP1LSMJPDPVBD3MEDKBXVSA1KIDHYQGUT5H0HJIPAZ11COKFLKAB" href="http://dati.senato.it/senatore/33065" showAs="Roberto Cataldi"/>
+				<an:TLCPerson id="IDRS31V0U2BO3KFLZ2XZLMUN5EELY0XAHOBZUPO0IJYJAB3PRDYC5J" href="http://dati.senato.it/senatore/32640" showAs="Felicia Gaudiano"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -63,20 +64,22 @@
 				<an:docNumber>Emendamento n. 1.27</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#ID3PVONAGPYYX2DOJFOTUYOXQNPGUWBKPGDKW2POGIOZUDVOGPTDK" as="#tipoSenatore">LOPREIATO</an:docProponent>
+				<an:docProponent refersTo="#IDNBHDE5BG03CNHMG1M521RM30SPYUE4WPVUVVGVLGEZUYJYB5IPQD" as="#tipoSenatore">Ada Lopreiato</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDBNDT4UIUNDZCFRQ311OPTOQWJKJNR5HZVGEI0TDIQOA4NMEB53N" as="#tipoSenatore">MAIORINO</an:docProponent>
+				<an:docProponent refersTo="#IDZDP3I221SSBAJRAZN0WL21TQ0H5N41ZSGNETUKTZKBQZFDVATEM" as="#tipoSenatore">Alessandra Maiorino</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDOWMD3SDOMZN5CJ04XDHWUTNMDCZ5C2Q5Q2WWMOGC52PNSRCBLMJ" as="#tipoSenatore">CATALDI</an:docProponent>
+				<an:docProponent refersTo="#IDSP1LSMJPDPVBD3MEDKBXVSA1KIDHYQGUT5H0HJIPAZ11COKFLKAB" as="#tipoSenatore">Roberto Cataldi</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDDIZOXMTF0UJCPFX0L0EU3FEYKL1W3QJUMBCKPMMHWXYC1GL5UBAH" as="#tipoSenatore">GAUDIANO</an:docProponent>
+				<an:docProponent refersTo="#IDRS31V0U2BO3KFLZ2XZLMUN5EELY0XAHOBZUPO0IJYJAB3PRDYC5J" as="#tipoSenatore">Felicia Gaudiano</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
+				
+
 				<an:p>
 					<an:i>Al comma 1, lettera a), numero 5), sostituire il comma</an:i>
 					 1
@@ -84,17 +87,37 @@
 					. 
 					<an:i>con il seguente:</an:i>
 				</an:p>
+				
+
 				<an:p>
+					          
 					<an:i>"</an:i>
 					1-
 					<an:i>octies</an:i>
 					. Salvo i casi di danno cagionato con dolo o di illecito arricchimento, il giudice esercita il potere di riduzione dell'addebito, ponendo a carico dei responsabili parte del danno accertato o del valore perduto, valutando obbligatoriamente le seguenti circostanze:
 				</an:p>
+				
+
 				<an:p>          a) situazioni di grave disorganizzazione amministrativa non imputabile al presunto responsabile;</an:p>
+				
+
 				<an:p>          b) ammontare degli ulteriori danni che l'amministrazione avrebbe potuto evitare ai sensi dell'art. 52, comma 6, del codice di giustizia contabile;</an:p>
+				
+
 				<an:p>          c) complessità applicativa delle norme di settore;</an:p>
+				
+
 				<an:p>          d) ravvedimento operoso del presunto responsabile;</an:p>
+				
+
 				<an:p>          e) capacità economiche del soggetto responsabile ove desumibili dalla documentazione agli atti. Il giudice può esercitare, altresì, in ogni grado di giudizio, il potere riduttivo anche in presenza di ogni altra circostanza di carattere oggettivo o soggettivo rilevata d'ufficio, in quanto risultante dagli atti di causa, ovvero dedotta dalle parti. In tale ultimo caso, il mancato accoglimento della richiesta di riduzione deve costituire oggetto di specifica motivazione".</an:p>
+				
+
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>

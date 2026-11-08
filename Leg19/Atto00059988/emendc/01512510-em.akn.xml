@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1837/C/19.5/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1837/C/19.5"/>
-					<an:FRBRdate date="2026-07-14" name="presentazione"/>
+					<an:FRBRdate date="2026-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1837/C/19.5/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1837/C/19.5/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1837/C/19.5/ita@"/>
-					<an:FRBRdate date="2026-07-14" name="presentazione"/>
+					<an:FRBRdate date="2026-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1837/C/19.5/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1837/C/19.5/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1837/C/19.5/ita@.akn"/>
-					<an:FRBRdate date="2026-07-14" name="presentazione"/>
+					<an:FRBRdate date="2026-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1837/C/19.5/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-07-14"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-05"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-07-14" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-05" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-05" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1837/C/19.5/ita@/main" showAs="generation"/>
@@ -49,7 +50,8 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/36411" showAs="Antonio Nicita"/>
+				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/36411" showAs="Antonio Nicita"/>
+				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/senatore/29270" showAs="Lorenzo Basso"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -64,6 +66,11 @@
 					<an:span style="font-variant:small-caps;">Nicita</an:span>
 				</an:docProponent>
 			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0EIB" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Basso</an:span>
+				</an:docProponent>
+			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
@@ -76,6 +83,11 @@
 					          «4
 					<an:i>-bis</an:i>
 					. Al fine di assicurare l'accesso ai servizi bancari della popolazione residente nelle isole minori, entro tre mesi dalla data di entrata in vigore della presente disposizione le banche di cui all'articolo 1 del decreto legislativo 1° settembre 1993, n. 385, adottano, anche di concerto tra loro, apposite misure volte a garantire la continuità operativa delle agenzie e degli sportelli bancari esistenti nel territorio delle isole minori, nonché a ripristinare l'operatività delle filiali bancarie che abbiano cessato l'attività ovvero abbiano perso la propria autonomia operativa a seguito di processi di riorganizzazione o di accentramento delle funzioni, nei dodici mesi precedenti.».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

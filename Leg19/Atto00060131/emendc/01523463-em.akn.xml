@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/1.49/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/1.49"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-04" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/1.49/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/1.49/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/1.49/ita@"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-04" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1896/C/1.49/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/1.49/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/1.49/ita@.akn"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-04" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/1.49/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-20"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-04"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-20" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-04" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-04" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1896/C/1.49/ita@/main" showAs="generation"/>
@@ -125,6 +126,11 @@
 					          «2) il secondo comma è sostituito dal seguente: "Decorso il termine indicato nel precetto, l'ufficiale giudiziario, munito del titolo esecutivo e del precetto, esegue il primo accesso entro il quindicesimo giorno successivo, nel giorno e nell'ora previamente comunicati alla parte esecutata almeno cinque giorni prima dell'accesso, al domicilio digitale risultante dai pubblici elenchi ovvero a quello speciale eletto ai sensi dell'articolo 2, comma 1
 					<an:i>-bis</an:i>
 					, della legge 9 dicembre 1998, n. 431, e, in mancanza, mediante affissione alla porta dell'immobile e, facendo uso, quando occorre, dei poteri a lui consentiti dall'articolo 513, immette la parte istante o una persona da lei designata nel possesso dell'immobile, del quale le consegna le chiavi, ingiungendo agli eventuali detentori di riconoscere il nuovo possessore. Se non è possibile eseguire il rilascio al primo accesso per cause non imputabili all'esecutante, l'ufficiale giudiziario fissa un secondo accesso entro i successivi dieci giorni e, comunque, non oltre il venticinquesimo giorno successivo alla scadenza del termine indicato nel precetto. Del secondo accesso l'ufficiale giudiziario dà comunicazione alle persone presenti e, in ogni caso, mediante affissione alla porta dell'immobile, senza necessità di ulteriore notificazione. Il termine di cui al presente periodo può essere superato esclusivamente quando il mancato accesso dipenda da indisponibilità della forza pubblica o da altra causa oggettiva non imputabile all'ufficiale giudiziario; in tal caso l'ufficiale giudiziario ne dà immediata comunicazione al giudice dell'esecuzione, indicando la causa dell'impedimento e la prima data utile per l'esecuzione ove già individuabile"».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

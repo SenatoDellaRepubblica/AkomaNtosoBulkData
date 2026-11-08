@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1837/C/14.1/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1837/C/14.1"/>
-					<an:FRBRdate date="2026-07-14" name="presentazione"/>
+					<an:FRBRdate date="2026-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1837/C/14.1/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1837/C/14.1/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1837/C/14.1/ita@"/>
-					<an:FRBRdate date="2026-07-14" name="presentazione"/>
+					<an:FRBRdate date="2026-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1837/C/14.1/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1837/C/14.1/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1837/C/14.1/ita@.akn"/>
-					<an:FRBRdate date="2026-07-14" name="presentazione"/>
+					<an:FRBRdate date="2026-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1837/C/14.1/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-07-14"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-05"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-07-14" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-05" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-05" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1837/C/14.1/ita@/main" showAs="generation"/>
@@ -49,8 +50,8 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/36424" showAs="Etelwardo Sigismondi"/>
-				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/36449" showAs="Francesca Tubetti"/>
+				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/36424" showAs="Etelwardo Sigismondi"/>
+				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/senatore/36449" showAs="Francesca Tubetti"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -95,6 +96,11 @@
 					: «2
 					<an:i>-bis</an:i>
 					. I progetti di cui al comma 1 possono riguardare anche l'accessibilità, la fruibilità e la sicurezza dei collegamenti marittimi da e per le isole minori da parte delle persone a mobilità ridotta, ivi inclusi, ove necessari, gli interventi alle unità navali da passeggeri e delle unità veloci impiegate nei predetti collegamenti, in coerenza con le prescrizioni tecniche adottate con decreto dirigenziale del Ministero delle infrastrutture e dei trasporti del 5 febbraio 2026, n. 18. Gli interventi di cui al primo periodo possono riguardare, in particolare, l'accesso e lo sbarco, i percorsi di bordo, le vie di evacuazione, le rampe, gli ascensori e gli altri dispositivi di elevazione, le sistemazioni riservate, i servizi igienici, la segnaletica, i sistemi informativi e audiovisivi, l'illuminazione e i percorsi tattilo-plantari, nonché gli interventi organizzativi e formativi connessi all'assistenza e alla sicurezza delle persone con disabilità e delle persone a mobilità ridotta.».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Ritirato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

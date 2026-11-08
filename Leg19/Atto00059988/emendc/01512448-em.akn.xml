@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1837/C/24.2/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1837/C/24.2"/>
-					<an:FRBRdate date="2026-07-14" name="presentazione"/>
+					<an:FRBRdate date="2026-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1837/C/24.2/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1837/C/24.2/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1837/C/24.2/ita@"/>
-					<an:FRBRdate date="2026-07-14" name="presentazione"/>
+					<an:FRBRdate date="2026-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1837/C/24.2/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1837/C/24.2/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1837/C/24.2/ita@.akn"/>
-					<an:FRBRdate date="2026-07-14" name="presentazione"/>
+					<an:FRBRdate date="2026-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1837/C/24.2/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-07-14"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-05"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-07-14" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-05" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-05" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1837/C/24.2/ita@/main" showAs="generation"/>
@@ -49,7 +50,7 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/4192" showAs="Claudio Fazzone"/>
+				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/4192" showAs="Claudio Fazzone"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -103,7 +104,7 @@
 				<an:p style="text-align:center">          ELENCO CON POPOLAZIONE INDICATIVA, ESTENSIONE TERRITORIALE, PROVINCIA E REGIONE DI APPARTENENZA</an:p>
 				
 
-				<an:table border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse; border-image:none; border:currentColor" id="ID0ESC">
+				<an:table border="1" cellpadding="0" cellspacing="0" style="border-collapse:collapse; border-image:none; border:currentColor" id="ID0ETC">
 					
 
 
@@ -1190,6 +1191,11 @@
 
 
 				</an:table>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Ritirato</an:outcome>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>

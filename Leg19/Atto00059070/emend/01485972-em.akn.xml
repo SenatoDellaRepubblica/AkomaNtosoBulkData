@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
 			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/1.20/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/1.20"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1457/A/1.20/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/1.20/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/1.20/ita@"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1457/A/1.20/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/1.20/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/1.20/ita@.akn"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1457/A/1.20/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2025-12-27"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-03"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2025-12-27" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-03" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-03" actor="#aula" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1457/A/1.20/ita@/main" showAs="generation"/>
@@ -49,14 +50,14 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="IDWIHI20DBNLIOCPQAJWYMY2BIY455MO30OE5RNKY5OKDNOKWPT3P" href="http://dati.senato.it/29273" showAs="BAZOLI"/>
-				<an:TLCPerson id="IDSVA0FECWEKETPO00OLAMUSQGHIYRYURQNXOIQZDBOFJFPWCHVPVN" href="http://dati.senato.it/29425" showAs="GIORGIS"/>
-				<an:TLCPerson id="ID42SNEV0CIMFWCZS3PI1EYNVMSLSCLGY2LU1WMBLARUX0OHPFRIRJ" href="http://dati.senato.it/29138" showAs="MIRABELLI"/>
-				<an:TLCPerson id="IDMRSLXAIVBDKGL34BD5PXVO4ZQCYOLVARP4WOMXDXNYT5RF31ZYHG" href="http://dati.senato.it/25411" showAs="ROSSOMANDO"/>
-				<an:TLCPerson id="IDW50CPUKHZAFUPKVUPGIAXXYTSCYSKJ4Z1T4UQBCDEEW3WUOFLVZO" href="http://dati.senato.it/25377" showAs="VERINI"/>
-				<an:TLCPerson id="ID0YHXECV2GSKAH34WXYZVX3DVSJP1EMMLYZXUXMN4U1WUWIBVFP4L" href="http://dati.senato.it/29490" showAs="MELONI"/>
-				<an:TLCPerson id="ID0XAQJOWCWFXENK0MCA14PKHICNSGNTBKC2SU4KI14J4SCLGKIRJG" href="http://dati.senato.it/29521" showAs="PARRINI"/>
-				<an:TLCPerson id="IDPCR5LLOV31XWN4A0N3SS1IMV2CRSYNZ1YOVJ3ANPKDBFTBEY4CLJ" href="http://dati.senato.it/29604" showAs="VALENTE"/>
+				<an:TLCPerson id="IDNBHDE5BG03CNHMG1M521RM30SPYUE4WPVUVVGVLGEZUYJYB5IPQD" href="http://dati.senato.it/senatore/29273" showAs="Alfredo Bazoli"/>
+				<an:TLCPerson id="IDZDP3I221SSBAJRAZN0WL21TQ0H5N41ZSGNETUKTZKBQZFDVATEM" href="http://dati.senato.it/senatore/29425" showAs="Andrea Giorgis"/>
+				<an:TLCPerson id="IDSP1LSMJPDPVBD3MEDKBXVSA1KIDHYQGUT5H0HJIPAZ11COKFLKAB" href="http://dati.senato.it/senatore/29138" showAs="Franco Mirabelli"/>
+				<an:TLCPerson id="IDRS31V0U2BO3KFLZ2XZLMUN5EELY0XAHOBZUPO0IJYJAB3PRDYC5J" href="http://dati.senato.it/senatore/25411" showAs="Anna Rossomando"/>
+				<an:TLCPerson id="IDQFZN1CYVJIB2GUZSPYADP2LVIKGFVAPUKP2VP5EXQIBYDZGHBTUN" href="http://dati.senato.it/senatore/25377" showAs="Walter Verini"/>
+				<an:TLCPerson id="IDN4M5P2NZLVU5JRELW3WKRWBGWJW01Y0AEG1OAJCLE5ROZ1PKRR4G" href="http://dati.senato.it/senatore/29490" showAs="Marco Meloni"/>
+				<an:TLCPerson id="IDKZ0V341BC4YFJGIBPD0J3FDQECPEE1G2LC1CJ1E35R3331TJDGFF" href="http://dati.senato.it/senatore/29521" showAs="Dario Parrini"/>
+				<an:TLCPerson id="IDUCJTMOJK2AHMLE4HQBM000UJ2EACS4JM1X24FXOMERXVT1KTRC4L" href="http://dati.senato.it/senatore/29604" showAs="Valeria Valente"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -67,69 +68,99 @@
 				<an:docNumber>Emendamento n. 1.20</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDWIHI20DBNLIOCPQAJWYMY2BIY455MO30OE5RNKY5OKDNOKWPT3P" as="#tipoSenatore">BAZOLI</an:docProponent>
+				<an:docProponent refersTo="#IDNBHDE5BG03CNHMG1M521RM30SPYUE4WPVUVVGVLGEZUYJYB5IPQD" as="#tipoSenatore">Alfredo Bazoli</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDSVA0FECWEKETPO00OLAMUSQGHIYRYURQNXOIQZDBOFJFPWCHVPVN" as="#tipoSenatore">GIORGIS</an:docProponent>
+				<an:docProponent refersTo="#IDZDP3I221SSBAJRAZN0WL21TQ0H5N41ZSGNETUKTZKBQZFDVATEM" as="#tipoSenatore">Andrea Giorgis</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#ID42SNEV0CIMFWCZS3PI1EYNVMSLSCLGY2LU1WMBLARUX0OHPFRIRJ" as="#tipoSenatore">MIRABELLI</an:docProponent>
+				<an:docProponent refersTo="#IDSP1LSMJPDPVBD3MEDKBXVSA1KIDHYQGUT5H0HJIPAZ11COKFLKAB" as="#tipoSenatore">Franco Mirabelli</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDMRSLXAIVBDKGL34BD5PXVO4ZQCYOLVARP4WOMXDXNYT5RF31ZYHG" as="#tipoSenatore">ROSSOMANDO</an:docProponent>
+				<an:docProponent refersTo="#IDRS31V0U2BO3KFLZ2XZLMUN5EELY0XAHOBZUPO0IJYJAB3PRDYC5J" as="#tipoSenatore">Anna Rossomando</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDW50CPUKHZAFUPKVUPGIAXXYTSCYSKJ4Z1T4UQBCDEEW3WUOFLVZO" as="#tipoSenatore">VERINI</an:docProponent>
+				<an:docProponent refersTo="#IDQFZN1CYVJIB2GUZSPYADP2LVIKGFVAPUKP2VP5EXQIBYDZGHBTUN" as="#tipoSenatore">Walter Verini</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#ID0YHXECV2GSKAH34WXYZVX3DVSJP1EMMLYZXUXMN4U1WUWIBVFP4L" as="#tipoSenatore">MELONI</an:docProponent>
+				<an:docProponent refersTo="#IDN4M5P2NZLVU5JRELW3WKRWBGWJW01Y0AEG1OAJCLE5ROZ1PKRR4G" as="#tipoSenatore">Marco Meloni</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#ID0XAQJOWCWFXENK0MCA14PKHICNSGNTBKC2SU4KI14J4SCLGKIRJG" as="#tipoSenatore">PARRINI</an:docProponent>
+				<an:docProponent refersTo="#IDKZ0V341BC4YFJGIBPD0J3FDQECPEE1G2LC1CJ1E35R3331TJDGFF" as="#tipoSenatore">Dario Parrini</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDPCR5LLOV31XWN4A0N3SS1IMV2CRSYNZ1YOVJ3ANPKDBFTBEY4CLJ" as="#tipoSenatore">VALENTE</an:docProponent>
+				<an:docProponent refersTo="#IDUCJTMOJK2AHMLE4HQBM000UJ2EACS4JM1X24FXOMERXVT1KTRC4L" as="#tipoSenatore">Valeria Valente</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
+				
+
 				<an:p>
 					<an:i>
 						<an:b>Al comma 1, lettera a), sopprimere il numero 4).</an:b>
 					</an:i>
 				</an:p>
+				
+
 				<an:p>
+					     
 					<an:i>Conseguentemente, dopo l'articolo 1, inserire il seguente:</an:i>
 				</an:p>
+				
+
 				<an:p>
-					«Art. 1-
-					<an:i>bis</an:i>
-					.
+					<an:strong>
+						«Art. 1-
+						<an:i>bis</an:i>
+						.
+					</an:strong>
 				</an:p>
+				
+
 				<an:p>
 					<an:i>(Modifiche alla legge 14 gennaio 1994, n. 20, in materia di responsabilità degli organi politici e dei dirigenti degli enti locali)</an:i>
 				</an:p>
+				
+
 				<an:p>          1. Alla legge 14 gennaio 1994, n. 20, sono apportate le seguenti modificazioni:</an:p>
+				
+
 				<an:p>          a) all'articolo 1:</an:p>
+				
+
 				<an:p>
 					          1) dopo il comma 1-
 					<an:i>ter</an:i>
 					 è aggiunto il seguente:
 				</an:p>
+				
+
 				<an:p>
 					          «1-
 					<an:i>ter</an:i>
 					.1. In applicazione del principio di separazione tra funzioni di indirizzo politico-amministrativo e gestione amministrativa, gli organi politici degli enti locali sono competenti e responsabili per gli atti di indirizzo politico-amministrativo loro attribuiti dalla legge, consistenti nella definizione degli obiettivi e dei programmi da attuare e nell'adozione degli altri atti rientranti nello svolgimento di tali funzioni, nonché nella verifica della rispondenza dei risultati dell'attività amministrativa e della gestione agli indirizzi impartiti.»;
 				</an:p>
+				
+
 				<an:p>
 					          2) dopo il comma 1-
 					<an:i>septies</an:i>
 					 è aggiunto il seguente:
 				</an:p>
+				
+
 				<an:p>
 					          «1-
 					<an:i>septies</an:i>
 					.1. I dirigenti degli enti locali sono responsabili dell'attività amministrativa, della gestione e dei relativi risultati. La loro responsabilità è valutata tenendo conto: a) dell'effettiva disponibilità di risorse umane e strumentali; b) della chiarezza degli obiettivi e degli indirizzi forniti dagli organi politici; c) dell'eventuale interferenza di fattori esterni non controllabili; d) della complessità della situazione di fatto e del quadro normativo di riferimento.».»
+				</an:p>
+				
+
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinta la parte evidenziata in neretto; preclusa la restante parte</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

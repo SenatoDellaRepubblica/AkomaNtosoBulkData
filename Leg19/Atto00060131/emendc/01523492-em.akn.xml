@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/1.67/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/1.67"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-04" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/1.67/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/1.67/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/1.67/ita@"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-04" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1896/C/1.67/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/1.67/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/1.67/ita@.akn"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-04" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/1.67/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-20"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-04"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-20" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-04" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-04" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1896/C/1.67/ita@/main" showAs="generation"/>
@@ -78,6 +79,11 @@
 					 «Qualora l'ufficiale giudiziario non possa procedere direttamente all'esecuzione per sopravvenute e motivate esigenze d'ufficio o per carenza d'organico, sentita la parte istante, può delegare il compimento delle operazioni di rilascio ad un custode giudiziario ovvero ad un professionista delegato alle operazioni di vendita iscritto nell'elenco di cui all'articolo 179-
 					<an:i>ter</an:i>
 					 delle disposizioni di attuazione del codice di procedura civile».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">V. 1.67 ( testo 2)</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

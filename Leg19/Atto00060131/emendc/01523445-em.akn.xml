@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/1.25/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/1.25"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/1.25/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/1.25/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/1.25/ita@"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1896/C/1.25/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/1.25/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/1.25/ita@.akn"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/1.25/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-20"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-03"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-20" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-03" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-03" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1896/C/1.25/ita@/main" showAs="generation"/>
@@ -87,6 +88,11 @@
 					          
 					<an:i>b) aggiungere, in fine, il seguente periodo:</an:i>
 					 «Se la dichiarazione risulta non veritiera, ferma l'applicazione dell'articolo 76 del medesimo testo unico, il giudice dell'opposizione condanna il dichiarante, anche d'ufficio, al pagamento in favore della parte esecutata di una somma equitativamente determinata ai sensi dell'articolo 96, terzo comma».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Decaduto</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

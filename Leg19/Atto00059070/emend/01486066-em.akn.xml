@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
 			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/4.4/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/4.4"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1457/A/4.4/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/4.4/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/4.4/ita@"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1457/A/4.4/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/4.4/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/4.4/ita@.akn"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1457/A/4.4/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2025-12-27"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-03"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2025-12-27" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-03" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-03" actor="#aula" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1457/A/4.4/ita@/main" showAs="generation"/>
@@ -49,9 +50,9 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="IDYCVFIJ5ZHPZUI4KF5GOQY0VG0MCXLW3EXCQ5MKJZPVLNO4XTE2LB" href="http://dati.senato.it/22918" showAs="DE CRISTOFARO"/>
-				<an:TLCPerson id="IDQVDMC4TKIMYME4GH1IWSHSSPRB5BHVWDQV3EBFKIJHU5CDFDFGHJ" href="http://dati.senato.it/36390" showAs="CUCCHI"/>
-				<an:TLCPerson id="IDUS3FT1GYZRALM5MOJUMBCPA45F5XM0H5O4MKIGEIU1PZFEHO4AUL" href="http://dati.senato.it/36437" showAs="MAGNI"/>
+				<an:TLCPerson id="IDNBHDE5BG03CNHMG1M521RM30SPYUE4WPVUVVGVLGEZUYJYB5IPQD" href="http://dati.senato.it/senatore/22918" showAs="Peppe De Cristofaro"/>
+				<an:TLCPerson id="IDZDP3I221SSBAJRAZN0WL21TQ0H5N41ZSGNETUKTZKBQZFDVATEM" href="http://dati.senato.it/senatore/36390" showAs="Ilaria Cucchi"/>
+				<an:TLCPerson id="IDSP1LSMJPDPVBD3MEDKBXVSA1KIDHYQGUT5H0HJIPAZ11COKFLKAB" href="http://dati.senato.it/senatore/36437" showAs="Tino Magni"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -62,22 +63,31 @@
 				<an:docNumber>Emendamento n. 4.4</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDYCVFIJ5ZHPZUI4KF5GOQY0VG0MCXLW3EXCQ5MKJZPVLNO4XTE2LB" as="#tipoSenatore">DE CRISTOFARO</an:docProponent>
+				<an:docProponent refersTo="#IDNBHDE5BG03CNHMG1M521RM30SPYUE4WPVUVVGVLGEZUYJYB5IPQD" as="#tipoSenatore">Peppe De Cristofaro</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDQVDMC4TKIMYME4GH1IWSHSSPRB5BHVWDQV3EBFKIJHU5CDFDFGHJ" as="#tipoSenatore">CUCCHI</an:docProponent>
+				<an:docProponent refersTo="#IDZDP3I221SSBAJRAZN0WL21TQ0H5N41ZSGNETUKTZKBQZFDVATEM" as="#tipoSenatore">Ilaria Cucchi</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDUS3FT1GYZRALM5MOJUMBCPA45F5XM0H5O4MKIGEIU1PZFEHO4AUL" as="#tipoSenatore">MAGNI</an:docProponent>
+				<an:docProponent refersTo="#IDSP1LSMJPDPVBD3MEDKBXVSA1KIDHYQGUT5H0HJIPAZ11COKFLKAB" as="#tipoSenatore">Tino Magni</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
+				
+
 				<an:p>
 					<an:i>Al comma 1, primo periodo, sostituire le parole:</an:i>
 					 «150 fino a due annualità del proprio trattamento economico complessivo annuo» 
 					<an:i>con le seguenti:</an:i>
 					 «1.000 fino a trenta mesi del proprio trattamento economico mensile». 
+				</an:p>
+				
+
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

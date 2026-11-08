@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/1.61/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/1.61"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-04" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/1.61/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/1.61/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/1.61/ita@"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-04" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1896/C/1.61/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/1.61/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/1.61/ita@.akn"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-04" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/1.61/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-20"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-04"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-20" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-04" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-04" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1896/C/1.61/ita@/main" showAs="generation"/>
@@ -88,6 +89,11 @@
 				<an:p style="text-align:justify">
 					<an:i>Al comma 1, lettera g), sostituire il numero 3) con il seguente</an:i>
 					: «3) dopo il secondo comma sono aggiunti, in fine, i seguenti: «Eseguito l'accesso, l'ufficiale giudiziario può differire l'esecuzione una sola volta se la parte esecutata, residente nell'immobile, ha compiuto i settantacinque anni di età o è persona con disabilità grave o è malata terminale. Nello stesso modo procede quando, da almeno un anno prima del giorno fissato nel precetto per l'esecuzione del rilascio, la famiglia anagrafica della parte esecutata che risiede nell'immobile comprende almeno una persona con disabilità grave o malata terminale. Il differimento non può essere superiore a centottanta giorni.   Quando nell'immobile si trovano beni mobili che non debbono essere consegnati, l'ufficiale giudiziario intima, ai sensi dell'articolo 609, alla parte tenuta al rilascio ovvero a colui al quale gli stessi risultano appartenere di asportarli entro il giorno antecedente a quello di scadenza indicato nel precetto.»
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Precluso</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

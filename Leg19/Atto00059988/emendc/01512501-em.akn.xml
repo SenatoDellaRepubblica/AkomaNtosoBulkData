@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1837/C/15.3/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1837/C/15.3"/>
-					<an:FRBRdate date="2026-07-14" name="presentazione"/>
+					<an:FRBRdate date="2026-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1837/C/15.3/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1837/C/15.3/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1837/C/15.3/ita@"/>
-					<an:FRBRdate date="2026-07-14" name="presentazione"/>
+					<an:FRBRdate date="2026-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1837/C/15.3/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1837/C/15.3/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1837/C/15.3/ita@.akn"/>
-					<an:FRBRdate date="2026-07-14" name="presentazione"/>
+					<an:FRBRdate date="2026-11-05" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1837/C/15.3/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-07-14"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-05"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-07-14" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-05" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-05" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1837/C/15.3/ita@/main" showAs="generation"/>
@@ -49,7 +50,8 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/36411" showAs="Antonio Nicita"/>
+				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/36411" showAs="Antonio Nicita"/>
+				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/senatore/29270" showAs="Lorenzo Basso"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -62,6 +64,11 @@
 			<an:p>
 				<an:docProponent refersTo="#ID0E5" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Nicita</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0EIB" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Basso</an:span>
 				</an:docProponent>
 			</an:p>
 		</an:preface>
@@ -106,6 +113,11 @@
 					          1
 					<an:i>-sexies</an:i>
 					. Al fine di rimuovere gli svantaggi derivanti dall'insularità e garantire la continuità e la parità di accesso ai servizi essenziali, le amministrazioni pubbliche, le aziende del Servizio sanitario nazionale, le istituzioni scolastiche e i soggetti concessionari o fornitori di servizi di pubblica utilità, con particolare riferimento ai servizi postali, bancari, di trasporto, energetici e di telecomunicazione, prevedono appositi meccanismi incentivanti e derogatori nelle procedure di reclutamento e gestione del personale da assegnare in via esclusiva e stabile alle sedi ubicate nelle isole minori. I relativi bandi, procedure di assunzione e accordi contrattuali prevedono: a) una riserva di posti non inferiore al 20 per cento per i candidati residenti nei comuni dell'isola sede di servizio da almeno un triennio; b) il riconoscimento di una specifica indennità di insularità e di sede disagiata, esente da imposizione fiscale e non computabile ai fini dei tetti di spesa sul personale; c) punteggi aggiuntivi per i docenti e il personale scolastico, con misure per la stabilità dell'offerta formativa in loco; d) la concessione di alloggi di servizio per l'intera durata dell'incarico.».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

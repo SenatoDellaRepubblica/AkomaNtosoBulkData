@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
 			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/1.59/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/1.59"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1457/A/1.59/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/1.59/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/1.59/ita@"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1457/A/1.59/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/1.59/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/1.59/ita@.akn"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1457/A/1.59/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2025-12-27"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-03"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2025-12-27" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-03" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-03" actor="#aula" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1457/A/1.59/ita@/main" showAs="generation"/>
@@ -49,10 +50,10 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="IDGXJDWD5VAH3DPI3GZWJIHZCV4BCMWKUHGG00KYP1LA3EOK22BF5O" href="http://dati.senato.it/36404" showAs="LOPREIATO"/>
-				<an:TLCPerson id="IDHOF3JADNPK1XKBTGMY2R0QF3RN5BR10RM3HFKGBL55O0LFFDA2MM" href="http://dati.senato.it/32658" showAs="MAIORINO"/>
-				<an:TLCPerson id="IDM3WSNGS44R4NGVJY54X0MQX0EP3NNJCOTRTKNQFMRJRNSNZ3BVKB" href="http://dati.senato.it/33065" showAs="CATALDI"/>
-				<an:TLCPerson id="ID3XQEXGUHK5PDBWGSZQADL2DFBEQGWYR0NOBDGDLQL3RBYKG2RILH" href="http://dati.senato.it/32640" showAs="GAUDIANO"/>
+				<an:TLCPerson id="IDNBHDE5BG03CNHMG1M521RM30SPYUE4WPVUVVGVLGEZUYJYB5IPQD" href="http://dati.senato.it/senatore/36404" showAs="Ada Lopreiato"/>
+				<an:TLCPerson id="IDZDP3I221SSBAJRAZN0WL21TQ0H5N41ZSGNETUKTZKBQZFDVATEM" href="http://dati.senato.it/senatore/32658" showAs="Alessandra Maiorino"/>
+				<an:TLCPerson id="IDSP1LSMJPDPVBD3MEDKBXVSA1KIDHYQGUT5H0HJIPAZ11COKFLKAB" href="http://dati.senato.it/senatore/33065" showAs="Roberto Cataldi"/>
+				<an:TLCPerson id="IDRS31V0U2BO3KFLZ2XZLMUN5EELY0XAHOBZUPO0IJYJAB3PRDYC5J" href="http://dati.senato.it/senatore/32640" showAs="Felicia Gaudiano"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -63,28 +64,38 @@
 				<an:docNumber>Emendamento n. 1.59</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDGXJDWD5VAH3DPI3GZWJIHZCV4BCMWKUHGG00KYP1LA3EOK22BF5O" as="#tipoSenatore">LOPREIATO</an:docProponent>
+				<an:docProponent refersTo="#IDNBHDE5BG03CNHMG1M521RM30SPYUE4WPVUVVGVLGEZUYJYB5IPQD" as="#tipoSenatore">Ada Lopreiato</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDHOF3JADNPK1XKBTGMY2R0QF3RN5BR10RM3HFKGBL55O0LFFDA2MM" as="#tipoSenatore">MAIORINO</an:docProponent>
+				<an:docProponent refersTo="#IDZDP3I221SSBAJRAZN0WL21TQ0H5N41ZSGNETUKTZKBQZFDVATEM" as="#tipoSenatore">Alessandra Maiorino</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDM3WSNGS44R4NGVJY54X0MQX0EP3NNJCOTRTKNQFMRJRNSNZ3BVKB" as="#tipoSenatore">CATALDI</an:docProponent>
+				<an:docProponent refersTo="#IDSP1LSMJPDPVBD3MEDKBXVSA1KIDHYQGUT5H0HJIPAZ11COKFLKAB" as="#tipoSenatore">Roberto Cataldi</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#ID3XQEXGUHK5PDBWGSZQADL2DFBEQGWYR0NOBDGDLQL3RBYKG2RILH" as="#tipoSenatore">GAUDIANO</an:docProponent>
+				<an:docProponent refersTo="#IDRS31V0U2BO3KFLZ2XZLMUN5EELY0XAHOBZUPO0IJYJAB3PRDYC5J" as="#tipoSenatore">Felicia Gaudiano</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
+				
+
 				<an:p>
 					<an:i>Al comma 1, lettera b), numero 2)</an:i>
+					 
 					<an:i>capoverso 1</an:i>
 					-quater
 					<an:i>, sostituire le parole: "</an:i>
 					Le regioni, le province autonome e gli enti locali, con norma di legge o di statuto adottata previo parere delle sezioni riunite della Corte dei conti," 
 					<an:i>con le seguenti</an:i>
 					: "Le regioni e le province autonome con norma di legge adottata previo parere delle sezioni riunite della Corte dei conti, e gli enti locali".
+				</an:p>
+				
+
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Id. em. 1.57</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

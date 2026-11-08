@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<an:akomaNtoso xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
+<an:akomaNtoso xmlns:auto-ns1="http://www.w3.org/2001/XMLSchema-instance" xmlns:an="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" auto-ns1:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03 ../../Akoma/3.0/akomantoso30.xsd">
 	<an:amendment contains="originalVersion">
 		<an:meta>
 			<an:identification xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03" source="#redattore">
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/G3.105/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/G3.105"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1457/A/G3.105/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/G3.105/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/G3.105/ita@"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1457/A/G3.105/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1457/A/G3.105/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1457/A/G3.105/ita@.akn"/>
-					<an:FRBRdate date="2025-12-27" name="presentazione"/>
+					<an:FRBRdate date="2026-11-03" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1457/A/G3.105/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2025-12-27"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-03"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2025-12-27" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-03" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-03" actor="#aula" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1457/A/G3.105/ita@/main" showAs="generation"/>
@@ -49,9 +50,9 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="IDWIHI20DBNLIOCPQAJWYMY2BIY455MO30OE5RNKY5OKDNOKWPT3P" href="http://dati.senato.it/36384" showAs="BERRINO"/>
-				<an:TLCPerson id="IDPDQQVEFQYLW4PWMB0M5MW1VZKLOCAF5JKQBEQ1JVQQV3IQ2ZNJQG" href="http://dati.senato.it/36435" showAs="LISEI"/>
-				<an:TLCPerson id="IDGBKPI4NACXUENXJJSCKQFRW0OEOKLERYANQSWBCEW4GQAA5J4NXP" href="http://dati.senato.it/36442" showAs="RASTRELLI"/>
+				<an:TLCPerson id="IDNBHDE5BG03CNHMG1M521RM30SPYUE4WPVUVVGVLGEZUYJYB5IPQD" href="http://dati.senato.it/senatore/36384" showAs="Gianni Berrino"/>
+				<an:TLCPerson id="IDZDP3I221SSBAJRAZN0WL21TQ0H5N41ZSGNETUKTZKBQZFDVATEM" href="http://dati.senato.it/senatore/36435" showAs="Marco Lisei"/>
+				<an:TLCPerson id="IDSP1LSMJPDPVBD3MEDKBXVSA1KIDHYQGUT5H0HJIPAZ11COKFLKAB" href="http://dati.senato.it/senatore/36442" showAs="Sergio Rastrelli"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -62,29 +63,60 @@
 				<an:docNumber>Ordine del giorno n. G3.105</an:docNumber>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDWIHI20DBNLIOCPQAJWYMY2BIY455MO30OE5RNKY5OKDNOKWPT3P" as="#tipoSenatore">BERRINO</an:docProponent>
+				<an:docProponent refersTo="#IDNBHDE5BG03CNHMG1M521RM30SPYUE4WPVUVVGVLGEZUYJYB5IPQD" as="#tipoSenatore">Gianni Berrino</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDPDQQVEFQYLW4PWMB0M5MW1VZKLOCAF5JKQBEQ1JVQQV3IQ2ZNJQG" as="#tipoSenatore">LISEI</an:docProponent>
+				<an:docProponent refersTo="#IDZDP3I221SSBAJRAZN0WL21TQ0H5N41ZSGNETUKTZKBQZFDVATEM" as="#tipoSenatore">Marco Lisei</an:docProponent>
 			</an:p>
 			<an:p>
-				<an:docProponent refersTo="#IDGBKPI4NACXUENXJJSCKQFRW0OEOKLERYANQSWBCEW4GQAA5J4NXP" as="#tipoSenatore">RASTRELLI</an:docProponent>
+				<an:docProponent refersTo="#IDSP1LSMJPDPVBD3MEDKBXVSA1KIDHYQGUT5H0HJIPAZ11COKFLKAB" as="#tipoSenatore">Sergio Rastrelli</an:docProponent>
 			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
+				
+
 				<an:p>Il Senato,</an:p>
+				
+
 				<an:p>          in sede di esame del disegno di legge AS 1457, già approvato dalla Camera dei deputati, recante "Modifiche alla legge 14 gennaio 1994, n. 20, e altre disposizioni nonché delega al Governo in materia di funzioni della Corte dei conti e di responsabilità amministrativa e per danno erariale";</an:p>
+				
+
 				<an:p>     premesso che</an:p>
+				
+
 				<an:p>          l'articolo 3 delega il Governo a riorganizzare e riordinare le funzioni della Corte dei conti;</an:p>
+				
+
 				<an:p>          va considerata la natura costituzionale della Corte dei conti, che svolge funzioni consultive, di controllo, referenti e giurisdizionali in materia di finanza pubblica;</an:p>
+				
+
 				<an:p>          è opportuno orientare l'attuazione della delega legislativa nel senso di una maggiore razionalizzazione, efficienza e coerenza dell'assetto ordinamentale dell'Istituto;</an:p>
+				
+
 				<an:p>          la necessità di garantire pienamente i principi di terzietà e imparzialità della funzione giurisdizionale contabile, va assicurata attraverso una chiara distinzione tra i magistrati addetti alle sezioni e quelli appartenenti alle procure, tanto a livello centrale quanto territoriale;</an:p>
+				
+
 				<an:p>          è necessario evitare commistioni funzionali e assicurare che anche la composizione del Consiglio di presidenza dell'Istituto rifletta questa distinzione;</an:p>
+				
+
 				<an:p>          è altresì opportuno assicurare, nei procedimenti di particolare complessità, una maggiore sinergia operativa e un più efficace coordinamento tra le procure territoriali e la procura generale, al fine di rafforzare l'azione requirente e promuovere l'efficacia complessiva della giustizia contabile,</an:p>
+				
+
 				<an:p>     impegna il Governo</an:p>
+				
+
 				<an:p>          a prevedere la separazione delle rispettive carriere tra i magistrati contabili assegnati alle sezioni e quelli requirenti assegnati alle procure, evitando qualsiasi commistione di ruoli, sia in sede centrale sia nelle sedi territoriali, e adeguando in tale prospettiva la componente elettiva del Consiglio di presidenza;</an:p>
+				
+
 				<an:p>          ad assicurare, nei procedimenti più rilevanti o complessi, forme di più stretto coordinamento tra le procure territoriali e quella generale.</an:p>
+				
+
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Accolto come raccomandazione</an:outcome>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>
