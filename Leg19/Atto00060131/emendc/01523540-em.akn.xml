@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/2.32/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/2.32"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-10" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/2.32/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/2.32/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/2.32/ita@"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-10" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1896/C/2.32/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/2.32/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/2.32/ita@.akn"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-10" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/2.32/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-20"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-10"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-20" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-10" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-10" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1896/C/2.32/ita@/main" showAs="generation"/>
@@ -100,6 +101,11 @@
 					. Su istanza del locatore, il giudice, sentite le parti anche in forma sommaria, se non sussistono gravi motivi in contrario, designa l'istituto di cui all'articolo 159 delle disposizioni per l'attuazione del codice di procedura civile e disposizioni transitorie, di cui al regio decreto 18 dicembre 1941, n. 1368, oppure i professionisti delegati alle vendite, in sostituzione dell'ufficiale giudiziario e sotto la sua direzione e controllo, per il compimento delle operazioni e degli atti di cui agli articoli 606, 608, 608
 					<an:i>-bis</an:i>
 					, 609 e 611 del codice di procedura civile. Restano in ogni caso riservati all'ufficiale giudiziario i poteri di cui all'articolo 513 del codice di procedura civile, nonché la richiesta del concorso della forza pubblica. In tal caso, il compenso e le spese spettanti all'istituto sono liquidati dal giudice a norma del regolamento di cui al decreto del Ministro della giustizia 15 maggio 2009, n. 80, applicando le percentuali di cui all'articolo 2, comma 1, del medesimo regolamento sul quintuplo del canone dovuto su base annuale. La differenza tra il compenso e le spese liquidati ai sensi del periodo precedente e quelli altrimenti dovuti per l'esecuzione ordinaria è posta a carico del creditore istante, salva diversa valutazione del giudice in sede di liquidazione delle spese.».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

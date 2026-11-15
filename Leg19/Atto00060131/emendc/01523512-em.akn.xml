@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/3.3/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/3.3"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-11" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/3.3/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/3.3/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/3.3/ita@"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-11" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1896/C/3.3/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/3.3/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/3.3/ita@.akn"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-11" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/3.3/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-20"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-11"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-20" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-11" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-11" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1896/C/3.3/ita@/main" showAs="generation"/>
@@ -86,6 +87,11 @@
 					          «1
 					<an:i>-ter</an:i>
 					. In alternativa a quanto previsto dai commi 1 e 3, le parti possono stipulare contratti di locazione a canone libero di durata non inferiore a ventiquattro mesi, decorsi i quali i contratti sono rinnovati per un periodo di ulteriori ventiquattro mesi, fatti salvi i casi in cui il locatore intenda adibire l'immobile agli usi o effettuare sullo stesso le opere di cui all'articolo 3, ovvero vendere l'immobile alle condizioni e con le modalità di cui al medesimo articolo 3. Alla seconda scadenza del contratto, ciascuna delle parti ha diritto di attivare la procedura per il rinnovo a nuove condizioni o per la rinuncia al rinnovo del contratto, comunicando la propria intenzione con lettera raccomandata da inviare all'altra parte almeno sei mesi prima della scadenza. La parte interpellata deve rispondere a mezzo lettera raccomandata entro sessanta giorni dalla data di ricezione della raccomandata di cui al secondo periodo. In mancanza di risposta o di accordo il contratto si intenderà scaduto alla data di cessazione della locazione. In mancanza della comunicazione di cui al secondo periodo il contratto è rinnovato tacitamente alle medesime condizioni, ossia per ulteriori ventiquattro mesi. Ai contratti di cui al presente comma si applicano, in quanto compatibili, le disposizioni di cui ai commi 4 e 5 del presente articolo nonché le altre disposizioni della presente legge riferite ai contratti di cui al comma 1.»
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Ritirato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

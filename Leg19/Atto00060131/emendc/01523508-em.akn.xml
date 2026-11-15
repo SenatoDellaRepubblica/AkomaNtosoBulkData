@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/2.31/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/2.31"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-10" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/2.31/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/2.31/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/2.31/ita@"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-10" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1896/C/2.31/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/2.31/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/2.31/ita@.akn"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-10" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/2.31/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-20"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-10"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-20" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-10" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-10" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1896/C/2.31/ita@/main" showAs="generation"/>
@@ -99,6 +100,11 @@
 					          4
 					<an:i>-ter</an:i>
 					. Ciascuna parte interessata può richiedere all'ufficiale giudiziario territorialmente competente la redazione di un verbale di constatazione dello stato di un immobile destinato o già destinato a locazione, comodato, affitto o altra forma di detenzione qualificata da parte di terzi. La richiesta può essere presentata prima della consegna dell'immobile al conduttore, all'inizio della locazione, durante il rapporto o al momento della restituzione o del rilascio dell'immobile. L'ufficiale giudiziario descrive nel verbale esclusivamente le condizioni materiali dei luoghi, degli impianti, delle finiture, degli arredi e degli altri elementi che abbia direttamente percepito, indicando le modalità della constatazione. Il verbale costituisce la rappresentazione oggettiva di quanto direttamente constatato dall'ufficiale giudiziario e non contiene valutazioni soggettive sulle cause delle condizioni rilevate, sulla conformità degli impianti, sull'adempimento delle obbligazioni delle parti o sull'attribuzione di responsabilità. Possono essere allegati al verbale fotografie, riprese video e registrazioni sonore effettuate nel corso delle operazioni, purché l'ufficiale giudiziario ne indichi la provenienza, la data e le modalità di acquisizione e identifichi gli allegati nel verbale. Il verbale, redatto dall'ufficiale giudiziario nell'esercizio delle sue funzioni, costituisce atto pubblico ai sensi degli articoli 2699 e 2700 del codice civile e fa piena prova, fino a querela di falso, delle attività compiute e dei fatti che l'ufficiale giudiziario attesta essere avvenuti in sua presenza o da lui direttamente constatati; tale efficacia non si estende alla verità delle dichiarazioni rese da terzi né alle valutazioni sul significato degli elementi documentati. Il verbale redatto prima della consegna dell'immobile al conduttore può essere allegato al contratto di locazione o richiamato dalle parti nel medesimo. Il verbale redatto al momento della restituzione o del rilascio può essere utilizzato per comparare lo stato dei luoghi. La redazione del verbale non richiede preventiva autorizzazione del giudice; i diritti e le spese sono anticipati dalla parte richiedente. Restano ferme le disposizioni in materia di riservatezza e inviolabilità del domicilio: l'istanza non attribuisce all'ufficiale giudiziario il potere di accedere all'immobile contro la volontà di chi ha titolo a detenerlo».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Ritirato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

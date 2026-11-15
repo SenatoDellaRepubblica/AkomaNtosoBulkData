@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/2.33/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/2.33"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-10" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/2.33/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/2.33/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/2.33/ita@"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-10" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1896/C/2.33/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/2.33/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/2.33/ita@.akn"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-10" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/2.33/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-20"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-10"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-20" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-10" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-10" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1896/C/2.33/ita@/main" showAs="generation"/>
@@ -133,6 +134,11 @@
 					, 609 e 611 del codice di procedura civile, uno o più professionisti iscritti nell'elenco di cui all'articolo 179-
 					<an:i>ter</an:i>
 					 delle disposizioni per l'attuazione del codice di procedura civile e disposizioni transitorie, in possesso di adeguata esperienza in materia di esecuzione forzata. Il professionista designato opera sotto la direzione e il controllo dell'ufficiale giudiziario, che conserva in ogni caso le funzioni e i poteri attribuitigli dalla legge e, in particolare, quelli inerenti all'esercizio della forza pubblica e all'apertura coattiva delle porte e degli accessi ai sensi dell'articolo 608 del codice di procedura civile. La designazione è disposta con provvedimento motivato del giudice, sentite le parti ove ritenuto necessario. Il compenso e le spese spettanti al professionista sono liquidati dal giudice dell'esecuzione con decreto, tenuto conto della natura, della complessità e della durata delle attività svolte, nonché delle spese effettivamente sostenute, e sono posti a carico della parte istante. Con decreto del Ministro della giustizia, da adottare entro novanta giorni dalla data di entrata in vigore della presente disposizione, sono stabiliti i criteri e i parametri per la determinazione dei compensi spettanti ai professionisti designati ai sensi del presente comma.».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
