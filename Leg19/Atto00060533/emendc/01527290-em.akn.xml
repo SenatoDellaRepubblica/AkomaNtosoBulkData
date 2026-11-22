@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2065/C/1.36/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2065/C/1.36"/>
-					<an:FRBRdate date="2026-11-10" name="presentazione"/>
+					<an:FRBRdate date="2026-11-20" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2065/C/1.36/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2065/C/1.36/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2065/C/1.36/ita@"/>
-					<an:FRBRdate date="2026-11-10" name="presentazione"/>
+					<an:FRBRdate date="2026-11-20" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2065/C/1.36/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2065/C/1.36/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2065/C/1.36/ita@.akn"/>
-					<an:FRBRdate date="2026-11-10" name="presentazione"/>
+					<an:FRBRdate date="2026-11-20" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2065/C/1.36/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-11-10"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-20"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-11-10" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-20" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-20" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2065/C/1.36/ita@/main" showAs="generation"/>
@@ -106,6 +107,11 @@
 					          «2-
 					<an:i>bis</an:i>
 					. La certificazione di cui al comma 2 è rilasciata dai commissari straordinari, su richiesta dell'impresa interessata, entro quindici giorni dalla ricezione della richiesta. La certificazione è rilasciata sulla base di criteri oggettivi e verificabili, tenendo conto della documentazione contrattuale, contabile e amministrativa disponibile, e attesta la sussistenza e la consistenza dei rapporti di fornitura, nonché il collegamento causale tra tali rapporti e la sospensione o riduzione dell'attività lavorativa. Ai fini dell'applicazione del comma 2, sono ricomprese nell'indotto anche le imprese che, pur non intrattenendo rapporti contrattuali diretti con l'impresa sottoposta ad amministrazione straordinaria, operano quali subfornitrici attraverso uno o più soggetti intermediari, purché sia documentata la continuità della catena di fornitura e il collegamento funzionale con l'attività dello stabilimento interessato. L'eventuale diniego della certificazione deve essere comunicato entro il medesimo termine con atto scritto e motivato. Decorso inutilmente il termine previsto per il rilascio, ovvero in caso di diniego, l'impresa interessata può presentare all'INPS la domanda di cui al comma 3, allegando la documentazione idonea a comprovare la sussistenza dei requisiti previsti dal comma 2. In tali casi, l'INPS procede alla verifica dei requisiti, anche mediante richiesta di documenti e informazioni ai commissari straordinari, che sono tenuti a trasmetterli entro dieci giorni dalla richiesta. Il mancato o tardivo rilascio della certificazione non può, di per sé, costituire motivo di inammissibilità o rigetto della domanda».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

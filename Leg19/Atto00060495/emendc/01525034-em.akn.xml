@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/G/2053/4/7/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/G/2053/4/7"/>
-					<an:FRBRdate date="2026-11-12" name="presentazione"/>
+					<an:FRBRdate date="2026-11-18" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/G/2053/4/7/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/G/2053/4/7/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/G/2053/4/7/ita@"/>
-					<an:FRBRdate date="2026-11-12" name="presentazione"/>
+					<an:FRBRdate date="2026-11-18" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2053/C/G/2053/4/7/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/G/2053/4/7/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/G/2053/4/7/ita@.akn"/>
-					<an:FRBRdate date="2026-11-12" name="presentazione"/>
+					<an:FRBRdate date="2026-11-18" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/G/2053/4/7/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-11-12"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-18"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-11-12" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-18" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-18" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2053/C/G/2053/4/7/ita@/main" showAs="generation"/>
@@ -53,6 +54,9 @@
 				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/senatore/36387" showAs="Andrea Crisanti"/>
 				<an:TLCPerson id="ID0ESB" href="http://dati.senato.it/senatore/36418" showAs="Vincenza Rando"/>
 				<an:TLCPerson id="ID0E3B" href="http://dati.senato.it/senatore/28924" showAs="Francesco Verducci"/>
+				<an:TLCPerson id="ID0EGC" href="http://dati.senato.it/senatore/32634" showAs="Barbara Floridia"/>
+				<an:TLCPerson id="ID0ESC" href="http://dati.senato.it/senatore/36381" showAs="Vincenza Aloisio"/>
+				<an:TLCPerson id="ID0E3C" href="http://dati.senato.it/senatore/25402" showAs="Daniela Sbrollini"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -80,6 +84,22 @@
 			<an:p>
 				<an:docProponent refersTo="#ID0E3B" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Verducci</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0EGC" as="#tipoSenatore">
+					<an:span style="font-variant:normal;">Barbara </an:span>
+					<an:span style="font-variant:small-caps;">Floridia</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0ESC" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Aloisio</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0E3C" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Sbrollini</an:span>
 				</an:docProponent>
 			</an:p>
 		</an:preface>
@@ -113,6 +133,11 @@
 				
 
 				<an:p style="text-align:justify">          ad adottare, nel primo provvedimento utile, le iniziative normative necessarie a prevedere che i concorsi ordinari per il personale docente della scuola dell'infanzia, primaria e secondaria, per i posti comuni e di sostegno, siano banditi con cadenza biennale, sulla base del fabbisogno nazionale e regionale e dei posti vacanti e disponibili, assicurando il coordinamento con i percorsi universitari e accademici di formazione iniziale e abilitazione, la salvaguardia delle facoltà assunzionali autorizzate e delle procedure concorsuali già avviate, nonché la trasparenza nella pubblicazione dei posti disponibili e nella programmazione delle successive immissioni in ruolo.</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>

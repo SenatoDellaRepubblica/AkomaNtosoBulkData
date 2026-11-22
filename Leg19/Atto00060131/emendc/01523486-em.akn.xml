@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/6.3/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/6.3"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-19" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/6.3/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/6.3/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/6.3/ita@"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-19" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/1896/C/6.3/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/1896/C/6.3/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/1896/C/6.3/ita@.akn"/>
-					<an:FRBRdate date="2026-10-20" name="presentazione"/>
+					<an:FRBRdate date="2026-11-19" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/1896/C/6.3/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-10-20"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-19"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-10-20" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-19" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-19" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/1896/C/6.3/ita@/main" showAs="generation"/>
@@ -167,6 +168,11 @@
 					. Quando dalla valutazione effettuata ai sensi del comma 1-
 					<an:i>ter</an:i>
 					 risulti che il nucleo familiare interessato dal procedimento di rilascio si trova in condizioni di particolare vulnerabilità e non dispone di altra soluzione abitativa, i servizi sociali territorialmente competenti predispongono, ove ne ricorrano i presupposti, un piano individualizzato di presa in carico e di accompagnamento sociale, indicando le misure attivabili e, ove disponibili, le soluzioni di ricollocamento abitativo temporaneo, di accesso all'edilizia residenziale pubblica o sociale e agli ulteriori strumenti di sostegno previsti dalla legislazione vigente. Il piano è comunicato senza ritardo all'ufficiale giudiziario o ai professionisti di cui al comma 1 e al nucleo familiare interessato. La mancata disponibilità di una soluzione abitativa alternativa non comporta, di per sé, la sospensione o l'ulteriore differimento dell'esecuzione, fatto salvo quanto previsto dall'articolo 608, terzo comma, del codice di procedura civile.».
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

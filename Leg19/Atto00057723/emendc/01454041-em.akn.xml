@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/946/C/6.0.3/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/946/C/6.0.3"/>
-					<an:FRBRdate date="2025-05-15" name="presentazione"/>
+					<an:FRBRdate date="2026-11-17" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/946/C/6.0.3/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/946/C/6.0.3/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/946/C/6.0.3/ita@"/>
-					<an:FRBRdate date="2025-05-15" name="presentazione"/>
+					<an:FRBRdate date="2026-11-17" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/946/C/6.0.3/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/946/C/6.0.3/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/946/C/6.0.3/ita@.akn"/>
-					<an:FRBRdate date="2025-05-15" name="presentazione"/>
+					<an:FRBRdate date="2026-11-17" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/946/C/6.0.3/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2025-05-15"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-17"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2025-05-15" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-17" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-17" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/946/C/6.0.3/ita@/main" showAs="generation"/>
@@ -49,8 +50,8 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/25402" showAs="Daniela Sbrollini"/>
-				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/31725" showAs="Annamaria Furlan"/>
+				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/25402" showAs="Daniela Sbrollini"/>
+				<an:TLCPerson id="ID0EIB" href="http://dati.senato.it/senatore/31725" showAs="Annamaria Furlan"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -94,6 +95,11 @@
 				
 
 				<an:p style="margin-right:7pt; text-align:justify">          1. Il Ministero del lavoro e delle politiche sociali e il Ministero della salute stipulano accordi con le associazioni imprenditoriali per favorire l'accesso e il mantenimento del lavoro delle persone affette da fibromialgia all'attività telelavorativa nelle forme sia del lavoro a distanza sia del telelavoro domiciliare ed anche l'applicazione di accomodamenti ragionevoli presso la sede di lavoro, compatibili con la funzionalità dell'impresa e con la qualità del servizio fornito.»</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>

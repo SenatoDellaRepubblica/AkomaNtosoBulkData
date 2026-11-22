@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/946/C/1.29/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/946/C/1.29"/>
-					<an:FRBRdate date="2025-05-15" name="presentazione"/>
+					<an:FRBRdate date="2026-11-17" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/946/C/1.29/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/946/C/1.29/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/946/C/1.29/ita@"/>
-					<an:FRBRdate date="2025-05-15" name="presentazione"/>
+					<an:FRBRdate date="2026-11-17" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/946/C/1.29/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/946/C/1.29/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/946/C/1.29/ita@.akn"/>
-					<an:FRBRdate date="2025-05-15" name="presentazione"/>
+					<an:FRBRdate date="2026-11-17" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/946/C/1.29/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2025-05-15"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-17"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2025-05-15" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-17" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-17" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/946/C/1.29/ita@/main" showAs="generation"/>
@@ -49,8 +50,8 @@
 				<an:TLCOrganization id="senato" showAs="Senato della Repubblica" href="/dati.senato.it/osr/Senato"/>
 				<an:TLCOrganization id="camera" showAs="Camera dei Deputati" href="/dati.senato.it/osr/Camera"/>
 				<an:TLCRole id="tipoSenatore" href="http://dati.senato.it/Senatore" showAs="Senatore"/>
-				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/36393" showAs="Andrea De Priamo"/>
-				<an:TLCPerson id="ID0ELB" href="http://dati.senato.it/36450" showAs="Ignazio Zullo"/>
+				<an:TLCPerson id="ID0E5" href="http://dati.senato.it/senatore/36393" showAs="Andrea De Priamo"/>
+				<an:TLCPerson id="ID0ELB" href="http://dati.senato.it/senatore/36450" showAs="Ignazio Zullo"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -86,6 +87,11 @@
 					 La fibromialgia o sindrome fibromialgica è riconosciuta come malattia invalidante ed è inserita tra le patologie che danno diritto all'esenzione dalla partecipazione alla spesa per le correlate prestazioni sanitarie, ai sensi dell'articolo 5, comma 1, lettera 
 					<an:i>a),</an:i>
 					 del decreto legislativo 29 aprile 1998, n.124. Con decreto del Ministro della salute, da adottare entro novanta giorni dalla data di entrata in vigore della presente legge, vengono individuati su proposta dell'Istituto superiore di sanità, criteri oggettivi e omogenei per l'identificazione dei sintomi e delle condizioni cliniche correlati alla fibromialgia o sindrome fibromialgica.»
+				</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Ritirato</an:outcome>
 				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>

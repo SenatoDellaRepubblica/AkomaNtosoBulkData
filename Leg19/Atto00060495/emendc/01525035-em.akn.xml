@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/G/2053/7/7/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/G/2053/7/7"/>
-					<an:FRBRdate date="2026-11-12" name="presentazione"/>
+					<an:FRBRdate date="2026-11-18" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/G/2053/7/7/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/G/2053/7/7/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/G/2053/7/7/ita@"/>
-					<an:FRBRdate date="2026-11-12" name="presentazione"/>
+					<an:FRBRdate date="2026-11-18" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2053/C/G/2053/7/7/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2053/C/G/2053/7/7/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2053/C/G/2053/7/7/ita@.akn"/>
-					<an:FRBRdate date="2026-11-12" name="presentazione"/>
+					<an:FRBRdate date="2026-11-18" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2053/C/G/2053/7/7/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-11-12"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-18"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-11-12" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-18" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-18" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2053/C/G/2053/7/7/ita@/main" showAs="generation"/>
@@ -54,6 +55,9 @@
 				<an:TLCPerson id="ID0ESB" href="http://dati.senato.it/senatore/36387" showAs="Andrea Crisanti"/>
 				<an:TLCPerson id="ID0E3B" href="http://dati.senato.it/senatore/36418" showAs="Vincenza Rando"/>
 				<an:TLCPerson id="ID0EGC" href="http://dati.senato.it/senatore/28924" showAs="Francesco Verducci"/>
+				<an:TLCPerson id="ID0EQC" href="http://dati.senato.it/senatore/32634" showAs="Barbara Floridia"/>
+				<an:TLCPerson id="ID0E3C" href="http://dati.senato.it/senatore/25402" showAs="Daniela Sbrollini"/>
+				<an:TLCPerson id="ID0EGD" href="http://dati.senato.it/senatore/36381" showAs="Vincenza Aloisio"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -86,6 +90,22 @@
 			<an:p>
 				<an:docProponent refersTo="#ID0EGC" as="#tipoSenatore">
 					<an:span style="font-variant:small-caps;">Verducci</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0EQC" as="#tipoSenatore">
+					<an:span style="font-variant:normal;">Barbara </an:span>
+					<an:span style="font-variant:small-caps;">Floridia</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0E3C" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Sbrollini</an:span>
+				</an:docProponent>
+			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0EGD" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Aloisio</an:span>
 				</an:docProponent>
 			</an:p>
 		</an:preface>
@@ -128,6 +148,11 @@
 				
 
 				<an:p style="text-align:justify">          ad adottare iniziative, in fase di approvazione del primo provvedimento utile, volte a prorogare i termini fino al 31 maggio 2027 e ad introdurre adeguati meccanismi di salvaguardia per gli enti che abbiano tempestivamente adempiuto ai propri obblighi, evitando la perdita totale o parziale dei finanziamenti e ulteriori oneri per i Comuni, nonché ritardi nell'apertura o nella piena operatività degli asili nido e delle scuole dell'infanzia.</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>

@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2065/C/1.0.2/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2065/C/1.0.2"/>
-					<an:FRBRdate date="2026-11-10" name="presentazione"/>
+					<an:FRBRdate date="2026-11-20" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2065/C/1.0.2/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2065/C/1.0.2/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2065/C/1.0.2/ita@"/>
-					<an:FRBRdate date="2026-11-10" name="presentazione"/>
+					<an:FRBRdate date="2026-11-20" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2065/C/1.0.2/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2065/C/1.0.2/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2065/C/1.0.2/ita@.akn"/>
-					<an:FRBRdate date="2026-11-10" name="presentazione"/>
+					<an:FRBRdate date="2026-11-20" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2065/C/1.0.2/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-11-10"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-20"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-11-10" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-20" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-20" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2065/C/1.0.2/ita@/main" showAs="generation"/>
@@ -55,6 +56,7 @@
 				<an:TLCPerson id="ID0E3B" href="http://dati.senato.it/senatore/36429" showAs="Ylenia Zambito"/>
 				<an:TLCPerson id="ID0EGC" href="http://dati.senato.it/senatore/36400" showAs="Silvio Franceschelli"/>
 				<an:TLCPerson id="ID0EQC" href="http://dati.senato.it/senatore/29105" showAs="Francesco Giacobbe"/>
+				<an:TLCPerson id="ID0E1C" href="http://dati.senato.it/senatore/29406" showAs="Silvia Fregolent"/>
 			</an:references>
 		</an:meta>
 		<an:preface>
@@ -94,36 +96,46 @@
 					<an:span style="font-variant:small-caps;">Giacobbe</an:span>
 				</an:docProponent>
 			</an:p>
+			<an:p>
+				<an:docProponent refersTo="#ID0E1C" as="#tipoSenatore">
+					<an:span style="font-variant:small-caps;">Fregolent</an:span>
+				</an:docProponent>
+			</an:p>
 		</an:preface>
 		<an:amendmentBody>
 			<an:amendmentContent>
-				<an:p style="text-align:justify;">
+				<an:p style="text-align:justify">
 					<an:i>Dopo l'</an:i>
-					<an:b>articolo</an:b>
+					<an:strong>articolo</an:strong>
 					<an:i>, inserire il seguente:</an:i>
 				</an:p>
 				
 
-				<an:p style="text-align:center;">
+				<an:p style="text-align:center">
 					          
-					<an:b>
+					<an:strong>
 						«Art. 1-
 						<an:i>bis</an:i>
 						:
-					</an:b>
+					</an:strong>
 				</an:p>
 				
 
-				<an:p style="text-align:center;">
+				<an:p style="text-align:center">
 					          
 					<an:i>(Incentivo all'esodo volontario)</an:i>
 				</an:p>
 				
 
-				<an:p style="text-align:justify;">          1. Ai lavoratori dipendenti delle società Acciaierie d'Italia S.p.A. in amministrazione straordinaria e ILVA S.p.A. in amministrazione straordinaria che, entro il 31 dicembre 2027, risolvono consensualmente il rapporto di lavoro nell'ambito di accordi sottoscritti con le organizzazioni sindacali comparativamente più rappresentative a livello nazionale è riconosciuto un incentivo all'esodo di importo non inferiore a 150.000 euro lordi, modulato in base all'età anagrafica e all'anzianità di servizio secondo i criteri definiti con decreto del Ministro del lavoro e delle politiche sociali, di concerto con il Ministro delle imprese e del made in Italy, da adottare entro trenta giorni dalla data di entrata in vigore della legge di conversione del presente decreto.</an:p>
+				<an:p style="text-align:justify">          1. Ai lavoratori dipendenti delle società Acciaierie d'Italia S.p.A. in amministrazione straordinaria e ILVA S.p.A. in amministrazione straordinaria che, entro il 31 dicembre 2027, risolvono consensualmente il rapporto di lavoro nell'ambito di accordi sottoscritti con le organizzazioni sindacali comparativamente più rappresentative a livello nazionale è riconosciuto un incentivo all'esodo di importo non inferiore a 150.000 euro lordi, modulato in base all'età anagrafica e all'anzianità di servizio secondo i criteri definiti con decreto del Ministro del lavoro e delle politiche sociali, di concerto con il Ministro delle imprese e del made in Italy, da adottare entro trenta giorni dalla data di entrata in vigore della legge di conversione del presente decreto.</an:p>
 				
 
-				<an:p style="text-align:justify;">          2. L'incentivo è erogato dall'amministrazione straordinaria a valere su risorse trasferite dal Ministero delle imprese e del made in Italy, nel limite di spesa di 150 milioni di euro per l'anno 2027. Ai relativi oneri si provvede mediante corrispondente riduzione del Fondo per far fronte ad esigenze indifferibili che si manifestano nel corso della gestione, di cui all'articolo 1, comma 200, della legge 23 dicembre 2014, n. 190.».</an:p>
+				<an:p style="text-align:justify">          2. L'incentivo è erogato dall'amministrazione straordinaria a valere su risorse trasferite dal Ministero delle imprese e del made in Italy, nel limite di spesa di 150 milioni di euro per l'anno 2027. Ai relativi oneri si provvede mediante corrispondente riduzione del Fondo per far fronte ad esigenze indifferibili che si manifestano nel corso della gestione, di cui all'articolo 1, comma 200, della legge 23 dicembre 2014, n. 190.».</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>

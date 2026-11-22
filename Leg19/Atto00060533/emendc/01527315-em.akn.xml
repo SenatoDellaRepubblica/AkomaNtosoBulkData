@@ -6,7 +6,7 @@
 				<an:FRBRWork>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2065/C/1.10/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2065/C/1.10"/>
-					<an:FRBRdate date="2026-11-10" name="presentazione"/>
+					<an:FRBRdate date="2026-11-20" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="wcompmain" href="http://dati.senato.it/19/Emend/S/2065/C/1.10/main" showAs="emendamento" name="emendamento"/>
@@ -19,7 +19,7 @@
 				<an:FRBRExpression>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2065/C/1.10/ita@/main"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2065/C/1.10/ita@"/>
-					<an:FRBRdate date="2026-11-10" name="presentazione"/>
+					<an:FRBRdate date="2026-11-20" name="presentazione"/>
 					<an:FRBRauthor href="#senato"/>
 					<an:componentInfo>
 						<an:componentData id="ecompmain" href="http://dati.senato.it/19/Emend/S/2065/C/1.10/ita@/main" showAs="emendamento" name="emendamento"/>
@@ -29,7 +29,7 @@
 				<an:FRBRManifestation>
 					<an:FRBRthis value="http://dati.senato.it/19/Emend/S/2065/C/1.10/ita@/main.xml"/>
 					<an:FRBRuri value="http://dati.senato.it/19/Emend/S/2065/C/1.10/ita@.akn"/>
-					<an:FRBRdate date="2026-11-10" name="presentazione"/>
+					<an:FRBRdate date="2026-11-20" name="presentazione"/>
 					<an:FRBRauthor href="#redattore"/>
 					<an:componentInfo>
 						<an:componentData id="mcompmain" href="http://dati.senato.it/19/Emend/S/2065/C/1.10/ita@/main.xml" showAs="emendamento" name="emendamento"/>
@@ -37,10 +37,11 @@
 				</an:FRBRManifestation>
 			</an:identification>
 			<an:lifecycle source="#redattore">
-				<an:eventRef source="#ro1" id="event1" date="2026-11-10"/>
+				<an:eventRef source="#ro1" id="event1" date="2026-11-20"/>
 			</an:lifecycle>
 			<an:workflow source="#redattore">
-				<an:step id="step1" date="2026-11-10" actor="#senato" outcome="presentazione"/>
+				<an:step id="step1" date="2026-11-20" actor="#senato" outcome="presentazione"/>
+				<an:step id="step2" date="2026-11-20" actor="#commissione" outcome="esito" refersTo="#esito"/>
 			</an:workflow>
 			<an:references source="#redattore">
 				<an:original id="ro1" href="http://dati.senato.it/19/Emend/S/2065/C/1.10/ita@/main" showAs="generation"/>
@@ -112,6 +113,11 @@
 				
 
 				<an:p style="margin-bottom:0cm;text-align:justify;line-height:normal;">          Salvo che il fatto costituisca più grave reato, l'esibizione o la trasmissione di dati falsi, ovvero l'omissione di informazioni rilevanti da parte delle imprese terze ai fini della certificazione comporta l'immediata revoca del beneficio e il recupero coattivo da parte dell'Inps delle somme indebitamente erogate, maggiorate degli interessi legali. L'impresa dell'indotto che ha fornito le false dichiarazioni risponde in solido con il lavoratore per la restituzione di tali somme e trova l'esclusione, per un periodo di cinque anni, da qualsiasi ulteriore ammortizzatore sociale in deroga, nonché dall'iscrizione all'albo dei fornitori delle società del gruppo ex Ilva.».</an:p>
+			</an:amendmentContent>
+			<an:amendmentContent>
+				<an:p xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD03">
+					<an:outcome id="esito">Respinto</an:outcome>
+				</an:p>
 			</an:amendmentContent>
 		</an:amendmentBody>
 	</an:amendment>
